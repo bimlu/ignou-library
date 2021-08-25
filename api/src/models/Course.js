@@ -1,4 +1,4 @@
-import mongoose from 'mongoose';
+import mongoose from "mongoose";
 
 const Schema = mongoose.Schema;
 
@@ -7,65 +7,17 @@ const Schema = mongoose.Schema;
  */
 const courseSchema = Schema(
   {
-    // name can only contain lowercase words separated by '-'
-    name: {
-      type: String,
-      required: true,
-    },
-    fullName: {
-      type: String,
-      required: true,
-    },
-    createdBy: {
-      type: Schema.Types.ObjectId,
-      ref: 'User',
-    },
-    updatedBy: {
-      type: Schema.Types.ObjectId,
-      ref: 'User',
-    },
-    description: String,
+    code: String,
+    title: String,
+    category: String, // compulsory|elective
+    credits: Number,
     image: String,
     imagePublicId: String,
-    verified: Boolean,
-    college: {
-      type: Schema.Types.ObjectId,
-      ref: 'College',
-    },
-    programme: {
-      type: Schema.Types.ObjectId,
-      ref: 'Programme',
-    },
-    // term e.g. 1, 2, 3... (semester/year)
-    term: {
-      type: Number,
-      required: true,
-      default: 1,
-    },
-    posts: [
-      {
-        type: Schema.Types.ObjectId,
-        ref: 'Post',
-      },
-    ],
-    postsCount: {
-      type: Number,
-      default: 0,
-    },
-    students: [
-      {
-        type: Schema.Types.ObjectId,
-        ref: 'User',
-      },
-    ],
-    studentsCount: {
-      type: Number,
-      default: 0,
-    },
+    programmes: [{ type: Schema.Types.ObjectId, ref: "Programme" }],
   },
   {
     timestamps: true,
   }
 );
 
-export default mongoose.model('Course', courseSchema);
+export default mongoose.model("Course", courseSchema);

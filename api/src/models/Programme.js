@@ -1,6 +1,4 @@
-import mongoose from 'mongoose';
-
-import { TermType, Degree } from '../constants/types';
+import mongoose from "mongoose";
 
 const Schema = mongoose.Schema;
 
@@ -9,69 +7,25 @@ const Schema = mongoose.Schema;
  */
 const programmeSchema = Schema(
   {
-    degree: {
-      type: Degree,
-      required: true,
-      default: Degree.Bachelor,
-    },
-    termType: {
-      type: TermType,
-      required: true,
-      default: TermType.Semester,
-    },
-    termsCount: {
-      type: Number,
-      required: true,
-      default: 6,
-    },
-    name: {
-      type: String,
-      required: true,
-    },
-    fullName: {
-      type: String,
-      required: true,
-    },
-    createdBy: {
-      type: Schema.Types.ObjectId,
-      ref: 'User',
-    },
-    updatedBy: {
-      type: Schema.Types.ObjectId,
-      ref: 'User',
-    },
-    description: String,
+    code: String,
+    title: String,
+    type: String, // degree|certificate|diploma
+    deliveryMode: String, // distance|online|regular
+    level: String, // bachelor|master|doctoral
+    termType: String, // semester|year
+    termCount: Number, // 1-6
     image: String,
     imagePublicId: String,
-    verified: Boolean,
-    college: {
-      type: Schema.Types.ObjectId,
-      ref: 'College',
-    },
     courses: [
       {
         type: Schema.Types.ObjectId,
-        ref: 'Course',
+        ref: "Course",
       },
     ],
-    coursesCount: {
-      type: Number,
-      default: 0,
-    },
-    students: [
-      {
-        type: Schema.Types.ObjectId,
-        ref: 'User',
-      },
-    ],
-    studentsCount: {
-      type: Number,
-      default: 0,
-    },
   },
   {
     timestamps: true,
   }
 );
 
-export default mongoose.model('Programme', programmeSchema);
+export default mongoose.model("Programme", programmeSchema);
