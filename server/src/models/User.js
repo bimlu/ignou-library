@@ -3,14 +3,13 @@ import mongoose from "mongoose";
 const Schema = mongoose.Schema;
 
 /**
- * Student schema that has references to Programme, Course schemas
+ * User schema that has references to Programme, Course schemas
  */
-const studentSchema = new Schema(
+const userSchema = new Schema(
   {
     firstName: String,
-    middlename: String,
     lastName: String,
-    enrollmentNumber: String,
+    enrollmentNumber: { type: String, unique: true },
     enrollmentDate: Date,
     dateOfBirth: Date,
     mobileNumber: String,
@@ -19,15 +18,16 @@ const studentSchema = new Schema(
     address: String,
     district: String,
     state: String,
-    pincode: Number,
+    pincode: String,
     country: String,
     programmes: [{ type: Schema.Types.ObjectId, ref: "Programme" }],
     courses: [{ type: Schema.Types.ObjectId, ref: "Course" }],
     studyCenter: String,
+    username: { type: String, unique: true },
   },
   {
     timestamps: true,
   }
 );
 
-export default mongoose.model("User", schemaSchema);
+export default mongoose.model("User", userSchema);

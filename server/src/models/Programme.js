@@ -14,8 +14,6 @@ const programmeSchema = Schema(
     level: String, // bachelor|master|doctoral
     termType: String, // semester|year
     termCount: Number, // 1-6
-    image: String,
-    imagePublicId: String,
     courses: [
       {
         type: Schema.Types.ObjectId,

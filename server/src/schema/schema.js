@@ -1,15 +1,7 @@
-import { gql } from 'apollo-server-express';
-
-import UserSchema from './user';
-import FollowSchema from './Follow';
-import PostSchema from './Post';
-import LikeSchema from './Like';
-import CommentSchema from './Comment';
-import MessageSchema from './Message';
-import NotificationSchema from './Notification';
-import CollegeSchema from './College';
-import CourseSchema from './Course';
-import ProgrammeSchema from './Programme';
+import { gql } from "apollo-server-express";
+import CourseSchema from "./Course";
+import ProgrammeSchema from "./Programme";
+import UserSchema from "./user";
 
 const schema = gql`
   type Query {
@@ -25,13 +17,6 @@ const schema = gql`
   }
 
   ${UserSchema}
-  ${FollowSchema}
-  ${PostSchema}
-  ${LikeSchema}
-  ${CommentSchema}
-  ${MessageSchema}
-  ${NotificationSchema}
-  ${CollegeSchema}
   ${CourseSchema}
   ${ProgrammeSchema}
 `;

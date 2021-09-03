@@ -3,9 +3,9 @@ import mongoose from "mongoose";
 const Schema = mongoose.Schema;
 
 /**
- * aboutIgnou schema
+ * College schema
  */
-const aboutIgnouSchema = Schema(
+const collegeSchema = Schema(
   {
     preamble: String,
     visionAndMission: String,
@@ -38,4 +38,4 @@ const aboutIgnouSchema = Schema(
   }
 );
 
-export default mongoose.model("AboutIgnou", aboutIgnouSchema);
+export default mongoose.model("College", collegeSchema);

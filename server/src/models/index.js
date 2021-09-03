@@ -1,11 +1,13 @@
-import AboutIgnou from "./AboutIgnou";
+import College from "./College";
 import Course from "./Course";
 import Programme from "./Programme";
-import Student from "./Student";
+import School from "./School";
+import User from "./User";
 
 export default {
-  AboutIgnou,
-  Student,
+  AboutIgnou: College,
+  User,
   Programme,
   Course,
+  School,
 };
