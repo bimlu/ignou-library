@@ -11,7 +11,7 @@ const courseSchema = Schema(
     title: String,
     category: String, // compulsory|elective
     credits: Number,
-    programmes: [{ type: Schema.Types.ObjectId, ref: "Programme" }],
+    programmes: [{ type: String, ref: "Programme" }],
   },
   {
     timestamps: true,
