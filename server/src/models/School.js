@@ -7,11 +7,14 @@ const Schema = mongoose.Schema;
  */
 const schoolSchema = Schema(
   {
-    title: String,
+    code: String,
+    name: String,
+    thumbnail: String,
+    shortIntro: String,
     introduction: String,
-    programmes: [{ type: Schema.Types.ObjectId, ref: "Programme" }],
-    programmesUnderDev: [{ type: Schema.Types.ObjectId, ref: "Programme" }],
-    faculty: [{ type: Schema.Types.ObjectId, ref: "Faculty" }],
+    programmes: [{ type: String, ref: "Programme" }],
+    programmesUnderDev: [{ type: String, ref: "Programme" }],
+    faculty: [{ type: String, ref: "Faculty" }],
     activities: String,
     projects: String,
     publications: String,

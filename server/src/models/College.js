@@ -7,6 +7,8 @@ const Schema = mongoose.Schema;
  */
 const collegeSchema = Schema(
   {
+    name: String,
+    fullName: String,
     preamble: String,
     visionAndMission: String,
     actAndStatutes: String,

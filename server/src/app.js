@@ -1,13 +1,7 @@
 import dotenv from "dotenv";
-import express from "express";
-import { createServer } from "http";
 import mongoose from "mongoose";
-import path from "path";
-import models from "./models";
-import resolvers from "./resolvers";
-import schema from "./schema";
-import { createApolloServer } from "./utils/apollo-server";
-dotenv.config(); // Configure Environment variable
+import { createSchools } from "./utils/populateDB/school";
+dotenv.config(); // Configure Environment variables
 
 // Connect to database
 mongoose
@@ -20,26 +14,28 @@ mongoose
   .then(() => console.log("DB connected"))
   .catch((err) => console.error(err));
 
-// Initializes application
-const app = express();
+createSchools();
 
-// Server static files
-app.use(express.static(path.resolve(__dirname, "../../web", "build")));
+// // Initializes application
+// const app = express();
 
-// Redirect all of server requests to /index.html
-// @see https://ui.dev/react-router-cannot-get-url-refresh/
-app.get("*", (req, res) => {
-  res.sendFile(path.resolve(__dirname, "../../web/build", "index.html"));
-});
+// // Server static files
+// app.use(express.static(path.resolve(__dirname, "../../web", "build")));
 
-// Create a Apollo Server
-const server = createApolloServer(schema, resolvers, models);
-server.applyMiddleware({ app, path: "/graphql" });
+// // Redirect all of server requests to /index.html
+// // @see https://ui.dev/react-router-cannot-get-url-refresh/
+// app.get("*", (req, res) => {
+//   res.sendFile(path.resolve(__dirname, "../../web/build", "index.html"));
+// });
 
-// Create http server and add subscriptions to it
-const httpServer = createServer(app);
+// // Create a Apollo Server
+// const server = createApolloServer(schema, resolvers, models);
+// server.applyMiddleware({ app, path: "/graphql" });
 
-// Listen to HTTP and WebSocket server
-httpServer.listen({ port: process.env.API_PORT }, () => {
-  logger.info(`Server listening on port ${process.env.API_PORT}`);
-});
+// // Create http server and add subscriptions to it
+// const httpServer = createServer(app);
+
+// // Listen to HTTP and WebSocket server
+// httpServer.listen({ port: process.env.API_PORT }, () => {
+//   logger.info(`Server listening on port ${process.env.API_PORT}`);
+// });

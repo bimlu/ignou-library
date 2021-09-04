@@ -11,7 +11,7 @@ const programmeSchema = Schema(
     title: String,
     type: String, // degree|certificate|diploma
     deliveryMode: String, // distance|online|regular
-    level: String, // bachelor|master|doctoral
+    level: String, // bachelor|master|diploma|pgDiploma|pgCertificate
     termType: String, // semester|year
     termCount: Number, // 1-6
     courses: [
@@ -20,6 +20,7 @@ const programmeSchema = Schema(
         ref: "Course",
       },
     ],
+    fee: String,
   },
   {
     timestamps: true,
