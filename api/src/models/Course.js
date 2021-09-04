@@ -7,13 +7,61 @@ const Schema = mongoose.Schema;
  */
 const courseSchema = Schema(
   {
-    code: String,
-    title: String,
-    category: String, // compulsory|elective
-    credits: Number,
+    // name can only contain lowercase words separated by '-'
+    name: {
+      type: String,
+      required: true,
+    },
+    fullName: {
+      type: String,
+      required: true,
+    },
+    createdBy: {
+      type: Schema.Types.ObjectId,
+      ref: "User",
+    },
+    updatedBy: {
+      type: Schema.Types.ObjectId,
+      ref: "User",
+    },
+    description: String,
     image: String,
     imagePublicId: String,
-    programmes: [{ type: Schema.Types.ObjectId, ref: "Programme" }],
+    verified: Boolean,
+    college: {
+      type: Schema.Types.ObjectId,
+      ref: "College",
+    },
+    programme: {
+      type: Schema.Types.ObjectId,
+      ref: "Programme",
+    },
+    // term e.g. 1, 2, 3... (semester/year)
+    term: {
+      type: Number,
+      required: true,
+      default: 1,
+    },
+    posts: [
+      {
+        type: Schema.Types.ObjectId,
+        ref: "Post",
+      },
+    ],
+    postsCount: {
+      type: Number,
+      default: 0,
+    },
+    students: [
+      {
+        type: Schema.Types.ObjectId,
+        ref: "User",
+      },
+    ],
+    studentsCount: {
+      type: Number,
+      default: 0,
+    },
   },
   {
     timestamps: true,
