@@ -547,6 +547,372 @@ export const createProgrammes = () => {
     // Diploma, 22
 
     // page-1, 1-10
+    {
+      code: "DAQ",
+      name: "Diploma in Aquaculture",
+    },
+    {
+      code: "DPLAD",
+      name: "Diploma in Panchayat Level Administration & Development",
+    },
+    {
+      code: "DEVMT",
+      name: "Diploma in Event Management",
+    },
+    {
+      code: "DDT",
+      name: "Diploma in Dairy Technology",
+    },
+    {
+      code: "DECE",
+      name: "Diploma in Early Childhood Care and Education",
+    },
+    {
+      code: "DWED",
+      name: "Diploma in Women’s Empowerment and Development",
+    },
+    {
+      code: "DCE",
+      name: "Diploma in Creative Writing in English",
+    },
+    {
+      code: "DPVE",
+      name: "Diploma in Value Education",
+    },
+    {
+      code: "DNHE",
+      name: "Diploma in Nutrition and Health Education",
+    },
+    {
+      code: "DVAPFV",
+      name: "Diploma in Value Added Products from Fruits and Vegetables",
+    },
+    // page-2, 11-20
+    {
+      code: "DCCN",
+      name: "Diploma in Critical Care Nursing",
+    },
+    {
+      code: "DAFE",
+      name: "Diploma in HIV and Family Education",
+    },
+    {
+      code: "DMT",
+      name: "Diploma in Meat Technology",
+    },
+    {
+      code: "DNA",
+      name: "Diploma in Nursing Administration",
+    },
+    {
+      code: "DIPP",
+      name: "Diploma in Paralegal Practice",
+    },
+    {
+      code: "D.El.Ed.",
+      name: "Diploma in Early Childhood Education",
+      // D.El.Ed. is not on offer from July 2019 session
+    },
+    {
+      code: "DTG",
+      name: "Diploma in Teaching German as a Foreign Language",
+    },
+    {
+      code: "DTS",
+      name: "Diploma in Tourism Studies",
+    },
+    {
+      code: "DUL",
+      name: "Diploma in Urdu",
+    },
+    {
+      code: "DBPOFA",
+      name: "Diploma in BPO Finance & Accounting",
+    },
+    // page-3, 21-30
+    {
+      code: "DMOP",
+      name: "Diploma in Modern Office Practice",
+    },
+    {
+      code: "DWM",
+      name: "Diploma in Watershed Management",
+    },
+
+    // --------------------------------------------------
+    // PG Diploma, 11
+
+    // page-1, 1-10
+    {
+      code: "PGDAPP",
+      name: "Post-Graduate Diploma in Audio Programme Production",
+    },
+    {
+      code: "PGDCA",
+      name: "Post Graduate Diploma in Computer Applications",
+      // Last Admission Cycle July 2020
+    },
+    {
+      code: "PGDCA_NEW",
+      name: "Post Graduate Diploma in Computer Application",
+      // January 2021 Admission Cycle and Onwards
+    },
+    {
+      code: "PGDFCS",
+      name: "Post-Graduate Diploma in Folklore and Culture Studies",
+    },
+    {
+      code: "PGDSS",
+      name: "Post Graduate Diploma in Sustainability Science",
+    },
+    {
+      code: "PGDEOH",
+      name: "Post Graduate Diploma in Environmental and Occupational Health",
+    },
+    {
+      code: "PGDHO",
+      name: "Post Graduate Diploma in Hotel Operation",
+    },
+    {
+      code: "PGJMC",
+      name: "Post Graduate Diploma in Journalism and Mass Communication",
+    },
+    {
+      code: "PGDDC",
+      name: "Post Graduate Diploma in Development Communication",
+    },
+    {
+      code: "PGDIDM",
+      name: "Post Graduate Diploma in Digital Media",
+    },
+    // page-2, 11-11
+    {
+      code: "PGDCOUN",
+      name: "Post Graduate Diploma in Social Work Counselling",
+    },
+
+    //-------------------------------------------------
+    // PG and Advance Diploma, 38
+
+    // page-1, 1-10
+    {
+      code: "PGDUPDL",
+      name: "Post Graduate Diploma in Urban Planning and Development",
+    },
+    {
+      code: "PGDAC",
+      name: "Post-Graduate Diploma in Analytical Chemistry",
+    },
+    {
+      code: "PGDAW",
+      name: "PG Diploma in Animal Welfare",
+    },
+    {
+      code: "PGDBP",
+      name: "Post-Graduate Diploma in Book Publishing",
+    },
+    {
+      code: "PGDCJ",
+      name: "Post Graduate Diploma in Criminal Justice",
+    },
+    {
+      code: "PGDDM",
+      name: "Post Graduate Diploma in Disaster Management",
+    },
+    {
+      code: "PGDAE",
+      name: "Post-Graduate Diploma in Adult Education",
+    },
+    {
+      code: "PGDET",
+      name: "Post-Graduate Diploma in Education Technology ",
+    },
+    {
+      code: "PGDESD",
+      name: "Post-Graduate Diploma in Environment and Sustainable Development",
+    },
+    {
+      code: "PGDEDS",
+      name: "Post-Graduate Diploma in Extension and Development Studies",
+    },
+    // page-2, 11-20
+    {
+      code: "PGDDVS",
+      name: "Post Graduate Diploma in Development Studies",
+    },
+    {
+      code: "PGDCSR",
+      name: "PG Diploma in Corporate Social Responsibility",
+    },
+    {
+      code: "PGDFSQM",
+      name: "Post-Graduate Diploma in Food Safety and Quality Management",
+    },
+    {
+      code: "PGDGPS",
+      name: "Post Graduate Diploma in Gandhi and Peace Studies",
+    },
+    {
+      code: "PGDWGS",
+      name: "Post Graduate Diploma in Women’s & Gender Studies",
+    },
+    {
+      code: "PGDGM",
+      name: "Post-Graduate Diploma in Geriatric Medicine",
+    },
+    {
+      code: "PGDHIVM",
+      name: "Post-Graduate Diploma in HIV Medicine",
+    },
+    {
+      code: "PGDHHM",
+      name: "Post-Graduate Diploma in Hospital and Health Management",
+    },
+    {
+      code: "PGDHE",
+      name: "Post Graduate Diploma in Higher Education",
+    },
+    {
+      code: "PGDIPR",
+      name: "Post-Graduate Diploma in Intellectual Property Rights",
+    },
+    // page-3, 21-30
+    {
+      code: "PGDLAN",
+      name: "Post-Graduate Diploma in Library Automation and Networking",
+    },
+    {
+      code: "PGDFM",
+      name: "Post-Graduate Diploma in Financial Management",
+    },
+    {
+      code: "PGDMM",
+      name: "Post-Graduate Diploma in Marketing Management",
+    },
+    {
+      code: "PGDOM",
+      name: "Post-Graduate Diploma in Operations Management",
+    },
+    {
+      code: "PGDIBO",
+      name: "Post Graduate Diploma in International Business Operations",
+    },
+    {
+      code: "PGDFMP",
+      name: "Post Graduate Diploma in Financial Markets Practice",
+    },
+    {
+      code: "PGDHRM",
+      name: "Post Graduate Diploma in Human Resource Management",
+    },
+    {
+      code: "PGDMCH",
+      name: "Post-Graduate Diploma in Maternal and Child Health",
+    },
+    {
+      code: "PGDPSM",
+      name: "Post-Graduate Diploma in Pharmaceutical Sales Management",
+    },
+    {
+      code: "PGDPPED",
+      name: "Post Graduate Diploma in Pre-Primary Education",
+    },
+    // page-4, 31-38
+    {
+      code: "PGDEMA",
+      name: "Post Graduate Diploma in Educational Management and Administration",
+    },
+    {
+      code: "PGDMH",
+      name: "PG Diploma in Mental Health",
+    },
+    {
+      code: "PGDRD",
+      name: "Post-Graduate Diploma in Rural Development",
+    },
+    {
+      code: "PGDCFT",
+      name: "Post Graduate Diploma in Counselling and Family Therapy",
+    },
+    {
+      code: "PGDSLM",
+      name: "Post-Graduate Diploma in School Leadership and Management",
+    },
+    {
+      code: "PGDAST",
+      name: "Post Graduate Diploma in Applied Statistics",
+    },
+    {
+      code: "PGDT",
+      name: "PG Diploma in Translation",
+    },
+    {
+      code: "PGDIS",
+      name: "Post Graduate Diploma in Information Security",
+    },
+
+    //-----------------------------------------------
+    // PG and Advance Certificate,
+
+    // page-1, 1-10
+    {
+      code: "PGCAP",
+      name: "Post-Graduate Certificate in Agriculture Policy",
+    },
+    {
+      code: "PGCBHT",
+      name: "Post-Graduate Certificate in Bangla-Hindi Translation",
+    },
+    {
+      code: "PGCCL",
+      name: "Post Graduate Certificate in Cyber Law",
+    },
+    {
+      code: "PGCAE",
+      name: "Post-Graduate Certificate in Adult Education",
+    },
+    {
+      code: "PGCEDS",
+      name: "Post-Graduate Certificate in Extension and Development Studies",
+    },
+    {
+      code: "PGCCC",
+      name: "Post Graduate Certificate in Climate Change",
+    },
+    {
+      code: "PGCGPS",
+      name: "Post Graduate Certificate in Gandhi and Peace Studies",
+    },
+    {
+      code: "PGCMHT",
+      name: "Post-Graduate Certificate in Malayalam-Hindi Translation",
+    },
+    {
+      code: "PGCPP",
+      name: "Post-Graduate Certificate in Patent Practice",
+    },
+    {
+      code: "PGCIATIVI",
+      name: "Post Graduate Certificate in Information and Assistive Technologies for the Instructors of Visually Impaired",
+    },
+    // page-2, 11-13
+    {
+      code: "ACPDM",
+      name: "Advanced Certificate in Power Distribution Management",
+    },
+    {
+      code: "PGCGI",
+      name: "Post Graduate Certificate in Geoinformatics",
+    },
+    {
+      code: "ACISE",
+      name: "Advanced Certificate in Information Security",
+    },
+
+    // ---------------------------------------------
+    // Certificate, 67
+
+    // page-1, 1-10
   ];
 
   Programme.insertMany(schools, (err, docs) => {
