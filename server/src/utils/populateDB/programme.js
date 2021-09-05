@@ -913,6 +913,280 @@ export const createProgrammes = () => {
     // Certificate, 67
 
     // page-1, 1-10
+    {
+      code: "CIB",
+      name: "Certificate in Bee Keeping",
+    },
+    {
+      code: "CBS",
+      name: "Certificate in Business Skills",
+    },
+    {
+      code: "CCR",
+      name: "Certificate in Community Radio",
+    },
+    {
+      code: "CCPD",
+      name: "Certificate of Competency in Power Distribution (Technicians)",
+    },
+    {
+      code: "CMAD",
+      name: "Certificate in Mobile Application Development",
+    },
+    {
+      code: "CCP",
+      name: "Certificate in Consumer Protection",
+    },
+    {
+      code: "CDM",
+      name: "Certificate in Disaster Management",
+    },
+    {
+      code: "CETM",
+      name: "Certificate in Energy Technology and Management",
+    },
+    {
+      code: "CTE",
+      name: "Certificate in Teaching of English as a Second Language",
+    },
+    {
+      code: "CFE",
+      name: "Certificate Programme in Functional English (Basic level)",
+    },
+    // page-2, 11-20
+    {
+      code: "CES",
+      name: "Certificate in Environmental Studies",
+    },
+    {
+      code: "CPVE",
+      name: "Certificate Programme In Value Education",
+    },
+    {
+      code: "CFBO",
+      name: "Certificate in Food & Beverage Service Operation",
+    },
+    {
+      code: "CFN",
+      name: "Certificate in Food and Nutrition",
+    },
+    {
+      code: "CGL",
+      name: "Certificate in German Language",
+    },
+    {
+      code: "CPEL",
+      name: "Certificate in Persian Language",
+    },
+    {
+      code: "CFO",
+      name: "Certificate in Front Office Operation",
+    },
+    {
+      code: "CPSCM",
+      name: "Certificate Programme in Peace Studies and Conflict Management",
+    },
+    {
+      code: "CIG",
+      name: "Certificate in Guidance",
+    },
+    {
+      code: "CHCWM",
+      name: "Certificate in Health Care Waste Management",
+    },
+    // page-3, 21-30
+    {
+      code: "CPY",
+      name: "Certificate Programme in YOGA",
+    },
+    {
+      code: "CGCA",
+      name: "Certificate in Geriatric Care Assistance",
+    },
+    {
+      code: "CHHA",
+      name: "Certificate in Home Health Assistance",
+    },
+    {
+      code: "CPHA",
+      name: "Certificate in Phlebotomy Assistance",
+    },
+    {
+      code: "CGDA",
+      name: "Certificate in General Duty Assistance",
+    },
+    {
+      code: "CFAID",
+      name: "Certificate in First Aid",
+    },
+    {
+      code: "CAFE",
+      name: "Certificate in HIV and Family Education",
+    },
+    {
+      code: "CHBHC",
+      name: "Certificate in Home Based Health Care",
+    },
+    {
+      code: "CHO",
+      name: "Certificate in House Keeping Operation",
+    },
+    {
+      code: "CIT",
+      name: "Certificate in Information Technology",
+    },
+    // page-4, 31-40
+    {
+      code: "CPLT",
+      name: "Certificate Programme in Laboratory Techniques",
+    },
+    {
+      code: "CIHL",
+      name: "Certificate in International Humanitarian Law",
+    },
+    {
+      code: "CAHT",
+      name: "Certificate in Anti Human Trafficking",
+    },
+    {
+      code: "CCLBL",
+      name: "Certificate in Co-operation, Co-operative Law",
+    },
+    {
+      code: "CHR",
+      name: "Certificate in Human Rights",
+    },
+    {
+      code: "CLIS",
+      name: "Certificate Programme in Library and Information Science",
+    },
+    {
+      code: "CLTA",
+      name: "Certificate Programme on Life and Thought of B.R. Ambedkar",
+    },
+    {
+      code: "CNM",
+      name: "Certificate in NGO Management",
+    },
+    {
+      code: "CMCHN",
+      name: "Certificate in Maternal and Child Health Nursing",
+    },
+    {
+      code: "CNIN",
+      name: "Certificate in Newborn & Infant Nursing",
+    },
+    // page-5, 41-50
+    {
+      code: "BPCCHN",
+      name: "Certificate in Community Health",
+    },
+    {
+      code: "CNCC",
+      name: "Certificate in Nutrition and Childcare",
+    },
+    {
+      code: "COF",
+      name: "Certificate in Organic Farming",
+    },
+    {
+      code: "CPABN",
+      name: "Certificate in Performing Arts - Bharatnatyam",
+    },
+    {
+      code: "CPAHM",
+      name: "Certificate in Performing Arts - Hindustani Music",
+    },
+    {
+      code: "CPAKM",
+      name: "Certificate in Performing Arts - Karnatak Music",
+    },
+    {
+      code: "CPATHA",
+      name: "Certificate In Performing Arts -Theatre Arts",
+    },
+    {
+      code: "CVAP",
+      name: "Certificate in Visual Arts - Painting",
+    },
+    {
+      code: "CVAA",
+      name: "Certificate in Visual Arts - Applied Arts",
+    },
+    {
+      code: "CPF",
+      name: "Certificate in Poultry Farming",
+    },
+    // page-6, 51-60
+    {
+      code: "CRD",
+      name: "Certificate Programme in Rural Development",
+    },
+    {
+      code: "CFL",
+      name: "Certificate in French Language",
+    },
+    {
+      code: "CAL",
+      name: "Certificate in Arabic Language",
+    },
+    {
+      code: "CRUL",
+      name: "Certificate in Russian Language",
+    },
+    {
+      code: "CSLC",
+      name: "Certificate in Spanish Language & Culture",
+    },
+    {
+      code: "CKLC",
+      name: "Certificate in Korean Language & Culture",
+    },
+    {
+      code: "CJL",
+      name: "Certificate in Japanese Language",
+    },
+    {
+      code: "CIS",
+      name: "Certificate in Sericulture",
+    },
+    {
+      code: "CSWCJS",
+      name: "Certificate in Social Work and Criminal Justice System",
+    },
+    {
+      code: "CTRBS",
+      name: "Certificate in Tribal Studies",
+    },
+    // page-7, 61-67
+    {
+      code: "CTPM",
+      name: "Certificate Programme in Teaching of Primary School Mathematics",
+    },
+    {
+      code: "CTS",
+      name: "Certificate in Tourism Studies",
+    },
+    {
+      code: "CUL",
+      name: "Certificate in Urdu Language",
+    },
+    {
+      code: "CCITSK",
+      name: "Certificate in Communication and IT Skills",
+    },
+    {
+      code: "CFDE",
+      name: "Certificate in Fashion Design",
+    },
+    {
+      code: "CSWM",
+      name: "Certificate in Solid Waste Management",
+    },
+    {
+      code: "CWHM",
+      name: "Certificate in Water Harvesting and Management",
+    },
   ];
 
   Programme.insertMany(schools, (err, docs) => {
