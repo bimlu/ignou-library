@@ -228,7 +228,7 @@ export const createProgrammes = () => {
     },
 
     // --------------------------------------------------
-    // Master's Degree
+    // Master's Degree, 44
 
     // page-1, 1-10
     {
@@ -313,6 +313,112 @@ export const createProgrammes = () => {
       code: "MAWGS",
       name: "Master of Arts in Women's and Gender Studies",
     },
+    // page-3, 21-30
+    {
+      code: "MHD",
+      name: "Master of Arts (Hindi)",
+    },
+    {
+      code: "MAH",
+      name: "Master of Arts (History)",
+    },
+    {
+      code: "MHA",
+      name: "Master of Science (Hospitality Administration)",
+    },
+    {
+      code: "MSK",
+      name: "Master of Arts (Sanskrit)",
+    },
+    {
+      code: "MUR",
+      name: "Master of Arts (Urdu)",
+      // removed from ignou website
+    },
+    {
+      code: "MHD Online",
+      name: "Master of Arts (Hindi) Online",
+    },
+    {
+      code: "MSCENV",
+      name: "Master of Science (Environmental Science)",
+    },
+    {
+      code: "MAPY",
+      name: "Master of Arts (Philosophy)",
+    },
+    {
+      code: "MAJMC",
+      name: "Master of Arts in Journalism and Mass Communication",
+    },
+    {
+      code: "MLIS",
+      name: "Master of Library and Information Science",
+    },
+    // page-4, 31-40
+    {
+      code: "MCom (MA & FS)",
+      name: "Master of Commerce in Management Accounting & Financial Strategies",
+    },
+    {
+      code: "MACS",
+      name: "Mathematics with Applications in Computer Science",
+    },
+    {
+      code: "MPS",
+      name: "Master of Arts (Political Science)",
+    },
+    {
+      code: "MAPC",
+      name: "MA in Psychology",
+    },
+    {
+      code: "MPA",
+      name: "Master of Arts (Public Administration)",
+    },
+    {
+      code: "MA(RD)",
+      name: "Master of Arts (Rural Development)",
+    },
+    {
+      code: "MSCCFT",
+      name: "Master of Science (Counselling and Family Therapy)",
+    },
+    {
+      code: "MAAN",
+      name: "Masters in Anthropology",
+    },
+    {
+      code: "MSW",
+      name: "Master of Social Work",
+    },
+    {
+      code: "MSWC",
+      name: "Master of Social Work (Counselling)",
+    },
+    // page-5, 41-44
+    {
+      code: "MSO",
+      name: "Master of Arts (Sociology)",
+    },
+    {
+      code: "MADEdep",
+      name: "MA in Distance Education",
+      // removed from ignou website
+    },
+    {
+      code: "MTTM",
+      name: "Master of Tourism & Travel Management",
+    },
+    {
+      code: "MATS",
+      name: "MA in Translation Studies",
+    },
+
+    // --------------------------------------------------
+    // Bachelor's Degree, 31
+
+    // page-1, 1-10
   ];
 
   Programme.insertMany(schools, (err, docs) => {
