@@ -2,7 +2,9 @@ import Programme from "../../models/Programme";
 
 export const createProgrammes = () => {
   const programmes = [
+    // --------------------------------------------------
     // Doctoral Degree, 41
+
     // page-1, 1-10
     {
       code: "PHDDR",
@@ -154,7 +156,7 @@ export const createProgrammes = () => {
     {
       code: "PHD",
       name: "Ph.D in Distance Education",
-      // missing from ignou website
+      // removed from ignou website
     },
     {
       code: "PHDSTAT",
@@ -172,6 +174,144 @@ export const createProgrammes = () => {
     {
       code: "PHDVET",
       name: "Doctor of Philosophy in Vocational Education",
+    },
+
+    // --------------------------------------------------
+    // M.Phil Programme, 11
+
+    // page-1, 1-10
+    {
+      code: "MPHILCHEM",
+      name: "MPHIL in Chemistry",
+    },
+    {
+      code: "MPHILCOM",
+      name: "Master of Philosophy in Commerce",
+    },
+    {
+      code: "MPHILEC",
+      name: "M.Phil in Economics",
+    },
+    {
+      code: "MPHILGEOG",
+      name: "M.Phil in Geography",
+    },
+    {
+      code: "MPHILJMC",
+      name: "Master of Philosophy in Journalism and Mass Communication",
+    },
+    {
+      code: "MPHILTH",
+      name: "Master of Philosophy in Theatre Arts",
+    },
+    {
+      code: "MPHILPS",
+      name: "Master of Philosophy in Political Science",
+    },
+    {
+      code: "MPHILSO",
+      name: "Master of Philosophy in Sociology",
+    },
+    {
+      code: "MPHILSW",
+      name: "Master of Philosophy in Social Work",
+    },
+    {
+      code: "MPHIL",
+      name: "M.Phil in Distance Education",
+      // removed from ignou website
+    },
+    // page-2, 11-11
+    {
+      code: "MPHILTT",
+      name: "Master of Philosophy in Translation Studies",
+    },
+
+    // --------------------------------------------------
+    // Master's Degree
+
+    // page-1, 1-10
+    {
+      code: "MPB",
+      name: "Master of Business Administration (Banking & Finance)",
+    },
+    {
+      code: "MBA",
+      name: "Master of Business Administration",
+    },
+    {
+      code: "MCom",
+      name: "Master of Commerce",
+    },
+    {
+      code: "MCom (BP & CG)",
+      name: "Master of Commerce in Business Policy and Corporate Governance",
+    },
+    {
+      code: "MCA",
+      name: "Master of Computer Applications (Jan 2005 to July 2020 admission cycle)",
+    },
+    {
+      code: "MCA_NEW",
+      name: "Master of Computer Applications (January 2021 admission cycle and Onward)",
+    },
+    {
+      code: "MSCDFSM",
+      name: "Master of Science (Food and Nutrition)",
+    },
+    {
+      code: "MEC",
+      name: "Master of Arts (Economics)",
+    },
+    {
+      code: "MADE",
+      name: "MA in Distance Education",
+    },
+    {
+      code: "MEd",
+      name: "Master of Education",
+      // (As per NCTE Communication, 2014, M.Ed. programme ( in ODL) is not on offer at present)
+    },
+    // page-2, 11-20
+    {
+      code: "MAEDU",
+      name: "Master of Arts (Education)",
+    },
+    {
+      code: "MAAE",
+      name: "Master of Arts in Adult Education",
+    },
+    {
+      code: "MEG",
+      name: "Master of Arts (English)",
+    },
+    {
+      code: "MAEDS",
+      name: "Master of Arts in Extension & Development Studies",
+    },
+    {
+      code: "MADVS",
+      name: "Master of Arts in Development Studies",
+    },
+    {
+      code: "MCom (F&T)",
+      name: "Master of Commerce in Finance & Taxation",
+    },
+    {
+      code: "MAFCS",
+      name: "Master of Arts (MA in Folklore and Culture Studies)",
+    },
+    {
+      code: "MAGPS",
+      name: "Master of Arts in Gandhi and Peace Studies",
+    },
+    {
+      code: "MAGD",
+      name: "MA in Gender and Development Studies",
+    },
+    {
+      code: "MAWGS",
+      name: "Master of Arts in Women's and Gender Studies",
     },
   ];
 
