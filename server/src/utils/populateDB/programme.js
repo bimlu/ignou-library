@@ -419,6 +419,134 @@ export const createProgrammes = () => {
     // Bachelor's Degree, 31
 
     // page-1, 1-10
+    {
+      code: "BA",
+      name: "Bachelor of Arts",
+    },
+    {
+      code: "BAG",
+      name: "Bachelor of Arts (General)",
+    },
+    {
+      code: "BAHIH",
+      name: "B.A. Honours History",
+    },
+    {
+      code: "BAPCH",
+      name: "B.A. Honours Psychology",
+    },
+    {
+      code: "BAPSH",
+      name: "B.A. Honours Political Science",
+    },
+    {
+      code: "BAPST",
+      name: "B.A. Honours Sociology",
+    },
+    {
+      code: "BSCANH",
+      name: "B.Sc. Honours Anthropology",
+    },
+    {
+      code: "BSCBCH",
+      name: "Bachelor of Science (Honours) in Biochemistry",
+    },
+    {
+      code: "BCOMAF",
+      name: "Bachelor of Commerce with Major in Accountancy and Finance",
+    },
+    {
+      code: "BCom (CA&A)",
+      name: "BCom with Major in Corporate Affairs and Administration",
+    },
+    // page-2, 11-20
+    {
+      code: "BCom (F&CA)",
+      name: "BCom with Major in Finance and Cost Affairs",
+    },
+    {
+      code: "BCOMG",
+      name: "B.Com General",
+    },
+    {
+      code: "BBARL",
+      name: "Bachelor of Business Administration in Retailing",
+    },
+    {
+      code: "BCA",
+      name: "Bachelor of Computer Applications",
+    },
+    {
+      code: "BAECH",
+      name: "B.A. Economics Honours",
+    },
+    {
+      code: "B.Ed.",
+      name: "Bachelor of Education",
+    },
+    {
+      code: "BHM",
+      name: "Bachelor of Science (Hospitality and Hotel Administration)",
+    },
+    {
+      code: "BAG",
+      name: "Bachelor of Arts (General)",
+    },
+    {
+      code: "BAG Urdu",
+      name: "Bachelor of Arts (General) in Urdu",
+    },
+    {
+      code: "BAG Hindi",
+      name: "Bachelor of Arts (General) in Hindi",
+    },
+    // page-3, 21-30
+    {
+      code: "BAG Sanskrit",
+      name: "Bachelor of Arts (General) in Sanskrit",
+    },
+    {
+      code: "BAEGH",
+      name: "Bachelor's Honours Degree Programme (English)",
+    },
+    {
+      code: "BAHDH",
+      name: "Bachelor's Honours Degree Programme (Hindi)",
+    },
+    {
+      code: "BLIS",
+      name: "Bachelor of Library and Information Science",
+    },
+    {
+      code: "BScN(PB)",
+      name: "BSc Nursing (Post Basic)",
+    },
+    {
+      code: "BAG Philosophy",
+      name: "Bachelor of Arts (General) in Philosophy",
+    },
+    {
+      code: "BSc (General)",
+      name: "Bachelor of Science (General)",
+    },
+    {
+      code: "UGC-CBCS",
+      name: "Bachelor of Science",
+    },
+    {
+      code: "BAVTM",
+      name: "B.A. Vocational Studies Tourism Management",
+    },
+    // page-4, 31-31
+    {
+      code: "BTS",
+      name: "B.A. in Tourism Studies",
+    },
+
+    // --------------------------------------------------
+    // Diploma, 22
+
+    // page-1, 1-10
   ];
 
   Programme.insertMany(schools, (err, docs) => {
