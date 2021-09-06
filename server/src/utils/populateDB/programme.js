@@ -1211,7 +1211,7 @@ export const createProgrammes = () => {
     // No programmes yet
   ];
 
-  Programme.insertMany(schools, (err, docs) => {
+  Programme.insertMany(programmes, (err, docs) => {
     if (err) {
       console.log(err);
     } else {
