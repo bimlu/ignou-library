@@ -9,8 +9,10 @@ const courseSchema = Schema(
   {
     code: String,
     title: String,
-    category: String, // compulsory|elective
-    credits: Number,
+    numOfBlocks: Number,
+    school: { type: String, ref: "School" },
+    // category: String, // compulsory|elective
+    // credits: Number,
     programmes: [{ type: String, ref: "Programme" }],
   },
   {
