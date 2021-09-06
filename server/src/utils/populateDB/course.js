@@ -72,268 +72,443 @@ const createCourses = () => {
     },
     {
       // 14
-      code: "MS-24",
+      code: "MS-23",
       title: "Human Resource Planning",
     },
     {
       // 15
-      code: "MS-",
-      title: "",
+      code: "MS-24",
+      title: "Employment Relations",
+    },
+    {
+      // 16
+      code: "MS-25",
+      title: "Managing Change in Organisations",
+    },
+    {
+      // 17
+      code: "MS-26",
+      title: "Organisational Dynamics",
+    },
+    {
+      // 18
+      code: "MS-27",
+      title: "Wage and Salary Administration",
+    },
+    {
+      // 19
+      code: "MS-28",
+      title: "Labour Laws",
+    },
+    {
+      // 20
+      code: "MS-29",
+      title: "International Human Resource Management",
+    },
+    {
+      // 21
+      code: "MS-41",
+      title: "Working Capital Management",
+    },
+    {
+      // 22
+      code: "MS-42",
+      title: "Capital Investment and Financing Decisions",
+    },
+    {
+      // 23
+      code: "MS-43",
+      title: "Management Control Systems",
+    },
+    {
+      // 24
+      code: "MS-44",
+      title: "Security Analysis and Portfolio Management",
+    },
+    {
+      // 25
+      code: "MS-45",
+      title: "International Financial Management",
     },
     {
       //
-      code: "",
-      title: "",
+      code: "MS-46",
+      title: "Management of Financial Services",
     },
     {
       //
-      code: "",
-      title: "",
+      code: "MS-51",
+      title: "Operations Research",
     },
     {
       //
-      code: "",
-      title: "",
+      code: "MS-52",
+      title: "Project Management",
     },
     {
       //
-      code: "",
-      title: "",
+      code: "MS-53",
+      title: "Production/Operations Management",
     },
     {
       //
-      code: "",
-      title: "",
+      code: "MS-54",
+      title: "Management of Information Systems",
     },
     {
       //
-      code: "",
-      title: "",
+      code: "MS-55",
+      title: "Logistics and Supply Chain Management",
     },
     {
       //
-      code: "",
-      title: "",
+      code: "MS-56",
+      title: "Materials Management",
     },
     {
       //
-      code: "",
-      title: "",
+      code: "MS-57",
+      title: "Maintenance Management",
     },
     {
       //
-      code: "",
-      title: "",
+      code: "MS-58",
+      title: "Management of R&D Innovation",
     },
     {
       //
-      code: "",
-      title: "",
+      code: "MS-61",
+      title: "Consumer Behaviour",
     },
     {
       //
-      code: "",
-      title: "",
+      code: "MS-62",
+      title: "Sales and Distribution Management",
     },
     {
       //
-      code: "",
-      title: "",
+      code: "MS-63",
+      title: "Product Management",
     },
     {
       //
-      code: "",
-      title: "",
+      code: "MS-64",
+      title: "International Marketing",
     },
     {
       //
-      code: "",
-      title: "",
+      code: "MS-65",
+      title: "Marketing of Services",
     },
     {
       //
-      code: "",
-      title: "",
+      code: "MS-66",
+      title: "Marketing Research",
     },
     {
       //
-      code: "",
-      title: "",
+      code: "MS-68",
+      title: "Management of Marketing Communication and Advertising",
     },
     {
       //
-      code: "",
-      title: "",
+      code: "MS-91",
+      title: "Advanced Strategic Management",
     },
     {
       //
-      code: "",
-      title: "",
+      code: "MS-92",
+      title: "Management of Public Enterprises",
     },
     {
       //
-      code: "",
-      title: "",
+      code: "MS-93",
+      title: "Management of New and Small Enterprises",
     },
     {
       //
-      code: "",
-      title: "",
+      code: "MS-94",
+      title: "Technology Management",
     },
     {
       //
-      code: "",
-      title: "",
+      code: "MS-95",
+      title: "Research Methodology for Management Decisions",
     },
     {
       //
-      code: "",
-      title: "",
+      code: "MS-96",
+      title: "Total Quality Management",
     },
     {
       //
-      code: "",
-      title: "",
+      code: "MS-97",
+      title: "International Business",
     },
     {
       //
-      code: "",
-      title: "",
+      code: "MS-422",
+      title: "Bank Financial Management",
     },
     {
       //
-      code: "",
-      title: "",
+      code: "MS-423",
+      title: "Marketing of Financial Service",
     },
     {
       //
-      code: "",
-      title: "",
+      code: "MS-424",
+      title: "International Banking Management",
     },
     {
       //
-      code: "",
-      title: "",
+      code: "MS-425",
+      title: "Electronic Banking and IT in Banks",
     },
     {
       //
-      code: "",
-      title: "",
+      code: "MS-611",
+      title: "Rural Marketing",
     },
     {
       //
-      code: "",
-      title: "",
+      code: "MS-612",
+      title: "Retail Management",
     },
     {
       //
-      code: "",
-      title: "",
+      code: "IBO-01",
+      title: "International Business Environment",
     },
     {
       //
-      code: "",
-      title: "",
+      code: "IBO-02",
+      title: "International Marketing Management",
     },
     {
       //
-      code: "",
-      title: "",
+      code: "IBO-03",
+      title: "India’s Foreign Trade",
     },
     {
       //
-      code: "",
-      title: "",
+      code: "IBO-04",
+      title: "Export Import Procedures and Documentation",
     },
     {
       //
-      code: "",
-      title: "",
+      code: "IBO-05",
+      title: "International Marketing Logistics",
     },
     {
       //
-      code: "",
-      title: "",
+      code: "IBO-06",
+      title: "International Business Finance",
     },
     {
       //
-      code: "",
-      title: "",
+      code: "AED-01",
+      title: "Export Procedure & Documentation",
     },
     {
       //
-      code: "",
-      title: "",
+      code: "AMK-01",
+      title: "Marketing",
     },
     {
       //
-      code: "",
-      title: "",
+      code: "AOM-01",
+      title: "Office Organisation & Management",
     },
     {
       //
-      code: "",
-      title: "",
+      code: "ASP-01",
+      title: "Secretarial Practice",
     },
     {
       //
-      code: "",
-      title: "",
+      code: "ECO-01",
+      title: "Business Organisation",
     },
     {
       //
-      code: "",
-      title: "",
+      code: "ECO-02",
+      title: "Accountancy – I",
     },
     {
       //
-      code: "",
-      title: "",
+      code: "ECO-03",
+      title: "Management Theory",
     },
     {
       //
-      code: "",
-      title: "",
+      code: "ECO-05",
+      title: "Mercantile Law",
     },
     {
       //
-      code: "",
-      title: "",
+      code: "ECO-06",
+      title: "Economic Theory",
     },
     {
       //
-      code: "",
-      title: "",
+      code: "ECO-07",
+      title: "Elements of Statistics",
     },
     {
       //
-      code: "",
-      title: "",
+      code: "ECO-08",
+      title: "Company Law",
     },
     {
       //
-      code: "",
-      title: "",
+      code: "ECO-09",
+      title: "Money, Banking & Financial Institution",
     },
     {
       //
-      code: "",
-      title: "",
+      code: "ECO-10",
+      title: "Elements of Costing",
     },
     {
       //
-      code: "",
-      title: "",
+      code: "ECO-11",
+      title: "Elements of Income Tax",
     },
     {
       //
-      code: "",
-      title: "",
+      code: "ECO-12",
+      title: "Elements ofAuditing",
     },
     {
       //
-      code: "",
-      title: "",
+      code: "ECO-13",
+      title: "Business of Environment",
+    },
+    {
+      //
+      code: "ECO-14",
+      title: "Accountancy – II",
+    },
+    {
+      //
+      code: "MCO-01",
+      title: "Organisation Theory and Behaviour",
+    },
+    {
+      //
+      code: "MCO-03",
+      title: "Research Methodology & Statistical Analysis",
+    },
+    {
+      //
+      code: "MCO-04",
+      title: "Business Environment",
+    },
+    {
+      //
+      code: "MCO-05",
+      title: "Accounting for Managerial Decisions",
+    },
+    {
+      //
+      code: "MCO-06",
+      title: "Marketing Management",
+    },
+    {
+      //
+      code: "MCO-07",
+      title: "Financial Management",
+    },
+    {
+      //
+      code: "PCO-01",
+      title: "Preparatory Course in Commerce",
+    },
+    {
+      //
+      code: "PCO-02",
+      title: "Preparatory Course in Commerce (Odiya)",
+    },
+    {
+      //
+      code: "BCOA-001",
+      title: "Business Communication & Entrepreneurship",
+    },
+    {
+      //
+      code: "BMS-01",
+      title: "Introduction to NGO Management",
+    },
+    {
+      //
+      code: "BMS-02",
+      title: "Management Functions",
+    },
+    {
+      //
+      code: "BMS-03",
+      title: "Health Care Management",
+    },
+    {
+      //
+      code: "CIE-01",
+      title: "Introduction to Entrepreneurship",
+    },
+    {
+      //
+      code: "CIE-02",
+      title: "Business Apportunity Identification",
+    },
+    {
+      //
+      code: "CIE-03",
+      title: "Enterprise Creation and Legal Requirements",
+    },
+    {
+      //
+      code: "CIE-04",
+      title: "Enterprise Management",
+    },
+    {
+      //
+      code: "CIE-05",
+      title: "Computer for Entrepreneurs",
+    },
+    {
+      //
+      code: "BRL-001",
+      title: "Overview of Retailing",
+    },
+    {
+      //
+      code: "BRL-002",
+      title: "Retail Marketing and Communication",
+    },
+    {
+      //
+      code: "BRL-003",
+      title: "Retail Management Perspective and Communication",
+    },
+    {
+      //
+      code: "BRL-004",
+      title: "Customer Service Management",
+    },
+    {
+      //
+      code: "BRLT-005",
+      title: "Internship and Viva-Voce",
+    },
+    {
+      //
+      code: "BRL-007",
+      title: "Store Operation-I",
+    },
+    {
+      //
+      code: "BRL-008",
+      title: "Human Resources",
     },
   ];
 
