@@ -1,6 +1,6 @@
 import dotenv from "dotenv";
 import mongoose from "mongoose";
-import { createSchools } from "./utils/populateDB/school";
+import { populateDB } from "./utils/populateDB";
 dotenv.config(); // Configure Environment variables
 
 // Connect to database
@@ -14,7 +14,7 @@ mongoose
   .then(() => console.log("DB connected"))
   .catch((err) => console.error(err));
 
-createSchools();
+populateDB();
 
 // // Initializes application
 // const app = express();
