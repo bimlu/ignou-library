@@ -1187,6 +1187,28 @@ export const createProgrammes = () => {
       code: "CWHM",
       name: "Certificate in Water Harvesting and Management",
     },
+
+    //---------------------------------------------
+    // Non-Credit Programmes, 3
+
+    // page-1, 1-3
+    {
+      code: "APDF",
+      name: "Awareness Programme on Dairy Farming",
+    },
+    {
+      code: "CMSR",
+      name: "Certificate in Motor Cycle Service and Repair",
+    },
+    {
+      code: "ACE",
+      name: "Appreciation Course on Environment",
+    },
+
+    //----------------------------------------------
+    // Online Programmes
+
+    // No programmes yet
   ];
 
   Programme.insertMany(schools, (err, docs) => {
