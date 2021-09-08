@@ -48,7 +48,7 @@ httpServer.listen({ port: process.env.API_PORT }, () => {
   console.log(`Server listening on port ${process.env.API_PORT}`);
 });
 
-Course.find({ code: "a" })
+Course.find({})
   .populate("school")
   .exec((err, res) => {
     if (err) throw err;
