@@ -1,6 +1,9 @@
-import { createProgrammes } from "./programme";
+import { createCourses } from "./course";
+// import { createProgrammes } from "./programme";
+// import { createSchools } from "./school";
 
 export const populateDB = () => {
   // createSchools();
-  createProgrammes();
+  // createProgrammes();
+  createCourses();
 };

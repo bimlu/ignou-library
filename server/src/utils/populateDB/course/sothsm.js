@@ -1,4 +1,4 @@
-// school of tourism and hospitality service Management
+// school of tourism and hospitality service Management, 22
 export const sothsm = [
   {
     // 1

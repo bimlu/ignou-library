@@ -1,3 +1,4 @@
+// school of agriculture, 76
 export const soa = [
   {
     // 1

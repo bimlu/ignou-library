@@ -1,3 +1,4 @@
+// school of social studies, 193
 export const soss = [
   {
     // 1

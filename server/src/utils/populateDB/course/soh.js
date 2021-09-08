@@ -1,3 +1,4 @@
+// school of humanities, 91
 export const soh = [
   {
     // 1

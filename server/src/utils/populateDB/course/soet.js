@@ -1,4 +1,4 @@
-// school of engineering & Technology
+// school of engineering & Technology, 166
 export const soet = [
   {
     // 1

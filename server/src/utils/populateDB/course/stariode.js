@@ -1,4 +1,4 @@
-// staff training and research insitute of distance Education
+// staff training and research insitute of distance Education, 8
 export const stariode = [
   {
     // 1
