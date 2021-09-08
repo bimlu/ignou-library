@@ -1,3 +1,4 @@
+import Course from "../../../models/Course";
 import { courses } from "./course_list";
 
 export const createCourses = () => {
