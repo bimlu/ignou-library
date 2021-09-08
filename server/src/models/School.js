@@ -12,6 +12,7 @@ const schoolSchema = Schema(
     thumbnail: String,
     shortIntro: String,
     introduction: String,
+    courses: [{ type: String, ref: "Course" }],
     programmes: [{ type: String, ref: "Programme" }],
     programmesUnderDev: [{ type: String, ref: "Programme" }],
     faculties: [{ type: String, ref: "Faculty" }],

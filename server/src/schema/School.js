@@ -9,8 +9,9 @@ const SchoolSchema = gql`
     name: String
     thumbnail: String
     shortIntro: String
+    courses: [Course]
     programmes: [Programme]
-    programmesUnderDev: Programmes
+    programmesUnderDev: [Programme]
     faculties: Faculties
     activities: String
     projects: String
