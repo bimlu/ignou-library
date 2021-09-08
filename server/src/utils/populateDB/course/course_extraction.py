@@ -31,7 +31,7 @@ for line in trimmed_data:
   else:
     raise NameError('couldn\'t split line')    
   # print(course_code, course_title)
-  course_dict = { 'code': course_code, 'title': course_title }
+  course_dict = { 'code': course_code, 'title': course_title, 'school': '6133a4bd89c5b7dc15bfaca6' }
   if course_dict not in course_list:
     course_list.append(str(course_dict))
     course_list.append(',\n')

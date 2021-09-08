@@ -18,20 +18,20 @@ const collegeSchema = Schema(
     gallery: [String],
     schools: [
       {
-        type: Schema.Types.ObjectId,
+        type: String,
         ref: "School",
       },
     ],
     programmes: [
       {
-        type: Schema.Types.ObjectId,
+        type: String,
         ref: "Programme",
       },
     ],
-    students: [
+    users: [
       {
-        type: Schema.Types.ObjectId,
-        ref: "Student",
+        type: String,
+        ref: "User",
       },
     ],
   },
