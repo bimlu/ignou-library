@@ -18,8 +18,8 @@ const UserSchema = gql`
     state: String
     pincode: String
     country: String
-    programmes: Programmes
-    courses: Courses
+    programmes: [Programme]
+    courses: [Course]
     studyCenter: String
     username: String
   }

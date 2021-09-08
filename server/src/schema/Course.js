@@ -7,9 +7,9 @@ const CourseSchema = gql`
   type Course {
     code: String
     title: String
-    category: String
-    credits: Number
-    programmes: Programmes
+    numOfBlocks: Int
+    school: School
+    programmes: [Programme]
   }
 
   type Courses {

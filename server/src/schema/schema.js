@@ -1,7 +1,10 @@
 import { gql } from "apollo-server-express";
+import CollegeSchema from "./College";
 import CourseSchema from "./Course";
+import FacultySchema from "./Faculty";
 import ProgrammeSchema from "./Programme";
-import UserSchema from "./user";
+import SchoolSchema from "./School";
+import UserSchema from "./User";
 
 const schema = gql`
   type Query {
@@ -19,6 +22,9 @@ const schema = gql`
   ${UserSchema}
   ${CourseSchema}
   ${ProgrammeSchema}
+  ${CollegeSchema}
+  ${SchoolSchema}
+  ${FacultySchema}
 `;
 
 export default schema;

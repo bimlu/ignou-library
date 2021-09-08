@@ -6,13 +6,28 @@ import { gql } from "apollo-server-express";
 const ProgrammeSchema = gql`
   type Programme {
     code: String
-    title: String
-    type: String
+    name: String
     deliveryMode: String
     level: String
     termType: String
     termCount: Int
-    courses: Courses
+    minDuration: Int
+    maxDuration: Int
+    fee: String
+    minAge: Int
+    maxAge: Int
+    eligibility: String
+    detail: ProgrammeDetail
+    courses: [Course]
+  }
+
+  type ProgrammeDetail {
+    overview: String
+    objectives: String
+    programmmeStructure: String
+    feeDetails: String
+    mediumOfInstruction: String
+    programmeCoordinator: String
   }
 
   type Programmes {

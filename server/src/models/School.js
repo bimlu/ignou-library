@@ -14,7 +14,7 @@ const schoolSchema = Schema(
     introduction: String,
     programmes: [{ type: String, ref: "Programme" }],
     programmesUnderDev: [{ type: String, ref: "Programme" }],
-    faculty: [{ type: String, ref: "Faculty" }],
+    faculties: [{ type: String, ref: "Faculty" }],
     activities: String,
     projects: String,
     publications: String,
