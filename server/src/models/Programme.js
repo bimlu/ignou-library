@@ -6,9 +6,11 @@ const programmmeDetailSchema = new Schema({
   overview: String,
   objectives: String,
   programmmeStructure: String,
-  feeDetails: String,
-  mediumOfInstruction: String, // e.g. English, Hindi
   programmeCoordinator: String,
+  eligibility: String,
+  mediumOfInstruction: String,
+  duration: String,
+  feeStructure: String,
 });
 
 /**
@@ -21,14 +23,14 @@ const programmeSchema = Schema(
     deliveryMode: String, // distance | online | regular
     level: String, // doctoralDegree | mphilProgramme | bachelorsDegree | mastersDegree | diploma | pgDiploma | pgAndAdvanceDiploma | pgAndAdvanceCertificate | pgAndAdvanceDiploma | pgAndAdvanceCertificate | certificate | nonCreditProgrammes | onlineProgrammes
     termType: String, // semester|year
-    termCount: Number, // 1-6
-    minDuration: Number, // in months
-    maxDuration: Number, // in months
-    fee: String,
-    minAge: Number, // in years
-    maxAge: Number, // in years
-    eligibility: String,
+    termCount: String, // 1-6
+    minDuration: String, // 3y or 48m
+    maxDuration: String,
+    fee: String, // for full programme
+    minAge: String, // 18 or nobar
+    maxAge: String,
     detail: programmmeDetailSchema,
+    school: { type: String, ref: "School" },
     courses: [
       {
         type: String, // course code

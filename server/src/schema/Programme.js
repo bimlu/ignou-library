@@ -10,14 +10,14 @@ const ProgrammeSchema = gql`
     deliveryMode: String
     level: String
     termType: String
-    termCount: Int
-    minDuration: Int
-    maxDuration: Int
+    termCount: String
+    minDuration: String
+    maxDuration: String
     fee: String
-    minAge: Int
-    maxAge: Int
-    eligibility: String
+    minAge: String
+    maxAge: String
     detail: ProgrammeDetail
+    school: School
     courses: [Course]
   }
 
@@ -25,9 +25,11 @@ const ProgrammeSchema = gql`
     overview: String
     objectives: String
     programmmeStructure: String
-    feeDetails: String
-    mediumOfInstruction: String
     programmeCoordinator: String
+    eligibility: String
+    mediumOfInstruction: String
+    duration: String
+    feeStructure: String
   }
 
   type Programmes {
