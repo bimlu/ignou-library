@@ -664,6 +664,35 @@ export const createProgrammes = () => {
         ["Dr. Subodh Kesharwani", "skesharwani@ignou.ac.in", "011-29573018"],
       ],
     },
+    {
+      code: "BSCG",
+      name: "Bachelor of Science",
+      school: "SOS",
+      level: "bachelorsDegree",
+      objectives: [
+        `To provide higher education required for a B.Sc. degree in conformity with the UGC-CBCS to
+        aspirants (including learners from the deprived sections and those living in remote and rural areas)
+        seeking the degree for employment, further higher education, promotion in career and professional
+        development.`,
+      ],
+      eligibility:
+        ":10+2 with science subjects or its equivalent qualification.",
+      mediumOfInstruction: "English & Hindi",
+      duration:
+        "Minimum 3 years and Maximum 6 years; offered in both January and July cycle of admission",
+      feeStructure: `Rs. 14,700/- for full programme to be paid year wise @ Rs.4,900/- per year. Fee to be paid in first
+        year, including Registration Fee of Rs.200/- is Rs.5,100/- `,
+      categories: [
+        ["DSC", "Discipline Specific Core Courses"],
+        ["DSE", "Discipline Specific Electives"],
+        ["AECC", "Ability Enhancement Compulsory Courses"],
+        ["SEC", "Skill Enhancement Courses"],
+      ],
+      courses: [
+        // ['courseCode', 'courseTitle', 'credits', 'category', 'discipline']
+        ["", "", ""],
+      ],
+    },
   ];
 
   Programme.insertMany(programmes, (err, docs) => {
