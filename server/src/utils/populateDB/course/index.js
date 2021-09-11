@@ -1,12 +1,16 @@
-import Course from "../../../models/Course";
-import { courses } from "./course_list";
+// import Course from "../../../models/Course";
+import { getCourses } from "./courses";
 
 export const createCourses = () => {
-  Course.insertMany(courses, (err, docs) => {
-    if (err) {
-      console.log(err);
-    } else {
-      console.log("Courses created");
-    }
-  });
+  const courses = getCourses();
+
+  console.log(courses);
+
+  // Course.insertMany(courses, (err, docs) => {
+  //   if (err) {
+  //     console.log(err);
+  //   } else {
+  //     console.log("Courses created");
+  //   }
+  // });
 };

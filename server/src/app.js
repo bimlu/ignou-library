@@ -4,9 +4,10 @@ import { createServer } from "http";
 import mongoose from "mongoose";
 import { createApolloServer } from "./apollo-server";
 import models from "./models";
-import Course from "./models/Course";
+// import Course from "./models/Course";
 import resolvers from "./resolvers";
 import schema from "./schema";
+import { populateDB } from "./utils/populateDB";
 
 dotenv.config(); // Configure Environment variables
 
@@ -21,7 +22,7 @@ mongoose
   .then(() => console.log("DB connected"))
   .catch((err) => console.error(err));
 
-// populateDB();
+populateDB();
 
 // Initializes application
 const app = express();
@@ -48,9 +49,9 @@ httpServer.listen({ port: process.env.API_PORT }, () => {
   console.log(`Server listening on port ${process.env.API_PORT}`);
 });
 
-Course.find({})
-  .populate("school")
-  .exec((err, res) => {
-    if (err) throw err;
-    console.log(res);
-  });
+// Course.find({})
+//   .populate("school")
+//   .exec((err, res) => {
+//     if (err) throw err;
+//     console.log(res);
+//   });
