@@ -1,3 +1,5 @@
+import fs from "fs";
+import path from "path";
 import { bachelorsDegreeCourses } from "./bachelors-degree";
 import { bachelorsHonoursDegreeCourses } from "./bachelors-honours-degree";
 import { mastersDegreeCourse } from "./masters-degree";
@@ -36,4 +38,12 @@ export const getCourses = () => {
   }
 
   return outCourses;
+};
+
+export const saveCourses = (cleanedCourses) => {
+  const filePath = path.resolve(__dirname, "cleanedCourses.json");
+  fs.writeFileSync(filePath, cleanedCourses, (err) => {
+    if (err) return console.log(err);
+    console.log("file saved!");
+  });
 };
