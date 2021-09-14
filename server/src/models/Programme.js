@@ -3,14 +3,22 @@ import mongoose from "mongoose";
 const Schema = mongoose.Schema;
 
 const programmmeDetailSchema = new Schema({
-  overview: String,
-  objectives: String,
-  programmmeStructure: String,
-  programmeCoordinator: String,
-  eligibility: String,
-  mediumOfInstruction: String,
-  duration: String,
-  feeStructure: String,
+  1: [[{ type: String, ref: "Course" }, Number]],
+  2: [[{ type: String, ref: "Course" }, Number]],
+  3: [[{ type: String, ref: "Course" }, Number]],
+  4: [[{ type: String, ref: "Course" }, Number]],
+  5: [[{ type: String, ref: "Course" }, Number]],
+  6: [[{ type: String, ref: "Course" }, Number]],
+});
+
+const courseListSchema = new Schema({
+  ALL: [{ type: String, ref: "Course" }],
+  CC: [{ type: String, ref: "Course" }],
+  DSE: [{ type: String, ref: "Course" }],
+  AECC: [{ type: String, ref: "Course" }],
+  SEC: [{ type: String, ref: "Course" }],
+  GE: [{ type: String, ref: "Course" }],
+  LA: [{ type: String, ref: "Course" }],
 });
 
 /**
@@ -20,23 +28,9 @@ const programmeSchema = Schema(
   {
     code: String,
     name: String,
-    deliveryMode: String, // distance | online | regular
-    level: String, // doctoralDegree | mphilProgramme | bachelorsDegree | mastersDegree | diploma | pgDiploma | pgAndAdvanceDiploma | pgAndAdvanceCertificate | pgAndAdvanceDiploma | pgAndAdvanceCertificate | certificate | nonCreditProgrammes | onlineProgrammes
-    termType: String, // semester|year
-    termCount: String, // 1-6
-    minDuration: String, // 3y or 48m
-    maxDuration: String,
-    fee: String, // for full programme
-    minAge: String, // 18 or nobar
-    maxAge: String,
-    detail: programmmeDetailSchema,
+    programmmeDetail: programmmeDetailSchema,
+    courseList: courseListSchema,
     school: { type: String, ref: "School" },
-    courses: [
-      {
-        type: String, // course code
-        ref: "Course",
-      },
-    ],
   },
   {
     timestamps: true,
