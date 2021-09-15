@@ -2,7 +2,7 @@ export const bachelorsDegreeProgrammes = [
   {
     code: "BAG",
     name: "Bachelor of Arts",
-    courses: {
+    courseList: {
       ALL: [],
       CC: [
         "BANC-131",
@@ -171,7 +171,7 @@ export const bachelorsDegreeProgrammes = [
   {
     code: "BCOMG",
     name: "Bachelor of Commerce",
-    courses: {
+    courseList: {
       ALL: [],
       CC: [
         "BCOC-131",
@@ -199,7 +199,7 @@ export const bachelorsDegreeProgrammes = [
   {
     code: "BSCG",
     name: "Bachelor of Science",
-    courses: {
+    courseList: {
       ALL: [],
       CC: [
         "BBYCT-131",
@@ -312,7 +312,7 @@ export const bachelorsDegreeProgrammes = [
   {
     code: "BCA",
     name: "Bachelor of Computer Applications",
-    courses: {
+    courseList: {
       ALL: [],
       CC: [],
       DSE: [],
@@ -320,117 +320,119 @@ export const bachelorsDegreeProgrammes = [
       SEC: [],
       GE: [],
       LA: [],
-      1: [
-        ["FEG-2", 4],
-        ["ECO-1", 4],
-        ["BCS-11", 3],
-        ["BCS-12", 4],
-        ["BCSL-13", 2],
+    },
+    programmeDetail: {
+      first: [
+        { course: "FEG-2", credit: 4 },
+        { course: "ECO-1", credit: 4 },
+        { course: "BCS-11", credit: 3 },
+        { course: "BCS-12", credit: 4 },
+        { course: "BCSL-13", credit: 2 },
       ],
-      2: [
-        ["ECO-2", 4],
-        ["MCS-11", 3],
-        ["MCS-12", 4],
-        ["MCS-15", 2],
-        ["MCS-13", 2],
-        ["BCSL-21", 1],
-        ["BCSL-22", 1],
+      second: [
+        { course: "ECO-2", credit: 4 },
+        { course: "MCS-11", credit: 3 },
+        { course: "MCS-12", credit: 4 },
+        { course: "MCS-15", credit: 2 },
+        { course: "MCS-13", credit: 2 },
+        { course: "BCSL-21", credit: 1 },
+        { course: "BCSL-22", credit: 1 },
       ],
-      3: [
-        ["MCS-21", 4],
-        ["MCS-23", 3],
-        ["MCS-14", 3],
-        ["BCS-31", 3],
-        ["BCSL-32", 1],
-        ["BCSL-33", 1],
-        ["BCSL-34", 1],
+      third: [
+        { course: "MCS-21", credit: 4 },
+        { course: "MCS-23", credit: 3 },
+        { course: "MCS-14", credit: 3 },
+        { course: "BCS-31", credit: 3 },
+        { course: "BCSL-32", credit: 1 },
+        { course: "BCSL-33", credit: 1 },
+        { course: "BCSL-34", credit: 1 },
       ],
-      4: [
-        ["BCS-40", 4],
-        ["MCS-24", 3],
-        ["BCS-41", 4],
-        ["BCS-42", 2],
-        ["MCSL-16", 2],
-        ["BCSL-43", 1],
-        ["BCSL-44", 1],
-        ["BCSL-45", 1],
+      fourth: [
+        { course: "BCS-40", credit: 4 },
+        { course: "MCS-24", credit: 3 },
+        { course: "BCS-41", credit: 4 },
+        { course: "BCS-42", credit: 2 },
+        { course: "MCSL-16", credit: 2 },
+        { course: "BCSL-43", credit: 1 },
+        { course: "BCSL-44", credit: 1 },
+        { course: "BCSL-45", credit: 1 },
       ],
-      5: [
-        ["BCS-51", 3],
-        ["BCS-52", 3],
-        ["BCS-53", 2],
-        ["BCS-54", 3],
-        ["BCS-55", 2],
-        ["BCSL-56", 1],
-        ["BCSL-57", 1],
-        ["BCSL-58", 1],
+      fifth: [
+        { course: "BCS-51", credit: 3 },
+        { course: "BCS-52", credit: 3 },
+        { course: "BCS-53", credit: 2 },
+        { course: "BCS-54", credit: 3 },
+        { course: "BCS-55", credit: 2 },
+        { course: "BCSL-56", credit: 1 },
+        { course: "BCSL-57", credit: 1 },
+        { course: "BCSL-58", credit: 1 },
       ],
-      6: [
-        ["BCS-62", 2],
-        ["MCS-22", 4],
-        ["BCSL-63", 1],
-        ["BCSP-64", 8],
+      sixth: [
+        { course: "BCS-62", credit: 2 },
+        { course: "MCS-22", credit: 4 },
+        { course: "BCSL-63", credit: 1 },
+        { course: "BCSP-64", credit: 8 },
       ],
     },
   },
-  {
-    code: "BLIS",
-    name: "",
-    courses: {
-      ALL: ["", "", "", "", ""],
-      CC: ["", "", "", "", ""],
-      DSE: ["", "", "", "", ""],
-      AECC: ["", "", "", "", ""],
-      SEC: ["", "", "", "", ""],
-      GE: ["", "", "", "", ""],
-    },
-  },
-  {
-    code: "BTS",
-    name: "",
-    courses: {
-      ALL: ["", "", "", "", ""],
-      CC: ["", "", "", "", ""],
-      DSE: ["", "", "", "", ""],
-      AECC: ["", "", "", "", ""],
-      SEC: ["", "", "", "", ""],
-      GE: ["", "", "", "", ""],
-    },
-  },
-  {
-    code: "BSWG",
-    name: "",
-    courses: {
-      ALL: ["", "", "", "", ""],
-      CC: ["", "", "", "", ""],
-      DSE: ["", "", "", "", ""],
-      AECC: ["", "", "", "", ""],
-      SEC: ["", "", "", "", ""],
-      GE: ["", "", "", "", ""],
-    },
-  },
-  {
-    code: "BBARL",
-    name: "",
-    courses: {
-      ALL: ["", "", "", "", ""],
-      CC: ["", "", "", "", ""],
-      DSE: ["", "", "", "", ""],
-      AECC: ["", "", "", "", ""],
-      SEC: ["", "", "", "", ""],
-      GE: ["", "", "", "", ""],
-    },
-  },
-  {
-    code: "BAVTM",
-    name: "",
-    courses: {
-      ALL: ["", "", "", "", ""],
-      CC: ["", "", "", "", ""],
-      DSE: ["", "", "", "", ""],
-      AECC: ["", "", "", "", ""],
-      SEC: ["", "", "", "", ""],
-      GE: ["", "", "", "", ""],
-    },
-  },
+  // {
+  //   code: "BLIS",
+  //   name: "",
+  //   courseList: {
+  //     ALL: ["", "", "", "", ""],
+  //     CC: ["", "", "", "", ""],
+  //     DSE: ["", "", "", "", ""],
+  //     AECC: ["", "", "", "", ""],
+  //     SEC: ["", "", "", "", ""],
+  //     GE: ["", "", "", "", ""],
+  //   },
+  // },
+  // {
+  //   code: "BTS",
+  //   name: "",
+  //   courseList: {
+  //     ALL: ["", "", "", "", ""],
+  //     CC: ["", "", "", "", ""],
+  //     DSE: ["", "", "", "", ""],
+  //     AECC: ["", "", "", "", ""],
+  //     SEC: ["", "", "", "", ""],
+  //     GE: ["", "", "", "", ""],
+  //   },
+  // },
+  // {
+  //   code: "BSWG",
+  //   name: "",
+  //   courseList: {
+  //     ALL: ["", "", "", "", ""],
+  //     CC: ["", "", "", "", ""],
+  //     DSE: ["", "", "", "", ""],
+  //     AECC: ["", "", "", "", ""],
+  //     SEC: ["", "", "", "", ""],
+  //     GE: ["", "", "", "", ""],
+  //   },
+  // },
+  // {
+  //   code: "BBARL",
+  //   name: "",
+  //   courseList: {
+  //     ALL: ["", "", "", "", ""],
+  //     CC: ["", "", "", "", ""],
+  //     DSE: ["", "", "", "", ""],
+  //     AECC: ["", "", "", "", ""],
+  //     SEC: ["", "", "", "", ""],
+  //     GE: ["", "", "", "", ""],
+  //   },
+  // },
+  // {
+  //   code: "BAVTM",
+  //   name: "",
+  //   courseList: {
+  //     ALL: ["", "", "", "", ""],
+  //     CC: ["", "", "", "", ""],
+  //     DSE: ["", "", "", "", ""],
+  //     AECC: ["", "", "", "", ""],
+  //     SEC: ["", "", "", "", ""],
+  //     GE: ["", "", "", "", ""],
+  //   },
+  // },
 ];

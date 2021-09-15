@@ -24,12 +24,12 @@ export const getCourses = () => {
     .concat(mastersDegreeCourse);
   const outCourses = [];
 
-  console.log("bachelorsDegreeCourses: ", bachelorsDegreeCourses.length);
-  console.log(
-    "bachelorsHonoursDegreeCourses: ",
-    bachelorsHonoursDegreeCourses.length
-  );
-  console.log("mastersDegreeCourse: ", mastersDegreeCourse.length);
+  // console.log("bachelorsDegreeCourses: ", bachelorsDegreeCourses.length);
+  // console.log(
+  //   "bachelorsHonoursDegreeCourses: ",
+  //   bachelorsHonoursDegreeCourses.length
+  // );
+  // console.log("mastersDegreeCourse: ", mastersDegreeCourse.length);
 
   for (let course of inCourses) {
     if (!isDuplicate(outCourses, course)) {

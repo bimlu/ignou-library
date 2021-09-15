@@ -7,29 +7,33 @@ const ProgrammeSchema = gql`
   type Programme {
     code: String
     name: String
-    deliveryMode: String
-    level: String
-    termType: String
-    termCount: String
-    minDuration: String
-    maxDuration: String
-    fee: String
-    minAge: String
-    maxAge: String
-    detail: ProgrammeDetail
+    programmeDetail: ProgrammeDetail
+    courseList: CourseList
     school: School
-    courses: [Course]
+  }
+
+  type CourseList {
+    ALL: [Course]
+    CC: [Course]
+    DSE: [Course]
+    AECC: [Course]
+    SEC: [Course]
+    GE: [Course]
+    LA: [Course]
   }
 
   type ProgrammeDetail {
-    overview: String
-    objectives: String
-    programmmeStructure: String
-    programmeCoordinator: String
-    eligibility: String
-    mediumOfInstruction: String
-    duration: String
-    feeStructure: String
+    first: [CourseCreditPair]
+    second: [CourseCreditPair]
+    third: [CourseCreditPair]
+    fourth: [CourseCreditPair]
+    fifth: [CourseCreditPair]
+    sixth: [CourseCreditPair]
+  }
+
+  type CourseCreditPair {
+    course: Course
+    credit: Int
   }
 
   type Programmes {
