@@ -65,4 +65,8 @@ Programme.find({})
   .exec((err, res) => {
     if (err) throw err;
     console.log(res);
+    console.log("**************\n\n");
+    console.log(res[0].courseList.CC);
+    console.log("-------------\n\n");
+    console.log(res[res.length - 1].programmeDetail.first);
   });
