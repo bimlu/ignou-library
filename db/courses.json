@@ -1,0 +1,3051 @@
+[{
+	"_id": {
+		"$oid": "605a4751198e3f5b2e715c90"
+	},
+	"posts": [
+		{
+			"$oid": "605a4836198e3f5b2e715c92"
+		},
+		{
+			"$oid": "605b2c96ed11e7674e361116"
+		},
+		{
+			"$oid": "605b2d6ced11e7674e36112a"
+		},
+		{
+			"$oid": "605d6b5545c53d967d3ea833"
+		},
+		{
+			"$oid": "605d6b6945c53d967d3ea835"
+		},
+		{
+			"$oid": "60603d77bf7ee0b3778db166"
+		},
+		{
+			"$oid": "6081775f56a28e52c724c5a3"
+		},
+		{
+			"$oid": "6081784156a28e52c724c5a5"
+		}
+	],
+	"postsCount": 8,
+	"students": [
+		{
+			"$oid": "605b2c58ed11e7674e361111"
+		},
+		{
+			"$oid": "60603d30bf7ee0b3778db15f"
+		},
+		{
+			"$oid": "606072bfbf7ee0b3778db190"
+		}
+	],
+	"studentsCount": 3,
+	"name": "BCS-011",
+	"fullName": "Computer Basics and PC Software",
+	"createdBy": {
+		"$oid": "605a30dd8a9ba159fdfaa90d"
+	},
+	"description": "💡🤓",
+	"image": "https://bimlee-live-1.s3.ap-south-1.amazonaws.com/course/813866b4-fa3b-4bec-ab90-26f9256a17b2.jpg",
+	"imagePublicId": "course/813866b4-fa3b-4bec-ab90-26f9256a17b2.jpg",
+	"college": {
+		"$oid": "605a4638198e3f5b2e715c8c"
+	},
+	"programme": {
+		"$oid": "605a46c1198e3f5b2e715c8e"
+	},
+	"createdAt": {
+		"$date": "2021-03-23T19:53:53.593Z"
+	},
+	"updatedAt": {
+		"$date": "2021-04-26T17:36:25.941Z"
+	},
+	"__v": 0,
+	"verified": true,
+	"updatedBy": {
+		"$oid": "605a30dd8a9ba159fdfaa90d"
+	},
+	"term": 1
+},
+{
+	"_id": {
+		"$oid": "6067d8410ddec462aa972bab"
+	},
+	"posts": [
+		{
+			"$oid": "60811172bde2bb4c4f39f9f5"
+		},
+		{
+			"$oid": "60817d0756a28e52c724c5aa"
+		}
+	],
+	"postsCount": 2,
+	"students": [
+		{
+			"$oid": "605a30dd8a9ba159fdfaa90d"
+		}
+	],
+	"studentsCount": 1,
+	"name": "FEG-02",
+	"fullName": "Foundation course in English -2",
+	"createdBy": {
+		"$oid": "605a30dd8a9ba159fdfaa90d"
+	},
+	"description": "**Add description**",
+	"image": "https://bimlee-dev-1.s3.ap-south-1.amazonaws.com/course/ce18f62e-3f9d-4bda-814a-fd0a3bc834ca.jpg",
+	"imagePublicId": "course/ce18f62e-3f9d-4bda-814a-fd0a3bc834ca.jpg",
+	"college": {
+		"$oid": "605a4638198e3f5b2e715c8c"
+	},
+	"programme": {
+		"$oid": "605a46c1198e3f5b2e715c8e"
+	},
+	"createdAt": {
+		"$date": "2021-04-03T02:51:45.64Z"
+	},
+	"updatedAt": {
+		"$date": "2021-04-22T13:41:27.216Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "6067d86f0ddec462aa972bac"
+	},
+	"posts": [
+		{
+			"$oid": "608176f256a28e52c724c5a1"
+		}
+	],
+	"postsCount": 1,
+	"students": [],
+	"studentsCount": 0,
+	"name": "ECO-01",
+	"fullName": "Business Organization",
+	"createdBy": {
+		"$oid": "605a30dd8a9ba159fdfaa90d"
+	},
+	"description": "*",
+	"image": "https://bimlee-dev-1.s3.ap-south-1.amazonaws.com/course/3bbe5c78-111e-4ab3-92bd-28586d86eb47.jpg",
+	"imagePublicId": "course/3bbe5c78-111e-4ab3-92bd-28586d86eb47.jpg",
+	"college": {
+		"$oid": "605a4638198e3f5b2e715c8c"
+	},
+	"programme": {
+		"$oid": "605a46c1198e3f5b2e715c8e"
+	},
+	"createdAt": {
+		"$date": "2021-04-03T02:52:31.972Z"
+	},
+	"updatedAt": {
+		"$date": "2021-04-22T13:38:25.123Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "6067d89b0ddec462aa972bad"
+	},
+	"posts": [],
+	"postsCount": 0,
+	"students": [
+		{
+			"$oid": "605a30dd8a9ba159fdfaa90d"
+		}
+	],
+	"studentsCount": 1,
+	"name": "BCS-012",
+	"fullName": "Mathematics",
+	"createdBy": {
+		"$oid": "605a30dd8a9ba159fdfaa90d"
+	},
+	"description": "*",
+	"image": "https://bimlee-dev-1.s3.ap-south-1.amazonaws.com/course/0135ceba-faf7-4099-9a01-aaea1e388c44.jpg",
+	"imagePublicId": "course/0135ceba-faf7-4099-9a01-aaea1e388c44.jpg",
+	"college": {
+		"$oid": "605a4638198e3f5b2e715c8c"
+	},
+	"programme": {
+		"$oid": "605a46c1198e3f5b2e715c8e"
+	},
+	"createdAt": {
+		"$date": "2021-04-03T02:53:15.816Z"
+	},
+	"updatedAt": {
+		"$date": "2021-04-18T03:10:56.392Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "6067d8d60ddec462aa972bae"
+	},
+	"posts": [
+		{
+			"$oid": "608179c556a28e52c724c5a7"
+		}
+	],
+	"postsCount": 1,
+	"students": [],
+	"studentsCount": 0,
+	"name": "BCSL-013",
+	"fullName": "Computer Basics and PC Software Lab",
+	"createdBy": {
+		"$oid": "605a30dd8a9ba159fdfaa90d"
+	},
+	"description": "*",
+	"image": "https://bimlee-dev-1.s3.ap-south-1.amazonaws.com/course/b3b94a1c-4247-48b4-bc94-dee58e8b2ebb.jpg",
+	"imagePublicId": "course/b3b94a1c-4247-48b4-bc94-dee58e8b2ebb.jpg",
+	"college": {
+		"$oid": "605a4638198e3f5b2e715c8c"
+	},
+	"programme": {
+		"$oid": "605a46c1198e3f5b2e715c8e"
+	},
+	"createdAt": {
+		"$date": "2021-04-03T02:54:14.381Z"
+	},
+	"updatedAt": {
+		"$date": "2021-04-22T13:27:33.98Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "6067d9c50ddec462aa972baf"
+	},
+	"posts": [],
+	"postsCount": 0,
+	"students": [],
+	"studentsCount": 0,
+	"name": "ECO-02",
+	"fullName": "Accountancy-1",
+	"createdBy": {
+		"$oid": "605a30dd8a9ba159fdfaa90d"
+	},
+	"description": "*",
+	"image": "https://bimlee-dev-1.s3.ap-south-1.amazonaws.com/course/b0e564d5-db00-4863-af1b-13914840bdcd.jpg",
+	"imagePublicId": "course/b0e564d5-db00-4863-af1b-13914840bdcd.jpg",
+	"college": {
+		"$oid": "605a4638198e3f5b2e715c8c"
+	},
+	"programme": {
+		"$oid": "605a46c1198e3f5b2e715c8e"
+	},
+	"createdAt": {
+		"$date": "2021-04-03T02:58:13.421Z"
+	},
+	"updatedAt": {
+		"$date": "2021-04-06T13:55:51.948Z"
+	},
+	"__v": 0,
+	"term": 2,
+	"updatedBy": {
+		"$oid": "605a30dd8a9ba159fdfaa90d"
+	}
+},
+{
+	"_id": {
+		"$oid": "6067dae40ddec462aa972bb1"
+	},
+	"posts": [],
+	"postsCount": 0,
+	"students": [],
+	"studentsCount": 0,
+	"name": "MCS-011",
+	"fullName": "Problem Solving and Programming",
+	"createdBy": {
+		"$oid": "605a30dd8a9ba159fdfaa90d"
+	},
+	"description": "*",
+	"image": "https://bimlee-dev-1.s3.ap-south-1.amazonaws.com/course/f81b420a-32d3-4078-9bef-76c74162c9d6.jpg",
+	"imagePublicId": "course/f81b420a-32d3-4078-9bef-76c74162c9d6.jpg",
+	"college": {
+		"$oid": "605a4638198e3f5b2e715c8c"
+	},
+	"programme": {
+		"$oid": "605a46c1198e3f5b2e715c8e"
+	},
+	"createdAt": {
+		"$date": "2021-04-03T03:03:00.414Z"
+	},
+	"updatedAt": {
+		"$date": "2021-04-06T13:56:38.24Z"
+	},
+	"__v": 0,
+	"term": 2,
+	"updatedBy": {
+		"$oid": "605a30dd8a9ba159fdfaa90d"
+	}
+},
+{
+	"_id": {
+		"$oid": "6067db120ddec462aa972bb2"
+	},
+	"posts": [],
+	"postsCount": 0,
+	"students": [],
+	"studentsCount": 0,
+	"name": "MCS-012",
+	"fullName": "Computer Organization and Assembly Language Programming",
+	"createdBy": {
+		"$oid": "605a30dd8a9ba159fdfaa90d"
+	},
+	"description": "*",
+	"image": "https://bimlee-dev-1.s3.ap-south-1.amazonaws.com/course/62339ea5-b125-4c83-8d7b-9fcb9193cb45.jpg",
+	"imagePublicId": "course/62339ea5-b125-4c83-8d7b-9fcb9193cb45.jpg",
+	"college": {
+		"$oid": "605a4638198e3f5b2e715c8c"
+	},
+	"programme": {
+		"$oid": "605a46c1198e3f5b2e715c8e"
+	},
+	"createdAt": {
+		"$date": "2021-04-03T03:03:46.411Z"
+	},
+	"updatedAt": {
+		"$date": "2021-04-06T13:57:05.281Z"
+	},
+	"__v": 0,
+	"term": 2,
+	"updatedBy": {
+		"$oid": "605a30dd8a9ba159fdfaa90d"
+	}
+},
+{
+	"_id": {
+		"$oid": "6067db300ddec462aa972bb3"
+	},
+	"posts": [],
+	"postsCount": 0,
+	"students": [],
+	"studentsCount": 0,
+	"name": "MCS-015",
+	"fullName": "Communication Skills",
+	"createdBy": {
+		"$oid": "605a30dd8a9ba159fdfaa90d"
+	},
+	"description": "*",
+	"image": "https://bimlee-dev-1.s3.ap-south-1.amazonaws.com/course/db1132e0-20fc-48c8-b2a7-ae9b4c96a954.jpg",
+	"imagePublicId": "course/db1132e0-20fc-48c8-b2a7-ae9b4c96a954.jpg",
+	"college": {
+		"$oid": "605a4638198e3f5b2e715c8c"
+	},
+	"programme": {
+		"$oid": "605a46c1198e3f5b2e715c8e"
+	},
+	"createdAt": {
+		"$date": "2021-04-03T03:04:16.892Z"
+	},
+	"updatedAt": {
+		"$date": "2021-04-06T13:57:23.741Z"
+	},
+	"__v": 0,
+	"term": 2,
+	"updatedBy": {
+		"$oid": "605a30dd8a9ba159fdfaa90d"
+	}
+},
+{
+	"_id": {
+		"$oid": "6067db4d0ddec462aa972bb4"
+	},
+	"posts": [],
+	"postsCount": 0,
+	"students": [
+		{
+			"$oid": "605a30dd8a9ba159fdfaa90d"
+		}
+	],
+	"studentsCount": 1,
+	"name": "MCS-013",
+	"fullName": "Discrete Mathematics",
+	"createdBy": {
+		"$oid": "605a30dd8a9ba159fdfaa90d"
+	},
+	"description": "*",
+	"image": "https://bimlee-dev-1.s3.ap-south-1.amazonaws.com/course/27309965-1bcb-42b2-b75d-c60f3a3c34a6.jpg",
+	"imagePublicId": "course/27309965-1bcb-42b2-b75d-c60f3a3c34a6.jpg",
+	"college": {
+		"$oid": "605a4638198e3f5b2e715c8c"
+	},
+	"programme": {
+		"$oid": "605a46c1198e3f5b2e715c8e"
+	},
+	"createdAt": {
+		"$date": "2021-04-03T03:04:45.776Z"
+	},
+	"updatedAt": {
+		"$date": "2021-04-14T10:43:14.415Z"
+	},
+	"__v": 0,
+	"term": 2,
+	"updatedBy": {
+		"$oid": "605a30dd8a9ba159fdfaa90d"
+	}
+},
+{
+	"_id": {
+		"$oid": "6067db7d0ddec462aa972bb5"
+	},
+	"posts": [],
+	"postsCount": 0,
+	"students": [],
+	"studentsCount": 0,
+	"name": "BCSL-021",
+	"fullName": "C Language Programming Lab",
+	"createdBy": {
+		"$oid": "605a30dd8a9ba159fdfaa90d"
+	},
+	"description": "*",
+	"image": "https://bimlee-dev-1.s3.ap-south-1.amazonaws.com/course/09388b61-6756-400e-b827-ded7ed0da6bd.jpg",
+	"imagePublicId": "course/09388b61-6756-400e-b827-ded7ed0da6bd.jpg",
+	"college": {
+		"$oid": "605a4638198e3f5b2e715c8c"
+	},
+	"programme": {
+		"$oid": "605a46c1198e3f5b2e715c8e"
+	},
+	"createdAt": {
+		"$date": "2021-04-03T03:05:33.477Z"
+	},
+	"updatedAt": {
+		"$date": "2021-04-06T13:58:33.366Z"
+	},
+	"__v": 0,
+	"term": 2,
+	"updatedBy": {
+		"$oid": "605a30dd8a9ba159fdfaa90d"
+	}
+},
+{
+	"_id": {
+		"$oid": "6067dba30ddec462aa972bb6"
+	},
+	"posts": [],
+	"postsCount": 0,
+	"students": [],
+	"studentsCount": 0,
+	"name": "BCSL-022",
+	"fullName": "Assembly Language Programming Lab",
+	"createdBy": {
+		"$oid": "605a30dd8a9ba159fdfaa90d"
+	},
+	"description": "*",
+	"image": "https://bimlee-dev-1.s3.ap-south-1.amazonaws.com/course/3576ffae-bd47-4a72-b60f-a69e2f635045.jpg",
+	"imagePublicId": "course/3576ffae-bd47-4a72-b60f-a69e2f635045.jpg",
+	"college": {
+		"$oid": "605a4638198e3f5b2e715c8c"
+	},
+	"programme": {
+		"$oid": "605a46c1198e3f5b2e715c8e"
+	},
+	"createdAt": {
+		"$date": "2021-04-03T03:06:11.356Z"
+	},
+	"updatedAt": {
+		"$date": "2021-04-06T13:59:14.155Z"
+	},
+	"__v": 0,
+	"term": 2,
+	"updatedBy": {
+		"$oid": "605a30dd8a9ba159fdfaa90d"
+	}
+},
+{
+	"_id": {
+		"$oid": "6067dbc50ddec462aa972bb7"
+	},
+	"posts": [],
+	"postsCount": 0,
+	"students": [],
+	"studentsCount": 0,
+	"name": "MCS-021",
+	"fullName": "Data and File Structures",
+	"createdBy": {
+		"$oid": "605a30dd8a9ba159fdfaa90d"
+	},
+	"description": "*",
+	"image": "https://bimlee-dev-1.s3.ap-south-1.amazonaws.com/course/ead0a1f1-d096-4eb2-ba0f-1892f9f64721.jpg",
+	"imagePublicId": "course/ead0a1f1-d096-4eb2-ba0f-1892f9f64721.jpg",
+	"college": {
+		"$oid": "605a4638198e3f5b2e715c8c"
+	},
+	"programme": {
+		"$oid": "605a46c1198e3f5b2e715c8e"
+	},
+	"createdAt": {
+		"$date": "2021-04-03T03:06:45.393Z"
+	},
+	"updatedAt": {
+		"$date": "2021-04-06T13:59:41.555Z"
+	},
+	"__v": 0,
+	"term": 3,
+	"updatedBy": {
+		"$oid": "605a30dd8a9ba159fdfaa90d"
+	}
+},
+{
+	"_id": {
+		"$oid": "6067dbeb0ddec462aa972bb8"
+	},
+	"posts": [],
+	"postsCount": 0,
+	"students": [],
+	"studentsCount": 0,
+	"name": "MCS-023",
+	"fullName": "Introduction to Database Management Systems",
+	"createdBy": {
+		"$oid": "605a30dd8a9ba159fdfaa90d"
+	},
+	"description": "*",
+	"image": "https://bimlee-dev-1.s3.ap-south-1.amazonaws.com/course/29665d81-de18-4e32-b59f-1bf93425d2ff.jpg",
+	"imagePublicId": "course/29665d81-de18-4e32-b59f-1bf93425d2ff.jpg",
+	"college": {
+		"$oid": "605a4638198e3f5b2e715c8c"
+	},
+	"programme": {
+		"$oid": "605a46c1198e3f5b2e715c8e"
+	},
+	"createdAt": {
+		"$date": "2021-04-03T03:07:23.099Z"
+	},
+	"updatedAt": {
+		"$date": "2021-04-06T14:00:04.306Z"
+	},
+	"__v": 0,
+	"term": 3,
+	"updatedBy": {
+		"$oid": "605a30dd8a9ba159fdfaa90d"
+	}
+},
+{
+	"_id": {
+		"$oid": "6067dc0d0ddec462aa972bb9"
+	},
+	"posts": [],
+	"postsCount": 0,
+	"students": [],
+	"studentsCount": 0,
+	"name": "MCS-014",
+	"fullName": "Systems Analysis and Design",
+	"createdBy": {
+		"$oid": "605a30dd8a9ba159fdfaa90d"
+	},
+	"description": "*",
+	"image": "https://bimlee-dev-1.s3.ap-south-1.amazonaws.com/course/48084b13-a052-4d0b-aef4-440813c4e898.jpg",
+	"imagePublicId": "course/48084b13-a052-4d0b-aef4-440813c4e898.jpg",
+	"college": {
+		"$oid": "605a4638198e3f5b2e715c8c"
+	},
+	"programme": {
+		"$oid": "605a46c1198e3f5b2e715c8e"
+	},
+	"createdAt": {
+		"$date": "2021-04-03T03:07:57.012Z"
+	},
+	"updatedAt": {
+		"$date": "2021-04-06T14:00:50.545Z"
+	},
+	"__v": 0,
+	"term": 3,
+	"updatedBy": {
+		"$oid": "605a30dd8a9ba159fdfaa90d"
+	}
+},
+{
+	"_id": {
+		"$oid": "6067dc270ddec462aa972bba"
+	},
+	"posts": [],
+	"postsCount": 0,
+	"students": [
+		{
+			"$oid": "605a30dd8a9ba159fdfaa90d"
+		}
+	],
+	"studentsCount": 1,
+	"name": "BCS-031",
+	"fullName": "Programming in C++",
+	"createdBy": {
+		"$oid": "605a30dd8a9ba159fdfaa90d"
+	},
+	"description": "*",
+	"image": "https://bimlee-dev-1.s3.ap-south-1.amazonaws.com/course/bc554c83-d944-4693-bf57-1fb1f4206563.jpg",
+	"imagePublicId": "course/bc554c83-d944-4693-bf57-1fb1f4206563.jpg",
+	"college": {
+		"$oid": "605a4638198e3f5b2e715c8c"
+	},
+	"programme": {
+		"$oid": "605a46c1198e3f5b2e715c8e"
+	},
+	"createdAt": {
+		"$date": "2021-04-03T03:08:23.189Z"
+	},
+	"updatedAt": {
+		"$date": "2021-04-14T10:43:27.579Z"
+	},
+	"__v": 0,
+	"term": 3,
+	"updatedBy": {
+		"$oid": "605a30dd8a9ba159fdfaa90d"
+	}
+},
+{
+	"_id": {
+		"$oid": "6067e36f931ea00229841de4"
+	},
+	"posts": [],
+	"postsCount": 0,
+	"students": [],
+	"studentsCount": 0,
+	"name": "BCSL-032",
+	"fullName": "C++ Programming Lab",
+	"createdBy": {
+		"$oid": "605a30dd8a9ba159fdfaa90d"
+	},
+	"description": "*",
+	"image": "https://bimlee-live-1.s3.ap-south-1.amazonaws.com/course/aba46062-f2f3-4537-a9c8-d10c449b0c2c.jpg",
+	"imagePublicId": "course/aba46062-f2f3-4537-a9c8-d10c449b0c2c.jpg",
+	"college": {
+		"$oid": "605a4638198e3f5b2e715c8c"
+	},
+	"programme": {
+		"$oid": "605a46c1198e3f5b2e715c8e"
+	},
+	"createdAt": {
+		"$date": "2021-04-03T03:39:27.451Z"
+	},
+	"updatedAt": {
+		"$date": "2021-04-06T14:01:48.395Z"
+	},
+	"__v": 0,
+	"term": 3,
+	"updatedBy": {
+		"$oid": "605a30dd8a9ba159fdfaa90d"
+	}
+},
+{
+	"_id": {
+		"$oid": "6067e398931ea00229841de5"
+	},
+	"posts": [],
+	"postsCount": 0,
+	"students": [],
+	"studentsCount": 0,
+	"name": "BCSL-033",
+	"fullName": "Data and File Stuctures Lab",
+	"createdBy": {
+		"$oid": "605a30dd8a9ba159fdfaa90d"
+	},
+	"description": "*",
+	"image": "https://bimlee-live-1.s3.ap-south-1.amazonaws.com/course/c0dc22a6-8897-4c00-aead-710ed5cdda89.jpg",
+	"imagePublicId": "course/c0dc22a6-8897-4c00-aead-710ed5cdda89.jpg",
+	"college": {
+		"$oid": "605a4638198e3f5b2e715c8c"
+	},
+	"programme": {
+		"$oid": "605a46c1198e3f5b2e715c8e"
+	},
+	"createdAt": {
+		"$date": "2021-04-03T03:40:08.615Z"
+	},
+	"updatedAt": {
+		"$date": "2021-04-06T14:02:21.755Z"
+	},
+	"__v": 0,
+	"term": 3,
+	"updatedBy": {
+		"$oid": "605a30dd8a9ba159fdfaa90d"
+	}
+},
+{
+	"_id": {
+		"$oid": "6067e3bb931ea00229841de6"
+	},
+	"posts": [],
+	"postsCount": 0,
+	"students": [],
+	"studentsCount": 0,
+	"name": "BCSL-034",
+	"fullName": "DBMS Lab",
+	"createdBy": {
+		"$oid": "605a30dd8a9ba159fdfaa90d"
+	},
+	"description": "*",
+	"image": "https://bimlee-live-1.s3.ap-south-1.amazonaws.com/course/b7fa2647-c086-4e3e-846b-c9165013fdba.jpg",
+	"imagePublicId": "course/b7fa2647-c086-4e3e-846b-c9165013fdba.jpg",
+	"college": {
+		"$oid": "605a4638198e3f5b2e715c8c"
+	},
+	"programme": {
+		"$oid": "605a46c1198e3f5b2e715c8e"
+	},
+	"createdAt": {
+		"$date": "2021-04-03T03:40:43.69Z"
+	},
+	"updatedAt": {
+		"$date": "2021-04-06T14:03:11.785Z"
+	},
+	"__v": 0,
+	"term": 3,
+	"updatedBy": {
+		"$oid": "605a30dd8a9ba159fdfaa90d"
+	}
+},
+{
+	"_id": {
+		"$oid": "6067e3e3931ea00229841de7"
+	},
+	"posts": [],
+	"postsCount": 0,
+	"students": [],
+	"studentsCount": 0,
+	"name": "BCS-040",
+	"fullName": "Statistical Techniques",
+	"createdBy": {
+		"$oid": "605a30dd8a9ba159fdfaa90d"
+	},
+	"description": "*",
+	"image": "https://bimlee-live-1.s3.ap-south-1.amazonaws.com/course/f371368e-e735-4eff-ac90-3445151e762b.jpg",
+	"imagePublicId": "course/f371368e-e735-4eff-ac90-3445151e762b.jpg",
+	"college": {
+		"$oid": "605a4638198e3f5b2e715c8c"
+	},
+	"programme": {
+		"$oid": "605a46c1198e3f5b2e715c8e"
+	},
+	"createdAt": {
+		"$date": "2021-04-03T03:41:23.946Z"
+	},
+	"updatedAt": {
+		"$date": "2021-04-06T14:03:54.455Z"
+	},
+	"__v": 0,
+	"term": 4,
+	"updatedBy": {
+		"$oid": "605a30dd8a9ba159fdfaa90d"
+	}
+},
+{
+	"_id": {
+		"$oid": "6067e412931ea00229841de8"
+	},
+	"posts": [],
+	"postsCount": 0,
+	"students": [],
+	"studentsCount": 0,
+	"name": "MCS-024",
+	"fullName": "Object Oriented Technologies and Java Programming",
+	"createdBy": {
+		"$oid": "605a30dd8a9ba159fdfaa90d"
+	},
+	"description": "*",
+	"image": "https://bimlee-live-1.s3.ap-south-1.amazonaws.com/course/d99055c0-ef81-40e9-a8ff-cd4143440cfb.jpg",
+	"imagePublicId": "course/d99055c0-ef81-40e9-a8ff-cd4143440cfb.jpg",
+	"college": {
+		"$oid": "605a4638198e3f5b2e715c8c"
+	},
+	"programme": {
+		"$oid": "605a46c1198e3f5b2e715c8e"
+	},
+	"createdAt": {
+		"$date": "2021-04-03T03:42:10.743Z"
+	},
+	"updatedAt": {
+		"$date": "2021-04-06T14:04:48.037Z"
+	},
+	"__v": 0,
+	"term": 4,
+	"updatedBy": {
+		"$oid": "605a30dd8a9ba159fdfaa90d"
+	}
+},
+{
+	"_id": {
+		"$oid": "6067e43b931ea00229841de9"
+	},
+	"posts": [],
+	"postsCount": 0,
+	"students": [],
+	"studentsCount": 0,
+	"name": "BCS-041",
+	"fullName": "Fundamentals of Computer Networks",
+	"createdBy": {
+		"$oid": "605a30dd8a9ba159fdfaa90d"
+	},
+	"description": "*",
+	"image": "https://bimlee-live-1.s3.ap-south-1.amazonaws.com/course/1ff4d005-005b-4c5c-a2b3-427174945167.jpg",
+	"imagePublicId": "course/1ff4d005-005b-4c5c-a2b3-427174945167.jpg",
+	"college": {
+		"$oid": "605a4638198e3f5b2e715c8c"
+	},
+	"programme": {
+		"$oid": "605a46c1198e3f5b2e715c8e"
+	},
+	"createdAt": {
+		"$date": "2021-04-03T03:42:51.737Z"
+	},
+	"updatedAt": {
+		"$date": "2021-04-06T14:05:27.849Z"
+	},
+	"__v": 0,
+	"term": 4,
+	"updatedBy": {
+		"$oid": "605a30dd8a9ba159fdfaa90d"
+	}
+},
+{
+	"_id": {
+		"$oid": "6067e462931ea00229841dea"
+	},
+	"posts": [],
+	"postsCount": 0,
+	"students": [],
+	"studentsCount": 0,
+	"name": "BCS-042",
+	"fullName": "Introduction to Algorithm Design",
+	"createdBy": {
+		"$oid": "605a30dd8a9ba159fdfaa90d"
+	},
+	"description": "*",
+	"image": "https://bimlee-live-1.s3.ap-south-1.amazonaws.com/course/6c36efce-50b6-47a5-a3a5-17a1ec363f9c.jpg",
+	"imagePublicId": "course/6c36efce-50b6-47a5-a3a5-17a1ec363f9c.jpg",
+	"college": {
+		"$oid": "605a4638198e3f5b2e715c8c"
+	},
+	"programme": {
+		"$oid": "605a46c1198e3f5b2e715c8e"
+	},
+	"createdAt": {
+		"$date": "2021-04-03T03:43:30.612Z"
+	},
+	"updatedAt": {
+		"$date": "2021-04-06T14:06:21.39Z"
+	},
+	"__v": 0,
+	"term": 4,
+	"updatedBy": {
+		"$oid": "605a30dd8a9ba159fdfaa90d"
+	}
+},
+{
+	"_id": {
+		"$oid": "6067e482931ea00229841deb"
+	},
+	"posts": [],
+	"postsCount": 0,
+	"students": [],
+	"studentsCount": 0,
+	"name": "MCSL-016",
+	"fullName": "Internet Concepts and Web Design",
+	"createdBy": {
+		"$oid": "605a30dd8a9ba159fdfaa90d"
+	},
+	"description": "*",
+	"image": "https://bimlee-live-1.s3.ap-south-1.amazonaws.com/course/b3119309-00d9-4fda-84d2-2c4c2d308bf7.jpg",
+	"imagePublicId": "course/b3119309-00d9-4fda-84d2-2c4c2d308bf7.jpg",
+	"college": {
+		"$oid": "605a4638198e3f5b2e715c8c"
+	},
+	"programme": {
+		"$oid": "605a46c1198e3f5b2e715c8e"
+	},
+	"createdAt": {
+		"$date": "2021-04-03T03:44:02.432Z"
+	},
+	"updatedAt": {
+		"$date": "2021-04-06T14:08:07.391Z"
+	},
+	"__v": 0,
+	"term": 4,
+	"updatedBy": {
+		"$oid": "605a30dd8a9ba159fdfaa90d"
+	}
+},
+{
+	"_id": {
+		"$oid": "6067e4ab931ea00229841dec"
+	},
+	"posts": [],
+	"postsCount": 0,
+	"students": [],
+	"studentsCount": 0,
+	"name": "BCS-043",
+	"fullName": "Java Programming Lab",
+	"createdBy": {
+		"$oid": "605a30dd8a9ba159fdfaa90d"
+	},
+	"description": "*",
+	"image": "https://bimlee-live-1.s3.ap-south-1.amazonaws.com/course/103b9f7f-d278-4440-ba01-c44d9d58ec39.jpg",
+	"imagePublicId": "course/103b9f7f-d278-4440-ba01-c44d9d58ec39.jpg",
+	"college": {
+		"$oid": "605a4638198e3f5b2e715c8c"
+	},
+	"programme": {
+		"$oid": "605a46c1198e3f5b2e715c8e"
+	},
+	"createdAt": {
+		"$date": "2021-04-03T03:44:43.959Z"
+	},
+	"updatedAt": {
+		"$date": "2021-04-06T14:07:48.106Z"
+	},
+	"__v": 0,
+	"term": 4,
+	"updatedBy": {
+		"$oid": "605a30dd8a9ba159fdfaa90d"
+	}
+},
+{
+	"_id": {
+		"$oid": "6067e4c9931ea00229841ded"
+	},
+	"posts": [],
+	"postsCount": 0,
+	"students": [],
+	"studentsCount": 0,
+	"name": "BCSL-044",
+	"fullName": "Statistical Techniques Lab",
+	"createdBy": {
+		"$oid": "605a30dd8a9ba159fdfaa90d"
+	},
+	"description": "*",
+	"image": "https://bimlee-live-1.s3.ap-south-1.amazonaws.com/course/4a421be8-1cc1-452e-a947-bba54855fd59.jpg",
+	"imagePublicId": "course/4a421be8-1cc1-452e-a947-bba54855fd59.jpg",
+	"college": {
+		"$oid": "605a4638198e3f5b2e715c8c"
+	},
+	"programme": {
+		"$oid": "605a46c1198e3f5b2e715c8e"
+	},
+	"createdAt": {
+		"$date": "2021-04-03T03:45:13.431Z"
+	},
+	"updatedAt": {
+		"$date": "2021-04-06T14:07:15.6Z"
+	},
+	"__v": 0,
+	"term": 4,
+	"updatedBy": {
+		"$oid": "605a30dd8a9ba159fdfaa90d"
+	}
+},
+{
+	"_id": {
+		"$oid": "6067e4e2931ea00229841dee"
+	},
+	"posts": [],
+	"postsCount": 0,
+	"students": [],
+	"studentsCount": 0,
+	"name": "BCSL-045",
+	"fullName": "Algorithm Design Lab",
+	"createdBy": {
+		"$oid": "605a30dd8a9ba159fdfaa90d"
+	},
+	"description": "*",
+	"image": "https://bimlee-live-1.s3.ap-south-1.amazonaws.com/course/410412a2-bac5-4081-9fa0-8bf22d1b677a.jpg",
+	"imagePublicId": "course/410412a2-bac5-4081-9fa0-8bf22d1b677a.jpg",
+	"college": {
+		"$oid": "605a4638198e3f5b2e715c8c"
+	},
+	"programme": {
+		"$oid": "605a46c1198e3f5b2e715c8e"
+	},
+	"createdAt": {
+		"$date": "2021-04-03T03:45:38.539Z"
+	},
+	"updatedAt": {
+		"$date": "2021-04-06T14:06:51.305Z"
+	},
+	"__v": 0,
+	"term": 4,
+	"updatedBy": {
+		"$oid": "605a30dd8a9ba159fdfaa90d"
+	}
+},
+{
+	"_id": {
+		"$oid": "60688024e6c8e0b410efe5e9"
+	},
+	"term": 5,
+	"posts": [],
+	"postsCount": 0,
+	"students": [],
+	"studentsCount": 0,
+	"name": "BCS-051",
+	"fullName": "Introduction to Software Engineering",
+	"createdBy": {
+		"$oid": "605a30dd8a9ba159fdfaa90d"
+	},
+	"description": "*",
+	"image": "https://bimlee-dev-1.s3.ap-south-1.amazonaws.com/course/44194a7d-d2f1-4c43-a3ae-ce10cc5f6fc3.jpg",
+	"imagePublicId": "course/44194a7d-d2f1-4c43-a3ae-ce10cc5f6fc3.jpg",
+	"college": {
+		"$oid": "605a4638198e3f5b2e715c8c"
+	},
+	"programme": {
+		"$oid": "605a46c1198e3f5b2e715c8e"
+	},
+	"createdAt": {
+		"$date": "2021-04-03T14:48:04.286Z"
+	},
+	"updatedAt": {
+		"$date": "2021-04-03T14:48:04.286Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "6068806de6c8e0b410efe5ea"
+	},
+	"term": 5,
+	"posts": [],
+	"postsCount": 0,
+	"students": [],
+	"studentsCount": 0,
+	"name": "BCS-052",
+	"fullName": "Network Programming and Administration",
+	"createdBy": {
+		"$oid": "605a30dd8a9ba159fdfaa90d"
+	},
+	"description": "*",
+	"image": "https://bimlee-dev-1.s3.ap-south-1.amazonaws.com/course/38484359-806a-4cc3-91e6-dc9b72322b80.jpg",
+	"imagePublicId": "course/38484359-806a-4cc3-91e6-dc9b72322b80.jpg",
+	"college": {
+		"$oid": "605a4638198e3f5b2e715c8c"
+	},
+	"programme": {
+		"$oid": "605a46c1198e3f5b2e715c8e"
+	},
+	"createdAt": {
+		"$date": "2021-04-03T14:49:17.364Z"
+	},
+	"updatedAt": {
+		"$date": "2021-04-03T14:49:17.364Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "60688089e6c8e0b410efe5eb"
+	},
+	"term": 5,
+	"posts": [],
+	"postsCount": 0,
+	"students": [],
+	"studentsCount": 0,
+	"name": "BCS-053",
+	"fullName": "Web Programming",
+	"createdBy": {
+		"$oid": "605a30dd8a9ba159fdfaa90d"
+	},
+	"description": "*",
+	"image": "https://bimlee-dev-1.s3.ap-south-1.amazonaws.com/course/38b21502-42ce-41fe-83f9-312c37fe2f69.jpg",
+	"imagePublicId": "course/38b21502-42ce-41fe-83f9-312c37fe2f69.jpg",
+	"college": {
+		"$oid": "605a4638198e3f5b2e715c8c"
+	},
+	"programme": {
+		"$oid": "605a46c1198e3f5b2e715c8e"
+	},
+	"createdAt": {
+		"$date": "2021-04-03T14:49:45.206Z"
+	},
+	"updatedAt": {
+		"$date": "2021-04-03T14:49:45.206Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "606880b3e6c8e0b410efe5ec"
+	},
+	"term": 5,
+	"posts": [],
+	"postsCount": 0,
+	"students": [],
+	"studentsCount": 0,
+	"name": "BCS-054",
+	"fullName": "Computer Oriented Numerical Techniques",
+	"createdBy": {
+		"$oid": "605a30dd8a9ba159fdfaa90d"
+	},
+	"description": "*",
+	"image": "https://bimlee-dev-1.s3.ap-south-1.amazonaws.com/course/ea5e814d-37d8-4e40-9e62-e8361d12793d.jpg",
+	"imagePublicId": "course/ea5e814d-37d8-4e40-9e62-e8361d12793d.jpg",
+	"college": {
+		"$oid": "605a4638198e3f5b2e715c8c"
+	},
+	"programme": {
+		"$oid": "605a46c1198e3f5b2e715c8e"
+	},
+	"createdAt": {
+		"$date": "2021-04-03T14:50:27.373Z"
+	},
+	"updatedAt": {
+		"$date": "2021-04-03T14:50:27.373Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "606880f9e6c8e0b410efe5ed"
+	},
+	"term": 5,
+	"posts": [],
+	"postsCount": 0,
+	"students": [],
+	"studentsCount": 0,
+	"name": "BCS-055",
+	"fullName": "Business Communication",
+	"createdBy": {
+		"$oid": "605a30dd8a9ba159fdfaa90d"
+	},
+	"description": "*",
+	"image": "https://bimlee-dev-1.s3.ap-south-1.amazonaws.com/course/9633d11a-10ea-4e3e-8c86-a9892951346a.jpg",
+	"imagePublicId": "course/9633d11a-10ea-4e3e-8c86-a9892951346a.jpg",
+	"college": {
+		"$oid": "605a4638198e3f5b2e715c8c"
+	},
+	"programme": {
+		"$oid": "605a46c1198e3f5b2e715c8e"
+	},
+	"createdAt": {
+		"$date": "2021-04-03T14:51:37.801Z"
+	},
+	"updatedAt": {
+		"$date": "2021-04-03T14:51:37.801Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "60688159e6c8e0b410efe5ee"
+	},
+	"term": 5,
+	"posts": [],
+	"postsCount": 0,
+	"students": [],
+	"studentsCount": 0,
+	"name": "BCSL-056",
+	"fullName": "Network Programming and Administration Lab",
+	"createdBy": {
+		"$oid": "605a30dd8a9ba159fdfaa90d"
+	},
+	"description": "*",
+	"image": "https://bimlee-dev-1.s3.ap-south-1.amazonaws.com/course/f30dbba3-fe4a-4aed-94a0-54df490ab87e.jpg",
+	"imagePublicId": "course/f30dbba3-fe4a-4aed-94a0-54df490ab87e.jpg",
+	"college": {
+		"$oid": "605a4638198e3f5b2e715c8c"
+	},
+	"programme": {
+		"$oid": "605a46c1198e3f5b2e715c8e"
+	},
+	"createdAt": {
+		"$date": "2021-04-03T14:53:13.432Z"
+	},
+	"updatedAt": {
+		"$date": "2021-04-03T14:53:13.432Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "6068817fe6c8e0b410efe5ef"
+	},
+	"term": 5,
+	"posts": [],
+	"postsCount": 0,
+	"students": [],
+	"studentsCount": 0,
+	"name": "BCSL-057",
+	"fullName": "Web Programming Lab",
+	"createdBy": {
+		"$oid": "605a30dd8a9ba159fdfaa90d"
+	},
+	"description": "*",
+	"image": "https://bimlee-dev-1.s3.ap-south-1.amazonaws.com/course/26e715b9-8cb4-4b0f-8993-6deadf0fce25.jpg",
+	"imagePublicId": "course/26e715b9-8cb4-4b0f-8993-6deadf0fce25.jpg",
+	"college": {
+		"$oid": "605a4638198e3f5b2e715c8c"
+	},
+	"programme": {
+		"$oid": "605a46c1198e3f5b2e715c8e"
+	},
+	"createdAt": {
+		"$date": "2021-04-03T14:53:51.887Z"
+	},
+	"updatedAt": {
+		"$date": "2021-04-03T14:53:51.887Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "606881a6e6c8e0b410efe5f0"
+	},
+	"term": 5,
+	"posts": [],
+	"postsCount": 0,
+	"students": [],
+	"studentsCount": 0,
+	"name": "BCSL-058",
+	"fullName": "Computer Oriented Numerical Techniques Lab",
+	"createdBy": {
+		"$oid": "605a30dd8a9ba159fdfaa90d"
+	},
+	"description": "*",
+	"image": "https://bimlee-dev-1.s3.ap-south-1.amazonaws.com/course/e7d456b7-e8ba-4dc1-a5fc-2e419e30f5c8.jpg",
+	"imagePublicId": "course/e7d456b7-e8ba-4dc1-a5fc-2e419e30f5c8.jpg",
+	"college": {
+		"$oid": "605a4638198e3f5b2e715c8c"
+	},
+	"programme": {
+		"$oid": "605a46c1198e3f5b2e715c8e"
+	},
+	"createdAt": {
+		"$date": "2021-04-03T14:54:30.709Z"
+	},
+	"updatedAt": {
+		"$date": "2021-04-03T14:54:30.709Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "606881c4e6c8e0b410efe5f1"
+	},
+	"term": 5,
+	"posts": [],
+	"postsCount": 0,
+	"students": [],
+	"studentsCount": 0,
+	"name": "BCS-062",
+	"fullName": "E-Commerce",
+	"createdBy": {
+		"$oid": "605a30dd8a9ba159fdfaa90d"
+	},
+	"description": "*",
+	"image": "https://bimlee-dev-1.s3.ap-south-1.amazonaws.com/course/3d1c1b11-1244-4a04-86b2-ede71f495d03.jpg",
+	"imagePublicId": "course/3d1c1b11-1244-4a04-86b2-ede71f495d03.jpg",
+	"college": {
+		"$oid": "605a4638198e3f5b2e715c8c"
+	},
+	"programme": {
+		"$oid": "605a46c1198e3f5b2e715c8e"
+	},
+	"createdAt": {
+		"$date": "2021-04-03T14:55:00.608Z"
+	},
+	"updatedAt": {
+		"$date": "2021-04-14T10:41:10.64Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "606881f2e6c8e0b410efe5f2"
+	},
+	"term": 5,
+	"posts": [],
+	"postsCount": 0,
+	"students": [],
+	"studentsCount": 0,
+	"name": "MCS-022",
+	"fullName": "Operating System Concepts and Networking Management",
+	"createdBy": {
+		"$oid": "605a30dd8a9ba159fdfaa90d"
+	},
+	"description": "*",
+	"image": "https://bimlee-dev-1.s3.ap-south-1.amazonaws.com/course/c822cfa0-c16d-4b89-8a68-23d1494d27d8.jpg",
+	"imagePublicId": "course/c822cfa0-c16d-4b89-8a68-23d1494d27d8.jpg",
+	"college": {
+		"$oid": "605a4638198e3f5b2e715c8c"
+	},
+	"programme": {
+		"$oid": "605a46c1198e3f5b2e715c8e"
+	},
+	"createdAt": {
+		"$date": "2021-04-03T14:55:46.449Z"
+	},
+	"updatedAt": {
+		"$date": "2021-04-03T14:55:46.449Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "6068821ce6c8e0b410efe5f3"
+	},
+	"term": 5,
+	"posts": [],
+	"postsCount": 0,
+	"students": [],
+	"studentsCount": 0,
+	"name": "BCSL-063",
+	"fullName": "Operating System Concepts and Networking Management Lab",
+	"createdBy": {
+		"$oid": "605a30dd8a9ba159fdfaa90d"
+	},
+	"description": "*",
+	"image": "https://bimlee-dev-1.s3.ap-south-1.amazonaws.com/course/b1ef862a-2c5e-4556-b164-14251e1df134.jpg",
+	"imagePublicId": "course/b1ef862a-2c5e-4556-b164-14251e1df134.jpg",
+	"college": {
+		"$oid": "605a4638198e3f5b2e715c8c"
+	},
+	"programme": {
+		"$oid": "605a46c1198e3f5b2e715c8e"
+	},
+	"createdAt": {
+		"$date": "2021-04-03T14:56:28.411Z"
+	},
+	"updatedAt": {
+		"$date": "2021-04-03T14:56:28.411Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "60688253e6c8e0b410efe5f4"
+	},
+	"term": 6,
+	"posts": [],
+	"postsCount": 0,
+	"students": [],
+	"studentsCount": 0,
+	"name": "BCSP-064",
+	"fullName": "Project",
+	"createdBy": {
+		"$oid": "605a30dd8a9ba159fdfaa90d"
+	},
+	"description": "*",
+	"image": "https://bimlee-dev-1.s3.ap-south-1.amazonaws.com/course/247911b4-a937-4743-a9e7-13432c9cae99.jpg",
+	"imagePublicId": "course/247911b4-a937-4743-a9e7-13432c9cae99.jpg",
+	"college": {
+		"$oid": "605a4638198e3f5b2e715c8c"
+	},
+	"programme": {
+		"$oid": "605a46c1198e3f5b2e715c8e"
+	},
+	"createdAt": {
+		"$date": "2021-04-03T14:57:23.769Z"
+	},
+	"updatedAt": {
+		"$date": "2021-04-03T14:57:23.769Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "6069332eb06841fc4bb094fe"
+	},
+	"term": 1,
+	"posts": [],
+	"postsCount": 0,
+	"students": [],
+	"studentsCount": 0,
+	"name": "MCS-011",
+	"fullName": "Problem Solving and Programming",
+	"createdBy": {
+		"$oid": "605a30dd8a9ba159fdfaa90d"
+	},
+	"description": "*",
+	"image": "https://bimlee-dev-1.s3.ap-south-1.amazonaws.com/course/9039825e-3ab3-4be9-b375-d06c90b5b59a.jpg",
+	"imagePublicId": "course/9039825e-3ab3-4be9-b375-d06c90b5b59a.jpg",
+	"college": {
+		"$oid": "605a4638198e3f5b2e715c8c"
+	},
+	"programme": {
+		"$oid": "606698ce47b0d6f57bbacc5f"
+	},
+	"createdAt": {
+		"$date": "2021-04-04T03:31:58.768Z"
+	},
+	"updatedAt": {
+		"$date": "2021-04-04T03:31:58.768Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "60693380b06841fc4bb094ff"
+	},
+	"term": 1,
+	"posts": [],
+	"postsCount": 0,
+	"students": [],
+	"studentsCount": 0,
+	"name": "MCS-012",
+	"fullName": "Computer Organisation and Assembly Language Programming",
+	"createdBy": {
+		"$oid": "605a30dd8a9ba159fdfaa90d"
+	},
+	"description": "*",
+	"image": "https://bimlee-dev-1.s3.ap-south-1.amazonaws.com/course/c516b9d8-4def-450d-91e2-0c16b8858328.jpg",
+	"imagePublicId": "course/c516b9d8-4def-450d-91e2-0c16b8858328.jpg",
+	"college": {
+		"$oid": "605a4638198e3f5b2e715c8c"
+	},
+	"programme": {
+		"$oid": "606698ce47b0d6f57bbacc5f"
+	},
+	"createdAt": {
+		"$date": "2021-04-04T03:33:20.141Z"
+	},
+	"updatedAt": {
+		"$date": "2021-04-04T03:33:20.141Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "606933b9b06841fc4bb09500"
+	},
+	"term": 1,
+	"posts": [],
+	"postsCount": 0,
+	"students": [],
+	"studentsCount": 0,
+	"name": "MCS-013",
+	"fullName": "Discrete Mathematics",
+	"createdBy": {
+		"$oid": "605a30dd8a9ba159fdfaa90d"
+	},
+	"description": "*",
+	"image": "https://bimlee-dev-1.s3.ap-south-1.amazonaws.com/course/30308a9b-99da-4397-b1be-8fc40eeaa17a.jpg",
+	"imagePublicId": "course/30308a9b-99da-4397-b1be-8fc40eeaa17a.jpg",
+	"college": {
+		"$oid": "605a4638198e3f5b2e715c8c"
+	},
+	"programme": {
+		"$oid": "606698ce47b0d6f57bbacc5f"
+	},
+	"createdAt": {
+		"$date": "2021-04-04T03:34:17.579Z"
+	},
+	"updatedAt": {
+		"$date": "2021-04-04T03:34:17.579Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "606933e1b06841fc4bb09501"
+	},
+	"term": 1,
+	"posts": [],
+	"postsCount": 0,
+	"students": [],
+	"studentsCount": 0,
+	"name": "MCS-014",
+	"fullName": "Systems Analysis and Design",
+	"createdBy": {
+		"$oid": "605a30dd8a9ba159fdfaa90d"
+	},
+	"description": "*",
+	"image": "https://bimlee-dev-1.s3.ap-south-1.amazonaws.com/course/1a370736-f171-4ea2-b44c-74abc1941de6.jpg",
+	"imagePublicId": "course/1a370736-f171-4ea2-b44c-74abc1941de6.jpg",
+	"college": {
+		"$oid": "605a4638198e3f5b2e715c8c"
+	},
+	"programme": {
+		"$oid": "606698ce47b0d6f57bbacc5f"
+	},
+	"createdAt": {
+		"$date": "2021-04-04T03:34:57.379Z"
+	},
+	"updatedAt": {
+		"$date": "2021-04-04T03:34:57.379Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "606933ffb06841fc4bb09502"
+	},
+	"term": 1,
+	"posts": [],
+	"postsCount": 0,
+	"students": [],
+	"studentsCount": 0,
+	"name": "MCS-015",
+	"fullName": "Communication Skills",
+	"createdBy": {
+		"$oid": "605a30dd8a9ba159fdfaa90d"
+	},
+	"description": "*",
+	"image": "https://bimlee-dev-1.s3.ap-south-1.amazonaws.com/course/831c9241-aee4-4927-9672-39661c8c075d.jpg",
+	"imagePublicId": "course/831c9241-aee4-4927-9672-39661c8c075d.jpg",
+	"college": {
+		"$oid": "605a4638198e3f5b2e715c8c"
+	},
+	"programme": {
+		"$oid": "606698ce47b0d6f57bbacc5f"
+	},
+	"createdAt": {
+		"$date": "2021-04-04T03:35:27.869Z"
+	},
+	"updatedAt": {
+		"$date": "2021-04-04T03:35:27.869Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "60693429b06841fc4bb09503"
+	},
+	"term": 1,
+	"posts": [],
+	"postsCount": 0,
+	"students": [],
+	"studentsCount": 0,
+	"name": "MCS-016",
+	"fullName": "Internet Concepts and Web design (Lab Course)",
+	"createdBy": {
+		"$oid": "605a30dd8a9ba159fdfaa90d"
+	},
+	"description": "*",
+	"image": "https://bimlee-dev-1.s3.ap-south-1.amazonaws.com/course/12ccedbe-25d5-4e70-bf9e-df58a4a4cd33.jpg",
+	"imagePublicId": "course/12ccedbe-25d5-4e70-bf9e-df58a4a4cd33.jpg",
+	"college": {
+		"$oid": "605a4638198e3f5b2e715c8c"
+	},
+	"programme": {
+		"$oid": "606698ce47b0d6f57bbacc5f"
+	},
+	"createdAt": {
+		"$date": "2021-04-04T03:36:09.188Z"
+	},
+	"updatedAt": {
+		"$date": "2021-04-04T03:36:09.188Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "6069344cb06841fc4bb09504"
+	},
+	"term": 1,
+	"posts": [],
+	"postsCount": 0,
+	"students": [],
+	"studentsCount": 0,
+	"name": "MCSL-017",
+	"fullName": "Lab (C and Assembly Language Programming) (Lab Course)",
+	"createdBy": {
+		"$oid": "605a30dd8a9ba159fdfaa90d"
+	},
+	"description": "*",
+	"image": "https://bimlee-dev-1.s3.ap-south-1.amazonaws.com/course/ba331877-0981-4606-9c16-57385a6e4f67.jpg",
+	"imagePublicId": "course/ba331877-0981-4606-9c16-57385a6e4f67.jpg",
+	"college": {
+		"$oid": "605a4638198e3f5b2e715c8c"
+	},
+	"programme": {
+		"$oid": "606698ce47b0d6f57bbacc5f"
+	},
+	"createdAt": {
+		"$date": "2021-04-04T03:36:44.283Z"
+	},
+	"updatedAt": {
+		"$date": "2021-04-04T03:36:44.283Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "60693481b06841fc4bb09505"
+	},
+	"term": 2,
+	"posts": [],
+	"postsCount": 0,
+	"students": [],
+	"studentsCount": 0,
+	"name": "MCS-021",
+	"fullName": "Data and File structures",
+	"createdBy": {
+		"$oid": "605a30dd8a9ba159fdfaa90d"
+	},
+	"description": "*",
+	"image": "https://bimlee-dev-1.s3.ap-south-1.amazonaws.com/course/61d3ed4e-f645-4319-b176-6ed3ca0204a6.jpg",
+	"imagePublicId": "course/61d3ed4e-f645-4319-b176-6ed3ca0204a6.jpg",
+	"college": {
+		"$oid": "605a4638198e3f5b2e715c8c"
+	},
+	"programme": {
+		"$oid": "606698ce47b0d6f57bbacc5f"
+	},
+	"createdAt": {
+		"$date": "2021-04-04T03:37:37.259Z"
+	},
+	"updatedAt": {
+		"$date": "2021-04-04T03:37:37.259Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "6069349fb06841fc4bb09506"
+	},
+	"term": 2,
+	"posts": [],
+	"postsCount": 0,
+	"students": [],
+	"studentsCount": 0,
+	"name": "MCS-022",
+	"fullName": "Operating System concepts",
+	"createdBy": {
+		"$oid": "605a30dd8a9ba159fdfaa90d"
+	},
+	"description": "*",
+	"image": "https://bimlee-dev-1.s3.ap-south-1.amazonaws.com/course/7678a07c-46f9-433e-bcb6-7fe588f33eff.jpg",
+	"imagePublicId": "course/7678a07c-46f9-433e-bcb6-7fe588f33eff.jpg",
+	"college": {
+		"$oid": "605a4638198e3f5b2e715c8c"
+	},
+	"programme": {
+		"$oid": "606698ce47b0d6f57bbacc5f"
+	},
+	"createdAt": {
+		"$date": "2021-04-04T03:38:07.502Z"
+	},
+	"updatedAt": {
+		"$date": "2021-04-04T03:38:07.502Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "60693543b06841fc4bb09507"
+	},
+	"term": 2,
+	"posts": [],
+	"postsCount": 0,
+	"students": [],
+	"studentsCount": 0,
+	"name": "MCS-023",
+	"fullName": "Introduction to Database Management Systems",
+	"createdBy": {
+		"$oid": "605a30dd8a9ba159fdfaa90d"
+	},
+	"description": "*",
+	"image": "https://bimlee-dev-1.s3.ap-south-1.amazonaws.com/course/5569a5db-f480-4979-8a55-26b9c8ab5966.jpg",
+	"imagePublicId": "course/5569a5db-f480-4979-8a55-26b9c8ab5966.jpg",
+	"college": {
+		"$oid": "605a4638198e3f5b2e715c8c"
+	},
+	"programme": {
+		"$oid": "606698ce47b0d6f57bbacc5f"
+	},
+	"createdAt": {
+		"$date": "2021-04-04T03:40:51.435Z"
+	},
+	"updatedAt": {
+		"$date": "2021-04-04T03:40:51.435Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "60693570b06841fc4bb09508"
+	},
+	"term": 2,
+	"posts": [],
+	"postsCount": 0,
+	"students": [],
+	"studentsCount": 0,
+	"name": "MCS-024",
+	"fullName": "Object Oriented Technology and Java Programming",
+	"createdBy": {
+		"$oid": "605a30dd8a9ba159fdfaa90d"
+	},
+	"description": "*",
+	"image": "https://bimlee-dev-1.s3.ap-south-1.amazonaws.com/course/f2c7d68b-06b5-410f-a23a-061791ab716f.jpg",
+	"imagePublicId": "course/f2c7d68b-06b5-410f-a23a-061791ab716f.jpg",
+	"college": {
+		"$oid": "605a4638198e3f5b2e715c8c"
+	},
+	"programme": {
+		"$oid": "606698ce47b0d6f57bbacc5f"
+	},
+	"createdAt": {
+		"$date": "2021-04-04T03:41:36.004Z"
+	},
+	"updatedAt": {
+		"$date": "2021-04-04T03:41:36.004Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "606935a2b06841fc4bb09509"
+	},
+	"term": 2,
+	"posts": [],
+	"postsCount": 0,
+	"students": [],
+	"studentsCount": 0,
+	"name": "MCSL-025",
+	"fullName": "Lab (Data Structures using C, WINDOWS 2000, LINUX / UNIX, Java and MS ACCESS, My SQL)",
+	"createdBy": {
+		"$oid": "605a30dd8a9ba159fdfaa90d"
+	},
+	"description": "*",
+	"image": "https://bimlee-dev-1.s3.ap-south-1.amazonaws.com/course/14bfd400-e88e-4ed3-95a0-130b1ce5258b.jpg",
+	"imagePublicId": "course/14bfd400-e88e-4ed3-95a0-130b1ce5258b.jpg",
+	"college": {
+		"$oid": "605a4638198e3f5b2e715c8c"
+	},
+	"programme": {
+		"$oid": "606698ce47b0d6f57bbacc5f"
+	},
+	"createdAt": {
+		"$date": "2021-04-04T03:42:26.959Z"
+	},
+	"updatedAt": {
+		"$date": "2021-04-04T03:42:26.959Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "606935cdb06841fc4bb0950a"
+	},
+	"term": 3,
+	"posts": [],
+	"postsCount": 0,
+	"students": [],
+	"studentsCount": 0,
+	"name": "MCS-031",
+	"fullName": "Design and Analysis of Algorithms",
+	"createdBy": {
+		"$oid": "605a30dd8a9ba159fdfaa90d"
+	},
+	"description": "*",
+	"image": "https://bimlee-dev-1.s3.ap-south-1.amazonaws.com/course/21704ba8-e76a-47bf-b1a5-1c19d0ea01ed.jpg",
+	"imagePublicId": "course/21704ba8-e76a-47bf-b1a5-1c19d0ea01ed.jpg",
+	"college": {
+		"$oid": "605a4638198e3f5b2e715c8c"
+	},
+	"programme": {
+		"$oid": "606698ce47b0d6f57bbacc5f"
+	},
+	"createdAt": {
+		"$date": "2021-04-04T03:43:09.346Z"
+	},
+	"updatedAt": {
+		"$date": "2021-04-04T03:43:09.346Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "606935fdb06841fc4bb0950b"
+	},
+	"term": 3,
+	"posts": [],
+	"postsCount": 0,
+	"students": [],
+	"studentsCount": 0,
+	"name": "MCS-032",
+	"fullName": "Object Oriented Analysis and Design",
+	"createdBy": {
+		"$oid": "605a30dd8a9ba159fdfaa90d"
+	},
+	"description": "*",
+	"image": "https://bimlee-dev-1.s3.ap-south-1.amazonaws.com/course/38a67f95-565e-4152-8f59-bd15db53eb3d.jpg",
+	"imagePublicId": "course/38a67f95-565e-4152-8f59-bd15db53eb3d.jpg",
+	"college": {
+		"$oid": "605a4638198e3f5b2e715c8c"
+	},
+	"programme": {
+		"$oid": "606698ce47b0d6f57bbacc5f"
+	},
+	"createdAt": {
+		"$date": "2021-04-04T03:43:57.924Z"
+	},
+	"updatedAt": {
+		"$date": "2021-04-04T03:43:57.924Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "6069362cb06841fc4bb0950c"
+	},
+	"term": 3,
+	"posts": [],
+	"postsCount": 0,
+	"students": [],
+	"studentsCount": 0,
+	"name": "MCS-033",
+	"fullName": "Advanced Discrete Mathematics",
+	"createdBy": {
+		"$oid": "605a30dd8a9ba159fdfaa90d"
+	},
+	"description": "*",
+	"image": "https://bimlee-dev-1.s3.ap-south-1.amazonaws.com/course/bba9b9fb-22dc-499f-bf88-7dbe40f11753.jpg",
+	"imagePublicId": "course/bba9b9fb-22dc-499f-bf88-7dbe40f11753.jpg",
+	"college": {
+		"$oid": "605a4638198e3f5b2e715c8c"
+	},
+	"programme": {
+		"$oid": "606698ce47b0d6f57bbacc5f"
+	},
+	"createdAt": {
+		"$date": "2021-04-04T03:44:44.013Z"
+	},
+	"updatedAt": {
+		"$date": "2021-04-04T03:44:44.013Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "6069364cb06841fc4bb0950d"
+	},
+	"term": 3,
+	"posts": [],
+	"postsCount": 0,
+	"students": [],
+	"studentsCount": 0,
+	"name": "MCS-034",
+	"fullName": "Software Engineering",
+	"createdBy": {
+		"$oid": "605a30dd8a9ba159fdfaa90d"
+	},
+	"description": "*",
+	"image": "https://bimlee-dev-1.s3.ap-south-1.amazonaws.com/course/66b98973-067c-4148-a882-0a155d5d90b6.jpg",
+	"imagePublicId": "course/66b98973-067c-4148-a882-0a155d5d90b6.jpg",
+	"college": {
+		"$oid": "605a4638198e3f5b2e715c8c"
+	},
+	"programme": {
+		"$oid": "606698ce47b0d6f57bbacc5f"
+	},
+	"createdAt": {
+		"$date": "2021-04-04T03:45:16.894Z"
+	},
+	"updatedAt": {
+		"$date": "2021-04-04T03:45:16.894Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "606936a3b06841fc4bb0950e"
+	},
+	"term": 3,
+	"posts": [],
+	"postsCount": 0,
+	"students": [],
+	"studentsCount": 0,
+	"name": "MCS-035",
+	"fullName": "Accountancy and Financial Management",
+	"createdBy": {
+		"$oid": "605a30dd8a9ba159fdfaa90d"
+	},
+	"description": "*",
+	"image": "https://bimlee-dev-1.s3.ap-south-1.amazonaws.com/course/7fe7f8ea-0820-40f5-9c44-9958c61fc001.jpg",
+	"imagePublicId": "course/7fe7f8ea-0820-40f5-9c44-9958c61fc001.jpg",
+	"college": {
+		"$oid": "605a4638198e3f5b2e715c8c"
+	},
+	"programme": {
+		"$oid": "606698ce47b0d6f57bbacc5f"
+	},
+	"createdAt": {
+		"$date": "2021-04-04T03:46:43.451Z"
+	},
+	"updatedAt": {
+		"$date": "2021-04-04T03:46:43.451Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "606936cdb06841fc4bb0950f"
+	},
+	"term": 3,
+	"posts": [],
+	"postsCount": 0,
+	"students": [],
+	"studentsCount": 0,
+	"name": "MCSL-036",
+	"fullName": "Laboratory Course (For Object Oriented Analysis and Design, Software Engineering and Accountancy and Financial Management)",
+	"createdBy": {
+		"$oid": "605a30dd8a9ba159fdfaa90d"
+	},
+	"description": "*",
+	"image": "https://bimlee-dev-1.s3.ap-south-1.amazonaws.com/course/7dd1e621-cee8-4473-957e-ec6ef53c178e.jpg",
+	"imagePublicId": "course/7dd1e621-cee8-4473-957e-ec6ef53c178e.jpg",
+	"college": {
+		"$oid": "605a4638198e3f5b2e715c8c"
+	},
+	"programme": {
+		"$oid": "606698ce47b0d6f57bbacc5f"
+	},
+	"createdAt": {
+		"$date": "2021-04-04T03:47:25.079Z"
+	},
+	"updatedAt": {
+		"$date": "2021-04-04T03:47:25.079Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "606936f1b06841fc4bb09510"
+	},
+	"term": 4,
+	"posts": [],
+	"postsCount": 0,
+	"students": [],
+	"studentsCount": 0,
+	"name": "MCS-041",
+	"fullName": "Operating Systems",
+	"createdBy": {
+		"$oid": "605a30dd8a9ba159fdfaa90d"
+	},
+	"description": "*",
+	"image": "https://bimlee-dev-1.s3.ap-south-1.amazonaws.com/course/fa33c587-72d1-4d50-80ed-e3e1babde062.jpg",
+	"imagePublicId": "course/fa33c587-72d1-4d50-80ed-e3e1babde062.jpg",
+	"college": {
+		"$oid": "605a4638198e3f5b2e715c8c"
+	},
+	"programme": {
+		"$oid": "606698ce47b0d6f57bbacc5f"
+	},
+	"createdAt": {
+		"$date": "2021-04-04T03:48:01.743Z"
+	},
+	"updatedAt": {
+		"$date": "2021-04-04T03:48:01.743Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "60693736b06841fc4bb09511"
+	},
+	"term": 4,
+	"posts": [],
+	"postsCount": 0,
+	"students": [],
+	"studentsCount": 0,
+	"name": "MCS-042",
+	"fullName": "Data Communication and Networks",
+	"createdBy": {
+		"$oid": "605a30dd8a9ba159fdfaa90d"
+	},
+	"description": "*",
+	"image": "https://bimlee-dev-1.s3.ap-south-1.amazonaws.com/course/bcefdb6d-ba78-4a02-acc2-0fc27cb46b89.jpg",
+	"imagePublicId": "course/bcefdb6d-ba78-4a02-acc2-0fc27cb46b89.jpg",
+	"college": {
+		"$oid": "605a4638198e3f5b2e715c8c"
+	},
+	"programme": {
+		"$oid": "606698ce47b0d6f57bbacc5f"
+	},
+	"createdAt": {
+		"$date": "2021-04-04T03:49:10.871Z"
+	},
+	"updatedAt": {
+		"$date": "2021-04-04T03:49:10.871Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "60693765b06841fc4bb09512"
+	},
+	"term": 4,
+	"posts": [],
+	"postsCount": 0,
+	"students": [],
+	"studentsCount": 0,
+	"name": "MCS-043",
+	"fullName": "Advanced Database Management Systems",
+	"createdBy": {
+		"$oid": "605a30dd8a9ba159fdfaa90d"
+	},
+	"description": "*",
+	"image": "https://bimlee-dev-1.s3.ap-south-1.amazonaws.com/course/f36fa2d0-17d7-4ddb-b922-a280ad53bd44.jpg",
+	"imagePublicId": "course/f36fa2d0-17d7-4ddb-b922-a280ad53bd44.jpg",
+	"college": {
+		"$oid": "605a4638198e3f5b2e715c8c"
+	},
+	"programme": {
+		"$oid": "606698ce47b0d6f57bbacc5f"
+	},
+	"createdAt": {
+		"$date": "2021-04-04T03:49:57.615Z"
+	},
+	"updatedAt": {
+		"$date": "2021-04-04T03:49:57.615Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "6069378eb06841fc4bb09513"
+	},
+	"term": 4,
+	"posts": [],
+	"postsCount": 0,
+	"students": [],
+	"studentsCount": 0,
+	"name": "MCS-044",
+	"fullName": "Mini Project",
+	"createdBy": {
+		"$oid": "605a30dd8a9ba159fdfaa90d"
+	},
+	"description": "*",
+	"image": "https://bimlee-dev-1.s3.ap-south-1.amazonaws.com/course/ebd9f603-6892-498d-ab26-36f085196c23.jpg",
+	"imagePublicId": "course/ebd9f603-6892-498d-ab26-36f085196c23.jpg",
+	"college": {
+		"$oid": "605a4638198e3f5b2e715c8c"
+	},
+	"programme": {
+		"$oid": "606698ce47b0d6f57bbacc5f"
+	},
+	"createdAt": {
+		"$date": "2021-04-04T03:50:38.695Z"
+	},
+	"updatedAt": {
+		"$date": "2021-04-04T03:50:38.695Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "6069380eb06841fc4bb09514"
+	},
+	"term": 4,
+	"posts": [],
+	"postsCount": 0,
+	"students": [],
+	"studentsCount": 0,
+	"name": "MCSL-045",
+	"fullName": "UNIX and DBMS LAB",
+	"createdBy": {
+		"$oid": "605a30dd8a9ba159fdfaa90d"
+	},
+	"description": "*",
+	"image": "https://bimlee-dev-1.s3.ap-south-1.amazonaws.com/course/c33e2cd0-d87d-4739-94bf-46b5ad29f89e.jpg",
+	"imagePublicId": "course/c33e2cd0-d87d-4739-94bf-46b5ad29f89e.jpg",
+	"college": {
+		"$oid": "605a4638198e3f5b2e715c8c"
+	},
+	"programme": {
+		"$oid": "606698ce47b0d6f57bbacc5f"
+	},
+	"createdAt": {
+		"$date": "2021-04-04T03:52:46.165Z"
+	},
+	"updatedAt": {
+		"$date": "2021-04-04T03:52:46.165Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "6069387ab06841fc4bb09515"
+	},
+	"term": 5,
+	"posts": [],
+	"postsCount": 0,
+	"students": [],
+	"studentsCount": 0,
+	"name": "MCS-051",
+	"fullName": "Advanced Internet Technologies",
+	"createdBy": {
+		"$oid": "605a30dd8a9ba159fdfaa90d"
+	},
+	"description": "*",
+	"image": "https://bimlee-dev-1.s3.ap-south-1.amazonaws.com/course/959bae53-7afb-445d-aec9-6bda50d339dd.jpg",
+	"imagePublicId": "course/959bae53-7afb-445d-aec9-6bda50d339dd.jpg",
+	"college": {
+		"$oid": "605a4638198e3f5b2e715c8c"
+	},
+	"programme": {
+		"$oid": "606698ce47b0d6f57bbacc5f"
+	},
+	"createdAt": {
+		"$date": "2021-04-04T03:54:34.052Z"
+	},
+	"updatedAt": {
+		"$date": "2021-04-04T03:54:34.052Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "606938abb06841fc4bb09516"
+	},
+	"term": 5,
+	"posts": [],
+	"postsCount": 0,
+	"students": [],
+	"studentsCount": 0,
+	"name": "MCS-053",
+	"fullName": "Computer Graphics and Multimedia",
+	"createdBy": {
+		"$oid": "605a30dd8a9ba159fdfaa90d"
+	},
+	"description": "*",
+	"image": "https://bimlee-dev-1.s3.ap-south-1.amazonaws.com/course/5cfa8568-29d8-46c6-89a0-6003441300e1.jpg",
+	"imagePublicId": "course/5cfa8568-29d8-46c6-89a0-6003441300e1.jpg",
+	"college": {
+		"$oid": "605a4638198e3f5b2e715c8c"
+	},
+	"programme": {
+		"$oid": "606698ce47b0d6f57bbacc5f"
+	},
+	"createdAt": {
+		"$date": "2021-04-04T03:55:23.728Z"
+	},
+	"updatedAt": {
+		"$date": "2021-04-04T03:55:23.728Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "606938e7b06841fc4bb09517"
+	},
+	"term": 5,
+	"posts": [],
+	"postsCount": 0,
+	"students": [],
+	"studentsCount": 0,
+	"name": "MCSL-054",
+	"fullName": "Laboratory Course (Advanced Internet Technologies & Computer Graphics and Multimedia)",
+	"createdBy": {
+		"$oid": "605a30dd8a9ba159fdfaa90d"
+	},
+	"description": "*",
+	"image": "https://bimlee-dev-1.s3.ap-south-1.amazonaws.com/course/9a2ca6c5-3299-497d-a900-dcded2ca43cb.jpg",
+	"imagePublicId": "course/9a2ca6c5-3299-497d-a900-dcded2ca43cb.jpg",
+	"college": {
+		"$oid": "605a4638198e3f5b2e715c8c"
+	},
+	"programme": {
+		"$oid": "606698ce47b0d6f57bbacc5f"
+	},
+	"createdAt": {
+		"$date": "2021-04-04T03:56:23.269Z"
+	},
+	"updatedAt": {
+		"$date": "2021-04-04T03:56:23.269Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "6069391cb06841fc4bb09518"
+	},
+	"term": 5,
+	"posts": [],
+	"postsCount": 0,
+	"students": [],
+	"studentsCount": 0,
+	"name": "MCSE-003",
+	"fullName": "Artificial Intelligence and Knowledge Management",
+	"createdBy": {
+		"$oid": "605a30dd8a9ba159fdfaa90d"
+	},
+	"description": "*",
+	"image": "https://bimlee-dev-1.s3.ap-south-1.amazonaws.com/course/0a0acafe-2a35-4ebf-9e7f-a055af8a0689.jpg",
+	"imagePublicId": "course/0a0acafe-2a35-4ebf-9e7f-a055af8a0689.jpg",
+	"college": {
+		"$oid": "605a4638198e3f5b2e715c8c"
+	},
+	"programme": {
+		"$oid": "606698ce47b0d6f57bbacc5f"
+	},
+	"createdAt": {
+		"$date": "2021-04-04T03:57:16.858Z"
+	},
+	"updatedAt": {
+		"$date": "2021-04-04T03:57:16.858Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "60693969b06841fc4bb09519"
+	},
+	"term": 5,
+	"posts": [],
+	"postsCount": 0,
+	"students": [],
+	"studentsCount": 0,
+	"name": "MCSE-004",
+	"fullName": "Numerical and Statistical Computing",
+	"createdBy": {
+		"$oid": "605a30dd8a9ba159fdfaa90d"
+	},
+	"description": "*",
+	"image": "https://bimlee-dev-1.s3.ap-south-1.amazonaws.com/course/87fc6225-9ba6-480f-975e-92ba3fd4c3ad.jpg",
+	"imagePublicId": "course/87fc6225-9ba6-480f-975e-92ba3fd4c3ad.jpg",
+	"college": {
+		"$oid": "605a4638198e3f5b2e715c8c"
+	},
+	"programme": {
+		"$oid": "606698ce47b0d6f57bbacc5f"
+	},
+	"createdAt": {
+		"$date": "2021-04-04T03:58:33.007Z"
+	},
+	"updatedAt": {
+		"$date": "2021-04-04T03:58:33.007Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "606939a6b06841fc4bb0951a"
+	},
+	"term": 5,
+	"posts": [],
+	"postsCount": 0,
+	"students": [],
+	"studentsCount": 0,
+	"name": "MCSE-004",
+	"fullName": "Numerical Intellinence and Knowledge Managent",
+	"createdBy": {
+		"$oid": "605a30dd8a9ba159fdfaa90d"
+	},
+	"description": "*",
+	"image": "https://bimlee-dev-1.s3.ap-south-1.amazonaws.com/course/700545c7-03c8-4c01-9cef-5317d94ef198.jpg",
+	"imagePublicId": "course/700545c7-03c8-4c01-9cef-5317d94ef198.jpg",
+	"college": {
+		"$oid": "605a4638198e3f5b2e715c8c"
+	},
+	"programme": {
+		"$oid": "606698ce47b0d6f57bbacc5f"
+	},
+	"createdAt": {
+		"$date": "2021-04-04T03:59:34.787Z"
+	},
+	"updatedAt": {
+		"$date": "2021-04-04T03:59:34.787Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "606939dfb06841fc4bb0951b"
+	},
+	"term": 5,
+	"posts": [],
+	"postsCount": 0,
+	"students": [],
+	"studentsCount": 0,
+	"name": "MCSE-004",
+	"fullName": "Numerical and Statiscal Computing",
+	"createdBy": {
+		"$oid": "605a30dd8a9ba159fdfaa90d"
+	},
+	"description": "*",
+	"image": "https://bimlee-dev-1.s3.ap-south-1.amazonaws.com/course/5df82f7d-13a7-450c-b2fb-b3001241a4b3.jpg",
+	"imagePublicId": "course/5df82f7d-13a7-450c-b2fb-b3001241a4b3.jpg",
+	"college": {
+		"$oid": "605a4638198e3f5b2e715c8c"
+	},
+	"programme": {
+		"$oid": "606698ce47b0d6f57bbacc5f"
+	},
+	"createdAt": {
+		"$date": "2021-04-04T04:00:31.646Z"
+	},
+	"updatedAt": {
+		"$date": "2021-04-04T04:00:31.646Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "60693a04b06841fc4bb0951c"
+	},
+	"term": 5,
+	"posts": [],
+	"postsCount": 0,
+	"students": [],
+	"studentsCount": 0,
+	"name": "MCSE-011",
+	"fullName": "Parallel Computing",
+	"createdBy": {
+		"$oid": "605a30dd8a9ba159fdfaa90d"
+	},
+	"description": "*",
+	"image": "https://bimlee-dev-1.s3.ap-south-1.amazonaws.com/course/517b0b7d-5e5b-41ef-8b7b-d140647ec62d.jpg",
+	"imagePublicId": "course/517b0b7d-5e5b-41ef-8b7b-d140647ec62d.jpg",
+	"college": {
+		"$oid": "605a4638198e3f5b2e715c8c"
+	},
+	"programme": {
+		"$oid": "606698ce47b0d6f57bbacc5f"
+	},
+	"createdAt": {
+		"$date": "2021-04-04T04:01:08.914Z"
+	},
+	"updatedAt": {
+		"$date": "2021-04-04T04:01:08.914Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "60693a23b06841fc4bb0951d"
+	},
+	"term": 6,
+	"posts": [],
+	"postsCount": 0,
+	"students": [],
+	"studentsCount": 0,
+	"name": "MCSP-060",
+	"fullName": "Project",
+	"createdBy": {
+		"$oid": "605a30dd8a9ba159fdfaa90d"
+	},
+	"description": "*",
+	"image": "https://bimlee-dev-1.s3.ap-south-1.amazonaws.com/course/b8eb1e6f-1875-4973-be26-521165b3d883.jpg",
+	"imagePublicId": "course/b8eb1e6f-1875-4973-be26-521165b3d883.jpg",
+	"college": {
+		"$oid": "605a4638198e3f5b2e715c8c"
+	},
+	"programme": {
+		"$oid": "606698ce47b0d6f57bbacc5f"
+	},
+	"createdAt": {
+		"$date": "2021-04-04T04:01:39.005Z"
+	},
+	"updatedAt": {
+		"$date": "2021-04-04T04:01:39.005Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "606a8e909fce2557cff776f4"
+	},
+	"term": 1,
+	"posts": [],
+	"postsCount": 0,
+	"students": [],
+	"studentsCount": 0,
+	"name": "MCS-211",
+	"fullName": "Design and Analysis of Algorithms",
+	"createdBy": {
+		"$oid": "605a30dd8a9ba159fdfaa90d"
+	},
+	"description": "*",
+	"image": "https://bimlee-dev-1.s3.ap-south-1.amazonaws.com/course/fdd18c66-e89a-4e84-9f5a-f62477dd8b63.jpg",
+	"imagePublicId": "course/fdd18c66-e89a-4e84-9f5a-f62477dd8b63.jpg",
+	"college": {
+		"$oid": "605a4638198e3f5b2e715c8c"
+	},
+	"programme": {
+		"$oid": "606a8dfc9fce2557cff776f3"
+	},
+	"createdAt": {
+		"$date": "2021-04-05T04:14:08.286Z"
+	},
+	"updatedAt": {
+		"$date": "2021-04-05T04:14:08.286Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "606a8ec59fce2557cff776f5"
+	},
+	"term": 1,
+	"posts": [],
+	"postsCount": 0,
+	"students": [],
+	"studentsCount": 0,
+	"name": "MCS-212",
+	"fullName": "Discrete Mathematics",
+	"createdBy": {
+		"$oid": "605a30dd8a9ba159fdfaa90d"
+	},
+	"description": "*",
+	"image": "https://bimlee-dev-1.s3.ap-south-1.amazonaws.com/course/ae5d1a77-24b8-464e-8cce-0478cb71527a.jpg",
+	"imagePublicId": "course/ae5d1a77-24b8-464e-8cce-0478cb71527a.jpg",
+	"college": {
+		"$oid": "605a4638198e3f5b2e715c8c"
+	},
+	"programme": {
+		"$oid": "606a8dfc9fce2557cff776f3"
+	},
+	"createdAt": {
+		"$date": "2021-04-05T04:15:01.484Z"
+	},
+	"updatedAt": {
+		"$date": "2021-04-05T04:15:01.484Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "606a8eed9fce2557cff776f6"
+	},
+	"term": 1,
+	"posts": [],
+	"postsCount": 0,
+	"students": [],
+	"studentsCount": 0,
+	"name": "MCS-213",
+	"fullName": "Software Engineering",
+	"createdBy": {
+		"$oid": "605a30dd8a9ba159fdfaa90d"
+	},
+	"description": "*",
+	"image": "https://bimlee-dev-1.s3.ap-south-1.amazonaws.com/course/cfaf467d-b0b9-449e-b2ec-292b5104850b.jpg",
+	"imagePublicId": "course/cfaf467d-b0b9-449e-b2ec-292b5104850b.jpg",
+	"college": {
+		"$oid": "605a4638198e3f5b2e715c8c"
+	},
+	"programme": {
+		"$oid": "606a8dfc9fce2557cff776f3"
+	},
+	"createdAt": {
+		"$date": "2021-04-05T04:15:41.332Z"
+	},
+	"updatedAt": {
+		"$date": "2021-04-05T04:15:41.332Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "606a8f309fce2557cff776f7"
+	},
+	"term": 1,
+	"posts": [],
+	"postsCount": 0,
+	"students": [],
+	"studentsCount": 0,
+	"name": "MCS-214",
+	"fullName": "Professional Skills and Ethics",
+	"createdBy": {
+		"$oid": "605a30dd8a9ba159fdfaa90d"
+	},
+	"description": "*",
+	"image": "https://bimlee-dev-1.s3.ap-south-1.amazonaws.com/course/9ec7802d-f36a-4ed7-80b5-21502851c4df.jpg",
+	"imagePublicId": "course/9ec7802d-f36a-4ed7-80b5-21502851c4df.jpg",
+	"college": {
+		"$oid": "605a4638198e3f5b2e715c8c"
+	},
+	"programme": {
+		"$oid": "606a8dfc9fce2557cff776f3"
+	},
+	"createdAt": {
+		"$date": "2021-04-05T04:16:48.893Z"
+	},
+	"updatedAt": {
+		"$date": "2021-04-05T04:16:48.893Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "606a8f529fce2557cff776f8"
+	},
+	"term": 1,
+	"posts": [],
+	"postsCount": 0,
+	"students": [],
+	"studentsCount": 0,
+	"name": "MCS-215",
+	"fullName": "Security and Cyber Laws",
+	"createdBy": {
+		"$oid": "605a30dd8a9ba159fdfaa90d"
+	},
+	"description": "*",
+	"image": "https://bimlee-dev-1.s3.ap-south-1.amazonaws.com/course/5c9d3059-9ea0-4fcd-87ff-00f52676fa00.jpg",
+	"imagePublicId": "course/5c9d3059-9ea0-4fcd-87ff-00f52676fa00.jpg",
+	"college": {
+		"$oid": "605a4638198e3f5b2e715c8c"
+	},
+	"programme": {
+		"$oid": "606a8dfc9fce2557cff776f3"
+	},
+	"createdAt": {
+		"$date": "2021-04-05T04:17:22.92Z"
+	},
+	"updatedAt": {
+		"$date": "2021-04-05T04:17:22.92Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "606a8f8d9fce2557cff776f9"
+	},
+	"term": 1,
+	"posts": [],
+	"postsCount": 0,
+	"students": [],
+	"studentsCount": 0,
+	"name": "MCSL-216",
+	"fullName": "DAA and Web Design Lab",
+	"createdBy": {
+		"$oid": "605a30dd8a9ba159fdfaa90d"
+	},
+	"description": "*",
+	"image": "https://bimlee-dev-1.s3.ap-south-1.amazonaws.com/course/ec0153ec-e1ac-4a3a-a08d-583c0beebc54.jpg",
+	"imagePublicId": "course/ec0153ec-e1ac-4a3a-a08d-583c0beebc54.jpg",
+	"college": {
+		"$oid": "605a4638198e3f5b2e715c8c"
+	},
+	"programme": {
+		"$oid": "606a8dfc9fce2557cff776f3"
+	},
+	"createdAt": {
+		"$date": "2021-04-05T04:18:21.694Z"
+	},
+	"updatedAt": {
+		"$date": "2021-04-05T04:18:21.694Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "606a900b9fce2557cff776fa"
+	},
+	"term": 1,
+	"posts": [],
+	"postsCount": 0,
+	"students": [],
+	"studentsCount": 0,
+	"name": "MCSL-217",
+	"fullName": "Software Engineering Lab",
+	"createdBy": {
+		"$oid": "605a30dd8a9ba159fdfaa90d"
+	},
+	"description": "*",
+	"image": "https://bimlee-dev-1.s3.ap-south-1.amazonaws.com/course/83909690-c53d-40b8-8178-45b989fe8f4e.jpg",
+	"imagePublicId": "course/83909690-c53d-40b8-8178-45b989fe8f4e.jpg",
+	"college": {
+		"$oid": "605a4638198e3f5b2e715c8c"
+	},
+	"programme": {
+		"$oid": "606a8dfc9fce2557cff776f3"
+	},
+	"createdAt": {
+		"$date": "2021-04-05T04:20:27.049Z"
+	},
+	"updatedAt": {
+		"$date": "2021-04-05T04:20:27.049Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "606a90329fce2557cff776fb"
+	},
+	"term": 1,
+	"posts": [],
+	"postsCount": 0,
+	"students": [],
+	"studentsCount": 0,
+	"name": "MCS-218",
+	"fullName": "Data Communication and Computer Networks",
+	"createdBy": {
+		"$oid": "605a30dd8a9ba159fdfaa90d"
+	},
+	"description": "*",
+	"image": "https://bimlee-dev-1.s3.ap-south-1.amazonaws.com/course/87798783-63a0-47d2-a412-a8ed1a9148ef.jpg",
+	"imagePublicId": "course/87798783-63a0-47d2-a412-a8ed1a9148ef.jpg",
+	"college": {
+		"$oid": "605a4638198e3f5b2e715c8c"
+	},
+	"programme": {
+		"$oid": "606a8dfc9fce2557cff776f3"
+	},
+	"createdAt": {
+		"$date": "2021-04-05T04:21:06.969Z"
+	},
+	"updatedAt": {
+		"$date": "2021-04-05T04:21:06.969Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "606a90629fce2557cff776fc"
+	},
+	"term": 2,
+	"posts": [],
+	"postsCount": 0,
+	"students": [],
+	"studentsCount": 0,
+	"name": "MCS-219",
+	"fullName": "Object Oriented Analysis and Design",
+	"createdBy": {
+		"$oid": "605a30dd8a9ba159fdfaa90d"
+	},
+	"description": "*",
+	"image": "https://bimlee-dev-1.s3.ap-south-1.amazonaws.com/course/05141405-e30d-4a36-bf8c-6a66b5f76cac.jpg",
+	"imagePublicId": "course/05141405-e30d-4a36-bf8c-6a66b5f76cac.jpg",
+	"college": {
+		"$oid": "605a4638198e3f5b2e715c8c"
+	},
+	"programme": {
+		"$oid": "606a8dfc9fce2557cff776f3"
+	},
+	"createdAt": {
+		"$date": "2021-04-05T04:21:54.058Z"
+	},
+	"updatedAt": {
+		"$date": "2021-04-05T04:21:54.058Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "606a90999fce2557cff776fd"
+	},
+	"term": 2,
+	"posts": [],
+	"postsCount": 0,
+	"students": [],
+	"studentsCount": 0,
+	"name": "MCS-220",
+	"fullName": "Web Technologies",
+	"createdBy": {
+		"$oid": "605a30dd8a9ba159fdfaa90d"
+	},
+	"description": "*",
+	"image": "https://bimlee-dev-1.s3.ap-south-1.amazonaws.com/course/4d9c8532-d5fe-4d21-a4bf-da1d8f1019fa.jpg",
+	"imagePublicId": "course/4d9c8532-d5fe-4d21-a4bf-da1d8f1019fa.jpg",
+	"college": {
+		"$oid": "605a4638198e3f5b2e715c8c"
+	},
+	"programme": {
+		"$oid": "606a8dfc9fce2557cff776f3"
+	},
+	"createdAt": {
+		"$date": "2021-04-05T04:22:49.763Z"
+	},
+	"updatedAt": {
+		"$date": "2021-04-05T04:22:49.763Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "606a90c09fce2557cff776fe"
+	},
+	"term": 2,
+	"posts": [],
+	"postsCount": 0,
+	"students": [],
+	"studentsCount": 0,
+	"name": "MCS-221",
+	"fullName": "Data Warehousing and Data Mining",
+	"createdBy": {
+		"$oid": "605a30dd8a9ba159fdfaa90d"
+	},
+	"description": "*",
+	"image": "https://bimlee-dev-1.s3.ap-south-1.amazonaws.com/course/d8d5bb21-e85b-4cc4-9488-c9db64f9b823.jpg",
+	"imagePublicId": "course/d8d5bb21-e85b-4cc4-9488-c9db64f9b823.jpg",
+	"college": {
+		"$oid": "605a4638198e3f5b2e715c8c"
+	},
+	"programme": {
+		"$oid": "606a8dfc9fce2557cff776f3"
+	},
+	"createdAt": {
+		"$date": "2021-04-05T04:23:28.862Z"
+	},
+	"updatedAt": {
+		"$date": "2021-04-05T04:23:28.862Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "606a90e49fce2557cff776ff"
+	},
+	"term": 2,
+	"posts": [],
+	"postsCount": 0,
+	"students": [],
+	"studentsCount": 0,
+	"name": "MCS-222",
+	"fullName": "OOAD and Web Technologies Lab",
+	"createdBy": {
+		"$oid": "605a30dd8a9ba159fdfaa90d"
+	},
+	"description": "*",
+	"image": "https://bimlee-dev-1.s3.ap-south-1.amazonaws.com/course/a69296f1-ebe9-4580-acb5-fde06e2739eb.jpg",
+	"imagePublicId": "course/a69296f1-ebe9-4580-acb5-fde06e2739eb.jpg",
+	"college": {
+		"$oid": "605a4638198e3f5b2e715c8c"
+	},
+	"programme": {
+		"$oid": "606a8dfc9fce2557cff776f3"
+	},
+	"createdAt": {
+		"$date": "2021-04-05T04:24:04.635Z"
+	},
+	"updatedAt": {
+		"$date": "2021-04-05T04:24:04.635Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "606a91599fce2557cff77700"
+	},
+	"term": 2,
+	"posts": [],
+	"postsCount": 0,
+	"students": [],
+	"studentsCount": 0,
+	"name": "MCSL-223",
+	"fullName": "Computer Networks and Data Mining Lab",
+	"createdBy": {
+		"$oid": "605a30dd8a9ba159fdfaa90d"
+	},
+	"description": "*",
+	"image": "https://bimlee-dev-1.s3.ap-south-1.amazonaws.com/course/7d3578a0-8c23-4604-bbef-6a19a61bbf65.jpg",
+	"imagePublicId": "course/7d3578a0-8c23-4604-bbef-6a19a61bbf65.jpg",
+	"college": {
+		"$oid": "605a4638198e3f5b2e715c8c"
+	},
+	"programme": {
+		"$oid": "606a8dfc9fce2557cff776f3"
+	},
+	"createdAt": {
+		"$date": "2021-04-05T04:26:01.858Z"
+	},
+	"updatedAt": {
+		"$date": "2021-04-05T04:26:01.858Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "606a91929fce2557cff77701"
+	},
+	"term": 3,
+	"posts": [],
+	"postsCount": 0,
+	"students": [],
+	"studentsCount": 0,
+	"name": "MCS-224",
+	"fullName": "Artificial Intelligence and Machine Learning",
+	"createdBy": {
+		"$oid": "605a30dd8a9ba159fdfaa90d"
+	},
+	"description": "*",
+	"image": "https://bimlee-dev-1.s3.ap-south-1.amazonaws.com/course/bad2977f-416c-474c-a3fc-e7abb76c4363.jpg",
+	"imagePublicId": "course/bad2977f-416c-474c-a3fc-e7abb76c4363.jpg",
+	"college": {
+		"$oid": "605a4638198e3f5b2e715c8c"
+	},
+	"programme": {
+		"$oid": "606a8dfc9fce2557cff776f3"
+	},
+	"createdAt": {
+		"$date": "2021-04-05T04:26:58.577Z"
+	},
+	"updatedAt": {
+		"$date": "2021-04-05T04:26:58.577Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "606a91c09fce2557cff77702"
+	},
+	"term": 3,
+	"posts": [],
+	"postsCount": 0,
+	"students": [],
+	"studentsCount": 0,
+	"name": "MCS-225",
+	"fullName": "Accountancy and Financial Management",
+	"createdBy": {
+		"$oid": "605a30dd8a9ba159fdfaa90d"
+	},
+	"description": "*",
+	"image": "https://bimlee-dev-1.s3.ap-south-1.amazonaws.com/course/67966a1a-6967-4543-a228-f7720892ece5.jpg",
+	"imagePublicId": "course/67966a1a-6967-4543-a228-f7720892ece5.jpg",
+	"college": {
+		"$oid": "605a4638198e3f5b2e715c8c"
+	},
+	"programme": {
+		"$oid": "606a8dfc9fce2557cff776f3"
+	},
+	"createdAt": {
+		"$date": "2021-04-05T04:27:44.552Z"
+	},
+	"updatedAt": {
+		"$date": "2021-04-05T04:27:44.552Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "606a92019fce2557cff77703"
+	},
+	"term": 3,
+	"posts": [],
+	"postsCount": 0,
+	"students": [],
+	"studentsCount": 0,
+	"name": "MCS-226",
+	"fullName": "Data Science and Big Data",
+	"createdBy": {
+		"$oid": "605a30dd8a9ba159fdfaa90d"
+	},
+	"description": "*",
+	"image": "https://bimlee-dev-1.s3.ap-south-1.amazonaws.com/course/7a19eeed-39ce-4862-bb32-0f53df767aa9.jpg",
+	"imagePublicId": "course/7a19eeed-39ce-4862-bb32-0f53df767aa9.jpg",
+	"college": {
+		"$oid": "605a4638198e3f5b2e715c8c"
+	},
+	"programme": {
+		"$oid": "606a8dfc9fce2557cff776f3"
+	},
+	"createdAt": {
+		"$date": "2021-04-05T04:28:49.933Z"
+	},
+	"updatedAt": {
+		"$date": "2021-04-05T04:28:49.933Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "606a92329fce2557cff77704"
+	},
+	"term": 3,
+	"posts": [],
+	"postsCount": 0,
+	"students": [],
+	"studentsCount": 0,
+	"name": "MCS-227",
+	"fullName": "Cloud Computing and IoT",
+	"createdBy": {
+		"$oid": "605a30dd8a9ba159fdfaa90d"
+	},
+	"description": "*",
+	"image": "https://bimlee-dev-1.s3.ap-south-1.amazonaws.com/course/11f306b0-9062-4373-a036-af9fc20a321e.jpg",
+	"imagePublicId": "course/11f306b0-9062-4373-a036-af9fc20a321e.jpg",
+	"college": {
+		"$oid": "605a4638198e3f5b2e715c8c"
+	},
+	"programme": {
+		"$oid": "606a8dfc9fce2557cff776f3"
+	},
+	"createdAt": {
+		"$date": "2021-04-05T04:29:38.324Z"
+	},
+	"updatedAt": {
+		"$date": "2021-04-05T04:29:38.324Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "606a92a39fce2557cff77705"
+	},
+	"term": 3,
+	"posts": [],
+	"postsCount": 0,
+	"students": [],
+	"studentsCount": 0,
+	"name": "MCSL-228",
+	"fullName": "AI and Machine Learning Lab",
+	"createdBy": {
+		"$oid": "605a30dd8a9ba159fdfaa90d"
+	},
+	"description": "*",
+	"image": "https://bimlee-dev-1.s3.ap-south-1.amazonaws.com/course/13ec6e9a-1ebc-4a1a-84bc-46aea5c45c3e.jpg",
+	"imagePublicId": "course/13ec6e9a-1ebc-4a1a-84bc-46aea5c45c3e.jpg",
+	"college": {
+		"$oid": "605a4638198e3f5b2e715c8c"
+	},
+	"programme": {
+		"$oid": "606a8dfc9fce2557cff776f3"
+	},
+	"createdAt": {
+		"$date": "2021-04-05T04:31:31.58Z"
+	},
+	"updatedAt": {
+		"$date": "2021-04-05T04:31:31.58Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "606a92cf9fce2557cff77706"
+	},
+	"term": 3,
+	"posts": [],
+	"postsCount": 0,
+	"students": [],
+	"studentsCount": 0,
+	"name": "MCSL-229",
+	"fullName": "Cloud and Data Science Lab",
+	"createdBy": {
+		"$oid": "605a30dd8a9ba159fdfaa90d"
+	},
+	"description": "*",
+	"image": "https://bimlee-dev-1.s3.ap-south-1.amazonaws.com/course/fdc405e0-5357-4f4e-bef6-4227c4c41c84.jpg",
+	"imagePublicId": "course/fdc405e0-5357-4f4e-bef6-4227c4c41c84.jpg",
+	"college": {
+		"$oid": "605a4638198e3f5b2e715c8c"
+	},
+	"programme": {
+		"$oid": "606a8dfc9fce2557cff776f3"
+	},
+	"createdAt": {
+		"$date": "2021-04-05T04:32:15.355Z"
+	},
+	"updatedAt": {
+		"$date": "2021-04-05T04:32:15.355Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "606a92f39fce2557cff77707"
+	},
+	"term": 4,
+	"posts": [],
+	"postsCount": 0,
+	"students": [],
+	"studentsCount": 0,
+	"name": "MCS-230",
+	"fullName": "Digital Image Processing and Computer Vision",
+	"createdBy": {
+		"$oid": "605a30dd8a9ba159fdfaa90d"
+	},
+	"description": "*",
+	"image": "https://bimlee-dev-1.s3.ap-south-1.amazonaws.com/course/82cfb6e9-6090-456a-b283-d2b8bf3f093a.jpg",
+	"imagePublicId": "course/82cfb6e9-6090-456a-b283-d2b8bf3f093a.jpg",
+	"college": {
+		"$oid": "605a4638198e3f5b2e715c8c"
+	},
+	"programme": {
+		"$oid": "606a8dfc9fce2557cff776f3"
+	},
+	"createdAt": {
+		"$date": "2021-04-05T04:32:51.041Z"
+	},
+	"updatedAt": {
+		"$date": "2021-04-05T04:32:51.041Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "606a93229fce2557cff77708"
+	},
+	"term": 4,
+	"posts": [],
+	"postsCount": 0,
+	"students": [],
+	"studentsCount": 0,
+	"name": "MCS-231",
+	"fullName": "Mobile Computing",
+	"createdBy": {
+		"$oid": "605a30dd8a9ba159fdfaa90d"
+	},
+	"description": "*",
+	"image": "https://bimlee-dev-1.s3.ap-south-1.amazonaws.com/course/0a9fdfdc-947e-4a54-ba02-4db047da04d2.jpg",
+	"imagePublicId": "course/0a9fdfdc-947e-4a54-ba02-4db047da04d2.jpg",
+	"college": {
+		"$oid": "605a4638198e3f5b2e715c8c"
+	},
+	"programme": {
+		"$oid": "606a8dfc9fce2557cff776f3"
+	},
+	"createdAt": {
+		"$date": "2021-04-05T04:33:38.442Z"
+	},
+	"updatedAt": {
+		"$date": "2021-04-05T04:33:38.442Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "606a93499fce2557cff77709"
+	},
+	"term": 4,
+	"posts": [],
+	"postsCount": 0,
+	"students": [],
+	"studentsCount": 0,
+	"name": "MCSP-232",
+	"fullName": "Project (MCA_NEW)",
+	"createdBy": {
+		"$oid": "605a30dd8a9ba159fdfaa90d"
+	},
+	"description": "*",
+	"image": "https://bimlee-dev-1.s3.ap-south-1.amazonaws.com/course/8fdbc724-f6b0-46d5-9ea7-dc1ef44b964d.jpg",
+	"imagePublicId": "course/8fdbc724-f6b0-46d5-9ea7-dc1ef44b964d.jpg",
+	"college": {
+		"$oid": "605a4638198e3f5b2e715c8c"
+	},
+	"programme": {
+		"$oid": "606a8dfc9fce2557cff776f3"
+	},
+	"createdAt": {
+		"$date": "2021-04-05T04:34:17.361Z"
+	},
+	"updatedAt": {
+		"$date": "2021-04-05T04:34:17.361Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "60821aef8cb81562346dd009"
+	},
+	"term": 1,
+	"posts": [
+		{
+			"$oid": "6087b052bbcc487f17e101b2"
+		}
+	],
+	"postsCount": 1,
+	"students": [],
+	"studentsCount": 0,
+	"name": "testing",
+	"fullName": "This course is for testing",
+	"createdBy": {
+		"$oid": "605a30dd8a9ba159fdfaa90d"
+	},
+	"description": "couldn't delete some test posts, so moved them here :)",
+	"image": "https://bimlee-dev-1.s3.ap-south-1.amazonaws.com/course/00abc9fa-3ba9-4617-b832-0b5219c9875e.jpg",
+	"imagePublicId": "course/00abc9fa-3ba9-4617-b832-0b5219c9875e.jpg",
+	"college": {
+		"$oid": "605a4638198e3f5b2e715c8c"
+	},
+	"programme": {
+		"$oid": "605a46c1198e3f5b2e715c8e"
+	},
+	"createdAt": {
+		"$date": "2021-04-23T00:55:11.871Z"
+	},
+	"updatedAt": {
+		"$date": "2021-04-27T06:33:54.224Z"
+	},
+	"__v": 0
+}]
+

@@ -1,0 +1,438 @@
+[{
+	"_id": {
+		"$oid": "605a4638198e3f5b2e715c8c"
+	},
+	"programmes": [
+		{
+			"$oid": "605a46c1198e3f5b2e715c8e"
+		},
+		{
+			"$oid": "606698ce47b0d6f57bbacc5f"
+		},
+		{
+			"$oid": "6066a8a347b0d6f57bbacc63"
+		},
+		{
+			"$oid": "6066a96847b0d6f57bbacc64"
+		},
+		{
+			"$oid": "6066aa8b47b0d6f57bbacc67"
+		},
+		{
+			"$oid": "6066abe947b0d6f57bbacc68"
+		},
+		{
+			"$oid": "6066bb96be6bcc1ee9d9c1d0"
+		},
+		{
+			"$oid": "60689c20161a3c0e216ad23f"
+		},
+		{
+			"$oid": "60689c6d161a3c0e216ad240"
+		},
+		{
+			"$oid": "60689cc4161a3c0e216ad241"
+		},
+		{
+			"$oid": "60689d0b161a3c0e216ad242"
+		},
+		{
+			"$oid": "60689d37161a3c0e216ad243"
+		},
+		{
+			"$oid": "60689d5d161a3c0e216ad244"
+		},
+		{
+			"$oid": "60689d8d161a3c0e216ad245"
+		},
+		{
+			"$oid": "60689dc6161a3c0e216ad246"
+		},
+		{
+			"$oid": "60689dee161a3c0e216ad247"
+		},
+		{
+			"$oid": "60689e87161a3c0e216ad248"
+		},
+		{
+			"$oid": "60689eac161a3c0e216ad249"
+		},
+		{
+			"$oid": "60689f0d161a3c0e216ad24a"
+		},
+		{
+			"$oid": "60689f7f161a3c0e216ad24b"
+		},
+		{
+			"$oid": "60689f9f161a3c0e216ad24c"
+		},
+		{
+			"$oid": "60689fc5161a3c0e216ad24d"
+		},
+		{
+			"$oid": "60689fe3161a3c0e216ad24e"
+		},
+		{
+			"$oid": "6068a023161a3c0e216ad24f"
+		},
+		{
+			"$oid": "6068a0b4161a3c0e216ad250"
+		},
+		{
+			"$oid": "6068a0d5161a3c0e216ad251"
+		},
+		{
+			"$oid": "6068a0f9161a3c0e216ad252"
+		},
+		{
+			"$oid": "6068a11a161a3c0e216ad253"
+		},
+		{
+			"$oid": "6068a137161a3c0e216ad254"
+		},
+		{
+			"$oid": "6068a179161a3c0e216ad255"
+		},
+		{
+			"$oid": "6068a198161a3c0e216ad256"
+		},
+		{
+			"$oid": "6068a1e2161a3c0e216ad257"
+		},
+		{
+			"$oid": "606a8dfc9fce2557cff776f3"
+		},
+		{
+			"$oid": "606c4fc9abb8ecf41ec41ff7"
+		},
+		{
+			"$oid": "606c5039abb8ecf41ec41ff8"
+		},
+		{
+			"$oid": "606c8e8f0867c83385088448"
+		},
+		{
+			"$oid": "606c97cee0e3520f899f4fd2"
+		},
+		{
+			"$oid": "606c9875e0e3520f899f4fd3"
+		},
+		{
+			"$oid": "606c98dce0e3520f899f4fd4"
+		},
+		{
+			"$oid": "606c9b60e0e3520f899f4fd8"
+		},
+		{
+			"$oid": "606c9baee0e3520f899f4fd9"
+		},
+		{
+			"$oid": "606c9c75e0e3520f899f4fda"
+		},
+		{
+			"$oid": "606c9cf5e0e3520f899f4fdb"
+		},
+		{
+			"$oid": "606c9d92e0e3520f899f4fdc"
+		},
+		{
+			"$oid": "606c9deee0e3520f899f4fdd"
+		},
+		{
+			"$oid": "606c9e61e0e3520f899f4fde"
+		},
+		{
+			"$oid": "606c9eabe0e3520f899f4fdf"
+		},
+		{
+			"$oid": "606d22a8e0e3520f899f4fe0"
+		},
+		{
+			"$oid": "606d230ee0e3520f899f4fe1"
+		},
+		{
+			"$oid": "606d237ee0e3520f899f4fe2"
+		},
+		{
+			"$oid": "606d23ede0e3520f899f4fe3"
+		},
+		{
+			"$oid": "606d2461e0e3520f899f4fe4"
+		},
+		{
+			"$oid": "606d24efe0e3520f899f4fe5"
+		},
+		{
+			"$oid": "606d254fe0e3520f899f4fe6"
+		},
+		{
+			"$oid": "606d25bee0e3520f899f4fe7"
+		},
+		{
+			"$oid": "606d2623e0e3520f899f4fe8"
+		},
+		{
+			"$oid": "606d26c9e0e3520f899f4fe9"
+		},
+		{
+			"$oid": "606d27a6e0e3520f899f4fea"
+		},
+		{
+			"$oid": "606d2eeae0e3520f899f4feb"
+		},
+		{
+			"$oid": "606d30d8e0e3520f899f4fec"
+		},
+		{
+			"$oid": "606d38b5e0e3520f899f4ff2"
+		},
+		{
+			"$oid": "606d3969e0e3520f899f4ff3"
+		},
+		{
+			"$oid": "606d5012e0e3520f899f4ff4"
+		},
+		{
+			"$oid": "606d8329bf08c4423c99b6b0"
+		},
+		{
+			"$oid": "606d866dbf08c4423c99b6b1"
+		},
+		{
+			"$oid": "606d870bbf08c4423c99b6b2"
+		},
+		{
+			"$oid": "606d88e6bf08c4423c99b6b3"
+		},
+		{
+			"$oid": "606d922dbf08c4423c99b6b4"
+		},
+		{
+			"$oid": "606d9290bf08c4423c99b6b5"
+		},
+		{
+			"$oid": "606d9311bf08c4423c99b6b6"
+		},
+		{
+			"$oid": "606d9394bf08c4423c99b6b7"
+		},
+		{
+			"$oid": "606d93fabf08c4423c99b6b8"
+		},
+		{
+			"$oid": "606d947ebf08c4423c99b6b9"
+		},
+		{
+			"$oid": "606d9527bf08c4423c99b6ba"
+		},
+		{
+			"$oid": "606d95cabf08c4423c99b6bb"
+		},
+		{
+			"$oid": "606d9660bf08c4423c99b6bc"
+		},
+		{
+			"$oid": "606d96ecbf08c4423c99b6bd"
+		},
+		{
+			"$oid": "606d9749bf08c4423c99b6be"
+		},
+		{
+			"$oid": "606d97adbf08c4423c99b6bf"
+		},
+		{
+			"$oid": "606d98e7bf08c4423c99b6c0"
+		},
+		{
+			"$oid": "606d9968bf08c4423c99b6c1"
+		},
+		{
+			"$oid": "606d9a2abf08c4423c99b6c2"
+		},
+		{
+			"$oid": "606d9a83bf08c4423c99b6c3"
+		},
+		{
+			"$oid": "606d9aedbf08c4423c99b6c4"
+		},
+		{
+			"$oid": "606d9b4ebf08c4423c99b6c5"
+		},
+		{
+			"$oid": "606d9bbbbf08c4423c99b6c6"
+		},
+		{
+			"$oid": "606d9c1fbf08c4423c99b6c7"
+		},
+		{
+			"$oid": "606d9c85bf08c4423c99b6c8"
+		},
+		{
+			"$oid": "606db790bf08c4423c99b6c9"
+		},
+		{
+			"$oid": "606db82ebf08c4423c99b6ca"
+		},
+		{
+			"$oid": "606db888bf08c4423c99b6cb"
+		},
+		{
+			"$oid": "606db8dfbf08c4423c99b6cc"
+		},
+		{
+			"$oid": "606db967bf08c4423c99b6cd"
+		},
+		{
+			"$oid": "606db9e1bf08c4423c99b6ce"
+		},
+		{
+			"$oid": "606dba7abf08c4423c99b6cf"
+		},
+		{
+			"$oid": "606dbb27bf08c4423c99b6d0"
+		},
+		{
+			"$oid": "606dbbbdbf08c4423c99b6d1"
+		},
+		{
+			"$oid": "606dbc3cbf08c4423c99b6d2"
+		},
+		{
+			"$oid": "606dbcb1bf08c4423c99b6d3"
+		},
+		{
+			"$oid": "606dbd33bf08c4423c99b6d4"
+		},
+		{
+			"$oid": "606dbdb0bf08c4423c99b6d5"
+		},
+		{
+			"$oid": "606dbe67bf08c4423c99b6d6"
+		},
+		{
+			"$oid": "606dbecdbf08c4423c99b6d7"
+		},
+		{
+			"$oid": "606ddec5bf08c4423c99b6da"
+		}
+	],
+	"programmesCount": 104,
+	"students": [
+		{
+			"$oid": "605b2c58ed11e7674e361111"
+		},
+		{
+			"$oid": "60603d30bf7ee0b3778db15f"
+		},
+		{
+			"$oid": "606072bfbf7ee0b3778db190"
+		},
+		{
+			"$oid": "605a30dd8a9ba159fdfaa90d"
+		},
+		{
+			"$oid": "60614a645a9164c01d4e1c44"
+		}
+	],
+	"studentsCount": 5,
+	"name": "IGNOU",
+	"fullName": "Indira Gandhi National Open University",
+	"createdBy": {
+		"$oid": "605a30dd8a9ba159fdfaa90d"
+	},
+	"description": "The Indira Gandhi National Open University (IGNOU), established by an Act of Parliament in 1985, has continuously striven to build an inclusive knowledge society through inclusive education. It has tried to increase the Gross Enrollment Ratio (GER) by offering high-quality teaching through the Open and Distance Learning (ODL) mode.\n\nThe University began by offering two academic programmes in 1987, i.e., Diploma in Management and Diploma in Distance Education, with a strength of 4,528 students.\n\nToday, it serves the educational aspirations of over 3 million students in India and other countries through 21 Schools of Studies and a network of 67 Regional Centres, around 2,000 Learner Support Centres and 20 overseas institutions. The University offers about 200 certificate, diploma, degree and doctoral programmes, with a strength of nearly 250 faculty members and 230 academic staff at the headquarters and regional centres and over 35,000 academic counsellors from conventional institutions of higher learning, professional organisations, and industry among others.\n\nThe mandate of the University is to:\n\nProvide access to higher education to all segments of the society;\nOffer high-quality, innovative and need-based programmes at different levels, to all those who require them;\nReach out to the disadvantaged by offering programmes in all parts of the country at affordable costs; and\nPromote, coordinate and regulate the standards of education offered through open and distance learning in the country.\nTo achieve the twin objectives of widening access for all sections of society and providing continual professional development and training to all sectors of the economy, the University uses a variety of media and latest technology in imparting education. This is reflected in the formulated vision of IGNOU, keeping its objectives in focus, which reads:\nThe Indira Gandhi National Open University, the National Resource Centre for Open and Distance Learning, with international recognition and presence, shall provide seamless access to sustainable and learner-centric quality education, skill upgradation and training to all by using innovative technologies and methodologies and ensuring convergence of existing systems for large-scale human resource development, required for promoting integrated national development and global understanding.\n\nThe University has made a significant mark in the areas of higher education, community education and continual professional development. The University has been networking with reputed public institutions and private enterprises for enhancing the educational opportunities being offered by it. As a world leader in distance education, it has been conferred with awards of excellence by the Commonwealth of Learning (COL), Canada.\n\nThe University is committed to quality in teaching, research, training and extension activities, and acts as a national resource centre for expertise and infrastructure in the ODL system. The University has established the National Centre for Disability Studies and National Centre for Innovation in Distance Education, to focus on specific learner groups and enrich the distance learning system. \n\nWith the launch of EduSat (a satellite dedicated only to education) on 20th September, 2004, and the establishment of the Inter-University Consortium, the University has ushered in a new era of technology-enabled education in the country. All the regional centres and high enrollment Learners Support have been provided with active two-way video-conferencing network connectivity, which has made it possible to transact interactive digital content.\n\nEmphasis is now being laid on developing interactive multimedia and online learning, and adding value to the traditional distance education delivery mode with modern technology-enabled education within the framework of integrated distance and online learning. \n\nOver the years, IGNOU has lived up to the country’s expectations of providing education to the marginalised sections of society. Free of cost education is being provided to all jail inmates across the country. A large number of SC/ST students have been admitted to various programmes of the University, also efforts have been made to reach onto persons working in the Armed and Security Forces of the Country.",
+	"image": "https://bimlee-live-1.s3.ap-south-1.amazonaws.com/college/516b44d2-51a1-4b96-b65e-2be52de559f0.jpg",
+	"imagePublicId": "college/516b44d2-51a1-4b96-b65e-2be52de559f0.jpg",
+	"createdAt": {
+		"$date": "2021-03-23T19:49:12.974Z"
+	},
+	"updatedAt": {
+		"$date": "2021-04-21T14:08:28.414Z"
+	},
+	"__v": 0,
+	"verified": true,
+	"updatedBy": {
+		"$oid": "605a30dd8a9ba159fdfaa90d"
+	}
+},
+{
+	"_id": {
+		"$oid": "605a4684198e3f5b2e715c8d"
+	},
+	"programmes": [],
+	"programmesCount": 0,
+	"students": [],
+	"studentsCount": 0,
+	"name": "DU",
+	"fullName": "University of Delhi",
+	"createdBy": {
+		"$oid": "605a30dd8a9ba159fdfaa90d"
+	},
+	"description": "The University of Delhi is a premier university of the country with a venerable legacy and international acclaim for highest academic standards, diverse educational programmes, distinguished faculty, illustrious alumni, varied co-curricular activities and modern infrastructure. Over the many years of its existence, the University has sustained the highest global standards and best practices in higher education. Its long-term commitment to nation building and unflinching adherence to universal human values are reflected in its motto: 'Nishtha Dhriti Satyam' 'निष्ठा धृति सत्यम्' (Dedication, Steadfastness and Truth). Established in 1922 as a unitary, teaching and residential University by the Act of the then Central Legislative Assembly, a strong commitment to excellence in teaching, research and social outreach has made the University a role-model and trend setter for other universities. The President of India is the Visitor, the Vice-President is the Chancellor and the Chief Justice of the Supreme Court of India is the Pro-Chancellor of the University. Beginning with three colleges and 750 students, it has grown as one of the largest universities in India with 16 faculties, over 80 academic departments, an equal number of colleges and over seven lakh students. Over 500 programmes offered by the University are approved by Academic and Executive Councils, out of which 209 programmes are being considered for NAAC accreditation purpose. The rest being run in colleges are separately accredited. Drawing students and faculty from across India and abroad, the University has emerged as a symbol of excellence, integrity and openness of mansa (thought), vaacha (speech) and karmana (action). Sir Maurice Gwyer, the then Vice-Chancellor, realizing the importance of a distinguished faculty to act as role models, relentlessly searched for talent all over the country and roped in men of eminence to this University, such as Prof. D.S. Kothari in Physics, Prof. T.R. Sheshadri in Chemistry, Prof. P Maheshwari in Botany and Prof. M L Bhatia in Zoology. Five Departments namely Chemistry, Geology, Zoology, Sociology and History have been awarded the status of the Centres of Advanced Studies. These Centres of Advanced Studies have carved a niche for themselves as centres of excellence in teaching and research in their respective areas. In addition, a good number of University departments are also receiving grants under the Special Assistance Programme of the UGC in recognition of their outstanding academic work. 10 Departments (Germanic & Romance Studies, Hindi, Persian, Geography, Music, East Asian Studies, Anthropology, Mathematics, B.R.Ambedkar, M. I.L.) are getting grants under DRS, 2 Departments (Buddhist Studies, English) are getting grants under DSA, 3 Departments (English, Buddhist Studies, Social Work) are getting grants under AISHSS and 3 Departments (African Studies, East Asian Studies, Developing Countries Research Centre) are getting grants under Area Studies Programmes. Department of Adult, Continuing Education and Extension and Women’s Studies & Development Centre of the University are also getting special funding from UGC. The University today boasts of as many as 15 big libraries apart from libraries in colleges. The University Science Instrumentation Centre (USIC) which is now situated close to the Physics and Chemistry Departments houses a number of sophisticated and high-end research instruments. These instruments are used quite frequently by Teachers and Research Scholars of postgraduate departments of the University as well as by many other institutions in Delhi and its neighbourhood. The University has recently laid fibre-optic network in the North and the South Campuses connecting all colleges and departments. When the University of Delhi expanded in many directions to keep pace with a rapidly growing city, South Campus was established in 1973 to facilitate access for the residents of South Delhi. It moved to its present location on Benito Juarez Road, near Dhaula Kuan, in 1984. The Campus is now spread across 69 acres of green, hilly terrain and its buildings blend attractively with the natural surroundings. The various departments are located in the Faculty of Arts and the Faculty of Inter-disciplinary and Applied Sciences. S.P. Jain Centre for Management Studies is also located at the South Delhi Campus. Besides these, the Campus has a good library, a Health Centre, a Bank, a Post Office, DTC Pass Section and administrative and examination blocks. South Campus also provides some residential quarters for faculty members and the non-teaching staff. Outstation students are offered accommodation in three hostels.",
+	"image": "https://bimlee-dev-1.s3.ap-south-1.amazonaws.com/college/4da2e933-61bf-4b1f-8ab7-a50cbf67d84c.jpg",
+	"imagePublicId": "college/4da2e933-61bf-4b1f-8ab7-a50cbf67d84c.jpg",
+	"createdAt": {
+		"$date": "2021-03-23T19:50:28.001Z"
+	},
+	"updatedAt": {
+		"$date": "2021-04-03T02:15:08.808Z"
+	},
+	"__v": 0,
+	"verified": true,
+	"updatedBy": {
+		"$oid": "605a30dd8a9ba159fdfaa90d"
+	}
+},
+{
+	"_id": {
+		"$oid": "6067da150ddec462aa972bb0"
+	},
+	"programmes": [],
+	"programmesCount": 0,
+	"students": [],
+	"studentsCount": 0,
+	"name": "temp",
+	"fullName": "temp",
+	"createdBy": {
+		"$oid": "605a30dd8a9ba159fdfaa90d"
+	},
+	"description": "temp",
+	"image": "https://bimlee-dev-1.s3.ap-south-1.amazonaws.com/college/3089176b-bc65-45aa-975c-c7ce39aa6267.jpg",
+	"imagePublicId": "college/3089176b-bc65-45aa-975c-c7ce39aa6267.jpg",
+	"createdAt": {
+		"$date": "2021-04-03T02:59:33.736Z"
+	},
+	"updatedAt": {
+		"$date": "2021-04-03T02:59:33.736Z"
+	},
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "6075c29d336b0c87696048d1"
+	},
+	"programmes": [],
+	"programmesCount": 0,
+	"students": [],
+	"studentsCount": 0,
+	"name": "St-Thomas-Pauri",
+	"fullName": "St Thomas school pauri garhwal",
+	"createdBy": {
+		"$oid": "6075c25c336b0c87696048cf"
+	},
+	"description": "One of the best school in the world 🎉🎉🎉🥳🥳🥳\n",
+	"image": "https://bimlee-live-1.s3.ap-south-1.amazonaws.com/college/70e58cd2-0e01-469f-8430-0a5423056e9b.jpg",
+	"imagePublicId": "college/70e58cd2-0e01-469f-8430-0a5423056e9b.jpg",
+	"createdAt": {
+		"$date": "2021-04-13T16:11:09.29Z"
+	},
+	"updatedAt": {
+		"$date": "2021-04-14T10:42:54.317Z"
+	},
+	"__v": 0,
+	"verified": true,
+	"updatedBy": {
+		"$oid": "605a30dd8a9ba159fdfaa90d"
+	}
+}]
+
