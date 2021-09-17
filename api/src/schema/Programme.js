@@ -1,4 +1,4 @@
-import { gql } from 'apollo-server-express';
+import { gql } from "apollo-server-express";
 
 /**
  * Programme schema
@@ -27,6 +27,35 @@ const ProgrammeSchema = gql`
     studentsCount: Int
     createdAt: String
     updatedAt: String
+
+    code: String
+    programmeDetail: ProgrammeDetail
+    courseList: CourseList
+    school: School
+  }
+
+  type CourseList {
+    ALL: [Course]
+    CC: [Course]
+    DSE: [Course]
+    AECC: [Course]
+    SEC: [Course]
+    GE: [Course]
+    LA: [Course]
+  }
+
+  type ProgrammeDetail {
+    first: [CourseCreditPair]
+    second: [CourseCreditPair]
+    third: [CourseCreditPair]
+    fourth: [CourseCreditPair]
+    fifth: [CourseCreditPair]
+    sixth: [CourseCreditPair]
+  }
+
+  type CourseCreditPair {
+    course: Course
+    credit: Int
   }
 
   # ---------------------------------------------------------
@@ -103,7 +132,11 @@ const ProgrammeSchema = gql`
     getProgrammes(skip: Int, limit: Int): ProgrammesPayload
 
     # Gets programmes of a College
-    getCollegeProgrammes(collegeId: ID!, skip: Int, limit: Int): ProgrammesPayload
+    getCollegeProgrammes(
+      collegeId: ID!
+      skip: Int
+      limit: Int
+    ): ProgrammesPayload
   }
 
   # ---------------------------------------------------------

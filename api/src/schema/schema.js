@@ -1,15 +1,18 @@
-import { gql } from 'apollo-server-express';
-
-import UserSchema from './user';
-import FollowSchema from './Follow';
-import PostSchema from './Post';
-import LikeSchema from './Like';
-import CommentSchema from './Comment';
-import MessageSchema from './Message';
-import NotificationSchema from './Notification';
-import CollegeSchema from './College';
-import CourseSchema from './Course';
-import ProgrammeSchema from './Programme';
+import { gql } from "apollo-server-express";
+import CollegeSchema from "./College";
+import CommentSchema from "./Comment";
+import CourseSchema from "./Course";
+import FacultySchema from "./Faculty";
+import FollowSchema from "./Follow";
+import IGNOUSchema from "./IGNOU";
+import LikeSchema from "./Like";
+import MessageSchema from "./Message";
+import NotificationSchema from "./Notification";
+import PostSchema from "./Post";
+import ProgrammeSchema from "./Programme";
+import SchoolSchema from "./School";
+import StudentSchema from "./Student";
+import UserSchema from "./user";
 
 const schema = gql`
   type Query {
@@ -34,6 +37,10 @@ const schema = gql`
   ${CollegeSchema}
   ${CourseSchema}
   ${ProgrammeSchema}
+  ${FacultySchema}
+  ${IGNOUSchema}
+  ${SchoolSchema}
+  ${StudentSchema}
 `;
 
 export default schema;
