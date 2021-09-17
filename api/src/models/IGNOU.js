@@ -3,9 +3,9 @@ import mongoose from "mongoose";
 const Schema = mongoose.Schema;
 
 /**
- * College schema
+ * IGNOU schema
  */
-const collegeSchema = Schema(
+const IGNOUSchema = Schema(
   {
     name: String,
     fullName: String,
@@ -40,4 +40,4 @@ const collegeSchema = Schema(
   }
 );
 
-export default mongoose.model("College", collegeSchema);
+export default mongoose.model("IGNOU", IGNOUSchema);

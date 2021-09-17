@@ -1,10 +1,11 @@
-import { gql } from "apollo-server-express";
-
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const apollo_server_express_1 = require("apollo-server-express");
 /**
- * IGNOU schema
+ * College schema
  */
-const IGNOUSchema = gql`
-  type IGNOU {
+const CollegeSchema = (0, apollo_server_express_1.gql) `
+  type College {
     name: String
     fullName: String
     preamble: String
@@ -19,5 +20,4 @@ const IGNOUSchema = gql`
     users: [User]
   }
 `;
-
-export default IGNOUSchema;
+exports.default = CollegeSchema;

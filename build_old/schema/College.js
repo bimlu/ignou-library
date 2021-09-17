@@ -1,9 +1,10 @@
-import { gql } from "apollo-server-express";
-
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const apollo_server_express_1 = require("apollo-server-express");
 /**
  * College schema
  */
-const CollegeSchema = gql`
+const CollegeSchema = (0, apollo_server_express_1.gql) `
   # ---------------------------------------------------------
   # Model Objects
   # ---------------------------------------------------------
@@ -104,5 +105,4 @@ const CollegeSchema = gql`
     toggleCollegeVerification(id: ID!): CollegePayload
   }
 `;
-
-export default CollegeSchema;
+exports.default = CollegeSchema;

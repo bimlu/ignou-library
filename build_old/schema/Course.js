@@ -1,13 +1,15 @@
-import { gql } from "apollo-server-express";
-
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const apollo_server_express_1 = require("apollo-server-express");
 /**
- * College schema
+ * Course schema
  */
-const CollegeSchema = gql`
+const CourseSchema = (0, apollo_server_express_1.gql) `
   # ---------------------------------------------------------
   # Model Objects
   # ---------------------------------------------------------
-  type College {
+  type Course {
+    term: Int
     id: ID!
     name: String!
     fullName: String!
@@ -16,32 +18,49 @@ const CollegeSchema = gql`
     image: File
     imagePublicId: String
     verified: Boolean
-    programmes: [Programme]
-    programmesCount: Int
+    college: College!
+    programme: Programme!
+    posts: [Post]
+    postsCount: Int
     students: [User]
     studentsCount: Int
     createdAt: String
     updatedAt: String
+
+    code: String
+    title: String
+    studyMaterial: [Block]
+    programmes: [Programme]
+    discipline: String
+  }
+
+  type Block {
+    blockName: String
+    blockLink: String
   }
 
   # ---------------------------------------------------------
   # Input Objects
   # ---------------------------------------------------------
-  input CreateCollegeInput {
+  input CreateCourseInput {
+    term: Int
     name: String!
     fullName: String!
     createdBy: ID!
     description: String
     image: Upload
     imagePublicId: String
+    collegeId: ID!
+    programmeId: ID!
   }
 
-  input DeleteCollegeInput {
+  input DeleteCourseInput {
     id: ID!
     imagePublicId: String
   }
 
-  input UpdateCollegeInput {
+  input UpdateCourseInput {
+    term: Int
     id: ID!
     updatedBy: ID!
     name: String
@@ -54,7 +73,8 @@ const CollegeSchema = gql`
   # ---------------------------------------------------------
   # Return Payloads
   # ---------------------------------------------------------
-  type CollegePayload {
+  type CoursePayload {
+    term: Int
     id: ID!
     name: String
     fullName: String
@@ -63,16 +83,18 @@ const CollegeSchema = gql`
     image: String
     imagePublicId: String
     verified: Boolean
-    programmes: [Programme]
-    programmesCount: Int
+    college: College
+    programme: Programme
+    posts: [Post]
+    postsCount: Int
     students: [User]
     studentsCount: Int
     createdAt: String
     updatedAt: String
   }
 
-  type CollegesPayload {
-    colleges: [CollegePayload]!
+  type CoursesPayload {
+    courses: [CoursePayload]!
     count: String!
   }
 
@@ -80,29 +102,36 @@ const CollegeSchema = gql`
   # Queries
   # ---------------------------------------------------------
   extend type Query {
-    # Gets college by id or name
-    getCollege(id: ID, name: String): CollegePayload
+    # Gets course by id or name
+    getCourse(id: ID, name: String): CoursePayload
 
-    # Gets all colleges
-    getColleges(skip: Int, limit: Int): CollegesPayload
+    # Gets all courses
+    getCourses(skip: Int, limit: Int): CoursesPayload
+
+    # Gets courses of a specific programme and college
+    getCollegeProgrammeCourses(
+      collegeId: ID!
+      programmeId: ID!
+      skip: Int
+      limit: Int
+    ): CoursesPayload
   }
 
   # ---------------------------------------------------------
   # Mutations
   # ---------------------------------------------------------
   extend type Mutation {
-    # Creates a College
-    createCollege(input: CreateCollegeInput!): CollegePayload
+    # Creates a Course
+    createCourse(input: CreateCourseInput!): CoursePayload
 
-    # Deletes a College
-    deleteCollege(input: DeleteCollegeInput!): CollegePayload
+    # Deletes a Course
+    deleteCourse(input: DeleteCourseInput!): CoursePayload
 
-    # Updates a College
-    updateCollege(input: UpdateCollegeInput!): CollegePayload
+    # Updates a Course
+    updateCourse(input: UpdateCourseInput!): CoursePayload
 
-    # Toggles verification of a College
-    toggleCollegeVerification(id: ID!): CollegePayload
+    # Toggles verification of a Course
+    toggleCourseVerification(id: ID!): CoursePayload
   }
 `;
-
-export default CollegeSchema;
+exports.default = CourseSchema;

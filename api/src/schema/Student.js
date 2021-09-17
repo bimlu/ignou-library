@@ -4,7 +4,7 @@ import { gql } from "apollo-server-express";
  * Student schema
  */
 const StudentSchema = gql`
-  type User {
+  type Student {
     firstName: String
     lastName: String
     enrollmentNumber: String
@@ -21,29 +21,26 @@ const StudentSchema = gql`
     programmes: [Programme]
     courses: [Course]
     studyCenter: String
-    username: String
+    studentname: String
   }
 
-  type Users {
-    users: [User]
+  type Students {
+    students: [Student]
     count: String
   }
 
   extend type Query {
-    # Gets the currently logged in user
-    getAuthUser: User
+    # Gets the currently logged in student
+    getAuthStudent: Student
 
-    # Gets user by enrollmentNumber
-    getUser(enrollmentNumber: String): User
+    # Gets student by enrollmentNumber
+    getStudent(enrollmentNumber: String): Student
 
-    # Gets all users
-    getUsers(enrollmentNumber: String, skip: Int, limit: Int): Users
+    # Gets all students
+    getStudents(enrollmentNumber: String, skip: Int, limit: Int): Students
 
-    # Searches users by enrollmentNumber or firstName
-    searchUsers(searchQuery: String): [User]
-
-    # Gets Suggested people for user
-    suggestPeople(enrollmentNumber: String): [User]
+    # Searches students by enrollmentNumber or firstName
+    searchStudents(searchQuery: String): [Student]
   }
 `;
 
