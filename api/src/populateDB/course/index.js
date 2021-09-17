@@ -1,4 +1,4 @@
-import Course from "../../../models/Course";
+import Course from "../../models/Course";
 import { getCourses, saveCourses } from "./courses";
 
 export const createCourses = () => {

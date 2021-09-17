@@ -1,8 +1,8 @@
 import fs from "fs";
 import path from "path";
 import { bachelorsDegreeCourses } from "./bachelors-degree";
-import { bachelorsHonoursDegreeCourses } from "./bachelors-honours-degree";
-import { mastersDegreeCourse } from "./masters-degree";
+// import { bachelorsHonoursDegreeCourses } from "./bachelors-honours-degree";
+// import { mastersDegreeCourse } from "./masters-degree";
 
 const isDuplicate = (outCourses, course) => {
   if (outCourses.length === 0) {
@@ -19,9 +19,9 @@ const isDuplicate = (outCourses, course) => {
 };
 
 export const getCourses = () => {
-  const inCourses = bachelorsDegreeCourses
-    .concat(bachelorsHonoursDegreeCourses)
-    .concat(mastersDegreeCourse);
+  const inCourses = bachelorsDegreeCourses;
+  // .concat(bachelorsHonoursDegreeCourses)
+  // .concat(mastersDegreeCourse);
   const outCourses = [];
 
   // console.log("bachelorsDegreeCourses: ", bachelorsDegreeCourses.length);
