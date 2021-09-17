@@ -1,9 +1,9 @@
 import { gql } from "apollo-server-express";
 
 /**
- * User schema
+ * Student schema
  */
-const UserSchema = gql`
+const StudentSchema = gql`
   type User {
     firstName: String
     lastName: String
@@ -47,4 +47,4 @@ const UserSchema = gql`
   }
 `;
 
-export default UserSchema;
+export default StudentSchema;

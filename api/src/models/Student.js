@@ -3,9 +3,9 @@ import mongoose from "mongoose";
 const Schema = mongoose.Schema;
 
 /**
- * User schema that has references to Programme, Course schemas
+ * Student schema that has references to Programme, Course schemas
  */
-const userSchema = new Schema(
+const studentSchema = new Schema(
   {
     firstName: String,
     lastName: String,
@@ -30,4 +30,4 @@ const userSchema = new Schema(
   }
 );
 
-export default mongoose.model("User", userSchema);
+export default mongoose.model("Student", studentSchema);
