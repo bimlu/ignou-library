@@ -1,10 +1,11 @@
-import Programme from "../../../models/Programme";
-import { getProgrammes, saveProgrammes } from "./programme";
+import Programme from "../../models/Programme";
+import { addCoursesField, getProgrammes, saveProgrammes } from "./programme";
 
 export const createProgrammes = () => {
   const programmes = getProgrammes();
-  // console.log(programmes);
-  const programmesJSON = JSON.stringify(programmes);
+  const programmesFixed = addCoursesField(programmes);
+  console.log(programmesFixed);
+  const programmesJSON = JSON.stringify(programmesFixed);
   saveProgrammes(programmesJSON);
 
   Programme.insertMany(programmes, (err, docs) => {

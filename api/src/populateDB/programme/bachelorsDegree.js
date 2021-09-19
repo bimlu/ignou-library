@@ -2,6 +2,11 @@ export const bachelorsDegreeProgrammes = [
   {
     code: "BAG",
     name: "Bachelor of Arts",
+    degree: 0,
+    termType: 1,
+    termsCount: 6,
+    fullName: "Bachelor of Arts",
+    college: "605a4638198e3f5b2e715c8c",
     courseList: {
       ALL: [],
       CC: [
@@ -171,6 +176,11 @@ export const bachelorsDegreeProgrammes = [
   {
     code: "BCOMG",
     name: "Bachelor of Commerce",
+    degree: 0,
+    termType: 1,
+    termsCount: 6,
+    fullName: "Bachelor of Commerce",
+    college: "605a4638198e3f5b2e715c8c",
     courseList: {
       ALL: [],
       CC: [
@@ -199,6 +209,11 @@ export const bachelorsDegreeProgrammes = [
   {
     code: "BSCG",
     name: "Bachelor of Science",
+    degree: 0,
+    termType: 1,
+    termsCount: 6,
+    fullName: "Bachelor of Science",
+    college: "605a4638198e3f5b2e715c8c",
     courseList: {
       ALL: [],
       CC: [
@@ -312,6 +327,11 @@ export const bachelorsDegreeProgrammes = [
   {
     code: "BCA",
     name: "Bachelor of Computer Applications",
+    degree: 0,
+    termType: 1,
+    termsCount: 6,
+    fullName: "Bachelor of Computer Applications",
+    college: "605a4638198e3f5b2e715c8c",
     courseList: {
       ALL: [],
       CC: [],
@@ -378,6 +398,11 @@ export const bachelorsDegreeProgrammes = [
   {
     code: "BLIS",
     name: "Bachelor of Library and Information Sciences",
+    degree: 0,
+    termType: 1,
+    termsCount: 6,
+    fullName: "Bachelor of Library and Information Sciences",
+    college: "605a4638198e3f5b2e715c8c",
     programmeDetail: {
       first: [
         { course: "BLI 221", credit: 4 },
@@ -395,6 +420,11 @@ export const bachelorsDegreeProgrammes = [
   {
     code: "BTS",
     name: "Bachelor of Arts (Tourism Studies)",
+    degree: 0,
+    termType: 1,
+    termsCount: 6,
+    fullName: "Bachelor of Arts (Tourism Studies)",
+    college: "605a4638198e3f5b2e715c8c",
     programmeDetail: {
       first: [
         { course: "TS 1", credit: 8 },
@@ -429,6 +459,11 @@ export const bachelorsDegreeProgrammes = [
   {
     code: "BSWG",
     name: "Bachelor of Social Work",
+    degree: 0,
+    termType: 1,
+    termsCount: 6,
+    fullName: "Bachelor of Social Work",
+    college: "605a4638198e3f5b2e715c8c",
     programmeDetail: {
       first: [
         { course: "BHDLA 135", credit: 6 },
@@ -466,6 +501,11 @@ export const bachelorsDegreeProgrammes = [
   {
     code: "BBARL",
     name: "Bachelor of Business Administration (Retailing)",
+    degree: 0,
+    termType: 1,
+    termsCount: 6,
+    fullName: "Bachelor of Business Administration (Retailing)",
+    college: "605a4638198e3f5b2e715c8c",
     programmeDetail: {
       first: [
         { course: "BRL 1", credit: 4 },
@@ -496,8 +536,13 @@ export const bachelorsDegreeProgrammes = [
   {
     code: "BAVTM",
     name: "Bachelor of Arts (Vocational Studies) Tourism Management",
+    degree: 0,
+    termType: 1,
+    termsCount: 6,
+    fullName: "Bachelor of Arts (Vocational Studies) Tourism Management",
+    college: "605a4638198e3f5b2e715c8c",
     courseList: {
-      ALL: ["", "", "", "", ""],
+      ALL: [],
       CC: [
         "BTMC-131",
         "BTMC-132",
