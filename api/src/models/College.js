@@ -1,4 +1,4 @@
-import mongoose from 'mongoose';
+import mongoose from "mongoose";
 
 const Schema = mongoose.Schema;
 
@@ -17,11 +17,11 @@ const collegeSchema = Schema(
     },
     createdBy: {
       type: Schema.Types.ObjectId,
-      ref: 'User',
+      ref: "User",
     },
     updatedBy: {
       type: Schema.Types.ObjectId,
-      ref: 'User',
+      ref: "User",
     },
     description: String,
     image: String,
@@ -30,7 +30,7 @@ const collegeSchema = Schema(
     programmes: [
       {
         type: Schema.Types.ObjectId,
-        ref: 'Programme',
+        ref: "Programme",
       },
     ],
     programmesCount: {
@@ -40,12 +40,35 @@ const collegeSchema = Schema(
     students: [
       {
         type: Schema.Types.ObjectId,
-        ref: 'User',
+        ref: "User",
       },
     ],
     studentsCount: {
       type: Number,
       default: 0,
+    },
+
+    recognition: String,
+    importantLinks: [[String]],
+    notes: [String],
+    theUniversity: {
+      introduction: [String],
+      prominentFeatures: [String],
+      importantAchievements: [String],
+      theSchoolOfStudies: [String],
+      academicProgrammes: [String],
+      coursePreparation: String,
+      creditSystem: [[String]],
+      supportServices: [String],
+      programmeDelivery: [[String]],
+      webEnabledAcademicSupport: String,
+      evaluationSystem: [String],
+      TEEAndPaymentOfExamFee: [String],
+      internationalStudentsResidingInIndia: String,
+      onlineAdmissionSystem: String,
+      eGyanKosh: String,
+      IGNOUeContentMobileApp: String,
+      vidyaLakshmiPortal: String,
     },
   },
   {
@@ -53,4 +76,4 @@ const collegeSchema = Schema(
   }
 );
 
-export default mongoose.model('College', collegeSchema);
+export default mongoose.model("College", collegeSchema);
