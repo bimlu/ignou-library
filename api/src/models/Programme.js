@@ -93,6 +93,7 @@ const programmeSchema = Schema(
     },
 
     code: String,
+    title: String,
     programmeDetail: programmmeDetailSchema,
     courseList: courseListSchema,
     school: { type: String, ref: "School" },

@@ -1,10 +1,11 @@
 export const bachelorsDegreeProgrammes = [
   {
     code: "BAG",
-    name: "Bachelor of Arts",
+    title: "Bachelor of Arts",
     degree: 0,
     termType: 1,
     termsCount: 6,
+    name: "BAG",
     fullName: "Bachelor of Arts",
     collegeCode: "IGNOU",
     courseList: {
@@ -175,10 +176,11 @@ export const bachelorsDegreeProgrammes = [
   },
   {
     code: "BCOMG",
-    name: "Bachelor of Commerce",
+    title: "Bachelor of Commerce",
     degree: 0,
     termType: 1,
     termsCount: 6,
+    name: "BCOMG",
     fullName: "Bachelor of Commerce",
     collegeCode: "IGNOU",
     courseList: {
@@ -208,10 +210,11 @@ export const bachelorsDegreeProgrammes = [
   },
   {
     code: "BSCG",
-    name: "Bachelor of Science",
+    title: "Bachelor of Science",
     degree: 0,
     termType: 1,
     termsCount: 6,
+    name: "BCOMG",
     fullName: "Bachelor of Science",
     collegeCode: "IGNOU",
     courseList: {
@@ -326,10 +329,11 @@ export const bachelorsDegreeProgrammes = [
   },
   {
     code: "BCA",
-    name: "Bachelor of Computer Applications",
+    title: "Bachelor of Computer Applications",
     degree: 0,
     termType: 1,
     termsCount: 6,
+    name: "BCA",
     fullName: "Bachelor of Computer Applications",
     collegeCode: "IGNOU",
     courseList: {
@@ -397,10 +401,11 @@ export const bachelorsDegreeProgrammes = [
   },
   {
     code: "BLIS",
-    name: "Bachelor of Library and Information Sciences",
+    title: "Bachelor of Library and Information Sciences",
     degree: 0,
     termType: 1,
     termsCount: 6,
+    name: "BLIS",
     fullName: "Bachelor of Library and Information Sciences",
     collegeCode: "IGNOU",
     programmeDetail: {
@@ -419,10 +424,11 @@ export const bachelorsDegreeProgrammes = [
   },
   {
     code: "BTS",
-    name: "Bachelor of Arts (Tourism Studies)",
+    title: "Bachelor of Arts (Tourism Studies)",
     degree: 0,
     termType: 1,
     termsCount: 6,
+    name: "BTS",
     fullName: "Bachelor of Arts (Tourism Studies)",
     collegeCode: "IGNOU",
     programmeDetail: {
@@ -458,10 +464,11 @@ export const bachelorsDegreeProgrammes = [
   },
   {
     code: "BSWG",
-    name: "Bachelor of Social Work",
+    title: "Bachelor of Social Work",
     degree: 0,
     termType: 1,
     termsCount: 6,
+    name: "BSWG",
     fullName: "Bachelor of Social Work",
     collegeCode: "IGNOU",
     programmeDetail: {
@@ -500,10 +507,11 @@ export const bachelorsDegreeProgrammes = [
   },
   {
     code: "BBARL",
-    name: "Bachelor of Business Administration (Retailing)",
+    title: "Bachelor of Business Administration (Retailing)",
     degree: 0,
     termType: 1,
     termsCount: 6,
+    name: "BBARL",
     fullName: "Bachelor of Business Administration (Retailing)",
     collegeCode: "IGNOU",
     programmeDetail: {
@@ -535,10 +543,11 @@ export const bachelorsDegreeProgrammes = [
   },
   {
     code: "BAVTM",
-    name: "Bachelor of Arts (Vocational Studies) Tourism Management",
+    title: "Bachelor of Arts (Vocational Studies) Tourism Management",
     degree: 0,
     termType: 1,
     termsCount: 6,
+    name: "BAVTM",
     fullName: "Bachelor of Arts (Vocational Studies) Tourism Management",
     collegeCode: "IGNOU",
     courseList: {
@@ -574,7 +583,7 @@ export const bachelorsDegreeProgrammes = [
 
   // {
   //   code: "BAVTM",
-  //   name: "",
+  //   title: "",
   //   courseList: {
   //     ALL: ["", "", "", "", ""],
   //     CC: ["", "", "", "", ""],
