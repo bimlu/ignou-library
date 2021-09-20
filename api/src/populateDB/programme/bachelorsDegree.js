@@ -6,7 +6,7 @@ export const bachelorsDegreeProgrammes = [
     termType: 1,
     termsCount: 6,
     fullName: "Bachelor of Arts",
-    college: "605a4638198e3f5b2e715c8c",
+    collegeCode: "IGNOU",
     courseList: {
       ALL: [],
       CC: [
@@ -180,7 +180,7 @@ export const bachelorsDegreeProgrammes = [
     termType: 1,
     termsCount: 6,
     fullName: "Bachelor of Commerce",
-    college: "605a4638198e3f5b2e715c8c",
+    collegeCode: "IGNOU",
     courseList: {
       ALL: [],
       CC: [
@@ -213,7 +213,7 @@ export const bachelorsDegreeProgrammes = [
     termType: 1,
     termsCount: 6,
     fullName: "Bachelor of Science",
-    college: "605a4638198e3f5b2e715c8c",
+    collegeCode: "IGNOU",
     courseList: {
       ALL: [],
       CC: [
@@ -331,7 +331,7 @@ export const bachelorsDegreeProgrammes = [
     termType: 1,
     termsCount: 6,
     fullName: "Bachelor of Computer Applications",
-    college: "605a4638198e3f5b2e715c8c",
+    collegeCode: "IGNOU",
     courseList: {
       ALL: [],
       CC: [],
@@ -402,7 +402,7 @@ export const bachelorsDegreeProgrammes = [
     termType: 1,
     termsCount: 6,
     fullName: "Bachelor of Library and Information Sciences",
-    college: "605a4638198e3f5b2e715c8c",
+    collegeCode: "IGNOU",
     programmeDetail: {
       first: [
         { course: "BLI 221", credit: 4 },
@@ -424,7 +424,7 @@ export const bachelorsDegreeProgrammes = [
     termType: 1,
     termsCount: 6,
     fullName: "Bachelor of Arts (Tourism Studies)",
-    college: "605a4638198e3f5b2e715c8c",
+    collegeCode: "IGNOU",
     programmeDetail: {
       first: [
         { course: "TS 1", credit: 8 },
@@ -463,7 +463,7 @@ export const bachelorsDegreeProgrammes = [
     termType: 1,
     termsCount: 6,
     fullName: "Bachelor of Social Work",
-    college: "605a4638198e3f5b2e715c8c",
+    collegeCode: "IGNOU",
     programmeDetail: {
       first: [
         { course: "BHDLA 135", credit: 6 },
@@ -505,7 +505,7 @@ export const bachelorsDegreeProgrammes = [
     termType: 1,
     termsCount: 6,
     fullName: "Bachelor of Business Administration (Retailing)",
-    college: "605a4638198e3f5b2e715c8c",
+    collegeCode: "IGNOU",
     programmeDetail: {
       first: [
         { course: "BRL 1", credit: 4 },
@@ -540,7 +540,7 @@ export const bachelorsDegreeProgrammes = [
     termType: 1,
     termsCount: 6,
     fullName: "Bachelor of Arts (Vocational Studies) Tourism Management",
-    college: "605a4638198e3f5b2e715c8c",
+    collegeCode: "IGNOU",
     courseList: {
       ALL: [],
       CC: [

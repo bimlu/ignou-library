@@ -1,16 +1,40 @@
+import College from "../../models/College";
 import Course from "../../models/Course";
+import Programme from "../../models/Programme";
 import { getCourses, saveCourses } from "./courses";
 
 export const createCourses = () => {
   const courses = getCourses();
   // console.log(courses);
-  const coursesJSON = JSON.stringify(courses);
-  saveCourses(coursesJSON);
-  Course.insertMany(courses, (err, docs) => {
-    if (err) {
-      console.log(err);
-    } else {
-      console.log("Courses created");
-    }
-  });
+
+  // Course.insertMany(courses, (err, docs) => {
+  //   if (err) {
+  //     console.log(err);
+  //   } else {
+  //     console.log("Courses created");
+  //   }
+  // });
+
+  for (let course of courses) {
+    createCourse(course);
+  }
+
+  const coursesSTR = JSON.stringify(courses);
+  saveCourses(coursesSTR);
+};
+
+export const createCourse = async (course) => {
+  console.log(course);
+  const college = await College.findOne({ code: course.collegeCode });
+  const programme = await Programme.findOne({ code: course.programmeCode });
+  if (!college || !programme) return;
+  const newCourse = await new Course({
+    ...course,
+    college: college.id,
+    programme: programme.id,
+  }).save();
+  await Programme.findOneAndUpdate(
+    { code: course.programmeCode },
+    { $push: { courses: newCourse.id }, $inc: { coursesCount: 1 } }
+  );
 };

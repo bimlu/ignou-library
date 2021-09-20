@@ -48,6 +48,8 @@ const collegeSchema = Schema(
       default: 0,
     },
 
+    code: String,
+    title: String,
     recognition: String,
     importantLinks: [[String]],
     notes: [String],

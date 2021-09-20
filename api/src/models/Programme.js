@@ -96,6 +96,7 @@ const programmeSchema = Schema(
     programmeDetail: programmmeDetailSchema,
     courseList: courseListSchema,
     school: { type: String, ref: "School" },
+    collegeCode: String,
   },
   {
     timestamps: true,

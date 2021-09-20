@@ -4,17 +4,9 @@ export const createCollege = () => {
   const college = {
     name: "IGNOU",
     fullName: "Indira Gandhi National Open University",
-    programmes: [
-      "BAG",
-      "BCOMG",
-      "BSCG",
-      "BCA",
-      "BLIS",
-      "BTS",
-      "BSWG",
-      "BBARL",
-      "BAVTM",
-    ],
+    code: "IGNOU",
+    title: "Indira Gandhi National Open University",
+    programmes: [],
     recognition: `
       IGNOU is a NATIONAL OPEN UNIVERSITY established by an Act of Parliament in 1985 (Act No. 50 of 1985).
       The Degrees/ Diplomas/ Certificates issued by IGNOU are recognised by all the member institutions of the
