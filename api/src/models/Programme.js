@@ -73,7 +73,7 @@ const programmeSchema = Schema(
     },
     courses: [
       {
-        type: String, // no backword compatible
+        type: Schema.Types.ObjectId,
         ref: "Course",
       },
     ],
