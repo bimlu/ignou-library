@@ -12,6 +12,8 @@ export const diplomaProgrammes = [
   {
     code: "DNHE",
     title: "Diploma in Nutrition & Health Education",
+    name: "DNHE",
+    fullName: "Diploma in Nutrition & Health Education",
     degree: 1,
     termType: 1,
     termsCount: 6,
@@ -70,6 +72,8 @@ export const diplomaProgrammes = [
   {
     code: "DVAPFV",
     title: "Diploma in Value Added Products from Fruits & Vegetables",
+    name: "DVAPFV",
+    fullName: "Diploma in Value Added Products from Fruits & Vegetables",
     degree: 1,
     termType: 1,
     termsCount: 6,
@@ -118,6 +122,8 @@ export const diplomaProgrammes = [
   {
     code: "DWED",
     title: "Diploma in Women’s Empowerment and Development",
+    name: "DWED",
+    fullName: "Diploma in Women’s Empowerment and Development",
     degree: 1,
     termType: 1,
     termsCount: 6,

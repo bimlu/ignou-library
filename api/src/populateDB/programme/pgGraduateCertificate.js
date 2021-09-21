@@ -63,6 +63,9 @@ export const pgGraduateCertificateProgrammes = [
     code: "PGCIPWS",
     title:
       "Post Graduate Certificate in Inventory Planning and Warehousing for Engineers",
+    name: "PGCIPW",
+    fullName:
+      "Post Graduate Certificate in Inventory Planning and Warehousing for Engineers",
     degree: 1,
     termType: 1,
     termsCount: 6,
@@ -110,6 +113,8 @@ export const pgGraduateCertificateProgrammes = [
   {
     code: "PGCBHT",
     title: "Post Graduate Certificate in Bangla-Hindi Translation",
+    name: "PGCBHT",
+    fullName: "Post Graduate Certificate in Bangla-Hindi Translation",
     degree: 1,
     termType: 1,
     termsCount: 6,
@@ -118,6 +123,8 @@ export const pgGraduateCertificateProgrammes = [
   {
     code: "PGCMHT",
     title: "Post Graduate Certificate in Malayalam-Hindi Translation",
+    name: "PGCMHT",
+    fullName: "Post Graduate Certificate in Malayalam-Hindi Translation",
     degree: 1,
     termType: 1,
     termsCount: 6,

@@ -334,6 +334,8 @@ export const pgGraduateDiplomaProgrammes = [
   {
     code: "PGDWGS",
     title: "Post Graduate Diploma in Women’s & Gender Studies",
+    name: "PGDWGS",
+    fullName: "Post Graduate Diploma in Women’s & Gender Studies",
     degree: 1,
     termType: 1,
     termsCount: 6,

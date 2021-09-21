@@ -32,6 +32,8 @@ export const pgCertificateProgrammes = [
   {
     code: "CLTA",
     title: "Certificate Programme on Life and Thought of Dr. B.R. Ambedkar",
+    name: "CLTA",
+    fullName: "Certificate Programme on Life and Thought of Dr. B.R. Ambedkar",
     degree: 1,
     termType: 1,
     termsCount: 6,
@@ -120,6 +122,8 @@ export const pgCertificateProgrammes = [
   {
     code: "CFE",
     title: "Certificate in Functional English (Basic Level)",
+    name: "CFE",
+    fullName: "Certificate in Functional English (Basic Level)",
     degree: 1,
     termType: 1,
     termsCount: 6,
@@ -158,6 +162,8 @@ export const pgCertificateProgrammes = [
   {
     code: "CCLBL",
     title: "Certificate in Co-operation, Co-operative Law & Business Laws",
+    name: "CCLBL",
+    fullName: "Certificate in Co-operation, Co-operative Law & Business Laws",
     degree: 1,
     termType: 1,
     termsCount: 6,
@@ -206,6 +212,8 @@ export const pgCertificateProgrammes = [
   {
     code: "CCITSK",
     title: "Certificate in Communication & IT Skills",
+    name: "CCITSK",
+    fullName: "Certificate in Communication & IT Skills",
     degree: 1,
     termType: 1,
     termsCount: 6,
@@ -314,6 +322,8 @@ export const pgCertificateProgrammes = [
   {
     code: "CWHM",
     title: "Certificate in Water Harvesting & Management",
+    name: "CWHM",
+    fullName: "Certificate in Water Harvesting & Management",
     degree: 1,
     termType: 1,
     termsCount: 6,
@@ -382,6 +392,8 @@ export const pgCertificateProgrammes = [
   {
     code: "CKLC",
     title: "Certificate in Korean Language & Culture",
+    name: "CKLC",
+    fullName: "Certificate in Korean Language & Culture",
     degree: 1,
     termType: 1,
     termsCount: 6,
@@ -390,6 +402,8 @@ export const pgCertificateProgrammes = [
   {
     code: "CSLC",
     title: "Certificate in Spanish Language & Culture",
+    name: "CSLC",
+    fullName: "Certificate in Spanish Language & Culture",
     degree: 1,
     termType: 1,
     termsCount: 6,
@@ -538,6 +552,8 @@ export const pgCertificateProgrammes = [
   {
     code: "CVAP",
     title: "Certificate in Visual Arts – Painting",
+    name: "CVAP",
+    fullName: "Certificate in Visual Arts – Painting",
     degree: 1,
     termType: 1,
     termsCount: 6,
@@ -546,6 +562,8 @@ export const pgCertificateProgrammes = [
   {
     code: "CVAA",
     title: "Certificate in Visual Arts – Applied Art",
+    name: "CVAA",
+    fullName: "Certificate in Visual Arts – Applied Art",
     degree: 1,
     termType: 1,
     termsCount: 6,
@@ -554,6 +572,8 @@ export const pgCertificateProgrammes = [
   {
     code: "CPATHA",
     title: "Certificate in Performing Arts – Theatre Arts",
+    name: "CPATHA",
+    fullName: "Certificate in Performing Arts – Theatre Arts",
     degree: 1,
     termType: 1,
     termsCount: 6,
@@ -603,6 +623,9 @@ export const pgCertificateProgrammes = [
     code: "CCPD",
     title:
       "Certificate of Competency in Power Distribution (Electrical Technicians)",
+    name: "CCPD",
+    fullName:
+      "Certificate of Competency in Power Distribution (Electrical Technicians)",
     degree: 1,
     termType: 1,
     termsCount: 6,
@@ -641,6 +664,8 @@ export const pgCertificateProgrammes = [
   {
     code: "CGAS",
     title: "Certificate in Gender, Agriculture and Sustainable Development",
+    name: "CGAS",
+    fullName: "Certificate in Gender, Agriculture and Sustainable Development",
     degree: 1,
     termType: 1,
     termsCount: 6,
