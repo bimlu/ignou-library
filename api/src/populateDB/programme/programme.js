@@ -1,12 +1,23 @@
 import fs from "fs";
 import path from "path";
+import { awarenessAndAppreciationProgrammes } from "./awarenessAndAppreciation";
 import { bachelorsDegreeProgrammes } from "./bachelorsDegree";
-// import { bachelorsHonoursDegreeProgrammes } from "./bachelorsHonoursDegree";
-// import { mastersDegreeProgramme } from "./mastersDegree";
+import { bachelorsHonoursDegreeProgrammes } from "./bachelorsHonoursDegree";
+import { diplomaProgrammes } from "./diploma";
+import { mastersDegreeProgrammes } from "./mastersDegree";
+import { pgCertificateProgrammes } from "./pgCertificate";
+import { pgGraduateCertificateProgrammes } from "./pgGraduateCertificate";
+import { pgGraduateDiplomaProgrammes } from "./pgGraduateDiploma";
 
-export const getProgrammes = () => bachelorsDegreeProgrammes;
-// .concat(bachelorsHonoursDegreeProgrammes)
-// .concat(mastersDegreeProgramme);
+export const getProgrammes = () =>
+  bachelorsDegreeProgrammes
+    .concat(bachelorsHonoursDegreeProgrammes)
+    .concat(mastersDegreeProgrammes)
+    .concat(diplomaProgrammes)
+    .concat(pgGraduateDiplomaProgrammes)
+    .concat(pgCertificateProgrammes)
+    .concat(pgGraduateCertificateProgrammes)
+    .concat(awarenessAndAppreciationProgrammes);
 
 export const addCoursesField = (programmes) => {
   for (let programme of programmes) {

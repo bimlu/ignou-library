@@ -1,4 +1,4 @@
-const awarenessAndAppreciationProgrammes = [
+export const awarenessAndAppreciationProgrammes = [
   {
     code: "APDF",
     title: "Awareness Programme on Dairy Farming",
