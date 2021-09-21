@@ -536,7 +536,6 @@ export const bachelorsDegreeProgrammes = [
     fullName: "Bachelor of Arts (Vocational Studies) Tourism Management",
     collegeCode: "IGNOU",
     courseList: {
-      ALL: [],
       CC: [
         "BTMC-131",
         "BTMC-132",
