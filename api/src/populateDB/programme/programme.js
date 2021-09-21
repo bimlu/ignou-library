@@ -15,6 +15,7 @@ export const addCoursesField = (programmes) => {
     for (let category in courseList) {
       programme.courses = programme.courses.concat(courseList[category]);
     }
+    // if courses are in programmeDetail field, extract them
   }
 
   return programmes;
