@@ -1438,7 +1438,7 @@ export const bachelorsHonoursDegreeCourses = [
     studyMaterial: [],
   },
   {
-    code: "BHMCl 106",
+    code: "BHMCL-106",
     title: "Hindustani Music Vocal Practicum – 3",
     studyMaterial: [],
   },
