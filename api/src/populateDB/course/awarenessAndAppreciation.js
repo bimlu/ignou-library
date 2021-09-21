@@ -1,4 +1,4 @@
-export const awarenessAndAppreciationProgrammes = [
+export const awarenessAndAppreciationCourses = [
   { code: "Module-1", title: "Introduction" },
   { code: "Module-2", title: "Animal Breeding" },
   { code: "Module-3", title: "Reproduction" },

@@ -1,8 +1,13 @@
 import fs from "fs";
 import path from "path";
-import { bachelorsDegreeCourses } from "./bachelors-degree";
-// import { bachelorsHonoursDegreeCourses } from "./bachelors-honours-degree";
-// import { mastersDegreeCourse } from "./masters-degree";
+import { awarenessAndAppreciationCourses } from "./awarenessAndAppreciation";
+import { bachelorsDegreeCourses } from "./bachelorsDegree";
+import { bachelorsHonoursDegreeCourses } from "./bachelorsHonoursDegree";
+import { certificateCourses } from "./certificate";
+import { diplomaCourses } from "./diploma";
+import { mastersDegreeCourses } from "./mastersDegree";
+import { pgGraduateCertificateCourses } from "./pgGraduateCertificate";
+import { pgGraduateDiplomaCourses } from "./pgGraduateDiploma";
 
 const isDuplicate = (outCourses, course) => {
   if (outCourses.length === 0) {
@@ -19,9 +24,14 @@ const isDuplicate = (outCourses, course) => {
 };
 
 export const getCourses = () => {
-  const inCourses = bachelorsDegreeCourses;
-  // .concat(bachelorsHonoursDegreeCourses)
-  // .concat(mastersDegreeCourse);
+  const inCourses = bachelorsDegreeCourses
+    .concat(bachelorsHonoursDegreeCourses)
+    .concat(mastersDegreeCourses)
+    .concat(certificateCourses)
+    .concat(diplomaCourses)
+    .concat(pgGraduateCertificateCourses)
+    .concat(pgGraduateDiplomaCourses)
+    .concat(awarenessAndAppreciationCourses);
   const outCourses = [];
 
   // console.log("bachelorsDegreeCourses: ", bachelorsDegreeCourses.length);

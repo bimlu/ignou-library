@@ -1,4 +1,4 @@
-export const mastersDegreeCourse = [
+export const mastersDegreeCourses = [
   {
     code: "IBO-1",
     title: "International Business Environment",
