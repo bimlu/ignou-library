@@ -5,7 +5,7 @@ export const mastersDegreeCourses = [
     name: "IBO-1",
     fullName: "International Business Environment",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
   },
   {
@@ -14,7 +14,7 @@ export const mastersDegreeCourses = [
     name: "IBO-2",
     fullName: "International Marketing Management",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
   },
   {
@@ -23,9 +23,8 @@ export const mastersDegreeCourses = [
     name: "IBO-3",
     fullName: "India’s Foreign Trade",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
-    studyMaterial: [],
   },
   {
     code: "IBO-4",
@@ -33,7 +32,7 @@ export const mastersDegreeCourses = [
     name: "IBO-4",
     fullName: "Export Import Procedures and Documentation",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
   },
   {
@@ -42,7 +41,7 @@ export const mastersDegreeCourses = [
     name: "IBO-5",
     fullName: "International Marketing Logistics",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
   },
   {
@@ -51,9 +50,8 @@ export const mastersDegreeCourses = [
     name: "IBO-6",
     fullName: "International Business Finance",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
-    studyMaterial: [],
   },
   {
     code: "MCO-1",
@@ -61,7 +59,7 @@ export const mastersDegreeCourses = [
     name: "MCO-1",
     fullName: "Organization Theory and Behaviour",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
   },
   {
@@ -70,7 +68,7 @@ export const mastersDegreeCourses = [
     name: "MCO-3",
     fullName: "Research Methodology and Statistical Analysis",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
   },
   {
@@ -79,9 +77,8 @@ export const mastersDegreeCourses = [
     name: "MCO-4",
     fullName: "Business Environment",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
-    studyMaterial: [],
   },
   {
     code: "MCO-5",
@@ -89,7 +86,7 @@ export const mastersDegreeCourses = [
     name: "MCO-5",
     fullName: "Accounting for Managerial Decisions",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
   },
   {
@@ -98,9 +95,8 @@ export const mastersDegreeCourses = [
     name: "MCO-6",
     fullName: "Marketing Management",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
-    studyMaterial: [],
   },
   {
     code: "MCO-7",
@@ -108,9 +104,8 @@ export const mastersDegreeCourses = [
     name: "MCO-7",
     fullName: "Financial Management",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
-    studyMaterial: [],
   },
   {
     code: "MEG-1",
@@ -118,9 +113,8 @@ export const mastersDegreeCourses = [
     name: "MEG-1",
     fullName: "British Poetry",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
-    studyMaterial: [],
   },
   {
     code: "MEG-2",
@@ -128,9 +122,8 @@ export const mastersDegreeCourses = [
     name: "MEG-2",
     fullName: "British Drama",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
-    studyMaterial: [],
   },
   {
     code: "MEG-3",
@@ -138,9 +131,8 @@ export const mastersDegreeCourses = [
     name: "MEG-3",
     fullName: "British Novel",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
-    studyMaterial: [],
   },
   {
     code: "MEG-4",
@@ -148,9 +140,8 @@ export const mastersDegreeCourses = [
     name: "MEG-4",
     fullName: "Aspects of Language",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
-    studyMaterial: [],
   },
   {
     code: "MEG-5",
@@ -158,9 +149,8 @@ export const mastersDegreeCourses = [
     name: "MEG-5",
     fullName: "Literary Criticism and Theory",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
-    studyMaterial: [],
   },
   {
     code: "MEG-6",
@@ -168,9 +158,8 @@ export const mastersDegreeCourses = [
     name: "MEG-6",
     fullName: "American Literature",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
-    studyMaterial: [],
   },
   {
     code: "MEG-7",
@@ -178,9 +167,8 @@ export const mastersDegreeCourses = [
     name: "MEG-7",
     fullName: "Indian English Literature",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
-    studyMaterial: [],
   },
   {
     code: "MEG-8",
@@ -188,9 +176,8 @@ export const mastersDegreeCourses = [
     name: "MEG-8",
     fullName: "New Literatures in English",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
-    studyMaterial: [],
   },
   {
     code: "MEG-9",
@@ -198,9 +185,8 @@ export const mastersDegreeCourses = [
     name: "MEG-9",
     fullName: "Australian Literature",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
-    studyMaterial: [],
   },
   {
     code: "MEG-10",
@@ -208,9 +194,8 @@ export const mastersDegreeCourses = [
     name: "MEG-10",
     fullName: "English Studies in India",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
-    studyMaterial: [],
   },
   {
     code: "MEG-11",
@@ -218,9 +203,8 @@ export const mastersDegreeCourses = [
     name: "MEG-11",
     fullName: "American Novel",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
-    studyMaterial: [],
   },
   {
     code: "MEG-12",
@@ -228,7 +212,7 @@ export const mastersDegreeCourses = [
     name: "MEG-12",
     fullName: "A Survey Course in 20th Century Canadian Literature",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
   },
   {
@@ -237,9 +221,8 @@ export const mastersDegreeCourses = [
     name: "MEG-13",
     fullName: "Writing from the Margins",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
-    studyMaterial: [],
   },
   {
     code: "MEG-14",
@@ -247,7 +230,7 @@ export const mastersDegreeCourses = [
     name: "MEG-14",
     fullName: "Contemporary Indian Literature in English Translation",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
   },
   {
@@ -256,7 +239,7 @@ export const mastersDegreeCourses = [
     name: "MEG-15",
     fullName: "Comparative Literature: Theory and Practice",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
   },
   {
@@ -265,9 +248,8 @@ export const mastersDegreeCourses = [
     name: "MEG-16",
     fullName: "Indian Folk Literature",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
-    studyMaterial: [],
   },
   {
     code: "MPS-1",
@@ -275,9 +257,8 @@ export const mastersDegreeCourses = [
     name: "MPS-1",
     fullName: "Political Theory",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
-    studyMaterial: [],
   },
   {
     code: "MPS-2",
@@ -285,7 +266,7 @@ export const mastersDegreeCourses = [
     name: "MPS-2",
     fullName: "International Relations: Theory and Problems",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
   },
   {
@@ -294,7 +275,7 @@ export const mastersDegreeCourses = [
     name: "MPS-3",
     fullName: "India: Democracy and Development",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
   },
   {
@@ -303,7 +284,7 @@ export const mastersDegreeCourses = [
     name: "MPS-4",
     fullName: "Comparative Politics: Issues and Trends",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
   },
   {
@@ -312,9 +293,8 @@ export const mastersDegreeCourses = [
     name: "MPSE-1",
     fullName: "India and the World",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
-    studyMaterial: [],
   },
   {
     code: "MPSE-2",
@@ -322,7 +302,7 @@ export const mastersDegreeCourses = [
     name: "MPSE-2",
     fullName: "State and Society in Latin America",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
   },
   {
@@ -331,9 +311,8 @@ export const mastersDegreeCourses = [
     name: "MPSE-3",
     fullName: "Western Political Thought",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
-    studyMaterial: [],
   },
   {
     code: "MPSE-4",
@@ -341,7 +320,7 @@ export const mastersDegreeCourses = [
     name: "MPSE-4",
     fullName: "Social and Political Thought in Modern India",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
   },
   {
@@ -350,9 +329,8 @@ export const mastersDegreeCourses = [
     name: "MPSE-5",
     fullName: "State and Society in Africa",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
-    studyMaterial: [],
   },
   {
     code: "MPSE-6",
@@ -360,9 +338,8 @@ export const mastersDegreeCourses = [
     name: "MPSE-6",
     fullName: "Peace and Conflict Studies",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
-    studyMaterial: [],
   },
   {
     code: "MPSE-7",
@@ -370,7 +347,7 @@ export const mastersDegreeCourses = [
     name: "MPSE-7",
     fullName: "Social Movements and Politics in India",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
   },
   {
@@ -379,9 +356,8 @@ export const mastersDegreeCourses = [
     name: "MPSE-8",
     fullName: "State Politics in India",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
-    studyMaterial: [],
   },
   {
     code: "MPSE-9",
@@ -389,9 +365,8 @@ export const mastersDegreeCourses = [
     name: "MPSE-9",
     fullName: "Canada: Politics and Society",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
-    studyMaterial: [],
   },
   {
     code: "MPSE-11",
@@ -399,7 +374,7 @@ export const mastersDegreeCourses = [
     name: "MPSE-11",
     fullName: "The European Union in World Affairs",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
   },
   {
@@ -408,7 +383,7 @@ export const mastersDegreeCourses = [
     name: "MPSE-12",
     fullName: "State and Society in Australia",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
   },
   {
@@ -417,9 +392,8 @@ export const mastersDegreeCourses = [
     name: "MPSE-13",
     fullName: "Australia’s Foreign Policy",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
-    studyMaterial: [],
   },
   {
     code: "MED-2",
@@ -427,7 +401,7 @@ export const mastersDegreeCourses = [
     name: "MED-2",
     fullName: "Sustainable Development: Issues and Challenges",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
   },
   {
@@ -436,9 +410,8 @@ export const mastersDegreeCourses = [
     name: "MED-8",
     fullName: "Globalisation and Environment",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
-    studyMaterial: [],
   },
   {
     code: "MGP-4",
@@ -446,9 +419,8 @@ export const mastersDegreeCourses = [
     name: "MGP-4",
     fullName: "Gandhi’s Political Thought",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
-    studyMaterial: [],
   },
   {
     code: "MGPE-7",
@@ -456,7 +428,7 @@ export const mastersDegreeCourses = [
     name: "MGPE-7",
     fullName: "Non-Violent Movements after Gandhi",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
   },
   {
@@ -465,7 +437,7 @@ export const mastersDegreeCourses = [
     name: "MGPE-8",
     fullName: "Gandhian Approach to Peace and Conflict Resolution",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
   },
   {
@@ -474,7 +446,7 @@ export const mastersDegreeCourses = [
     name: "MGPE-10",
     fullName: "Conflict Management, Transformation & Peace Building",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
   },
   {
@@ -483,9 +455,8 @@ export const mastersDegreeCourses = [
     name: "MGPE-11",
     fullName: "Human Security",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
-    studyMaterial: [],
   },
   {
     code: "MGPE-13",
@@ -493,7 +464,7 @@ export const mastersDegreeCourses = [
     name: "MGPE-13",
     fullName: "Civil Society, Political Regimes and Conflict",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
   },
   {
@@ -502,9 +473,8 @@ export const mastersDegreeCourses = [
     name: "MHI-1",
     fullName: "Ancient and Medieval Societies",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
-    studyMaterial: [],
   },
   {
     code: "MHI-2",
@@ -512,9 +482,8 @@ export const mastersDegreeCourses = [
     name: "MHI-2",
     fullName: "Modern World",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
-    studyMaterial: [],
   },
   {
     code: "MHI-4",
@@ -522,9 +491,8 @@ export const mastersDegreeCourses = [
     name: "MHI-4",
     fullName: "Political Structures in India",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
-    studyMaterial: [],
   },
   {
     code: "MHI-5",
@@ -532,9 +500,8 @@ export const mastersDegreeCourses = [
     name: "MHI-5",
     fullName: "History of Indian Economy",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
-    studyMaterial: [],
   },
   {
     code: "MHI-3",
@@ -542,9 +509,8 @@ export const mastersDegreeCourses = [
     name: "MHI-3",
     fullName: "Historiography",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
-    studyMaterial: [],
   },
   {
     code: "MPSE-3",
@@ -552,9 +518,8 @@ export const mastersDegreeCourses = [
     name: "MPSE-3",
     fullName: "Western Political Thought",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
-    studyMaterial: [],
   },
   {
     code: "MPSE-4",
@@ -562,7 +527,7 @@ export const mastersDegreeCourses = [
     name: "MPSE-4",
     fullName: "Social and Political Thought in Modern India",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
   },
   {
@@ -571,7 +536,7 @@ export const mastersDegreeCourses = [
     name: "MHI-6",
     fullName: "Evolution of Social Structures in India through the Ages",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
   },
   {
@@ -580,7 +545,7 @@ export const mastersDegreeCourses = [
     name: "MHI-8",
     fullName: "History of Ecology and Environment: India",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
   },
   {
@@ -589,9 +554,8 @@ export const mastersDegreeCourses = [
     name: "MHI-9",
     fullName: "Indian National Movement",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
-    studyMaterial: [],
   },
   {
     code: "MHI-10",
@@ -599,9 +563,8 @@ export const mastersDegreeCourses = [
     name: "MHI-10",
     fullName: "Urbanization in India",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
-    studyMaterial: [],
   },
   {
     code: "MSO-1",
@@ -609,7 +572,7 @@ export const mastersDegreeCourses = [
     name: "MSO-1",
     fullName: "Sociological Theories and Concepts",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
   },
   {
@@ -618,7 +581,7 @@ export const mastersDegreeCourses = [
     name: "MSO-2",
     fullName: "Research Methods and Methodologies",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
   },
   {
@@ -627,9 +590,8 @@ export const mastersDegreeCourses = [
     name: "MSO-3",
     fullName: "Sociology of Development",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
-    studyMaterial: [],
   },
   {
     code: "MSO-4",
@@ -637,9 +599,8 @@ export const mastersDegreeCourses = [
     name: "MSO-4",
     fullName: "Sociology in India",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
-    studyMaterial: [],
   },
   {
     code: "MSOE-1",
@@ -647,9 +608,8 @@ export const mastersDegreeCourses = [
     name: "MSOE-1",
     fullName: "Sociology of Education",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
-    studyMaterial: [],
   },
   {
     code: "MSOE-2",
@@ -657,7 +617,7 @@ export const mastersDegreeCourses = [
     name: "MSOE-2",
     fullName: "Diaspora and Transnational Communities",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
   },
   {
@@ -666,9 +626,8 @@ export const mastersDegreeCourses = [
     name: "MSOE-3",
     fullName: "Sociology of Religion",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
-    studyMaterial: [],
   },
   {
     code: "MSOE-4",
@@ -676,9 +635,8 @@ export const mastersDegreeCourses = [
     name: "MSOE-4",
     fullName: "Urban Sociology",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
-    studyMaterial: [],
   },
   {
     code: "MPA-16",
@@ -686,7 +644,7 @@ export const mastersDegreeCourses = [
     name: "MPA-16",
     fullName: "Decentralization and LocalGovernance",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
   },
   {
@@ -695,7 +653,7 @@ export const mastersDegreeCourses = [
     name: "MPS-3",
     fullName: "India: Democracy andDevelopment",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
   },
   {
@@ -704,7 +662,7 @@ export const mastersDegreeCourses = [
     name: "MPC-1",
     fullName: "Cognitive Psychology, Learning and Memory",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
   },
   {
@@ -713,9 +671,8 @@ export const mastersDegreeCourses = [
     name: "MPC-2",
     fullName: "Life Span Psychology",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
-    studyMaterial: [],
   },
   {
     code: "MPC-3",
@@ -723,7 +680,7 @@ export const mastersDegreeCourses = [
     name: "MPC-3",
     fullName: "Personality: Theories and Assessment",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
   },
   {
@@ -732,9 +689,8 @@ export const mastersDegreeCourses = [
     name: "MPC-4",
     fullName: "Advanced Social Psychology",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
-    studyMaterial: [],
   },
   {
     code: "MPC-5",
@@ -742,9 +698,8 @@ export const mastersDegreeCourses = [
     name: "MPC-5",
     fullName: "Research Methods in Psychology",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
-    studyMaterial: [],
   },
   {
     code: "MPC-6",
@@ -752,9 +707,8 @@ export const mastersDegreeCourses = [
     name: "MPC-6",
     fullName: "Statistics in Psychology",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
-    studyMaterial: [],
   },
   {
     code: "MPCL-7",
@@ -762,7 +716,7 @@ export const mastersDegreeCourses = [
     name: "MPCL-7",
     fullName: "Practicum in Experimental Psychology & Psychological Testing",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
   },
   {
@@ -771,9 +725,8 @@ export const mastersDegreeCourses = [
     name: "MPCE-11",
     fullName: "Psychopathology",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
-    studyMaterial: [],
   },
   {
     code: "MPCE-12",
@@ -781,9 +734,8 @@ export const mastersDegreeCourses = [
     name: "MPCE-12",
     fullName: "Psychodiagnostics",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
-    studyMaterial: [],
   },
   {
     code: "MPCE-13",
@@ -791,9 +743,8 @@ export const mastersDegreeCourses = [
     name: "MPCE-13",
     fullName: "Psychotherapeutic methods",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
-    studyMaterial: [],
   },
   {
     code: "MPCE-14",
@@ -801,7 +752,7 @@ export const mastersDegreeCourses = [
     name: "MPCE-14",
     fullName: "Practicum in Clinical Psychology",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
   },
   {
@@ -810,9 +761,8 @@ export const mastersDegreeCourses = [
     name: "MPCE-15",
     fullName: "Internship",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
-    studyMaterial: [],
   },
   {
     code: "MPCE-16/46",
@@ -820,7 +770,7 @@ export const mastersDegreeCourses = [
     name: "MPCE-16/46",
     fullName: "Project/Applied Positive Psychology",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
   },
   {
@@ -829,9 +779,8 @@ export const mastersDegreeCourses = [
     name: "MPCE-21",
     fullName: "Counselling Psychology",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
-    studyMaterial: [],
   },
   {
     code: "MPCE-22",
@@ -839,7 +788,7 @@ export const mastersDegreeCourses = [
     name: "MPCE-22",
     fullName: "Assessment in Counselling and Guidance",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
   },
   {
@@ -848,9 +797,8 @@ export const mastersDegreeCourses = [
     name: "MPCE-23",
     fullName: "Interventions in Counselling",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
-    studyMaterial: [],
   },
   {
     code: "MPCE-24",
@@ -858,7 +806,7 @@ export const mastersDegreeCourses = [
     name: "MPCE-24",
     fullName: "Practicum in Counselling Psychology",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
   },
   {
@@ -867,9 +815,8 @@ export const mastersDegreeCourses = [
     name: "MPCE-25",
     fullName: "Internship",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
-    studyMaterial: [],
   },
   {
     code: "MPCE-26/46",
@@ -877,7 +824,7 @@ export const mastersDegreeCourses = [
     name: "MPCE-26/46",
     fullName: "Project/ Applied Positive Psychology",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
   },
   {
@@ -886,9 +833,8 @@ export const mastersDegreeCourses = [
     name: "MPCE-31",
     fullName: "Organisational Behaviour",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
-    studyMaterial: [],
   },
   {
     code: "MPCE-32",
@@ -896,9 +842,8 @@ export const mastersDegreeCourses = [
     name: "MPCE-32",
     fullName: "Human Resource Development",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
-    studyMaterial: [],
   },
   {
     code: "MPCE-33",
@@ -906,9 +851,8 @@ export const mastersDegreeCourses = [
     name: "MPCE-33",
     fullName: "Organisational Development",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
-    studyMaterial: [],
   },
   {
     code: "MPCE-34",
@@ -916,7 +860,7 @@ export const mastersDegreeCourses = [
     name: "MPCE-34",
     fullName: "Practicum in Industrial and Organisational Psychology",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
   },
   {
@@ -925,9 +869,8 @@ export const mastersDegreeCourses = [
     name: "MPCE-35",
     fullName: "Internship",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
-    studyMaterial: [],
   },
   {
     code: "MPCE-36/46",
@@ -935,7 +878,7 @@ export const mastersDegreeCourses = [
     name: "MPCE-36/46",
     fullName: "Project/ Applied Positive Psychology",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
   },
   {
@@ -944,9 +887,8 @@ export const mastersDegreeCourses = [
     name: "MEC-101",
     fullName: "Microeconomic Analysis",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
-    studyMaterial: [],
   },
   {
     code: "MEC-2",
@@ -954,9 +896,8 @@ export const mastersDegreeCourses = [
     name: "MEC-2",
     fullName: "Macroeconomic Analysis",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
-    studyMaterial: [],
   },
   {
     code: "MEC-103",
@@ -964,9 +905,8 @@ export const mastersDegreeCourses = [
     name: "MEC-103",
     fullName: "Quantitative Methods",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
-    studyMaterial: [],
   },
   {
     code: "MEC-4",
@@ -974,7 +914,7 @@ export const mastersDegreeCourses = [
     name: "MEC-4",
     fullName: "Economics of Growth and Development",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
   },
   {
@@ -983,9 +923,8 @@ export const mastersDegreeCourses = [
     name: "MEC-205",
     fullName: "Indian Economic Policy",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
-    studyMaterial: [],
   },
   {
     code: "MEC-106",
@@ -993,9 +932,8 @@ export const mastersDegreeCourses = [
     name: "MEC-106",
     fullName: "Public Economics",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
-    studyMaterial: [],
   },
   {
     code: "MEC-7",
@@ -1003,7 +941,7 @@ export const mastersDegreeCourses = [
     name: "MEC-7",
     fullName: "International Trade and Finance",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
   },
   {
@@ -1012,7 +950,7 @@ export const mastersDegreeCourses = [
     name: "MEC-108",
     fullName: "Economics of Social Sector and Environment",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
   },
   {
@@ -1021,7 +959,7 @@ export const mastersDegreeCourses = [
     name: "MEC-109",
     fullName: "Research Methods in Economics",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
   },
   {
@@ -1030,9 +968,8 @@ export const mastersDegreeCourses = [
     name: "MECE-1",
     fullName: "Econometric Methods",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
-    studyMaterial: [],
   },
   {
     code: "MECE-3",
@@ -1040,7 +977,7 @@ export const mastersDegreeCourses = [
     name: "MECE-3",
     fullName: "Actuarial Economics: Theory and Practice",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
   },
   {
@@ -1049,7 +986,7 @@ export const mastersDegreeCourses = [
     name: "MECE-4",
     fullName: "Financial Institutions and Markets",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
   },
   {
@@ -1058,9 +995,8 @@ export const mastersDegreeCourses = [
     name: "MECP-101",
     fullName: "Project Work",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
-    studyMaterial: [],
   },
   {
     code: "MWG-11",
@@ -1068,9 +1004,8 @@ export const mastersDegreeCourses = [
     name: "MWG-11",
     fullName: "Women in the Economy",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
-    studyMaterial: [],
   },
   {
     code: "MGSE-9",
@@ -1078,7 +1013,7 @@ export const mastersDegreeCourses = [
     name: "MGSE-9",
     fullName: "Gender Issues in Work Employment andProductivity",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
   },
   {
@@ -1087,7 +1022,7 @@ export const mastersDegreeCourses = [
     name: "MEDSE-46",
     fullName: "Development Issues and Perspectives",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
   },
   {
@@ -1096,7 +1031,7 @@ export const mastersDegreeCourses = [
     name: "MPA-11",
     fullName: "State, Society and Public Administration",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
   },
   {
@@ -1105,9 +1040,8 @@ export const mastersDegreeCourses = [
     name: "MPA-12",
     fullName: "Administrative Theory",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
-    studyMaterial: [],
   },
   {
     code: "MPA-13",
@@ -1115,9 +1049,8 @@ export const mastersDegreeCourses = [
     name: "MPA-13",
     fullName: "Public Systems Management",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
-    studyMaterial: [],
   },
   {
     code: "MPA-14",
@@ -1125,9 +1058,8 @@ export const mastersDegreeCourses = [
     name: "MPA-14",
     fullName: "Human Resource Management",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
-    studyMaterial: [],
   },
   {
     code: "MPA-15",
@@ -1135,9 +1067,8 @@ export const mastersDegreeCourses = [
     name: "MPA-15",
     fullName: "Public Policy and Analysis",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
-    studyMaterial: [],
   },
   {
     code: "MPA-16",
@@ -1145,7 +1076,7 @@ export const mastersDegreeCourses = [
     name: "MPA-16",
     fullName: "Decentralisation and LocalGovernance",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
   },
   {
@@ -1154,9 +1085,8 @@ export const mastersDegreeCourses = [
     name: "MPA-17",
     fullName: "Electronic Governance",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
-    studyMaterial: [],
   },
   {
     code: "MPA-18",
@@ -1164,9 +1094,8 @@ export const mastersDegreeCourses = [
     name: "MPA-18",
     fullName: "Disaster Management",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
-    studyMaterial: [],
   },
   {
     code: "MSO-2",
@@ -1174,7 +1103,7 @@ export const mastersDegreeCourses = [
     name: "MSO-2",
     fullName: "Research Methodologies and Methods",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
   },
   {
@@ -1183,7 +1112,7 @@ export const mastersDegreeCourses = [
     name: "MPS-3",
     fullName: "India: Democracy and Development",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
   },
   {
@@ -1192,9 +1121,8 @@ export const mastersDegreeCourses = [
     name: "MPAP-2",
     fullName: "Project Work",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
-    studyMaterial: [],
   },
   {
     code: "MLI-101",
@@ -1202,7 +1130,7 @@ export const mastersDegreeCourses = [
     name: "MLI-101",
     fullName: "Information, Communication and Society",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
   },
   {
@@ -1211,7 +1139,7 @@ export const mastersDegreeCourses = [
     name: "MLII-101",
     fullName: "Information Sources, Systems and Services",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
   },
   {
@@ -1220,7 +1148,7 @@ export const mastersDegreeCourses = [
     name: "MLI-102",
     fullName: "Management of Library and Information Centres",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
   },
   {
@@ -1229,7 +1157,7 @@ export const mastersDegreeCourses = [
     name: "MLII-102",
     fullName: "Information Processing and Retrieval",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
   },
   {
@@ -1238,7 +1166,7 @@ export const mastersDegreeCourses = [
     name: "MLII-103",
     fullName: "Fundamentals of Information Communication Technologies",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
   },
   {
@@ -1247,7 +1175,7 @@ export const mastersDegreeCourses = [
     name: "MLII-104",
     fullName: "Information Communication Technologies: Applications",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
   },
   {
@@ -1256,9 +1184,8 @@ export const mastersDegreeCourses = [
     name: "MLIP-2",
     fullName: "Project",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
-    studyMaterial: [],
   },
   {
     code: "MLIE-101",
@@ -1266,7 +1193,7 @@ export const mastersDegreeCourses = [
     name: "MLIE-101",
     fullName: "Preservation and Conservation of Library Materials",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
   },
   {
@@ -1275,9 +1202,8 @@ export const mastersDegreeCourses = [
     name: "MLIE-102",
     fullName: "Research Methodology",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
-    studyMaterial: [],
   },
   {
     code: "MLIE-103",
@@ -1285,9 +1211,8 @@ export const mastersDegreeCourses = [
     name: "MLIE-103",
     fullName: "Academic Library System",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
-    studyMaterial: [],
   },
   {
     code: "MLIE-104",
@@ -1295,9 +1220,8 @@ export const mastersDegreeCourses = [
     name: "MLIE-104",
     fullName: "Technical Writing",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
-    studyMaterial: [],
   },
   {
     code: "MLIE-105",
@@ -1305,7 +1229,7 @@ export const mastersDegreeCourses = [
     name: "MLIE-105",
     fullName: "Informatrics and Scientometrics",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
   },
   {
@@ -1314,7 +1238,7 @@ export const mastersDegreeCourses = [
     name: "MLIE-106",
     fullName: "Public Library System and Services",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
   },
   {
@@ -1323,7 +1247,7 @@ export const mastersDegreeCourses = [
     name: "MANI-1",
     fullName: "Anthropology and Methods of Research (Theory and Practical)",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
   },
   {
@@ -1332,7 +1256,7 @@ export const mastersDegreeCourses = [
     name: "MANI-2",
     fullName: "Physical Anthropology (Theory and Practical)",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
   },
   {
@@ -1341,9 +1265,8 @@ export const mastersDegreeCourses = [
     name: "MAN-1",
     fullName: "Social Anthropology (Theory)",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
-    studyMaterial: [],
   },
   {
     code: "MAN-2",
@@ -1351,7 +1274,7 @@ export const mastersDegreeCourses = [
     name: "MAN-2",
     fullName: "Archaeological Anthropology (Theory)",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
   },
   {
@@ -1360,9 +1283,8 @@ export const mastersDegreeCourses = [
     name: "MANP-1",
     fullName: "Field work Dissertation",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
-    studyMaterial: [],
   },
   {
     code: "MANI-3",
@@ -1370,7 +1292,7 @@ export const mastersDegreeCourses = [
     name: "MANI-3",
     fullName: "Practicing Anthropology (Theory and Project)",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
   },
   {
@@ -1379,7 +1301,7 @@ export const mastersDegreeCourses = [
     name: "MANE-1",
     fullName: "Human Genetics (Theory and Practical)",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
   },
   {
@@ -1388,7 +1310,7 @@ export const mastersDegreeCourses = [
     name: "MANE-2",
     fullName: "Human Growth & Development (Theory and Practical)",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
   },
   {
@@ -1397,7 +1319,7 @@ export const mastersDegreeCourses = [
     name: "MANE-3",
     fullName: "Comparative Ethnography (Theory)",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
   },
   {
@@ -1406,9 +1328,8 @@ export const mastersDegreeCourses = [
     name: "MANE-4",
     fullName: "Gender and Society (Theory)",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
-    studyMaterial: [],
   },
   {
     code: "MANE-5",
@@ -1416,7 +1337,7 @@ export const mastersDegreeCourses = [
     name: "MANE-5",
     fullName: "Environmental Anthropology (Theory)",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
   },
   {
@@ -1425,9 +1346,8 @@ export const mastersDegreeCourses = [
     name: "MGP-1",
     fullName: "Gandhi: The Man and His Times",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
-    studyMaterial: [],
   },
   {
     code: "MGP-2",
@@ -1435,9 +1355,8 @@ export const mastersDegreeCourses = [
     name: "MGP-2",
     fullName: "Philosophy of Gandhi",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
-    studyMaterial: [],
   },
   {
     code: "MGP-3",
@@ -1445,9 +1364,8 @@ export const mastersDegreeCourses = [
     name: "MGP-3",
     fullName: "Gandhi’s Social Thought",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
-    studyMaterial: [],
   },
   {
     code: "MGP-4",
@@ -1455,9 +1373,8 @@ export const mastersDegreeCourses = [
     name: "MGP-4",
     fullName: "Gandhi’s Political Thought",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
-    studyMaterial: [],
   },
   {
     code: "MGPE-6",
@@ -1465,9 +1382,8 @@ export const mastersDegreeCourses = [
     name: "MGPE-6",
     fullName: "Gandhi’s Economic Thought",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
-    studyMaterial: [],
   },
   {
     code: "MGPE-7",
@@ -1475,7 +1391,7 @@ export const mastersDegreeCourses = [
     name: "MGPE-7",
     fullName: "Non-violent Movements after Gandhi",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
   },
   {
@@ -1484,9 +1400,8 @@ export const mastersDegreeCourses = [
     name: "MGPE-9",
     fullName: "Gandhi in the 21st Century",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
-    studyMaterial: [],
   },
   {
     code: "MGPE-14",
@@ -1494,7 +1409,7 @@ export const mastersDegreeCourses = [
     name: "MGPE-14",
     fullName: "Gandhi, Ecology and Sustainable Development",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
   },
   {
@@ -1503,7 +1418,7 @@ export const mastersDegreeCourses = [
     name: "MGP-5",
     fullName: "Introduction to Peace and Conflict Resolution",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
   },
   {
@@ -1512,7 +1427,7 @@ export const mastersDegreeCourses = [
     name: "MGPE-8",
     fullName: "Gandhi Approach to Peace and Conflict Resolutions",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
   },
   {
@@ -1521,7 +1436,7 @@ export const mastersDegreeCourses = [
     name: "MGPE-10",
     fullName: "Conflict Management, Transformation and Peace Building",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
   },
   {
@@ -1530,9 +1445,8 @@ export const mastersDegreeCourses = [
     name: "MGPE-11",
     fullName: "Human Security",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
-    studyMaterial: [],
   },
   {
     code: "MGPE-12",
@@ -1540,9 +1454,8 @@ export const mastersDegreeCourses = [
     name: "MGPE-12",
     fullName: "Women and Peace",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
-    studyMaterial: [],
   },
   {
     code: "MGPE-13",
@@ -1550,7 +1463,7 @@ export const mastersDegreeCourses = [
     name: "MGPE-13",
     fullName: "Civil Society, Political Regimes and Conflict",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
   },
   {
@@ -1559,7 +1472,7 @@ export const mastersDegreeCourses = [
     name: "MGPE-15",
     fullName: "Introduction to Research Methods",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
   },
   {
@@ -1568,7 +1481,7 @@ export const mastersDegreeCourses = [
     name: "MGPE-16",
     fullName: "Human Rights: Indian Perspective",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
   },
   {
@@ -1577,9 +1490,8 @@ export const mastersDegreeCourses = [
     name: "MGPE-17",
     fullName: "ProjectWork",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
-    studyMaterial: [],
   },
   {
     code: "MCS-211",
@@ -1587,7 +1499,7 @@ export const mastersDegreeCourses = [
     name: "MCS-211",
     fullName: "Design and Analysis of Algorithms",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
   },
   {
@@ -1596,9 +1508,8 @@ export const mastersDegreeCourses = [
     name: "MCS-212",
     fullName: "Discrete Mathematics",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
-    studyMaterial: [],
   },
   {
     code: "MCS-213",
@@ -1606,9 +1517,8 @@ export const mastersDegreeCourses = [
     name: "MCS-213",
     fullName: "Software Engineering",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
-    studyMaterial: [],
   },
   {
     code: "MCS-214",
@@ -1616,7 +1526,7 @@ export const mastersDegreeCourses = [
     name: "MCS-214",
     fullName: "Professional Skills and Ethics",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
   },
   {
@@ -1625,9 +1535,8 @@ export const mastersDegreeCourses = [
     name: "MCS-215",
     fullName: "Security and Cyber Laws",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
-    studyMaterial: [],
   },
   {
     code: "MCSL-216",
@@ -1635,9 +1544,8 @@ export const mastersDegreeCourses = [
     name: "MCSL-216",
     fullName: "DAA and Web Design Lab",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
-    studyMaterial: [],
   },
   {
     code: "MCSL-217",
@@ -1645,9 +1553,8 @@ export const mastersDegreeCourses = [
     name: "MCSL-217",
     fullName: "Software Engineering Lab",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
-    studyMaterial: [],
   },
   {
     code: "MCS-218",
@@ -1655,7 +1562,7 @@ export const mastersDegreeCourses = [
     name: "MCS-218",
     fullName: "Data Communication and Computer Networks",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
   },
   {
@@ -1664,7 +1571,7 @@ export const mastersDegreeCourses = [
     name: "MCS-219",
     fullName: "Object Oriented Analysis and Design",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
   },
   {
@@ -1673,9 +1580,8 @@ export const mastersDegreeCourses = [
     name: "MCS-220",
     fullName: "Web Technologies",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
-    studyMaterial: [],
   },
   {
     code: "MCS-221",
@@ -1683,7 +1589,7 @@ export const mastersDegreeCourses = [
     name: "MCS-221",
     fullName: "Data Warehousing and Data Mining",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
   },
   {
@@ -1692,7 +1598,7 @@ export const mastersDegreeCourses = [
     name: "MCSL-222",
     fullName: "OOAD and Web Technologies Lab",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
   },
   {
@@ -1701,7 +1607,7 @@ export const mastersDegreeCourses = [
     name: "MCSL-223",
     fullName: "Computer Network and Data Mining Lab",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
   },
   {
@@ -1710,7 +1616,7 @@ export const mastersDegreeCourses = [
     name: "MCS-224",
     fullName: "Artificial Intelligence and Machine Learning",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
   },
   {
@@ -1719,7 +1625,7 @@ export const mastersDegreeCourses = [
     name: "MCS-225",
     fullName: "Accountancy and Financial Management",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
   },
   {
@@ -1728,9 +1634,8 @@ export const mastersDegreeCourses = [
     name: "MCS-226",
     fullName: "Data Science and Big Data",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
-    studyMaterial: [],
   },
   {
     code: "MCS-227",
@@ -1738,9 +1643,8 @@ export const mastersDegreeCourses = [
     name: "MCS-227",
     fullName: "Cloud Computing and IoT",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
-    studyMaterial: [],
   },
   {
     code: "MCSL-228",
@@ -1748,9 +1652,8 @@ export const mastersDegreeCourses = [
     name: "MCSL-228",
     fullName: "AI and Machine Learning Lab",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
-    studyMaterial: [],
   },
   {
     code: "MCSL-229",
@@ -1758,9 +1661,8 @@ export const mastersDegreeCourses = [
     name: "MCSL-229",
     fullName: "Cloud and Data Science Lab",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
-    studyMaterial: [],
   },
   {
     code: "MCS-230",
@@ -1768,7 +1670,7 @@ export const mastersDegreeCourses = [
     name: "MCS-230",
     fullName: "Digital Image Processing and Computer Vision",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
   },
   {
@@ -1777,9 +1679,8 @@ export const mastersDegreeCourses = [
     name: "MCS-231",
     fullName: "Mobile Computing",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
-    studyMaterial: [],
   },
   {
     code: "MCSP-232",
@@ -1787,9 +1688,8 @@ export const mastersDegreeCourses = [
     name: "MCSP-232",
     fullName: "Project",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
-    studyMaterial: [],
   },
   {
     code: "MRD-101",
@@ -1797,7 +1697,7 @@ export const mastersDegreeCourses = [
     name: "MRD-101",
     fullName: "Rural Development – Indian Context",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
   },
   {
@@ -1806,9 +1706,8 @@ export const mastersDegreeCourses = [
     name: "MRD-102",
     fullName: "Rural Development Programmes",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
-    studyMaterial: [],
   },
   {
     code: "MRD-103",
@@ -1816,7 +1715,7 @@ export const mastersDegreeCourses = [
     name: "MRD-103",
     fullName: "Rural Development – Planning and Management",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
   },
   {
@@ -1825,7 +1724,7 @@ export const mastersDegreeCourses = [
     name: "MRD-4",
     fullName: "Research Methods in Rural Development",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
   },
   {
@@ -1834,9 +1733,8 @@ export const mastersDegreeCourses = [
     name: "MRDP-1",
     fullName: "Dissertation",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
-    studyMaterial: [],
   },
   {
     code: "RDD-6",
@@ -1844,9 +1742,8 @@ export const mastersDegreeCourses = [
     name: "RDD-6",
     fullName: "Rural Health Care",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
-    studyMaterial: [],
   },
   {
     code: "RDD-7",
@@ -1854,7 +1751,7 @@ export const mastersDegreeCourses = [
     name: "RDD-7",
     fullName: "Communication and Extension in Rural Development",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
   },
   {
@@ -1863,9 +1760,8 @@ export const mastersDegreeCourses = [
     name: "MRDE-101",
     fullName: "Rural Social Development",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
-    studyMaterial: [],
   },
   {
     code: "MRDE-2",
@@ -1873,7 +1769,7 @@ export const mastersDegreeCourses = [
     name: "MRDE-2",
     fullName: "Voluntary Action in Rural Development",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
   },
   {
@@ -1882,7 +1778,7 @@ export const mastersDegreeCourses = [
     name: "MRDE-3",
     fullName: "Land Reforms and Rural Development",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
   },
   {
@@ -1891,7 +1787,7 @@ export const mastersDegreeCourses = [
     name: "MRDE-4",
     fullName: "Entrepreneurship and Rural Development",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
   },
   {
@@ -1900,9 +1796,8 @@ export const mastersDegreeCourses = [
     name: "MFN-1",
     fullName: "Applied Physiology",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
-    studyMaterial: [],
   },
   {
     code: "MFN-2",
@@ -1910,9 +1805,8 @@ export const mastersDegreeCourses = [
     name: "MFN-2",
     fullName: "Nutritional Biochemistry",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
-    studyMaterial: [],
   },
   {
     code: "MFNL-2",
@@ -1920,9 +1814,8 @@ export const mastersDegreeCourses = [
     name: "MFNL-2",
     fullName: "Nutritional Biochemistry",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
-    studyMaterial: [],
   },
   {
     code: "MFN-3",
@@ -1930,7 +1823,7 @@ export const mastersDegreeCourses = [
     name: "MFN-3",
     fullName: "Food Safety and Food Microbiology",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
   },
   {
@@ -1939,7 +1832,7 @@ export const mastersDegreeCourses = [
     name: "MFNL-3",
     fullName: "Food Safety and Food Microbiology",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
   },
   {
@@ -1948,9 +1841,8 @@ export const mastersDegreeCourses = [
     name: "MFN-4",
     fullName: "Advance Nutrition",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
-    studyMaterial: [],
   },
   {
     code: "MFNL-4",
@@ -1958,9 +1850,8 @@ export const mastersDegreeCourses = [
     name: "MFNL-4",
     fullName: "Advance Nutrition",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
-    studyMaterial: [],
   },
   {
     code: "MFN-5",
@@ -1968,7 +1859,7 @@ export const mastersDegreeCourses = [
     name: "MFN-5",
     fullName: "Clinical and Therapeutic Nutrition",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
   },
   {
@@ -1977,7 +1868,7 @@ export const mastersDegreeCourses = [
     name: "MFNL-5",
     fullName: "Clinical and Therapeutic Nutrition",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
   },
   {
@@ -1986,9 +1877,8 @@ export const mastersDegreeCourses = [
     name: "MFN-6",
     fullName: "Public Nutrition",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
-    studyMaterial: [],
   },
   {
     code: "MFNL-6",
@@ -1996,9 +1886,8 @@ export const mastersDegreeCourses = [
     name: "MFNL-6",
     fullName: "Public Nutrition",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
-    studyMaterial: [],
   },
   {
     code: "MFN-7",
@@ -2006,7 +1895,7 @@ export const mastersDegreeCourses = [
     name: "MFN-7",
     fullName: "Entrepreneurship and Food Service Management",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
   },
   {
@@ -2015,7 +1904,7 @@ export const mastersDegreeCourses = [
     name: "MFNL-7",
     fullName: "Entrepreneurship and Food Service Management",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
   },
   {
@@ -2024,9 +1913,8 @@ export const mastersDegreeCourses = [
     name: "MFN-8",
     fullName: "Principles of Food Science",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
-    studyMaterial: [],
   },
   {
     code: "MFNL-8",
@@ -2034,9 +1922,8 @@ export const mastersDegreeCourses = [
     name: "MFNL-8",
     fullName: "Principles of Food Science",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
-    studyMaterial: [],
   },
   {
     code: "MFN-9",
@@ -2044,7 +1931,7 @@ export const mastersDegreeCourses = [
     name: "MFN-9",
     fullName: "Research Methods and Biostatistics",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
   },
   {
@@ -2053,7 +1940,7 @@ export const mastersDegreeCourses = [
     name: "MFN-10",
     fullName: "Understanding Computer Applications",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
   },
   {
@@ -2062,9 +1949,8 @@ export const mastersDegreeCourses = [
     name: "MFNP-11",
     fullName: "Internship Programme",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
-    studyMaterial: [],
   },
   {
     code: "MFNP-12",
@@ -2072,9 +1958,8 @@ export const mastersDegreeCourses = [
     name: "MFNP-12",
     fullName: "Dissertation",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
-    studyMaterial: [],
   },
   {
     code: "MCFT-1",
@@ -2082,7 +1967,7 @@ export const mastersDegreeCourses = [
     name: "MCFT-1",
     fullName: "Human Development and Family Relationships",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
   },
   {
@@ -2091,7 +1976,7 @@ export const mastersDegreeCourses = [
     name: "MCFTL-1",
     fullName: "Human Development and Family Relationships Supervised Practicum",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
   },
   {
@@ -2100,9 +1985,8 @@ export const mastersDegreeCourses = [
     name: "MCFT-2",
     fullName: "Mental Health and Disorders",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
-    studyMaterial: [],
   },
   {
     code: "MCFTL-2",
@@ -2110,7 +1994,7 @@ export const mastersDegreeCourses = [
     name: "MCFTL-2",
     fullName: "Mental Health and Disorders Supervised Practicum",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
   },
   {
@@ -2121,7 +2005,7 @@ export const mastersDegreeCourses = [
     fullName:
       "Counselling and Family Therapy: Basic Concepts & Theoretical Perspectives",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
   },
   {
@@ -2132,7 +2016,7 @@ export const mastersDegreeCourses = [
     fullName:
       "Counselling and Family Therapy: Basic Concepts & Theoretical Perspectives Supervised Practicum",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
   },
   {
@@ -2141,7 +2025,7 @@ export const mastersDegreeCourses = [
     name: "MCFT-4",
     fullName: "Counselling and Family Therapy: Applied Aspects",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
   },
   {
@@ -2152,7 +2036,7 @@ export const mastersDegreeCourses = [
     fullName:
       "Counselling and Family Therapy: Applied Aspects Supervised Practicum",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
   },
   {
@@ -2161,7 +2045,7 @@ export const mastersDegreeCourses = [
     name: "MCFT-5",
     fullName: "Counselling and Family Therapy: Research Methods and Statistics",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
   },
   {
@@ -2172,7 +2056,7 @@ export const mastersDegreeCourses = [
     fullName:
       "Counselling and Family Therapy: Research Methods and Statistics Supervised Practicum",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
   },
   {
@@ -2181,9 +2065,8 @@ export const mastersDegreeCourses = [
     name: "MCFTL-8",
     fullName: "Reflective Journal",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
-    studyMaterial: [],
   },
   {
     code: "MCFT-6",
@@ -2191,9 +2074,8 @@ export const mastersDegreeCourses = [
     name: "MCFT-6",
     fullName: "Applied Social Psychology",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
-    studyMaterial: [],
   },
   {
     code: "MCFTL-6",
@@ -2201,7 +2083,7 @@ export const mastersDegreeCourses = [
     name: "MCFTL-6",
     fullName: "Applied Social Psychology-Supervised Practicum",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
   },
   {
@@ -2210,7 +2092,7 @@ export const mastersDegreeCourses = [
     name: "MCFT-7",
     fullName: "Counselling and Family Therapy: Applications and Interventions",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
   },
   {
@@ -2221,7 +2103,7 @@ export const mastersDegreeCourses = [
     fullName:
       "Counselling and Family Therapy: Applications and Interventions Supervised Practicum",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
   },
   {
@@ -2230,9 +2112,8 @@ export const mastersDegreeCourses = [
     name: "MCFTP-1",
     fullName: "Internship",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
-    studyMaterial: [],
   },
   {
     code: "MCFTP-2",
@@ -2240,9 +2121,8 @@ export const mastersDegreeCourses = [
     name: "MCFTP-2",
     fullName: "Dissertation",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
-    studyMaterial: [],
   },
   {
     code: "MCFTE-1",
@@ -2250,7 +2130,7 @@ export const mastersDegreeCourses = [
     name: "MCFTE-1",
     fullName: "Marital and Family Therapy & Counselling",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
   },
   {
@@ -2259,7 +2139,7 @@ export const mastersDegreeCourses = [
     name: "MCFTE-4",
     fullName: "Marital and Family Therapy & Counselling Supervised Practicum",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
   },
   {
@@ -2268,7 +2148,7 @@ export const mastersDegreeCourses = [
     name: "MCFTE-2",
     fullName: "Child and Adolescent Counselling and Family Therapy",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
   },
   {
@@ -2279,7 +2159,7 @@ export const mastersDegreeCourses = [
     fullName:
       "Child and Adolescent Counselling and Family Therapy Supervised Practicum",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
   },
   {
@@ -2288,7 +2168,7 @@ export const mastersDegreeCourses = [
     name: "MCFTE-3",
     fullName: "Substance Abuse Counselling and Family Therapy",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
   },
   {
@@ -2299,7 +2179,7 @@ export const mastersDegreeCourses = [
     fullName:
       "Substance Abuse Counselling and Family Therapy Supervised Practicum",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
   },
   {
@@ -2308,7 +2188,7 @@ export const mastersDegreeCourses = [
     name: "MSW-1",
     fullName: "Origin and Development of Social Work",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
   },
   {
@@ -2317,7 +2197,7 @@ export const mastersDegreeCourses = [
     name: "MSW-2",
     fullName: "Professional Social Work: Indian Perspectives",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
   },
   {
@@ -2326,7 +2206,7 @@ export const mastersDegreeCourses = [
     name: "MSW-5",
     fullName: "Social Work Practicum and Supervision",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
   },
   {
@@ -2335,9 +2215,8 @@ export const mastersDegreeCourses = [
     name: "MSW-3",
     fullName: "Basic Social Science Concepts",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
-    studyMaterial: [],
   },
   {
     code: "MSW-4",
@@ -2345,7 +2224,7 @@ export const mastersDegreeCourses = [
     name: "MSW-4",
     fullName: "Social Work and Social Development",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
   },
   {
@@ -2354,9 +2233,8 @@ export const mastersDegreeCourses = [
     name: "MSW-6",
     fullName: "Social Work Research",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
-    studyMaterial: [],
   },
   {
     code: "MSWE-10",
@@ -2364,7 +2242,7 @@ export const mastersDegreeCourses = [
     name: "MSWE-10",
     fullName: "Social Work in African Context",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
   },
   {
@@ -2373,7 +2251,7 @@ export const mastersDegreeCourses = [
     name: "MSW-32",
     fullName: "Social Work and Criminal Justice",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
   },
   {
@@ -2382,9 +2260,8 @@ export const mastersDegreeCourses = [
     name: "MSWL-13",
     fullName: "Social Work Practicum-I",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
-    studyMaterial: [],
   },
   {
     code: "MSWL-14",
@@ -2392,9 +2269,8 @@ export const mastersDegreeCourses = [
     name: "MSWL-14",
     fullName: "Block Placement",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
-    studyMaterial: [],
   },
   {
     code: "MSW-7",
@@ -2402,7 +2278,7 @@ export const mastersDegreeCourses = [
     name: "MSW-7",
     fullName: "Case work and Counselling: Working with Individuals",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
   },
   {
@@ -2411,7 +2287,7 @@ export const mastersDegreeCourses = [
     name: "MSW-8",
     fullName: "Social Group Work: Working with Groups",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
   },
   {
@@ -2420,7 +2296,7 @@ export const mastersDegreeCourses = [
     name: "MSW-9",
     fullName: "Community Organisation Management for Community Development",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
   },
   {
@@ -2429,7 +2305,7 @@ export const mastersDegreeCourses = [
     name: "MSW-17",
     fullName: "Contemporary Methods and Values of Social Work",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
   },
   {
@@ -2438,7 +2314,7 @@ export const mastersDegreeCourses = [
     name: "MSWE-1",
     fullName: "HIV/AIDS: Stigma, Discrimination and Prevention",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
   },
   {
@@ -2447,9 +2323,8 @@ export const mastersDegreeCourses = [
     name: "MSWE-2",
     fullName: "Women and Child Development",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
-    studyMaterial: [],
   },
   {
     code: "MSWE-7",
@@ -2457,9 +2332,8 @@ export const mastersDegreeCourses = [
     name: "MSWE-7",
     fullName: "International Social Work",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
-    studyMaterial: [],
   },
   {
     code: "MSWE-3",
@@ -2467,9 +2341,8 @@ export const mastersDegreeCourses = [
     name: "MSWE-3",
     fullName: "Disaster Management",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
-    studyMaterial: [],
   },
   {
     code: "MSWP-1",
@@ -2477,9 +2350,8 @@ export const mastersDegreeCourses = [
     name: "MSWP-1",
     fullName: "Dissertation (Project work)",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
-    studyMaterial: [],
   },
   {
     code: "MSWL-15",
@@ -2487,9 +2359,8 @@ export const mastersDegreeCourses = [
     name: "MSWL-15",
     fullName: "Social Work Practicum-II",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
-    studyMaterial: [],
   },
   {
     code: "MSWL-16",
@@ -2497,9 +2368,8 @@ export const mastersDegreeCourses = [
     name: "MSWL-16",
     fullName: "Internship",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
-    studyMaterial: [],
   },
   {
     code: "MSW-1",
@@ -2507,7 +2377,7 @@ export const mastersDegreeCourses = [
     name: "MSW-1",
     fullName: "Origin and Development of Social Work",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
   },
   {
@@ -2516,7 +2386,7 @@ export const mastersDegreeCourses = [
     name: "MSW-2",
     fullName: "Professional Social Work: Indian Perspectives",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
   },
   {
@@ -2525,7 +2395,7 @@ export const mastersDegreeCourses = [
     name: "MSW-5",
     fullName: "Social Work Practicum and Supervision",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
   },
   {
@@ -2534,7 +2404,7 @@ export const mastersDegreeCourses = [
     name: "MSW-8",
     fullName: "Social Group Work: Working with Groups",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
   },
   {
@@ -2543,7 +2413,7 @@ export const mastersDegreeCourses = [
     name: "MSW-9",
     fullName: "Community Organisation Management for Community Development",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
   },
   {
@@ -2552,9 +2422,8 @@ export const mastersDegreeCourses = [
     name: "MSWL-46",
     fullName: "Social Work Practicum-I",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
-    studyMaterial: [],
   },
   {
     code: "MSWL-47",
@@ -2562,9 +2431,8 @@ export const mastersDegreeCourses = [
     name: "MSWL-47",
     fullName: "Block Placement",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
-    studyMaterial: [],
   },
   {
     code: "MSW-12",
@@ -2572,7 +2440,7 @@ export const mastersDegreeCourses = [
     name: "MSW-12",
     fullName: "Introduction to Life Characteristics and Challenges",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
   },
   {
@@ -2581,7 +2449,7 @@ export const mastersDegreeCourses = [
     name: "MSW-13",
     fullName: "Introduction to Psychological Basis of Counselling",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
   },
   {
@@ -2590,7 +2458,7 @@ export const mastersDegreeCourses = [
     name: "MSW-14",
     fullName: "Relevance of Social Case Work in Counselling",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
   },
   {
@@ -2599,9 +2467,8 @@ export const mastersDegreeCourses = [
     name: "MSW-15",
     fullName: "Basics of Counselling",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
-    studyMaterial: [],
   },
   {
     code: "MSW-16",
@@ -2609,9 +2476,8 @@ export const mastersDegreeCourses = [
     name: "MSW-16",
     fullName: "Fields of Counselling",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
-    studyMaterial: [],
   },
   {
     code: "MSWL-48",
@@ -2619,9 +2485,8 @@ export const mastersDegreeCourses = [
     name: "MSWL-48",
     fullName: "Social Work Practicum-II",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
-    studyMaterial: [],
   },
   {
     code: "MSWL-49",
@@ -2629,9 +2494,8 @@ export const mastersDegreeCourses = [
     name: "MSWL-49",
     fullName: "Internship",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
-    studyMaterial: [],
   },
   {
     code: "MES-11",
@@ -2639,9 +2503,8 @@ export const mastersDegreeCourses = [
     name: "MES-11",
     fullName: "Understanding Education",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
-    studyMaterial: [],
   },
   {
     code: "MES-12",
@@ -2649,7 +2512,7 @@ export const mastersDegreeCourses = [
     name: "MES-12",
     fullName: "Education: Nature and Purposes",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
   },
   {
@@ -2658,7 +2521,7 @@ export const mastersDegreeCourses = [
     name: "MES-13",
     fullName: "Learning, Learner and Development",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
   },
   {
@@ -2667,9 +2530,8 @@ export const mastersDegreeCourses = [
     name: "MES-14",
     fullName: "Societal Context of Education",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
-    studyMaterial: [],
   },
   {
     code: "MES-15",
@@ -2677,7 +2539,7 @@ export const mastersDegreeCourses = [
     name: "MES-15",
     fullName: "Operational Dimensions of Education",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
   },
   {
@@ -2686,9 +2548,8 @@ export const mastersDegreeCourses = [
     name: "MES-16",
     fullName: "Educational Research",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
-    studyMaterial: [],
   },
   {
     code: "MESP-1",
@@ -2696,9 +2557,8 @@ export const mastersDegreeCourses = [
     name: "MESP-1",
     fullName: "Dissertation",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
-    studyMaterial: [],
   },
   {
     code: "MES-101",
@@ -2706,7 +2566,7 @@ export const mastersDegreeCourses = [
     name: "MES-101",
     fullName: "Higher Education: Its Context and Linkages",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
   },
   {
@@ -2715,7 +2575,7 @@ export const mastersDegreeCourses = [
     name: "MES-102",
     fullName: "Instruction in Higher Education",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
   },
   {
@@ -2724,7 +2584,7 @@ export const mastersDegreeCourses = [
     name: "MES-103",
     fullName: "Higher Education: The Psycho-social Context",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
   },
   {
@@ -2733,7 +2593,7 @@ export const mastersDegreeCourses = [
     name: "MES-104",
     fullName: "Planning and Management of Higher Education",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
   },
   {
@@ -2742,7 +2602,7 @@ export const mastersDegreeCourses = [
     name: "MES-111",
     fullName: "Growth and Philosophy of Distance Education",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
   },
   {
@@ -2751,7 +2611,7 @@ export const mastersDegreeCourses = [
     name: "MES-112",
     fullName: "Design and Development of Self-Learning Print Materials",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
   },
   {
@@ -2760,9 +2620,8 @@ export const mastersDegreeCourses = [
     name: "MES-113",
     fullName: "Learner Support Services",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
-    studyMaterial: [],
   },
   {
     code: "MES-114",
@@ -2770,7 +2629,7 @@ export const mastersDegreeCourses = [
     name: "MES-114",
     fullName: "Management of Distance Education",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
   },
   {
@@ -2779,7 +2638,7 @@ export const mastersDegreeCourses = [
     name: "MES-115",
     fullName: "Communication Technology for Distance Education",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
   },
   {
@@ -2788,9 +2647,8 @@ export const mastersDegreeCourses = [
     name: "MES-31",
     fullName: "ET -An Overview",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
-    studyMaterial: [],
   },
   {
     code: "MES-32",
@@ -2798,7 +2656,7 @@ export const mastersDegreeCourses = [
     name: "MES-32",
     fullName: "Communication and Information Technology",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
   },
   {
@@ -2807,9 +2665,8 @@ export const mastersDegreeCourses = [
     name: "MES-33",
     fullName: "Computer Technology",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
-    studyMaterial: [],
   },
   {
     code: "MES-34",
@@ -2817,9 +2674,8 @@ export const mastersDegreeCourses = [
     name: "MES-34",
     fullName: "Designing Courseware",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
-    studyMaterial: [],
   },
   {
     code: "MES-41",
@@ -2827,7 +2683,7 @@ export const mastersDegreeCourses = [
     name: "MES-41",
     fullName: "Growth and Development of Educational Management",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
   },
   {
@@ -2836,7 +2692,7 @@ export const mastersDegreeCourses = [
     name: "MES-42",
     fullName: "Dimensions of Educational Management",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
   },
   {
@@ -2845,9 +2701,8 @@ export const mastersDegreeCourses = [
     name: "MES-43",
     fullName: "Organizational Behaviour",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
-    studyMaterial: [],
   },
   {
     code: "MES-44",
@@ -2855,9 +2710,8 @@ export const mastersDegreeCourses = [
     name: "MES-44",
     fullName: "Institutional Management",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
-    studyMaterial: [],
   },
   {
     code: "MAE-1",
@@ -2865,9 +2719,8 @@ export const mastersDegreeCourses = [
     name: "MAE-1",
     fullName: "Understanding Adult Education",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
-    studyMaterial: [],
   },
   {
     code: "MAE-2",
@@ -2875,7 +2728,7 @@ export const mastersDegreeCourses = [
     name: "MAE-2",
     fullName: "Policy Planning and Implementation of Adult Education in India",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
   },
   {
@@ -2886,7 +2739,7 @@ export const mastersDegreeCourses = [
     fullName:
       "Knowledge Management, Information Dissemination and Networking in Adult Education",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
   },
   {
@@ -2895,7 +2748,7 @@ export const mastersDegreeCourses = [
     name: "MAE-4",
     fullName: "Extension Education and Development",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
   },
   {
@@ -2904,9 +2757,8 @@ export const mastersDegreeCourses = [
     name: "MES-11",
     fullName: "Understanding Education",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
-    studyMaterial: [],
   },
   {
     code: "MES-12",
@@ -2914,7 +2766,7 @@ export const mastersDegreeCourses = [
     name: "MES-12",
     fullName: "Education: Nature and Purposes",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
   },
   {
@@ -2923,7 +2775,7 @@ export const mastersDegreeCourses = [
     name: "MES-13",
     fullName: "Learning, Learner and Development",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
   },
   {
@@ -2932,9 +2784,8 @@ export const mastersDegreeCourses = [
     name: "MES-14",
     fullName: "Societal Context of Education",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
-    studyMaterial: [],
   },
   {
     code: "MES-15",
@@ -2942,7 +2793,7 @@ export const mastersDegreeCourses = [
     name: "MES-15",
     fullName: "Operational Dimensions of Education",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
   },
   {
@@ -2951,9 +2802,8 @@ export const mastersDegreeCourses = [
     name: "MES-16",
     fullName: "Educational Research",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
-    studyMaterial: [],
   },
   {
     code: "MDE-411",
@@ -2961,7 +2811,7 @@ export const mastersDegreeCourses = [
     name: "MDE-411",
     fullName: "Growth and Philosophy of Distance Education",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
   },
   {
@@ -2970,9 +2820,8 @@ export const mastersDegreeCourses = [
     name: "MDE-412",
     fullName: "Instructional Design",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
-    studyMaterial: [],
   },
   {
     code: "MDE-413",
@@ -2980,7 +2829,7 @@ export const mastersDegreeCourses = [
     name: "MDE-413",
     fullName: "Learner Support Systems and Services",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
   },
   {
@@ -2989,7 +2838,7 @@ export const mastersDegreeCourses = [
     name: "MDE-414",
     fullName: "Management of Distance Education",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
   },
   {
@@ -2998,7 +2847,7 @@ export const mastersDegreeCourses = [
     name: "MDE-518",
     fullName: "Educational Communication Technologies",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
   },
   {
@@ -3007,7 +2856,7 @@ export const mastersDegreeCourses = [
     name: "MDE-415",
     fullName: "Research Methods for Distance Education",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
   },
   {
@@ -3016,7 +2865,7 @@ export const mastersDegreeCourses = [
     name: "MDE-416",
     fullName: "Curriculum Development in Distance Education",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
   },
   {
@@ -3025,7 +2874,7 @@ export const mastersDegreeCourses = [
     name: "MDE-417",
     fullName: "Distance Education: Economic Perspective",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
   },
   {
@@ -3034,7 +2883,7 @@ export const mastersDegreeCourses = [
     name: "MDE-419",
     fullName: "Staff Training and Development in Distance Education",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
   },
   {
@@ -3043,9 +2892,8 @@ export const mastersDegreeCourses = [
     name: "MDEP-520",
     fullName: "Project Work",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
-    studyMaterial: [],
   },
   {
     code: "MAE-1",
@@ -3053,9 +2901,8 @@ export const mastersDegreeCourses = [
     name: "MAE-1",
     fullName: "Understanding Adult Education",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
-    studyMaterial: [],
   },
   {
     code: "MAE-2",
@@ -3063,7 +2910,7 @@ export const mastersDegreeCourses = [
     name: "MAE-2",
     fullName: "Policy Planning and Implementation of Adult Education in India",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
   },
   {
@@ -3074,7 +2921,7 @@ export const mastersDegreeCourses = [
     fullName:
       "Knowledge Management, Information Dissemination and Networking in AdultEducation",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
   },
   {
@@ -3083,9 +2930,8 @@ export const mastersDegreeCourses = [
     name: "MES-16",
     fullName: "Educational Research",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
-    studyMaterial: [],
   },
   {
     code: "MAEL-1",
@@ -3093,9 +2939,8 @@ export const mastersDegreeCourses = [
     name: "MAEL-1",
     fullName: "Practical Work Components",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
-    studyMaterial: [],
   },
   {
     code: "MAE-4",
@@ -3103,7 +2948,7 @@ export const mastersDegreeCourses = [
     name: "MAE-4",
     fullName: "Extension Education and Development",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
   },
   {
@@ -3112,7 +2957,7 @@ export const mastersDegreeCourses = [
     name: "MAE-5",
     fullName: "Population and Development Education",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
   },
   {
@@ -3121,9 +2966,8 @@ export const mastersDegreeCourses = [
     name: "MAEP-1",
     fullName: "Dissertation",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
-    studyMaterial: [],
   },
   {
     code: "MAEE-1",
@@ -3131,9 +2975,8 @@ export const mastersDegreeCourses = [
     name: "MAEE-1",
     fullName: "Sustainable Development",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
-    studyMaterial: [],
   },
   {
     code: "MESE-61",
@@ -3141,7 +2984,7 @@ export const mastersDegreeCourses = [
     name: "MESE-61",
     fullName: "Open and Distance LearningSystems",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
   },
   {
@@ -3150,9 +2993,8 @@ export const mastersDegreeCourses = [
     name: "MAEE-2",
     fullName: "Basics of Legal Awareness",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
-    studyMaterial: [],
   },
   {
     code: "MESE-62",
@@ -3160,9 +3002,8 @@ export const mastersDegreeCourses = [
     name: "MESE-62",
     fullName: "Vocational Education",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
-    studyMaterial: [],
   },
   {
     code: "MTTM-1",
@@ -3170,7 +3011,7 @@ export const mastersDegreeCourses = [
     name: "MTTM-1",
     fullName: "Management Functions and Behaviour in Tourism",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
   },
   {
@@ -3179,7 +3020,7 @@ export const mastersDegreeCourses = [
     name: "MTTM-2",
     fullName: "Human Resource Planning and Development in Tourism",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
   },
   {
@@ -3188,9 +3029,8 @@ export const mastersDegreeCourses = [
     name: "MTTM-3",
     fullName: "Managing Personnel in Tourism",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
-    studyMaterial: [],
   },
   {
     code: "MTTM-4",
@@ -3198,7 +3038,7 @@ export const mastersDegreeCourses = [
     name: "MTTM-4",
     fullName: "Information Management Systems and Tourism",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
   },
   {
@@ -3207,7 +3047,7 @@ export const mastersDegreeCourses = [
     name: "MTTM-5",
     fullName: "Accounting and Finance for Managers inTourism",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
   },
   {
@@ -3216,7 +3056,7 @@ export const mastersDegreeCourses = [
     name: "MTTM-6",
     fullName: "Marketing for Tourism Managers",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
   },
   {
@@ -3225,7 +3065,7 @@ export const mastersDegreeCourses = [
     name: "MTTM-7",
     fullName: "Managing Sales and Promotion in Tourism",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
   },
   {
@@ -3234,7 +3074,7 @@ export const mastersDegreeCourses = [
     name: "MTTM-8",
     fullName: "Managing Entrepreneurship and Small Business in Tourism",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
   },
   {
@@ -3243,9 +3083,8 @@ export const mastersDegreeCourses = [
     name: "MTTM-9",
     fullName: "Understanding Tourism Markets",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
-    studyMaterial: [],
   },
   {
     code: "MTTM-10",
@@ -3253,9 +3092,8 @@ export const mastersDegreeCourses = [
     name: "MTTM-10",
     fullName: "Tourism Impacts",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
-    studyMaterial: [],
   },
   {
     code: "MTTM-11",
@@ -3263,7 +3101,7 @@ export const mastersDegreeCourses = [
     name: "MTTM-11",
     fullName: "Tourism Planning and Development",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
   },
   {
@@ -3272,9 +3110,8 @@ export const mastersDegreeCourses = [
     name: "MTTM-16",
     fullName: "Dissertation",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
-    studyMaterial: [],
   },
   {
     code: "MTTM-12",
@@ -3282,7 +3119,7 @@ export const mastersDegreeCourses = [
     name: "MTTM-12",
     fullName: "Tourism Products: Design and Development",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
   },
   {
@@ -3291,9 +3128,8 @@ export const mastersDegreeCourses = [
     name: "MTTM-13",
     fullName: "Tourism Operations",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
-    studyMaterial: [],
   },
   {
     code: "MTTM-14",
@@ -3301,7 +3137,7 @@ export const mastersDegreeCourses = [
     name: "MTTM-14",
     fullName: "Tourist Transport Operations (Road Transport)",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
   },
   {
@@ -3310,9 +3146,8 @@ export const mastersDegreeCourses = [
     name: "MTTM-115",
     fullName: "MICE Management",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
-    studyMaterial: [],
   },
   {
     code: "TS-1",
@@ -3320,9 +3155,8 @@ export const mastersDegreeCourses = [
     name: "TS-1",
     fullName: "Foundation Course in Tourism",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
-    studyMaterial: [],
   },
   {
     code: "TS-2",
@@ -3330,7 +3164,7 @@ export const mastersDegreeCourses = [
     name: "TS-2",
     fullName: "Tourism Development: Products, Operations and CaseStudies",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
   },
   {
@@ -3339,9 +3173,8 @@ export const mastersDegreeCourses = [
     name: "TS-3",
     fullName: "Management in Tourism",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
-    studyMaterial: [],
   },
   {
     code: "TS-6",
@@ -3349,9 +3182,8 @@ export const mastersDegreeCourses = [
     name: "TS-6",
     fullName: "Tourism Marketing",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
-    studyMaterial: [],
   },
   {
     code: "MPY-1",
@@ -3359,9 +3191,8 @@ export const mastersDegreeCourses = [
     name: "MPY-1",
     fullName: "Indian Philosophy",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
-    studyMaterial: [],
   },
   {
     code: "MPYE-1",
@@ -3369,9 +3200,8 @@ export const mastersDegreeCourses = [
     name: "MPYE-1",
     fullName: "Logic",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
-    studyMaterial: [],
   },
   {
     code: "MPYE-2",
@@ -3379,9 +3209,8 @@ export const mastersDegreeCourses = [
     name: "MPYE-2",
     fullName: "Ethics",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
-    studyMaterial: [],
   },
   {
     code: "MPYE-3",
@@ -3389,9 +3218,8 @@ export const mastersDegreeCourses = [
     name: "MPYE-3",
     fullName: "Epistemology",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
-    studyMaterial: [],
   },
   {
     code: "MPYE-4",
@@ -3399,9 +3227,8 @@ export const mastersDegreeCourses = [
     name: "MPYE-4",
     fullName: "Philosophy of Human Person",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
-    studyMaterial: [],
   },
   {
     code: "MPYE-5",
@@ -3409,9 +3236,8 @@ export const mastersDegreeCourses = [
     name: "MPYE-5",
     fullName: "World Religions",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
-    studyMaterial: [],
   },
   {
     code: "MPYE-6",
@@ -3419,9 +3245,8 @@ export const mastersDegreeCourses = [
     name: "MPYE-6",
     fullName: "Dalit Philosophy",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
-    studyMaterial: [],
   },
   {
     code: "MPYE-7",
@@ -3429,7 +3254,7 @@ export const mastersDegreeCourses = [
     name: "MPYE-7",
     fullName: "Research Methodology in Philosophy",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
   },
   {
@@ -3438,7 +3263,7 @@ export const mastersDegreeCourses = [
     name: "MGP-5",
     fullName: "Introduction to Peace and Conflict Resolution",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
   },
   {
@@ -3447,9 +3272,8 @@ export const mastersDegreeCourses = [
     name: "MPY-2",
     fullName: "Western Philosophy",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
-    studyMaterial: [],
   },
   {
     code: "MPYE-8",
@@ -3457,9 +3281,8 @@ export const mastersDegreeCourses = [
     name: "MPYE-8",
     fullName: "Metaphysics",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
-    studyMaterial: [],
   },
   {
     code: "MPYE-9",
@@ -3467,7 +3290,7 @@ export const mastersDegreeCourses = [
     name: "MPYE-9",
     fullName: "Philosophy of Science and Cosmology",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
   },
   {
@@ -3476,9 +3299,8 @@ export const mastersDegreeCourses = [
     name: "MPYE-10",
     fullName: "Philosophy of Religion",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
-    studyMaterial: [],
   },
   {
     code: "MPYE-11",
@@ -3486,7 +3308,7 @@ export const mastersDegreeCourses = [
     name: "MPYE-11",
     fullName: "Philosophy of Art (Aesthetics)",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
   },
   {
@@ -3495,9 +3317,8 @@ export const mastersDegreeCourses = [
     name: "MPYE-12",
     fullName: "Tribal Philosophy",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
-    studyMaterial: [],
   },
   {
     code: "MPYE-13",
@@ -3505,9 +3326,8 @@ export const mastersDegreeCourses = [
     name: "MPYE-13",
     fullName: "Philosophy of Technology",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
-    studyMaterial: [],
   },
   {
     code: "MPYE-14",
@@ -3515,9 +3335,8 @@ export const mastersDegreeCourses = [
     name: "MPYE-14",
     fullName: "Philosophy of Mind",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
-    studyMaterial: [],
   },
   {
     code: "MPYE-15",
@@ -3525,9 +3344,8 @@ export const mastersDegreeCourses = [
     name: "MPYE-15",
     fullName: "Gandhian Philosophy",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
-    studyMaterial: [],
   },
   {
     code: "MPYE-16",
@@ -3535,9 +3353,8 @@ export const mastersDegreeCourses = [
     name: "MPYE-16",
     fullName: "Philosophy of Sri Aurobindo",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
-    studyMaterial: [],
   },
   {
     code: "MPYP-1",
@@ -3545,9 +3362,8 @@ export const mastersDegreeCourses = [
     name: "MPYP-1",
     fullName: "Dissertation",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
-    studyMaterial: [],
   },
   {
     code: "MEV-11",
@@ -3555,7 +3371,7 @@ export const mastersDegreeCourses = [
     name: "MEV-11",
     fullName: "Fundamentals of Environmental Science and Ecology",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
   },
   {
@@ -3564,9 +3380,8 @@ export const mastersDegreeCourses = [
     name: "MEV-12",
     fullName: "Earth Processes",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
-    studyMaterial: [],
   },
   {
     code: "MEV-13",
@@ -3574,9 +3389,8 @@ export const mastersDegreeCourses = [
     name: "MEV-13",
     fullName: "Environmental Chemistry",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
-    studyMaterial: [],
   },
   {
     code: "MEVL-11",
@@ -3584,7 +3398,7 @@ export const mastersDegreeCourses = [
     name: "MEVL-11",
     fullName: "Environmental Science Lab Course -1",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
   },
   {
@@ -3593,7 +3407,7 @@ export const mastersDegreeCourses = [
     name: "MEV-14",
     fullName: "Sustainable Natural Resource Management",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
   },
   {
@@ -3602,7 +3416,7 @@ export const mastersDegreeCourses = [
     name: "MEV-15",
     fullName: "Environmental Pollution, Control and Management",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
   },
   {
@@ -3611,7 +3425,7 @@ export const mastersDegreeCourses = [
     name: "MEV-16",
     fullName: "Environmental Impact Assessment",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
   },
   {
@@ -3620,7 +3434,7 @@ export const mastersDegreeCourses = [
     name: "MEVL-12",
     fullName: "Environmental Science Lab Course -2",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
   },
   {
@@ -3629,9 +3443,8 @@ export const mastersDegreeCourses = [
     name: "MEV-17",
     fullName: "Environmental Legislations",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
-    studyMaterial: [],
   },
   {
     code: "MEV-18",
@@ -3639,7 +3452,7 @@ export const mastersDegreeCourses = [
     name: "MEV-18",
     fullName: "Environmental Health and Ecotoxicology",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
   },
   {
@@ -3648,7 +3461,7 @@ export const mastersDegreeCourses = [
     name: "MEV-19",
     fullName: "Research Methodology for Environmental Science",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
   },
   {
@@ -3657,7 +3470,7 @@ export const mastersDegreeCourses = [
     name: "MEVL-13",
     fullName: "Environmental Science Lab Course – 3",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
   },
   {
@@ -3666,9 +3479,8 @@ export const mastersDegreeCourses = [
     name: "MEVP-11",
     fullName: "Dissertation/Project",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
-    studyMaterial: [],
   },
   {
     code: "MEVE-11",
@@ -3676,9 +3488,8 @@ export const mastersDegreeCourses = [
     name: "MEVE-11",
     fullName: "Global Climate Change",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
-    studyMaterial: [],
   },
   {
     code: "MEVE-12",
@@ -3686,9 +3497,8 @@ export const mastersDegreeCourses = [
     name: "MEVE-12",
     fullName: "Environmental Management",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
-    studyMaterial: [],
   },
   {
     code: "MEVE-13",
@@ -3696,9 +3506,8 @@ export const mastersDegreeCourses = [
     name: "MEVE-13",
     fullName: "Environmental Biotechnology",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
-    studyMaterial: [],
   },
   {
     code: "MEVE-14",
@@ -3706,7 +3515,7 @@ export const mastersDegreeCourses = [
     name: "MEVE-14",
     fullName: "Biodiversity Conservation and Management",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
   },
   {
@@ -3715,9 +3524,8 @@ export const mastersDegreeCourses = [
     name: "MEVE-15",
     fullName: "Disaster Management",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
-    studyMaterial: [],
   },
   {
     code: "MEVE-16",
@@ -3725,9 +3533,8 @@ export const mastersDegreeCourses = [
     name: "MEVE-16",
     fullName: "Urban Environment",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
-    studyMaterial: [],
   },
   {
     code: "MEVE-17",
@@ -3735,9 +3542,8 @@ export const mastersDegreeCourses = [
     name: "MEVE-17",
     fullName: "Environment and Society",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
-    studyMaterial: [],
   },
   {
     code: "MEVE-18",
@@ -3745,7 +3551,7 @@ export const mastersDegreeCourses = [
     name: "MEVE-18",
     fullName: "Instrumentation Techniques for Environmental Monitoring",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
   },
   {
@@ -3754,9 +3560,8 @@ export const mastersDegreeCourses = [
     name: "MEVE-19",
     fullName: "Environmental Issues",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
-    studyMaterial: [],
   },
   {
     code: "MFC-001",
@@ -3764,7 +3569,7 @@ export const mastersDegreeCourses = [
     name: "MFC-001",
     fullName: "Folklore and Culture: Conceptual Perspectives",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
   },
   {
@@ -3773,7 +3578,7 @@ export const mastersDegreeCourses = [
     name: "MFC-002",
     fullName: "Tradition, Identity and Cultural Production",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
   },
   {
@@ -3782,7 +3587,7 @@ export const mastersDegreeCourses = [
     name: "MFC-003",
     fullName: "Cultural and Societal Transformation",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
   },
   {
@@ -3791,7 +3596,7 @@ export const mastersDegreeCourses = [
     name: "MFC-004",
     fullName: "Tribes of India: Identity, Culture and Lore",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
   },
   {
@@ -3800,9 +3605,8 @@ export const mastersDegreeCourses = [
     name: "MFCP-005",
     fullName: "Project Manual",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
-    studyMaterial: [],
   },
   {
     code: "MFC-006",
@@ -3812,7 +3616,7 @@ export const mastersDegreeCourses = [
     fullName:
       "Folklore: Canon, Multimediality, Interdisciplinarity and Social Epistemology",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
   },
   {
@@ -3821,7 +3625,7 @@ export const mastersDegreeCourses = [
     name: "MFC-007",
     fullName: "Theories and Pedagogy of Folklore",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
   },
   {
@@ -3830,9 +3634,8 @@ export const mastersDegreeCourses = [
     name: "MFC-008",
     fullName: "Folk Representations",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
-    studyMaterial: [],
   },
   {
     code: "MFC-009",
@@ -3840,9 +3643,8 @@ export const mastersDegreeCourses = [
     name: "MFC-009",
     fullName: "Approaches to Folklore",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
-    studyMaterial: [],
   },
   {
     code: "MDV-101",
@@ -3850,7 +3652,7 @@ export const mastersDegreeCourses = [
     name: "MDV-101",
     fullName: "Introduction to Development and Development Theories",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
   },
   {
@@ -3859,9 +3661,8 @@ export const mastersDegreeCourses = [
     name: "MDV-102",
     fullName: "Dynamics of Development",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
-    studyMaterial: [],
   },
   {
     code: "MDV-103",
@@ -3869,7 +3670,7 @@ export const mastersDegreeCourses = [
     name: "MDV-103",
     fullName: "Issues and Challenges of Development",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
   },
   {
@@ -3878,9 +3679,8 @@ export const mastersDegreeCourses = [
     name: "MDV-4",
     fullName: "Gender and Development",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
-    studyMaterial: [],
   },
   {
     code: "MDV-106",
@@ -3888,7 +3688,7 @@ export const mastersDegreeCourses = [
     name: "MDV-106",
     fullName: "Research Methodology in Development Studies",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
   },
   {
@@ -3897,7 +3697,7 @@ export const mastersDegreeCourses = [
     name: "MDV-109",
     fullName: "Development in India - An Overview",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
   },
   {
@@ -3906,7 +3706,7 @@ export const mastersDegreeCourses = [
     name: "MDV-105",
     fullName: "Development Planning and Management",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
   },
   {
@@ -3915,7 +3715,7 @@ export const mastersDegreeCourses = [
     name: "MDV-108",
     fullName: "Development Communication and Extension",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
   },
   {
@@ -3924,9 +3724,8 @@ export const mastersDegreeCourses = [
     name: "MDV-110",
     fullName: "Training and Development",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
-    studyMaterial: [],
   },
   {
     code: "MDV-111",
@@ -3934,7 +3733,7 @@ export const mastersDegreeCourses = [
     name: "MDV-111",
     fullName: "Local Self Governance and Development",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
   },
   {
@@ -3943,9 +3742,8 @@ export const mastersDegreeCourses = [
     name: "MDV-115",
     fullName: "Health and Development",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
-    studyMaterial: [],
   },
   {
     code: "MEDS-41",
@@ -3953,7 +3751,7 @@ export const mastersDegreeCourses = [
     name: "MEDS-41",
     fullName: "Introduction to Urban Development",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
   },
   {
@@ -3962,7 +3760,7 @@ export const mastersDegreeCourses = [
     name: "MEDS-42",
     fullName: "Issues and Challenges in Urban Planning and Development",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
   },
   {
@@ -3971,9 +3769,8 @@ export const mastersDegreeCourses = [
     name: "MDVP-117",
     fullName: "ProjectWork",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
-    studyMaterial: [],
   },
   {
     code: "MWG-1",
@@ -3981,7 +3778,7 @@ export const mastersDegreeCourses = [
     name: "MWG-1",
     fullName: "Theories of Women’s and Gender Studies",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
   },
   {
@@ -3990,9 +3787,8 @@ export const mastersDegreeCourses = [
     name: "MWG-2",
     fullName: "Gender and Power",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
-    studyMaterial: [],
   },
   {
     code: "MWG-3",
@@ -4000,7 +3796,7 @@ export const mastersDegreeCourses = [
     name: "MWG-3",
     fullName: "Constructing Gender through Arts & Media",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
   },
   {
@@ -4009,9 +3805,8 @@ export const mastersDegreeCourses = [
     name: "MWG-4",
     fullName: "Gendered Bodies & Sexualities",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
-    studyMaterial: [],
   },
   {
     code: "MWGP-1",
@@ -4019,9 +3814,8 @@ export const mastersDegreeCourses = [
     name: "MWGP-1",
     fullName: "ProjectWork",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
-    studyMaterial: [],
   },
   {
     code: "MWG-5",
@@ -4029,7 +3823,7 @@ export const mastersDegreeCourses = [
     name: "MWG-5",
     fullName: "Research Methods (Common course for both specializations)",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
   },
   {
@@ -4038,9 +3832,8 @@ export const mastersDegreeCourses = [
     name: "MWG-6",
     fullName: "Gendered Nation",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
-    studyMaterial: [],
   },
   {
     code: "MWG-7",
@@ -4048,9 +3841,8 @@ export const mastersDegreeCourses = [
     name: "MWG-7",
     fullName: "Postmodernism & Gender",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
-    studyMaterial: [],
   },
   {
     code: "MWG-8",
@@ -4058,9 +3850,8 @@ export const mastersDegreeCourses = [
     name: "MWG-8",
     fullName: "Gender & Life Narratives",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
-    studyMaterial: [],
   },
   {
     code: "MWG-5",
@@ -4068,7 +3859,7 @@ export const mastersDegreeCourses = [
     name: "MWG-5",
     fullName: "Research Methods (Common course for both specializations)",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
   },
   {
@@ -4077,9 +3868,8 @@ export const mastersDegreeCourses = [
     name: "MWG-9",
     fullName: "Women & Social Structure",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
-    studyMaterial: [],
   },
   {
     code: "MWG-10",
@@ -4087,9 +3877,8 @@ export const mastersDegreeCourses = [
     name: "MWG-10",
     fullName: "Women & Political Process",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
-    studyMaterial: [],
   },
   {
     code: "MWG-11",
@@ -4097,9 +3886,8 @@ export const mastersDegreeCourses = [
     name: "MWG-11",
     fullName: "Women in Economy",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
-    studyMaterial: [],
   },
   {
     code: "MGS-1",
@@ -4107,7 +3895,7 @@ export const mastersDegreeCourses = [
     name: "MGS-1",
     fullName: "Gender and Development: Concepts, Approaches and Strategies",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
   },
   {
@@ -4116,7 +3904,7 @@ export const mastersDegreeCourses = [
     name: "MGS-2",
     fullName: "Gender, Development Goals and Praxis",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
   },
   {
@@ -4125,9 +3913,8 @@ export const mastersDegreeCourses = [
     name: "MGS-3",
     fullName: "Gender Analysis",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
-    studyMaterial: [],
   },
   {
     code: "MGS-4",
@@ -4135,7 +3922,7 @@ export const mastersDegreeCourses = [
     name: "MGS-4",
     fullName: "Gender-Sensitive Planning and Policy Making",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
   },
   {
@@ -4144,7 +3931,7 @@ export const mastersDegreeCourses = [
     name: "MGS-5",
     fullName: "Research Methodologies in Gender and Development Studies",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
   },
   {
@@ -4153,7 +3940,7 @@ export const mastersDegreeCourses = [
     name: "MGSP-1",
     fullName: "Internship-I / Field based Research Project-I",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
   },
   {
@@ -4162,7 +3949,7 @@ export const mastersDegreeCourses = [
     name: "MGSP-2",
     fullName: "Internship-II / Field based Research Project-II",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
   },
   {
@@ -4171,7 +3958,7 @@ export const mastersDegreeCourses = [
     name: "MGSE-1",
     fullName: "Gender Planning and Development Policies",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
   },
   {
@@ -4180,7 +3967,7 @@ export const mastersDegreeCourses = [
     name: "MGSE-2",
     fullName: "Gender Audit and Gender Budgeting",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
   },
   {
@@ -4189,9 +3976,8 @@ export const mastersDegreeCourses = [
     name: "MGSE-3",
     fullName: "Gender Mainstreaming",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
-    studyMaterial: [],
   },
   {
     code: "MGSE-4",
@@ -4201,7 +3987,7 @@ export const mastersDegreeCourses = [
     fullName:
       "Gender Issues in Agriculture, Rural Livelihoods and Natural Resource Management",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
   },
   {
@@ -4210,7 +3996,7 @@ export const mastersDegreeCourses = [
     name: "MGSE-6",
     fullName: "Gender, Resources and Entitlements",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
   },
   {
@@ -4219,7 +4005,7 @@ export const mastersDegreeCourses = [
     name: "MGSE-7",
     fullName: "Gender, Organization and Leadership",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
   },
   {
@@ -4228,7 +4014,7 @@ export const mastersDegreeCourses = [
     name: "MGSE-9",
     fullName: "Gender Issues in Work, Employment and Productivity",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
   },
   {
@@ -4237,7 +4023,7 @@ export const mastersDegreeCourses = [
     name: "MGSE-10",
     fullName: "Gender and Entrepreneurship Development",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
   },
   {
@@ -4246,7 +4032,7 @@ export const mastersDegreeCourses = [
     name: "MGSE-13",
     fullName: "Gender Training and Empowerment",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
   },
   {
@@ -4255,7 +4041,7 @@ export const mastersDegreeCourses = [
     name: "MGSE-20",
     fullName: "Gender and Financial Inclusion",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
   },
   {
@@ -4264,9 +4050,8 @@ export const mastersDegreeCourses = [
     name: "MTT-10",
     fullName: "Anuvad Sidhhant",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
-    studyMaterial: [],
   },
   {
     code: "MTT-11",
@@ -4274,9 +4059,8 @@ export const mastersDegreeCourses = [
     name: "MTT-11",
     fullName: "Anuvad: Itihas aur Parampara",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
-    studyMaterial: [],
   },
   {
     code: "MTT-12",
@@ -4284,9 +4068,8 @@ export const mastersDegreeCourses = [
     name: "MTT-12",
     fullName: "Anuvad aur Bhashavigyan",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
-    studyMaterial: [],
   },
   {
     code: "MTT-13",
@@ -4294,9 +4077,8 @@ export const mastersDegreeCourses = [
     name: "MTT-13",
     fullName: "Anuvad ke Kshetra",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
-    studyMaterial: [],
   },
   {
     code: "MTT-14",
@@ -4304,7 +4086,7 @@ export const mastersDegreeCourses = [
     name: "MTT-14",
     fullName: "Anuvad Evam Bhartiya Bhashayen",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
   },
   {
@@ -4313,9 +4095,8 @@ export const mastersDegreeCourses = [
     name: "MTT-15",
     fullName: "Anuvad aur Sahitya",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
-    studyMaterial: [],
   },
   {
     code: "MTT-16",
@@ -4323,9 +4104,8 @@ export const mastersDegreeCourses = [
     name: "MTT-16",
     fullName: "Anuvad aur Jansanchar",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
-    studyMaterial: [],
   },
   {
     code: "MTT-17",
@@ -4333,7 +4113,7 @@ export const mastersDegreeCourses = [
     name: "MTT-17",
     fullName: "Koshvigyan, Paribhashik Shabdavali aur Anuvad",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
   },
   {
@@ -4342,7 +4122,7 @@ export const mastersDegreeCourses = [
     name: "MTT-18",
     fullName: "Anuvad Evam Antarsanskritik Adhyayan",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
   },
   {
@@ -4351,9 +4131,8 @@ export const mastersDegreeCourses = [
     name: "MTT-19",
     fullName: "Anuvad ki Rajniti",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
-    studyMaterial: [],
   },
   {
     code: "MTT-20",
@@ -4361,9 +4140,8 @@ export const mastersDegreeCourses = [
     name: "MTT-20",
     fullName: "Anuvad Prakriya",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
-    studyMaterial: [],
   },
   {
     code: "MTT-21",
@@ -4371,9 +4149,8 @@ export const mastersDegreeCourses = [
     name: "MTT-21",
     fullName: "Anuvad Prashikshan",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
-    studyMaterial: [],
   },
   {
     code: "MTTP-22",
@@ -4381,7 +4158,7 @@ export const mastersDegreeCourses = [
     name: "MTTP-22",
     fullName: "Pariyojana (Pariyojana Karya aur Maukhiki)",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
   },
   {
@@ -4390,9 +4167,8 @@ export const mastersDegreeCourses = [
     name: "MMT-1",
     fullName: "Programming & Data Structures",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
-    studyMaterial: [],
   },
   {
     code: "MMT-2",
@@ -4400,9 +4176,8 @@ export const mastersDegreeCourses = [
     name: "MMT-2",
     fullName: "Linear Algebra",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
-    studyMaterial: [],
   },
   {
     code: "MMT-4",
@@ -4410,9 +4185,8 @@ export const mastersDegreeCourses = [
     name: "MMT-4",
     fullName: "Real Analysis",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
-    studyMaterial: [],
   },
   {
     code: "MMT-5",
@@ -4420,9 +4194,8 @@ export const mastersDegreeCourses = [
     name: "MMT-5",
     fullName: "Complex Analysis",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
-    studyMaterial: [],
   },
   {
     code: "MMT-7",
@@ -4430,7 +4203,7 @@ export const mastersDegreeCourses = [
     name: "MMT-7",
     fullName: "Differential Equations and Numerical Solutions",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
   },
   {
@@ -4439,9 +4212,8 @@ export const mastersDegreeCourses = [
     name: "MMT-3",
     fullName: "Algebra",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
-    studyMaterial: [],
   },
   {
     code: "MMT-6",
@@ -4449,9 +4221,8 @@ export const mastersDegreeCourses = [
     name: "MMT-6",
     fullName: "Functional Analysis",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
-    studyMaterial: [],
   },
   {
     code: "MMT-8",
@@ -4459,9 +4230,8 @@ export const mastersDegreeCourses = [
     name: "MMT-8",
     fullName: "Probability and Statistics",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
-    studyMaterial: [],
   },
   {
     code: "MMT-9",
@@ -4469,9 +4239,8 @@ export const mastersDegreeCourses = [
     name: "MMT-9",
     fullName: "Mathematical Modelling",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
-    studyMaterial: [],
   },
   {
     code: "MMTE-1",
@@ -4479,9 +4248,8 @@ export const mastersDegreeCourses = [
     name: "MMTE-1",
     fullName: "Graph Theory",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
-    studyMaterial: [],
   },
   {
     code: "MMTE-2",
@@ -4489,7 +4257,7 @@ export const mastersDegreeCourses = [
     name: "MMTE-2",
     fullName: "Design & Analysis of Algorithms",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
   },
   {
@@ -4498,7 +4266,7 @@ export const mastersDegreeCourses = [
     name: "MMTE-3",
     fullName: "Pattern Recognition & Image Processing",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
   },
   {
@@ -4507,9 +4275,8 @@ export const mastersDegreeCourses = [
     name: "MMTE-4",
     fullName: "Computer Graphics",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
-    studyMaterial: [],
   },
   {
     code: "MMTE-5",
@@ -4517,9 +4284,8 @@ export const mastersDegreeCourses = [
     name: "MMTE-5",
     fullName: "Coding Theory",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
-    studyMaterial: [],
   },
   {
     code: "MMTE-6",
@@ -4527,9 +4293,8 @@ export const mastersDegreeCourses = [
     name: "MMTE-6",
     fullName: "Cryptography",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
-    studyMaterial: [],
   },
   {
     code: "MMTE-7",
@@ -4537,9 +4302,8 @@ export const mastersDegreeCourses = [
     name: "MMTE-7",
     fullName: "Soft Computing & Applications",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
-    studyMaterial: [],
   },
   {
     code: "MMTP-1",
@@ -4547,9 +4311,8 @@ export const mastersDegreeCourses = [
     name: "MMTP-1",
     fullName: "Project (Compulsory)",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
-    studyMaterial: [],
   },
   {
     code: "MJM-20",
@@ -4557,7 +4320,7 @@ export const mastersDegreeCourses = [
     name: "MJM-20",
     fullName: "Introduction to Journalism and Mass Communication",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
   },
   {
@@ -4566,9 +4329,8 @@ export const mastersDegreeCourses = [
     name: "MJM-21",
     fullName: "Reporting Techniques",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
-    studyMaterial: [],
   },
   {
     code: "MJM-22",
@@ -4576,7 +4338,7 @@ export const mastersDegreeCourses = [
     name: "MJM-22",
     fullName: "Writing and Editing for Print Media",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
   },
   {
@@ -4585,7 +4347,7 @@ export const mastersDegreeCourses = [
     name: "MJM-23",
     fullName: "Broadcast and Online Journalism",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
   },
   {
@@ -4594,9 +4356,8 @@ export const mastersDegreeCourses = [
     name: "MJM-24",
     fullName: "Media and Society",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
-    studyMaterial: [],
   },
   {
     code: "MJM-25",
@@ -4604,9 +4365,8 @@ export const mastersDegreeCourses = [
     name: "MJM-25",
     fullName: "Media Ethics and Laws",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
-    studyMaterial: [],
   },
   {
     code: "MJML-20",
@@ -4614,9 +4374,8 @@ export const mastersDegreeCourses = [
     name: "MJML-20",
     fullName: "Practical: Print and Online",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
-    studyMaterial: [],
   },
   {
     code: "MJML-21",
@@ -4624,9 +4383,8 @@ export const mastersDegreeCourses = [
     name: "MJML-21",
     fullName: "Practical: Audiovisual",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
-    studyMaterial: [],
   },
   {
     code: "MJM-26",
@@ -4634,9 +4392,8 @@ export const mastersDegreeCourses = [
     name: "MJM-26",
     fullName: "Print Media",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
-    studyMaterial: [],
   },
   {
     code: "MJM-27",
@@ -4644,9 +4401,8 @@ export const mastersDegreeCourses = [
     name: "MJM-27",
     fullName: "Electronic Media",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
-    studyMaterial: [],
   },
   {
     code: "MJM-28",
@@ -4654,9 +4410,8 @@ export const mastersDegreeCourses = [
     name: "MJM-28",
     fullName: "Digital Media",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
-    studyMaterial: [],
   },
   {
     code: "MJM-29",
@@ -4664,7 +4419,7 @@ export const mastersDegreeCourses = [
     name: "MJM-29",
     fullName: "Advertising and Public Relations",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
   },
   {
@@ -4673,7 +4428,7 @@ export const mastersDegreeCourses = [
     name: "MJM-30",
     fullName: "Communication and Media Studies",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
   },
   {
@@ -4682,7 +4437,7 @@ export const mastersDegreeCourses = [
     name: "MJM-31",
     fullName: "Communication Research Methods",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
   },
   {
@@ -4691,7 +4446,7 @@ export const mastersDegreeCourses = [
     name: "MJML-22",
     fullName: "Practical (Research Methodology)",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
   },
   {
@@ -4700,9 +4455,8 @@ export const mastersDegreeCourses = [
     name: "MJMP-20",
     fullName: "Major Project Work",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
-    studyMaterial: [],
   },
   {
     code: "MVA-020",
@@ -4710,9 +4464,8 @@ export const mastersDegreeCourses = [
     name: "MVA-020",
     fullName: "Modern Art of India",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
-    studyMaterial: [],
   },
   {
     code: "MVAL-021",
@@ -4720,7 +4473,7 @@ export const mastersDegreeCourses = [
     name: "MVAL-021",
     fullName: "Understanding Elements of Art",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
   },
   {
@@ -4729,7 +4482,7 @@ export const mastersDegreeCourses = [
     name: "MVAL-022",
     fullName: "Study of Principle of Composition",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
   },
   {
@@ -4738,9 +4491,8 @@ export const mastersDegreeCourses = [
     name: "MVA-023",
     fullName: "Modern Western Art",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
-    studyMaterial: [],
   },
   {
     code: "MVAL-024",
@@ -4748,9 +4500,8 @@ export const mastersDegreeCourses = [
     name: "MVAL-024",
     fullName: "Study of Nature",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
-    studyMaterial: [],
   },
   {
     code: "MVAL-025",
@@ -4758,7 +4509,7 @@ export const mastersDegreeCourses = [
     name: "MVAL-025",
     fullName: "Study of Folk, Tribal and Traditional Art Styles",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
   },
   {
@@ -4767,7 +4518,7 @@ export const mastersDegreeCourses = [
     name: "MVA-026",
     fullName: "Understanding Aesthetics and Art Education",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
   },
   {
@@ -4776,9 +4527,8 @@ export const mastersDegreeCourses = [
     name: "MVAL-027",
     fullName: "Creative Portraiture",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
-    studyMaterial: [],
   },
   {
     code: "MVAL-028",
@@ -4786,9 +4536,8 @@ export const mastersDegreeCourses = [
     name: "MVAL-028",
     fullName: "Creative Composition",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
-    studyMaterial: [],
   },
   {
     code: "MVA-029",
@@ -4796,7 +4545,7 @@ export const mastersDegreeCourses = [
     name: "MVA-029",
     fullName: "Research Methods and Dissertation",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
   },
   {
@@ -4805,9 +4554,8 @@ export const mastersDegreeCourses = [
     name: "MVAL-030",
     fullName: "Creative Landscape",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
-    studyMaterial: [],
   },
   {
     code: "MVAL-031",
@@ -4815,9 +4563,8 @@ export const mastersDegreeCourses = [
     name: "MVAL-031",
     fullName: "Creative Expression",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
-    studyMaterial: [],
   },
   {
     code: "MSEI-021",
@@ -4825,7 +4572,7 @@ export const mastersDegreeCourses = [
     name: "MSEI-021",
     fullName: "Introduction to Information Security",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
   },
   {
@@ -4834,9 +4581,8 @@ export const mastersDegreeCourses = [
     name: "MSEI-022",
     fullName: "Network Security",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
-    studyMaterial: [],
   },
   {
     code: "MSEI-023",
@@ -4844,9 +4590,8 @@ export const mastersDegreeCourses = [
     name: "MSEI-023",
     fullName: "Cyber Security",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
-    studyMaterial: [],
   },
   {
     code: "MSE-024",
@@ -4854,9 +4599,8 @@ export const mastersDegreeCourses = [
     name: "MSE-024",
     fullName: "Policy, Standards and Laws",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
-    studyMaterial: [],
   },
   {
     code: "MSEI-025",
@@ -4864,7 +4608,7 @@ export const mastersDegreeCourses = [
     name: "MSEI-025",
     fullName: "Application and Business Security Developments",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
   },
   {
@@ -4873,9 +4617,8 @@ export const mastersDegreeCourses = [
     name: "MSEI-026",
     fullName: "BCP, DR Planning and Audit",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
-    studyMaterial: [],
   },
   {
     code: "MSEI-027",
@@ -4883,9 +4626,8 @@ export const mastersDegreeCourses = [
     name: "MSEI-027",
     fullName: "Digital Forensics",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
-    studyMaterial: [],
   },
   {
     code: "MSEP-028",
@@ -4893,9 +4635,8 @@ export const mastersDegreeCourses = [
     name: "MSEP-028",
     fullName: "Project-1",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
-    studyMaterial: [],
   },
   {
     code: "MSE-029",
@@ -4903,7 +4644,7 @@ export const mastersDegreeCourses = [
     name: "MSE-029",
     fullName: "Cyber Attack: use of Technology in Cyberspace",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
   },
   {
@@ -4912,7 +4653,7 @@ export const mastersDegreeCourses = [
     name: "MSE-030",
     fullName: "Cloud and Infrastructure Security",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
   },
   {
@@ -4921,9 +4662,8 @@ export const mastersDegreeCourses = [
     name: "MSE-031",
     fullName: "Cyber Security using Python",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
-    studyMaterial: [],
   },
   {
     code: "MCS-226",
@@ -4931,9 +4671,8 @@ export const mastersDegreeCourses = [
     name: "MCS-226",
     fullName: "Data Science and Big Data",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
-    studyMaterial: [],
   },
   {
     code: "MSEL-032",
@@ -4942,7 +4681,7 @@ export const mastersDegreeCourses = [
     fullName:
       "Practical (Cyber Attacks, Cloud Security and Data Recovery etc.)",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
   },
   {
@@ -4951,7 +4690,7 @@ export const mastersDegreeCourses = [
     name: "MSE-033",
     fullName: "Web Application Testing and Audit",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
   },
   {
@@ -4960,9 +4699,8 @@ export const mastersDegreeCourses = [
     name: "MSE-034",
     fullName: "E-commerce and Cyberspace",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
-    studyMaterial: [],
   },
   {
     code: "MSE-035",
@@ -4970,9 +4708,8 @@ export const mastersDegreeCourses = [
     name: "MSE-035",
     fullName: "IoT Security",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
-    studyMaterial: [],
   },
   {
     code: "MSE-036",
@@ -4980,7 +4717,7 @@ export const mastersDegreeCourses = [
     name: "MSE-036",
     fullName: "Latest Trends in Information and Cyber Security",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
   },
   {
@@ -4990,7 +4727,7 @@ export const mastersDegreeCourses = [
     fullName:
       "Practical (Web Application, Audits, e-commerce security and IoT)",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
   },
   {
@@ -4999,9 +4736,8 @@ export const mastersDegreeCourses = [
     name: "MSEP-038",
     fullName: "Project-II",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
-    studyMaterial: [],
   },
   {
     code: "MER-001",
@@ -5009,9 +4745,8 @@ export const mastersDegreeCourses = [
     name: "MER-001",
     fullName: "Business Environment",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
-    studyMaterial: [],
   },
   {
     code: "MER-002",
@@ -5019,7 +4754,7 @@ export const mastersDegreeCourses = [
     name: "MER-002",
     fullName: "Fundamentals of Entrepreneurship",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
   },
   {
@@ -5028,7 +4763,7 @@ export const mastersDegreeCourses = [
     name: "MER-003",
     fullName: "Business Ideation and OpportunityIdentification",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
   },
   {
@@ -5037,7 +4772,7 @@ export const mastersDegreeCourses = [
     name: "MER-004",
     fullName: "Business Development and Entrepreneurial Competencies",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
   },
   {
@@ -5046,7 +4781,7 @@ export const mastersDegreeCourses = [
     name: "MER-005",
     fullName: "IPR & Technology Commercialization",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
   },
   {
@@ -5055,7 +4790,7 @@ export const mastersDegreeCourses = [
     name: "MER-006",
     fullName: "Management of New and Small Enterprises",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
   },
   {
@@ -5064,7 +4799,7 @@ export const mastersDegreeCourses = [
     name: "MER-007",
     fullName: "Government Initiatives & MSME Development",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
   },
   {
@@ -5073,9 +4808,8 @@ export const mastersDegreeCourses = [
     name: "MER-008",
     fullName: "Finance & Accounting",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
-    studyMaterial: [],
   },
   {
     code: "MERP-001",
@@ -5083,9 +4817,8 @@ export const mastersDegreeCourses = [
     name: "MERP-001",
     fullName: "Project I",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
-    studyMaterial: [],
   },
   {
     code: "MER-009",
@@ -5093,9 +4826,8 @@ export const mastersDegreeCourses = [
     name: "MER-009",
     fullName: "Marketing Management",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
-    studyMaterial: [],
   },
   {
     code: "MER-010",
@@ -5103,7 +4835,7 @@ export const mastersDegreeCourses = [
     name: "MER-010",
     fullName: "Organizational Management and Labour Relations",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
   },
   {
@@ -5112,7 +4844,7 @@ export const mastersDegreeCourses = [
     name: "MER-011",
     fullName: "Start Up, Incubation and Business Ethics",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
   },
   {
@@ -5121,7 +4853,7 @@ export const mastersDegreeCourses = [
     name: "MER-012",
     fullName: "Business Research Methods & Applications",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
   },
   {
@@ -5130,9 +4862,8 @@ export const mastersDegreeCourses = [
     name: "MER-013",
     fullName: "IT and Entrepreneurship",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
-    studyMaterial: [],
   },
   {
     code: "MER-014",
@@ -5140,7 +4871,7 @@ export const mastersDegreeCourses = [
     name: "MER-014",
     fullName: "Innovation and Strategic Management",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
   },
   {
@@ -5149,9 +4880,8 @@ export const mastersDegreeCourses = [
     name: "MER-015",
     fullName: "Social Entrepreneurship",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
-    studyMaterial: [],
   },
   {
     code: "MERP-002",
@@ -5159,8 +4889,7 @@ export const mastersDegreeCourses = [
     name: "MERP-002",
     fullName: "Project II",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCA",
     term: 1,
-    studyMaterial: [],
   },
 ];

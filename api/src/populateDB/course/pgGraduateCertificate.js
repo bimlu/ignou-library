@@ -5,7 +5,7 @@ export const pgGraduateCertificateCourses = [
     name: "MIR-11",
     fullName: "Cyber Space, Technology and Social Issues",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "MCA",
     term: 1,
   },
   {
@@ -14,7 +14,7 @@ export const pgGraduateCertificateCourses = [
     name: "MIR-12",
     fullName: "Regulation of Cyberspace",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "MCA",
     term: 1,
   },
   {
@@ -23,7 +23,7 @@ export const pgGraduateCertificateCourses = [
     name: "MIR-13",
     fullName: "Commerce and Cyberspace",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "MCA",
     term: 1,
   },
   {
@@ -32,7 +32,7 @@ export const pgGraduateCertificateCourses = [
     name: "MIR-14",
     fullName: "Privacy and Data Protection",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "MCA",
     term: 1,
   },
   {
@@ -41,7 +41,7 @@ export const pgGraduateCertificateCourses = [
     name: "MIR-21",
     fullName: "Overview of Intellectual Property Rights",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "MCA",
     term: 1,
   },
   {
@@ -50,7 +50,7 @@ export const pgGraduateCertificateCourses = [
     name: "MIR-22",
     fullName: "International Framework for Patents Protection",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "MCA",
     term: 1,
   },
   {
@@ -59,7 +59,7 @@ export const pgGraduateCertificateCourses = [
     name: "MIR-23",
     fullName: "Indian Patent Law and Procedures",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "MCA",
     term: 1,
   },
   {
@@ -68,7 +68,7 @@ export const pgGraduateCertificateCourses = [
     name: "MIRP-1",
     fullName: "Project",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "MCA",
     term: 1,
   },
   {
@@ -77,7 +77,7 @@ export const pgGraduateCertificateCourses = [
     name: "MEV-021",
     fullName: "Introduction to Climate Change",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "MCA",
     term: 1,
   },
   {
@@ -86,7 +86,7 @@ export const pgGraduateCertificateCourses = [
     name: "MEV-022",
     fullName: "Impacts of Climate Change",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "MCA",
     term: 1,
   },
   {
@@ -95,7 +95,7 @@ export const pgGraduateCertificateCourses = [
     name: "MEV-023",
     fullName: "Mitigation and adaptation to Climate Change",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "MCA",
     term: 1,
   },
   {
@@ -104,7 +104,7 @@ export const pgGraduateCertificateCourses = [
     name: "MEV-024",
     fullName: "Climate Change Assessment Tools",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "MCA",
     term: 1,
   },
   {
@@ -113,7 +113,7 @@ export const pgGraduateCertificateCourses = [
     name: "MEV-025",
     fullName: "Climate Change and Society",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "MCA",
     term: 1,
   },
   {
@@ -122,7 +122,7 @@ export const pgGraduateCertificateCourses = [
     name: "MGY-1",
     fullName: "Introduction to Geoinformatics",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "MCA",
     term: 1,
   },
   {
@@ -131,7 +131,7 @@ export const pgGraduateCertificateCourses = [
     name: "MGY-2",
     fullName: "Remote Sensing and Image Interpretation",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "MCA",
     term: 1,
   },
   {
@@ -142,7 +142,7 @@ export const pgGraduateCertificateCourses = [
     fullName:
       "Global Navigation Satellite System and Geographic Information System",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "MCA",
     term: 1,
   },
   {
@@ -151,7 +151,7 @@ export const pgGraduateCertificateCourses = [
     name: "MGYL-4",
     fullName: "Geoinformatics Practical",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "MCA",
     term: 1,
   },
   {
@@ -160,7 +160,7 @@ export const pgGraduateCertificateCourses = [
     name: "BEE-1",
     fullName: "Power Distribution Sector",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "MCA",
     term: 1,
   },
   {
@@ -169,7 +169,7 @@ export const pgGraduateCertificateCourses = [
     name: "BEE-2",
     fullName: "Energy Management and IT Applications",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "MCA",
     term: 1,
   },
   {
@@ -178,7 +178,7 @@ export const pgGraduateCertificateCourses = [
     name: "BEE-3",
     fullName: "Management of Power Distribution",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "MCA",
     term: 1,
   },
   {
@@ -187,7 +187,7 @@ export const pgGraduateCertificateCourses = [
     name: "MIS-21",
     fullName: "Safety Philosophy and Principles of Accident Prevention",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "MCA",
     term: 1,
   },
   {
@@ -196,7 +196,7 @@ export const pgGraduateCertificateCourses = [
     name: "MIS-22",
     fullName: "Industrial Safety: Rules and Acts",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "MCA",
     term: 1,
   },
   {
@@ -205,7 +205,7 @@ export const pgGraduateCertificateCourses = [
     name: "MIS-23",
     fullName: "Safety in Construction Industry",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "MCA",
     term: 1,
   },
   {
@@ -214,7 +214,7 @@ export const pgGraduateCertificateCourses = [
     name: "MIS-24",
     fullName: "Mechanical and Electrical Safety Management",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "MCA",
     term: 1,
   },
   {
@@ -223,7 +223,7 @@ export const pgGraduateCertificateCourses = [
     name: "MISP-21",
     fullName: "Project",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "MCA",
     term: 1,
   },
   {
@@ -232,7 +232,7 @@ export const pgGraduateCertificateCourses = [
     name: "MWR-001",
     fullName: "Introduction to Inventory Planning and Control",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "MCA",
     term: 1,
   },
   {
@@ -241,7 +241,7 @@ export const pgGraduateCertificateCourses = [
     name: "MWR-002",
     fullName: "Advance Inventory Planning and Control",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "MCA",
     term: 1,
   },
   {
@@ -250,7 +250,7 @@ export const pgGraduateCertificateCourses = [
     name: "MWR-003",
     fullName: "ICT in Warehouse system",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "MCA",
     term: 1,
   },
   {
@@ -259,7 +259,7 @@ export const pgGraduateCertificateCourses = [
     name: "MWRP-01",
     fullName: "Project",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "MCA",
     term: 1,
   },
   {
@@ -268,7 +268,7 @@ export const pgGraduateCertificateCourses = [
     name: "MNR-1",
     fullName: "Indian Agricultural Development",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "MCA",
     term: 1,
   },
   {
@@ -279,7 +279,7 @@ export const pgGraduateCertificateCourses = [
     fullName:
       "Agricultural Policy: Formulation, Components, Process, Implementation and Comparative Analysis",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "MCA",
     term: 1,
   },
   {
@@ -288,7 +288,7 @@ export const pgGraduateCertificateCourses = [
     name: "MNRE-15",
     fullName: "Cooperatives and Farmers’ Organizations",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "MCA",
     term: 1,
   },
   {
@@ -297,7 +297,7 @@ export const pgGraduateCertificateCourses = [
     name: "MNRE-16",
     fullName: "Project Analysis",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "MCA",
     term: 1,
   },
   {
@@ -306,7 +306,7 @@ export const pgGraduateCertificateCourses = [
     name: "MGP-1",
     fullName: "Gandhi: The Man and His Times",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "MCA",
     term: 1,
   },
   {
@@ -315,7 +315,7 @@ export const pgGraduateCertificateCourses = [
     name: "MGP-5",
     fullName: "Introduction to Peace and Conflict Resolution",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "MCA",
     term: 1,
   },
   {
@@ -324,7 +324,7 @@ export const pgGraduateCertificateCourses = [
     name: "MGPE-7",
     fullName: "Non-violence Movements after Gandhi",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "MCA",
     term: 1,
   },
   {
@@ -333,7 +333,7 @@ export const pgGraduateCertificateCourses = [
     name: "MGPE-8",
     fullName: "Gandhian Approach to Peace and Conflict Resolution",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "MCA",
     term: 1,
   },
   {
@@ -342,7 +342,7 @@ export const pgGraduateCertificateCourses = [
     name: "MAE-1",
     fullName: "Understanding Adult Education",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "MCA",
     term: 1,
   },
   {
@@ -351,7 +351,7 @@ export const pgGraduateCertificateCourses = [
     name: "MAE-2",
     fullName: "Policy Planning and Implementation of Adult Education in India",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "MCA",
     term: 1,
   },
   {
@@ -360,7 +360,7 @@ export const pgGraduateCertificateCourses = [
     name: "MAEL-2",
     fullName: "Practical Work: Community-based Practical Activities",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "MCA",
     term: 1,
   },
   {
@@ -369,7 +369,7 @@ export const pgGraduateCertificateCourses = [
     name: "MVEI-11",
     fullName: "Understanding the Learner",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "MCA",
     term: 1,
   },
   {
@@ -378,7 +378,7 @@ export const pgGraduateCertificateCourses = [
     name: "MVEI-12",
     fullName: "Assistive and Adaptive Technologies",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "MCA",
     term: 1,
   },
   {
@@ -387,7 +387,7 @@ export const pgGraduateCertificateCourses = [
     name: "MVEI-13",
     fullName: "Software’s for Visually Impaired",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "MCA",
     term: 1,
   },
   {
@@ -396,7 +396,7 @@ export const pgGraduateCertificateCourses = [
     name: "MVEI-14",
     fullName: "Communication Skills",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "MCA",
     term: 1,
   },
   {
@@ -405,7 +405,7 @@ export const pgGraduateCertificateCourses = [
     name: "MTT-1",
     fullName: "Bharatiya Bhashaon Mein Anuvad",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "MCA",
     term: 1,
   },
   {
@@ -414,7 +414,7 @@ export const pgGraduateCertificateCourses = [
     name: "MTT-2",
     fullName: "Bangla-Hindi Anuvad: Tulana Aur Punah Srijan",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "MCA",
     term: 1,
   },
   {
@@ -423,7 +423,7 @@ export const pgGraduateCertificateCourses = [
     name: "MTT-3",
     fullName: "Bangla Aur Hindi Ke Vibhinna Bhashik Kshetroan Mein Anuvad",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "MCA",
     term: 1,
   },
   {
@@ -432,7 +432,7 @@ export const pgGraduateCertificateCourses = [
     name: "MTTP-1",
     fullName: "Anuvad Pariyojana (Translation Project)",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "MCA",
     term: 1,
   },
   {
@@ -441,7 +441,7 @@ export const pgGraduateCertificateCourses = [
     name: "MTT-4",
     fullName: "Malayalam-Hindi Anuvad: Tulana Aur Punah Srijan",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "MCA",
     term: 1,
   },
   {
@@ -450,7 +450,7 @@ export const pgGraduateCertificateCourses = [
     name: "MTT-5",
     fullName: "Malayalam Aur Hindi Ke Vibhinna Bhashik Kshetron Mein Anuvad",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "MCA",
     term: 1,
   },
   {
@@ -459,7 +459,7 @@ export const pgGraduateCertificateCourses = [
     name: "MTTP-2",
     fullName: "Anuvad Pariyojana (Translation Project)",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "MCA",
     term: 1,
   },
   {
@@ -468,7 +468,7 @@ export const pgGraduateCertificateCourses = [
     name: "MME-11",
     fullName: "CBRNE Threats and Agents",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "MCA",
     term: 1,
   },
   {
@@ -477,7 +477,7 @@ export const pgGraduateCertificateCourses = [
     name: "MME-12",
     fullName: "Health Effects and Medical Management of CBRNE Agents",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "MCA",
     term: 1,
   },
   {
@@ -486,7 +486,7 @@ export const pgGraduateCertificateCourses = [
     name: "MMEL-13",
     fullName: "Practical Aspects of CBRNE",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "MCA",
     term: 1,
   },
 ];

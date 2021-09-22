@@ -5,7 +5,7 @@ export const certificateCourses = [
     name: "BLI-11",
     fullName: "Libraries: An Introduction",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BSCG",
     term: 1,
   },
   {
@@ -14,7 +14,7 @@ export const certificateCourses = [
     name: "BLII-12",
     fullName: "Document Processing and Organisation",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BSCG",
     term: 1,
   },
   {
@@ -23,7 +23,7 @@ export const certificateCourses = [
     name: "BLII-13",
     fullName: "Information Sources and Library Services",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BSCG",
     term: 1,
   },
   {
@@ -32,7 +32,7 @@ export const certificateCourses = [
     name: "BLII-14",
     fullName: "ICT in Libraries",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BSCG",
     term: 1,
   },
   {
@@ -41,7 +41,7 @@ export const certificateCourses = [
     name: "CDM-1",
     fullName: "Foundation Course in Disaster Management",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BSCG",
     term: 1,
   },
   {
@@ -50,7 +50,7 @@ export const certificateCourses = [
     name: "CDM-2",
     fullName: "Disaster Management: Methods & Techniques",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BSCG",
     term: 1,
   },
   {
@@ -59,7 +59,7 @@ export const certificateCourses = [
     name: "AHE-1",
     fullName: "Human Environment (without AHE Project)",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BSCG",
     term: 1,
   },
   {
@@ -68,7 +68,7 @@ export const certificateCourses = [
     name: "TS-5",
     fullName: "Ecology, Environment and Tourism",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BSCG",
     term: 1,
   },
   {
@@ -77,7 +77,7 @@ export const certificateCourses = [
     name: "PES-1",
     fullName: "Project Work - Environmental Studies",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BSCG",
     term: 1,
   },
   {
@@ -86,7 +86,7 @@ export const certificateCourses = [
     name: "BAB-101",
     fullName: "B.R. Ambedkar: Thinker, His Time",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BSCG",
     term: 1,
   },
   {
@@ -95,7 +95,7 @@ export const certificateCourses = [
     name: "BAB-102",
     fullName: "B.R. Ambedkar: Society and Culture",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BSCG",
     term: 1,
   },
   {
@@ -104,7 +104,7 @@ export const certificateCourses = [
     name: "BAB-103",
     fullName: "Economic Throught of B.R. Ambedkar",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BSCG",
     term: 1,
   },
   {
@@ -113,7 +113,7 @@ export const certificateCourses = [
     name: "BAB-104",
     fullName: "State, Democracy and Nation Building",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BSCG",
     term: 1,
   },
   {
@@ -122,7 +122,7 @@ export const certificateCourses = [
     name: "BGP-1",
     fullName: "Introduction to Peace and Conflict Management",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BSCG",
     term: 1,
   },
   {
@@ -131,7 +131,7 @@ export const certificateCourses = [
     name: "BGP-2",
     fullName: "Indian Perspectives on Peace and Conflict",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BSCG",
     term: 1,
   },
   {
@@ -140,7 +140,7 @@ export const certificateCourses = [
     name: "BGP-3",
     fullName: "Conflicts and Peace: Global Perspective",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BSCG",
     term: 1,
   },
   {
@@ -149,7 +149,7 @@ export const certificateCourses = [
     name: "BGPP-1",
     fullName: "Project Work",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BSCG",
     term: 1,
   },
   {
@@ -158,7 +158,7 @@ export const certificateCourses = [
     name: "CFN-1",
     fullName: "You and Your Food",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BSCG",
     term: 1,
   },
   {
@@ -167,7 +167,7 @@ export const certificateCourses = [
     name: "CFN-2",
     fullName: "Your Food and its Utilisation",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BSCG",
     term: 1,
   },
   {
@@ -176,7 +176,7 @@ export const certificateCourses = [
     name: "CFN-3",
     fullName: "Economics of Food",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BSCG",
     term: 1,
   },
   {
@@ -185,7 +185,7 @@ export const certificateCourses = [
     name: "CNCC-1",
     fullName: "Nutrition for the Community",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BSCG",
     term: 1,
   },
   {
@@ -194,7 +194,7 @@ export const certificateCourses = [
     name: "CNCC-2",
     fullName: "Organising Child Care Services",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BSCG",
     term: 1,
   },
   {
@@ -203,7 +203,7 @@ export const certificateCourses = [
     name: "MRD-101",
     fullName: "Rural Development: Indian Context",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BSCG",
     term: 1,
   },
   {
@@ -212,7 +212,7 @@ export const certificateCourses = [
     name: "MRD-102",
     fullName: "Rural Development Programmes",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BSCG",
     term: 1,
   },
   {
@@ -221,7 +221,7 @@ export const certificateCourses = [
     name: "MRD-103",
     fullName: "Rural Development Planning and Management",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BSCG",
     term: 1,
   },
   {
@@ -230,7 +230,7 @@ export const certificateCourses = [
     name: "NES-101",
     fullName: "Understanding the Elementary School Child",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BSCG",
     term: 1,
   },
   {
@@ -239,7 +239,7 @@ export const certificateCourses = [
     name: "NES-102",
     fullName: "Facilitating Growth and Development",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BSCG",
     term: 1,
   },
   {
@@ -248,7 +248,7 @@ export const certificateCourses = [
     name: "NES-103",
     fullName: "Guiding Children’s Learning",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BSCG",
     term: 1,
   },
   {
@@ -257,7 +257,7 @@ export const certificateCourses = [
     name: "NES-104",
     fullName: "Guiding Socio-emotional Development of Children",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BSCG",
     term: 1,
   },
   {
@@ -266,7 +266,7 @@ export const certificateCourses = [
     name: "CIT-1",
     fullName: "Fundamentals of Computer Systems",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BSCG",
     term: 1,
   },
   {
@@ -275,7 +275,7 @@ export const certificateCourses = [
     name: "CIT-2",
     fullName: "Introduction to Information Technology",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BSCG",
     term: 1,
   },
   {
@@ -284,7 +284,7 @@ export const certificateCourses = [
     name: "CIT-3",
     fullName: "Web based Technologies & Multimedia Applications",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BSCG",
     term: 1,
   },
   {
@@ -293,7 +293,7 @@ export const certificateCourses = [
     name: "CITL-1",
     fullName: "Laboratory Course",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BSCG",
     term: 1,
   },
   {
@@ -302,7 +302,7 @@ export const certificateCourses = [
     name: "BCS-091",
     fullName: "Introduction to Mobile Architecture",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BSCG",
     term: 1,
   },
   {
@@ -311,7 +311,7 @@ export const certificateCourses = [
     name: "BCS-092",
     fullName: "Introduction to Databases",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BSCG",
     term: 1,
   },
   {
@@ -320,7 +320,7 @@ export const certificateCourses = [
     name: "BCS-093",
     fullName: "Introduction to Android",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BSCG",
     term: 1,
   },
   {
@@ -329,7 +329,7 @@ export const certificateCourses = [
     name: "BCS-094",
     fullName: "Programming using Python",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BSCG",
     term: 1,
   },
   {
@@ -338,7 +338,7 @@ export const certificateCourses = [
     name: "BCSL-091",
     fullName: "Laboratory Course",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BSCG",
     term: 1,
   },
   {
@@ -347,7 +347,7 @@ export const certificateCourses = [
     name: "CTE-101",
     fullName: "The Language and the Learner",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BSCG",
     term: 1,
   },
   {
@@ -356,7 +356,7 @@ export const certificateCourses = [
     name: "CTE-102",
     fullName: "The Structure of English",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BSCG",
     term: 1,
   },
   {
@@ -365,7 +365,7 @@ export const certificateCourses = [
     name: "CTE-103",
     fullName: "Teaching Strategies",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BSCG",
     term: 1,
   },
   {
@@ -374,7 +374,7 @@ export const certificateCourses = [
     name: "CTE-104",
     fullName: "Teaching English-Elementary School",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BSCG",
     term: 1,
   },
   {
@@ -383,7 +383,7 @@ export const certificateCourses = [
     name: "CTE-105",
     fullName: "Teaching English-Secondary School",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BSCG",
     term: 1,
   },
   {
@@ -392,7 +392,7 @@ export const certificateCourses = [
     name: "BEG-4",
     fullName: "English in Daily Life",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BSCG",
     term: 1,
   },
   {
@@ -401,7 +401,7 @@ export const certificateCourses = [
     name: "BEG-5",
     fullName: "English in Education",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BSCG",
     term: 1,
   },
   {
@@ -410,7 +410,7 @@ export const certificateCourses = [
     name: "BEG-6",
     fullName: "Joining the Work Force",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BSCG",
     term: 1,
   },
   {
@@ -419,7 +419,7 @@ export const certificateCourses = [
     name: "OUL-1",
     fullName: "Script & Pronunciation",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BSCG",
     term: 1,
   },
   {
@@ -428,7 +428,7 @@ export const certificateCourses = [
     name: "OUL-2",
     fullName: "Communicative & Comprehensive Skills",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BSCG",
     term: 1,
   },
   {
@@ -437,7 +437,7 @@ export const certificateCourses = [
     name: "CHR-11",
     fullName: "Human Rights: Evolution, Concepts and Concerns",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BSCG",
     term: 1,
   },
   {
@@ -446,7 +446,7 @@ export const certificateCourses = [
     name: "CHR-12",
     fullName: "Human Rights in India",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BSCG",
     term: 1,
   },
   {
@@ -455,7 +455,7 @@ export const certificateCourses = [
     name: "CPI-101",
     fullName: "Consumer and Consumer Protection Legislations",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BSCG",
     term: 1,
   },
   {
@@ -464,7 +464,7 @@ export const certificateCourses = [
     name: "CPI-102",
     fullName: "Redressal of Consumer Grievances: Role of Various Stake Holders",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BSCG",
     term: 1,
   },
   {
@@ -473,7 +473,7 @@ export const certificateCourses = [
     name: "CPI-103",
     fullName: "Consumer Protection Issues",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BSCG",
     term: 1,
   },
   {
@@ -482,7 +482,7 @@ export const certificateCourses = [
     name: "CPIP-104",
     fullName: "Project Work in Consumer Protection",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BSCG",
     term: 1,
   },
   {
@@ -493,7 +493,7 @@ export const certificateCourses = [
     fullName:
       "Cooperation: Genesis, Principles, Values, Policy, Growth and Development",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BSCG",
     term: 1,
   },
   {
@@ -502,7 +502,7 @@ export const certificateCourses = [
     name: "BLE-12",
     fullName: "Co-operative Law",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BSCG",
     term: 1,
   },
   {
@@ -511,7 +511,7 @@ export const certificateCourses = [
     name: "BLE-13",
     fullName: "Business Law as applicable to Cooperatives – I",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BSCG",
     term: 1,
   },
   {
@@ -520,7 +520,7 @@ export const certificateCourses = [
     name: "BLE-14",
     fullName: "Business Law as applicable to Cooperatives – II",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BSCG",
     term: 1,
   },
   {
@@ -529,7 +529,7 @@ export const certificateCourses = [
     name: "BLE-31",
     fullName: "Understanding Human Trafficking",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BSCG",
     term: 1,
   },
   {
@@ -538,7 +538,7 @@ export const certificateCourses = [
     name: "BLE-32",
     fullName: "Law Policies and Institutional Response to Human Trafficking",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BSCG",
     term: 1,
   },
   {
@@ -547,7 +547,7 @@ export const certificateCourses = [
     name: "BLE-33",
     fullName: "Rehabilitation and Prevention",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BSCG",
     term: 1,
   },
   {
@@ -556,7 +556,7 @@ export const certificateCourses = [
     name: "BLEP-34",
     fullName: "Project Work",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BSCG",
     term: 1,
   },
   {
@@ -565,7 +565,7 @@ export const certificateCourses = [
     name: "BMS-1",
     fullName: "Introduction to NGO Management",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BSCG",
     term: 1,
   },
   {
@@ -574,7 +574,7 @@ export const certificateCourses = [
     name: "BMS-2",
     fullName: "Management Functions",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BSCG",
     term: 1,
   },
   {
@@ -583,7 +583,7 @@ export const certificateCourses = [
     name: "BMS-3",
     fullName: "Health Care Management",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BSCG",
     term: 1,
   },
   {
@@ -592,7 +592,7 @@ export const certificateCourses = [
     name: "ECO-1",
     fullName: "Business Organisation",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BSCG",
     term: 1,
   },
   {
@@ -601,7 +601,7 @@ export const certificateCourses = [
     name: "PCO-1",
     fullName: "Preparatory Course in Commerce",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BSCG",
     term: 1,
   },
   {
@@ -610,7 +610,7 @@ export const certificateCourses = [
     name: "BCOA-1",
     fullName: "Business Communication & Entrepreneurship",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BSCG",
     term: 1,
   },
   {
@@ -619,7 +619,7 @@ export const certificateCourses = [
     name: "CITL-1",
     fullName: "Laboratory Course",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BSCG",
     term: 1,
   },
   {
@@ -628,7 +628,7 @@ export const certificateCourses = [
     name: "BPOI-6",
     fullName: "English Communication/Communication Skills",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BSCG",
     term: 1,
   },
   {
@@ -637,7 +637,7 @@ export const certificateCourses = [
     name: "BPOI-6(P)",
     fullName: "English Communication/Communication Skills",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BSCG",
     term: 1,
   },
   {
@@ -646,7 +646,7 @@ export const certificateCourses = [
     name: "BPOI-7",
     fullName: "IT Skills",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BSCG",
     term: 1,
   },
   {
@@ -655,7 +655,7 @@ export const certificateCourses = [
     name: "BPOI-7(P)",
     fullName: "IT Skills",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BSCG",
     term: 1,
   },
   {
@@ -664,7 +664,7 @@ export const certificateCourses = [
     name: "OSEI-41",
     fullName: "Information Security",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BSCG",
     term: 1,
   },
   {
@@ -673,7 +673,7 @@ export const certificateCourses = [
     name: "OSEI-41(P)",
     fullName: "Information Security",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BSCG",
     term: 1,
   },
   {
@@ -682,7 +682,7 @@ export const certificateCourses = [
     name: "OSEI-42",
     fullName: "Securing Internet Access",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BSCG",
     term: 1,
   },
   {
@@ -691,7 +691,7 @@ export const certificateCourses = [
     name: "OSEI-42(P)",
     fullName: "Securing Internet Access",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BSCG",
     term: 1,
   },
   {
@@ -700,7 +700,7 @@ export const certificateCourses = [
     name: "OSE-43",
     fullName: "Information Technology Security",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BSCG",
     term: 1,
   },
   {
@@ -709,7 +709,7 @@ export const certificateCourses = [
     name: "OSEI-44",
     fullName: "Server Security",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BSCG",
     term: 1,
   },
   {
@@ -718,7 +718,7 @@ export const certificateCourses = [
     name: "OSEI-44(P)",
     fullName: "Server Security",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BSCG",
     term: 1,
   },
   {
@@ -727,7 +727,7 @@ export const certificateCourses = [
     name: "BFDI-71",
     fullName: "Fundamentals of Fashion Design",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BSCG",
     term: 1,
   },
   {
@@ -736,7 +736,7 @@ export const certificateCourses = [
     name: "BFDI-71(P)",
     fullName: "Fundamentals of Fashion Design",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BSCG",
     term: 1,
   },
   {
@@ -745,7 +745,7 @@ export const certificateCourses = [
     name: "BFDI-72",
     fullName: "Basics of Pattem Making and Sewing",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BSCG",
     term: 1,
   },
   {
@@ -754,7 +754,7 @@ export const certificateCourses = [
     name: "BFDI-72(P)",
     fullName: "Basics of Pattem Making and Sewing",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BSCG",
     term: 1,
   },
   {
@@ -763,7 +763,7 @@ export const certificateCourses = [
     name: "BFDI-73",
     fullName: "Introduction to Fashion Industry",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BSCG",
     term: 1,
   },
   {
@@ -772,7 +772,7 @@ export const certificateCourses = [
     name: "BFDI-73(P)",
     fullName: "Introduction to Fashion Industry",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BSCG",
     term: 1,
   },
   {
@@ -781,7 +781,7 @@ export const certificateCourses = [
     name: "BFD-74",
     fullName: "Communication and Entrepreneurship",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BSCG",
     term: 1,
   },
   {
@@ -790,7 +790,7 @@ export const certificateCourses = [
     name: "TS-1",
     fullName: "Foundation Course in Tourism",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BSCG",
     term: 1,
   },
   {
@@ -799,7 +799,7 @@ export const certificateCourses = [
     name: "TS-2",
     fullName: "Tourism Development: Products, Operations and Case Studies",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BSCG",
     term: 1,
   },
   {
@@ -808,7 +808,7 @@ export const certificateCourses = [
     name: "CLT-101",
     fullName: "Good Laboratory Practices",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BSCG",
     term: 1,
   },
   {
@@ -817,7 +817,7 @@ export const certificateCourses = [
     name: "CLTL-101",
     fullName: "Good Laboratory Practices: Basic Exercises",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BSCG",
     term: 1,
   },
   {
@@ -826,7 +826,7 @@ export const certificateCourses = [
     name: "CLT-102",
     fullName: "Laboratory Techniques in Biology",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BSCG",
     term: 1,
   },
   {
@@ -835,7 +835,7 @@ export const certificateCourses = [
     name: "CLTL-102",
     fullName: "Basic Experiments in Biology",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BSCG",
     term: 1,
   },
   {
@@ -844,7 +844,7 @@ export const certificateCourses = [
     name: "CLT-103",
     fullName: "Laboratory Techniques in Chemistry",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BSCG",
     term: 1,
   },
   {
@@ -853,7 +853,7 @@ export const certificateCourses = [
     name: "CLTL-103",
     fullName: "Basic Experiments in Chemistry",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BSCG",
     term: 1,
   },
   {
@@ -862,7 +862,7 @@ export const certificateCourses = [
     name: "CLT-104",
     fullName: "Laboratory Techniques in Physics",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BSCG",
     term: 1,
   },
   {
@@ -871,7 +871,7 @@ export const certificateCourses = [
     name: "CLTL-104",
     fullName: "Basic Experiments in Physics",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BSCG",
     term: 1,
   },
   {
@@ -880,7 +880,7 @@ export const certificateCourses = [
     name: "AMT-1",
     fullName: "Teaching of Primary School Mathematics",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BSCG",
     term: 1,
   },
   {
@@ -889,7 +889,7 @@ export const certificateCourses = [
     name: "LMT-1",
     fullName: "Learning Mathematics",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BSCG",
     term: 1,
   },
   {
@@ -898,7 +898,7 @@ export const certificateCourses = [
     name: "BFE-101",
     fullName: "Basics ofHIV/AIDS",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BSCG",
     term: 1,
   },
   {
@@ -907,7 +907,7 @@ export const certificateCourses = [
     name: "BFE-102",
     fullName: "Basics of Family Education",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BSCG",
     term: 1,
   },
   {
@@ -916,7 +916,7 @@ export const certificateCourses = [
     name: "BFEE-101",
     fullName: "Elective on HIV/AIDS",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BSCG",
     term: 1,
   },
   {
@@ -925,7 +925,7 @@ export const certificateCourses = [
     name: "BFEE-102",
     fullName: "Elective on Family Education",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BSCG",
     term: 1,
   },
   {
@@ -934,7 +934,7 @@ export const certificateCourses = [
     name: "BFEE-103",
     fullName: "Alcohol, Drugs & HIV",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BSCG",
     term: 1,
   },
   {
@@ -943,7 +943,7 @@ export const certificateCourses = [
     name: "BFEE-104",
     fullName: "Commmunication & Counselling in HIV",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BSCG",
     term: 1,
   },
   {
@@ -952,7 +952,7 @@ export const certificateCourses = [
     name: "MSW-31",
     fullName: "Social Work Intervention in Correctional Settings (Compulsory)",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BSCG",
     term: 1,
   },
   {
@@ -961,7 +961,7 @@ export const certificateCourses = [
     name: "MSW-32",
     fullName: "Social Work and Criminal Justice (Compulsory)",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BSCG",
     term: 1,
   },
   {
@@ -970,7 +970,7 @@ export const certificateCourses = [
     name: "MSWL-33",
     fullName: "Social Work Practicum in Correctional Settings (Compulsory)",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BSCG",
     term: 1,
   },
   {
@@ -979,7 +979,7 @@ export const certificateCourses = [
     name: "BSW-41",
     fullName: "Understanding Tribals",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BSCG",
     term: 1,
   },
   {
@@ -988,7 +988,7 @@ export const certificateCourses = [
     name: "BSW-42",
     fullName: "Tribal Society",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BSCG",
     term: 1,
   },
   {
@@ -997,7 +997,7 @@ export const certificateCourses = [
     name: "BSW-43",
     fullName: "Tribals of South and Central India",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BSCG",
     term: 1,
   },
   {
@@ -1006,7 +1006,7 @@ export const certificateCourses = [
     name: "BSW-44",
     fullName: "Tribals in North and Northeast Region of India",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BSCG",
     term: 1,
   },
   {
@@ -1015,7 +1015,7 @@ export const certificateCourses = [
     name: "BLP-1",
     fullName: "Introduction to Sericulture",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BSCG",
     term: 1,
   },
   {
@@ -1024,7 +1024,7 @@ export const certificateCourses = [
     name: "BLPI-2",
     fullName: "Host Plant Cultivation",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BSCG",
     term: 1,
   },
   {
@@ -1033,7 +1033,7 @@ export const certificateCourses = [
     name: "BLPI-3",
     fullName: "Silkworm Rearing",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BSCG",
     term: 1,
   },
   {
@@ -1042,7 +1042,7 @@ export const certificateCourses = [
     name: "BLP-4",
     fullName: "Crop Protection",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BSCG",
     term: 1,
   },
   {
@@ -1051,7 +1051,7 @@ export const certificateCourses = [
     name: "BAP-1",
     fullName: "Introduction to Organic Farming",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BSCG",
     term: 1,
   },
   {
@@ -1060,7 +1060,7 @@ export const certificateCourses = [
     name: "BAPI-1",
     fullName: "Organic Production System",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BSCG",
     term: 1,
   },
   {
@@ -1069,7 +1069,7 @@ export const certificateCourses = [
     name: "BAPI-2",
     fullName: "Inspection and Certification of Organic Produce",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BSCG",
     term: 1,
   },
   {
@@ -1078,7 +1078,7 @@ export const certificateCourses = [
     name: "BAPI-3",
     fullName: "Economics and Marketing of Organic Produce",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BSCG",
     term: 1,
   },
   {
@@ -1087,7 +1087,7 @@ export const certificateCourses = [
     name: "ONR-1",
     fullName: "Introduction to Water Harvesting",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BSCG",
     term: 1,
   },
   {
@@ -1096,7 +1096,7 @@ export const certificateCourses = [
     name: "ONR-2",
     fullName: "Basics of Hydrology",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BSCG",
     term: 1,
   },
   {
@@ -1105,7 +1105,7 @@ export const certificateCourses = [
     name: "ONR-3",
     fullName: "Water Harvesting, Conservation and Utilization",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BSCG",
     term: 1,
   },
   {
@@ -1114,7 +1114,7 @@ export const certificateCourses = [
     name: "ONRL-1",
     fullName: "Practical Training at Water Harvesting Agency",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BSCG",
     term: 1,
   },
   {
@@ -1123,7 +1123,7 @@ export const certificateCourses = [
     name: "OLP-1",
     fullName: "Introduction to Poultry Farming",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BSCG",
     term: 1,
   },
   {
@@ -1132,7 +1132,7 @@ export const certificateCourses = [
     name: "OLPI-1",
     fullName: "Poultry Housing and Management",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BSCG",
     term: 1,
   },
   {
@@ -1141,7 +1141,7 @@ export const certificateCourses = [
     name: "OLPI-2",
     fullName: "Poultry Feeds and Feeding",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BSCG",
     term: 1,
   },
   {
@@ -1150,7 +1150,7 @@ export const certificateCourses = [
     name: "OLPL-1",
     fullName: "Poultry Health Care and Bio-security Measures",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BSCG",
     term: 1,
   },
   {
@@ -1159,7 +1159,7 @@ export const certificateCourses = [
     name: "OLPL-2",
     fullName: "Poultry Farm Training",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BSCG",
     term: 1,
   },
   {
@@ -1168,7 +1168,7 @@ export const certificateCourses = [
     name: "OAPI-11",
     fullName: "Introduction to Beekeeping",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BSCG",
     term: 1,
   },
   {
@@ -1177,7 +1177,7 @@ export const certificateCourses = [
     name: "OAPI-12",
     fullName: "Management of Honey Bee Colonies",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BSCG",
     term: 1,
   },
   {
@@ -1186,7 +1186,7 @@ export const certificateCourses = [
     name: "OAPI-13",
     fullName: "Hive Products and Economics of Beekeeping",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BSCG",
     term: 1,
   },
   {
@@ -1195,7 +1195,7 @@ export const certificateCourses = [
     name: "BAL-1",
     fullName: "Basics of Arabic",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BSCG",
     term: 1,
   },
   {
@@ -1204,7 +1204,7 @@ export const certificateCourses = [
     name: "BAL-2",
     fullName: "Communication Skills",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BSCG",
     term: 1,
   },
   {
@@ -1213,7 +1213,7 @@ export const certificateCourses = [
     name: "BFLI-1",
     fullName: "Talking About Oneself",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BSCG",
     term: 1,
   },
   {
@@ -1222,7 +1222,7 @@ export const certificateCourses = [
     name: "BFLI-2",
     fullName: "Interaction",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BSCG",
     term: 1,
   },
   {
@@ -1231,7 +1231,7 @@ export const certificateCourses = [
     name: "BFLI-3",
     fullName: "Space",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BSCG",
     term: 1,
   },
   {
@@ -1240,7 +1240,7 @@ export const certificateCourses = [
     name: "BFLI-4",
     fullName: "Time",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BSCG",
     term: 1,
   },
   {
@@ -1249,7 +1249,7 @@ export const certificateCourses = [
     name: "ORU-001",
     fullName: "Communication Skills-I",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BSCG",
     term: 1,
   },
   {
@@ -1258,7 +1258,7 @@ export const certificateCourses = [
     name: "ORUL-002",
     fullName: "Communication Skills-II",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BSCG",
     term: 1,
   },
   {
@@ -1267,7 +1267,7 @@ export const certificateCourses = [
     name: "BJLI-1",
     fullName: "Basic Japanese - 01",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BSCG",
     term: 1,
   },
   {
@@ -1276,7 +1276,7 @@ export const certificateCourses = [
     name: "BJLI-2",
     fullName: "Basic Japanese - 02",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BSCG",
     term: 1,
   },
   {
@@ -1285,7 +1285,7 @@ export const certificateCourses = [
     name: "BJLI-3",
     fullName: "Basic Japanese - 03",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BSCG",
     term: 1,
   },
   {
@@ -1294,7 +1294,7 @@ export const certificateCourses = [
     name: "BJLI-4",
     fullName: "Basic Japanese - 04",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BSCG",
     term: 1,
   },
   {
@@ -1303,7 +1303,7 @@ export const certificateCourses = [
     name: "BKL-1",
     fullName: "Basics of Korean – I",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BSCG",
     term: 1,
   },
   {
@@ -1312,7 +1312,7 @@ export const certificateCourses = [
     name: "BKL-2",
     fullName: "Basics of Korean – II",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BSCG",
     term: 1,
   },
   {
@@ -1321,7 +1321,7 @@ export const certificateCourses = [
     name: "BSL-1",
     fullName: "Basics of Spanish Language and Culture-I",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BSCG",
     term: 1,
   },
   {
@@ -1330,7 +1330,7 @@ export const certificateCourses = [
     name: "BSL-2",
     fullName: "Basics of Spanish Language and Culture-II",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BSCG",
     term: 1,
   },
   {
@@ -1339,7 +1339,7 @@ export const certificateCourses = [
     name: "BGL-1",
     fullName: "German Language Course-I",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BSCG",
     term: 1,
   },
   {
@@ -1348,7 +1348,7 @@ export const certificateCourses = [
     name: "BGL-2",
     fullName: "German Language Course-II",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BSCG",
     term: 1,
   },
   {
@@ -1357,7 +1357,7 @@ export const certificateCourses = [
     name: "BGL-3",
     fullName: "German Language Course-III",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BSCG",
     term: 1,
   },
   {
@@ -1366,7 +1366,7 @@ export const certificateCourses = [
     name: "BPEL-11",
     fullName: "Basics of Persian",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BSCG",
     term: 1,
   },
   {
@@ -1375,7 +1375,7 @@ export const certificateCourses = [
     name: "BPEL-12",
     fullName: "Communication Skills",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BSCG",
     term: 1,
   },
   {
@@ -1384,7 +1384,7 @@ export const certificateCourses = [
     name: "BNS-40",
     fullName: "Basics of First Aid (Theory)",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BSCG",
     term: 1,
   },
   {
@@ -1393,7 +1393,7 @@ export const certificateCourses = [
     name: "BNSL-40",
     fullName: "Skills in First Aid (Practical)",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BSCG",
     term: 1,
   },
   {
@@ -1402,7 +1402,7 @@ export const certificateCourses = [
     name: "BYG-1",
     fullName: "Introduction to Yoga and Yogic texts",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BSCG",
     term: 1,
   },
   {
@@ -1411,7 +1411,7 @@ export const certificateCourses = [
     name: "BYG-2",
     fullName: "Yoga and Health",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BSCG",
     term: 1,
   },
   {
@@ -1420,7 +1420,7 @@ export const certificateCourses = [
     name: "BYGL-1",
     fullName: "Shat Kriyas, Yogic Kriyas, Asanas, Pranayama, Mantra Japa",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BSCG",
     term: 1,
   },
   {
@@ -1431,7 +1431,7 @@ export const certificateCourses = [
     fullName:
       "Fundamentals: Environment and Health, Health Care Waste Management Regulations",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BSCG",
     term: 1,
   },
   {
@@ -1441,7 +1441,7 @@ export const certificateCourses = [
     fullName:
       "Health Care Waste Management: Concepts, Technologies and Training",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BSCG",
     term: 1,
   },
   {
@@ -1450,7 +1450,7 @@ export const certificateCourses = [
     name: "BHME-101",
     fullName: "Inter-relationship between Health and Environment",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BSCG",
     term: 1,
   },
   {
@@ -1459,7 +1459,7 @@ export const certificateCourses = [
     name: "BHME-102",
     fullName: "Worker Safety and Patient Safety",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BSCG",
     term: 1,
   },
   {
@@ -1470,7 +1470,7 @@ export const certificateCourses = [
     fullName:
       "Current Status of Health Care Waste Management and Legislation in the Regional Countries",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BSCG",
     term: 1,
   },
   {
@@ -1479,7 +1479,7 @@ export const certificateCourses = [
     name: "BHME-104",
     fullName: "Managerial and Systems Approach",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BSCG",
     term: 1,
   },
   {
@@ -1488,7 +1488,7 @@ export const certificateCourses = [
     name: "BHME-105",
     fullName: "Special Considerations of Waste Management",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BSCG",
     term: 1,
   },
   {
@@ -1497,7 +1497,7 @@ export const certificateCourses = [
     name: "BHME-106",
     fullName: "Administrative and Legal Aspects of Waste Management",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BSCG",
     term: 1,
   },
   {
@@ -1506,7 +1506,7 @@ export const certificateCourses = [
     name: "BHMP-101",
     fullName: "Project",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BSCG",
     term: 1,
   },
   {
@@ -1515,7 +1515,7 @@ export const certificateCourses = [
     name: "BHML-101",
     fullName: "Workshop",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BSCG",
     term: 1,
   },
   {
@@ -1524,7 +1524,7 @@ export const certificateCourses = [
     name: "BNS-115",
     fullName: "Nursing Care of New Born and Infant",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BSCG",
     term: 1,
   },
   {
@@ -1533,7 +1533,7 @@ export const certificateCourses = [
     name: "BNSL-115",
     fullName: "Nursing Practices and Procedures in Care of Newborn and Infant",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BSCG",
     term: 1,
   },
   {
@@ -1542,7 +1542,7 @@ export const certificateCourses = [
     name: "BNS-117",
     fullName: "Maternal and Child Health Care",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BSCG",
     term: 1,
   },
   {
@@ -1551,7 +1551,7 @@ export const certificateCourses = [
     name: "BNSL-117",
     fullName: "Practices and Procedures in Maternal and Child Health Care",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BSCG",
     term: 1,
   },
   {
@@ -1560,7 +1560,7 @@ export const certificateCourses = [
     name: "BNSL-117",
     fullName: "Practices and Procedures in Maternal and Child Health Care",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BSCG",
     term: 1,
   },
   {
@@ -1569,7 +1569,7 @@ export const certificateCourses = [
     name: "CNS-HCP-1",
     fullName: "Skills Related to Home Based Care (Practical)",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BSCG",
     term: 1,
   },
   {
@@ -1578,7 +1578,7 @@ export const certificateCourses = [
     name: "BHT-1",
     fullName: "Foundation of General Duty Assistance",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BSCG",
     term: 1,
   },
   {
@@ -1587,7 +1587,7 @@ export const certificateCourses = [
     name: "BHT-2",
     fullName: "Basic Needs of PatientCare",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BSCG",
     term: 1,
   },
   {
@@ -1596,7 +1596,7 @@ export const certificateCourses = [
     name: "BHTL-3",
     fullName: "Fundamental Skills for General Duty Assistance",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BSCG",
     term: 1,
   },
   {
@@ -1605,7 +1605,7 @@ export const certificateCourses = [
     name: "BHT-6",
     fullName: "Foundation for Geriatric Care Assistance",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BSCG",
     term: 1,
   },
   {
@@ -1614,7 +1614,7 @@ export const certificateCourses = [
     name: "BHT-7",
     fullName: "Special Needs of Geriatric Patients",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BSCG",
     term: 1,
   },
   {
@@ -1623,7 +1623,7 @@ export const certificateCourses = [
     name: "BHTL-8",
     fullName: "Skills for Geriatric Care Assistance",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BSCG",
     term: 1,
   },
   {
@@ -1632,7 +1632,7 @@ export const certificateCourses = [
     name: "BHT-11",
     fullName: "Basic Phlebotomy Assistance",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BSCG",
     term: 1,
   },
   {
@@ -1641,7 +1641,7 @@ export const certificateCourses = [
     name: "BHT-12",
     fullName: "Handling of Blood Samples",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BSCG",
     term: 1,
   },
   {
@@ -1650,7 +1650,7 @@ export const certificateCourses = [
     name: "BHTL-13",
     fullName: "Skills for Phlebotomy Assistance",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BSCG",
     term: 1,
   },
   {
@@ -1659,7 +1659,7 @@ export const certificateCourses = [
     name: "BHT-16",
     fullName: "Basic Home Health Assistance",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BSCG",
     term: 1,
   },
   {
@@ -1668,7 +1668,7 @@ export const certificateCourses = [
     name: "BHT-17",
     fullName: "Applied Home Health Assistance",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BSCG",
     term: 1,
   },
   {
@@ -1677,7 +1677,7 @@ export const certificateCourses = [
     name: "BHTL-18",
     fullName: "Skills for Home Health Assistance",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BSCG",
     term: 1,
   },
   {
@@ -1686,7 +1686,7 @@ export const certificateCourses = [
     name: "BNS-41",
     fullName: "Foundations of Community Health",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BSCG",
     term: 1,
   },
   {
@@ -1695,7 +1695,7 @@ export const certificateCourses = [
     name: "BNS-42",
     fullName: "Primary Health Care in Common Conditions",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BSCG",
     term: 1,
   },
   {
@@ -1704,7 +1704,7 @@ export const certificateCourses = [
     name: "BNS-43",
     fullName: "Public Health and Primary Health Care Skills",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BSCG",
     term: 1,
   },
   {
@@ -1713,7 +1713,7 @@ export const certificateCourses = [
     name: "CNS-AH-001",
     fullName: "Theory Course – 1Fundamentals of Adolescence",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BSCG",
     term: 1,
   },
   {
@@ -1722,7 +1722,7 @@ export const certificateCourses = [
     name: "CNS-AH-002",
     fullName: "Theory Course – 2 Issues & Challenges during Adolescence",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BSCG",
     term: 1,
   },
   {
@@ -1733,7 +1733,7 @@ export const certificateCourses = [
     fullName:
       "Practical Title of the course: Practical Manual on Adolescent Health",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BSCG",
     term: 1,
   },
   {
@@ -1742,7 +1742,7 @@ export const certificateCourses = [
     name: "OVA-1",
     fullName: "Indian Cultural Heritage (Theory)",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BSCG",
     term: 1,
   },
   {
@@ -1751,7 +1751,7 @@ export const certificateCourses = [
     name: "OVA-2",
     fullName: "Understanding Indian Art Forms (Theory)",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BSCG",
     term: 1,
   },
   {
@@ -1760,7 +1760,7 @@ export const certificateCourses = [
     name: "OVA-3",
     fullName: "An Introduction to Indian Arts (Theory)",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BSCG",
     term: 1,
   },
   {
@@ -1769,7 +1769,7 @@ export const certificateCourses = [
     name: "OVAL-4",
     fullName: "Direct Study from Simple Objects (Practical)",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BSCG",
     term: 1,
   },
   {
@@ -1778,7 +1778,7 @@ export const certificateCourses = [
     name: "OVAL-5",
     fullName: "Study from Still Life (Practical)",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BSCG",
     term: 1,
   },
   {
@@ -1787,7 +1787,7 @@ export const certificateCourses = [
     name: "OVAL-6",
     fullName: "Composition in Painting (Practical)",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BSCG",
     term: 1,
   },
   {
@@ -1796,7 +1796,7 @@ export const certificateCourses = [
     name: "OVAL-7",
     fullName: "Geometrical Design (Practical)",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BSCG",
     term: 1,
   },
   {
@@ -1805,7 +1805,7 @@ export const certificateCourses = [
     name: "OTH-1",
     fullName: "An Introduction to Theatre & Drama (Theory)",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BSCG",
     term: 1,
   },
   {
@@ -1814,7 +1814,7 @@ export const certificateCourses = [
     name: "OTHL-2",
     fullName: "Voice & Speech (Practical)",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BSCG",
     term: 1,
   },
   {
@@ -1823,7 +1823,7 @@ export const certificateCourses = [
     name: "OTHL-3",
     fullName: "Physical Aspects of Acting (Practical)",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BSCG",
     term: 1,
   },
   {
@@ -1832,7 +1832,7 @@ export const certificateCourses = [
     name: "OTHL-4",
     fullName: "Method Acting-Stanislavisky (Practical)",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BSCG",
     term: 1,
   },
   {
@@ -1841,7 +1841,7 @@ export const certificateCourses = [
     name: "OMU-1",
     fullName: "An Introduction to Hindustani Music (Theory)",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BSCG",
     term: 1,
   },
   {
@@ -1850,7 +1850,7 @@ export const certificateCourses = [
     name: "OMUL-2",
     fullName: "(Practical-1)",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BSCG",
     term: 1,
   },
   {
@@ -1859,7 +1859,7 @@ export const certificateCourses = [
     name: "OMUL-3",
     fullName: "(Practical-2)",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BSCG",
     term: 1,
   },
   {
@@ -1868,7 +1868,7 @@ export const certificateCourses = [
     name: "OMUL-4",
     fullName: "(Practical-3)",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BSCG",
     term: 1,
   },
   {
@@ -1877,7 +1877,7 @@ export const certificateCourses = [
     name: "OMU-5",
     fullName: "An Introduction to Karnatak Music (Theory)",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BSCG",
     term: 1,
   },
   {
@@ -1886,7 +1886,7 @@ export const certificateCourses = [
     name: "OMUL-6",
     fullName: "Paper-1 (Practical)",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BSCG",
     term: 1,
   },
   {
@@ -1895,7 +1895,7 @@ export const certificateCourses = [
     name: "OMUL-7",
     fullName: "Paper-2 (Practical)",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BSCG",
     term: 1,
   },
   {
@@ -1904,7 +1904,7 @@ export const certificateCourses = [
     name: "OMUL-8",
     fullName: "Paper-3 (Practical)",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BSCG",
     term: 1,
   },
   {
@@ -1913,7 +1913,7 @@ export const certificateCourses = [
     name: "ODN-1",
     fullName: "Introduction to Indian Dance Forms (Theory)",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BSCG",
     term: 1,
   },
   {
@@ -1922,7 +1922,7 @@ export const certificateCourses = [
     name: "ODNL-11",
     fullName: "Bharatanatyam 1 (Practical)",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BSCG",
     term: 1,
   },
   {
@@ -1931,7 +1931,7 @@ export const certificateCourses = [
     name: "ODNL-12",
     fullName: "Bharatanatyam 2 (Practical)",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BSCG",
     term: 1,
   },
   {
@@ -1940,7 +1940,7 @@ export const certificateCourses = [
     name: "ODNL-13",
     fullName: "Music and Talas (Practical)",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BSCG",
     term: 1,
   },
   {
@@ -1949,7 +1949,7 @@ export const certificateCourses = [
     name: "OEY-1",
     fullName: "Energy Resources and Conversion Processes",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BSCG",
     term: 1,
   },
   {
@@ -1958,7 +1958,7 @@ export const certificateCourses = [
     name: "OEY-2",
     fullName: "Renewable Energy Technologies and their Uses",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BSCG",
     term: 1,
   },
   {
@@ -1967,7 +1967,7 @@ export const certificateCourses = [
     name: "OEY-3",
     fullName: "Energy Management: Audit and Conservation",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BSCG",
     term: 1,
   },
   {
@@ -1976,7 +1976,7 @@ export const certificateCourses = [
     name: "OEYP-4",
     fullName: "Energy Projects",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BSCG",
     term: 1,
   },
   {
@@ -1985,7 +1985,7 @@ export const certificateCourses = [
     name: "OEE-1",
     fullName: "Electricity and Safety Measures",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BSCG",
     term: 1,
   },
   {
@@ -1994,7 +1994,7 @@ export const certificateCourses = [
     name: "OEE-2",
     fullName: "Power Distribution System – Basics",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BSCG",
     term: 1,
   },
   {
@@ -2003,7 +2003,7 @@ export const certificateCourses = [
     name: "OEEL-1",
     fullName: "Practical in Power Distribution",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BSCG",
     term: 1,
   },
   {
@@ -2012,7 +2012,7 @@ export const certificateCourses = [
     name: "BWA-001",
     fullName: "Solid Wastes & Regulatory Framework",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BSCG",
     term: 1,
   },
   {
@@ -2021,7 +2021,7 @@ export const certificateCourses = [
     name: "BWA-002",
     fullName: "Solid Wastes Collection and Transportation",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BSCG",
     term: 1,
   },
   {
@@ -2030,7 +2030,7 @@ export const certificateCourses = [
     name: "BWA-003",
     fullName: "Solid Wastes Processing and Treatment Techniques",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BSCG",
     term: 1,
   },
   {
@@ -2039,7 +2039,7 @@ export const certificateCourses = [
     name: "BWA-004",
     fullName: "Disposal of Wastes",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BSCG",
     term: 1,
   },
   {
@@ -2048,7 +2048,7 @@ export const certificateCourses = [
     name: "BWAP-001",
     fullName: "Project",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BSCG",
     term: 1,
   },
   {
@@ -2057,7 +2057,7 @@ export const certificateCourses = [
     name: "BEDS-1",
     fullName: "Overview and Perspectives of Values (Theory)",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BSCG",
     term: 1,
   },
   {
@@ -2066,7 +2066,7 @@ export const certificateCourses = [
     name: "BEDS-2",
     fullName: "Socio-Psychological Basis (Theory)",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BSCG",
     term: 1,
   },
   {
@@ -2075,7 +2075,7 @@ export const certificateCourses = [
     name: "BEDS-3",
     fullName: "Pedagogy of Values (Theory)",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BSCG",
     term: 1,
   },
   {
@@ -2084,7 +2084,7 @@ export const certificateCourses = [
     name: "BEDS-4",
     fullName: "Application Support Skills (Theory) and Activities",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BSCG",
     term: 1,
   },
   {
@@ -2093,7 +2093,7 @@ export const certificateCourses = [
     name: "BEV-001",
     fullName: "Introduction to Solid Waste Management",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BSCG",
     term: 1,
   },
   {
@@ -2103,7 +2103,7 @@ export const certificateCourses = [
     fullName:
       "Municipal, Agricultural, Industrial and Hazardous Waste Management",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BSCG",
     term: 1,
   },
   {
@@ -2114,7 +2114,7 @@ export const certificateCourses = [
     fullName:
       "Plastic, E-waste, Biomedical and Construction and Demolition Waste management",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BSCG",
     term: 1,
   },
   {
@@ -2123,7 +2123,7 @@ export const certificateCourses = [
     name: "BJM-1",
     fullName: "Introduction to Community Radio",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BSCG",
     term: 1,
   },
   {
@@ -2132,7 +2132,7 @@ export const certificateCourses = [
     name: "BJM-2",
     fullName: "Operating a Community Radio",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BSCG",
     term: 1,
   },
   {
@@ -2141,7 +2141,7 @@ export const certificateCourses = [
     name: "BJMP-1",
     fullName: "Practical/Internship (10 days)",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BSCG",
     term: 1,
   },
   {
@@ -2150,7 +2150,7 @@ export const certificateCourses = [
     name: "MGS-041",
     fullName: "Introduction to Gender, Agriculture and Sustainable development",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BSCG",
     term: 1,
   },
   {
@@ -2159,7 +2159,7 @@ export const certificateCourses = [
     name: "MGS-042",
     fullName: "Gender dynamics in Agriculture",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BSCG",
     term: 1,
   },
   {
@@ -2168,7 +2168,7 @@ export const certificateCourses = [
     name: "MGS-043",
     fullName: "Gender and Sustainable Development",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BSCG",
     term: 1,
   },
 ];

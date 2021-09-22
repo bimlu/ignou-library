@@ -5,7 +5,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BECC-101",
     fullName: "Introductory Microeconomics",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -14,7 +14,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BECC-102",
     fullName: "Mathematical Methods for Economics I",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -23,7 +23,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BECC-103",
     fullName: "Introductory Macroeconomics",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -32,7 +32,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BECC-104",
     fullName: "Mathematical Methods for Economics II",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -41,7 +41,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BECC-105",
     fullName: "Intermediate Microeconomics I",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -50,7 +50,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BECC-106",
     fullName: "Intermediate Macroeconomics I",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -59,7 +59,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BECC-107",
     fullName: "Statistical Methods for Economics",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -68,7 +68,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BECC-108",
     fullName: "Intermediate Microeconomics II",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -77,7 +77,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BECC-109",
     fullName: "Intermediate Macroeconomics II",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -86,7 +86,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BECC-110",
     fullName: "Introductory Econometrics",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -95,7 +95,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BECC-111",
     fullName: "Indian Economy I",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -104,7 +104,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BECC-112",
     fullName: "Development Economics I",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -113,7 +113,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BECC-113",
     fullName: "Indian Economy II",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -122,7 +122,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BECC-114",
     fullName: "Development Economics II",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -131,7 +131,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BHIC-101",
     fullName: "History of India –I",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -140,7 +140,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BHIC-102",
     fullName: "Social Formations and Cultural Patterns of the Ancient World",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -149,7 +149,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BHIC-103",
     fullName: "History of India –II",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -158,7 +158,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BHIC-104",
     fullName: "Social Formations and Cultural Patterns of the Medieval World",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -167,7 +167,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BHIC-105",
     fullName: "History of India –III ( c. 750 – 1206)",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -176,7 +176,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BHIC-106",
     fullName: "Rise of the Modern West – I",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -185,7 +185,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BHIC-107",
     fullName: "History of India – IV ( c. 1206 – 1550)",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -194,7 +194,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BHIC-108",
     fullName: "Rise of the Modern West – II",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -203,7 +203,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BHIC-109",
     fullName: "History of India –V ( c. 1550 – 1605)",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -212,7 +212,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BHIC-110",
     fullName: "History of India –VI ( c. 1750 – 1857)",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -221,7 +221,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BHIC-111",
     fullName: "History of Modern Europe - I ( c. 1780 - 1939)",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -230,7 +230,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BHIC-112",
     fullName: "History of India –VII ( c. 1605 – 1750)",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -239,7 +239,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BHIC-113",
     fullName: "History of India –VIII ( c. 1857 – 1950)",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -248,7 +248,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BHIC-114",
     fullName: "History of Modern Europe -II ( c. 1780 – 1939)",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -257,7 +257,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BPAC-101",
     fullName: "Perspectives on Public Administration",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -266,7 +266,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BPAC-108",
     fullName: "Public Policy and Administration in India",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -275,7 +275,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BPSC-101",
     fullName: "Understanding Political Theory",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -284,7 +284,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BPSC-102",
     fullName: "Constitutional Government and Democracy in India",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -293,7 +293,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BPSC-103",
     fullName: "Political Theory – Concepts and Debates",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -302,7 +302,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BPSC-104",
     fullName: "Political Process in India",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -311,7 +311,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BPSC-105",
     fullName: "Introduction to Comparative Government and Politics",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -320,7 +320,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BPSC-107",
     fullName: "Perspectives on International Relations and World History",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -329,7 +329,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BPSC-109",
     fullName: "Political Processes and Institutions in Comparative Perspective",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -338,7 +338,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BPSC-110",
     fullName: "Global Politics",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -347,7 +347,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BPSC-111",
     fullName: "Classical Political Philosophy",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -356,7 +356,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BPSC-112",
     fullName: "Indian Political Thought-I",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -365,7 +365,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BPSC-113",
     fullName: "Modern Political Philosophy",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -374,7 +374,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BPSC-114",
     fullName: "Indian Political Thought-II",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -383,7 +383,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BPCC-101",
     fullName: "Introduction to Psychology",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -392,7 +392,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BPCC-102",
     fullName: "Biopsychology",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
   },
   {
     code: "BPCC-103",
@@ -400,7 +400,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BPCC-103",
     fullName: "Psychology of Individual Differences",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -409,7 +409,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BPCC-104",
     fullName: "Statistical Methods for Psychological Research- I",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -418,7 +418,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BPCC-105",
     fullName: "Psychological Research",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -427,7 +427,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BPCC-106",
     fullName: "Development of Psychological Thought",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -436,7 +436,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BPCC-107",
     fullName: "Social Psychology",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -445,7 +445,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BPCC-108",
     fullName: "Statistical Methods for Psychological Research - II",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -454,7 +454,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BPCC-109",
     fullName: "Developmental Psychology",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -463,7 +463,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BPCC-110",
     fullName: "Applied Social Psychology",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -472,7 +472,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BPCC-111",
     fullName: "Understanding Psychological Disorders",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -481,7 +481,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BPCC-112",
     fullName: "Organizational Behaviour",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -490,7 +490,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BPCC-113",
     fullName: "Understanding and Dealing with Psychological Disorders",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -499,7 +499,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BPCC-114",
     fullName: "Counselling Psychology",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -508,7 +508,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BPAC-101",
     fullName: "Perspectives on Public Administration",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -517,7 +517,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BPAC-102",
     fullName: "Administrative Thinkers",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -526,7 +526,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BPAC-103",
     fullName: "Administrative System at Union Level",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -535,7 +535,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BPAC-104",
     fullName: "Administrative System at State and District Levels",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -544,7 +544,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BPAC-105",
     fullName: "Personnel Administration",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -553,7 +553,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BPAC-106",
     fullName: "Understanding Public Policy",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -562,7 +562,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BPAC-107",
     fullName: "Comparative Public Administration",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -571,7 +571,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BPAC-108",
     fullName: "Public Policy and Administration in India",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -580,7 +580,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BPAC-109",
     fullName: "Public Systems Management",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -589,7 +589,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BPAC-110",
     fullName: "Urban Local Governance",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -598,7 +598,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BPAC-111",
     fullName: "Public Finance and Administration",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -607,7 +607,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BPAC-112",
     fullName: "Rural Local Governance",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -616,7 +616,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BPAC-113",
     fullName: "Development Administration",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -625,7 +625,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BPAC-114",
     fullName: "Contemporary Issues and Concerns in Indian Administration",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -634,7 +634,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BSOC-101",
     fullName: "Introduction to Sociology I",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -643,7 +643,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BSOC-102",
     fullName: "Sociology of India – I",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -652,7 +652,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BSOC-103",
     fullName: "Introduction to Sociology II",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -661,7 +661,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BSOC-104",
     fullName: "Sociology of India - II",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -670,7 +670,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BSOC-105",
     fullName: "Political Sociology",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -679,7 +679,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BSOC-106",
     fullName: "Sociology of Religion",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -688,7 +688,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BSOC-107",
     fullName: "Sociology of Gender",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -697,7 +697,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BSOC-108",
     fullName: "Economic Sociology",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -706,7 +706,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BSOC-109",
     fullName: "Sociology of Kinship",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -715,7 +715,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BSOC-110",
     fullName: "Social Stratification",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -724,7 +724,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BSOC-111",
     fullName: "Sociological Thinkers -I",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -733,7 +733,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BSOC-112",
     fullName: "Sociological Research Methods -I",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -742,7 +742,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BSOC-113",
     fullName: "Sociological Thinkers -II",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -751,7 +751,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BSOC-114",
     fullName: "Sociological Research Methods -II",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -760,7 +760,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BECE-141",
     fullName: "Economics of Health and Education",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -769,7 +769,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BECE-142",
     fullName: "Applied Econometrics",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -778,7 +778,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BECE-143",
     fullName: "Environmental Economics",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -787,7 +787,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BECE-144",
     fullName: "Financial Economics",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -796,7 +796,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BHIE-141",
     fullName: "History of China (C. 1840 – 1978)",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -805,7 +805,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BHIE-142",
     fullName: "History of Modern East Asia: Japan (C. 1868 – 1945)",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -814,7 +814,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BHIE-143",
     fullName: "History of Environment",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -823,7 +823,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BHIE-144",
     fullName: "Traditions of History Writing in India",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -832,7 +832,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BPSE-141",
     fullName: "Gandhi and the Contemporary World",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -841,7 +841,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BPSE-142",
     fullName: "India’s Foreign Policy in a Globalising World",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -850,7 +850,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BPSE-143",
     fullName: "State Politics in India",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -859,7 +859,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BPSE-144",
     fullName: "Introduction to South Asia",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -868,7 +868,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BPSE-145",
     fullName: "Democracy and Development in Northeast India",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -877,7 +877,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BPSE-146",
     fullName: "Conflict Resolution and Peace Building",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -886,7 +886,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BPAE-141",
     fullName: "Right to Information",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -895,7 +895,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BPAE-142",
     fullName: "Organizational Behaviour",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -904,7 +904,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BPAE-143",
     fullName: "Administrative System in BRICS",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -913,7 +913,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BPAE-144",
     fullName: "Social Policies and Administration",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -922,7 +922,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BPCE-141",
     fullName: "Positive Psychology",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -931,7 +931,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BPCE-142",
     fullName: "Forensic Psychology",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -940,7 +940,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BPCE-143",
     fullName: "Environmental Psychology",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   { code: "BPCE-144", title: "Dissertation" },
@@ -950,7 +950,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BSOE-141",
     fullName: "Urban Sociology",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -959,7 +959,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BSOE-142",
     fullName: "Indian Sociological Traditions",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -968,7 +968,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BSOE-143",
     fullName: "Environmental Sociology",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -977,7 +977,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BSOE-144",
     fullName: "Reading Ethnographies",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -986,7 +986,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BANE-143",
     fullName: "Tribal Cultures of India",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -995,7 +995,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BANE-144",
     fullName: "Visual Anthropology",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -1004,7 +1004,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BANS-183",
     fullName: "Tourism Anthropology",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -1013,7 +1013,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BANS-184",
     fullName: "Public Health and Epidemiology",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   { code: "BECS-184", title: "Data Analysis" },
@@ -1023,7 +1023,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BPCS-183",
     fullName: "Emotional Intelligence",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -1032,7 +1032,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BPCS-184",
     fullName: "School Psychology",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -1041,7 +1041,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BPCS-185",
     fullName: "Developing Emotional Competence",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -1050,7 +1050,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BPCS-186",
     fullName: "Managing Stress",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -1059,7 +1059,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BPCS-187",
     fullName: "Managing Human Resources",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -1068,7 +1068,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BPCS-188",
     fullName: "Application of Social Psychology",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -1077,7 +1077,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BPAS-184",
     fullName: "Logistics Management",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -1086,7 +1086,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BPAS-186",
     fullName: "Stress and Time Management",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -1095,7 +1095,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BSOS-184",
     fullName: "Techniques of Ethnographic Film Making",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -1104,7 +1104,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BSOS-185",
     fullName: "Society through the Visual",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -1113,7 +1113,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BHDS-183",
     fullName: "अनुवाद �सद्धांत और प्र�व�ध",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -1122,7 +1122,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BHDS-184",
     fullName: "रे �डयो लेखन",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -1131,7 +1131,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BEGS-183",
     fullName: "Writing And Study Skills",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -1140,7 +1140,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BEGS-185",
     fullName: "English Language Teaching",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -1149,7 +1149,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BEGS-186",
     fullName: "Business Communication",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -1158,7 +1158,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BGDG-172",
     fullName: "Gender Sensitization: Society and Culture",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -1167,7 +1167,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BPCG-171",
     fullName: "General Psychology",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -1176,7 +1176,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BPCG-172",
     fullName: "Youth, Gender and Identity",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -1185,7 +1185,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BPCG-173",
     fullName: "Psychology for Health and Well-being",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -1194,7 +1194,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BPCG-174",
     fullName: "Psychology and Media",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -1203,7 +1203,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BPCG-175",
     fullName: "Psychology for Living",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -1212,7 +1212,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BPCG-176",
     fullName: "Psychology of Gender",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -1221,7 +1221,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BPAG-171",
     fullName: "Disaster Management",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -1230,7 +1230,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BPAG-172",
     fullName: "Governance: Issues and Challenges",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -1239,7 +1239,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BPAG-173",
     fullName: "E-Governance",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -1248,7 +1248,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BPAG-174",
     fullName: "Sustainable Development",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -1257,7 +1257,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BSOG-171",
     fullName: "Indian Society: Images and Realities",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -1266,7 +1266,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BSOG-173",
     fullName: "Rethinking Development",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -1275,7 +1275,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BSOG-176",
     fullName: "Economy and Society",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -1284,7 +1284,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BHDG-173",
     fullName: "समाचार पत्र और फ�चर लेखन",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -1293,7 +1293,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BEGG-171",
     fullName: "Media and Communication Skills",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -1302,7 +1302,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BEGG-172",
     fullName: "Language and Linguistics",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -1311,7 +1311,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BEGG-173",
     fullName: "Academic Writing & Composition",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -1320,7 +1320,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BEGG-174",
     fullName: "Creative Writing",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -1329,7 +1329,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BABG-171",
     fullName: "Understanding Ambedkar",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -1338,7 +1338,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BPYG-171",
     fullName: "Applied Ethics",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -1347,7 +1347,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BPYG-172",
     fullName: "Philosophy of Religion",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -1356,7 +1356,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BANC-101",
     fullName: "Introduction to Biological Anthropology",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -1365,7 +1365,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BANC-102",
     fullName: "Introduction to Social and Cultural Anthropology",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -1374,7 +1374,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BANC-103",
     fullName: "Archaeological Anthropology",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -1383,7 +1383,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BANC-104",
     fullName: "Fundamentals of Human Origin and Evolution",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -1392,7 +1392,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BANC-105",
     fullName: "Tribes and Peasants in India",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -1401,7 +1401,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BANC-106",
     fullName: "Human Ecology: Biological and Cultural Dimensions",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -1410,7 +1410,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BANC-107",
     fullName: "Biological Diversity in Human Populations",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -1419,7 +1419,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BANC-108",
     fullName: "Theories of Culture and Society",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -1428,7 +1428,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BANC-109",
     fullName: "Human Growth and Development",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -1437,7 +1437,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BANC-110",
     fullName: "Research Methods",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -1446,7 +1446,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BANC-111",
     fullName: "Human Population Genetics",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -1455,7 +1455,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BANC-112",
     fullName: "Anthropology in Practice",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -1464,7 +1464,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BANC-113",
     fullName: "Forensic Anthropology",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -1473,7 +1473,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BANC-114",
     fullName: "Anthropology of India",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -1482,7 +1482,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BANE-141",
     fullName: "Physiological Anthropology",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -1491,7 +1491,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BANE-143",
     fullName: "Tribal Cultures of India",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -1500,7 +1500,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BANE-144",
     fullName: "Visual Anthropology",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -1509,7 +1509,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BANE-147",
     fullName: "Urban Anthropology",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   { code: "BANE-154", title: "Dissertation" },
@@ -1519,7 +1519,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BSOE-144",
     fullName: "Reading Ethnographies",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -1528,7 +1528,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BEVAE-181",
     fullName: "Environmental Studies",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -1537,7 +1537,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BEGAE-182",
     fullName: "English Communication Skills",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -1546,7 +1546,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BHDAE-182",
     fullName: "�हंद� भाषा और संप्रेषण",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -1555,7 +1555,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BANS-183",
     fullName: "Tourism Anthropology",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -1564,7 +1564,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BANS-184",
     fullName: "Public Health and Epidemiology",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -1573,7 +1573,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BECS-184",
     fullName: "Data Analysis",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -1582,7 +1582,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BPCS-183",
     fullName: "Emotional Intelligence",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -1591,7 +1591,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BPCS-184",
     fullName: "School Psychology",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -1600,7 +1600,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BPCS-185",
     fullName: "Developing Emotional Competence",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -1609,7 +1609,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BPCS-186",
     fullName: "Managing Stress",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -1618,7 +1618,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BPCS-187",
     fullName: "Managing Human Resources",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -1627,7 +1627,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BPCS-188",
     fullName: "Application of Social Psychology",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -1636,7 +1636,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BPAS-184",
     fullName: "Logistics Management",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -1645,7 +1645,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BPAS-186",
     fullName: "Stress and Time Management",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -1654,7 +1654,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BSOS-184",
     fullName: "Techniques of Ethnographic Film Making",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -1663,7 +1663,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BSOS-185",
     fullName: "Society through the Visual",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -1672,7 +1672,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BHDS-183",
     fullName: "अनुवाद �सद्धांत और प्र�व�ध",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   { code: "BHDS-184", title: "रे �डयो लेखन" },
@@ -1682,7 +1682,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BEGS-183",
     fullName: "Writing And Study Skills",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -1691,7 +1691,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BEGS-185",
     fullName: "English Language Teaching",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -1700,7 +1700,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BEGS-186",
     fullName: "Business Communication",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -1709,7 +1709,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BGDG-172",
     fullName: "Gender Sensitization: Society and Culture",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -1718,7 +1718,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BPCG-171",
     fullName: "General Psychology",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -1727,7 +1727,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BPCG-172",
     fullName: "Youth, Gender and Identity",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -1736,7 +1736,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BPCG-173",
     fullName: "Psychology for Health and Well-being",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -1745,7 +1745,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BPCG-174",
     fullName: "Psychology and Media",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -1754,7 +1754,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BPCG-175",
     fullName: "Psychology for Living",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -1763,7 +1763,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BPCG-176",
     fullName: "Psychology of Gender",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -1772,7 +1772,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BPAG-171",
     fullName: "Disaster Management",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -1781,7 +1781,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BPAG-172",
     fullName: "Governance: Issues and Challenges",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   { code: "BPAG-173", title: "E-Governance" },
@@ -1791,7 +1791,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BPAG-174",
     fullName: "Sustainable Development",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -1800,7 +1800,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BSOG-171",
     fullName: "Indian Society: Images and Realities",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -1809,7 +1809,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BSOG-173",
     fullName: "Rethinking Development",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -1818,7 +1818,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BSOG-176",
     fullName: "Economy and Society",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -1827,7 +1827,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BHDG-173",
     fullName: "समाचार पत्र और फ�चर लेखन",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -1836,7 +1836,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BEGG-171",
     fullName: "Media and Communication Skills",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -1845,7 +1845,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BEGG-172",
     fullName: "Language and Linguistics",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -1854,7 +1854,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BEGG-173",
     fullName: "Academic Writing & Composition",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -1863,7 +1863,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BEGG-174",
     fullName: "Creative Writing",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -1872,7 +1872,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BABG-171",
     fullName: "Understanding Ambedkar",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -1881,7 +1881,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BPYG-171",
     fullName: "Applied Ethics",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -1890,7 +1890,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BPYG-172",
     fullName: "Philosophy of Religion",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -1899,7 +1899,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BBCCT-101",
     fullName: "Molecules of Life",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -1908,7 +1908,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BBCCL-102",
     fullName: "Molecules of Life: Laboratory",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -1917,7 +1917,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BBCCT-103",
     fullName: "Cell Biology",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -1926,7 +1926,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BBCCL-104",
     fullName: "Cell Biology: Laboratory",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -1935,7 +1935,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BBCCT-105",
     fullName: "Proteins",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -1944,7 +1944,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BBCCL-106",
     fullName: "Proteins: Laboratory",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -1953,7 +1953,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BBCCT-107",
     fullName: "Enzymes",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -1962,7 +1962,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BBCCL-108",
     fullName: "Enzymes: Laboratory",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -1971,7 +1971,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BBCCT-109",
     fullName: "Metabolism of Carbohydrates and Lipids",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -1980,7 +1980,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BBCCL-110",
     fullName: "Metabolism of Carbohydrates and Lipids",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -1989,7 +1989,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BBCCT-111",
     fullName: "Membrane Biology and Bioenergetics",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -1998,7 +1998,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BBCCL-112",
     fullName: "Membrane Biology And Bioenergetics: Laboratory",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -2007,7 +2007,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BBCCT-113",
     fullName: "Metabolism of Amino Acids and Nucleotides",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -2016,7 +2016,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BBCCL-114",
     fullName: "Metabolism of Amino Acids and Nucleotides: Laboratory",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -2025,7 +2025,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BBCCT-115",
     fullName: "Human Physiology",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -2034,7 +2034,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BBCCL-116",
     fullName: "Human Physiology: Laboratory",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -2043,7 +2043,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BBCCT-117",
     fullName: "Gene Organization Replication and Repair",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -2052,7 +2052,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BBCCL-118",
     fullName: "Gene Organization Replication and Repair: Laboratory",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -2061,7 +2061,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BBCCT-119",
     fullName: "Hormone: Biochemistry and Function",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -2070,7 +2070,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BBCCL-120",
     fullName: "Hormone: Biochemistry and Function: Laboratory",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -2079,7 +2079,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BBCCT-121",
     fullName: "Concepts in Genetics",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -2088,7 +2088,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BBCCL-122",
     fullName: "Concepts in Genetics: Laboratory",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -2097,7 +2097,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BBCCT-123",
     fullName: "Gene Expression and Regulation",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -2106,7 +2106,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BBCCL-124",
     fullName: "Gene Expression and Regulation: Laboratory",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -2115,7 +2115,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BBCCT-125",
     fullName: "Genetic Engineering and Biotechnology",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -2124,7 +2124,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BBCCT-126",
     fullName: "Genetic Engineering and Biotechnology: Laboratory",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -2133,7 +2133,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BBCCT-127",
     fullName: "Immunology",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -2142,7 +2142,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BBCCL-128",
     fullName: "Immunology: Laboratory",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -2151,7 +2151,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BBCET-141",
     fullName: "Nutritional Biochemistry",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -2160,7 +2160,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BBCEL-142",
     fullName: "Nutritional Biochemistry: Laboratory",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -2169,7 +2169,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BBCET-143",
     fullName: "Basic Microbiology",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -2178,7 +2178,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BBCEL-144",
     fullName: "Basic Microbiology: Laboratory",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -2187,7 +2187,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BBCET-145",
     fullName: "Molecular basis of non-infectious human diseases",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -2196,7 +2196,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BBCEL-146",
     fullName: "Molecular basis of non-infectious human diseases: Laboratory",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -2205,7 +2205,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BBCET-151",
     fullName: "Plant Biochemistry",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -2214,7 +2214,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BBCEL-152",
     fullName: "Plant Biochemistry: Laboratory",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -2223,7 +2223,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BEVAE-181",
     fullName: "Environmental Studies",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -2232,7 +2232,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BEGAE-182",
     fullName: "English Communication Skills",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -2241,7 +2241,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BHDAE-182",
     fullName: "�हंद� भाषा और संप्रेषण",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -2250,7 +2250,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BBCS-183",
     fullName: "Tools & Techniques in Biochemistry",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -2259,7 +2259,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BBCS-185",
     fullName: "Bioinformatics",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -2270,7 +2270,7 @@ export const bachelorsHonoursDegreeCourses = [
     fullName:
       "Atomic Structure, Bonding, General Organic Chemistry and Aliphatic Hydrocarbons",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -2281,7 +2281,7 @@ export const bachelorsHonoursDegreeCourses = [
     fullName:
       "Atomic Structure, Bonding, General Organic Chemistry and Aliphatic Hydrocarbons: Laboratory",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -2292,7 +2292,7 @@ export const bachelorsHonoursDegreeCourses = [
     fullName:
       "Chemical Energetics, Equilibria and Functional Group Organic Chemistry I",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -2303,7 +2303,7 @@ export const bachelorsHonoursDegreeCourses = [
     fullName:
       "Chemical Energetics, Equilibria and Functional Group Organic Chemistry I: Laboratory",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -2312,7 +2312,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BBYCT-131",
     fullName: "Biodiversity (Microbes, Algae, Fungi and Archegoniates)",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -2323,7 +2323,7 @@ export const bachelorsHonoursDegreeCourses = [
     fullName:
       "Biodiversity (Microbes, Algae, Fungi and Archegoniates): Laboratory",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -2332,7 +2332,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BZYCT-131",
     fullName: "Animal Diversity",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -2341,7 +2341,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BZYCL-132",
     fullName: "Animal Diversity: Laboratory",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -2350,7 +2350,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BEGC-101",
     fullName: "Indian Classical Literature",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -2359,7 +2359,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BEGC-102",
     fullName: "European Classical Literature",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -2368,7 +2368,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BEGC-103",
     fullName: "Indian Writing in English",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -2377,7 +2377,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BEGC-104",
     fullName: "British Poetry and Drama: 14th- 17th Centuries",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -2386,7 +2386,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BEGC-105",
     fullName: "American Literature",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -2395,7 +2395,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BEGC-106",
     fullName: "Popular Literature",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -2404,7 +2404,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BEGC-107",
     fullName: "British Poetry and Drama: 17th & 18th Centuries",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -2413,7 +2413,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BEGC-108",
     fullName: "British Literature: 18th Century",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -2422,7 +2422,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BEGC-109",
     fullName: "British Romantic Literature",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -2431,7 +2431,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BEGC-110",
     fullName: "British Literature: 19th Century",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -2440,7 +2440,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BEGC-111",
     fullName: "Women's Writing",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -2449,7 +2449,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BEGC-112",
     fullName: "British Literature: The Early 20th Century",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -2458,7 +2458,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BEGC-113",
     fullName: "Modern European Drama",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -2467,7 +2467,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BEGC-114",
     fullName: "Postcolonial Literatures",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -2476,7 +2476,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BEGE-141",
     fullName: "Understanding Prose",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -2485,7 +2485,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BEGE-143",
     fullName: "Understanding Poetry",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -2494,7 +2494,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BEGE-142",
     fullName: "Understanding Drama",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -2503,7 +2503,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BEGE-144",
     fullName: "Understanding The Novel",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -2512,7 +2512,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BEVAE-181",
     fullName: "Envirnoment Studies",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -2521,7 +2521,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BEGAE-182",
     fullName: "English Communication Skills",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -2530,7 +2530,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BANS-183",
     fullName: "Tourism Anthropology",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -2539,7 +2539,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BEGS-183",
     fullName: "Writing and Study Skills",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -2548,7 +2548,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BPCS-186",
     fullName: "Managing Stress",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -2557,7 +2557,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BSOG-171",
     fullName: "Indian Society: Images and Realities",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -2566,7 +2566,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BGDG-172",
     fullName: "Gender Sensitisation, Society & culture",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -2575,7 +2575,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BSOG-173",
     fullName: "Rethinking Development",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -2584,7 +2584,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BHDG-173",
     fullName: "समाचार पत्र और फ�चर लेखन",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -2593,7 +2593,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BPCG-174",
     fullName: "Psychology and Media",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -2602,7 +2602,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BHMCT-101",
     fullName: "Introduction to Hindustani Music and its Fundamentals",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -2611,7 +2611,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BHMCL-102",
     fullName: "Hindustani Music Vocal Practicum - 1",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -2620,7 +2620,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BHMCT-103",
     fullName: "Fundamentals of Hindustani Music",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -2629,7 +2629,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BHMCL-104",
     fullName: "Hindustani Music Vocal Practicum - 2",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -2638,7 +2638,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BHMCT-105",
     fullName: "Study of Forms, Instruments and Traditions of Hindustani Music",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -2647,7 +2647,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BHMCL-106",
     fullName: "Hindustani Music Vocal Practicum – 3",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -2656,7 +2656,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BHMCL-107",
     fullName: "Hindustani Music Vocal Practicum – 4",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -2665,7 +2665,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BHMCT-108",
     fullName: "Study of Treatises, Gharanas, Elementary Karnatak Music",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -2674,7 +2674,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BHMCP-109",
     fullName: "Dissertation",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -2683,7 +2683,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BHMCL-110",
     fullName: "Hindustani Music Vocal Practicum – 5",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -2692,7 +2692,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BHMCT-111",
     fullName: "Study of Modern Works, Gharanas, Biographies and Other Genres",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -2701,7 +2701,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BHMCL-112",
     fullName: "Hindustani Music Vocal Practicum – 6",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -2712,7 +2712,7 @@ export const bachelorsHonoursDegreeCourses = [
     fullName:
       "Study of Gharanas, Elementary Western Music, and Interdisciplinary study of Music",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -2721,7 +2721,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BHMCL-114",
     fullName: "Hindustani Music Vocal Practicum – 7",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -2730,7 +2730,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BPFT-141",
     fullName: "Study of Natyashastra",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -2739,7 +2739,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BPFT-142",
     fullName: "Arts and Aesthetics: Indian & Western Concepts",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -2748,7 +2748,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BFPT-143",
     fullName: "Pedagogy of Performing Arts",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -2757,7 +2757,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BFPT-144",
     fullName: "Integrated Performance project (Practical)",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -2766,7 +2766,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BEVAE-181",
     fullName: "Environmental Studies",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -2775,7 +2775,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BEGAE-182",
     fullName: "Communication Skills in English Language",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -2784,7 +2784,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BHDAE-182",
     fullName: "Hindi Bhasha aur Sampreshan",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -2793,7 +2793,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BANS-183",
     fullName: "Tourism Anthropology",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -2802,7 +2802,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BPCS-186",
     fullName: "Managing Stress",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -2811,7 +2811,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BSOG-171",
     fullName: "Indian Society: Images and Reality",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -2820,7 +2820,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BGDG-172",
     fullName: "Gender Sensibility",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -2829,7 +2829,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BSOG-173",
     fullName: "Rethinking Development",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
   {
@@ -2838,7 +2838,7 @@ export const bachelorsHonoursDegreeCourses = [
     name: "BPCG-174",
     fullName: "Psychology and Media",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BCOMG",
     term: 1,
   },
 ];

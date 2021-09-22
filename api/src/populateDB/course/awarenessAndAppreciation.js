@@ -5,7 +5,7 @@ export const awarenessAndAppreciationCourses = [
     name: "Module-1",
     fullName: "Introduction",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BTS",
     term: 1,
   },
   {
@@ -14,7 +14,7 @@ export const awarenessAndAppreciationCourses = [
     name: "Module-2",
     fullName: "Animal Breeding",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BTS",
     term: 1,
   },
   {
@@ -23,7 +23,7 @@ export const awarenessAndAppreciationCourses = [
     name: "Module-3",
     fullName: "Reproduction",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BTS",
     term: 1,
   },
   {
@@ -32,7 +32,7 @@ export const awarenessAndAppreciationCourses = [
     name: "Module-4",
     fullName: "Calving and Calf Rearing",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BTS",
     term: 1,
   },
   {
@@ -41,7 +41,7 @@ export const awarenessAndAppreciationCourses = [
     name: "Module-5",
     fullName: "Animal Nutrition/Feed and Fodder Management",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BTS",
     term: 1,
   },
   {
@@ -50,7 +50,7 @@ export const awarenessAndAppreciationCourses = [
     name: "Module-6",
     fullName: "Milk Production",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BTS",
     term: 1,
   },
   {
@@ -59,7 +59,7 @@ export const awarenessAndAppreciationCourses = [
     name: "Module-7",
     fullName: "Milk Testing, Milk Handling and Storage",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BTS",
     term: 1,
   },
   {
@@ -68,7 +68,7 @@ export const awarenessAndAppreciationCourses = [
     name: "Module-8",
     fullName: "Animal Housing and Shelter",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BTS",
     term: 1,
   },
   {
@@ -77,7 +77,7 @@ export const awarenessAndAppreciationCourses = [
     name: "Module-9",
     fullName: "Health Management",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BTS",
     term: 1,
   },
   {
@@ -86,7 +86,7 @@ export const awarenessAndAppreciationCourses = [
     name: "Module-10",
     fullName: "Animal Disease Prevention and Control",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BTS",
     term: 1,
   },
   {
@@ -95,7 +95,7 @@ export const awarenessAndAppreciationCourses = [
     name: "Module-11",
     fullName: "Disposal of Dung and Dairy Waste Materials",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BTS",
     term: 1,
   },
   {
@@ -104,7 +104,7 @@ export const awarenessAndAppreciationCourses = [
     name: "Module-12",
     fullName: "Dairy Farm Equipment",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BTS",
     term: 1,
   },
   {
@@ -113,7 +113,7 @@ export const awarenessAndAppreciationCourses = [
     name: "Module-13",
     fullName: "Dairy Farm Economics and Accounting",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BTS",
     term: 1,
   },
   {
@@ -122,7 +122,7 @@ export const awarenessAndAppreciationCourses = [
     name: "Module-14",
     fullName: "Role of different Agencies in Dairy Development",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "BTS",
     term: 1,
   },
 ];
