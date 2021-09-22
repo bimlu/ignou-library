@@ -5,7 +5,7 @@ export const diplomaCourses = [
     name: "DECE-1",
     fullName: "Organizing Child Care Services",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "MCOM",
     term: 1,
   },
   {
@@ -14,7 +14,7 @@ export const diplomaCourses = [
     name: "DECE-2",
     fullName: "Child Health and Nutrition",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "MCOM",
     term: 1,
   },
   {
@@ -23,7 +23,7 @@ export const diplomaCourses = [
     name: "DECE-3",
     fullName: "Services and Programmes for Children",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "MCOM",
     term: 1,
   },
   {
@@ -33,7 +33,7 @@ export const diplomaCourses = [
     fullName:
       "Project Work: Working with Young Children in a Child Care Setting",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "MCOM",
     term: 1,
   },
   {
@@ -42,7 +42,7 @@ export const diplomaCourses = [
     name: "DNHE-1",
     fullName: "Nutrition for the Community",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "MCOM",
     term: 1,
   },
   {
@@ -51,7 +51,7 @@ export const diplomaCourses = [
     name: "DNHE-2",
     fullName: "Public Health and Hygiene",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "MCOM",
     term: 1,
   },
   {
@@ -60,7 +60,7 @@ export const diplomaCourses = [
     name: "DNHE-3",
     fullName: "Nutrition and Health Education",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "MCOM",
     term: 1,
   },
   {
@@ -69,7 +69,7 @@ export const diplomaCourses = [
     name: "DNHE-4",
     fullName: "Project Work : Nutrition and Health Education",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "MCOM",
     term: 1,
   },
   {
@@ -78,7 +78,7 @@ export const diplomaCourses = [
     name: "BPR-1",
     fullName: "Panchayats in India: The Context",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "MCOM",
     term: 1,
   },
   {
@@ -87,7 +87,7 @@ export const diplomaCourses = [
     name: "BPR-2",
     fullName: "Decentralized Planning and Panchayati Raj",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "MCOM",
     term: 1,
   },
   {
@@ -96,7 +96,7 @@ export const diplomaCourses = [
     name: "BPR-3",
     fullName: "Panchayati Raj Institutions and Anti Poverty Programme",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "MCOM",
     term: 1,
   },
   {
@@ -105,7 +105,7 @@ export const diplomaCourses = [
     name: "BPR-4",
     fullName: "Project Work",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "MCOM",
     term: 1,
   },
   {
@@ -114,7 +114,7 @@ export const diplomaCourses = [
     name: "BPR-5",
     fullName: "Basic Computer Literacy",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "MCOM",
     term: 1,
   },
   {
@@ -123,7 +123,7 @@ export const diplomaCourses = [
     name: "BHC-11",
     fullName: "Basics of Event Management",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "MCOM",
     term: 1,
   },
   {
@@ -132,7 +132,7 @@ export const diplomaCourses = [
     name: "BHC-12",
     fullName: "Event Planning",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "MCOM",
     term: 1,
   },
   {
@@ -141,7 +141,7 @@ export const diplomaCourses = [
     name: "BHC-13",
     fullName: "Event Coordination and Control",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "MCOM",
     term: 1,
   },
   {
@@ -150,7 +150,7 @@ export const diplomaCourses = [
     name: "BHC-14",
     fullName: "Event Marketing and Promotion",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "MCOM",
     term: 1,
   },
   {
@@ -159,7 +159,7 @@ export const diplomaCourses = [
     name: "BHC-15",
     fullName: "Event Financing and Accounting",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "MCOM",
     term: 1,
   },
   {
@@ -168,7 +168,7 @@ export const diplomaCourses = [
     name: "BHCP-11",
     fullName: "Internship",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "MCOM",
     term: 1,
   },
   {
@@ -177,7 +177,7 @@ export const diplomaCourses = [
     name: "BHCL-11",
     fullName: "Practicum",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "MCOM",
     term: 1,
   },
   {
@@ -186,7 +186,7 @@ export const diplomaCourses = [
     name: "TS-1",
     fullName: "Foundation Course in Tourism",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "MCOM",
     term: 1,
   },
   {
@@ -195,7 +195,7 @@ export const diplomaCourses = [
     name: "TS-2",
     fullName: "Tourism Development: Products, Operations and Case Studies",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "MCOM",
     term: 1,
   },
   {
@@ -204,7 +204,7 @@ export const diplomaCourses = [
     name: "TS-3",
     fullName: "Management in Tourism",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "MCOM",
     term: 1,
   },
   {
@@ -213,7 +213,7 @@ export const diplomaCourses = [
     name: "TS-4",
     fullName: "Indian Culture - Perspective for Tourism",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "MCOM",
     term: 1,
   },
   {
@@ -222,7 +222,7 @@ export const diplomaCourses = [
     name: "PTS-4",
     fullName: "Project on Indian Culture: Perspective for Tourism",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "MCOM",
     term: 1,
   },
   {
@@ -231,7 +231,7 @@ export const diplomaCourses = [
     name: "TS-5",
     fullName: "Ecology, Environment and Tourism",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "MCOM",
     term: 1,
   },
   {
@@ -240,7 +240,7 @@ export const diplomaCourses = [
     name: "PTS-5",
     fullName: "Project on Ecology, Environment and Tourism",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "MCOM",
     term: 1,
   },
   {
@@ -249,7 +249,7 @@ export const diplomaCourses = [
     name: "TS-6",
     fullName: "Tourism Marketing",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "MCOM",
     term: 1,
   },
   {
@@ -258,7 +258,7 @@ export const diplomaCourses = [
     name: "PTS-6",
     fullName: "Project on Tourism Marketing",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "MCOM",
     term: 1,
   },
   {
@@ -267,7 +267,7 @@ export const diplomaCourses = [
     name: "DCE-1",
     fullName: "General Principles of Writing",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "MCOM",
     term: 1,
   },
   {
@@ -276,7 +276,7 @@ export const diplomaCourses = [
     name: "DCE-6",
     fullName: "Guided Project Work",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "MCOM",
     term: 1,
   },
   {
@@ -285,7 +285,7 @@ export const diplomaCourses = [
     name: "DCE-2",
     fullName: "Feature Writing",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "MCOM",
     term: 1,
   },
   {
@@ -294,7 +294,7 @@ export const diplomaCourses = [
     name: "DCE-3",
     fullName: "Short Story",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "MCOM",
     term: 1,
   },
   {
@@ -303,7 +303,7 @@ export const diplomaCourses = [
     name: "DCE-4",
     fullName: "Writing for Media: Radio and Television",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "MCOM",
     term: 1,
   },
   {
@@ -312,7 +312,7 @@ export const diplomaCourses = [
     name: "DCE-5",
     fullName: "Writing Poetry",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "MCOM",
     term: 1,
   },
   {
@@ -321,7 +321,7 @@ export const diplomaCourses = [
     name: "OUL-3",
     fullName: "History of Urdu Language & Literature",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "MCOM",
     term: 1,
   },
   {
@@ -330,7 +330,7 @@ export const diplomaCourses = [
     name: "OULP-1",
     fullName: "Project Work",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "MCOM",
     term: 1,
   },
   {
@@ -339,7 +339,7 @@ export const diplomaCourses = [
     name: "OULE-1",
     fullName: "Contemporary Urdu Poetry",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "MCOM",
     term: 1,
   },
   {
@@ -348,7 +348,7 @@ export const diplomaCourses = [
     name: "OULE-2",
     fullName: "Contemporary Urdu Fiction",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "MCOM",
     term: 1,
   },
   {
@@ -357,7 +357,7 @@ export const diplomaCourses = [
     name: "OULE-5",
     fullName: "Principle of Translation",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "MCOM",
     term: 1,
   },
   {
@@ -366,7 +366,7 @@ export const diplomaCourses = [
     name: "BPVI-1",
     fullName: "Food Fundamentals",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "MCOM",
     term: 1,
   },
   {
@@ -375,7 +375,7 @@ export const diplomaCourses = [
     name: "BPVI-2",
     fullName: "Principles of Post Harvest Management of Fruits and Vegetables",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "MCOM",
     term: 1,
   },
   {
@@ -384,7 +384,7 @@ export const diplomaCourses = [
     name: "BPVI-3",
     fullName: "Food Chemistry and Physiology",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "MCOM",
     term: 1,
   },
   {
@@ -393,7 +393,7 @@ export const diplomaCourses = [
     name: "BPVI-4",
     fullName: "Food Processing and Engineering-I",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "MCOM",
     term: 1,
   },
   {
@@ -402,7 +402,7 @@ export const diplomaCourses = [
     name: "BPVI-5",
     fullName: "Food Microbiology",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "MCOM",
     term: 1,
   },
   {
@@ -411,7 +411,7 @@ export const diplomaCourses = [
     name: "BPVI-6",
     fullName: "Food Processing and Engineering-II",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "MCOM",
     term: 1,
   },
   {
@@ -420,7 +420,7 @@ export const diplomaCourses = [
     name: "BPVI-7",
     fullName: "Food Quality Testing and Evaluation",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "MCOM",
     term: 1,
   },
   {
@@ -429,7 +429,7 @@ export const diplomaCourses = [
     name: "BPVI-8",
     fullName: "Entrepreneurship and Marketing",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "MCOM",
     term: 1,
   },
   {
@@ -438,7 +438,7 @@ export const diplomaCourses = [
     name: "BPVI-11",
     fullName: "Milk Production and Quality of Milk",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "MCOM",
     term: 1,
   },
   {
@@ -447,7 +447,7 @@ export const diplomaCourses = [
     name: "BPVI-12",
     fullName: "Dairy Equipment and Utilities",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "MCOM",
     term: 1,
   },
   {
@@ -456,7 +456,7 @@ export const diplomaCourses = [
     name: "BPVI-13",
     fullName: "Milk Processing and Packaging",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "MCOM",
     term: 1,
   },
   {
@@ -465,7 +465,7 @@ export const diplomaCourses = [
     name: "BPVI-14",
     fullName: "Dairy Products – I",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "MCOM",
     term: 1,
   },
   {
@@ -474,7 +474,7 @@ export const diplomaCourses = [
     name: "BPVI-15",
     fullName: "Dairy Products - II",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "MCOM",
     term: 1,
   },
   {
@@ -483,7 +483,7 @@ export const diplomaCourses = [
     name: "BPVI-16",
     fullName: "Dairy Products - III",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "MCOM",
     term: 1,
   },
   {
@@ -492,7 +492,7 @@ export const diplomaCourses = [
     name: "BPVI-17",
     fullName: "Quality Assurance",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "MCOM",
     term: 1,
   },
   {
@@ -501,7 +501,7 @@ export const diplomaCourses = [
     name: "BPVI-18",
     fullName: "Dairy Management and Entrepreneurship",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "MCOM",
     term: 1,
   },
   {
@@ -510,7 +510,7 @@ export const diplomaCourses = [
     name: "BPVI-21",
     fullName: "Fundamental of Food and Meat Science",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "MCOM",
     term: 1,
   },
   {
@@ -519,7 +519,7 @@ export const diplomaCourses = [
     name: "BPVI-22",
     fullName: "Meat Animals and Abattoir Practices",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "MCOM",
     term: 1,
   },
   {
@@ -528,7 +528,7 @@ export const diplomaCourses = [
     name: "BPVI-23",
     fullName: "Fresh Meat Technology",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "MCOM",
     term: 1,
   },
   {
@@ -537,7 +537,7 @@ export const diplomaCourses = [
     name: "BPVI-24",
     fullName: "Processed Meat Technology",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "MCOM",
     term: 1,
   },
   {
@@ -546,7 +546,7 @@ export const diplomaCourses = [
     name: "BPVI-25",
     fullName: "Meat Packaging and Quality Assurance",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "MCOM",
     term: 1,
   },
   {
@@ -555,7 +555,7 @@ export const diplomaCourses = [
     name: "BPVI-26",
     fullName: "Poultry Products Technology",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "MCOM",
     term: 1,
   },
   {
@@ -564,7 +564,7 @@ export const diplomaCourses = [
     name: "BPVI-27",
     fullName: "Utilization of Animal By-Products",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "MCOM",
     term: 1,
   },
   {
@@ -573,7 +573,7 @@ export const diplomaCourses = [
     name: "BPVI-28",
     fullName: "Marketing and Entrepreneurship",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "MCOM",
     term: 1,
   },
   {
@@ -582,7 +582,7 @@ export const diplomaCourses = [
     name: "BNRI-101",
     fullName: "Fundamentals of Watershed Management",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "MCOM",
     term: 1,
   },
   {
@@ -591,7 +591,7 @@ export const diplomaCourses = [
     name: "BNRI-102",
     fullName: "Elements of Hydrology",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "MCOM",
     term: 1,
   },
   {
@@ -600,7 +600,7 @@ export const diplomaCourses = [
     name: "BNRI-103",
     fullName: "Soil and Water Conservation",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "MCOM",
     term: 1,
   },
   {
@@ -609,7 +609,7 @@ export const diplomaCourses = [
     name: "BNRI-104",
     fullName: "Rainfed Farming",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "MCOM",
     term: 1,
   },
   {
@@ -618,7 +618,7 @@ export const diplomaCourses = [
     name: "BNRI-105",
     fullName: "Livestock and Pasture Management",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "MCOM",
     term: 1,
   },
   {
@@ -627,7 +627,7 @@ export const diplomaCourses = [
     name: "BNRI-106",
     fullName: "Horticulture and Agro-Forestry Systems",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "MCOM",
     term: 1,
   },
   {
@@ -636,7 +636,7 @@ export const diplomaCourses = [
     name: "BNRI-107",
     fullName: "Funding, Monitoring, Evaluation & Capacity Building",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "MCOM",
     term: 1,
   },
   {
@@ -645,7 +645,7 @@ export const diplomaCourses = [
     name: "BNRP-108",
     fullName: "Project Formulation",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "MCOM",
     term: 1,
   },
   {
@@ -654,7 +654,7 @@ export const diplomaCourses = [
     name: "BAP-002",
     fullName: "Basic Horticulture",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "MCOM",
     term: 1,
   },
   {
@@ -663,7 +663,7 @@ export const diplomaCourses = [
     name: "BAPI-004",
     fullName: "Production Technology of Fruit Crops",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "MCOM",
     term: 1,
   },
   {
@@ -672,7 +672,7 @@ export const diplomaCourses = [
     name: "BAPI-005",
     fullName: "Production Technology of Vegetable Crops",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "MCOM",
     term: 1,
   },
   {
@@ -681,7 +681,7 @@ export const diplomaCourses = [
     name: "BAPI-006",
     fullName: "Floriculture and Landscaping",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "MCOM",
     term: 1,
   },
   {
@@ -690,7 +690,7 @@ export const diplomaCourses = [
     name: "BAPI-007",
     fullName: "Plant Propagation and Nursery Management",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "MCOM",
     term: 1,
   },
   {
@@ -699,7 +699,7 @@ export const diplomaCourses = [
     name: "BWEE-12",
     fullName: "Women and Society: Global Concerns and Local Issues",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "MCOM",
     term: 1,
   },
   {
@@ -708,7 +708,7 @@ export const diplomaCourses = [
     name: "BWEE-4",
     fullName: "Strategies for Women’s Empowerment",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "MCOM",
     term: 1,
   },
   {
@@ -717,7 +717,7 @@ export const diplomaCourses = [
     name: "BWEE-5",
     fullName: "Women and Development",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "MCOM",
     term: 1,
   },
   {
@@ -726,7 +726,7 @@ export const diplomaCourses = [
     name: "BWEF-2",
     fullName: "Gender Training Perspectives",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "MCOM",
     term: 1,
   },
   {
@@ -735,7 +735,7 @@ export const diplomaCourses = [
     name: "BWEE-6",
     fullName: "Organization and Leadership",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "MCOM",
     term: 1,
   },
   {
@@ -744,7 +744,7 @@ export const diplomaCourses = [
     name: "BWEE-7",
     fullName: "Work and Enterpreneurship",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "MCOM",
     term: 1,
   },
   {
@@ -753,7 +753,7 @@ export const diplomaCourses = [
     name: "BWEE-8",
     fullName: "Credit and Finance",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "MCOM",
     term: 1,
   },
   {
@@ -762,7 +762,7 @@ export const diplomaCourses = [
     name: "BFE-101",
     fullName: "Basics of HIV/AIDS",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "MCOM",
     term: 1,
   },
   {
@@ -771,7 +771,7 @@ export const diplomaCourses = [
     name: "BFEE-101",
     fullName: "Elective on HIV / AIDS",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "MCOM",
     term: 1,
   },
   {
@@ -780,7 +780,7 @@ export const diplomaCourses = [
     name: "BFE-102",
     fullName: "Basics of Family Education",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "MCOM",
     term: 1,
   },
   {
@@ -789,7 +789,7 @@ export const diplomaCourses = [
     name: "BFEE-102",
     fullName: "Elective on Family Education",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "MCOM",
     term: 1,
   },
   {
@@ -798,7 +798,7 @@ export const diplomaCourses = [
     name: "BFEE-103",
     fullName: "Alcohol, Drugs and HIV",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "MCOM",
     term: 1,
   },
   {
@@ -807,7 +807,7 @@ export const diplomaCourses = [
     name: "BFEE-104",
     fullName: "Communication and Counselling in HIV",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "MCOM",
     term: 1,
   },
   {
@@ -816,7 +816,7 @@ export const diplomaCourses = [
     name: "BPOI-101",
     fullName: "Introduction to Finance and Accounting BPO",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "MCOM",
     term: 1,
   },
   {
@@ -825,7 +825,7 @@ export const diplomaCourses = [
     name: "BPOI-102",
     fullName: "Fundamentals of Accounting",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "MCOM",
     term: 1,
   },
   {
@@ -834,7 +834,7 @@ export const diplomaCourses = [
     name: "BPOI-103",
     fullName: "Procure to Pay (P2P, Accounts Payable)",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "MCOM",
     term: 1,
   },
   {
@@ -843,7 +843,7 @@ export const diplomaCourses = [
     name: "BPOI-104",
     fullName: "Order to Cash (O2C, Accounts Receivable)",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "MCOM",
     term: 1,
   },
   {
@@ -852,7 +852,7 @@ export const diplomaCourses = [
     name: "BPOI-105",
     fullName: "Record to Report (R2R)",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "MCOM",
     term: 1,
   },
   {
@@ -861,7 +861,7 @@ export const diplomaCourses = [
     name: "BPOI-6",
     fullName: "English Communication/Communication Skills",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "MCOM",
     term: 1,
   },
   {
@@ -870,7 +870,7 @@ export const diplomaCourses = [
     name: "BPOI-6(P)",
     fullName: "English Communication/Communication Skills",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "MCOM",
     term: 1,
   },
   {
@@ -879,7 +879,7 @@ export const diplomaCourses = [
     name: "BPOI-7",
     fullName: "IT Skills",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "MCOM",
     term: 1,
   },
   {
@@ -888,7 +888,7 @@ export const diplomaCourses = [
     name: "BPOI-7(P)",
     fullName: "IT Skills",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "MCOM",
     term: 1,
   },
   {
@@ -897,7 +897,7 @@ export const diplomaCourses = [
     name: "BSSI-11",
     fullName: "Communication Skills",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "MCOM",
     term: 1,
   },
   {
@@ -906,7 +906,7 @@ export const diplomaCourses = [
     name: "BSSI-12",
     fullName: "Computer Skills (Both theory and practical)",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "MCOM",
     term: 1,
   },
   {
@@ -915,7 +915,7 @@ export const diplomaCourses = [
     name: "BSSI-13",
     fullName: "Secretarial Practice",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "MCOM",
     term: 1,
   },
   {
@@ -924,7 +924,7 @@ export const diplomaCourses = [
     name: "BSSI-14",
     fullName: "Stenographic Skills (Both theory and practical)",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "MCOM",
     term: 1,
   },
   {
@@ -933,7 +933,7 @@ export const diplomaCourses = [
     name: "BSSI-14(P)",
     fullName: "Stenographic Skills (Both theory and practical)",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "MCOM",
     term: 1,
   },
   {
@@ -942,7 +942,7 @@ export const diplomaCourses = [
     name: "BSSI-15",
     fullName: "Office Procedures",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "MCOM",
     term: 1,
   },
   {
@@ -951,7 +951,7 @@ export const diplomaCourses = [
     name: "BLE-1",
     fullName: "Introduction to the Indian Legal System",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "MCOM",
     term: 1,
   },
   {
@@ -960,7 +960,7 @@ export const diplomaCourses = [
     name: "BLE-2",
     fullName: "Introduction to Law: Substantive and Procedural",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "MCOM",
     term: 1,
   },
   {
@@ -969,7 +969,7 @@ export const diplomaCourses = [
     name: "BLE-3",
     fullName: "Law and Vulnerable Groups",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "MCOM",
     term: 1,
   },
   {
@@ -978,7 +978,7 @@ export const diplomaCourses = [
     name: "BLE-4",
     fullName: "Rural Local Self Governance",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "MCOM",
     term: 1,
   },
   {
@@ -987,7 +987,7 @@ export const diplomaCourses = [
     name: "BLEP-1",
     fullName: "Project",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "MCOM",
     term: 1,
   },
   {
@@ -996,7 +996,7 @@ export const diplomaCourses = [
     name: "BAQ-1",
     fullName: "Basics of Aquaculture",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "MCOM",
     term: 1,
   },
   {
@@ -1005,7 +1005,7 @@ export const diplomaCourses = [
     name: "BAQP-1",
     fullName: "Project",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "MCOM",
     term: 1,
   },
   {
@@ -1014,7 +1014,7 @@ export const diplomaCourses = [
     name: "BAQ-2",
     fullName: "Freshwater Aquaculture",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "MCOM",
     term: 1,
   },
   {
@@ -1023,7 +1023,7 @@ export const diplomaCourses = [
     name: "BAQL-1",
     fullName: "Laboratory",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "MCOM",
     term: 1,
   },
   {
@@ -1032,7 +1032,7 @@ export const diplomaCourses = [
     name: "BAQ-3",
     fullName: "Coastal Aquaculture",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "MCOM",
     term: 1,
   },
   {
@@ -1041,7 +1041,7 @@ export const diplomaCourses = [
     name: "BAQL-2",
     fullName: "Laboratory",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "MCOM",
     term: 1,
   },
   {
@@ -1050,7 +1050,7 @@ export const diplomaCourses = [
     name: "BRL-1",
     fullName: "Overview of Retailing",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "MCOM",
     term: 1,
   },
   {
@@ -1059,7 +1059,7 @@ export const diplomaCourses = [
     name: "BRL-2",
     fullName: "Retail Marketing and Communication",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "MCOM",
     term: 1,
   },
   {
@@ -1068,7 +1068,7 @@ export const diplomaCourses = [
     name: "BRL-3",
     fullName: "Retail Management Perspectives and Communication",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "MCOM",
     term: 1,
   },
   {
@@ -1077,7 +1077,7 @@ export const diplomaCourses = [
     name: "BRL-4",
     fullName: "Customer Service Management",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "MCOM",
     term: 1,
   },
   {
@@ -1086,7 +1086,7 @@ export const diplomaCourses = [
     name: "BRLT-5",
     fullName: "Internship and Viva-Voce",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "MCOM",
     term: 1,
   },
   {
@@ -1095,7 +1095,7 @@ export const diplomaCourses = [
     name: "DTG-1",
     fullName: "General Princizieds of Teaching",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "MCOM",
     term: 1,
   },
   {
@@ -1104,7 +1104,7 @@ export const diplomaCourses = [
     name: "DTG-2",
     fullName: "Skill Development",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "MCOM",
     term: 1,
   },
   {
@@ -1113,7 +1113,7 @@ export const diplomaCourses = [
     name: "DTG-3",
     fullName: "Classroom Teaching",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "MCOM",
     term: 1,
   },
   {
@@ -1122,7 +1122,7 @@ export const diplomaCourses = [
     name: "DTG-4",
     fullName: "Lesson Planning Preparation Evaluation",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "MCOM",
     term: 1,
   },
   {
@@ -1131,7 +1131,7 @@ export const diplomaCourses = [
     name: "BNS-11",
     fullName: "Principles and Practice of Nursing Administration",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "MCOM",
     term: 1,
   },
   {
@@ -1140,7 +1140,7 @@ export const diplomaCourses = [
     name: "BNS-12",
     fullName: "Management of Educational Institute, Hospital & Community",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "MCOM",
     term: 1,
   },
   {
@@ -1149,7 +1149,7 @@ export const diplomaCourses = [
     name: "BNS-13",
     fullName: "Group Dynamics",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "MCOM",
     term: 1,
   },
   {
@@ -1158,7 +1158,7 @@ export const diplomaCourses = [
     name: "BNS-14",
     fullName: "Resource Management",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "MCOM",
     term: 1,
   },
   {
@@ -1167,7 +1167,7 @@ export const diplomaCourses = [
     name: "BNSL-11",
     fullName: "Nursing Service Administration-I",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "MCOM",
     term: 1,
   },
   {
@@ -1176,7 +1176,7 @@ export const diplomaCourses = [
     name: "BNSL-12",
     fullName: "Nursing Service Administration-II",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "MCOM",
     term: 1,
   },
   {
@@ -1185,7 +1185,7 @@ export const diplomaCourses = [
     name: "BNS-31",
     fullName: "Concept and Principles in Critical Care Nursing",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "MCOM",
     term: 1,
   },
   {
@@ -1194,7 +1194,7 @@ export const diplomaCourses = [
     name: "BNS-32",
     fullName: "Nursing Management in Critical Care Conditions",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "MCOM",
     term: 1,
   },
   {
@@ -1203,7 +1203,7 @@ export const diplomaCourses = [
     name: "BNSL-33",
     fullName: "Clinical Nursing Practice in Critical Care-I",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "MCOM",
     term: 1,
   },
   {
@@ -1212,7 +1212,7 @@ export const diplomaCourses = [
     name: "BNSL-34",
     fullName: "Clinical Nursing Practice in Critical Care-II",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "MCOM",
     term: 1,
   },
   {
@@ -1221,7 +1221,7 @@ export const diplomaCourses = [
     name: "BTH-1",
     fullName: "Understanding Drama",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "MCOM",
     term: 1,
   },
   {
@@ -1230,7 +1230,7 @@ export const diplomaCourses = [
     name: "BTHL-2",
     fullName: "Theatre Games",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "MCOM",
     term: 1,
   },
   {
@@ -1239,7 +1239,7 @@ export const diplomaCourses = [
     name: "BTHL-3",
     fullName: "Acting Practice, Movement, Voice and Speech",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "MCOM",
     term: 1,
   },
   {
@@ -1248,7 +1248,7 @@ export const diplomaCourses = [
     name: "BTHI-4",
     fullName: "Scene Work",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "MCOM",
     term: 1,
   },
   {
@@ -1257,7 +1257,7 @@ export const diplomaCourses = [
     name: "BTHI-5",
     fullName: "Class Room Play Production",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "MCOM",
     term: 1,
   },
   {
@@ -1266,7 +1266,7 @@ export const diplomaCourses = [
     name: "BEDS-001",
     fullName: "Overview and Perspectives of Values",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "MCOM",
     term: 1,
   },
   {
@@ -1275,7 +1275,7 @@ export const diplomaCourses = [
     name: "BEDS-002",
     fullName: "Socio-Psychological Basis",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "MCOM",
     term: 1,
   },
   {
@@ -1284,7 +1284,7 @@ export const diplomaCourses = [
     name: "BEDS-003",
     fullName: "Pedagogy of Values",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "MCOM",
     term: 1,
   },
   {
@@ -1293,7 +1293,7 @@ export const diplomaCourses = [
     name: "BEDS-004",
     fullName: "Application, Support Skills and Activities",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "MCOM",
     term: 1,
   },
   {
@@ -1302,7 +1302,7 @@ export const diplomaCourses = [
     name: "BEDS-005",
     fullName: "Life Skills Education",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "MCOM",
     term: 1,
   },
   {
@@ -1311,7 +1311,7 @@ export const diplomaCourses = [
     name: "CHR-12",
     fullName: "Human Rights in India",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "MCOM",
     term: 1,
   },
   {
@@ -1320,7 +1320,7 @@ export const diplomaCourses = [
     name: "MIO-001",
     fullName: "Introduction to Smart Regions: Smart Cities and Smart Villages",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "MCOM",
     term: 1,
   },
   {
@@ -1329,7 +1329,7 @@ export const diplomaCourses = [
     name: "MIO-002",
     fullName: "Smart Technologies (Hardware and Software)",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "MCOM",
     term: 1,
   },
   {
@@ -1338,7 +1338,7 @@ export const diplomaCourses = [
     name: "MIO-003",
     fullName: "Smart Urban Energy Systems and Smart Transportation System",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "MCOM",
     term: 1,
   },
   {
@@ -1347,7 +1347,7 @@ export const diplomaCourses = [
     name: "MIO-004",
     fullName: "Smart Cities: Health, Education, Governance & Cyber Security",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "MCOM",
     term: 1,
   },
   {
@@ -1356,7 +1356,7 @@ export const diplomaCourses = [
     name: "MIO-005",
     fullName: "Smart Cities: Safe Water, Sanitation and Sustainability",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "MCOM",
     term: 1,
   },
   {
@@ -1365,7 +1365,7 @@ export const diplomaCourses = [
     name: "MIOP-001",
     fullName: "Project",
     collegeCode: "IGNOU",
-    programmeCode: "",
+    programmeCode: "MCOM",
     term: 1,
   },
 ];

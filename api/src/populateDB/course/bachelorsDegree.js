@@ -1580,7 +1580,8 @@ export const bachelorsDegreeCourses = [
     name: "BEGLA-136",
     fullName: "English At The Work Place",
 
-    programme: "605a46c1198e3f5b2e715c8e",
+    collegeCode: "IGNOU",
+    programmeCode: "BAG",
     term: 6,
   },
   {
@@ -1589,7 +1590,8 @@ export const bachelorsDegreeCourses = [
     name: "BEGLA-137",
     fullName: "Language Through Literature",
 
-    programme: "605a46c1198e3f5b2e715c8e",
+    collegeCode: "IGNOU",
+    programmeCode: "BAG",
     term: 6,
   },
   {
@@ -1663,7 +1665,8 @@ export const bachelorsDegreeCourses = [
     name: "BBYCT-135",
     fullName: "Plant Anatomy and Embryology",
 
-    programme: "605a46c1198e3f5b2e715c8e",
+    collegeCode: "IGNOU",
+    programmeCode: "BAG",
     term: 6,
   },
   {
@@ -1672,7 +1675,8 @@ export const bachelorsDegreeCourses = [
     name: "BBYCL-136",
     fullName: "Plant Anatomy and Embryology: Laboratory",
 
-    programme: "605a46c1198e3f5b2e715c8e",
+    collegeCode: "IGNOU",
+    programmeCode: "BAG",
     term: 6,
   },
   {
@@ -1765,7 +1769,8 @@ export const bachelorsDegreeCourses = [
     name: "BCHCT-137",
     fullName: "Coordination Chemistry, States of Matter and Chemical Kinetics",
 
-    programme: "605a46c1198e3f5b2e715c8e",
+    collegeCode: "IGNOU",
+    programmeCode: "BAG",
     term: 6,
   },
   {
@@ -1776,7 +1781,8 @@ export const bachelorsDegreeCourses = [
     fullName:
       "Coordination Chemistry, States of Matter and Chemical Kinetics: Laboratory",
 
-    programme: "605a46c1198e3f5b2e715c8e",
+    collegeCode: "IGNOU",
+    programmeCode: "BAG",
     term: 6,
   },
   {
@@ -1938,7 +1944,8 @@ export const bachelorsDegreeCourses = [
     name: "BPHCT-131",
     fullName: "Mechanics",
 
-    programme: "605a46c1198e3f5b2e715c8e",
+    collegeCode: "IGNOU",
+    programmeCode: "BAG",
     term: 6,
   },
   {
@@ -1947,7 +1954,8 @@ export const bachelorsDegreeCourses = [
     name: "BPHCL-132",
     fullName: "Mechanics: Laboratory",
 
-    programme: "605a46c1198e3f5b2e715c8e",
+    collegeCode: "IGNOU",
+    programmeCode: "BAG",
     term: 6,
   },
   {
@@ -2028,7 +2036,8 @@ export const bachelorsDegreeCourses = [
     name: "BZYCT-133",
     fullName: "Comparative Anatomy and Developmental Biology of Vertebrates",
 
-    programme: "605a46c1198e3f5b2e715c8e",
+    collegeCode: "IGNOU",
+    programmeCode: "BAG",
     term: 6,
   },
   {
@@ -2039,7 +2048,8 @@ export const bachelorsDegreeCourses = [
     fullName:
       "Comparative Anatomy and Developmental Biology of Vertebrates: Laboratory",
 
-    programme: "605a46c1198e3f5b2e715c8e",
+    collegeCode: "IGNOU",
+    programmeCode: "BAG",
     term: 6,
   },
   {
@@ -2120,7 +2130,8 @@ export const bachelorsDegreeCourses = [
     name: "BCHET-141",
     fullName: "Analytical Methods in Chemistry",
 
-    programme: "605a46c1198e3f5b2e715c8e",
+    collegeCode: "IGNOU",
+    programmeCode: "BAG",
     term: 6,
   },
   {
@@ -2129,7 +2140,8 @@ export const bachelorsDegreeCourses = [
     name: "BCHEL-142",
     fullName: "Analytical Methods in Chemistry: Laboratory",
 
-    programme: "605a46c1198e3f5b2e715c8e",
+    collegeCode: "IGNOU",
+    programmeCode: "BAG",
     term: 6,
   },
   {
@@ -2304,7 +2316,8 @@ export const bachelorsDegreeCourses = [
     name: "BZYET-143",
     fullName: "Insect Vectors and Vector Borne Diseases",
 
-    programme: "605a46c1198e3f5b2e715c8e",
+    collegeCode: "IGNOU",
+    programmeCode: "BAG",
     term: 6,
   },
   {
@@ -2313,7 +2326,8 @@ export const bachelorsDegreeCourses = [
     name: "BZYEL-144",
     fullName: "Insect Vectors and Vector Borne Diseases: Laboratory",
 
-    programme: "605a46c1198e3f5b2e715c8e",
+    collegeCode: "IGNOU",
+    programmeCode: "BAG",
     term: 6,
   },
   {
