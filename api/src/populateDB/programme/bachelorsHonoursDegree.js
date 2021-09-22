@@ -1,8 +1,10 @@
+import { Degree } from "../../constants/types";
+
 export const bachelorsHonoursDegreeProgrammes = [
   {
     code: "BAECH",
     title: "Bachelor of Arts (Honours) Economics",
-    degree: 0,
+    degree: Degree.bachelorsHonours,
     termType: 1,
     termsCount: 6,
     name: "BAECH",
@@ -12,7 +14,7 @@ export const bachelorsHonoursDegreeProgrammes = [
   {
     code: "BAHIH",
     title: "Bachelor of Arts (Honours) History",
-    degree: 0,
+    degree: Degree.bachelorsHonours,
     termType: 1,
     termsCount: 6,
     name: "BAHIH",
@@ -22,7 +24,7 @@ export const bachelorsHonoursDegreeProgrammes = [
   {
     code: "BAPSH",
     title: "Bachelor of Arts (Honours) Political Science",
-    degree: 0,
+    degree: Degree.bachelorsHonours,
     termType: 1,
     termsCount: 6,
     name: "BAPSH",
@@ -32,7 +34,7 @@ export const bachelorsHonoursDegreeProgrammes = [
   {
     code: "BAPCH",
     title: "Bachelor of Arts (Honours) Psychology",
-    degree: 0,
+    degree: Degree.bachelorsHonours,
     termType: 1,
     termsCount: 6,
     name: "BAPCH",
@@ -42,7 +44,7 @@ export const bachelorsHonoursDegreeProgrammes = [
   {
     code: "BAPAH",
     title: "Bachelor of Arts (Honours) Public Administration",
-    degree: 0,
+    degree: Degree.bachelorsHonours,
     termType: 1,
     termsCount: 6,
     name: "BAPAH",
@@ -52,7 +54,7 @@ export const bachelorsHonoursDegreeProgrammes = [
   {
     code: "BASOH",
     title: "Bachelor of Arts (Honours) Sociology",
-    degree: 0,
+    degree: Degree.bachelorsHonours,
     termType: 1,
     termsCount: 6,
     name: "BASOH",
@@ -62,7 +64,7 @@ export const bachelorsHonoursDegreeProgrammes = [
   {
     code: "BSCANH",
     title: "Bachelor of Science (Honours) Anthropology",
-    degree: 0,
+    degree: Degree.bachelorsHonours,
     termType: 1,
     termsCount: 6,
     name: "BSCANH",
@@ -72,7 +74,7 @@ export const bachelorsHonoursDegreeProgrammes = [
   {
     code: "BSCBCH",
     title: "Bachelor of Science (Honours) in Biochemistry",
-    degree: 0,
+    degree: Degree.bachelorsHonours,
     termType: 1,
     termsCount: 6,
     name: "BSCBCH",
@@ -82,7 +84,7 @@ export const bachelorsHonoursDegreeProgrammes = [
   {
     code: "BAEGH",
     title: "Bachelor of Arts English (Honours)",
-    degree: 0,
+    degree: Degree.bachelorsHonours,
     termType: 1,
     termsCount: 6,
     name: "BAEGH",
@@ -92,7 +94,7 @@ export const bachelorsHonoursDegreeProgrammes = [
   {
     code: "BAPFHMH",
     title: "Bachelor of Performing Arts – Hindustani Music (Honours)",
-    degree: 0,
+    degree: Degree.bachelorsHonours,
     termType: 1,
     termsCount: 6,
     name: "BAPFHMH",

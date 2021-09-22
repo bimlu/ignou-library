@@ -1,8 +1,10 @@
+import { Degree } from "../../constants/types";
+
 export const bachelorsDegreeProgrammes = [
   {
     code: "BAG",
     title: "Bachelor of Arts",
-    degree: 0,
+    degree: Degree.bachelors,
     termType: 1,
     termsCount: 6,
     name: "BAG",
@@ -175,7 +177,7 @@ export const bachelorsDegreeProgrammes = [
   {
     code: "BCOMG",
     title: "Bachelor of Commerce",
-    degree: 0,
+    degree: Degree.bachelors,
     termType: 1,
     termsCount: 6,
     name: "BCOMG",
@@ -208,7 +210,7 @@ export const bachelorsDegreeProgrammes = [
   {
     code: "BSCG",
     title: "Bachelor of Science",
-    degree: 0,
+    degree: Degree.bachelors,
     termType: 1,
     termsCount: 6,
     name: "BCOMG",
@@ -324,7 +326,7 @@ export const bachelorsDegreeProgrammes = [
   {
     code: "BCA",
     title: "Bachelor of Computer Applications",
-    degree: 0,
+    degree: Degree.bachelors,
     termType: 1,
     termsCount: 6,
     name: "BCA",
@@ -387,7 +389,7 @@ export const bachelorsDegreeProgrammes = [
   {
     code: "BLIS",
     title: "Bachelor of Library and Information Sciences",
-    degree: 0,
+    degree: Degree.bachelors,
     termType: 1,
     termsCount: 6,
     name: "BLIS",
@@ -410,7 +412,7 @@ export const bachelorsDegreeProgrammes = [
   {
     code: "BTS",
     title: "Bachelor of Arts (Tourism Studies)",
-    degree: 0,
+    degree: Degree.bachelors,
     termType: 1,
     termsCount: 6,
     name: "BTS",
@@ -450,7 +452,7 @@ export const bachelorsDegreeProgrammes = [
   {
     code: "BSWG",
     title: "Bachelor of Social Work",
-    degree: 0,
+    degree: Degree.bachelors,
     termType: 1,
     termsCount: 6,
     name: "BSWG",
@@ -493,7 +495,7 @@ export const bachelorsDegreeProgrammes = [
   {
     code: "BBARL",
     title: "Bachelor of Business Administration (Retailing)",
-    degree: 0,
+    degree: Degree.bachelors,
     termType: 1,
     termsCount: 6,
     name: "BBARL",
@@ -529,7 +531,7 @@ export const bachelorsDegreeProgrammes = [
   {
     code: "BAVTM",
     title: "Bachelor of Arts (Vocational Studies) Tourism Management",
-    degree: 0,
+    degree: Degree.bachelors,
     termType: 1,
     termsCount: 6,
     name: "BAVTM",
@@ -564,55 +566,4 @@ export const bachelorsDegreeProgrammes = [
       ],
     },
   },
-
-  // {
-  //   code: "BAVTM",
-  //   title: "",
-  //   courseList: {
-  //     ALL: ["", "", "", "", ""],
-  //     CC: ["", "", "", "", ""],
-  //     DSE: ["", "", "", "", ""],
-  //     AECC: ["", "", "", "", ""],
-  //     SEC: ["", "", "", "", ""],
-  //     GE: ["", "", "", "", ""],
-  //   },
-  //   programmeDetail: {
-  //     first: [
-  //       { course: '', credit: 6 },
-  //       { course: '', credit: 6 },
-  //       { course: '', credit: 6 },
-  //       { course: '', credit: 6 },
-  //     ],
-  //     second: [
-  //       { course: '', credit: 6 },
-  //       { course: '', credit: 6 },
-  //       { course: '', credit: 6 },
-  //       { course: '', credit: 6 },
-  //     ],
-  //     third: [
-  //       { course: '', credit: 6 },
-  //       { course: '', credit: 6 },
-  //       { course: '', credit: 6 },
-  //       { course: '', credit: 6 },
-  //     ],
-  //     fourth: [
-  //       { course: '', credit: 6 },
-  //       { course: '', credit: 6 },
-  //       { course: '', credit: 6 },
-  //       { course: '', credit: 6 },
-  //     ],
-  //     fifth: [
-  //       { course: '', credit: 6 },
-  //       { course: '', credit: 6 },
-  //       { course: '', credit: 6 },
-  //       { course: '', credit: 6 },
-  //     ],
-  //     sixth: [
-  //       { course: '', credit: 6 },
-  //       { course: '', credit: 6 },
-  //       { course: '', credit: 6 },
-  //       { course: '', credit: 6 },
-  //     ],
-  //   }
-  // },
 ];

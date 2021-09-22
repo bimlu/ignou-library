@@ -35,7 +35,7 @@ const programmeSchema = Schema(
     degree: {
       type: Degree,
       required: true,
-      default: Degree.Bachelor,
+      default: Degree.bachelors,
     },
     termType: {
       type: TermType,
@@ -98,6 +98,7 @@ const programmeSchema = Schema(
     courseList: courseListSchema,
     school: { type: String, ref: "School" },
     collegeCode: String,
+    schoolCode: String,
   },
   {
     timestamps: true,

@@ -3,9 +3,9 @@ import path from "path";
 import { awarenessAndAppreciationProgrammes } from "./awarenessAndAppreciation";
 import { bachelorsDegreeProgrammes } from "./bachelorsDegree";
 import { bachelorsHonoursDegreeProgrammes } from "./bachelorsHonoursDegree";
+import { certificateProgrammes } from "./certificate";
 import { diplomaProgrammes } from "./diploma";
 import { mastersDegreeProgrammes } from "./mastersDegree";
-import { pgCertificateProgrammes } from "./pgCertificate";
 import { pgGraduateCertificateProgrammes } from "./pgGraduateCertificate";
 import { pgGraduateDiplomaProgrammes } from "./pgGraduateDiploma";
 
@@ -15,7 +15,7 @@ export const getProgrammes = () =>
     .concat(mastersDegreeProgrammes)
     .concat(diplomaProgrammes)
     .concat(pgGraduateDiplomaProgrammes)
-    .concat(pgCertificateProgrammes)
+    .concat(certificateProgrammes)
     .concat(pgGraduateCertificateProgrammes)
     .concat(awarenessAndAppreciationProgrammes);
 

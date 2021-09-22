@@ -20,9 +20,12 @@ export enum TermType {
 }
 
 export enum Degree {
-  Bachelor,
-  Master,
-  Doctor,
-  Diploma,
-  Certificate,
+  /* 0 */ bachelors,
+  /* 1 */ bachelorsHonours,
+  /* 2 */ masters,
+  /* 3 */ diploma,
+  /* 4 */ pgGraduateDiploma,
+  /* 5 */ certificate,
+  /* 6 */ pgGraduateCertificate,
+  /* 7 */ awarenessAndAppreciation,
 }

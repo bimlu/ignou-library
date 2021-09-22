@@ -1,10 +1,12 @@
+import { Degree } from "../../constants/types";
+
 export const awarenessAndAppreciationProgrammes = [
   {
     code: "APDF",
     title: "Awareness Programme on Dairy Farming",
     name: "APDF",
     fullName: "Awareness Programme on Dairy Farming",
-    degree: 1,
+    degree: Degree.awarenessAndAppreciation,
     termType: 1,
     termsCount: 6,
     collegeCode: "IGNOU",
@@ -14,7 +16,7 @@ export const awarenessAndAppreciationProgrammes = [
     title: "Appreciation Course on Population and Sustainable Development",
     name: "ACPSD",
     fullName: "Appreciation Course on Population and Sustainable Development",
-    degree: 1,
+    degree: Degree.awarenessAndAppreciation,
     termType: 1,
     termsCount: 6,
     collegeCode: "IGNOU",
