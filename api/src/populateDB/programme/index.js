@@ -16,11 +16,17 @@ export const createProgrammes = () => {
   // });
 
   for (let programme of programmes) {
+    if (!programme.name || !programme.fullName) {
+      console.log("Bad Programme: ", programme);
+      continue;
+    }
     createProgramme(programme);
   }
 
-  const programmesJSON = JSON.stringify(programmes);
-  saveProgrammes(programmesJSON);
+  console.log("length of programmes: ", programmes.length);
+
+  const programmesSTR = JSON.stringify(programmes);
+  saveProgrammes(programmesSTR);
 };
 
 export const createProgramme = async (programme) => {

@@ -105,6 +105,9 @@ export const pgGraduateCertificateProgrammes = [
     code: "PGCIATIVI",
     title:
       "Post Graduate Certificate in Information and Assistive Technologies for the Instructors of Visually Impaired",
+    name: "PGCIATIVI",
+    fullName:
+      "Post Graduate Certificate in Information and Assistive Technologies for the Instructors of Visually Impaired",
     degree: 1,
     termType: 1,
     termsCount: 6,
