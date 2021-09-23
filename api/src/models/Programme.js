@@ -1,5 +1,5 @@
 import mongoose from "mongoose";
-import { Degree, TermType } from "../constants/types";
+import { Category, Degree, TermType } from "../constants/types";
 
 const Schema = mongoose.Schema;
 
@@ -25,6 +25,13 @@ const courseListSchema = new Schema({
   SEC: [{ type: String, ref: "Course" }],
   GE: [{ type: String, ref: "Course" }],
   LA: [{ type: String, ref: "Course" }],
+});
+
+const dataSchema = new Schema({
+  term: Number,
+  courseCode: { type: String, ref: "Course" },
+  credit: Number,
+  category: Category,
 });
 
 /**
@@ -99,6 +106,7 @@ const programmeSchema = Schema(
     school: { type: String, ref: "School" },
     collegeCode: String,
     schoolCode: String,
+    data: [dataSchema],
   },
   {
     timestamps: true,

@@ -71,10 +71,11 @@ const courseSchema = Schema(
     code: String,
     title: String,
     studyMaterial: [blockSchema],
-    programmes: [{ type: String, ref: "Programme" }],
+    programmes: [{ type: Schema.Types.ObjectId, ref: "Programme" }],
     discipline: String,
     collegeCode: String,
     programmeCode: String,
+    programmeCodes: [String],
   },
   {
     timestamps: true,

@@ -29,3 +29,13 @@ export enum Degree {
   /* 6 */ pgGraduateCertificate,
   /* 7 */ awarenessAndAppreciation,
 }
+
+export enum Category {
+  NONE,
+  CC,
+  DSE,
+  AECC,
+  SEC,
+  GE,
+  LA,
+}
