@@ -114,6 +114,15 @@ const ProgrammeSchema = gql`
     studentsCount: Int
     createdAt: String
     updatedAt: String
+    programmeStructure: [ProgrammeStructure]
+  }
+
+  type ProgrammeStructure {
+    term: Int
+    courseCode: String
+    course: Course
+    credit: Int
+    category: Int
   }
 
   type ProgrammesPayload {
@@ -127,6 +136,8 @@ const ProgrammeSchema = gql`
   extend type Query {
     # Gets programme by id or name
     getProgramme(id: ID, name: String): ProgrammePayload
+
+    getProgrammeStructure(id: ID, name: String): ProgrammePayload
 
     # Gets all programmes
     getProgrammes(skip: Int, limit: Int): ProgrammesPayload

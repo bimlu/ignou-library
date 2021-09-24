@@ -1,5 +1,5 @@
 import { transformer } from "../utils/image-transform";
-import { uploadToS3Bucket, deleteFromS3Bucket } from "../utils/s3-bucket";
+import { deleteFromS3Bucket, uploadToS3Bucket } from "../utils/s3-bucket";
 import { assertAdmin } from "./user";
 
 const Query = {
@@ -21,6 +21,36 @@ const Query = {
     const query = name ? { name: name } : { _id: id };
 
     const programme = await Programme.findOne(query)
+      .populate("college")
+      .populate("createdBy")
+      .populate("courses")
+      .populate("students");
+
+    if (!programme) {
+      throw new Error("Programme with given params doesn't exits.");
+    }
+
+    return programme;
+  },
+  /**
+   * Gets Programme Structure by id or name
+   *
+   * @param {string} id
+   * @param {string} name
+   */
+  getProgrammeStructure: async (root, { id, name }, { Programme }) => {
+    if (!name && !id) {
+      throw new Error("name or id is required params.");
+    }
+
+    if (name && id) {
+      throw new Error("please pass only name or only id as a param");
+    }
+
+    const query = name ? { name: name } : { _id: id };
+
+    const programme = await Programme.findOne(query)
+      .populate({ path: "programmeStructure", populate: { path: "course" } })
       .populate("college")
       .populate("createdBy")
       .populate("courses")

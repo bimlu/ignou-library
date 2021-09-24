@@ -1,29 +1,21 @@
-import React, { Fragment, useEffect, useState } from "react";
 import { useQuery } from "@apollo/client";
-import { useLocation } from "react-router-dom";
-
-import Divider from "@material-ui/core/Divider";
 import Box from "@material-ui/core/Box";
-
-import { GET_COLLEGE_PROGRAMME_COURSES } from "graphql/course";
-
-import CourseInfo from "pages/Course/CourseInfo";
-import ExploreHeader from "pages/Explore/ExploreHeader";
-import CourseFilter from "./CourseFilter";
-import SolidCard from "./Card";
-
+import Divider from "@material-ui/core/Divider";
 import CardsContainer from "components/Cards/CardsContainer";
-import InfiniteScroll from "components/InfiniteScroll";
 import Empty from "components/Empty";
-import { Loading } from "components/Loading";
 import Head from "components/Head";
 import ScrollManager from "components/ScrollManager";
-
 import { EXPLORE_PAGE_CARDS_LIMIT } from "constants/DataLimit";
-
+import { GET_PROGRAMME_STRUCTURE } from 'graphql/programme';
+import CourseInfo from "pages/Course/CourseInfo";
+import ExploreHeader from "pages/Explore/ExploreHeader";
+import React, { useEffect, useState } from "react";
+import { useLocation } from "react-router-dom";
+import * as Routes from "routes";
 import { useStore } from "store";
 import { SET_EXPLORE_ROUTE } from "store/route";
-import * as Routes from "routes";
+import SolidCard from "./Card";
+import CourseFilter from "./CourseFilter";
 
 /**
  * Courses page
@@ -45,12 +37,13 @@ const Courses = () => {
   const [term, setTerm] = useState("all");
 
   const variables = {
-    collegeId: collegeId,
-    programmeId: programmeId,
-    skip: 0,
-    limit: EXPLORE_PAGE_CARDS_LIMIT,
+    // collegeId: collegeId,
+    // programmeId: programmeId,
+    // skip: 0,
+    // limit: EXPLORE_PAGE_CARDS_LIMIT,
+    id: programmeId
   };
-  const { data, loading, error, fetchMore, networkStatus } = useQuery(GET_COLLEGE_PROGRAMME_COURSES, {
+  const { data, loading, error, networkStatus } = useQuery(GET_PROGRAMME_STRUCTURE, {
     variables,
     notifyOnNetworkStatusChange: true,
   });
@@ -73,46 +66,33 @@ const Courses = () => {
 
     if (error) return "Please check your internet connection";
 
-    const { courses, count } = data.getCollegeProgrammeCourses;
-    if (!courses.length > 0) return <Empty text="No courses yet." />;
+    console.log('data: ', data)
+
+    const programme = data.getProgrammeStructure;
+    if (!programme) return null
+    if (!programme.programmeStructure) return <Empty text="No courses yet." />;
+    if (!programme.programmeStructure > 0) return <Empty text="No courses yet." />;
+    const courses = programme.programmeStructure;
 
     return (
-      <InfiniteScroll
-        data={courses}
-        dataKey="getCollegeProgrammeCourses.courses"
-        count={parseInt(count)}
-        variables={variables}
-        fetchMore={fetchMore}
-      >
-        {(data) => {
-          const showNextLoading = loading && networkStatus === 3 && count !== data.length;
-
-          return (
-            <Fragment>
-              <CardsContainer>
-                {data
-                  // show all course if term === 'all', filter otherwise
-                  .filter((course) => term === "all" || course.term === parseInt(term))
-                  .map((course, i) => (
-                    <SolidCard
-                      key={course.id}
-                      title={course.name}
-                      subtitle={course.fullName}
-                      image={course.image}
-                      color={cardColors[i % cardColors.length]}
-                      url={`${Routes.POSTS}?collegeId=${collegeId}&collegeName=${collegeName}&programmeId=${programmeId}&programmeName=${programmeName}&termType=${termType}&termsCount=${termsCount}&term=${course.term}&courseId=${course.id}&courseName=${course.name}`}
-                      studentData={`Students: ${course.studentsCount}`}
-                      otherData={`Posts: ${course.postsCount}`}
-                      postsCount={course.postsCount}
-                    />
-                  ))}
-              </CardsContainer>
-
-              {showNextLoading && <Loading top="lg" />}
-            </Fragment>
-          );
-        }}
-      </InfiniteScroll>
+      <CardsContainer>
+        {courses
+          // show all course if term === 'all', filter otherwise
+          .filter((course) => term === "all" || course.term === parseInt(term))
+          .map((course, i) => (
+            <SolidCard
+              key={course.courseCode}
+              title={course.course.name}
+              subtitle={course.course.fullName}
+              image={course.course.image}
+              color={cardColors[i % cardColors.length]}
+              url={`${Routes.POSTS}?collegeId=${collegeId}&collegeName=${collegeName}&programmeId=${programmeId}&programmeName=${programmeName}&termType=${termType}&termsCount=${termsCount}&term=${course.term}&courseId=${course.course.id}&courseName=${course.course.name}`}
+              studentData={`Students: ${course.course.studentsCount}`}
+              otherData={`Posts: ${course.course.postsCount}`}
+              postsCount={course.course.postsCount}
+            />
+          ))}
+      </CardsContainer>   
     );
   };
 

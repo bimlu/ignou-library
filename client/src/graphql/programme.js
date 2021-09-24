@@ -36,6 +36,50 @@ export const GET_PROGRAMME = gql`
   }
 `;
 
+export const GET_PROGRAMME_STRUCTURE = gql`
+  query ($id: ID, $name: String) {
+    getProgrammeStructure(id: $id, name: $name) {
+      id
+      name
+      fullName
+      degree
+      termType
+      termsCount
+      verified
+      createdBy {
+        id
+        username
+        fullName
+      }
+      description
+      image
+      imagePublicId
+      createdAt
+      college {
+        id
+        name
+      }
+      students {
+        id
+      }
+      courses {
+        id
+      }
+      programmeStructure {
+        term
+        courseCode
+        course {
+          id
+          name
+          fullName
+        }
+        credit
+        category
+      }
+    }
+  }
+`;
+
 /**
  * Gets programmes for a specific college
  */
