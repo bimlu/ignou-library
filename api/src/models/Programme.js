@@ -30,7 +30,7 @@ const courseListSchema = new Schema({
 const programmeStructureSchema = new Schema({
   term: Number,
   courseCode: String,
-  course: { type: Schema.Types.ObjectId },
+  course: { type: Schema.Types.ObjectId, ref: "Course" },
   credit: Number,
   category: { type: Category, default: Category.NONE },
 });
