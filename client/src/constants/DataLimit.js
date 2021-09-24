@@ -2,7 +2,7 @@
  * Data limit constants for infinite scroll
  */
 
-export const COLLEGE_TREE_ITEM_LIMIT = 200;
+export const COLLEGE_TREE_ITEM_LIMIT = 300;
 
 export const EXPLORE_PAGE_CARDS_LIMIT = 12; // 6 for skeleton
 
