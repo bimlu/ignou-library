@@ -38,4 +38,6 @@ export enum Category {
   SEC,
   GE,
   LA,
+  C,
+  E,
 }

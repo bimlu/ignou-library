@@ -31,7 +31,7 @@ const programmeStructureSchema = new Schema({
   term: Number,
   courseCode: { type: String, ref: "Course" },
   credit: Number,
-  category: Category,
+  category: { type: Category, default: Category.NONE },
 });
 
 /**
