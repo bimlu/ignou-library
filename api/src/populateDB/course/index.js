@@ -1,6 +1,6 @@
 import College from "../../models/College";
 import Course from "../../models/Course";
-import Programme from "../../models/Programme";
+// import Programme from "../../models/Programme";
 import { getCourses, saveCourses } from "./courses";
 
 export const createCourses = () => {
@@ -32,7 +32,7 @@ export const createCourses = () => {
 export const createCourse = async (course) => {
   // console.log(course);
   const college = await College.findOne({ code: course.collegeCode });
-  const programme = await Programme.findOne({ code: course.programmeCode });
+  // const programme = await Programme.findOne({ code: course.programmeCode });
   // if (!college || !programme) {
   //   console.log(course);
   //   return;
@@ -40,10 +40,10 @@ export const createCourse = async (course) => {
   const newCourse = await new Course({
     ...course,
     college: college.id,
-    programme: programme.id,
+    // programme: programme.id,
   }).save();
-  await Programme.findOneAndUpdate(
-    { code: course.programmeCode },
-    { $push: { courses: newCourse.id }, $inc: { coursesCount: 1 } }
-  );
+  // await Programme.findOneAndUpdate(
+  //   { code: course.programmeCode },
+  //   { $push: { courses: newCourse.id }, $inc: { coursesCount: 1 } }
+  // );
 };
