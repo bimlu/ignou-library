@@ -1,5 +1,5 @@
-import React from 'react';
-import theme from 'theme';
+import React from "react";
+import theme from "theme";
 
 /**
  * Course (books) icon
@@ -8,7 +8,7 @@ import theme from 'theme';
  * @param {string} color
  */
 export const CourseIcon = ({ width, color }) => {
-  const DEFAULT_WIDTH = '14';
+  const DEFAULT_WIDTH = "14";
   const DEFAULT_COLOR = theme.colors.text.secondary;
 
   return (

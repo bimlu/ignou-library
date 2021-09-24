@@ -7,7 +7,7 @@ const Mutation = {
    * @param {string} postId
    */
   createComment: async (root, { input: { comment, author, postId } }, { Comment, Post, User }) => {
-    console.log('>>> createComment()');
+    console.log(">>> createComment()");
 
     const newComment = await new Comment({
       comment,
@@ -28,7 +28,7 @@ const Mutation = {
    * @param {string} id
    */
   deleteComment: async (root, { input: { id } }, { Comment, User, Post }) => {
-    console.log('>>> deleteComment()');
+    console.log(">>> deleteComment()");
 
     const comment = await Comment.findByIdAndRemove(id);
 

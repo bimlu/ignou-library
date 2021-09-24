@@ -1,65 +1,65 @@
-import React, { useState } from 'react';
-import { useParams } from 'react-router-dom';
-import { useQuery } from '@apollo/client';
-import SwipeableViews from 'react-swipeable-views';
+import React, { useState } from "react";
+import { useParams } from "react-router-dom";
+import { useQuery } from "@apollo/client";
+import SwipeableViews from "react-swipeable-views";
 
-import { makeStyles } from '@material-ui/core/styles';
-import CircularProgress from '@material-ui/core/CircularProgress';
-import IconButton from '@material-ui/core/IconButton';
-import BackIcon from '@material-ui/icons/ArrowBackIosRounded';
-import NextIcon from '@material-ui/icons/ArrowForwardIosRounded';
-import CloseIcon from '@material-ui/icons/Close';
+import { makeStyles } from "@material-ui/core/styles";
+import CircularProgress from "@material-ui/core/CircularProgress";
+import IconButton from "@material-ui/core/IconButton";
+import BackIcon from "@material-ui/icons/ArrowBackIosRounded";
+import NextIcon from "@material-ui/icons/ArrowForwardIosRounded";
+import CloseIcon from "@material-ui/icons/Close";
 
-import Modal from 'components/Modal';
-import NotFound from 'components/NotFound';
-import Head from 'components/Head';
+import Modal from "components/Modal";
+import NotFound from "components/NotFound";
+import Head from "components/Head";
 
-import { GET_POST } from 'graphql/post';
+import { GET_POST } from "graphql/post";
 
-import NewPost from './NewPost';
-import NewPDF from './NewPDF';
+import NewPost from "./NewPost";
+import NewPDF from "./NewPDF";
 
-import * as Routes from 'routes';
-import { Typography } from '@material-ui/core';
+import * as Routes from "routes";
+import { Typography } from "@material-ui/core";
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    maxWidth: '600px',
+    maxWidth: "600px",
     zIndex: theme.zIndex.appBar + 1,
-    position: 'fixed',
+    position: "fixed",
     top: 0,
-    height: '100%',
-    display: 'flex',
-    flexDirection: 'row',
-    alignItems: 'center',
+    height: "100%",
+    display: "flex",
+    flexDirection: "row",
+    alignItems: "center",
     background: theme.palette.text.primary,
   },
   slide: {},
   img: {
-    display: 'block',
-    width: '100%',
-    objectFit: 'cover',
+    display: "block",
+    width: "100%",
+    objectFit: "cover",
   },
   button: {
-    position: 'absolute',
+    position: "absolute",
     zIndex: theme.zIndex.xl + 1,
-    '&:hover': {
+    "&:hover": {
       background: theme.palette.background.default,
     },
-    display: (props) => (props.hide ? 'none' : 'block'),
+    display: (props) => (props.hide ? "none" : "block"),
   },
   info: {
-    position: 'absolute',
-    left: '44%',
+    position: "absolute",
+    left: "44%",
     bottom: 16,
     zIndex: theme.zIndex.xl + 1,
-    '&:hover': {
+    "&:hover": {
       background: theme.palette.background.default,
     },
-    display: (props) => (props.hide ? 'none' : 'block'),
+    display: (props) => (props.hide ? "none" : "block"),
     background: theme.palette.background.default,
     padding: theme.spacing(1.5),
-    borderRadius: '50%',
+    borderRadius: "50%",
   },
 }));
 
@@ -69,7 +69,7 @@ const useStyles = makeStyles((theme) => ({
 const Post = () => {
   const { id, type } = useParams();
   if (id === Routes.NEW_ID_VALUE) {
-    return type === 'pdf' ? <NewPDF /> : <NewPost />;
+    return type === "pdf" ? <NewPDF /> : <NewPost />;
   }
 
   const [open, setOpen] = useState(true);
@@ -98,7 +98,7 @@ const Post = () => {
   };
 
   const handleSwitch = (index, type) => {
-    if (type === 'end') {
+    if (type === "end") {
       setIndex(index);
     }
   };

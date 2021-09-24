@@ -1,12 +1,12 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import styled from 'styled-components';
+import React from "react";
+import PropTypes from "prop-types";
+import styled from "styled-components";
 
-import { UserIcon } from './icons';
+import { UserIcon } from "./icons";
 
 const Root = styled.div`
-  width: ${(p) => (p.size ? `${p.size}px` : '30px')};
-  height: ${(p) => (p.size ? `${p.size}px` : '30px')};
+  width: ${(p) => (p.size ? `${p.size}px` : "30px")};
+  height: ${(p) => (p.size ? `${p.size}px` : "30px")};
   border-radius: 50%;
   overflow: hidden;
   flex-shrink: 0;

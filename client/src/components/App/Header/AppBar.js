@@ -1,53 +1,53 @@
-import React from 'react';
-import { Link, generatePath } from 'react-router-dom';
+import React from "react";
+import { Link, generatePath } from "react-router-dom";
 
-import { makeStyles } from '@material-ui/core/styles';
-import AppBar from '@material-ui/core/AppBar';
-import Toolbar from '@material-ui/core/Toolbar';
-import IconButton from '@material-ui/core/IconButton';
-import Typography from '@material-ui/core/Typography';
-import Badge from '@material-ui/core/Badge';
-import AccountCircle from '@material-ui/icons/AccountCircle';
-import MenuItem from '@material-ui/core/MenuItem';
-import Menu from '@material-ui/core/Menu';
-import MailIcon from '@material-ui/icons/Mail';
-import NotificationsIcon from '@material-ui/icons/Notifications';
-import MoreIcon from '@material-ui/icons/MoreVert';
-import ToggleThemeIcon from '@material-ui/icons/Brightness4';
+import { makeStyles } from "@material-ui/core/styles";
+import AppBar from "@material-ui/core/AppBar";
+import Toolbar from "@material-ui/core/Toolbar";
+import IconButton from "@material-ui/core/IconButton";
+import Typography from "@material-ui/core/Typography";
+import Badge from "@material-ui/core/Badge";
+import AccountCircle from "@material-ui/icons/AccountCircle";
+import MenuItem from "@material-ui/core/MenuItem";
+import Menu from "@material-ui/core/Menu";
+import MailIcon from "@material-ui/icons/Mail";
+import NotificationsIcon from "@material-ui/icons/Notifications";
+import MoreIcon from "@material-ui/icons/MoreVert";
+import ToggleThemeIcon from "@material-ui/icons/Brightness4";
 
-import HideOnScroll from './HideOnScroll';
-import SignOut from 'components/App/Header/SignOut';
-import SiteInfo from 'constants/SiteInfo.json';
+import HideOnScroll from "./HideOnScroll";
+import SignOut from "components/App/Header/SignOut";
+import SiteInfo from "constants/SiteInfo.json";
 
-import { useStore } from 'store';
-import * as Routes from 'routes';
+import { useStore } from "store";
+import * as Routes from "routes";
 
 const useStyles = makeStyles((theme) => ({
   grow: {
     flexGrow: 1,
   },
   toolBar: {
-    [theme.breakpoints.up('lg')]: {
+    [theme.breakpoints.up("lg")]: {
       width: theme.breakpoints.values.lg,
-      margin: '0 auto',
+      margin: "0 auto",
     },
   },
   title: {
     color: theme.palette.action,
-    fontWeight: 'bold',
-    fontFamily: 'monospace',
-    fontSize: '1.8rem',
+    fontWeight: "bold",
+    fontFamily: "monospace",
+    fontSize: "1.8rem",
   },
   sectionDesktop: {
-    display: 'none',
-    [theme.breakpoints.up('md')]: {
-      display: 'flex',
+    display: "none",
+    [theme.breakpoints.up("md")]: {
+      display: "flex",
     },
   },
   sectionMobile: {
-    display: 'flex',
-    [theme.breakpoints.up('md')]: {
-      display: 'none',
+    display: "flex",
+    [theme.breakpoints.up("md")]: {
+      display: "none",
     },
   },
 }));
@@ -78,14 +78,14 @@ const Header = ({ toggleThemeMode }) => {
     setMobileMoreAnchorEl(event.currentTarget);
   };
 
-  const menuId = 'menu';
+  const menuId = "menu";
   const renderMenu = (
     <Menu
       anchorEl={anchorEl}
-      anchorOrigin={{ vertical: 'top', horizontal: 'right' }}
+      anchorOrigin={{ vertical: "top", horizontal: "right" }}
       id={menuId}
       keepMounted
-      transformOrigin={{ vertical: 'top', horizontal: 'right' }}
+      transformOrigin={{ vertical: "top", horizontal: "right" }}
       open={isMenuOpen}
       onClose={handleMenuClose}
     >
@@ -116,14 +116,14 @@ const Header = ({ toggleThemeMode }) => {
     </Menu>
   );
 
-  const mobileMenuId = 'menu-mobile';
+  const mobileMenuId = "menu-mobile";
   const renderMobileMenu = (
     <Menu
       anchorEl={mobileMoreAnchorEl}
-      anchorOrigin={{ vertical: 'top', horizontal: 'right' }}
+      anchorOrigin={{ vertical: "top", horizontal: "right" }}
       id={mobileMenuId}
       keepMounted
-      transformOrigin={{ vertical: 'top', horizontal: 'right' }}
+      transformOrigin={{ vertical: "top", horizontal: "right" }}
       open={isMobileMenuOpen}
       onClose={handleMobileMenuClose}
     >

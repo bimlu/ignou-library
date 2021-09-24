@@ -1,6 +1,6 @@
-import { useEffect, useMemo } from 'react';
-import PropTypes from 'prop-types';
-import { get, uniqBy, setWith, clone } from 'lodash';
+import { useEffect, useMemo } from "react";
+import PropTypes from "prop-types";
+import { get, uniqBy, setWith, clone } from "lodash";
 
 /**
  * Component that adds Infinite scroll functionality to UI
@@ -14,7 +14,7 @@ const InfiniteScroll = ({ data, dataKey, fetchMore, variables, count, children }
           updateQuery: (prev, { fetchMoreResult }) => {
             const previousData = get(prev, dataKey);
             const fetchMoreData = get(fetchMoreResult, dataKey);
-            return setWith(clone(prev), dataKey, uniqBy([...previousData, ...fetchMoreData], 'id'), clone);
+            return setWith(clone(prev), dataKey, uniqBy([...previousData, ...fetchMoreData], "id"), clone);
           },
         });
       };
@@ -26,13 +26,13 @@ const InfiniteScroll = ({ data, dataKey, fetchMore, variables, count, children }
 
       // Stop event listener if all the data has been loaded
       if (data.length >= count) {
-        window.removeEventListener('scroll', handleScroll);
+        window.removeEventListener("scroll", handleScroll);
         return;
       }
 
       // Load more data if user has scrolled to bottom and if there's still data in db to display
       if (scrolled) {
-        window.removeEventListener('scroll', handleScroll);
+        window.removeEventListener("scroll", handleScroll);
         loadMore();
       }
     },
@@ -40,9 +40,9 @@ const InfiniteScroll = ({ data, dataKey, fetchMore, variables, count, children }
   );
 
   useEffect(() => {
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
 
-    return () => window.removeEventListener('scroll', handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
   }, [handleScroll]);
 
   return children(data);

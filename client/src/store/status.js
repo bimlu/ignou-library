@@ -1,10 +1,10 @@
 /**
  * Actions types
  */
-export const SET_UPLOADING = 'SET_UPLOADING';
-export const CLEAR_UPLOADING = 'CLEAR_UPLOADING';
-export const SET_DELETING = 'SET_DELETING';
-export const CLEAR_DELETING = 'CLEAR_DELETING';
+export const SET_UPLOADING = "SET_UPLOADING";
+export const CLEAR_UPLOADING = "CLEAR_UPLOADING";
+export const SET_DELETING = "SET_DELETING";
+export const CLEAR_DELETING = "CLEAR_DELETING";
 
 /**
  * Initial State

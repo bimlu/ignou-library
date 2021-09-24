@@ -1,19 +1,19 @@
-import React from 'react';
-import { useQuery } from '@apollo/client';
-import { Redirect } from 'react-router-dom';
+import React from "react";
+import { useQuery } from "@apollo/client";
+import { Redirect } from "react-router-dom";
 
-import { Loading } from 'components/Loading';
-import Notification from 'components/App/Notification';
-import InfiniteScroll from 'components/InfiniteScroll';
-import Empty from 'components/Empty';
-import Head from 'components/Head';
+import { Loading } from "components/Loading";
+import Notification from "components/App/Notification";
+import InfiniteScroll from "components/InfiniteScroll";
+import Empty from "components/Empty";
+import Head from "components/Head";
 
-import { useStore } from 'store';
-import * as Routes from 'routes';
+import { useStore } from "store";
+import * as Routes from "routes";
 
-import { GET_USER_NOTIFICATION } from 'graphql/notification';
+import { GET_USER_NOTIFICATION } from "graphql/notification";
 
-import { NOTIFICATIONS_PAGE_NOTIFICATION_LIMIT } from 'constants/DataLimit';
+import { NOTIFICATIONS_PAGE_NOTIFICATION_LIMIT } from "constants/DataLimit";
 
 /**
  * Notifications page
@@ -42,7 +42,7 @@ const Notifications = () => {
       ));
     }
 
-    if (error) return 'Please check your internet connection';
+    if (error) return "Please check your internet connection";
 
     const { notifications, count } = data.getUserNotifications;
     if (!notifications.length) {

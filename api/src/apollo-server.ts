@@ -1,10 +1,10 @@
-import { ApolloServer } from 'apollo-server-express';
-import { PubSub } from 'apollo-server';
-import { session } from './index';
+import { ApolloServer } from "apollo-server-express";
+import { PubSub } from "apollo-server";
+import { session } from "./index";
 
-import { Subscriptions } from './constants/Subscriptions';
-import { DocumentNode } from 'graphql';
-import { Response } from 'express';
+import { Subscriptions } from "./constants/Subscriptions";
+import { DocumentNode } from "graphql";
+import { Response } from "express";
 
 export const pubSub = new PubSub();
 

@@ -845,8 +845,7 @@ export const courses = [
   },
   {
     code: "BBYCL 132",
-    title:
-      "Biodiversity (Microbes, Algae, Fungi and Archegoniates): Laboratory",
+    title: "Biodiversity (Microbes, Algae, Fungi and Archegoniates): Laboratory",
     studyMaterial: [],
   },
   {
@@ -881,32 +880,27 @@ export const courses = [
   },
   {
     code: "BCHCT 131",
-    title:
-      "Atomic Structure, Bonding, General Organic Chemistry and Aliphatic Hydrocarbons",
+    title: "Atomic Structure, Bonding, General Organic Chemistry and Aliphatic Hydrocarbons",
     studyMaterial: [],
   },
   {
     code: "BCHCL 132",
-    title:
-      "Atomic Structure, Bonding, General Organic Chemistry and Aliphatic Hydrocarbons: Laboratory",
+    title: "Atomic Structure, Bonding, General Organic Chemistry and Aliphatic Hydrocarbons: Laboratory",
     studyMaterial: [],
   },
   {
     code: "BCHCT 133",
-    title:
-      "Chemical Energetics, Equilibria and Functional Group Organic Chemistry-I",
+    title: "Chemical Energetics, Equilibria and Functional Group Organic Chemistry-I",
     studyMaterial: [],
   },
   {
     code: "BCHCL 134",
-    title:
-      "Chemical Energetics, Equilibria and Functional Group Organic Chemistry-I : Laboratory",
+    title: "Chemical Energetics, Equilibria and Functional Group Organic Chemistry-I : Laboratory",
     studyMaterial: [],
   },
   {
     code: "BCHCT 135",
-    title:
-      "Solutions, Phase equilibrium, Conductance, Electrochemistry and Functional Group Organic Chemistry-II",
+    title: "Solutions, Phase equilibrium, Conductance, Electrochemistry and Functional Group Organic Chemistry-II",
     studyMaterial: [],
   },
   {
@@ -922,8 +916,7 @@ export const courses = [
   },
   {
     code: "BCHCL 138",
-    title:
-      "Coordination Chemistry, States of Matter and Chemical Kinetics: Laboratory",
+    title: "Coordination Chemistry, States of Matter and Chemical Kinetics: Laboratory",
     studyMaterial: [],
   },
   {
@@ -1048,8 +1041,7 @@ export const courses = [
   },
   {
     code: "BZYCL 134",
-    title:
-      "Comparative Anatomy and Developmental Biology of Vertebrates: Laboratory",
+    title: "Comparative Anatomy and Developmental Biology of Vertebrates: Laboratory",
     studyMaterial: [],
   },
   {
@@ -1104,14 +1096,12 @@ export const courses = [
   },
   {
     code: "BCHET 147",
-    title:
-      "Organometallics, Bioinorganic Chemistry, PolynuclearHyderocarbons and UV, IR Spectroscopy",
+    title: "Organometallics, Bioinorganic Chemistry, PolynuclearHyderocarbons and UV, IR Spectroscopy",
     studyMaterial: [],
   },
   {
     code: "BCHEL 148",
-    title:
-      "Organometallics, Bioinorganic Chemistry, Polynuclear Hydrocarbons and UV, IR Spectroscopy: Laboratory",
+    title: "Organometallics, Bioinorganic Chemistry, Polynuclear Hydrocarbons and UV, IR Spectroscopy: Laboratory",
     studyMaterial: [],
   },
   {
@@ -3022,26 +3012,22 @@ export const courses = [
   },
   {
     code: "BCHCT 131",
-    title:
-      "Atomic Structure, Bonding, General Organic Chemistry and Aliphatic Hydrocarbons",
+    title: "Atomic Structure, Bonding, General Organic Chemistry and Aliphatic Hydrocarbons",
     studyMaterial: [],
   },
   {
     code: "BCHCL-132",
-    title:
-      "Atomic Structure, Bonding, General Organic Chemistry and Aliphatic Hydrocarbons: Laboratory",
+    title: "Atomic Structure, Bonding, General Organic Chemistry and Aliphatic Hydrocarbons: Laboratory",
     studyMaterial: [],
   },
   {
     code: "BCHCT 133",
-    title:
-      "Chemical Energetics, Equilibria and Functional Group Organic Chemistry I",
+    title: "Chemical Energetics, Equilibria and Functional Group Organic Chemistry I",
     studyMaterial: [],
   },
   {
     code: "BCHCL 134",
-    title:
-      "Chemical Energetics, Equilibria and Functional Group Organic Chemistry I: Laboratory",
+    title: "Chemical Energetics, Equilibria and Functional Group Organic Chemistry I: Laboratory",
     studyMaterial: [],
   },
   {
@@ -3051,8 +3037,7 @@ export const courses = [
   },
   {
     code: "BBYCL 132",
-    title:
-      "Biodiversity (Microbes, Algae, Fungi and Archegoniates): Laboratory",
+    title: "Biodiversity (Microbes, Algae, Fungi and Archegoniates): Laboratory",
     studyMaterial: [],
   },
   {
@@ -3263,8 +3248,7 @@ export const courses = [
   },
   {
     code: "BHMCT 113",
-    title:
-      "Study of Gharanas, Elementary Western Music, and Interdisciplinary study of Music",
+    title: "Study of Gharanas, Elementary Western Music, and Interdisciplinary study of Music",
     studyMaterial: [],
   },
   {

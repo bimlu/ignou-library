@@ -1,9 +1,9 @@
-import archiver from 'archiver';
-import { v4 as uuid } from 'uuid';
-import AWS from 'aws-sdk';
-const stream = require('stream');
+import archiver from "archiver";
+import { v4 as uuid } from "uuid";
+import AWS from "aws-sdk";
+const stream = require("stream");
 
-import { uploadToS3BucketFromStream } from './s3-bucket';
+import { uploadToS3BucketFromStream } from "./s3-bucket";
 
 /**
  * download images from s3, zip them and upload back to s3 in different folder
@@ -32,7 +32,7 @@ export const downloadFromS3AndZipToS3 = async (files, folder) => {
   });
 
   // Define the ZIP target archive
-  let archive = archiver('zip', {
+  let archive = archiver("zip", {
     zlib: { lever: 9 }, // Sets the compression level
   });
 
@@ -42,8 +42,8 @@ export const downloadFromS3AndZipToS3 = async (files, folder) => {
   // Pipe!
   archive.pipe(uploadStream);
 
-  archive.on('warning', function (err) {
-    if (err.code === 'ENOENT') {
+  archive.on("warning", function (err) {
+    if (err.code === "ENOENT") {
       // log warning
     } else {
       // throw error
@@ -52,7 +52,7 @@ export const downloadFromS3AndZipToS3 = async (files, folder) => {
   });
 
   // Good practice to catch this error explicitly
-  archive.on('error', function (err) {
+  archive.on("error", function (err) {
     throw err;
   });
 

@@ -1,1 +1,1 @@
-export { default } from './CollegesTreeView';
+export { default } from "./CollegesTreeView";

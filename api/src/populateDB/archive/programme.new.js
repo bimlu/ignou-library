@@ -40,8 +40,7 @@ export const createProgrammes = () => {
       ],
       eligibility: "10+2 or its equivalent",
       mediumOfInstruction: "English & Hindi",
-      duration:
-        "Minimum 3 years and Maximum 6 years; offered in both January and July cycle of admission.",
+      duration: "Minimum 3 years and Maximum 6 years; offered in both January and July cycle of admission.",
       feeStructure: `For B.A. Rs. 9,900/- for full programme to be paid year wise @ Rs. 3,300/- per year. Fee to be
         paid in 1st year, including Registration Fee of Rs.200/- Is Rs.3,500/- `,
       categories: [
@@ -55,143 +54,35 @@ export const createProgrammes = () => {
         // [courseCode, courseTitle, discipline, category, credit]
         // --------------------------------
         // CC, Core Courses, 72
-        [
-          "BANC 131",
-          "Anthropology and Research Methods",
-          "Anthropology",
-          "CC",
-          "6",
-        ],
-        [
-          "BANC 132",
-          "Fundamentals of Biological Anthropology",
-          "Anthropology",
-          "CC",
-          "6",
-        ],
-        [
-          "BANC 133",
-          "Fundamentals of Social and Cultural Anthropology",
-          "Anthropology",
-          "CC",
-          "6",
-        ],
-        [
-          "BANC 134",
-          "Fundamentals of Archaeological Anthropology",
-          "Anthropology",
-          "CC",
-          "6",
-        ],
+        ["BANC 131", "Anthropology and Research Methods", "Anthropology", "CC", "6"],
+        ["BANC 132", "Fundamentals of Biological Anthropology", "Anthropology", "CC", "6"],
+        ["BANC 133", "Fundamentals of Social and Cultural Anthropology", "Anthropology", "CC", "6"],
+        ["BANC 134", "Fundamentals of Archaeological Anthropology", "Anthropology", "CC", "6"],
 
         ["BECC 131", "Principles of Microeconomics-I ", "Economics", "CC", "6"],
         ["BECC 132", "Principles of Microeconomics-II", "Economics", "CC", "6"],
         ["BECC 133", "Principles of Macroeconomics-I", "Economics", "CC", "6"],
         ["BECC 134", "Principles of Macroeconomics-II", "Economics", "CC", "6"],
 
-        [
-          "BHIC 131",
-          "History of India from the Earliest Times upto c. 300 CE",
-          "History",
-          "CC",
-          "6",
-        ],
-        [
-          "BHIC 132",
-          "History of India from c.300 to 1206",
-          "History",
-          "CC",
-          "6",
-        ],
-        [
-          "BHIC 134",
-          "History of India from c.1206 to 1707",
-          "History",
-          "CC",
-          "6",
-        ],
-        [
-          "BHIC 134",
-          "History of India from c. 1707 to 1950",
-          "History",
-          "CC",
-          "6",
-        ],
+        ["BHIC 131", "History of India from the Earliest Times upto c. 300 CE", "History", "CC", "6"],
+        ["BHIC 132", "History of India from c.300 to 1206", "History", "CC", "6"],
+        ["BHIC 134", "History of India from c.1206 to 1707", "History", "CC", "6"],
+        ["BHIC 134", "History of India from c. 1707 to 1950", "History", "CC", "6"],
 
-        [
-          "BPSC 131",
-          "Introduction to Political Theory",
-          "Political Science",
-          "CC",
-          "6",
-        ],
-        [
-          "BPSC 132",
-          "Indian Government and Politics",
-          "Political Science",
-          "CC",
-          "6",
-        ],
-        [
-          "BPSC 133",
-          "Comparative Government and Politics",
-          "Political Science",
-          "CC",
-          "6",
-        ],
-        [
-          "BPSC 134",
-          "Introduction to International Relations",
-          "Political Science",
-          "CC",
-          "6",
-        ],
+        ["BPSC 131", "Introduction to Political Theory", "Political Science", "CC", "6"],
+        ["BPSC 132", "Indian Government and Politics", "Political Science", "CC", "6"],
+        ["BPSC 133", "Comparative Government and Politics", "Political Science", "CC", "6"],
+        ["BPSC 134", "Introduction to International Relations", "Political Science", "CC", "6"],
 
         ["BPCC 131", "Foundations of Psychology", "Psychology", "CC", "6"],
-        [
-          "BPCC 132",
-          "Introduction to Social Psychology",
-          "Psychology",
-          "CC",
-          "6",
-        ],
+        ["BPCC 132", "Introduction to Social Psychology", "Psychology", "CC", "6"],
         ["BPCC 133", "Psychological Disorders", "Psychology", "CC", "6"],
-        [
-          "BPCC 134",
-          "Statistical Methods and Psychological Research",
-          "Psychology",
-          "CC",
-          "6",
-        ],
+        ["BPCC 134", "Statistical Methods and Psychological Research", "Psychology", "CC", "6"],
 
-        [
-          "BPAC 131",
-          "Perspectives on Public Administration",
-          "Public Administration",
-          "CC",
-          "6",
-        ],
-        [
-          "BPAC 132",
-          "Administrative Thinkers",
-          "Public Administration",
-          "CC",
-          "6",
-        ],
-        [
-          "BPAC 133",
-          "Administrative system at Union Level",
-          "Public Administration",
-          "CC",
-          "6",
-        ],
-        [
-          "BPAC 134",
-          "Administrative system at State and District Levels",
-          "Public Administration",
-          "CC",
-          "6",
-        ],
+        ["BPAC 131", "Perspectives on Public Administration", "Public Administration", "CC", "6"],
+        ["BPAC 132", "Administrative Thinkers", "Public Administration", "CC", "6"],
+        ["BPAC 133", "Administrative system at Union Level", "Public Administration", "CC", "6"],
+        ["BPAC 134", "Administrative system at State and District Levels", "Public Administration", "CC", "6"],
 
         ["BSOC 131", "Introduction to Sociology", "Sociology", "CC", "6"],
         ["BSOC 132", "Sociology of India", "Sociology", "CC", "6"],
@@ -209,24 +100,12 @@ export const createProgrammes = () => {
 
         ["BUDC 131", "Study of Prose & Poetic Form in Urdu", "Urdu", "CC", "6"],
         ["BUDC 132", "Study of Urdu Classical Ghazal ", "Urdu", "CC", "6"],
-        [
-          "BUDC 133",
-          "Origin & Development of Urdu Language",
-          "Urdu",
-          "CC",
-          "6",
-        ],
+        ["BUDC 133", "Origin & Development of Urdu Language", "Urdu", "CC", "6"],
         ["BUDC 134", "Study of Urdu Nazm", "Urdu", "CC", "6"],
         ["BUDLA 135", "Study of Modern Urdu Prose & Poetry", "Urdu", "CC", "6"],
 
         ["BEGC 131", "Individual & Society", "English", "CC", "6"],
-        [
-          "BEGC 132",
-          "Selections From Indian Writing: Cultural Diversity",
-          "English",
-          "CC",
-          "6",
-        ],
+        ["BEGC 132", "Selections From Indian Writing: Cultural Diversity", "English", "CC", "6"],
         ["BEGC 133", "British Literature", "English", "CC", "6"],
         ["BEGC 134", "Reading The Novel", "English", "CC", "6"],
         ["BEGLA 135", "English In Daily Life", "English", "CC", "6"],
@@ -244,13 +123,7 @@ export const createProgrammes = () => {
 
         ["BGULA 135", "Modern Indian Language: Gujarati", "Gujrati", "CC", "6"],
 
-        [
-          "BMYLA 135",
-          "Modern Indian Language: Malayalam",
-          "Malayalam",
-          "CC",
-          "6",
-        ],
+        ["BMYLA 135", "Modern Indian Language: Malayalam", "Malayalam", "CC", "6"],
 
         ["BPBLA", "Modern Indian Language: Punjabi", "Punjabi", "CC", "6"],
 
@@ -259,27 +132,9 @@ export const createProgrammes = () => {
         ["BMTC 133", "Real Analysis", "Mathematics", "CC", "6"],
         ["BMTC 134", "Algebra", "Mathematics", "CC", "6"],
 
-        [
-          "BESC 131",
-          "Education: Concept, Nature and Perspectives",
-          "Education",
-          "CC",
-          "6",
-        ],
-        [
-          "BESC 132",
-          "Structure and Management of Education",
-          "Education",
-          "CC",
-          "6",
-        ],
-        [
-          "BESC 133",
-          "Curriculum, Teaching-Learning and Assessment",
-          "Education",
-          "CC",
-          "6",
-        ],
+        ["BESC 131", "Education: Concept, Nature and Perspectives", "Education", "CC", "6"],
+        ["BESC 132", "Structure and Management of Education", "Education", "CC", "6"],
+        ["BESC 133", "Curriculum, Teaching-Learning and Assessment", "Education", "CC", "6"],
         ["BESC 134", "Education as a Practice", "Education", "CC", "6"],
 
         ["BPYC 131", "Indian Philosophy", "Philosophy", "CC", "6"],
@@ -290,145 +145,43 @@ export const createProgrammes = () => {
         // ------------------------------
         // DSE, Discipline Specific Electives
         ["BANE 145", "Applied Anthropology ", "Anthropology", "DSE", "6"],
-        [
-          "BANE 146",
-          "Anthropology of Indigenous People",
-          "Anthropology",
-          "DSE",
-          "6",
-        ],
+        ["BANE 146", "Anthropology of Indigenous People", "Anthropology", "DSE", "6"],
 
         ["BECE 145", "Indian Economy – I", "Economics", "DSE", "6"],
         ["BECE 146", "Indian Economy – II", "Economics", "DSE", "6"],
 
         ["BHIE 141", "History of China: C. 1840-1978", "History", "DSE", "6"],
-        [
-          "BHIE 142",
-          "History of Modern East Asia: Japan (1868-1945)",
-          "History",
-          "DSE",
-          "6",
-        ],
+        ["BHIE 142", "History of Modern East Asia: Japan (1868-1945)", "History", "DSE", "6"],
         ["BHIE 143", "History of Environment", "History", "DSE", "6"],
-        [
-          "BHIE 144",
-          "Traditions of History Writing in India",
-          "History",
-          "DSE",
-          "6",
-        ],
-        [
-          "BHIE 145",
-          "Some aspects of European History: C. 1789 – 1945",
-          "History",
-          "DSE",
-          "6",
-        ],
+        ["BHIE 144", "Traditions of History Writing in India", "History", "DSE", "6"],
+        ["BHIE 145", "Some aspects of European History: C. 1789 – 1945", "History", "DSE", "6"],
 
-        [
-          "BPSE 141",
-          "Gandhi and the Contemporary World",
-          "Political Science",
-          "DSE",
-          "6",
-        ],
-        [
-          "BPSE 142",
-          "India’s Foreign Policy in a Changing World",
-          "Political Science",
-          "DSE",
-          "6",
-        ],
-        [
-          "BPSE 143",
-          "State Politics in India",
-          "Political Science",
-          "DSE",
-          "6",
-        ],
-        [
-          "BPSE 144",
-          "Introduction to South Asia",
-          "Political Science",
-          "DSE",
-          "6",
-        ],
-        [
-          "BPSE 145",
-          "Democracy and Development in Northeast India",
-          "Political Science",
-          "DSE",
-          "6",
-        ],
-        [
-          "BPSE 146",
-          "Conflict Resolution and Peace building",
-          "Political Science",
-          "DSE",
-          "6",
-        ],
+        ["BPSE 141", "Gandhi and the Contemporary World", "Political Science", "DSE", "6"],
+        ["BPSE 142", "India’s Foreign Policy in a Changing World", "Political Science", "DSE", "6"],
+        ["BPSE 143", "State Politics in India", "Political Science", "DSE", "6"],
+        ["BPSE 144", "Introduction to South Asia", "Political Science", "DSE", "6"],
+        ["BPSE 145", "Democracy and Development in Northeast India", "Political Science", "DSE", "6"],
+        ["BPSE 146", "Conflict Resolution and Peace building", "Political Science", "DSE", "6"],
 
         ["BPCE 145", "Counselling Psychology", "Psychology", "DSE", "6"],
-        [
-          "BPCE 146",
-          "Industrial/ Organisational Psychology",
-          "Psychology",
-          "DSE",
-          "6",
-        ],
+        ["BPCE 146", "Industrial/ Organisational Psychology", "Psychology", "DSE", "6"],
 
-        [
-          "BPAE 141",
-          "Right to Information",
-          "Public Administration",
-          "DSE",
-          "6",
-        ],
-        [
-          "BPAE 142",
-          "Organisational Behaviour",
-          "Public Administration",
-          "DSE",
-          "6",
-        ],
-        [
-          "BPAE 143",
-          "Administrative System in BRICS",
-          "Public Administration",
-          "DSE",
-          "6",
-        ],
-        [
-          "BPAE 144",
-          "Social Policies and Administration",
-          "Public Administration",
-          "DSE",
-          "6",
-        ],
+        ["BPAE 141", "Right to Information", "Public Administration", "DSE", "6"],
+        ["BPAE 142", "Organisational Behaviour", "Public Administration", "DSE", "6"],
+        ["BPAE 143", "Administrative System in BRICS", "Public Administration", "DSE", "6"],
+        ["BPAE 144", "Social Policies and Administration", "Public Administration", "DSE", "6"],
 
         ["BSOE 145", "Religion and Society", "Sociology", "DSE", "6"],
         ["BSOE 146", "Marriage, Family and Kinship", "Sociology", "DSE", "6"],
         ["BSOE 148", "Social Stratification", "Sociology", "DSE", "6"],
 
-        [
-          "BHDE 141",
-          "अिस्मतामूलक �वमशर् और �हंद� सा�हत्य",
-          "Hindi",
-          "DSE",
-          "6",
-        ],
+        ["BHDE 141", "अिस्मतामूलक �वमशर् और �हंद� सा�हत्य", "Hindi", "DSE", "6"],
         ["BHDE 142", "राष्ट्र�य काव्यधारा", "Hindi", "DSE", "6"],
         ["BHDE 143", "प्रेमचंद", "Hindi", "DSE", "6"],
         ["BHDE 144", "छायावाद", "Hindi", "DSE", "6"],
 
         ["BUDE 141", "Study of Poet Mirza Ghalib", "Urdu", "DSE", "6"],
-        [
-          "BUDE 142",
-          "Study of Prose Writer Meer Amman Dehlawi",
-          "Urdu",
-          "DSE",
-          "6",
-        ],
+        ["BUDE 142", "Study of Prose Writer Meer Amman Dehlawi", "Urdu", "DSE", "6"],
 
         ["BEGE 141", "Understanding Prose", "English", "DSE", "6"],
         ["BEGE 142", "Understanding Drama", "English", "DSE", "6"],
@@ -445,13 +198,7 @@ export const createProgrammes = () => {
         ["BESE 142", "Lifelong Learning", "Education", "DSE", "6"],
 
         ["BPYE 141", "Metaphysics", "Philosophy", "DSE", "6"],
-        [
-          "BPYE 142",
-          "Social and Political Philosophy",
-          "Philosophy",
-          "DSE",
-          "6",
-        ],
+        ["BPYE 142", "Social and Political Philosophy", "Philosophy", "DSE", "6"],
 
         // ---------------------------------
         // AECC, Ability Enhancement Compulsory Course, 3
@@ -462,57 +209,21 @@ export const createProgrammes = () => {
         // ---------------------------------
         // SEC, Skill Enhancement Courses
         ["BANS 183", "Tourism Anthropology", "Anthropology", "SEC", "4"],
-        [
-          "BANS 184",
-          "Public Health and Epidemiology",
-          "Anthropology",
-          "SEC",
-          "4",
-        ],
+        ["BANS 184", "Public Health and Epidemiology", "Anthropology", "SEC", "4"],
 
         ["BECS 184", "Data Analysis", "Economics", "SEC", "4"],
 
         ["BPCS 183", "Emotional Intelligence", "Psychology", "SEC", "4"],
         ["BPCS 184", "School Psychology", "Psychology", "SEC", "4"],
-        [
-          "BPCS 185",
-          "Developing Emotional Competence",
-          "Psychology",
-          "SEC",
-          "4",
-        ],
+        ["BPCS 185", "Developing Emotional Competence", "Psychology", "SEC", "4"],
         ["BPCS 186", "Managing Stress", "Psychology", "SEC", "4"],
         ["BPCS 187", "Managing Human Resources", "Psychology", "SEC", "4"],
-        [
-          "BPCS 188",
-          "Application of Social Psychology",
-          "Psychology",
-          "SEC",
-          "4",
-        ],
+        ["BPCS 188", "Application of Social Psychology", "Psychology", "SEC", "4"],
 
-        [
-          "BPAS 184",
-          "Logistics Management",
-          "Public Administration",
-          "SEC",
-          "4",
-        ],
-        [
-          "BPAS 186",
-          "Stress and Time Management",
-          "Public Administration",
-          "SEC",
-          "4",
-        ],
+        ["BPAS 184", "Logistics Management", "Public Administration", "SEC", "4"],
+        ["BPAS 186", "Stress and Time Management", "Public Administration", "SEC", "4"],
 
-        [
-          "BSOS 184",
-          "Techniques of Ethnographic Film Making",
-          "Sociology",
-          "SEC",
-          "4",
-        ],
+        ["BSOS 184", "Techniques of Ethnographic Film Making", "Sociology", "SEC", "4"],
         ["BSOS 185", "Society through the Visual", "Sociology", "SEC", "4"],
 
         ["BHDS 183", "अनुवाद �सद्धांत और प्र�व�ध", "Hindi", "SEC", "4"],
@@ -524,51 +235,21 @@ export const createProgrammes = () => {
 
         // -----------------------------------
         // GE, General Electives
-        [
-          "BGDG 172",
-          "Gender Sensitization: Society and Culture",
-          "Gender and Development",
-          "GE",
-          "6",
-        ],
+        ["BGDG 172", "Gender Sensitization: Society and Culture", "Gender and Development", "GE", "6"],
 
         ["BPCG 171", "General Psychology", "Psychology", "GE", "6"],
         ["BPCG 172", "Youth, Gender and Identity", "Psychology", "GE", "6"],
-        [
-          "BPCG 173",
-          "Psychology for Health andWell-being",
-          "Psychology",
-          "GE",
-          "6",
-        ],
+        ["BPCG 173", "Psychology for Health andWell-being", "Psychology", "GE", "6"],
         ["BPCG 174", "Psychology and Media", "Psychology", "GE", "6"],
         ["BPCG 175", "Psychology for Living", "Psychology", "GE", "6"],
         ["BPCG 176", "Psychology of Gender", "Psychology", "GE", "6"],
 
         ["BPAG 171", "Disaster Management", "Public Administration", "GE", "6"],
-        [
-          "BPAG 172",
-          "Governance: Issues and Challenges",
-          "Public Administration",
-          "GE",
-          "6",
-        ],
+        ["BPAG 172", "Governance: Issues and Challenges", "Public Administration", "GE", "6"],
         ["BPAG 173", "E-Governance", "Public Administration", "GE", "6"],
-        [
-          "BPAG 174",
-          "Sustainable Development",
-          "Public Administration",
-          "GE",
-          "6",
-        ],
+        ["BPAG 174", "Sustainable Development", "Public Administration", "GE", "6"],
 
-        [
-          "BSOG 171",
-          "Indian Society: Images and Realities",
-          "Sociology",
-          "GE",
-          "6",
-        ],
+        ["BSOG 171", "Indian Society: Images and Realities", "Sociology", "GE", "6"],
         ["BSOG 173", "Rethinking Development", "Sociology", "GE", "6"],
         ["BSOG 176", "Economy and Society", "Sociology", "GE", "6"],
 
@@ -608,8 +289,7 @@ export const createProgrammes = () => {
       ],
       eligibility: "10+2 or its equivalent",
       mediumOfInstruction: " English & Hindi",
-      duration:
-        "Minimum 3 years and Maximum 6 years; offered in both January and July cycle of admission.",
+      duration: "Minimum 3 years and Maximum 6 years; offered in both January and July cycle of admission.",
       feeStructure: `Rs. 9,900/- for full programme to be paid year wise @Rs. 3,300/- per year. Fee to be paid in
         1st year, including Registration Fee of Rs.200/-is Rs.3,500/-. `,
       courses: [
@@ -675,11 +355,9 @@ export const createProgrammes = () => {
         seeking the degree for employment, further higher education, promotion in career and professional
         development.`,
       ],
-      eligibility:
-        ":10+2 with science subjects or its equivalent qualification.",
+      eligibility: ":10+2 with science subjects or its equivalent qualification.",
       mediumOfInstruction: "English & Hindi",
-      duration:
-        "Minimum 3 years and Maximum 6 years; offered in both January and July cycle of admission",
+      duration: "Minimum 3 years and Maximum 6 years; offered in both January and July cycle of admission",
       feeStructure: `Rs. 14,700/- for full programme to be paid year wise @ Rs.4,900/- per year. Fee to be paid in first
         year, including Registration Fee of Rs.200/- is Rs.5,100/- `,
       categories: [

@@ -1,19 +1,19 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+import React from "react";
+import PropTypes from "prop-types";
 
-import { makeStyles } from '@material-ui/core/styles';
-import { Paper, Typography } from '@material-ui/core';
-import Avatar from '@material-ui/core/Avatar';
-import ListItem from '@material-ui/core/ListItem';
-import ListItemAvatar from '@material-ui/core/ListItemAvatar';
+import { makeStyles } from "@material-ui/core/styles";
+import { Paper, Typography } from "@material-ui/core";
+import Avatar from "@material-ui/core/Avatar";
+import ListItem from "@material-ui/core/ListItem";
+import ListItemAvatar from "@material-ui/core/ListItemAvatar";
 
-import { currentDate } from 'utils/date';
+import { currentDate } from "utils/date";
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    display: 'flex',
-    position: 'relative',
-    justifyContent: (props) => props.userMessage && 'flex-end',
+    display: "flex",
+    position: "relative",
+    justifyContent: (props) => props.userMessage && "flex-end",
     marginBottom: theme.spacing(4),
     marginTop: theme.spacing(1),
   },
@@ -24,12 +24,12 @@ const useStyles = makeStyles((theme) => ({
     paddingBottom: theme.spacing(0.5),
     paddingLeft: theme.spacing(1.5),
     paddingRight: theme.spacing(1.5),
-    wordWrap: 'break-word',
+    wordWrap: "break-word",
     maxWidth: 160,
     minWidth: 32,
   },
   messageDate: {
-    position: 'absolute',
+    position: "absolute",
     bottom: -theme.spacing(2),
     color: theme.palette.text.secondary,
     fontSize: theme.spacing(1.3),

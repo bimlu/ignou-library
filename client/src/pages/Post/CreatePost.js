@@ -1,49 +1,49 @@
-import React, { useEffect, useState } from 'react';
-import { useMutation } from '@apollo/client';
-import { Redirect, useLocation } from 'react-router-dom';
-import { makeStyles } from '@material-ui/core/styles';
-import TextField from '@material-ui/core/TextField';
-import IconButton from '@material-ui/core/IconButton';
-import PhotoCamera from '@material-ui/icons/PhotoCamera';
-import CreateIcon from '@material-ui/icons/Create';
-import Button from '@material-ui/core/Button';
-import Snackbar from '@material-ui/core/Snackbar';
-import MuiAlert from '@material-ui/lab/Alert';
-import Paper from '@material-ui/core/Paper';
+import React, { useEffect, useState } from "react";
+import { useMutation } from "@apollo/client";
+import { Redirect, useLocation } from "react-router-dom";
+import { makeStyles } from "@material-ui/core/styles";
+import TextField from "@material-ui/core/TextField";
+import IconButton from "@material-ui/core/IconButton";
+import PhotoCamera from "@material-ui/icons/PhotoCamera";
+import CreateIcon from "@material-ui/icons/Create";
+import Button from "@material-ui/core/Button";
+import Snackbar from "@material-ui/core/Snackbar";
+import MuiAlert from "@material-ui/lab/Alert";
+import Paper from "@material-ui/core/Paper";
 
-import { GET_FOLLOWED_POSTS, GET_COLLEGE_PROGRAMME_COURSE_POSTS, CREATE_POST } from 'graphql/post';
-import { GET_AUTH_USER, GET_USER_POSTS } from 'graphql/user';
+import { GET_FOLLOWED_POSTS, GET_COLLEGE_PROGRAMME_COURSE_POSTS, CREATE_POST } from "graphql/post";
+import { GET_AUTH_USER, GET_USER_POSTS } from "graphql/user";
 
-import { EXPLORE_PAGE_CARDS_LIMIT, PROFILE_PAGE_POSTS_LIMIT } from 'constants/DataLimit';
-import { HOME_PAGE_POSTS_LIMIT } from 'constants/DataLimit';
-import { MAX_POST_IMAGE_SIZE } from 'constants/ImageSize';
+import { EXPLORE_PAGE_CARDS_LIMIT, PROFILE_PAGE_POSTS_LIMIT } from "constants/DataLimit";
+import { HOME_PAGE_POSTS_LIMIT } from "constants/DataLimit";
+import { MAX_POST_IMAGE_SIZE } from "constants/ImageSize";
 
-import Head from 'components/Head';
-import SimpleHeader from 'components/SimpleHeader';
+import Head from "components/Head";
+import SimpleHeader from "components/SimpleHeader";
 
-import { useStore } from 'store';
-import { SET_UPLOADING, CLEAR_UPLOADING } from 'store/status';
+import { useStore } from "store";
+import { SET_UPLOADING, CLEAR_UPLOADING } from "store/status";
 
-import * as Routes from 'routes';
+import * as Routes from "routes";
 
 const useStyles = makeStyles((theme) => ({
   paper: {
     padding: theme.spacing(1),
     borderRadius: theme.spacing(1),
     minHeight: 600,
-    [theme.breakpoints.down('sm')]: {
-      minHeight: '100%',
+    [theme.breakpoints.down("sm")]: {
+      minHeight: "100%",
     },
   },
   root: {},
   form: {
-    '& .MuiTextField-root': {
+    "& .MuiTextField-root": {
       margin: theme.spacing(1),
-      width: '96%',
+      width: "96%",
     },
   },
   input: {
-    display: 'none',
+    display: "none",
   },
   button: {
     margin: theme.spacing(1),
@@ -54,8 +54,8 @@ const useStyles = makeStyles((theme) => ({
   },
   title: {
     fontSize: theme.spacing(3.6),
-    fontWeight: 'bold',
-    display: 'inline',
+    fontWeight: "bold",
+    display: "inline",
     marginLeft: theme.spacing(1),
   },
 }));
@@ -70,18 +70,18 @@ export default function CreatePost() {
   const { search } = useLocation();
 
   const query = new URLSearchParams(search);
-  const collegeId = query.get('collegeId');
-  const programmeId = query.get('programmeId');
-  const courseId = query.get('courseId');
-  const courseName = query.get('courseName');
-  const type = query.get('type');
+  const collegeId = query.get("collegeId");
+  const programmeId = query.get("programmeId");
+  const courseId = query.get("courseId");
+  const courseName = query.get("courseName");
+  const type = query.get("type");
 
-  const [title, setTitle] = useState('');
+  const [title, setTitle] = useState("");
   const [imagesOrPDF, setImagesOrPDF] = useState([]);
-  const [fileName, setFileName] = useState('');
+  const [fileName, setFileName] = useState("");
   const [open, setOpen] = useState(false);
-  const [message, setMessage] = useState('');
-  const [severity, setSeverity] = useState('');
+  const [message, setMessage] = useState("");
+  const [severity, setSeverity] = useState("");
   const [createPost, { loading }] = useMutation(CREATE_POST, {
     refetchQueries: [
       {
@@ -126,7 +126,7 @@ export default function CreatePost() {
     const key = e.target.id || e.target.name;
     const value = e.target.value;
 
-    if (key === 'title') {
+    if (key === "title") {
       setTitle(value);
     }
   };
@@ -141,19 +141,19 @@ export default function CreatePost() {
     for (let file of files) {
       if (file.size >= MAX_POST_IMAGE_SIZE) {
         setMessage(`File size should be less then ${MAX_POST_IMAGE_SIZE / 1000000}MB`);
-        setSeverity('warning');
+        setSeverity("warning");
         setOpen(true);
         return;
       }
     }
 
-    if (type === 'image') {
+    if (type === "image") {
       setImagesOrPDF(files);
     } else {
       const file = files[0];
-      const fileExt = file.name.split('.').pop();
+      const fileExt = file.name.split(".").pop();
       setImagesOrPDF(file);
-      setFileName(`${courseName}.${'jan-2021'}.${title.substr(0, 10)}.${fileExt}`);
+      setFileName(`${courseName}.${"jan-2021"}.${title.substr(0, 10)}.${fileExt}`);
     }
     e.target.value = null;
   };
@@ -164,7 +164,7 @@ export default function CreatePost() {
       await createPost({
         variables: {
           input:
-            type === 'image'
+            type === "image"
               ? { title, images: imagesOrPDF, authorId: auth.user.id, collegeId, programmeId, courseId }
               : {
                   title,
@@ -179,25 +179,25 @@ export default function CreatePost() {
       });
 
       handleReset();
-      setMessage('Successfully created assignments!');
-      setSeverity('success');
+      setMessage("Successfully created assignments!");
+      setSeverity("success");
       setOpen(true);
     } catch (error) {
       setMessage(
         "Is PDF File inside WhatsApp?, Try Selecting it like this after clicking 'Select PDF file' button:\n File Manager > WhatsApp > Media > WhatsApp Documents > PDF File.\nOR\nSelect the file from appropriate folder in File Manager"
       );
-      setSeverity('error');
+      setSeverity("error");
       setOpen(true);
     }
   };
 
   const handleReset = () => {
-    setTitle('');
+    setTitle("");
     setImagesOrPDF([]);
   };
 
   const isCreateDisabled =
-    type === 'image'
+    type === "image"
       ? status.uploading || !title || !(imagesOrPDF.length > 0)
       : status.uploading || !title || !imagesOrPDF;
 
@@ -205,7 +205,7 @@ export default function CreatePost() {
     <Paper className={classes.paper}>
       <Head title="New post (imagesOrPDF)" desc="Upload assiginments as imagesOrPDF" />
 
-      <SimpleHeader heading={`New Post (${type === 'image' ? 'Photos' : 'File'})`} loading={status.uploading} />
+      <SimpleHeader heading={`New Post (${type === "image" ? "Photos" : "File"})`} loading={status.uploading} />
 
       <form className={classes.form} noValidate autoComplete="off" onSubmit={handleSubmit}>
         <Snackbar open={open} autoHideDuration={6000} onClose={() => setOpen(false)} className={classes.snackbar}>
@@ -226,7 +226,7 @@ export default function CreatePost() {
 
         <div>
           <input
-            accept={type === 'image' ? 'image/*' : 'application/pdf;application/msword'}
+            accept={type === "image" ? "image/*" : "application/pdf;application/msword"}
             className={classes.input}
             id="imagesOrPDF"
             type="file"
@@ -237,7 +237,7 @@ export default function CreatePost() {
             <IconButton color="primary" aria-label="upload imagesOrPDF" component="span">
               <PhotoCamera />
             </IconButton>
-            Select {type === 'image' ? 'Photos' : 'pdf / docx file'}
+            Select {type === "image" ? "Photos" : "pdf / docx file"}
           </label>
         </div>
 

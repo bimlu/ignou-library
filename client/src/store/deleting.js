@@ -1,8 +1,8 @@
 /**
  * Actions types
  */
-export const SET_DELETING = 'SET_DELETING';
-export const CLEAR_DELETING = 'CLEAR_DELETING';
+export const SET_DELETING = "SET_DELETING";
+export const CLEAR_DELETING = "CLEAR_DELETING";
 
 /**
  * Initial State

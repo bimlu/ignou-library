@@ -1,5 +1,5 @@
-import React from 'react';
-import theme from 'theme';
+import React from "react";
+import theme from "theme";
 
 /**
  * User icon, that uses theme color options
@@ -8,7 +8,7 @@ import theme from 'theme';
  * @param {string} color
  */
 export const UserIcon = ({ width, color }) => {
-  const DEFAULT_WIDTH = '24';
+  const DEFAULT_WIDTH = "24";
   const DEFAULT_COLOR = theme.colors.grey[600];
 
   return (

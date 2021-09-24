@@ -12,8 +12,7 @@ export const pgGraduateDiplomaCourses = [
     code: "MCFTL-1",
     title: "Human Development and Family Relationships - Supervised Practicum",
     name: "MCFTL-1",
-    fullName:
-      "Human Development and Family Relationships - Supervised Practicum",
+    fullName: "Human Development and Family Relationships - Supervised Practicum",
     collegeCode: "IGNOU",
     programmeCode: "BLIS",
     term: 1,
@@ -38,22 +37,18 @@ export const pgGraduateDiplomaCourses = [
   },
   {
     code: "MCFT-3",
-    title:
-      "Counselling and Family Therapy: Basic Concepts and Theoretical Perspectives",
+    title: "Counselling and Family Therapy: Basic Concepts and Theoretical Perspectives",
     name: "MCFT-3",
-    fullName:
-      "Counselling and Family Therapy: Basic Concepts and Theoretical Perspectives",
+    fullName: "Counselling and Family Therapy: Basic Concepts and Theoretical Perspectives",
     collegeCode: "IGNOU",
     programmeCode: "BLIS",
     term: 1,
   },
   {
     code: "MCFTL-3",
-    title:
-      "Counselling and Family Therapy: Basic Concepts and Theoretical Perspectives -Supervised Practicum",
+    title: "Counselling and Family Therapy: Basic Concepts and Theoretical Perspectives -Supervised Practicum",
     name: "MCFTL-3",
-    fullName:
-      "Counselling and Family Therapy: Basic Concepts and Theoretical Perspectives -Supervised Practicum",
+    fullName: "Counselling and Family Therapy: Basic Concepts and Theoretical Perspectives -Supervised Practicum",
     collegeCode: "IGNOU",
     programmeCode: "BLIS",
     term: 1,
@@ -69,11 +64,9 @@ export const pgGraduateDiplomaCourses = [
   },
   {
     code: "MCFTL-4",
-    title:
-      "Counselling and Family Therapy: Applied Aspects-Supervised Practicum",
+    title: "Counselling and Family Therapy: Applied Aspects-Supervised Practicum",
     name: "MCFTL-4",
-    fullName:
-      "Counselling and Family Therapy: Applied Aspects-Supervised Practicum",
+    fullName: "Counselling and Family Therapy: Applied Aspects-Supervised Practicum",
     collegeCode: "IGNOU",
     programmeCode: "BLIS",
     term: 1,
@@ -89,11 +82,9 @@ export const pgGraduateDiplomaCourses = [
   },
   {
     code: "MCFTL-5",
-    title:
-      "Counselling and Family Therapy: Research Methods and Statistics-Supervised Practicum",
+    title: "Counselling and Family Therapy: Research Methods and Statistics-Supervised Practicum",
     name: "MCFTL-5",
-    fullName:
-      "Counselling and Family Therapy: Research Methods and Statistics-Supervised Practicum",
+    fullName: "Counselling and Family Therapy: Research Methods and Statistics-Supervised Practicum",
     collegeCode: "IGNOU",
     programmeCode: "BLIS",
     term: 1,
@@ -840,8 +831,7 @@ export const pgGraduateDiplomaCourses = [
     code: "MES-133",
     title: "Selection and Intergration of Technology in Educational Processes",
     name: "MES-133",
-    fullName:
-      "Selection and Intergration of Technology in Educational Processes",
+    fullName: "Selection and Intergration of Technology in Educational Processes",
     collegeCode: "IGNOU",
     programmeCode: "BLIS",
     term: 1,
@@ -1055,11 +1045,9 @@ export const pgGraduateDiplomaCourses = [
   },
   {
     code: "MAE-3",
-    title:
-      "Knowledge Management, Information Dissemination and Networking in Adult Education",
+    title: "Knowledge Management, Information Dissemination and Networking in Adult Education",
     name: "MAE-3",
-    fullName:
-      "Knowledge Management, Information Dissemination and Networking in Adult Education",
+    fullName: "Knowledge Management, Information Dissemination and Networking in Adult Education",
     collegeCode: "IGNOU",
     programmeCode: "BLIS",
     term: 1,
@@ -1716,8 +1704,7 @@ export const pgGraduateDiplomaCourses = [
     code: "MVE-1",
     title: "Introduction to Anatomy, Physiology, and Pharmaceutical Chemistry",
     name: "MVE-1",
-    fullName:
-      "Introduction to Anatomy, Physiology, and Pharmaceutical Chemistry",
+    fullName: "Introduction to Anatomy, Physiology, and Pharmaceutical Chemistry",
     collegeCode: "IGNOU",
     programmeCode: "BLIS",
     term: 1,
@@ -1787,11 +1774,9 @@ export const pgGraduateDiplomaCourses = [
   },
   {
     code: "MIP-103",
-    title:
-      "Industrial Design and Layout Designs of Integrated Circuits and Utility Models",
+    title: "Industrial Design and Layout Designs of Integrated Circuits and Utility Models",
     name: "MIP-103",
-    fullName:
-      "Industrial Design and Layout Designs of Integrated Circuits and Utility Models",
+    fullName: "Industrial Design and Layout Designs of Integrated Circuits and Utility Models",
     collegeCode: "IGNOU",
     programmeCode: "BLIS",
     term: 1,
@@ -1816,11 +1801,9 @@ export const pgGraduateDiplomaCourses = [
   },
   {
     code: "MIP-106",
-    title:
-      "Plant Varieties Protection, Biotechnology and Traditional Knowledge",
+    title: "Plant Varieties Protection, Biotechnology and Traditional Knowledge",
     name: "MIP-106",
-    fullName:
-      "Plant Varieties Protection, Biotechnology and Traditional Knowledge",
+    fullName: "Plant Varieties Protection, Biotechnology and Traditional Knowledge",
     collegeCode: "IGNOU",
     programmeCode: "BLIS",
     term: 1,

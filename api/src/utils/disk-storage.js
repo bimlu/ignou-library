@@ -1,6 +1,6 @@
-import { v4 as uuid } from 'uuid';
-import fs from 'fs';
-import path from 'path';
+import { v4 as uuid } from "uuid";
+import fs from "fs";
+import path from "path";
 
 // fs.mkdir recursively create any directories in a path that don't exist,
 // and ignore ones that do.
@@ -11,11 +11,11 @@ export const saveImageToDisk = (stream, folder, filename, imagePublicId) => {
 
   // if imagePublicId param is presented we should overwrite the image
   if (imagePublicId) {
-    imageDir = path.resolve(__dirname, '../uploads');
+    imageDir = path.resolve(__dirname, "../uploads");
 
     stream.pipe(fs.createWriteStream(`${imageDir}/${imagePublicId}`));
   } else {
-    imageDir = path.resolve(__dirname, '../uploads', folder);
+    imageDir = path.resolve(__dirname, "../uploads", folder);
 
     filename = `${uuid()}.${filename}`;
 
@@ -37,12 +37,12 @@ export const saveImageToDisk = (stream, folder, filename, imagePublicId) => {
 };
 
 export const deleteImageFromDisk = (imagePublicId) => {
-  const imagePath = path.resolve(__dirname, '../uploads', imagePublicId);
+  const imagePath = path.resolve(__dirname, "../uploads", imagePublicId);
   fs.unlink(imagePath, (err) => {
     if (err) throw err;
   });
 
   return {
-    result: 'ok',
+    result: "ok",
   };
 };

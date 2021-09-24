@@ -1,10 +1,10 @@
-import { gql } from '@apollo/client';
+import { gql } from "@apollo/client";
 
 /**
  * Creates a like
  */
 export const CREATE_LIKE = gql`
-  mutation($input: CreateLikeInput!) {
+  mutation ($input: CreateLikeInput!) {
     createLike(input: $input) {
       id
     }
@@ -15,7 +15,7 @@ export const CREATE_LIKE = gql`
  * Deletes a like
  */
 export const DELETE_LIKE = gql`
-  mutation($input: DeleteLikeInput!) {
+  mutation ($input: DeleteLikeInput!) {
     deleteLike(input: $input) {
       id
     }

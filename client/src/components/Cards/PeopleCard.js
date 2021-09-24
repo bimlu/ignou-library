@@ -1,40 +1,40 @@
-import React from 'react';
-import { generatePath } from 'react-router-dom';
-import cx from 'clsx';
-import { makeStyles } from '@material-ui/core/styles';
-import Box from '@material-ui/core/Box';
-import Card from '@material-ui/core/Card';
-import CardContent from '@material-ui/core/CardContent';
-import Avatar from '@material-ui/core/Avatar';
-import Divider from '@material-ui/core/Divider';
-import Skeleton from '@material-ui/lab/Skeleton';
+import React from "react";
+import { generatePath } from "react-router-dom";
+import cx from "clsx";
+import { makeStyles } from "@material-ui/core/styles";
+import Box from "@material-ui/core/Box";
+import Card from "@material-ui/core/Card";
+import CardContent from "@material-ui/core/CardContent";
+import Avatar from "@material-ui/core/Avatar";
+import Divider from "@material-ui/core/Divider";
+import Skeleton from "@material-ui/lab/Skeleton";
 
-import { A } from 'components/Text';
+import { A } from "components/Text";
 
-import * as Routes from 'routes';
+import * as Routes from "routes";
 
 const useStyles = makeStyles(({ palette }) => ({
   card: {
     borderRadius: 12,
-    textAlign: 'center',
-    boxShadow: 'rgba(0, 0, 0, 0.3) 0px 1px 8px 0px',
+    textAlign: "center",
+    boxShadow: "rgba(0, 0, 0, 0.3) 0px 1px 8px 0px",
   },
   avatar: {
     width: 60,
     height: 60,
-    margin: 'auto',
+    margin: "auto",
   },
   heading: {
     fontSize: 18,
-    fontWeight: 'bold',
-    letterSpacing: '0.5px',
+    fontWeight: "bold",
+    letterSpacing: "0.5px",
     marginTop: 8,
     marginBottom: 0,
   },
   subheader: {
     fontSize: 14,
     color: palette.grey[500],
-    marginBottom: '0.875em',
+    marginBottom: "0.875em",
   },
   statLabel: {
     fontSize: 12,
@@ -46,9 +46,9 @@ const useStyles = makeStyles(({ palette }) => ({
   },
   statValue: {
     fontSize: 20,
-    fontWeight: 'bold',
+    fontWeight: "bold",
     marginBottom: 4,
-    letterSpacing: '1px',
+    letterSpacing: "1px",
   },
   gutteredBorder: {
     borderRight: `1px solid ${palette.divider}`,
@@ -70,12 +70,12 @@ export const ProfileCardDemo = ({ user, loading }) => {
         </A>
       </CardContent>
       <Divider light />
-      <Box display={'flex'}>
-        <Box p={2} flex={'auto'} className={styles.gutteredBorder}>
+      <Box display={"flex"}>
+        <Box p={2} flex={"auto"} className={styles.gutteredBorder}>
           <p className={styles.statLabel}>Followers</p>
           <p className={styles.statValue}>{user.followers.length}</p>
         </Box>
-        <Box p={2} flex={'auto'}>
+        <Box p={2} flex={"auto"}>
           <p className={styles.statLabel}>Following</p>
           <p className={styles.statValue}>{user.following.length}</p>
         </Box>

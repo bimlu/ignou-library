@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 /**
  * Facebook icon
@@ -7,8 +7,8 @@ import React from 'react';
  * @param {string} color
  */
 export const FacebookIcon = ({ width, color }) => {
-  const DEFAULT_WIDTH = '24';
-  const DEFAULT_COLOR = '#004ecb';
+  const DEFAULT_WIDTH = "24";
+  const DEFAULT_COLOR = "#004ecb";
 
   return (
     <svg

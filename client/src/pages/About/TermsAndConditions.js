@@ -1,19 +1,19 @@
-import React from 'react';
+import React from "react";
 
-import Box from '@material-ui/core/Box';
-import Container from '@material-ui/core/Container';
-import { makeStyles } from '@material-ui/core/styles';
-import Divider from '@material-ui/core/Divider';
-import Typography from '@material-ui/core/Typography';
-import Link from '@material-ui/core/Link';
+import Box from "@material-ui/core/Box";
+import Container from "@material-ui/core/Container";
+import { makeStyles } from "@material-ui/core/styles";
+import Divider from "@material-ui/core/Divider";
+import Typography from "@material-ui/core/Typography";
+import Link from "@material-ui/core/Link";
 
-import Head from 'components/Head';
+import Head from "components/Head";
 
 const useStyles = makeStyles(() => ({
   root: {
-    display: 'flex',
-    flexDirection: 'column',
-    alignItems: 'center',
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "center",
   },
 }));
 
@@ -30,7 +30,7 @@ const TermsAndConditions = () => {
         </Typography>
       </Box>
 
-      <Divider style={{ width: '100%' }} />
+      <Divider style={{ width: "100%" }} />
 
       <Box mt={2}>
         <Typography paragraph variant="caption">
@@ -43,7 +43,7 @@ const TermsAndConditions = () => {
           Welcome to <b>bimlee</b> (“Company”, “we”, “our”, “us”)!
         </Typography>
         <Typography paragraph variant="caption">
-          These Terms of Service (“Terms”, “Terms of Service”) govern your use of our website located at{' '}
+          These Terms of Service (“Terms”, “Terms of Service”) govern your use of our website located at{" "}
           <b>bimlee.com</b> (together or individually “Service”) operated by <b>bimlee</b>.
         </Typography>
         <Typography paragraph variant="caption">
@@ -304,7 +304,7 @@ const TermsAndConditions = () => {
         <Typography paragraph variant="caption">
           For example, the outlined <Link href="https://policymaker.io/terms-and-conditions/">Terms of Use</Link> have
           been created using <Link href="https://policymaker.io/">PolicyMaker.io</Link>, a free web application for
-          generating high-quality legal documents. PolicyMaker’s{' '}
+          generating high-quality legal documents. PolicyMaker’s{" "}
           <Link href="https://policymaker.io/terms-and-conditions/">Terms and Conditions generator</Link> is an
           easy-to-use free tool for creating an excellent standard Terms of Service template for a website, blog,
           e-commerce store or app.
@@ -440,8 +440,8 @@ const TermsAndConditions = () => {
           Please send your feedback, comments, requests for technical support by email: <b>bimlee.official@gmail.com</b>
           .
         </Typography>
-        <Typography paragraph variant="caption" style={{ marginTop: '5em', fontSize: '0.7em' }}>
-          These <Link href="https://policymaker.io/terms-and-conditions/">Terms of Service</Link> were created for{' '}
+        <Typography paragraph variant="caption" style={{ marginTop: "5em", fontSize: "0.7em" }}>
+          These <Link href="https://policymaker.io/terms-and-conditions/">Terms of Service</Link> were created for{" "}
           <b>bimlee.com</b> by <Link href="https://policymaker.io">PolicyMaker.io</Link> on 2021-12-31.
         </Typography>
       </Box>

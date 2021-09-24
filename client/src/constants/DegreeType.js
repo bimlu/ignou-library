@@ -1,10 +1,4 @@
-export const DegreeType = [
-  "Bachelors",
-  "Masters",
-  "Doctorates",
-  "Diplomas",
-  "Certificates",
-];
+export const DegreeType = ["Bachelors", "Masters", "Doctorates", "Diplomas", "Certificates"];
 
 export const DegreeType2 = [
   /* 0 */ "bachelors",

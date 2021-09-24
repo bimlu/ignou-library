@@ -1,8 +1,8 @@
-import { ApolloClient, ApolloLink, split, InMemoryCache } from '@apollo/client';
-import { getMainDefinition } from '@apollo/client/utilities';
-import { onError } from '@apollo/client/link/error';
-import { WebSocketLink } from '@apollo/client/link/ws';
-import { createUploadLink } from 'apollo-upload-client';
+import { ApolloClient, ApolloLink, split, InMemoryCache } from "@apollo/client";
+import { getMainDefinition } from "@apollo/client/utilities";
+import { onError } from "@apollo/client/link/error";
+import { WebSocketLink } from "@apollo/client/link/ws";
+import { createUploadLink } from "apollo-upload-client";
 
 /**
  * Helper functions that handles error cases
@@ -11,9 +11,9 @@ const handleErrors = () => {
   return onError(({ graphQLErrors, networkError }) => {
     if (graphQLErrors) {
       graphQLErrors.map(({ message, locations, path }) => /* eslint-disable-line array-callback-return */ {
-        console.log('[GraphQL error]: Message', message);
-        console.log('[GraphQL error]: Location', locations);
-        console.log('[GraphQL error]: Path', path);
+        console.log("[GraphQL error]: Message", message);
+        console.log("[GraphQL error]: Location", locations);
+        console.log("[GraphQL error]: Path", path);
       });
     }
 
@@ -33,10 +33,10 @@ export const createApolloClient = (apiUrl, websocketApiUrl) => {
   const cache = new InMemoryCache();
 
   const errorLink = handleErrors();
-  const uploadLink = createUploadLink({ uri: apiUrl, credentials: 'include' }); // Upload link also creates an HTTP link
+  const uploadLink = createUploadLink({ uri: apiUrl, credentials: "include" }); // Upload link also creates an HTTP link
 
   // Create WebSocket link
-  const authToken = localStorage.getItem('token');
+  const authToken = localStorage.getItem("token");
   const wsLink = new WebSocketLink({
     uri: websocketApiUrl,
     options: {
@@ -58,7 +58,7 @@ export const createApolloClient = (apiUrl, websocketApiUrl) => {
   const terminatingLink = split(
     ({ query }) => {
       const { kind, operation } = getMainDefinition(query);
-      return kind === 'OperationDefinition' && operation === 'subscription';
+      return kind === "OperationDefinition" && operation === "subscription";
     },
     wsLink,
     uploadLink

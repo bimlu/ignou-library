@@ -1,38 +1,38 @@
-import React, { useState, useEffect } from 'react';
-import { useMutation } from '@apollo/client';
-import { Redirect } from 'react-router-dom';
-import { makeStyles } from '@material-ui/core/styles';
-import TextField from '@material-ui/core/TextField';
-import IconButton from '@material-ui/core/IconButton';
-import PhotoCamera from '@material-ui/icons/PhotoCamera';
-import CreateIcon from '@material-ui/icons/Create';
-import Button from '@material-ui/core/Button';
-import Snackbar from '@material-ui/core/Snackbar';
-import MuiAlert from '@material-ui/lab/Alert';
-import Alert from '@material-ui/lab/Alert';
+import React, { useState, useEffect } from "react";
+import { useMutation } from "@apollo/client";
+import { Redirect } from "react-router-dom";
+import { makeStyles } from "@material-ui/core/styles";
+import TextField from "@material-ui/core/TextField";
+import IconButton from "@material-ui/core/IconButton";
+import PhotoCamera from "@material-ui/icons/PhotoCamera";
+import CreateIcon from "@material-ui/icons/Create";
+import Button from "@material-ui/core/Button";
+import Snackbar from "@material-ui/core/Snackbar";
+import MuiAlert from "@material-ui/lab/Alert";
+import Alert from "@material-ui/lab/Alert";
 
-import { CREATE_COLLEGE, GET_COLLEGES, GET_COLLEGES_WITH_PROGRAMMES_COURSES } from 'graphql/college';
+import { CREATE_COLLEGE, GET_COLLEGES, GET_COLLEGES_WITH_PROGRAMMES_COURSES } from "graphql/college";
 
-import { EXPLORE_PAGE_CARDS_LIMIT } from 'constants/DataLimit';
-import { MAX_POST_IMAGE_SIZE } from 'constants/ImageSize';
+import { EXPLORE_PAGE_CARDS_LIMIT } from "constants/DataLimit";
+import { MAX_POST_IMAGE_SIZE } from "constants/ImageSize";
 
-import Head from 'components/Head';
-import SimpleHeader from 'components/SimpleHeader';
+import Head from "components/Head";
+import SimpleHeader from "components/SimpleHeader";
 
-import { useStore } from 'store';
-import { SET_UPLOADING, CLEAR_UPLOADING } from 'store/uploading';
+import { useStore } from "store";
+import { SET_UPLOADING, CLEAR_UPLOADING } from "store/uploading";
 
-import * as Routes from 'routes';
+import * as Routes from "routes";
 
 const useStyles = makeStyles((theme) => ({
   form: {
-    '& .MuiTextField-root': {
+    "& .MuiTextField-root": {
       margin: theme.spacing(1),
-      width: '96%',
+      width: "96%",
     },
   },
   input: {
-    display: 'none',
+    display: "none",
   },
   button: {
     margin: theme.spacing(1),
@@ -43,8 +43,8 @@ const useStyles = makeStyles((theme) => ({
   },
   title: {
     fontSize: theme.spacing(3.6),
-    fontWeight: 'bold',
-    display: 'inline',
+    fontWeight: "bold",
+    display: "inline",
     marginLeft: theme.spacing(1),
   },
   alert: {
@@ -62,13 +62,13 @@ export default function MultilineTextFields() {
     return <Redirect to={Routes.AUTH} />;
   }
 
-  const [name, setName] = useState('');
-  const [fullName, setFullName] = useState('');
-  const [description, setDescription] = useState('');
-  const [photo, setPhoto] = useState('');
+  const [name, setName] = useState("");
+  const [fullName, setFullName] = useState("");
+  const [description, setDescription] = useState("");
+  const [photo, setPhoto] = useState("");
   const [open, setOpen] = useState(false);
-  const [message, setMessage] = useState('');
-  const [severity, setSeverity] = useState('');
+  const [message, setMessage] = useState("");
+  const [severity, setSeverity] = useState("");
   const [createCollege, { loading }] = useMutation(CREATE_COLLEGE, {
     refetchQueries: [
       {
@@ -96,11 +96,11 @@ export default function MultilineTextFields() {
     const key = e.target.id || e.target.name;
     const value = e.target.value;
 
-    if (key === 'name') {
+    if (key === "name") {
       setName(value);
-    } else if (key === 'fullName') {
+    } else if (key === "fullName") {
       setFullName(value);
-    } else if (key === 'description') {
+    } else if (key === "description") {
       setDescription(value);
     }
   };
@@ -114,7 +114,7 @@ export default function MultilineTextFields() {
 
     if (file.size >= MAX_POST_IMAGE_SIZE) {
       setMessage(`File size should be less then ${MAX_POST_IMAGE_SIZE / 1000000}MB`);
-      setSeverity('warning');
+      setSeverity("warning");
       setOpen(true);
       return;
     }
@@ -133,21 +133,21 @@ export default function MultilineTextFields() {
       });
 
       handleReset();
-      setMessage('Successfully created college!');
-      setSeverity('success');
+      setMessage("Successfully created college!");
+      setSeverity("success");
       setOpen(true);
     } catch (err) {
-      setMessage(err.graphQLErrors[0] ? err.graphQLErrors[0].message : 'Something went wrong, Please try again!');
-      setSeverity('error');
+      setMessage(err.graphQLErrors[0] ? err.graphQLErrors[0].message : "Something went wrong, Please try again!");
+      setSeverity("error");
       setOpen(true);
     }
   };
 
   const handleReset = () => {
-    setName('');
-    setFullName('');
-    setDescription('');
-    setPhoto('');
+    setName("");
+    setFullName("");
+    setDescription("");
+    setPhoto("");
   };
 
   const isCreateDisabled = status.uploading || !name || !fullName || !description || !photo;

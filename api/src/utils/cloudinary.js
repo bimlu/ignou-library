@@ -1,5 +1,5 @@
-import cloudinary from 'cloudinary';
-import { v4 as uuid } from 'uuid';
+import cloudinary from "cloudinary";
+import { v4 as uuid } from "uuid";
 
 export const uploadToCloudinary = async (stream, folder, transformer, imagePublicId) => {
   cloudinary.config({
@@ -15,10 +15,10 @@ export const uploadToCloudinary = async (stream, folder, transformer, imagePubli
   return new Promise((resolve, reject) => {
     const streamLoad = cloudinary.v2.uploader.upload_stream(options, (error, result) => {
       if (result) {
-        console.log('***', `Successfully uploaded image to Cloudinary at ${result.secure_url}`);
+        console.log("***", `Successfully uploaded image to Cloudinary at ${result.secure_url}`);
         resolve(result);
       } else {
-        console.log('***', `Failed to upload image to Cloudinary. ${error.message}`);
+        console.log("***", `Failed to upload image to Cloudinary. ${error.message}`);
         reject(error);
       }
     });
@@ -38,10 +38,10 @@ export const deleteFromCloudinary = async (publicId) => {
   return new Promise((resolve, reject) => {
     cloudinary.v2.uploader.destroy(publicId, (error, result) => {
       if (result) {
-        console.log('***', `Successfully deleted image from Cloudinary`);
+        console.log("***", `Successfully deleted image from Cloudinary`);
         resolve(result);
       } else {
-        console.log('***', `Failed to delete image from Cloudinary. ${error.message}`);
+        console.log("***", `Failed to delete image from Cloudinary. ${error.message}`);
         reject(error);
       }
     });

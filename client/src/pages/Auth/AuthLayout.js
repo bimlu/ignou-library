@@ -1,36 +1,36 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 
-import Link from '@material-ui/core/Link';
-import Box from '@material-ui/core/Box';
-import Typography from '@material-ui/core/Typography';
-import Container from '@material-ui/core/Container';
-import { makeStyles } from '@material-ui/core/styles';
-import Button from '@material-ui/core/Button';
-import Avatar from '@material-ui/core/Avatar';
-import LockOutlinedIcon from '@material-ui/icons/LockOutlined';
-import LinearProgress from '@material-ui/core/LinearProgress';
-import ArrowBackIcon from '@material-ui/icons/ArrowBackIos';
+import Link from "@material-ui/core/Link";
+import Box from "@material-ui/core/Box";
+import Typography from "@material-ui/core/Typography";
+import Container from "@material-ui/core/Container";
+import { makeStyles } from "@material-ui/core/styles";
+import Button from "@material-ui/core/Button";
+import Avatar from "@material-ui/core/Avatar";
+import LockOutlinedIcon from "@material-ui/icons/LockOutlined";
+import LinearProgress from "@material-ui/core/LinearProgress";
+import ArrowBackIcon from "@material-ui/icons/ArrowBackIos";
 
-import { GoogleIcon } from 'components/icons';
+import { GoogleIcon } from "components/icons";
 // import { FacebookIcon } from 'components/icons';
 // import { GithubIcon } from 'components/icons';
-import Head from 'components/Head';
+import Head from "components/Head";
 
-import * as Routes from 'routes';
+import * as Routes from "routes";
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    display: 'flex',
-    flexDirection: 'column',
-    alignItems: 'center',
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "center",
   },
   button: {
-    color: '#4285f4',
+    color: "#4285f4",
     borderRadius: theme.spacing(5),
     padding: theme.spacing(1.7),
     background: theme.palette.background.paper,
     marginBottom: theme.spacing(1.7),
-    textTransform: 'none',
+    textTransform: "none",
   },
   avatar: {
     // backgroundColor: theme.palette.primary.light,
@@ -108,12 +108,12 @@ const AuthLayout = () => {
 
       <Box mt={8}>
         <Typography variant="caption" color="textSecondary">
-          {'© '}
-          {new Date().getFullYear()}{' '}
+          {"© "}
+          {new Date().getFullYear()}{" "}
           <Link color="inherit" href={Routes.HOME}>
             bimlee.com
           </Link>
-          {' - '}
+          {" - "}
           <Link color="inherit" href={Routes.PRIVACY_POLICY}>
             Privacy Policy
           </Link>
@@ -131,7 +131,7 @@ const AuthLayout = () => {
           About
         </Link>
 
-        {' . '}
+        {" . "}
 
         <Link color="textSecondary" variant="caption" href={Routes.CONTACT_US}>
           Contact Us

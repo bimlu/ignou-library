@@ -1,10 +1,10 @@
-import { gql } from '@apollo/client';
+import { gql } from "@apollo/client";
 
 /**
  * Creates a following between two users
  */
 export const CREATE_FOLLOW = gql`
-  mutation($input: CreateFollowInput!) {
+  mutation ($input: CreateFollowInput!) {
     createFollow(input: $input) {
       id
     }
@@ -15,7 +15,7 @@ export const CREATE_FOLLOW = gql`
  * deletes a following
  */
 export const DELETE_FOLLOW = gql`
-  mutation($input: DeleteFollowInput!) {
+  mutation ($input: DeleteFollowInput!) {
     deleteFollow(input: $input) {
       id
     }

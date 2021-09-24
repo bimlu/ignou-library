@@ -1,36 +1,36 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import { useMutation } from '@apollo/client';
-import { Link, generatePath } from 'react-router-dom';
+import React from "react";
+import PropTypes from "prop-types";
+import { useMutation } from "@apollo/client";
+import { Link, generatePath } from "react-router-dom";
 
-import { makeStyles } from '@material-ui/core/styles';
-import Avatar from '@material-ui/core/Avatar';
-import Chip from '@material-ui/core/Chip';
-import CancelIcon from '@material-ui/icons/Cancel';
-import FaceIcon from '@material-ui/icons/Face';
+import { makeStyles } from "@material-ui/core/styles";
+import Avatar from "@material-ui/core/Avatar";
+import Chip from "@material-ui/core/Chip";
+import CancelIcon from "@material-ui/icons/Cancel";
+import FaceIcon from "@material-ui/icons/Face";
 
-import { GET_AUTH_USER, GET_USER } from 'graphql/user';
-import { DELETE_COMMENT } from 'graphql/comment';
-import { GET_POST, GET_POSTS, GET_FOLLOWED_POSTS } from 'graphql/post';
+import { GET_AUTH_USER, GET_USER } from "graphql/user";
+import { DELETE_COMMENT } from "graphql/comment";
+import { GET_POST, GET_POSTS, GET_FOLLOWED_POSTS } from "graphql/post";
 
-import { useNotifications } from '../hooks/useNotifications';
+import { useNotifications } from "../hooks/useNotifications";
 
-import { useStore } from 'store';
+import { useStore } from "store";
 
-import * as Routes from 'routes';
+import * as Routes from "routes";
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    width: '100%',
+    width: "100%",
     marginTop: theme.spacing(1),
   },
   chip: {
-    maxWidth: '100%',
-    height: 'max-content',
+    maxWidth: "100%",
+    height: "max-content",
   },
   label: {
-    whiteSpace: 'normal',
-    height: '100%',
+    whiteSpace: "normal",
+    height: "100%",
     padding: theme.spacing(0.8),
     marginLeft: theme.spacing(0.5),
     marginRight: theme.spacing(0.3),
@@ -91,7 +91,7 @@ const Comment = ({ comment, postId, postAuthor }) => {
         avatar={
           <Avatar
             alt={comment.author.fullName}
-            src={comment.author.image || 'show first letter of fullName'}
+            src={comment.author.image || "show first letter of fullName"}
             component={Link}
             to={generatePath(Routes.USER_PROFILE, { id: comment.author.id })}
           />

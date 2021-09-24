@@ -1,8 +1,8 @@
-import React, { useState } from 'react';
-import styled from 'styled-components';
+import React, { useState } from "react";
+import styled from "styled-components";
 
-import { Button } from 'components/Form';
-import { Spacing } from 'components/Layout';
+import { Button } from "components/Form";
+import { Spacing } from "components/Layout";
 
 const Wrapper = styled.div`
   display: flex;
@@ -62,7 +62,7 @@ const SortPhotos = ({ images, setImages, handleSubmit, handleReset, setIsSorting
   const handleChange = (e, idx) => {
     let value = e.target.value;
 
-    if (value !== '') {
+    if (value !== "") {
       value = parseInt(value);
 
       if (value <= 0 || value > images.length) return;
@@ -87,14 +87,14 @@ const SortPhotos = ({ images, setImages, handleSubmit, handleReset, setIsSorting
 
   const handleSaveClick = () => {
     // cancel if pageIndices contains empty values
-    if (pageIndices.includes('')) {
-      console.log('page indices can only contains numbers');
+    if (pageIndices.includes("")) {
+      console.log("page indices can only contains numbers");
       return;
     }
 
     // cancel if duplicates in pageIndices
     if (pageIndices.length !== new Set(pageIndices).size) {
-      console.log('resolve duplicate page number');
+      console.log("resolve duplicate page number");
       return;
     }
 

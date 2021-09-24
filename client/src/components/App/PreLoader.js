@@ -1,17 +1,17 @@
-import React from 'react';
+import React from "react";
 
-import { makeStyles } from '@material-ui/styles';
-import Paper from '@material-ui/core/Paper';
-import Typography from '@material-ui/core/Typography';
+import { makeStyles } from "@material-ui/styles";
+import Paper from "@material-ui/core/Paper";
+import Typography from "@material-ui/core/Typography";
 
 const useStyles = makeStyles(() => ({
   paper: {
-    width: '100vw',
-    height: '100vh',
-    display: 'flex',
-    flexDirection: 'row',
-    alignItems: 'center',
-    justifyContent: 'space-around',
+    width: "100vw",
+    height: "100vh",
+    display: "flex",
+    flexDirection: "row",
+    alignItems: "center",
+    justifyContent: "space-around",
   },
   logo: {
     fontSize: 40,

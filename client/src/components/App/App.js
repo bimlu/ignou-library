@@ -1,36 +1,36 @@
-import React, { useEffect, useMemo } from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import { useQuery } from '@apollo/client';
+import React, { useEffect, useMemo } from "react";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { useQuery } from "@apollo/client";
 
-import CssBaseline from '@material-ui/core/CssBaseline';
-import { createMuiTheme, ThemeProvider } from '@material-ui/core/styles';
+import CssBaseline from "@material-ui/core/CssBaseline";
+import { createMuiTheme, ThemeProvider } from "@material-ui/core/styles";
 
-import { GET_AUTH_USER } from 'graphql/user';
-import { GET_NEW_CONVERSATIONS_SUBSCRIPTION } from 'graphql/messages';
-import { NOTIFICATION_CREATED_OR_DELETED } from 'graphql/notification';
-import { GET_COLLEGES_WITH_PROGRAMMES_COURSES } from 'graphql/college';
+import { GET_AUTH_USER } from "graphql/user";
+import { GET_NEW_CONVERSATIONS_SUBSCRIPTION } from "graphql/messages";
+import { NOTIFICATION_CREATED_OR_DELETED } from "graphql/notification";
+import { GET_COLLEGES_WITH_PROGRAMMES_COURSES } from "graphql/college";
 
-import { Loading } from 'components/Loading';
-import Message from 'components/Message';
-import NotFound from 'components/NotFound';
-import AppLayout from './AppLayout';
-import ScrollToTop from './ScrollToTop';
-import AuthLayout from 'pages/Auth/AuthLayout';
-import PrivacyPolicy from 'pages/About/PrivacyPolicy';
-import TermsAndConditions from 'pages/About/TermsAndConditions';
-import AboutUs from 'pages/About/AboutUs';
-import ContactUs from 'pages/About/ContactUs';
+import { Loading } from "components/Loading";
+import Message from "components/Message";
+import NotFound from "components/NotFound";
+import AppLayout from "./AppLayout";
+import ScrollToTop from "./ScrollToTop";
+import AuthLayout from "pages/Auth/AuthLayout";
+import PrivacyPolicy from "pages/About/PrivacyPolicy";
+import TermsAndConditions from "pages/About/TermsAndConditions";
+import AboutUs from "pages/About/AboutUs";
+import ContactUs from "pages/About/ContactUs";
 
-import { useThemeToggler } from 'hooks/useThemeToggler';
+import { useThemeToggler } from "hooks/useThemeToggler";
 
-import { useStore } from 'store';
-import { SET_DATA_TREE } from 'store/datatree';
-import { SET_AUTH_USER } from 'store/auth';
-import { CLEAR_EXPLORE_ROUTE, CLEAR_PEOPLE_ROUTE } from 'store/route';
+import { useStore } from "store";
+import { SET_DATA_TREE } from "store/datatree";
+import { SET_AUTH_USER } from "store/auth";
+import { CLEAR_EXPLORE_ROUTE, CLEAR_PEOPLE_ROUTE } from "store/route";
 
-import { COLLEGE_TREE_ITEM_LIMIT } from 'constants/DataLimit';
+import { COLLEGE_TREE_ITEM_LIMIT } from "constants/DataLimit";
 
-import * as Routes from 'routes';
+import * as Routes from "routes";
 
 /**
  * Root component of the app
@@ -41,11 +41,11 @@ const App = () => {
     () =>
       createMuiTheme({
         palette: {
-          type: 'light',
+          type: "light",
           border: {
-            light: '#f5f5f5',
-            main: '#e0e0e0',
-            dark: '#bdbdbd',
+            light: "#f5f5f5",
+            main: "#e0e0e0",
+            dark: "#bdbdbd",
           },
         },
         zIndex: {
@@ -57,13 +57,13 @@ const App = () => {
         },
         overrides: {
           MuiCssBaseline: {
-            '@global': {
-              '*::-webkit-scrollbar': {
-                width: '0.55em',
+            "@global": {
+              "*::-webkit-scrollbar": {
+                width: "0.55em",
               },
-              '*::-webkit-scrollbar-thumb': {
-                backgroundColor: 'rgba(0,0,0,.4)',
-                borderRadius: '2em',
+              "*::-webkit-scrollbar-thumb": {
+                backgroundColor: "rgba(0,0,0,.4)",
+                borderRadius: "2em",
               },
             },
           },
@@ -76,17 +76,17 @@ const App = () => {
     () =>
       createMuiTheme({
         palette: {
-          type: 'dark',
+          type: "dark",
           border: {
-            light: '#f5f5f5',
-            main: '#e0e0e0',
-            dark: '#bdbdbd',
+            light: "#f5f5f5",
+            main: "#e0e0e0",
+            dark: "#bdbdbd",
           },
           primary: {
-            main: '#64b5f6',
+            main: "#64b5f6",
           },
           secondary: {
-            main: '#f48fb1',
+            main: "#f48fb1",
           },
         },
         zIndex: {
@@ -98,13 +98,13 @@ const App = () => {
         },
         overrides: {
           MuiCssBaseline: {
-            '@global': {
-              '*::-webkit-scrollbar': {
-                width: '0.55em',
+            "@global": {
+              "*::-webkit-scrollbar": {
+                width: "0.55em",
               },
-              '*::-webkit-scrollbar-thumb': {
-                backgroundColor: 'rgba(255,255,255,.4)',
-                borderRadius: '2em',
+              "*::-webkit-scrollbar-thumb": {
+                backgroundColor: "rgba(255,255,255,.4)",
+                borderRadius: "2em",
               },
             },
           },
@@ -146,9 +146,9 @@ const App = () => {
 
         let newNotifications;
 
-        if (operation === 'CREATE') {
+        if (operation === "CREATE") {
           // Don't show message notification in Header if user already is on notifications page
-          if (window.location.href.split('/')[3] === 'notifications') {
+          if (window.location.href.split("/")[3] === "notifications") {
             return prev;
           }
 
@@ -188,7 +188,7 @@ const App = () => {
         const { newConversation } = subscriptionData.data;
 
         // Don't show message notification in Header if user already is on messages page
-        if (window.location.href.split('/')[3] === 'messages') {
+        if (window.location.href.split("/")[3] === "messages") {
           return prev;
         }
 
@@ -216,12 +216,12 @@ const App = () => {
   }, [subscribeToMore]);
 
   if (error) {
-    const isDevelopment = !process.env.NODE_ENV || process.env.NODE_ENV === 'development';
+    const isDevelopment = !process.env.NODE_ENV || process.env.NODE_ENV === "development";
     if (isDevelopment) {
       console.error(error);
     }
     const devErrorMessage =
-      'Sorry, something went wrong. Please open the browser console to view the detailed error message.';
+      "Sorry, something went wrong. Please open the browser console to view the detailed error message.";
     const prodErrorMessage = "Sorry, something went wrong. We're working on getting this fixed as soon as we can.";
     return <NotFound message={isDevelopment ? devErrorMessage : prodErrorMessage} showHomePageLink={false} />;
   }
@@ -231,7 +231,7 @@ const App = () => {
   }
 
   return (
-    <ThemeProvider theme={themeMode === 'light' ? lightTheme : darkTheme}>
+    <ThemeProvider theme={themeMode === "light" ? lightTheme : darkTheme}>
       <CssBaseline />
 
       <Router>

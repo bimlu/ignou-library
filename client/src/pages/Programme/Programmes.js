@@ -1,38 +1,38 @@
-import React, { Fragment, useEffect } from 'react';
-import { useQuery } from '@apollo/client';
-import { useLocation } from 'react-router-dom';
+import React, { Fragment, useEffect } from "react";
+import { useQuery } from "@apollo/client";
+import { useLocation } from "react-router-dom";
 
-import { GET_COLLEGE_PROGRAMMES } from 'graphql/programme';
+import { GET_COLLEGE_PROGRAMMES } from "graphql/programme";
 
-import ProgrammeInfo from 'pages/Programme/ProgrammeInfo';
-import ExploreHeader from 'pages/Explore/ExploreHeader';
+import ProgrammeInfo from "pages/Programme/ProgrammeInfo";
+import ExploreHeader from "pages/Explore/ExploreHeader";
 
-import CardsContainer from 'components/Cards/CardsContainer';
-import InfiniteScroll from 'components/InfiniteScroll';
-import Empty from 'components/Empty';
-import { Loading } from 'components/Loading';
-import Head from 'components/Head';
-import SolidCard from 'components/Cards/SolidCard';
-import ScrollManager from 'components/ScrollManager';
+import CardsContainer from "components/Cards/CardsContainer";
+import InfiniteScroll from "components/InfiniteScroll";
+import Empty from "components/Empty";
+import { Loading } from "components/Loading";
+import Head from "components/Head";
+import SolidCard from "components/Cards/SolidCard";
+import ScrollManager from "components/ScrollManager";
 
-import { EXPLORE_PAGE_CARDS_LIMIT } from 'constants/DataLimit';
+import { EXPLORE_PAGE_CARDS_LIMIT } from "constants/DataLimit";
 
-import { useStore } from 'store';
-import { SET_EXPLORE_ROUTE } from 'store/route';
-import * as Routes from 'routes';
+import { useStore } from "store";
+import { SET_EXPLORE_ROUTE } from "store/route";
+import * as Routes from "routes";
 
 /**
  * Programmes page
  */
 const Programmes = () => {
-  const cardColors = ['#203f52', '#4d137f', '#002244', '#004953'];
+  const cardColors = ["#203f52", "#4d137f", "#002244", "#004953"];
 
   const [, dispatch] = useStore();
   const { pathname, search, hash } = useLocation();
 
   const query = new URLSearchParams(search);
-  const collegeId = query.get('collegeId');
-  const collegeName = query.get('collegeName');
+  const collegeId = query.get("collegeId");
+  const collegeName = query.get("collegeName");
 
   const variables = {
     collegeId: collegeId,
@@ -59,7 +59,7 @@ const Programmes = () => {
       );
     }
 
-    if (error) return 'Please check your internet connection';
+    if (error) return "Please check your internet connection";
 
     const { programmes, count } = data.getCollegeProgrammes;
     if (!programmes.length > 0) return <Empty text="No programmes yet." />;

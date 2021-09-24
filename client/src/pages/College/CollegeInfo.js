@@ -1,15 +1,15 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React from "react";
+import { Link } from "react-router-dom";
 
-import { makeStyles } from '@material-ui/core/styles';
-import Paper from '@material-ui/core/Paper';
-import Typography from '@material-ui/core/Typography';
-import Box from '@material-ui/core/Box';
-import Divider from '@material-ui/core/Divider';
-import Button from '@material-ui/core/Button';
-import AddIcon from '@material-ui/icons/Add';
+import { makeStyles } from "@material-ui/core/styles";
+import Paper from "@material-ui/core/Paper";
+import Typography from "@material-ui/core/Typography";
+import Box from "@material-ui/core/Box";
+import Divider from "@material-ui/core/Divider";
+import Button from "@material-ui/core/Button";
+import AddIcon from "@material-ui/icons/Add";
 
-import * as Routes from 'routes';
+import * as Routes from "routes";
 
 const useStyles = makeStyles((theme) => ({
   paper: {
@@ -21,7 +21,7 @@ const useStyles = makeStyles((theme) => ({
     padding: `${theme.spacing(1)}px ${theme.spacing(2)}px`,
     fontSize: theme.spacing(1.6),
     marginBottom: theme.spacing(1),
-    textTransform: 'none',
+    textTransform: "none",
   },
   number: {
     color: theme.palette.primary.main,

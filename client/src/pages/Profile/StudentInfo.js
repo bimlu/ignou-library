@@ -1,24 +1,24 @@
-import React, { useEffect, useState } from 'react';
-import { Redirect } from 'react-router-dom';
-import PropTypes from 'prop-types';
-import { useApolloClient } from '@apollo/client';
+import React, { useEffect, useState } from "react";
+import { Redirect } from "react-router-dom";
+import PropTypes from "prop-types";
+import { useApolloClient } from "@apollo/client";
 
-import { makeStyles } from '@material-ui/core/styles';
-import Chip from '@material-ui/core/Chip';
-import EditIcon from '@material-ui/icons/Edit';
-import CloseIcon from '@material-ui/icons/Cancel';
-import AddIcon from '@material-ui/icons/AddCircle';
-import DialogTitle from '@material-ui/core/DialogTitle';
-import Dialog from '@material-ui/core/Dialog';
-import List from '@material-ui/core/List';
-import ListItem from '@material-ui/core/ListItem';
-import ListItemText from '@material-ui/core/ListItemText';
-import LinearProgress from '@material-ui/core/LinearProgress';
-import Divider from '@material-ui/core/Divider';
+import { makeStyles } from "@material-ui/core/styles";
+import Chip from "@material-ui/core/Chip";
+import EditIcon from "@material-ui/icons/Edit";
+import CloseIcon from "@material-ui/icons/Cancel";
+import AddIcon from "@material-ui/icons/AddCircle";
+import DialogTitle from "@material-ui/core/DialogTitle";
+import Dialog from "@material-ui/core/Dialog";
+import List from "@material-ui/core/List";
+import ListItem from "@material-ui/core/ListItem";
+import ListItemText from "@material-ui/core/ListItemText";
+import LinearProgress from "@material-ui/core/LinearProgress";
+import Divider from "@material-ui/core/Divider";
 
-import { CollegeIcon } from 'components/icons';
-import { ProgrammeIcon } from 'components/icons';
-import { CourseIcon } from 'components/icons';
+import { CollegeIcon } from "components/icons";
+import { ProgrammeIcon } from "components/icons";
+import { CourseIcon } from "components/icons";
 
 import {
   UPDATE_USER_COLLEGE,
@@ -26,44 +26,44 @@ import {
   ADD_USER_COURSE,
   REMOVE_USER_COURSE,
   GET_AUTH_USER,
-} from 'graphql/user';
+} from "graphql/user";
 
-import { useStore } from 'store';
+import { useStore } from "store";
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    width: '100%',
+    width: "100%",
     marginTop: theme.spacing(2),
   },
   progress: {
     borderTopLeftRadius: theme.spacing(2),
     borderTopRightRadius: theme.spacing(2),
-    width: '96%',
-    margin: '0 auto',
+    width: "96%",
+    margin: "0 auto",
   },
   paper: {
     minHeight: 150,
     padding: theme.spacing(2),
-    display: 'flex',
-    alignItems: 'center',
-    flexDirection: 'column',
-    justifyContent: 'space-between',
-    '& > *': {
+    display: "flex",
+    alignItems: "center",
+    flexDirection: "column",
+    justifyContent: "space-between",
+    "& > *": {
       marginBottom: theme.spacing(0.5),
     },
   },
   courses: {
-    '& > *': {
+    "& > *": {
       marginBottom: theme.spacing(0.5),
       marginRight: theme.spacing(0.5),
     },
   },
   iconWrapper: {
-    display: 'flex',
+    display: "flex",
     width: 16,
     height: 16,
     marginLeft: theme.spacing(0.5),
-    borderRadius: '50%',
+    borderRadius: "50%",
   },
   list: {
     minWidth: 260,
@@ -116,16 +116,16 @@ const StudentInfo = ({ user }) => {
   const handleListItemClick = (listName, id) => {
     if (!isAuthUsersProfile) return;
 
-    if (listName === 'college') {
+    if (listName === "college") {
       updateUserCourses();
       updateUserProgramme();
       updateUserCollege(id);
       setOpenCollege(false);
-    } else if (listName === 'programme') {
+    } else if (listName === "programme") {
       updateUserCourses();
       updateUserProgramme(id);
       setOpenProgramme(false);
-    } else if (listName === 'course') {
+    } else if (listName === "course") {
       addUserCourse(id);
       setOpenCourse(false);
     }
@@ -225,13 +225,13 @@ const StudentInfo = ({ user }) => {
       <div className={classes.paper}>
         <Chip
           color="primary"
-          variant={user.college ? 'outlined' : 'default'}
+          variant={user.college ? "outlined" : "default"}
           label={
             user.college
               ? user.college.name.toUpperCase()
               : isAuthUsersProfile
-              ? 'Select college'
-              : 'No college selected'
+              ? "Select college"
+              : "No college selected"
           }
           deleteIcon={user.college ? <EditIcon /> : <AddIcon />}
           onDelete={() => setOpenCollege(true)}
@@ -245,13 +245,13 @@ const StudentInfo = ({ user }) => {
 
         <Chip
           color="primary"
-          variant={user.programme ? 'outlined' : 'default'}
+          variant={user.programme ? "outlined" : "default"}
           label={
             user.programme
               ? user.programme.name.toUpperCase()
               : isAuthUsersProfile
-              ? 'Select programme'
-              : 'No programme selected'
+              ? "Select programme"
+              : "No programme selected"
           }
           deleteIcon={user.programme ? <EditIcon /> : <AddIcon />}
           onDelete={() => setOpenProgramme(true)}
@@ -303,7 +303,7 @@ const StudentInfo = ({ user }) => {
                 <ListItem
                   button
                   divider
-                  onClick={() => handleListItemClick('college', college.id)}
+                  onClick={() => handleListItemClick("college", college.id)}
                   key={college.id}
                   disabled={auth.user.college && auth.user.college.id === college.id}
                 >
@@ -324,7 +324,7 @@ const StudentInfo = ({ user }) => {
                 <ListItem
                   button
                   divider
-                  onClick={() => handleListItemClick('programme', programme.id)}
+                  onClick={() => handleListItemClick("programme", programme.id)}
                   key={programme.id}
                   disabled={auth.user.programme && auth.user.programme.id === programme.id}
                 >
@@ -345,7 +345,7 @@ const StudentInfo = ({ user }) => {
                 <ListItem
                   button
                   divider
-                  onClick={() => handleListItemClick('course', course.id)}
+                  onClick={() => handleListItemClick("course", course.id)}
                   key={course.id}
                   disabled={auth.user.courses.find((userCourse) => userCourse.id === course.id) ? true : false}
                 >

@@ -1,4 +1,4 @@
-import { gql } from '@apollo/client';
+import { gql } from "@apollo/client";
 
 /**
  * Records to select from notifications
@@ -37,7 +37,7 @@ const notificationPayload = `
  * Creates a notification for user
  */
 export const CREATE_NOTIFICATION = gql`
-  mutation($input: CreateNotificationInput!) {
+  mutation ($input: CreateNotificationInput!) {
     createNotification(input: $input) {
       id
     }
@@ -48,7 +48,7 @@ export const CREATE_NOTIFICATION = gql`
  * Deletes a notification
  */
 export const DELETE_NOTIFICATION = gql`
-  mutation($input: DeleteNotificationInput!) {
+  mutation ($input: DeleteNotificationInput!) {
     deleteNotification(input: $input) {
       id
     }
@@ -73,7 +73,7 @@ export const GET_USER_NOTIFICATION = gql`
  * Updates notification seen property
  */
 export const UPDATE_NOTIFICATION_SEEN = gql`
-  mutation($input: UpdateNotificationSeenInput!) {
+  mutation ($input: UpdateNotificationSeenInput!) {
     updateNotificationSeen(input: $input)
   }
 `;

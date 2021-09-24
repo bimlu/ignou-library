@@ -1632,11 +1632,9 @@ export const bachelorsDegreeCourses = [
   },
   {
     code: "BBYCL-132",
-    title:
-      "Biodiversity (Microbes, Algae, Fungi and Archegoniates): Laboratory",
+    title: "Biodiversity (Microbes, Algae, Fungi and Archegoniates): Laboratory",
     name: "BBYCL-132",
-    fullName:
-      "Biodiversity (Microbes, Algae, Fungi and Archegoniates): Laboratory",
+    fullName: "Biodiversity (Microbes, Algae, Fungi and Archegoniates): Laboratory",
     collegeCode: "IGNOU",
     programmeCode: "BAG",
     term: 6,
@@ -1699,55 +1697,45 @@ export const bachelorsDegreeCourses = [
   },
   {
     code: "BCHCT-131",
-    title:
-      "Atomic Structure, Bonding, General Organic Chemistry and Aliphatic Hydrocarbons",
+    title: "Atomic Structure, Bonding, General Organic Chemistry and Aliphatic Hydrocarbons",
     name: "BCHCT-131",
-    fullName:
-      "Atomic Structure, Bonding, General Organic Chemistry and Aliphatic Hydrocarbons",
+    fullName: "Atomic Structure, Bonding, General Organic Chemistry and Aliphatic Hydrocarbons",
     collegeCode: "IGNOU",
     programmeCode: "BAG",
     term: 6,
   },
   {
     code: "BCHCL-132",
-    title:
-      "Atomic Structure, Bonding, General Organic Chemistry and Aliphatic Hydrocarbons: Laboratory",
+    title: "Atomic Structure, Bonding, General Organic Chemistry and Aliphatic Hydrocarbons: Laboratory",
     name: "BCHCL-132",
-    fullName:
-      "Atomic Structure, Bonding, General Organic Chemistry and Aliphatic Hydrocarbons: Laboratory",
+    fullName: "Atomic Structure, Bonding, General Organic Chemistry and Aliphatic Hydrocarbons: Laboratory",
     collegeCode: "IGNOU",
     programmeCode: "BAG",
     term: 6,
   },
   {
     code: "BCHCT-133",
-    title:
-      "Chemical Energetics, Equilibria and Functional Group Organic Chemistry-I",
+    title: "Chemical Energetics, Equilibria and Functional Group Organic Chemistry-I",
     name: "BCHCT-133",
-    fullName:
-      "Chemical Energetics, Equilibria and Functional Group Organic Chemistry-I",
+    fullName: "Chemical Energetics, Equilibria and Functional Group Organic Chemistry-I",
     collegeCode: "IGNOU",
     programmeCode: "BAG",
     term: 6,
   },
   {
     code: "BCHCL-134",
-    title:
-      "Chemical Energetics, Equilibria and Functional Group Organic Chemistry-I : Laboratory",
+    title: "Chemical Energetics, Equilibria and Functional Group Organic Chemistry-I : Laboratory",
     name: "BCHCL-134",
-    fullName:
-      "Chemical Energetics, Equilibria and Functional Group Organic Chemistry-I : Laboratory",
+    fullName: "Chemical Energetics, Equilibria and Functional Group Organic Chemistry-I : Laboratory",
     collegeCode: "IGNOU",
     programmeCode: "BAG",
     term: 6,
   },
   {
     code: "BCHCT-135",
-    title:
-      "Solutions, Phase equilibrium, Conductance, Electrochemistry and Functional Group Organic Chemistry-II",
+    title: "Solutions, Phase equilibrium, Conductance, Electrochemistry and Functional Group Organic Chemistry-II",
     name: "BCHCT-135",
-    fullName:
-      "Solutions, Phase equilibrium, Conductance, Electrochemistry and Functional Group Organic Chemistry-II",
+    fullName: "Solutions, Phase equilibrium, Conductance, Electrochemistry and Functional Group Organic Chemistry-II",
     collegeCode: "IGNOU",
     programmeCode: "BAG",
     term: 6,
@@ -1775,11 +1763,9 @@ export const bachelorsDegreeCourses = [
   },
   {
     code: "BCHCL-138",
-    title:
-      "Coordination Chemistry, States of Matter and Chemical Kinetics: Laboratory",
+    title: "Coordination Chemistry, States of Matter and Chemical Kinetics: Laboratory",
     name: "BCHCL-138",
-    fullName:
-      "Coordination Chemistry, States of Matter and Chemical Kinetics: Laboratory",
+    fullName: "Coordination Chemistry, States of Matter and Chemical Kinetics: Laboratory",
 
     collegeCode: "IGNOU",
     programmeCode: "BAG",
@@ -2042,11 +2028,9 @@ export const bachelorsDegreeCourses = [
   },
   {
     code: "BZYCL-134",
-    title:
-      "Comparative Anatomy and Developmental Biology of Vertebrates: Laboratory",
+    title: "Comparative Anatomy and Developmental Biology of Vertebrates: Laboratory",
     name: "BZYCL-134",
-    fullName:
-      "Comparative Anatomy and Developmental Biology of Vertebrates: Laboratory",
+    fullName: "Comparative Anatomy and Developmental Biology of Vertebrates: Laboratory",
 
     collegeCode: "IGNOU",
     programmeCode: "BAG",
@@ -2146,22 +2130,18 @@ export const bachelorsDegreeCourses = [
   },
   {
     code: "BCHET-147",
-    title:
-      "Organometallics, Bioinorganic Chemistry, PolynuclearHyderocarbons and UV, IR Spectroscopy",
+    title: "Organometallics, Bioinorganic Chemistry, PolynuclearHyderocarbons and UV, IR Spectroscopy",
     name: "BCHET-147",
-    fullName:
-      "Organometallics, Bioinorganic Chemistry, PolynuclearHyderocarbons and UV, IR Spectroscopy",
+    fullName: "Organometallics, Bioinorganic Chemistry, PolynuclearHyderocarbons and UV, IR Spectroscopy",
     collegeCode: "IGNOU",
     programmeCode: "BAG",
     term: 6,
   },
   {
     code: "BCHEL-148",
-    title:
-      "Organometallics, Bioinorganic Chemistry, Polynuclear Hydrocarbons and UV, IR Spectroscopy: Laboratory",
+    title: "Organometallics, Bioinorganic Chemistry, Polynuclear Hydrocarbons and UV, IR Spectroscopy: Laboratory",
     name: "BCHEL-148",
-    fullName:
-      "Organometallics, Bioinorganic Chemistry, Polynuclear Hydrocarbons and UV, IR Spectroscopy: Laboratory",
+    fullName: "Organometallics, Bioinorganic Chemistry, Polynuclear Hydrocarbons and UV, IR Spectroscopy: Laboratory",
     collegeCode: "IGNOU",
     programmeCode: "BAG",
     term: 6,

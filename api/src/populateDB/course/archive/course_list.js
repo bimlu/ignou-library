@@ -212,8 +212,7 @@ export const courses = [
   { code: "ESO-16", title: "Social Problem in India", school: "SOSS" },
   {
     code: "BLD-101",
-    title:
-      "Political Economy of Hkkjr ea lkekftd Labour in India Hkkjr ea Je dk",
+    title: "Political Economy of Hkkjr ea lkekftd Labour in India Hkkjr ea Je dk",
     school: "SOSS",
   },
   { code: "MSO-001", title: "Sociological Theories and", school: "SOSS" },
@@ -447,8 +446,7 @@ export const courses = [
   { code: "BLII-014", title: "ICT in Libraries", school: "SOSS" },
   {
     code: "TS-05",
-    title:
-      "Ecology Environment and SERVICE MANAGEMENT (SOTHSM) and Tourism ifjfLFkfrdh",
+    title: "Ecology Environment and SERVICE MANAGEMENT (SOTHSM) and Tourism ifjfLFkfrdh",
     school: "SOTHSM",
   },
   {
@@ -1466,8 +1464,7 @@ export const courses = [
   { code: "MCSL-054", title: "Lab Course in", school: "SOCIS" },
   {
     code: "MCSL-017",
-    title:
-      "Lab (C and Assembly Advanced Internet Language Programming) Technologies and Course",
+    title: "Lab (C and Assembly Advanced Internet Language Programming) Technologies and Course",
     school: "SOCIS",
   },
   { code: "MCS-021", title: "Data and File Structures", school: "SOCIS" },
@@ -1543,8 +1540,7 @@ export const courses = [
   { code: "CITL-001", title: "Laboratory Course", school: "SOCIS" },
   {
     code: "MES-111",
-    title:
-      "Growth and Philosophy of SCHOOL OF EDUCATION (SOE) Distance Education",
+    title: "Growth and Philosophy of SCHOOL OF EDUCATION (SOE) Distance Education",
     school: "SOE",
   },
   { code: "ES-331", title: "Curriculum and Instruction", school: "SOE" },
@@ -1652,8 +1648,7 @@ export const courses = [
   { code: "BES-020", title: "Teaching of English", school: "SOE" },
   {
     code: "MES-01",
-    title:
-      "Teaching Learning Process SCHOOL OF VOCATIONAL EDUCATION and Evaluation",
+    title: "Teaching Learning Process SCHOOL OF VOCATIONAL EDUCATION and Evaluation",
     school: "SOE",
   },
   { code: "MES-02", title: "Life Enrichment and Self", school: "SOE" },
@@ -1769,8 +1764,7 @@ export const courses = [
   },
   {
     code: "MAE-003",
-    title:
-      "Knowledge Management Information Dissemination and Networking inAdult Education",
+    title: "Knowledge Management Information Dissemination and Networking inAdult Education",
     school: "SOEDS",
   },
   { code: "MAEL-001", title: "Practical Work Components", school: "SOEDS" },
@@ -1892,8 +1886,7 @@ export const courses = [
   { code: "PGDT-04", title: "iz", school: "SOTST" },
   {
     code: "BPY-12",
-    title:
-      "Philosophy of Science SCHOOL OF GENDER AND DEVELOPMENT and Cosmology",
+    title: "Philosophy of Science SCHOOL OF GENDER AND DEVELOPMENT and Cosmology",
     school: "SOITS",
   },
   { code: "BPYE-01", title: "Philosophy of Religion", school: "SOITS" },
@@ -1942,8 +1935,7 @@ export const courses = [
   { code: "MGS-005", title: "Research Methodologies", school: "SOGDS" },
   {
     code: "MGSE-009",
-    title:
-      "Gender Issues in Work  in Gender and Employment and Development Studies",
+    title: "Gender Issues in Work  in Gender and Employment and Development Studies",
     school: "SOGDS",
   },
   { code: "MGSP-001", title: "Internship", school: "SOGDS" },

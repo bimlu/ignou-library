@@ -1,17 +1,17 @@
-import React, { useEffect } from 'react';
-import PropTypes from 'prop-types';
-import styled, { keyframes } from 'styled-components';
+import React, { useEffect } from "react";
+import PropTypes from "prop-types";
+import styled, { keyframes } from "styled-components";
 
-import { SuccessIcon, InfoIcon, WarningIcon, ErrorIcon, CloseIcon } from 'components/icons';
-import { Spacing } from './Layout';
-import { Button } from 'components/Form';
+import { SuccessIcon, InfoIcon, WarningIcon, ErrorIcon, CloseIcon } from "components/icons";
+import { Spacing } from "./Layout";
+import { Button } from "components/Form";
 
-import theme from 'theme';
+import theme from "theme";
 
-import { allMessageTypes } from 'constants/MessageType';
+import { allMessageTypes } from "constants/MessageType";
 
-import { useStore } from 'store';
-import { CLEAR_MESSAGE } from 'store/message';
+import { useStore } from "store";
+import { CLEAR_MESSAGE } from "store/message";
 
 const fade = keyframes`
   from {
@@ -89,7 +89,7 @@ const Message = ({ children, type, autoClose }) => {
   return (
     <Root color={Colors[type]}>
       {MessageType(type)}
-      <Spacing left={type && 'xs'}>{children}</Spacing>
+      <Spacing left={type && "xs"}>{children}</Spacing>
       <Close ghost onClick={() => dispatch({ type: CLEAR_MESSAGE })}>
         <CloseIcon color="white" />
       </Close>

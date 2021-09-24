@@ -133,8 +133,7 @@ export const soa = [
   {
     // 27
     code: "NPV-001",
-    title:
-      "Awareness Programme on Value Added Products from Fruits and Vegetables",
+    title: "Awareness Programme on Value Added Products from Fruits and Vegetables",
   },
   {
     // 28
@@ -219,8 +218,7 @@ export const soa = [
   {
     // 44
     code: "MNR-002",
-    title:
-      "Agriculture Policy: Formulation, Components, Implementation and ComparativeAnalysis",
+    title: "Agriculture Policy: Formulation, Components, Implementation and ComparativeAnalysis",
   },
   {
     // 45

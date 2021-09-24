@@ -1,7 +1,7 @@
-import { withFilter } from 'apollo-server';
+import { withFilter } from "apollo-server";
 
-import { pubSub } from '../utils/apollo-server';
-import { NOTIFICATION_CREATED_OR_DELETED } from '../constants/Subscriptions';
+import { pubSub } from "../utils/apollo-server";
+import { NOTIFICATION_CREATED_OR_DELETED } from "../constants/Subscriptions";
 
 const Query = {
   /**
@@ -15,14 +15,14 @@ const Query = {
     const query = { user: userId };
     const count = await Notification.where(query).countDocuments();
     const notifications = await Notification.where(query)
-      .populate('author')
-      .populate('user')
-      .populate('follow')
-      .populate({ path: 'comment', populate: { path: 'post' } })
-      .populate({ path: 'like', populate: { path: 'post' } })
+      .populate("author")
+      .populate("user")
+      .populate("follow")
+      .populate({ path: "comment", populate: { path: "post" } })
+      .populate({ path: "like", populate: { path: "post" } })
       .skip(skip)
       .limit(limit)
-      .sort({ createdAt: 'desc' });
+      .sort({ createdAt: "desc" });
 
     return { notifications, count };
   },
@@ -55,14 +55,14 @@ const Mutation = {
 
     // Publish notification created event
     newNotification = await newNotification
-      .populate('author')
-      .populate('follow')
-      .populate({ path: 'comment', populate: { path: 'post' } })
-      .populate({ path: 'like', populate: { path: 'post' } })
+      .populate("author")
+      .populate("follow")
+      .populate({ path: "comment", populate: { path: "post" } })
+      .populate({ path: "like", populate: { path: "post" } })
       .execPopulate();
     pubSub.publish(NOTIFICATION_CREATED_OR_DELETED, {
       notificationCreatedOrDeleted: {
-        operation: 'CREATE',
+        operation: "CREATE",
         notification: newNotification,
       },
     });
@@ -82,14 +82,14 @@ const Mutation = {
 
     // Publish notification deleted event
     notification = await notification
-      .populate('author')
-      .populate('follow')
-      .populate({ path: 'comment', populate: { path: 'post' } })
-      .populate({ path: 'like', populate: { path: 'post' } })
+      .populate("author")
+      .populate("follow")
+      .populate({ path: "comment", populate: { path: "post" } })
+      .populate({ path: "like", populate: { path: "post" } })
       .execPopulate();
     pubSub.publish(NOTIFICATION_CREATED_OR_DELETED, {
       notificationCreatedOrDeleted: {
-        operation: 'DELETE',
+        operation: "DELETE",
         notification,
       },
     });

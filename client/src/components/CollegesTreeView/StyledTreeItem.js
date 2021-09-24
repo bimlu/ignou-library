@@ -1,22 +1,22 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import { makeStyles, fade } from '@material-ui/core/styles';
+import React from "react";
+import PropTypes from "prop-types";
+import { makeStyles, fade } from "@material-ui/core/styles";
 
-import TreeItem from '@material-ui/lab/TreeItem';
-import Typography from '@material-ui/core/Typography';
+import TreeItem from "@material-ui/lab/TreeItem";
+import Typography from "@material-ui/core/Typography";
 
 const useTreeItemStyles = makeStyles((theme) => ({
   root: {
     color: theme.palette.text.secondary,
-    '&:hover > $content': {
+    "&:hover > $content": {
       backgroundColor: theme.palette.action.hover,
     },
-    '&:focus > $content, &$selected > $content': {
+    "&:focus > $content, &$selected > $content": {
       backgroundColor: `var(--tree-view-bg-color, ${theme.palette.grey[400]})`,
-      color: 'var(--tree-view-color)',
+      color: "var(--tree-view-color)",
     },
-    '&:focus > $content $label, &:hover > $content $label, &$selected > $content $label': {
-      backgroundColor: 'transparent',
+    "&:focus > $content $label, &:hover > $content $label, &$selected > $content $label": {
+      backgroundColor: "transparent",
     },
   },
   content: {
@@ -25,7 +25,7 @@ const useTreeItemStyles = makeStyles((theme) => ({
     borderBottomRightRadius: theme.spacing(2),
     paddingRight: theme.spacing(1),
     fontWeight: theme.typography.fontWeightMedium,
-    '$expanded > &': {
+    "$expanded > &": {
       fontWeight: theme.typography.fontWeightRegular,
     },
     height: 40,
@@ -34,7 +34,7 @@ const useTreeItemStyles = makeStyles((theme) => ({
     marginLeft: 7,
     paddingLeft: 18,
     borderLeft: `1px dashed ${fade(theme.palette.text.primary, 0.4)}`,
-    [theme.breakpoints.up('sm')]: {
+    [theme.breakpoints.up("sm")]: {
       marginLeft: 14,
       paddingLeft: 36,
     },
@@ -42,17 +42,17 @@ const useTreeItemStyles = makeStyles((theme) => ({
   expanded: {},
   selected: {},
   label: {
-    fontWeight: 'inherit',
-    color: 'inherit',
+    fontWeight: "inherit",
+    color: "inherit",
   },
   labelRoot: {
-    display: 'flex',
-    alignItems: 'center',
+    display: "flex",
+    alignItems: "center",
     padding: theme.spacing(0.5, 0),
   },
   labelText: {
     marginLeft: theme.spacing(0.5),
-    fontWeight: 'inherit',
+    fontWeight: "inherit",
     flexGrow: 1,
   },
 }));
@@ -75,8 +75,8 @@ function StyledTreeItem(props) {
         </div>
       }
       style={{
-        '--tree-view-color': color,
-        '--tree-view-bg-color': bgColor,
+        "--tree-view-color": color,
+        "--tree-view-bg-color": bgColor,
       }}
       classes={{
         root: classes.root,

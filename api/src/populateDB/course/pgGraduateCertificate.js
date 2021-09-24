@@ -136,11 +136,9 @@ export const pgGraduateCertificateCourses = [
   },
   {
     code: "MGY-3",
-    title:
-      "Global Navigation Satellite System and Geographic Information System",
+    title: "Global Navigation Satellite System and Geographic Information System",
     name: "MGY-3",
-    fullName:
-      "Global Navigation Satellite System and Geographic Information System",
+    fullName: "Global Navigation Satellite System and Geographic Information System",
     collegeCode: "IGNOU",
     programmeCode: "MCA_NEW",
     term: 1,
@@ -273,11 +271,9 @@ export const pgGraduateCertificateCourses = [
   },
   {
     code: "MNR-2",
-    title:
-      "Agricultural Policy: Formulation, Components, Process, Implementation and Comparative Analysis",
+    title: "Agricultural Policy: Formulation, Components, Process, Implementation and Comparative Analysis",
     name: "MNR-2",
-    fullName:
-      "Agricultural Policy: Formulation, Components, Process, Implementation and Comparative Analysis",
+    fullName: "Agricultural Policy: Formulation, Components, Process, Implementation and Comparative Analysis",
     collegeCode: "IGNOU",
     programmeCode: "MCA_NEW",
     term: 1,

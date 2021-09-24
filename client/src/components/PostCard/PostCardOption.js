@@ -1,20 +1,20 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import { generatePath } from 'react-router-dom';
+import React from "react";
+import PropTypes from "prop-types";
+import { generatePath } from "react-router-dom";
 
-import { makeStyles } from '@material-ui/core/styles';
-import List from '@material-ui/core/List';
-import ListItem from '@material-ui/core/ListItem';
-import ListItemText from '@material-ui/core/ListItemText';
-import ListItemIcon from '@material-ui/core/ListItemIcon';
-import Dialog from '@material-ui/core/Dialog';
-import Divider from '@material-ui/core/Divider';
+import { makeStyles } from "@material-ui/core/styles";
+import List from "@material-ui/core/List";
+import ListItem from "@material-ui/core/ListItem";
+import ListItemText from "@material-ui/core/ListItemText";
+import ListItemIcon from "@material-ui/core/ListItemIcon";
+import Dialog from "@material-ui/core/Dialog";
+import Divider from "@material-ui/core/Divider";
 
-import Follow from 'components/Follow';
+import Follow from "components/Follow";
 
-import { useStore } from 'store';
+import { useStore } from "store";
 
-import * as Routes from 'routes';
+import * as Routes from "routes";
 
 const useStyles = makeStyles({
   list: {
@@ -35,11 +35,11 @@ const PostCardOption = ({ postId, author, open, handleClose, deletePost, link })
         link ||
           `${process.env.REACT_APP_FRONTEND_URL}${generatePath(Routes.POST, {
             id: postId,
-            type: 'image',
+            type: "image",
           })}`
       );
     } catch (error) {
-      console.error('Failed to read clipboard contents: ', error);
+      console.error("Failed to read clipboard contents: ", error);
     }
 
     handleClose();

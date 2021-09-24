@@ -1,53 +1,53 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 
-import { useQuery, useApolloClient } from '@apollo/client';
-import { useParams } from 'react-router-dom';
+import { useQuery, useApolloClient } from "@apollo/client";
+import { useParams } from "react-router-dom";
 
-import { makeStyles } from '@material-ui/core/styles';
-import Skeleton from '@material-ui/lab/Skeleton';
-import Typography from '@material-ui/core/Typography';
-import Paper from '@material-ui/core/Paper';
-import Box from '@material-ui/core/Box';
-import Divider from '@material-ui/core/Divider';
-import Button from '@material-ui/core/Button';
-import Snackbar from '@material-ui/core/Snackbar';
-import MuiAlert from '@material-ui/lab/Alert';
-import TextField from '@material-ui/core/TextField';
-import IconButton from '@material-ui/core/IconButton';
-import PhotoCamera from '@material-ui/icons/PhotoCamera';
+import { makeStyles } from "@material-ui/core/styles";
+import Skeleton from "@material-ui/lab/Skeleton";
+import Typography from "@material-ui/core/Typography";
+import Paper from "@material-ui/core/Paper";
+import Box from "@material-ui/core/Box";
+import Divider from "@material-ui/core/Divider";
+import Button from "@material-ui/core/Button";
+import Snackbar from "@material-ui/core/Snackbar";
+import MuiAlert from "@material-ui/lab/Alert";
+import TextField from "@material-ui/core/TextField";
+import IconButton from "@material-ui/core/IconButton";
+import PhotoCamera from "@material-ui/icons/PhotoCamera";
 
-import { GET_COURSE, DELETE_COURSE, UPDATE_COURSE, TOGGLE_COURSE_VERIFICATION } from 'graphql/course';
-import { GET_COLLEGE_PROGRAMME_COURSES } from 'graphql/course';
+import { GET_COURSE, DELETE_COURSE, UPDATE_COURSE, TOGGLE_COURSE_VERIFICATION } from "graphql/course";
+import { GET_COLLEGE_PROGRAMME_COURSES } from "graphql/course";
 
-import { MAX_POST_IMAGE_SIZE } from 'constants/ImageSize';
+import { MAX_POST_IMAGE_SIZE } from "constants/ImageSize";
 
-import NewCourse from './NewCourse';
-import SimpleHeader from 'components/SimpleHeader';
-import NotFound from 'components/NotFound';
+import NewCourse from "./NewCourse";
+import SimpleHeader from "components/SimpleHeader";
+import NotFound from "components/NotFound";
 
-import { EXPLORE_PAGE_CARDS_LIMIT } from 'constants/DataLimit';
-import { UserRole } from 'constants/UserRole';
+import { EXPLORE_PAGE_CARDS_LIMIT } from "constants/DataLimit";
+import { UserRole } from "constants/UserRole";
 
-import { useStore } from 'store';
-import * as Routes from 'routes';
+import { useStore } from "store";
+import * as Routes from "routes";
 
 const useStyles = makeStyles((theme) => ({
   paper: {
     minHeight: 300,
     marginBottom: theme.spacing(4),
     background: theme.palette.background.default,
-    '& .MuiTextField-root': {
+    "& .MuiTextField-root": {
       margin: theme.spacing(1),
-      width: '96%',
+      width: "96%",
     },
   },
   imageWrapper: {
     height: 160,
   },
   image: {
-    width: '100%',
-    height: '100%',
-    objectFit: 'cover',
+    width: "100%",
+    height: "100%",
+    objectFit: "cover",
   },
   button: {
     borderRadius: theme.spacing(1.2),
@@ -63,7 +63,7 @@ const useStyles = makeStyles((theme) => ({
     bottom: theme.spacing(7),
   },
   input: {
-    display: 'none',
+    display: "none",
   },
 }));
 
@@ -71,17 +71,17 @@ const Course = () => {
   const [{ auth }] = useStore();
   const classes = useStyles();
   const [open, setOpen] = useState(false);
-  const [message, setMessage] = useState('');
+  const [message, setMessage] = useState("");
   const client = useApolloClient();
   const { id } = useParams();
   const [loading, setLoading] = useState(false);
   const [editing, setEditing] = useState(false);
-  const [name, setName] = useState('');
-  const [fullName, setFullName] = useState('');
-  const [term, setTerm] = useState('');
-  const [description, setDescription] = useState('');
-  const [photo, setPhoto] = useState('');
-  const [severity, setSeverity] = useState('error');
+  const [name, setName] = useState("");
+  const [fullName, setFullName] = useState("");
+  const [term, setTerm] = useState("");
+  const [description, setDescription] = useState("");
+  const [photo, setPhoto] = useState("");
+  const [severity, setSeverity] = useState("error");
 
   if (id === Routes.NEW_ID_VALUE) {
     return <NewCourse />;
@@ -117,7 +117,7 @@ const Course = () => {
       // go back to Courses page
       history.go(-2);
     } catch (err) {
-      setMessage(err.graphQLErrors[0] ? err.graphQLErrors[0].message : 'Something went wrong, Please try again!');
+      setMessage(err.graphQLErrors[0] ? err.graphQLErrors[0].message : "Something went wrong, Please try again!");
       setOpen(true);
     }
 
@@ -141,7 +141,7 @@ const Course = () => {
         ],
       });
     } catch (err) {
-      setMessage('Something went wrong, Please try again!');
+      setMessage("Something went wrong, Please try again!");
       setOpen(true);
     }
 
@@ -166,7 +166,7 @@ const Course = () => {
 
     if (file.size >= MAX_POST_IMAGE_SIZE) {
       setMessage(`File size should be less then ${MAX_POST_IMAGE_SIZE / 1000000}MB`);
-      setSeverity('warning');
+      setSeverity("warning");
       setOpen(true);
       return;
     }
@@ -185,7 +185,7 @@ const Course = () => {
         mutation: UPDATE_COURSE,
         variables: {
           input:
-            typeof photo !== 'string'
+            typeof photo !== "string"
               ? { id, name, image: photo, fullName, term: parseInt(term), description, updatedBy: auth.user.id }
               : { id, name, fullName, term: parseInt(term), description, updatedBy: auth.user.id },
         },
@@ -203,12 +203,12 @@ const Course = () => {
         ],
       });
 
-      setMessage('Successfully updated course!');
-      setSeverity('success');
+      setMessage("Successfully updated course!");
+      setSeverity("success");
       setOpen(true);
     } catch (err) {
-      setMessage(err.graphQLErrors[0] ? err.graphQLErrors[0].message : 'Something went wrong, Please try again!');
-      setSeverity('error');
+      setMessage(err.graphQLErrors[0] ? err.graphQLErrors[0].message : "Something went wrong, Please try again!");
+      setSeverity("error");
       setOpen(true);
     }
 
@@ -220,13 +220,13 @@ const Course = () => {
     const key = e.target.id || e.target.name;
     const value = e.target.value;
 
-    if (key === 'name') {
+    if (key === "name") {
       setName(value);
-    } else if (key === 'fullName') {
+    } else if (key === "fullName") {
       setFullName(value);
-    } else if (key === 'description') {
+    } else if (key === "description") {
       setDescription(value);
-    } else if (key === 'term') {
+    } else if (key === "term") {
       setTerm(value);
     }
   };
@@ -336,7 +336,7 @@ const Course = () => {
           required
         />
       ) : (
-        <Typography gutterBottom style={{ whiteSpace: 'pre-line' }}>
+        <Typography gutterBottom style={{ whiteSpace: "pre-line" }}>
           {course.description}
         </Typography>
       )}
@@ -365,7 +365,7 @@ const Course = () => {
           className={classes.button}
           disabled={loading || UserRole.ADMIN > auth.user.role}
         >
-          {course.verified ? 'Unverify' : 'Verify'}
+          {course.verified ? "Unverify" : "Verify"}
         </Button>
       )}
 
@@ -378,7 +378,7 @@ const Course = () => {
           className={classes.button}
           disabled={loading || UserRole.ADMIN > auth.user.role}
         >
-          {editing ? 'Cancel' : 'Edit'}
+          {editing ? "Cancel" : "Edit"}
         </Button>
       )}
 

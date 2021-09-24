@@ -1,40 +1,40 @@
-import React, { useState, useEffect } from 'react';
-import { useMutation } from '@apollo/client';
-import { Redirect, useLocation } from 'react-router-dom';
-import { makeStyles } from '@material-ui/core/styles';
-import TextField from '@material-ui/core/TextField';
-import MenuItem from '@material-ui/core/MenuItem';
-import IconButton from '@material-ui/core/IconButton';
-import PhotoCamera from '@material-ui/icons/PhotoCamera';
-import CreateIcon from '@material-ui/icons/Create';
-import Button from '@material-ui/core/Button';
-import Snackbar from '@material-ui/core/Snackbar';
-import MuiAlert from '@material-ui/lab/Alert';
-import Alert from '@material-ui/lab/Alert';
+import React, { useState, useEffect } from "react";
+import { useMutation } from "@apollo/client";
+import { Redirect, useLocation } from "react-router-dom";
+import { makeStyles } from "@material-ui/core/styles";
+import TextField from "@material-ui/core/TextField";
+import MenuItem from "@material-ui/core/MenuItem";
+import IconButton from "@material-ui/core/IconButton";
+import PhotoCamera from "@material-ui/icons/PhotoCamera";
+import CreateIcon from "@material-ui/icons/Create";
+import Button from "@material-ui/core/Button";
+import Snackbar from "@material-ui/core/Snackbar";
+import MuiAlert from "@material-ui/lab/Alert";
+import Alert from "@material-ui/lab/Alert";
 
-import { CREATE_PROGRAMME, GET_COLLEGE_PROGRAMMES } from 'graphql/programme';
-import { GET_COLLEGES_WITH_PROGRAMMES_COURSES } from 'graphql/college';
+import { CREATE_PROGRAMME, GET_COLLEGE_PROGRAMMES } from "graphql/programme";
+import { GET_COLLEGES_WITH_PROGRAMMES_COURSES } from "graphql/college";
 
-import { EXPLORE_PAGE_CARDS_LIMIT } from 'constants/DataLimit';
-import { MAX_POST_IMAGE_SIZE } from 'constants/ImageSize';
+import { EXPLORE_PAGE_CARDS_LIMIT } from "constants/DataLimit";
+import { MAX_POST_IMAGE_SIZE } from "constants/ImageSize";
 
-import Head from 'components/Head';
-import SimpleHeader from 'components/SimpleHeader';
+import Head from "components/Head";
+import SimpleHeader from "components/SimpleHeader";
 
-import { useStore } from 'store';
-import { SET_UPLOADING, CLEAR_UPLOADING } from 'store/uploading';
+import { useStore } from "store";
+import { SET_UPLOADING, CLEAR_UPLOADING } from "store/uploading";
 
-import * as Routes from 'routes';
+import * as Routes from "routes";
 
 const useStyles = makeStyles((theme) => ({
   form: {
-    '& .MuiTextField-root': {
+    "& .MuiTextField-root": {
       margin: theme.spacing(1),
-      width: '96%',
+      width: "96%",
     },
   },
   input: {
-    display: 'none',
+    display: "none",
   },
   button: {
     margin: theme.spacing(1),
@@ -45,8 +45,8 @@ const useStyles = makeStyles((theme) => ({
   },
   title: {
     fontSize: theme.spacing(3.6),
-    fontWeight: 'bold',
-    display: 'inline',
+    fontWeight: "bold",
+    display: "inline",
     marginLeft: theme.spacing(1),
   },
   alert: {
@@ -66,18 +66,18 @@ export default function CreateProgramme() {
   const { search } = useLocation();
 
   const query = new URLSearchParams(search);
-  const collegeId = query.get('collegeId');
+  const collegeId = query.get("collegeId");
 
-  const [name, setName] = useState('');
-  const [fullName, setFullName] = useState('');
-  const [degree, setDegree] = useState('');
-  const [termType, setTermType] = useState('');
-  const [termsCount, setTermsCount] = useState('');
-  const [description, setDescription] = useState('');
-  const [photo, setPhoto] = useState('');
+  const [name, setName] = useState("");
+  const [fullName, setFullName] = useState("");
+  const [degree, setDegree] = useState("");
+  const [termType, setTermType] = useState("");
+  const [termsCount, setTermsCount] = useState("");
+  const [description, setDescription] = useState("");
+  const [photo, setPhoto] = useState("");
   const [open, setOpen] = useState(false);
-  const [message, setMessage] = useState('');
-  const [severity, setSeverity] = useState('');
+  const [message, setMessage] = useState("");
+  const [severity, setSeverity] = useState("");
   const [createProgramme, { loading }] = useMutation(CREATE_PROGRAMME, {
     refetchQueries: [
       {
@@ -106,17 +106,17 @@ export default function CreateProgramme() {
     const key = e.target.id || e.target.name;
     const value = e.target.value;
 
-    if (key === 'name') {
+    if (key === "name") {
       setName(value);
-    } else if (key === 'fullName') {
+    } else if (key === "fullName") {
       setFullName(value);
-    } else if (key === 'degree') {
+    } else if (key === "degree") {
       setDegree(value);
-    } else if (key === 'termType') {
+    } else if (key === "termType") {
       setTermType(value);
-    } else if (key === 'termsCount') {
+    } else if (key === "termsCount") {
       setTermsCount(value);
-    } else if (key === 'description') {
+    } else if (key === "description") {
       setDescription(value);
     }
   };
@@ -130,7 +130,7 @@ export default function CreateProgramme() {
 
     if (file.size >= MAX_POST_IMAGE_SIZE) {
       setMessage(`File size should be less then ${MAX_POST_IMAGE_SIZE / 1000000}MB`);
-      setSeverity('warning');
+      setSeverity("warning");
       setOpen(true);
       return;
     }
@@ -159,24 +159,24 @@ export default function CreateProgramme() {
       });
 
       handleReset();
-      setMessage('Successfully created programme!');
-      setSeverity('success');
+      setMessage("Successfully created programme!");
+      setSeverity("success");
       setOpen(true);
     } catch (err) {
-      setMessage(err.graphQLErrors[0] ? err.graphQLErrors[0].message : 'Something went wrong, Please try again!');
-      setSeverity('error');
+      setMessage(err.graphQLErrors[0] ? err.graphQLErrors[0].message : "Something went wrong, Please try again!");
+      setSeverity("error");
       setOpen(true);
     }
   };
 
   const handleReset = () => {
-    setName('');
-    setFullName('');
-    setDegree('');
-    setTermType('');
-    setTermsCount('');
-    setDescription('');
-    setPhoto('');
+    setName("");
+    setFullName("");
+    setDegree("");
+    setTermType("");
+    setTermsCount("");
+    setDescription("");
+    setPhoto("");
   };
 
   const isCreateDisabled = status.uploading || !name || !fullName || !description || !photo || !collegeId;
@@ -245,7 +245,7 @@ export default function CreateProgramme() {
           <MenuItem value="">
             <em>None</em>
           </MenuItem>
-          {['Bachelors', 'Masters', 'Doctorates', 'Diploma', 'Certificate'].map((degreeName, i) => (
+          {["Bachelors", "Masters", "Doctorates", "Diploma", "Certificate"].map((degreeName, i) => (
             <MenuItem key={degreeName} value={i}>
               {degreeName}
             </MenuItem>
@@ -265,7 +265,7 @@ export default function CreateProgramme() {
           <MenuItem value="">
             <em>None</em>
           </MenuItem>
-          {['Quarter', 'Semester', 'Year'].map((termName, i) => (
+          {["Quarter", "Semester", "Year"].map((termName, i) => (
             <MenuItem key={termName} value={i}>
               {termName}
             </MenuItem>

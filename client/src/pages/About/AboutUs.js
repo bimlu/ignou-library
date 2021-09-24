@@ -1,18 +1,18 @@
-import React from 'react';
+import React from "react";
 
-import Box from '@material-ui/core/Box';
-import Container from '@material-ui/core/Container';
-import { makeStyles } from '@material-ui/core/styles';
-import Divider from '@material-ui/core/Divider';
-import Typography from '@material-ui/core/Typography';
+import Box from "@material-ui/core/Box";
+import Container from "@material-ui/core/Container";
+import { makeStyles } from "@material-ui/core/styles";
+import Divider from "@material-ui/core/Divider";
+import Typography from "@material-ui/core/Typography";
 
-import Head from 'components/Head';
+import Head from "components/Head";
 
 const useStyles = makeStyles(() => ({
   root: {
-    display: 'flex',
-    flexDirection: 'column',
-    alignItems: 'center',
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "center",
   },
 }));
 
@@ -29,7 +29,7 @@ const AboutUs = () => {
         </Typography>
       </Box>
 
-      <Divider style={{ width: '100%' }} />
+      <Divider style={{ width: "100%" }} />
 
       <Box mt={2}>
         <Typography paragraph variant="caption">

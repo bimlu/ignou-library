@@ -63,11 +63,9 @@ export const pgGraduateCertificateProgrammes = [
   },
   {
     code: "PGCIPWS",
-    title:
-      "Post Graduate Certificate in Inventory Planning and Warehousing for Engineers",
+    title: "Post Graduate Certificate in Inventory Planning and Warehousing for Engineers",
     name: "PGCIPW",
-    fullName:
-      "Post Graduate Certificate in Inventory Planning and Warehousing for Engineers",
+    fullName: "Post Graduate Certificate in Inventory Planning and Warehousing for Engineers",
     degree: Degree.pgGraduateCertificate,
     termType: 1,
     termsCount: 6,
@@ -139,8 +137,7 @@ export const pgGraduateCertificateProgrammes = [
     code: "PGCMDM",
     title: "Post Graduate Certificate in Medical Management of CBRNE Disasters",
     name: "PGCMDM",
-    fullName:
-      "Post Graduate Certificate in Medical Management of CBRNE Disasters",
+    fullName: "Post Graduate Certificate in Medical Management of CBRNE Disasters",
     degree: Degree.pgGraduateCertificate,
     termType: 1,
     termsCount: 6,

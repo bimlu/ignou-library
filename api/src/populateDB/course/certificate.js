@@ -487,11 +487,9 @@ export const certificateCourses = [
   },
   {
     code: "BLE-11",
-    title:
-      "Cooperation: Genesis, Principles, Values, Policy, Growth and Development",
+    title: "Cooperation: Genesis, Principles, Values, Policy, Growth and Development",
     name: "BLE-11",
-    fullName:
-      "Cooperation: Genesis, Principles, Values, Policy, Growth and Development",
+    fullName: "Cooperation: Genesis, Principles, Values, Policy, Growth and Development",
     collegeCode: "IGNOU",
     programmeCode: "BSCG",
     term: 1,
@@ -1425,11 +1423,9 @@ export const certificateCourses = [
   },
   {
     code: "BHM-101",
-    title:
-      "Fundamentals: Environment and Health, Health Care Waste Management Regulations",
+    title: "Fundamentals: Environment and Health, Health Care Waste Management Regulations",
     name: "BHM-101",
-    fullName:
-      "Fundamentals: Environment and Health, Health Care Waste Management Regulations",
+    fullName: "Fundamentals: Environment and Health, Health Care Waste Management Regulations",
     collegeCode: "IGNOU",
     programmeCode: "BSCG",
     term: 1,
@@ -1438,8 +1434,7 @@ export const certificateCourses = [
     code: "BHM-102",
     title: "Health Care Waste Management: Concepts, Technologies and Training",
     name: "BHM-102",
-    fullName:
-      "Health Care Waste Management: Concepts, Technologies and Training",
+    fullName: "Health Care Waste Management: Concepts, Technologies and Training",
     collegeCode: "IGNOU",
     programmeCode: "BSCG",
     term: 1,
@@ -1464,11 +1459,9 @@ export const certificateCourses = [
   },
   {
     code: "BHME-103",
-    title:
-      "Current Status of Health Care Waste Management and Legislation in the Regional Countries",
+    title: "Current Status of Health Care Waste Management and Legislation in the Regional Countries",
     name: "BHME-103",
-    fullName:
-      "Current Status of Health Care Waste Management and Legislation in the Regional Countries",
+    fullName: "Current Status of Health Care Waste Management and Legislation in the Regional Countries",
     collegeCode: "IGNOU",
     programmeCode: "BSCG",
     term: 1,
@@ -1727,11 +1720,9 @@ export const certificateCourses = [
   },
   {
     code: "CNS-AHL-001",
-    title:
-      "Practical Title of the course: Practical Manual on Adolescent Health",
+    title: "Practical Title of the course: Practical Manual on Adolescent Health",
     name: "CNS-AHL-001",
-    fullName:
-      "Practical Title of the course: Practical Manual on Adolescent Health",
+    fullName: "Practical Title of the course: Practical Manual on Adolescent Health",
     collegeCode: "IGNOU",
     programmeCode: "BSCG",
     term: 1,
@@ -2100,19 +2091,16 @@ export const certificateCourses = [
     code: "BEV-002",
     title: "Municipal, Agricultural, Industrial and Hazardous Waste Management",
     name: "BEV-002",
-    fullName:
-      "Municipal, Agricultural, Industrial and Hazardous Waste Management",
+    fullName: "Municipal, Agricultural, Industrial and Hazardous Waste Management",
     collegeCode: "IGNOU",
     programmeCode: "BSCG",
     term: 1,
   },
   {
     code: "BEV-003",
-    title:
-      "Plastic, E-waste, Biomedical and Construction and Demolition Waste management",
+    title: "Plastic, E-waste, Biomedical and Construction and Demolition Waste management",
     name: "BEV-003",
-    fullName:
-      "Plastic, E-waste, Biomedical and Construction and Demolition Waste management",
+    fullName: "Plastic, E-waste, Biomedical and Construction and Demolition Waste management",
     collegeCode: "IGNOU",
     programmeCode: "BSCG",
     term: 1,

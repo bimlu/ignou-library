@@ -1,22 +1,22 @@
-import passport from 'passport';
-import { Strategy as FacebookStrategy } from 'passport-facebook';
-import { Strategy as GoogleStrategy } from 'passport-google-oauth20';
-import { Strategy as GitHubStrategy } from 'passport-github2';
+import passport from "passport";
+import { Strategy as FacebookStrategy } from "passport-facebook";
+import { Strategy as GoogleStrategy } from "passport-google-oauth20";
+import { Strategy as GitHubStrategy } from "passport-github2";
 
 import {
   getUserInfoFromFacebook,
   getUserInfoFromGoogle,
   getUserInfoFromGithub,
   SocialProfile,
-} from './utils/social-profile';
+} from "./utils/social-profile";
 
-import User from './models/user';
-import { AuthUser } from './constants/types';
+import User from "./models/user";
+import { AuthUser } from "./constants/types";
 
 enum SocialProvider {
-  Facebook = 'facebook',
-  Google = 'google',
-  Github = 'github',
+  Facebook = "facebook",
+  Google = "google",
+  Github = "github",
 }
 
 const createOrUpdateUser = async (profile: SocialProfile, provider: SocialProvider) => {
@@ -59,15 +59,15 @@ export const initPassport = async () => {
         clientSecret: process.env.FACEBOOK_APP_SECRET,
         callbackURL: `${process.env.API_URL}/auth/facebook/callback`,
         profileFields: [
-          'id',
-          'displayName',
-          'email',
-          'picture.type(large)',
-          'about',
-          'cover',
-          'first_name',
-          'last_name',
-          'website',
+          "id",
+          "displayName",
+          "email",
+          "picture.type(large)",
+          "about",
+          "cover",
+          "first_name",
+          "last_name",
+          "website",
         ],
       },
       async (accessToken, refreshToken, profile, done) => {
@@ -118,7 +118,7 @@ export const initPassport = async () => {
         clientID: process.env.GITHUB_APP_ID,
         clientSecret: process.env.GITHUB_APP_SECRET,
         callbackURL: `${process.env.API_URL}/auth/github/callback`,
-        scope: ['user'],
+        scope: ["user"],
       },
       async (accessToken, refreshToken, profile, done) => {
         const user = await User.findOne({ githubId: profile.id });

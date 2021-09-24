@@ -55,8 +55,7 @@ export const pgGraduateDiplomaProgrammes = [
     code: "PGDESD",
     title: "Post Graduate Diploma in Environment and Sustainable Development",
     name: "PGDESD",
-    fullName:
-      "Post Graduate Diploma in Environment and Sustainable Development",
+    fullName: "Post Graduate Diploma in Environment and Sustainable Development",
     degree: Degree.pgGraduateDiploma,
     termType: 1,
     termsCount: 6,
@@ -146,8 +145,7 @@ export const pgGraduateDiplomaProgrammes = [
     code: "PGDEMA",
     title: "Post Graduate Diploma in Educational Management and Administration",
     name: "PGDEMA",
-    fullName:
-      "Post Graduate Diploma in Educational Management and Administration",
+    fullName: "Post Graduate Diploma in Educational Management and Administration",
     degree: Degree.pgGraduateDiploma,
     termType: 1,
     termsCount: 6,

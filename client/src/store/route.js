@@ -1,12 +1,12 @@
 /**
  * Actions types
  */
-export const SET_EXPLORE_ROUTE = 'SET_EXPLORE_ROUTE';
-export const CLEAR_EXPLORE_ROUTE = 'CLEAR_EXPLORE_ROUTE';
-export const SET_PEOPLE_ROUTE = 'SET_PEOPLE_ROUTE';
-export const CLEAR_PEOPLE_ROUTE = 'CLEAR_PEOPLE_ROUTE';
+export const SET_EXPLORE_ROUTE = "SET_EXPLORE_ROUTE";
+export const CLEAR_EXPLORE_ROUTE = "CLEAR_EXPLORE_ROUTE";
+export const SET_PEOPLE_ROUTE = "SET_PEOPLE_ROUTE";
+export const CLEAR_PEOPLE_ROUTE = "CLEAR_PEOPLE_ROUTE";
 
-import * as Routes from 'routes';
+import * as Routes from "routes";
 
 /**
  * Initial State

@@ -1,44 +1,44 @@
-import React from 'react';
-import { Link, generatePath } from 'react-router-dom';
-import { useQuery } from '@apollo/client';
+import React from "react";
+import { Link, generatePath } from "react-router-dom";
+import { useQuery } from "@apollo/client";
 
-import { makeStyles } from '@material-ui/core/styles';
-import Paper from '@material-ui/core/Paper';
-import Divider from '@material-ui/core/Divider';
-import Typography from '@material-ui/core/Typography';
-import List from '@material-ui/core/List';
-import ListItem from '@material-ui/core/ListItem';
-import ListItemIcon from '@material-ui/core/ListItemIcon';
-import ListItemText from '@material-ui/core/ListItemText';
-import CircularProgress from '@material-ui/core/CircularProgress';
-import Avatar from '@material-ui/core/Avatar';
+import { makeStyles } from "@material-ui/core/styles";
+import Paper from "@material-ui/core/Paper";
+import Divider from "@material-ui/core/Divider";
+import Typography from "@material-ui/core/Typography";
+import List from "@material-ui/core/List";
+import ListItem from "@material-ui/core/ListItem";
+import ListItemIcon from "@material-ui/core/ListItemIcon";
+import ListItemText from "@material-ui/core/ListItemText";
+import CircularProgress from "@material-ui/core/CircularProgress";
+import Avatar from "@material-ui/core/Avatar";
 
-import { HEADER_HEIGHT } from 'constants/Layout';
+import { HEADER_HEIGHT } from "constants/Layout";
 
-import { USER_SUGGESTIONS } from 'graphql/user';
-import { useStore } from 'store';
-import * as Routes from 'routes';
+import { USER_SUGGESTIONS } from "graphql/user";
+import { useStore } from "store";
+import * as Routes from "routes";
 
 const useStyles = makeStyles((theme) => ({
   paper: {
-    position: 'sticky',
+    position: "sticky",
     top: HEADER_HEIGHT + 12,
     padding: theme.spacing(2),
     marginBottom: theme.spacing(2),
     borderRadius: theme.spacing(2),
     minHeight: 600,
-    [theme.breakpoints.down('sm')]: {
-      display: 'none',
+    [theme.breakpoints.down("sm")]: {
+      display: "none",
     },
   },
   title: {
-    textAlign: 'center',
+    textAlign: "center",
     margin: theme.spacing(1),
   },
   loading: {
-    display: 'flex',
-    flexDirection: 'column',
-    alignItems: 'center',
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "center",
     marginTop: theme.spacing(2),
   },
   divider: {
@@ -47,10 +47,10 @@ const useStyles = makeStyles((theme) => ({
   },
   listItem: {
     borderRadius: theme.spacing(2),
-    '&:hover': {
+    "&:hover": {
       color: theme.palette.text.primary,
-      '& *': {
-        color: 'inherit',
+      "& *": {
+        color: "inherit",
       },
     },
   },
@@ -67,7 +67,7 @@ const UserSuggestions = () => {
     variables: { userId: auth.user.id },
   });
 
-  if (error) return 'Please check your internet connection';
+  if (error) return "Please check your internet connection";
 
   return (
     <Paper className={classes.paper} elevation={2}>

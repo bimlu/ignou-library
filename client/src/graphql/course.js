@@ -1,10 +1,10 @@
-import { gql } from '@apollo/client';
+import { gql } from "@apollo/client";
 
 /**
  * Gets specific course by id
  */
 export const GET_COURSE = gql`
-  query($id: ID, $name: String) {
+  query ($id: ID, $name: String) {
     getCourse(id: $id, name: $name) {
       id
       name
@@ -42,7 +42,7 @@ export const GET_COURSE = gql`
  * Gets courses for specific programme and college
  */
 export const GET_COLLEGE_PROGRAMME_COURSES = gql`
-  query($collegeId: ID!, $programmeId: ID!, $skip: Int, $limit: Int) {
+  query ($collegeId: ID!, $programmeId: ID!, $skip: Int, $limit: Int) {
     getCollegeProgrammeCourses(collegeId: $collegeId, programmeId: $programmeId, skip: $skip, limit: $limit) {
       count
       courses {
@@ -64,7 +64,7 @@ export const GET_COLLEGE_PROGRAMME_COURSES = gql`
  * Gets all available courses
  */
 export const GET_COURSES = gql`
-  query($skip: Int, $limit: Int) {
+  query ($skip: Int, $limit: Int) {
     getCourses(skip: $skip, limit: $limit) {
       count
       courses {
@@ -82,7 +82,7 @@ export const GET_COURSES = gql`
  * Creates a course
  */
 export const CREATE_COURSE = gql`
-  mutation($input: CreateCourseInput!) {
+  mutation ($input: CreateCourseInput!) {
     createCourse(input: $input) {
       id
     }
@@ -93,7 +93,7 @@ export const CREATE_COURSE = gql`
  * Updates a course
  */
 export const UPDATE_COURSE = gql`
-  mutation($input: UpdateCourseInput!) {
+  mutation ($input: UpdateCourseInput!) {
     updateCourse(input: $input) {
       id
     }
@@ -104,7 +104,7 @@ export const UPDATE_COURSE = gql`
  * Deletes a course
  */
 export const DELETE_COURSE = gql`
-  mutation($input: DeleteCourseInput!) {
+  mutation ($input: DeleteCourseInput!) {
     deleteCourse(input: $input) {
       id
     }
@@ -115,7 +115,7 @@ export const DELETE_COURSE = gql`
  * Toggles Verification of a course
  */
 export const TOGGLE_COURSE_VERIFICATION = gql`
-  mutation($id: ID!) {
+  mutation ($id: ID!) {
     toggleCourseVerification(id: $id) {
       id
     }

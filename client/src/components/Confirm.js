@@ -1,8 +1,8 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import styled from 'styled-components';
-import { Button } from './Form';
-import { Spacing } from './Layout';
+import React from "react";
+import PropTypes from "prop-types";
+import styled from "styled-components";
+import { Button } from "./Form";
+import { Spacing } from "./Layout";
 
 const Root = styled.div`
   position: relative;
@@ -54,9 +54,9 @@ Confirm.propTypes = {
 };
 
 Confirm.defaultProps = {
-  title: 'Do you really want to delete this item?',
-  cancelText: 'Cancel',
-  okText: 'Delete',
+  title: "Do you really want to delete this item?",
+  cancelText: "Cancel",
+  okText: "Delete",
 };
 
 export default Confirm;

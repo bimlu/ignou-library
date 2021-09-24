@@ -1,1 +1,1 @@
-export const TermType = ['Qtr', 'Sem', 'Year'];
+export const TermType = ["Qtr", "Sem", "Year"];

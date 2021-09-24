@@ -1,12 +1,12 @@
-import React from 'react';
-import { useApolloClient } from '@apollo/client';
+import React from "react";
+import { useApolloClient } from "@apollo/client";
 
-import MenuItem from '@material-ui/core/MenuItem';
-import AccountCircle from '@material-ui/icons/AccountCircle';
-import IconButton from '@material-ui/core/IconButton';
+import MenuItem from "@material-ui/core/MenuItem";
+import AccountCircle from "@material-ui/icons/AccountCircle";
+import IconButton from "@material-ui/core/IconButton";
 
-import { useStore } from 'store';
-import { CLEAR_AUTH_USER } from 'store/auth';
+import { useStore } from "store";
+import { CLEAR_AUTH_USER } from "store/auth";
 
 /**
  * Component that signs out the user

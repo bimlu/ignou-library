@@ -16,18 +16,9 @@ export const createCollege = () => {
     `,
 
     importantLinks: [
-      [
-        "Admission Portal for ODL Programmes",
-        "https://ignouadmission.samarth.edu.in/",
-      ],
-      [
-        "Admission Portal for Online Programmes",
-        "https://ignouiop.samarth.edu.in/",
-      ],
-      [
-        "Admission Portal for Fixed Learner Intake Programmes",
-        "https://ignouflip.samarth.edu.in/",
-      ],
+      ["Admission Portal for ODL Programmes", "https://ignouadmission.samarth.edu.in/"],
+      ["Admission Portal for Online Programmes", "https://ignouiop.samarth.edu.in/"],
+      ["Admission Portal for Fixed Learner Intake Programmes", "https://ignouflip.samarth.edu.in/"],
       ["Student Portal (after admission)", "https://ignou.samarth.edu.in/"],
     ],
 

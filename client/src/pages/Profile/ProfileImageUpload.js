@@ -1,19 +1,19 @@
-import React, { useState } from 'react';
-import PropTypes from 'prop-types';
-import styled from 'styled-components';
-import { useApolloClient } from '@apollo/client';
+import React, { useState } from "react";
+import PropTypes from "prop-types";
+import styled from "styled-components";
+import { useApolloClient } from "@apollo/client";
 
-import { Loading } from 'components/Loading';
-import { UserIcon } from 'components/icons';
+import { Loading } from "components/Loading";
+import { UserIcon } from "components/icons";
 
-import { GET_AUTH_USER, GET_USER, UPLOAD_PHOTO } from 'graphql/user';
-import { GET_FOLLOWED_POSTS } from 'graphql/post';
+import { GET_AUTH_USER, GET_USER, UPLOAD_PHOTO } from "graphql/user";
+import { GET_FOLLOWED_POSTS } from "graphql/post";
 
-import { MAX_USER_PROFILE_IMAGE_SIZE } from 'constants/ImageSize';
+import { MAX_USER_PROFILE_IMAGE_SIZE } from "constants/ImageSize";
 
-import { useGlobalMessage } from 'hooks/useGlobalMessage';
+import { useGlobalMessage } from "hooks/useGlobalMessage";
 
-import { useStore } from 'store';
+import { useStore } from "store";
 
 const Input = styled.input`
   display: none;
@@ -42,7 +42,7 @@ const Label = styled.label`
   height: 170px;
   display: block;
   overflow: hidden;
-  cursor: ${(p) => p.authUser && 'pointer'};
+  cursor: ${(p) => p.authUser && "pointer"};
   border-radius: 50%;
   border: 4px solid ${(p) => p.theme.colors.border.main};
   background-color: ${(p) => p.theme.colors.white};
@@ -73,7 +73,7 @@ const ProfileImageUpload = ({ userId, image, imagePublicId }) => {
     setLoading(true);
 
     const file = e.target.files[0];
-    e.target.value = '';
+    e.target.value = "";
 
     if (!file) return;
 
@@ -117,7 +117,7 @@ const ProfileImageUpload = ({ userId, image, imagePublicId }) => {
       )}
 
       <Label authUser={authUser} htmlFor="image">
-        {authUser && <Overlay>{image ? 'Update' : 'Upload'}</Overlay>}
+        {authUser && <Overlay>{image ? "Update" : "Upload"}</Overlay>}
 
         {renderProfileImage()}
       </Label>

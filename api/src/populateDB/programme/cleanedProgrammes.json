@@ -182,27 +182,12 @@
     "fullName": "Bachelor of Commerce",
     "collegeCode": "IGNOU",
     "courseList": {
-      "CC": [
-        "BCOC-131",
-        "BCOC-132",
-        "BCOC-133",
-        "BCOC-134",
-        "BCOC-135",
-        "BCOC-136",
-        "BCOC-137"
-      ],
+      "CC": ["BCOC-131", "BCOC-132", "BCOC-133", "BCOC-134", "BCOC-135", "BCOC-136", "BCOC-137"],
       "DSE": ["BCOE-141", "BCOE-143", "BCOE-142", "BCOE-144"],
       "AECC": ["BEGAE-182", "BHDAE-182"],
       "SEC": ["BCOS-183", "BCOS-184", "BCOS-185", "BCOS-186"],
       "GE": ["BCOG-171", "BCOG-172"],
-      "LA": [
-        "BEGLA-135",
-        "BEGLA-136",
-        "BEGLA-137",
-        "BCOLA-138",
-        "BHDLA-136",
-        "BHDLA-137"
-      ]
+      "LA": ["BEGLA-135", "BEGLA-136", "BEGLA-137", "BCOLA-138", "BHDLA-136", "BHDLA-137"]
     }
   },
   {
@@ -536,16 +521,7 @@
     "fullName": "Bachelor of Arts (Vocational Studies) Tourism Management",
     "collegeCode": "IGNOU",
     "courseList": {
-      "CC": [
-        "BTMC-131",
-        "BTMC-132",
-        "BTMC-133",
-        "BTMC-134",
-        "BTMC-135",
-        "BTMC-136",
-        "BTMC-137",
-        "BTMC-138"
-      ],
+      "CC": ["BTMC-131", "BTMC-132", "BTMC-133", "BTMC-134", "BTMC-135", "BTMC-136", "BTMC-137", "BTMC-138"],
       "DSE": ["BTME-141", "BTMP-142", "BTME-143", "BTME-144"],
       "AECC": ["BEVAE-181", "BEGAE-182", "BHDAE-182"],
       "SEC": ["BCOS-183", "BCOS-184", "BTMS-185", "BEGS-186"],

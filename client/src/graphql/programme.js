@@ -1,10 +1,10 @@
-import { gql } from '@apollo/client';
+import { gql } from "@apollo/client";
 
 /**
  * Gets specific programme by id
  */
 export const GET_PROGRAMME = gql`
-  query($id: ID, $name: String) {
+  query ($id: ID, $name: String) {
     getProgramme(id: $id, name: $name) {
       id
       name
@@ -40,7 +40,7 @@ export const GET_PROGRAMME = gql`
  * Gets programmes for a specific college
  */
 export const GET_COLLEGE_PROGRAMMES = gql`
-  query($collegeId: ID!, $skip: Int, $limit: Int) {
+  query ($collegeId: ID!, $skip: Int, $limit: Int) {
     getCollegeProgrammes(collegeId: $collegeId, skip: $skip, limit: $limit) {
       count
       programmes {
@@ -64,7 +64,7 @@ export const GET_COLLEGE_PROGRAMMES = gql`
  * Gets all available programmes
  */
 export const GET_PROGRAMMES = gql`
-  query($skip: Int, $limit: Int) {
+  query ($skip: Int, $limit: Int) {
     getProgrammes(skip: $skip, limit: $limit) {
       count
       programmes {
@@ -84,7 +84,7 @@ export const GET_PROGRAMMES = gql`
  * Creates a programme
  */
 export const CREATE_PROGRAMME = gql`
-  mutation($input: CreateProgrammeInput!) {
+  mutation ($input: CreateProgrammeInput!) {
     createProgramme(input: $input) {
       id
     }
@@ -95,7 +95,7 @@ export const CREATE_PROGRAMME = gql`
  * Update a programme
  */
 export const UPDATE_PROGRAMME = gql`
-  mutation($input: UpdateProgrammeInput!) {
+  mutation ($input: UpdateProgrammeInput!) {
     updateProgramme(input: $input) {
       id
     }
@@ -106,7 +106,7 @@ export const UPDATE_PROGRAMME = gql`
  * Deletes a programme
  */
 export const DELETE_PROGRAMME = gql`
-  mutation($input: DeleteProgrammeInput!) {
+  mutation ($input: DeleteProgrammeInput!) {
     deleteProgramme(input: $input) {
       id
     }
@@ -117,7 +117,7 @@ export const DELETE_PROGRAMME = gql`
  * Toggles Verification of a programme
  */
 export const TOGGLE_PROGRAMME_VERIFICATION = gql`
-  mutation($id: ID!) {
+  mutation ($id: ID!) {
     toggleProgrammeVerification(id: $id) {
       id
     }

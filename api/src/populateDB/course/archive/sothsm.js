@@ -108,7 +108,6 @@ export const sothsm = [
   {
     // 22
     code: "PTS-4,5,6",
-    title:
-      "Project Work Diploma in Tourism Studies Bachelor in Tourism Studies",
+    title: "Project Work Diploma in Tourism Studies Bachelor in Tourism Studies",
   },
 ];

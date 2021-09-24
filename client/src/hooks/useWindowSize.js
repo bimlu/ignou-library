@@ -1,10 +1,10 @@
-import { useState, useEffect, useCallback } from 'react';
+import { useState, useEffect, useCallback } from "react";
 
 /**
  * React hook for detecting window resizing
  */
 export const useWindowSize = () => {
-  const isClient = typeof window === 'object';
+  const isClient = typeof window === "object";
 
   const getSize = useCallback(() => {
     return {
@@ -24,8 +24,8 @@ export const useWindowSize = () => {
       setWindowSize(getSize());
     }
 
-    window.addEventListener('resize', handleResize);
-    return () => window.removeEventListener('resize', handleResize);
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
   }, [getSize, isClient]);
 
   return windowSize;

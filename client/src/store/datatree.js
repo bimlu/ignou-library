@@ -1,8 +1,8 @@
 /**
  * Actions types
  */
-export const SET_DATA_TREE = 'SET_DATA_TREE';
-export const CLEAR_DATA_TREE = 'CLEAR_DATA_TREE';
+export const SET_DATA_TREE = "SET_DATA_TREE";
+export const CLEAR_DATA_TREE = "CLEAR_DATA_TREE";
 
 /**
  * Initial State

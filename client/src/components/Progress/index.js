@@ -1,1 +1,1 @@
-export { CircularIntegration } from './CircularIntegration';
+export { CircularIntegration } from "./CircularIntegration";

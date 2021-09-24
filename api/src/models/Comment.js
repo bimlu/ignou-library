@@ -1,4 +1,4 @@
-import mongoose from 'mongoose';
+import mongoose from "mongoose";
 
 const Schema = mongoose.Schema;
 
@@ -13,11 +13,11 @@ const commentSchema = Schema(
     },
     post: {
       type: Schema.Types.ObjectId,
-      ref: 'Post',
+      ref: "Post",
     },
     author: {
       type: Schema.Types.ObjectId,
-      ref: 'User',
+      ref: "User",
     },
   },
   {
@@ -25,4 +25,4 @@ const commentSchema = Schema(
   }
 );
 
-export default mongoose.model('Comment', commentSchema);
+export default mongoose.model("Comment", commentSchema);

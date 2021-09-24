@@ -1,28 +1,28 @@
-import React, { useEffect } from 'react';
-import PropTypes from 'prop-types';
-import { generatePath } from 'react-router-dom';
-import styled from 'styled-components';
-import { useApolloClient } from '@apollo/client';
+import React, { useEffect } from "react";
+import PropTypes from "prop-types";
+import { generatePath } from "react-router-dom";
+import styled from "styled-components";
+import { useApolloClient } from "@apollo/client";
 
-import { makeStyles } from '@material-ui/core/styles';
-import Paper from '@material-ui/core/Paper';
-import Typography from '@material-ui/core/Typography';
-import Skeleton from '@material-ui/lab/Skeleton';
+import { makeStyles } from "@material-ui/core/styles";
+import Paper from "@material-ui/core/Paper";
+import Typography from "@material-ui/core/Typography";
+import Skeleton from "@material-ui/lab/Skeleton";
 
-import { A } from 'components/Text';
-import { Spacing } from 'components/Layout';
-import Avatar from 'components/Avatar';
+import { A } from "components/Text";
+import { Spacing } from "components/Layout";
+import Avatar from "components/Avatar";
 
-import { useClickOutside } from 'hooks/useClickOutside';
+import { useClickOutside } from "hooks/useClickOutside";
 
-import { GET_AUTH_USER } from 'graphql/user';
-import { UPDATE_NOTIFICATION_SEEN } from 'graphql/notification';
+import { GET_AUTH_USER } from "graphql/user";
+import { UPDATE_NOTIFICATION_SEEN } from "graphql/notification";
 
-import { useStore } from 'store';
+import { useStore } from "store";
 
-import * as Routes from 'routes';
+import * as Routes from "routes";
 
-const DEFAULT_THUMBNAIL = 'https://jhimlish-dev-4.s3.ap-south-1.amazonaws.com/default/pdf-thumbnail.jpg';
+const DEFAULT_THUMBNAIL = "https://jhimlish-dev-4.s3.ap-south-1.amazonaws.com/default/pdf-thumbnail.jpg";
 
 const useStyles = makeStyles((theme) => ({
   paper: {
@@ -143,8 +143,8 @@ const Notification = ({ notification, close, loading }) => {
           <A
             to={
               notification.like.post.pdf
-                ? '#'
-                : generatePath(Routes.POST, { id: notification.like.post.id, type: 'image' })
+                ? "#"
+                : generatePath(Routes.POST, { id: notification.like.post.id, type: "image" })
             }
           >
             <PostImage>
@@ -163,8 +163,8 @@ const Notification = ({ notification, close, loading }) => {
           <A
             to={
               notification.comment.post.pdf
-                ? '#'
-                : generatePath(Routes.POST, { id: notification.comment.post.id, type: 'image' })
+                ? "#"
+                : generatePath(Routes.POST, { id: notification.comment.post.id, type: "image" })
             }
           >
             <PostImage>

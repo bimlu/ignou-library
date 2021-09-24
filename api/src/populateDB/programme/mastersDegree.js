@@ -849,11 +849,9 @@ export const mastersDegreeProgrammes = [
   },
   {
     code: "MSCMACS",
-    title:
-      "Master of Science (Mathematics with Application in Computer Science)",
+    title: "Master of Science (Mathematics with Application in Computer Science)",
     name: "MSCMACS",
-    fullName:
-      "Master of Science (Mathematics with Application in Computer Science)",
+    fullName: "Master of Science (Mathematics with Application in Computer Science)",
     degree: Degree.masters,
     termType: TermType.Semester,
     termsCount: 4,

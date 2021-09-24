@@ -1,19 +1,19 @@
-import React from 'react';
+import React from "react";
 
-import Box from '@material-ui/core/Box';
-import Container from '@material-ui/core/Container';
-import { makeStyles } from '@material-ui/core/styles';
-import Divider from '@material-ui/core/Divider';
-import Typography from '@material-ui/core/Typography';
-import Link from '@material-ui/core/Link';
+import Box from "@material-ui/core/Box";
+import Container from "@material-ui/core/Container";
+import { makeStyles } from "@material-ui/core/styles";
+import Divider from "@material-ui/core/Divider";
+import Typography from "@material-ui/core/Typography";
+import Link from "@material-ui/core/Link";
 
-import Head from 'components/Head';
+import Head from "components/Head";
 
 const useStyles = makeStyles(() => ({
   root: {
-    display: 'flex',
-    flexDirection: 'column',
-    alignItems: 'center',
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "center",
   },
 }));
 
@@ -30,7 +30,7 @@ const PrivacyPolicy = () => {
         </Typography>
       </Box>
 
-      <Divider style={{ width: '100%' }} />
+      <Divider style={{ width: "100%" }} />
 
       <Box mt={2}>
         <Typography paragraph variant="caption">
@@ -84,7 +84,7 @@ const PrivacyPolicy = () => {
           <b>DATA PROCESSORS (OR SERVICE PROVIDERS)</b> means any natural or legal person who processes the data on
           behalf of the Data Controller. We may use the services of various Service Providers in order to process your
           data more effectively.
-        </Typography>{' '}
+        </Typography>{" "}
         <Typography paragraph variant="caption">
           <b>DATA SUBJECT</b> is any living individual who is the subject of Personal Data.
         </Typography>
@@ -333,7 +333,7 @@ const PrivacyPolicy = () => {
           Data.
         </Typography>
         <Typography paragraph variant="caption">
-          {' '}
+          {" "}
           If you wish to be informed what Personal Data we hold about you and if you want it to be removed from our
           systems, please email us at <b>bimlee.official@gmail.com</b>.
         </Typography>
@@ -475,7 +475,7 @@ const PrivacyPolicy = () => {
           your rights.
         </Typography>
         <Typography paragraph variant="caption">
-          To exercise your California data protection rights described above, please send your request(s) by email:{' '}
+          To exercise your California data protection rights described above, please send your request(s) by email:{" "}
           <b>bimlee.official@gmail.com</b>.
         </Typography>
         <Typography paragraph variant="caption">
@@ -537,13 +537,13 @@ const PrivacyPolicy = () => {
         <Typography paragraph variant="caption">
           For example, the outlined <Link href="https://policymaker.io/privacy-policy/">privacy policy</Link> has been
           made using <Link href="https://policymaker.io/">PolicyMaker.io</Link>, a free tool that helps create
-          high-quality legal documents. PolicyMaker’s{' '}
+          high-quality legal documents. PolicyMaker’s{" "}
           <Link href="https://policymaker.io/privacy-policy/">privacy policy generator</Link> is an easy-to-use tool for
           creating a <Link href="https://policymaker.io/blog-privacy-policy/">privacy policy for blog</Link>, website,
           e-commerce store or mobile app.
         </Typography>
         <Typography paragraph variant="caption">
-          19.{' '}
+          19.{" "}
           <b>
             <b>Children’s Privacy</b>
           </b>
@@ -576,11 +576,11 @@ const PrivacyPolicy = () => {
           21. <b>Contact Us</b>
         </Typography>
         <Typography paragraph variant="caption">
-          If you have any questions about this Privacy Policy, please contact us by email:{' '}
+          If you have any questions about this Privacy Policy, please contact us by email:{" "}
           <b>bimlee.official@gmail.com</b>.
         </Typography>
-        <Typography paragraph variant="caption" style={{ marginTop: '5em', fontSize: '0.7em' }}>
-          This <Link href="https://policymaker.io/privacy-policy/">Privacy Policy</Link> was created for{' '}
+        <Typography paragraph variant="caption" style={{ marginTop: "5em", fontSize: "0.7em" }}>
+          This <Link href="https://policymaker.io/privacy-policy/">Privacy Policy</Link> was created for{" "}
           <b>bimlee.com</b> by <Link href="https://policymaker.io">PolicyMaker.io</Link> on 2021-04-01.
         </Typography>
       </Box>

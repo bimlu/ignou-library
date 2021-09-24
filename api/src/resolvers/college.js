@@ -1,6 +1,6 @@
-import { transformer } from '../utils/image-transform';
-import { uploadToS3Bucket, deleteFromS3Bucket } from '../utils/s3-bucket';
-import { assertAdmin } from './user';
+import { transformer } from "../utils/image-transform";
+import { uploadToS3Bucket, deleteFromS3Bucket } from "../utils/s3-bucket";
+import { assertAdmin } from "./user";
 
 const Query = {
   /**
@@ -11,16 +11,16 @@ const Query = {
    */
   getCollege: async (root, { id, name }, { College }) => {
     if (!name && !id) {
-      throw new Error('name or id is required params.');
+      throw new Error("name or id is required params.");
     }
 
     if (name && id) {
-      throw new Error('please pass only name or only id as a param');
+      throw new Error("please pass only name or only id as a param");
     }
 
     const query = name ? { name: name } : { _id: id };
 
-    const college = await College.findOne(query).populate('createdBy').populate('programmes').populate('students');
+    const college = await College.findOne(query).populate("createdBy").populate("programmes").populate("students");
 
     if (!college) {
       throw new Error("College with given params doesn't exits.");
@@ -40,14 +40,14 @@ const Query = {
     const collegesCount = await College.find(query).countDocuments();
     const allColleges = await College.find(query)
       .populate({
-        path: 'programmes',
-        populate: [{ path: 'courses', options: { skip, limit, sort: { postsCount: 'desc' } } }],
-        options: { sort: { coursesCount: 'desc' }, skip, limit },
+        path: "programmes",
+        populate: [{ path: "courses", options: { skip, limit, sort: { postsCount: "desc" } } }],
+        options: { sort: { coursesCount: "desc" }, skip, limit },
       })
-      .populate('students')
+      .populate("students")
       .skip(skip)
       .limit(limit)
-      .sort({ programmesCount: 'desc' })
+      .sort({ programmesCount: "desc" })
       .sort({ createdAt: -1 });
 
     return { colleges: allColleges, count: collegesCount };
@@ -63,7 +63,7 @@ const Mutation = {
    */
   createCollege: async (root, { input: { name, fullName, createdBy, description, image } }, { College, authUser }) => {
     if (!name || !fullName || !createdBy) {
-      throw new Error('name, fullName, createdBy params are required.');
+      throw new Error("name, fullName, createdBy params are required.");
     }
 
     assertAdmin(authUser);
@@ -89,9 +89,9 @@ const Mutation = {
       let uploadImage;
 
       try {
-        uploadImage = await uploadToS3Bucket(stream, 'college', transformer({ width: 420 }));
+        uploadImage = await uploadToS3Bucket(stream, "college", transformer({ width: 420 }));
       } catch (err) {
-        throw new Error('Something went wrong while uploading image to s3 bucket');
+        throw new Error("Something went wrong while uploading image to s3 bucket");
       }
 
       imageUrl = uploadImage.Location;
@@ -122,7 +122,7 @@ const Mutation = {
     { College, authUser }
   ) => {
     if (!id || !updatedBy) {
-      throw new Error('id, updatedBy params are required.');
+      throw new Error("id, updatedBy params are required.");
     }
 
     assertAdmin(authUser);
@@ -136,9 +136,9 @@ const Mutation = {
       let uploadImage;
 
       try {
-        uploadImage = await uploadToS3Bucket(stream, 'college', transformer({ width: 420 }));
+        uploadImage = await uploadToS3Bucket(stream, "college", transformer({ width: 420 }));
       } catch (err) {
-        throw new Error('Something went wrong while uploading image to s3 bucket');
+        throw new Error("Something went wrong while uploading image to s3 bucket");
       }
 
       imageUrl = uploadImage.Location;
@@ -174,7 +174,7 @@ const Mutation = {
     { College, Programme, Course, User, Post, authUser }
   ) => {
     if (!id) {
-      throw new Error('id param is required.');
+      throw new Error("id param is required.");
     }
 
     assertAdmin(authUser);
@@ -187,7 +187,7 @@ const Mutation = {
       (await User.findOne({ college: id }));
 
     if (cannotDelete) {
-      throw new Error('Cannot delete a college that has reference in other collection');
+      throw new Error("Cannot delete a college that has reference in other collection");
     }
 
     // // Remove college image from cloudinary, if imagePublicId is present
@@ -204,7 +204,7 @@ const Mutation = {
       try {
         await deleteFromS3Bucket(imagePublicId);
       } catch (err) {
-        throw new Error('Something went wrong while deleting image from s3 bucket');
+        throw new Error("Something went wrong while deleting image from s3 bucket");
       }
     }
 
@@ -218,7 +218,7 @@ const Mutation = {
    */
   toggleCollegeVerification: async (root, { id }, { College, authUser }) => {
     if (!id) {
-      throw new Error('id param is required.');
+      throw new Error("id param is required.");
     }
 
     assertAdmin(authUser);

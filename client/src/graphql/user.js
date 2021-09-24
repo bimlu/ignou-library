@@ -1,5 +1,5 @@
-import { gql } from '@apollo/client';
-import { postCommentsPayload, postAuthorPayload, postLikesPayload } from './post';
+import { gql } from "@apollo/client";
+import { postCommentsPayload, postAuthorPayload, postLikesPayload } from "./post";
 
 /**
  * Records to select from user
@@ -168,7 +168,7 @@ export const GET_AUTH_USER = gql`
  * Gets all available users
  */
 export const GET_USERS = gql`
-  query($userId: String, $skip: Int, $limit: Int) {
+  query ($userId: String, $skip: Int, $limit: Int) {
     getUsers(userId: $userId, skip: $skip, limit: $limit) {
       count
       users {
@@ -202,7 +202,7 @@ export const GET_USERS = gql`
  * Searches users by username or fullName
  */
 export const SEARCH_USERS = gql`
-  query($searchQuery: String!) {
+  query ($searchQuery: String!) {
     searchUsers(searchQuery: $searchQuery) {
       id
       fullName
@@ -216,7 +216,7 @@ export const SEARCH_USERS = gql`
  * Uploads user photo
  */
 export const UPLOAD_PHOTO = gql`
-  mutation($input: UploadUserPhotoInput!) {
+  mutation ($input: UploadUserPhotoInput!) {
     uploadUserPhoto(input: $input) {
       id
     }
@@ -227,7 +227,7 @@ export const UPLOAD_PHOTO = gql`
  * Updates college of user
  */
 export const UPDATE_USER_COLLEGE = gql`
-  mutation($input: UpdateUserCollegeInput!) {
+  mutation ($input: UpdateUserCollegeInput!) {
     updateUserCollege(input: $input) {
       id
     }
@@ -238,7 +238,7 @@ export const UPDATE_USER_COLLEGE = gql`
  * Updates programme of user
  */
 export const UPDATE_USER_PROGRAMME = gql`
-  mutation($input: UpdateUserProgrammeInput!) {
+  mutation ($input: UpdateUserProgrammeInput!) {
     updateUserProgramme(input: $input) {
       id
     }
@@ -249,7 +249,7 @@ export const UPDATE_USER_PROGRAMME = gql`
  * Adds a course to user
  */
 export const ADD_USER_COURSE = gql`
-  mutation($input: AddUserCourseInput!) {
+  mutation ($input: AddUserCourseInput!) {
     addUserCourse(input: $input) {
       id
     }
@@ -260,7 +260,7 @@ export const ADD_USER_COURSE = gql`
  * Removes a course to user
  */
 export const REMOVE_USER_COURSE = gql`
-  mutation($input: RemoveUserCourseInput!) {
+  mutation ($input: RemoveUserCourseInput!) {
     removeUserCourse(input: $input) {
       id
     }
@@ -271,7 +271,7 @@ export const REMOVE_USER_COURSE = gql`
  * People suggestions for auth user
  */
 export const USER_SUGGESTIONS = gql`
-  query($userId: String!) {
+  query ($userId: String!) {
     suggestPeople(userId: $userId) {
       id
       fullName
@@ -285,7 +285,7 @@ export const USER_SUGGESTIONS = gql`
  * Get users with whom authUser had a conversation
  */
 export const GET_CONVERSATIONS = gql`
-  query($authUserId: ID!) {
+  query ($authUserId: ID!) {
     getConversations(authUserId: $authUserId) {
       id
       username
@@ -304,7 +304,7 @@ export const GET_CONVERSATIONS = gql`
  * Checks if user is online in real time
  */
 export const IS_USER_ONLINE_SUBSCRIPTION = gql`
-  subscription($authUserId: ID, $userId: ID!) {
+  subscription ($authUserId: ID, $userId: ID!) {
     isUserOnline(authUserId: $authUserId, userId: $userId) {
       userId
       isOnline

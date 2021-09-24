@@ -1999,22 +1999,18 @@ export const mastersDegreeCourses = [
   },
   {
     code: "MCFT-3",
-    title:
-      "Counselling and Family Therapy: Basic Concepts & Theoretical Perspectives",
+    title: "Counselling and Family Therapy: Basic Concepts & Theoretical Perspectives",
     name: "MCFT-3",
-    fullName:
-      "Counselling and Family Therapy: Basic Concepts & Theoretical Perspectives",
+    fullName: "Counselling and Family Therapy: Basic Concepts & Theoretical Perspectives",
     collegeCode: "IGNOU",
     programmeCode: "BCA",
     term: 1,
   },
   {
     code: "MCFTL-3",
-    title:
-      "Counselling and Family Therapy: Basic Concepts & Theoretical Perspectives Supervised Practicum",
+    title: "Counselling and Family Therapy: Basic Concepts & Theoretical Perspectives Supervised Practicum",
     name: "MCFTL-3",
-    fullName:
-      "Counselling and Family Therapy: Basic Concepts & Theoretical Perspectives Supervised Practicum",
+    fullName: "Counselling and Family Therapy: Basic Concepts & Theoretical Perspectives Supervised Practicum",
     collegeCode: "IGNOU",
     programmeCode: "BCA",
     term: 1,
@@ -2030,11 +2026,9 @@ export const mastersDegreeCourses = [
   },
   {
     code: "MCFTL-4",
-    title:
-      "Counselling and Family Therapy: Applied Aspects Supervised Practicum",
+    title: "Counselling and Family Therapy: Applied Aspects Supervised Practicum",
     name: "MCFTL-4",
-    fullName:
-      "Counselling and Family Therapy: Applied Aspects Supervised Practicum",
+    fullName: "Counselling and Family Therapy: Applied Aspects Supervised Practicum",
     collegeCode: "IGNOU",
     programmeCode: "BCA",
     term: 1,
@@ -2050,11 +2044,9 @@ export const mastersDegreeCourses = [
   },
   {
     code: "MCFTL-5",
-    title:
-      "Counselling and Family Therapy: Research Methods and Statistics Supervised Practicum",
+    title: "Counselling and Family Therapy: Research Methods and Statistics Supervised Practicum",
     name: "MCFTL-5",
-    fullName:
-      "Counselling and Family Therapy: Research Methods and Statistics Supervised Practicum",
+    fullName: "Counselling and Family Therapy: Research Methods and Statistics Supervised Practicum",
     collegeCode: "IGNOU",
     programmeCode: "BCA",
     term: 1,
@@ -2097,11 +2089,9 @@ export const mastersDegreeCourses = [
   },
   {
     code: "MCFTL-7",
-    title:
-      "Counselling and Family Therapy: Applications and Interventions Supervised Practicum",
+    title: "Counselling and Family Therapy: Applications and Interventions Supervised Practicum",
     name: "MCFTL-7",
-    fullName:
-      "Counselling and Family Therapy: Applications and Interventions Supervised Practicum",
+    fullName: "Counselling and Family Therapy: Applications and Interventions Supervised Practicum",
     collegeCode: "IGNOU",
     programmeCode: "BCA",
     term: 1,
@@ -2153,11 +2143,9 @@ export const mastersDegreeCourses = [
   },
   {
     code: "MCFTE-5",
-    title:
-      "Child and Adolescent Counselling and Family Therapy Supervised Practicum",
+    title: "Child and Adolescent Counselling and Family Therapy Supervised Practicum",
     name: "MCFTE-5",
-    fullName:
-      "Child and Adolescent Counselling and Family Therapy Supervised Practicum",
+    fullName: "Child and Adolescent Counselling and Family Therapy Supervised Practicum",
     collegeCode: "IGNOU",
     programmeCode: "BCA",
     term: 1,
@@ -2173,11 +2161,9 @@ export const mastersDegreeCourses = [
   },
   {
     code: "MCFTE-6",
-    title:
-      "Substance Abuse Counselling and Family Therapy Supervised Practicum",
+    title: "Substance Abuse Counselling and Family Therapy Supervised Practicum",
     name: "MCFTE-6",
-    fullName:
-      "Substance Abuse Counselling and Family Therapy Supervised Practicum",
+    fullName: "Substance Abuse Counselling and Family Therapy Supervised Practicum",
     collegeCode: "IGNOU",
     programmeCode: "BCA",
     term: 1,
@@ -2733,11 +2719,9 @@ export const mastersDegreeCourses = [
   },
   {
     code: "MAE-3",
-    title:
-      "Knowledge Management, Information Dissemination and Networking in Adult Education",
+    title: "Knowledge Management, Information Dissemination and Networking in Adult Education",
     name: "MAE-3",
-    fullName:
-      "Knowledge Management, Information Dissemination and Networking in Adult Education",
+    fullName: "Knowledge Management, Information Dissemination and Networking in Adult Education",
     collegeCode: "IGNOU",
     programmeCode: "BCA",
     term: 1,
@@ -2915,11 +2899,9 @@ export const mastersDegreeCourses = [
   },
   {
     code: "MAE-3",
-    title:
-      "Knowledge Management, Information Dissemination and Networking in AdultEducation",
+    title: "Knowledge Management, Information Dissemination and Networking in AdultEducation",
     name: "MAE-3",
-    fullName:
-      "Knowledge Management, Information Dissemination and Networking in AdultEducation",
+    fullName: "Knowledge Management, Information Dissemination and Networking in AdultEducation",
     collegeCode: "IGNOU",
     programmeCode: "BCA",
     term: 1,
@@ -3610,11 +3592,9 @@ export const mastersDegreeCourses = [
   },
   {
     code: "MFC-006",
-    title:
-      "Folklore: Canon, Multimediality, Interdisciplinarity and Social Epistemology",
+    title: "Folklore: Canon, Multimediality, Interdisciplinarity and Social Epistemology",
     name: "MFC-006",
-    fullName:
-      "Folklore: Canon, Multimediality, Interdisciplinarity and Social Epistemology",
+    fullName: "Folklore: Canon, Multimediality, Interdisciplinarity and Social Epistemology",
     collegeCode: "IGNOU",
     programmeCode: "BCA",
     term: 1,
@@ -3981,11 +3961,9 @@ export const mastersDegreeCourses = [
   },
   {
     code: "MGSE-4",
-    title:
-      "Gender Issues in Agriculture, Rural Livelihoods and Natural Resource Management",
+    title: "Gender Issues in Agriculture, Rural Livelihoods and Natural Resource Management",
     name: "MGSE-4",
-    fullName:
-      "Gender Issues in Agriculture, Rural Livelihoods and Natural Resource Management",
+    fullName: "Gender Issues in Agriculture, Rural Livelihoods and Natural Resource Management",
     collegeCode: "IGNOU",
     programmeCode: "BCA",
     term: 1,
@@ -4678,8 +4656,7 @@ export const mastersDegreeCourses = [
     code: "MSEL-032",
     title: "Practical (Cyber Attacks, Cloud Security and Data Recovery etc.)",
     name: "MSEL-032",
-    fullName:
-      "Practical (Cyber Attacks, Cloud Security and Data Recovery etc.)",
+    fullName: "Practical (Cyber Attacks, Cloud Security and Data Recovery etc.)",
     collegeCode: "IGNOU",
     programmeCode: "BCA",
     term: 1,
@@ -4724,8 +4701,7 @@ export const mastersDegreeCourses = [
     code: "MSEL-037",
     title: "Practical (Web Application, Audits, e-commerce security and IoT)",
     name: "MSEL-037",
-    fullName:
-      "Practical (Web Application, Audits, e-commerce security and IoT)",
+    fullName: "Practical (Web Application, Audits, e-commerce security and IoT)",
     collegeCode: "IGNOU",
     programmeCode: "BCA",
     term: 1,

@@ -1,16 +1,16 @@
-import mongoose from 'mongoose';
-import { withFilter, AuthenticationError } from 'apollo-server';
+import mongoose from "mongoose";
+import { withFilter, AuthenticationError } from "apollo-server";
 
-import { uploadToS3Bucket } from '../utils/s3-bucket';
-import { pubSub } from '../utils/apollo-server';
+import { uploadToS3Bucket } from "../utils/s3-bucket";
+import { pubSub } from "../utils/apollo-server";
 
-import { transformer } from '../utils/image-transform';
-import { Subscriptions } from '../constants/Subscriptions';
-import { UserRole } from '../constants/types';
+import { transformer } from "../utils/image-transform";
+import { Subscriptions } from "../constants/Subscriptions";
+import { UserRole } from "../constants/types";
 
 export const assertAuthenticated = (authUser) => {
   if (!authUser) {
-    throw new AuthenticationError('You need to be logged in');
+    throw new AuthenticationError("You need to be logged in");
   }
 };
 
@@ -18,7 +18,7 @@ export const assertAdmin = (authUser) => {
   assertAuthenticated(authUser);
 
   if (UserRole.Admin > authUser.role) {
-    throw new AuthenticationError('You need to be admin');
+    throw new AuthenticationError("You need to be admin");
   }
 };
 
@@ -31,23 +31,23 @@ const Query = {
 
     // If user is authenticated, update it's isOnline field to true
     const user = await User.findOneAndUpdate({ _id: authUser._id }, { isOnline: true })
-      .populate({ path: 'posts', options: { sort: { createdAt: 'desc' } } })
-      .populate('likes')
-      .populate('followers')
-      .populate('following')
+      .populate({ path: "posts", options: { sort: { createdAt: "desc" } } })
+      .populate("likes")
+      .populate("followers")
+      .populate("following")
       .populate({
-        path: 'notifications',
+        path: "notifications",
         populate: [
-          { path: 'author' },
-          { path: 'follow' },
-          { path: 'like', populate: { path: 'post' } },
-          { path: 'comment', populate: { path: 'post' } },
+          { path: "author" },
+          { path: "follow" },
+          { path: "like", populate: { path: "post" } },
+          { path: "comment", populate: { path: "post" } },
         ],
         match: { seen: false },
       })
-      .populate('college')
-      .populate('programme')
-      .populate('courses');
+      .populate("college")
+      .populate("programme")
+      .populate("courses");
 
     // handle the case when authuser is not in the database
     if (!user) return null;
@@ -67,19 +67,19 @@ const Query = {
       },
       {
         $group: {
-          _id: '$sender',
+          _id: "$sender",
           doc: {
-            $first: '$$ROOT',
+            $first: "$$ROOT",
           },
         },
       },
-      { $replaceRoot: { newRoot: '$doc' } },
+      { $replaceRoot: { newRoot: "$doc" } },
       {
         $lookup: {
-          from: 'users',
-          localField: 'sender',
-          foreignField: '_id',
-          as: 'sender',
+          from: "users",
+          localField: "sender",
+          foreignField: "_id",
+          as: "sender",
         },
       },
     ]);
@@ -116,41 +116,41 @@ const Query = {
    */
   getUser: async (root, { userId }, { User, authUser }) => {
     if (!userId) {
-      throw new Error('userId is a required param');
+      throw new Error("userId is a required param");
     }
 
     // assertAuthenticated(authUser);
 
     const user = await User.findById(userId)
       .populate({
-        path: 'posts',
+        path: "posts",
         populate: [
           {
-            path: 'author',
+            path: "author",
             populate: [
-              { path: 'followers' },
-              { path: 'following' },
+              { path: "followers" },
+              { path: "following" },
               {
-                path: 'notifications',
-                populate: [{ path: 'author' }, { path: 'follow' }, { path: 'like' }, { path: 'comment' }],
+                path: "notifications",
+                populate: [{ path: "author" }, { path: "follow" }, { path: "like" }, { path: "comment" }],
               },
             ],
           },
-          { path: 'comments', populate: { path: 'author' } },
-          { path: 'likes' },
+          { path: "comments", populate: { path: "author" } },
+          { path: "likes" },
         ],
-        options: { sort: { createdAt: 'desc' } },
+        options: { sort: { createdAt: "desc" } },
       })
-      .populate('likes')
-      .populate('followers')
-      .populate('following')
+      .populate("likes")
+      .populate("followers")
+      .populate("following")
       .populate({
-        path: 'notifications',
-        populate: [{ path: 'author' }, { path: 'follow' }, { path: 'like' }, { path: 'comment' }],
+        path: "notifications",
+        populate: [{ path: "author" }, { path: "follow" }, { path: "like" }, { path: "comment" }],
       })
-      .populate('college')
-      .populate('programme')
-      .populate('courses');
+      .populate("college")
+      .populate("programme")
+      .populate("courses");
 
     if (!user) {
       throw new Error("User with given params doesn't exists.");
@@ -166,27 +166,27 @@ const Query = {
    * @param {int} limit how many posts to limit
    */
   getUserPosts: async (root, { userId, skip, limit }, { User, Post }) => {
-    const user = await User.findById(userId).select('_id');
+    const user = await User.findById(userId).select("_id");
 
     const query = { author: user._id };
     const count = await Post.find(query).countDocuments();
     const posts = await Post.find(query)
       .populate({
-        path: 'author',
+        path: "author",
         populate: [
-          { path: 'following' },
-          { path: 'followers' },
+          { path: "following" },
+          { path: "followers" },
           {
-            path: 'notifications',
-            populate: [{ path: 'author' }, { path: 'follow' }, { path: 'like' }, { path: 'comment' }],
+            path: "notifications",
+            populate: [{ path: "author" }, { path: "follow" }, { path: "like" }, { path: "comment" }],
           },
         ],
       })
-      .populate('likes')
+      .populate("likes")
       .populate({
-        path: 'comments',
-        options: { sort: { createdAt: 'desc' } },
-        populate: { path: 'author' },
+        path: "comments",
+        options: { sort: { createdAt: "desc" } },
+        populate: { path: "author" },
       })
       .skip(skip)
       .limit(limit)
@@ -205,7 +205,7 @@ const Query = {
   getUsers: async (root, { userId, skip, limit }, { User, Follow }) => {
     // Find user ids, that current user follows
     const userFollowing = [];
-    const follow = await Follow.find({ follower: userId }, { _id: 0 }).select('user');
+    const follow = await Follow.find({ follower: userId }, { _id: 0 }).select("user");
     follow.map((f) => userFollowing.push(f.user));
 
     // Find users that user is not following
@@ -214,15 +214,15 @@ const Query = {
     };
     const count = await User.where(query).countDocuments();
     const users = await User.find(query)
-      .populate('followers')
-      .populate('following')
+      .populate("followers")
+      .populate("following")
       .populate({
-        path: 'notifications',
-        populate: [{ path: 'author' }, { path: 'follow' }, { path: 'like' }, { path: 'comment' }],
+        path: "notifications",
+        populate: [{ path: "author" }, { path: "follow" }, { path: "like" }, { path: "comment" }],
       })
       .skip(skip)
       .limit(limit)
-      .sort({ createdAt: 'desc' });
+      .sort({ createdAt: "desc" });
 
     return { users, count };
   },
@@ -238,7 +238,7 @@ const Query = {
     }
 
     const users = User.find({
-      $or: [{ username: new RegExp(searchQuery, 'i') }, { fullName: new RegExp(searchQuery, 'i') }],
+      $or: [{ username: new RegExp(searchQuery, "i") }, { fullName: new RegExp(searchQuery, "i") }],
       _id: {
         $ne: authUser.id,
       },
@@ -256,7 +256,7 @@ const Query = {
 
     // Find who user follows
     const userFollowing = [];
-    const following = await Follow.find({ follower: userId }, { _id: 0 }).select('user');
+    const following = await Follow.find({ follower: userId }, { _id: 0 }).select("user");
     following.map((f) => userFollowing.push(f.user));
     userFollowing.push(userId);
 
@@ -293,9 +293,9 @@ const Mutation = {
     const stream = createReadStream();
     let uploadImage;
     try {
-      uploadImage = await uploadToS3Bucket(stream, 'user', transformer({ width: 176 }), imagePublicId);
+      uploadImage = await uploadToS3Bucket(stream, "user", transformer({ width: 176 }), imagePublicId);
     } catch (err) {
-      throw new Error('Something went wrong while uploading image to s3 bucket');
+      throw new Error("Something went wrong while uploading image to s3 bucket");
     }
 
     const fieldsToUpdate = {};
@@ -308,8 +308,8 @@ const Mutation = {
     }
 
     const updatedUser = await User.findOneAndUpdate({ _id: id }, { ...fieldsToUpdate }, { new: true })
-      .populate('posts')
-      .populate('likes');
+      .populate("posts")
+      .populate("likes");
 
     return updatedUser;
   },
@@ -320,13 +320,13 @@ const Mutation = {
    * @param {string} collegeId
    */
   updateUserCollege: async (root, { input: { id, collegeId } }, { User, College }) => {
-    console.log('>>> updateUserCollege()');
+    console.log(">>> updateUserCollege()");
 
     if (!id) {
-      throw new Error('id param is required');
+      throw new Error("id param is required");
     }
 
-    const user = await User.findOne({ _id: id }).populate('college');
+    const user = await User.findOne({ _id: id }).populate("college");
 
     if (user.college) {
       // remove the student from previous college in college collection
@@ -351,13 +351,13 @@ const Mutation = {
    * @param {string} programmeId
    */
   updateUserProgramme: async (root, { input: { id, programmeId } }, { User, Programme }) => {
-    console.log('>>> updateUserProgramme()');
+    console.log(">>> updateUserProgramme()");
 
     if (!id) {
-      throw new Error('id param is required');
+      throw new Error("id param is required");
     }
 
-    const user = await User.findOne({ _id: id }).populate('programme');
+    const user = await User.findOne({ _id: id }).populate("programme");
 
     if (user.programme) {
       // remove the student from previous programme in programme collection
@@ -382,10 +382,10 @@ const Mutation = {
    * @param {string} courseId
    */
   addUserCourse: async (root, { input: { id, courseId } }, { User, Course }) => {
-    console.log('>>> addUserCourse()');
+    console.log(">>> addUserCourse()");
 
     if (!id) {
-      throw new Error('id param is required');
+      throw new Error("id param is required");
     }
 
     const duplicate = await User.findOne({
@@ -393,7 +393,7 @@ const Mutation = {
     });
 
     if (duplicate) {
-      throw new Error('User already have this course');
+      throw new Error("User already have this course");
     }
 
     // add course to User collection
@@ -411,10 +411,10 @@ const Mutation = {
    * @param {string} courseId
    */
   removeUserCourse: async (root, { input: { id, courseId } }, { User, Course }) => {
-    console.log('>>> removeUserCourse()');
+    console.log(">>> removeUserCourse()");
 
     if (!id) {
-      throw new Error('id param is required');
+      throw new Error("id param is required");
     }
 
     let updatedUser;
@@ -426,7 +426,7 @@ const Mutation = {
       await Course.findOneAndUpdate({ _id: courseId }, { $pull: { students: id }, $inc: { studentsCount: -1 } });
     } else {
       // get alll course of this user
-      const user = await User.findOne({ _id: id }).populate('courses');
+      const user = await User.findOne({ _id: id }).populate("courses");
       // remove user from all old courses
       user.courses.map(async (courseId) => {
         await Course.where({ _id: courseId }).update({

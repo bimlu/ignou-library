@@ -1,4 +1,4 @@
-import nodemailer from 'nodemailer';
+import nodemailer from "nodemailer";
 
 const { MAIL_SERVICE, MAIL_USER, MAIL_PASS } = process.env;
 

@@ -491,10 +491,8 @@ export const createProgrammes = () => {
         programmeCoordinator: "",
         eligibility: "10+2 or its equivalent",
         mediumOfInstruction: "English",
-        duration:
-          "Minimum 3 years and Maximum 6 years; offered in both January & July cycle of admissions",
-        feeStructure:
-          "Rs. 42,000/- for full programme to be paid Semester wise @Rs. 7,000/- per semester",
+        duration: "Minimum 3 years and Maximum 6 years; offered in both January & July cycle of admissions",
+        feeStructure: "Rs. 42,000/- for full programme to be paid Semester wise @Rs. 7,000/- per semester",
       },
       school: "SOCIS",
       courses: [

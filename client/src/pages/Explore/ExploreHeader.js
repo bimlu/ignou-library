@@ -1,22 +1,22 @@
-import React from 'react';
+import React from "react";
 
-import { makeStyles } from '@material-ui/core/styles';
-import Box from '@material-ui/core/Box';
+import { makeStyles } from "@material-ui/core/styles";
+import Box from "@material-ui/core/Box";
 
-import BreadcrumbsNav from 'components/BreadcrumbsNav';
+import BreadcrumbsNav from "components/BreadcrumbsNav";
 
-import { HEADER_HEIGHT } from 'constants/Layout';
+import { HEADER_HEIGHT } from "constants/Layout";
 
 const useStyles = makeStyles((theme) => ({
   box: {
-    position: 'sticky',
+    position: "sticky",
     top: HEADER_HEIGHT + 12,
     zIndex: theme.zIndex.appBar + 1,
     marginBottom: theme.spacing(2),
     borderRadius: theme.spacing(0),
     background: theme.palette.background.default,
-    [theme.breakpoints.down('sm')]: {
-      position: 'fixed',
+    [theme.breakpoints.down("sm")]: {
+      position: "fixed",
       top: 0,
       left: 0,
       right: 0,

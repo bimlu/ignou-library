@@ -1,6 +1,6 @@
-import React from 'react';
-import Brightness4Icon from '@material-ui/icons/Brightness4';
-import IconButton from '@material-ui/core/IconButton';
+import React from "react";
+import Brightness4Icon from "@material-ui/icons/Brightness4";
+import IconButton from "@material-ui/core/IconButton";
 
 export default function Toggler({ toggleTheme }) {
   return (

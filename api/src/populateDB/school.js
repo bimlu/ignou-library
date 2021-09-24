@@ -15,15 +15,13 @@ export const createSchools = () => {
       // ES, MES, MESE, NES, BES,
       code: "SOE",
       name: "School of Education",
-      shortIntro:
-        "The first school of IGNOU, conducting courses in different realms of education and training",
+      shortIntro: "The first school of IGNOU, conducting courses in different realms of education and training",
     },
     {
       // BAL, DTG,
       code: "SOFL",
       name: "School of Foreign Languages",
-      shortIntro:
-        "Offering PhD to certificate courses in Arabic, German, Japanese, Spanish and Persian",
+      shortIntro: "Offering PhD to certificate courses in Arabic, German, Japanese, Spanish and Persian",
     },
     {
       // ATR, AFW, AWRE, BEG, BEGE, DCE, FEG, CTE, MEG, BHDE, BHDA, BHDF, EHD, FHD, BRPA, BSKF
@@ -31,15 +29,13 @@ export const createSchools = () => {
       // BBHF, BULE
       code: "SOH",
       name: "School of Humanities",
-      shortIntro:
-        "Among the earliest schools, comprising the disciplines of English and Hindi and a Translation Cell",
+      shortIntro: "Among the earliest schools, comprising the disciplines of English and Hindi and a Translation Cell",
     },
     {
       // MIR, CHR, MIRP, CPI, ACS, BLEP, BLE, MLE, MLEP, MIP,
       code: "SOL",
       name: "School of Law",
-      shortIntro:
-        "Providing insight into new-age legal issues: Patent pracitices, cyber law, human rights",
+      shortIntro: "Providing insight into new-age legal issues: Patent pracitices, cyber law, human rights",
     },
     {
       // FST, OMT, CHE, LSE, ACE, BAQL, BLS, BAQ, LMT, LT, BPHE, BPHL, PHE, MED,
@@ -47,8 +43,7 @@ export const createSchools = () => {
       // MCH, BLS, MSTL
       code: "SOS",
       name: "School of Science",
-      shortIntro:
-        "Offering doctoral to certificate programmes in various science disciplines",
+      shortIntro: "Offering doctoral to certificate programmes in various science disciplines",
     },
     {
       // MTM, TS, PTS
@@ -62,16 +57,14 @@ export const createSchools = () => {
       // MCS, MCSL, MCSE, BCS, BCSL, CIT, CITL
       code: "SOCIS",
       name: "School of Computer and Information Sciences",
-      shortIntro:
-        "Disseminating computer sciences knowledge through innovative means",
+      shortIntro: "Disseminating computer sciences knowledge through innovative means",
     },
     {
       // ET, BME, BMEL, BMEP, BEE, OET, OETL, BCE, BET, NET, BNA, BETL, BCEE,
       // BNAL,
       code: "SOET",
       name: "School of Engineering & Technology",
-      shortIntro:
-        "With a range of programmes: From Civil Engineering toShoe Upper Cutting",
+      shortIntro: "With a range of programmes: From Civil Engineering toShoe Upper Cutting",
     },
     {
       // MWG, MWGP, MGS, MGSP, MGSE
@@ -83,8 +76,7 @@ export const createSchools = () => {
       // MFC, MPYE, MPY, BPY, BPYE,
       code: "SOITS",
       name: "School of Inter-Disciplinary and Trans-Disciplinary Studies",
-      shortIntro:
-        "Provides enabling space for interdisciplinary academic studies and research",
+      shortIntro: "Provides enabling space for interdisciplinary academic studies and research",
     },
     {
       // MS, IBO, AED, AMK, AOM, ASP, ECO, MCO, PCO, BCOA, BMS
@@ -109,8 +101,7 @@ export const createSchools = () => {
       // MTT, PGDT
       code: "SOTST",
       name: "School of Translation Studies and Training",
-      shortIntro:
-        "Fostering an environment of translation and enriching Indian literary tradition",
+      shortIntro: "Fostering an environment of translation and enriching Indian literary tradition",
     },
 
     // third column
@@ -119,15 +110,13 @@ export const createSchools = () => {
       // RDD, ACC, AFE, BFEE, BFEP, CFN, DECE, ERD, NCD,
       code: "SOCE",
       name: "School of Continuing Education",
-      shortIntro:
-        "With focus on rural development, women and child development youth, disability, nutritionand health",
+      shortIntro: "With focus on rural development, women and child development youth, disability, nutritionand health",
     },
     {
       // MEDS, MAE, MAEL, MEDSP, MAE, MEDSE, BEDS, MEDSP, MAEP, MAE, MAEE,
       code: "SOEDS",
       name: "School of Extension and Development Studies",
-      shortIntro:
-        "Enhancing learners’ understanding inlivelihoodand empowerment studies",
+      shortIntro: "Enhancing learners’ understanding inlivelihoodand empowerment studies",
     },
     {
       // MCC, MCCL, MME, MMEL, BOS, BNS, BNSL, MDTL, MDT, BHM, CHEP, CHET, CRSI, PGDHHM, DNHE, BOS, BOSL, CPE, MHMI
@@ -141,15 +130,13 @@ export const createSchools = () => {
       // MJM, MJME, CCR, JMC
       code: "SOJNMS",
       name: "School of Journalism and New Media",
-      shortIntro:
-        "Initiating journalism aspirants into the rigours ofprint, electronic media",
+      shortIntro: "Initiating journalism aspirants into the rigours ofprint, electronic media",
     },
     {
       // OVA, OMU, ODN, OTH, MFC
       code: "SOPVA",
       name: "School of Perfoming and Visual Arts",
-      shortIntro:
-        "Imparting aestheticsensitivity through Music, Dance, Theatre and Visual Arts",
+      shortIntro: "Imparting aestheticsensitivity through Music, Dance, Theatre and Visual Arts",
     },
     {
       // BSWE, BSWL, MSW, MSWE, MSWL, MSWP, MVE, BFE, BFEE
@@ -162,8 +149,7 @@ export const createSchools = () => {
       // BPOI, MVE, MVEI
       code: "SOVET",
       name: "School of Vocational Education and Training",
-      shortIntro:
-        "Focusing on skill development of Indian youth through vocational programmes",
+      shortIntro: "Focusing on skill development of Indian youth through vocational programmes",
     },
   ];
 

@@ -1,52 +1,52 @@
-import React, { useState } from 'react';
-import PropTypes from 'prop-types';
-import { Link, generatePath, useParams, useLocation } from 'react-router-dom';
-import { useMutation } from '@apollo/client';
+import React, { useState } from "react";
+import PropTypes from "prop-types";
+import { Link, generatePath, useParams, useLocation } from "react-router-dom";
+import { useMutation } from "@apollo/client";
 
-import { makeStyles, withStyles } from '@material-ui/core/styles';
-import clsx from 'clsx';
-import Card from '@material-ui/core/Card';
-import CardActionArea from '@material-ui/core/CardActionArea';
-import CardHeader from '@material-ui/core/CardHeader';
-import CardContent from '@material-ui/core/CardContent';
-import CardActions from '@material-ui/core/CardActions';
-import Collapse from '@material-ui/core/Collapse';
-import Avatar from '@material-ui/core/Avatar';
-import IconButton from '@material-ui/core/IconButton';
-import GetAppIcon from '@material-ui/icons/GetApp';
-import MessageIcon from '@material-ui/icons/Message';
-import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
-import MoreVertIcon from '@material-ui/icons/MoreVert';
-import LinearProgress from '@material-ui/core/LinearProgress';
-import Badge from '@material-ui/core/Badge';
-import Typography from '@material-ui/core/Typography';
-import Chip from '@material-ui/core/Chip';
-import DoneIcon from '@material-ui/icons/Done';
+import { makeStyles, withStyles } from "@material-ui/core/styles";
+import clsx from "clsx";
+import Card from "@material-ui/core/Card";
+import CardActionArea from "@material-ui/core/CardActionArea";
+import CardHeader from "@material-ui/core/CardHeader";
+import CardContent from "@material-ui/core/CardContent";
+import CardActions from "@material-ui/core/CardActions";
+import Collapse from "@material-ui/core/Collapse";
+import Avatar from "@material-ui/core/Avatar";
+import IconButton from "@material-ui/core/IconButton";
+import GetAppIcon from "@material-ui/icons/GetApp";
+import MessageIcon from "@material-ui/icons/Message";
+import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
+import MoreVertIcon from "@material-ui/icons/MoreVert";
+import LinearProgress from "@material-ui/core/LinearProgress";
+import Badge from "@material-ui/core/Badge";
+import Typography from "@material-ui/core/Typography";
+import Chip from "@material-ui/core/Chip";
+import DoneIcon from "@material-ui/icons/Done";
 
-import Like from 'components/Like';
-import Comment from 'components/Comment';
-import CreateComment from 'components/CreateComment';
-import PostCardOption from './PostCardOption';
-import Skeleton from '@material-ui/lab/Skeleton';
+import Like from "components/Like";
+import Comment from "components/Comment";
+import CreateComment from "components/CreateComment";
+import PostCardOption from "./PostCardOption";
+import Skeleton from "@material-ui/lab/Skeleton";
 
-import { GET_FOLLOWED_POSTS, DELETE_POST } from 'graphql/post';
-import { GET_AUTH_USER } from 'graphql/user';
-import { GET_USER_POSTS } from 'graphql/user';
-import { GET_COLLEGE_PROGRAMME_COURSE_POSTS } from 'graphql/post';
+import { GET_FOLLOWED_POSTS, DELETE_POST } from "graphql/post";
+import { GET_AUTH_USER } from "graphql/user";
+import { GET_USER_POSTS } from "graphql/user";
+import { GET_COLLEGE_PROGRAMME_COURSE_POSTS } from "graphql/post";
 // import { INCREMENT_DOWNLOADS_COUNT, INCREMENT_VIEWS_COUNT } from 'graphql/post';
 
-import { HOME_PAGE_POSTS_LIMIT, PROFILE_PAGE_POSTS_LIMIT } from 'constants/DataLimit';
-import { EXPLORE_PAGE_CARDS_LIMIT } from 'constants/DataLimit';
+import { HOME_PAGE_POSTS_LIMIT, PROFILE_PAGE_POSTS_LIMIT } from "constants/DataLimit";
+import { EXPLORE_PAGE_CARDS_LIMIT } from "constants/DataLimit";
 
-import { timeAgo } from 'utils/date';
+import { timeAgo } from "utils/date";
 
-import { useStore } from 'store';
+import { useStore } from "store";
 
-import * as Routes from 'routes';
+import * as Routes from "routes";
 
 const useStyles = makeStyles((theme) => ({
   card: {
-    maxWidth: '100%',
+    maxWidth: "100%",
     // maxWidth: 345,
     borderRadius: theme.spacing(2),
     marginBottom: theme.spacing(2),
@@ -54,35 +54,35 @@ const useStyles = makeStyles((theme) => ({
   actionArea: {
     padding: theme.spacing(1),
     background: theme.palette.action.hover,
-    '& > *': {
-      whiteSpace: 'nowrap',
-      overflow: 'hidden',
-      textOverflow: 'ellipsis',
+    "& > *": {
+      whiteSpace: "nowrap",
+      overflow: "hidden",
+      textOverflow: "ellipsis",
     },
   },
   expand: {
-    transform: 'rotate(0deg)',
-    marginLeft: 'auto',
-    transition: theme.transitions.create('transform', {
+    transform: "rotate(0deg)",
+    marginLeft: "auto",
+    transition: theme.transitions.create("transform", {
       duration: theme.transitions.duration.shortest,
     }),
   },
   expandOpen: {
-    transform: 'rotate(180deg)',
+    transform: "rotate(180deg)",
   },
   comments: {
-    display: 'flex',
-    flexDirection: 'column',
+    display: "flex",
+    flexDirection: "column",
   },
   optionButton: {
-    width: '60px',
+    width: "60px",
   },
   button: {
     marginRight: theme.spacing(3),
   },
   chipContainer: {
     padding: theme.spacing(1),
-    '& > *': {
+    "& > *": {
       marginRight: theme.spacing(1),
       marginBottom: theme.spacing(1),
     },
@@ -129,7 +129,7 @@ const PostCard = ({
   const [isCommentOpen, setIsCommentOpen] = useState(false);
   const [isOptionOpen, setIsOptionOpen] = useState(false);
 
-  const fileExt = pdf && pdf.split('.').pop();
+  const fileExt = pdf && pdf.split(".").pop();
 
   const [deletePost, { loading }] = useMutation(DELETE_POST, {
     refetchQueries: auth.user && [
@@ -206,7 +206,7 @@ const PostCard = ({
             <Avatar
               aria-label="avatar"
               alt={author.fullName}
-              src={author.image || 'show first letter of fullName'}
+              src={author.image || "show first letter of fullName"}
               component={Link}
               to={generatePath(Routes.USER_PROFILE, { id: author.id })}
             />

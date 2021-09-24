@@ -1,4 +1,4 @@
-import mongoose from 'mongoose';
+import mongoose from "mongoose";
 
 const Schema = mongoose.Schema;
 
@@ -15,24 +15,24 @@ const postSchema = Schema(
     thumbnail: String, // is just a ref to images[0]
     college: {
       type: Schema.Types.ObjectId,
-      ref: 'College',
+      ref: "College",
     },
     programme: {
       type: Schema.Types.ObjectId,
-      ref: 'Programme',
+      ref: "Programme",
     },
     course: {
       type: Schema.Types.ObjectId,
-      ref: 'Course',
+      ref: "Course",
     },
     author: {
       type: Schema.Types.ObjectId,
-      ref: 'User',
+      ref: "User",
     },
     likes: [
       {
         type: Schema.Types.ObjectId,
-        ref: 'Like',
+        ref: "Like",
       },
     ],
     likesCount: {
@@ -50,7 +50,7 @@ const postSchema = Schema(
     comments: [
       {
         type: Schema.Types.ObjectId,
-        ref: 'Comment',
+        ref: "Comment",
       },
     ],
   },
@@ -59,4 +59,4 @@ const postSchema = Schema(
   }
 );
 
-export default mongoose.model('Post', postSchema);
+export default mongoose.model("Post", postSchema);

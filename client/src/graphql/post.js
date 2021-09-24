@@ -1,4 +1,4 @@
-import { gql } from '@apollo/client';
+import { gql } from "@apollo/client";
 
 /**
  * Records to select from post comments
@@ -67,7 +67,7 @@ export const postLikesPayload = `
  * Creates a post
  */
 export const CREATE_POST = gql`
-  mutation($input: CreatePostInput!) {
+  mutation ($input: CreatePostInput!) {
     createPost(input: $input) {
       id
     }
@@ -163,7 +163,7 @@ export const GET_POST = gql`
  * Deletes a post
  */
 export const DELETE_POST = gql`
-  mutation($input: DeletePostInput!) {
+  mutation ($input: DeletePostInput!) {
     deletePost(input: $input) {
       id
     }
@@ -174,7 +174,7 @@ export const DELETE_POST = gql`
  * Increments Views count
  */
 export const INCREMENT_VIEWS_COUNT = gql`
-  mutation($postId: ID!) {
+  mutation ($postId: ID!) {
     incrementViewsCount(postId: $postId) {
       id
     }
@@ -185,7 +185,7 @@ export const INCREMENT_VIEWS_COUNT = gql`
  * Increments Downloads count
  */
 export const INCREMENT_DOWNLOADS_COUNT = gql`
-  mutation($postId: ID!) {
+  mutation ($postId: ID!) {
     incrementDownloadsCount(postId: $postId) {
       id
     }

@@ -132,11 +132,7 @@ const ProgrammeSchema = gql`
     getProgrammes(skip: Int, limit: Int): ProgrammesPayload
 
     # Gets programmes of a College
-    getCollegeProgrammes(
-      collegeId: ID!
-      skip: Int
-      limit: Int
-    ): ProgrammesPayload
+    getCollegeProgrammes(collegeId: ID!, skip: Int, limit: Int): ProgrammesPayload
   }
 
   # ---------------------------------------------------------

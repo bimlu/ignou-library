@@ -6,7 +6,7 @@ const Mutation = {
    * @param {string} postId
    */
   createLike: async (root, { input: { userId, postId } }, { Like, Post, User }) => {
-    console.log('>>> createLike()');
+    console.log(">>> createLike()");
 
     const like = await new Like({ user: userId, post: postId }).save();
 
@@ -23,10 +23,10 @@ const Mutation = {
    * @param {string} id
    */
   deleteLike: async (root, { input: { id } }, { Like, User, Post }) => {
-    console.log('>>> deleteLike()');
+    console.log(">>> deleteLike()");
 
     if (!id) {
-      throw new Error('id param is required');
+      throw new Error("id param is required");
     }
 
     const like = await Like.findByIdAndRemove(id);

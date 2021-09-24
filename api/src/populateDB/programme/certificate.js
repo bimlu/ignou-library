@@ -623,11 +623,9 @@ export const certificateProgrammes = [
   },
   {
     code: "CCPD",
-    title:
-      "Certificate of Competency in Power Distribution (Electrical Technicians)",
+    title: "Certificate of Competency in Power Distribution (Electrical Technicians)",
     name: "CCPD",
-    fullName:
-      "Certificate of Competency in Power Distribution (Electrical Technicians)",
+    fullName: "Certificate of Competency in Power Distribution (Electrical Technicians)",
     degree: Degree.certificate,
     termType: 1,
     termsCount: 6,

@@ -23,10 +23,7 @@ const useStyles = makeStyles((theme) => ({
 // keep track of expanded nodes and save to store before this component unmounts
 let expanded = ["allColleges", "605a4638198e3f5b2e715c8c"]; // colleges and IGNOU
 
-export default function CollegesTreeView({
-  selectedNodeValue,
-  setSelectedNodeValue,
-}) {
+export default function CollegesTreeView({ selectedNodeValue, setSelectedNodeValue }) {
   const classes = useStyles();
   const [{ datatree, collegeTree }, dispatch] = useStore();
 
@@ -57,21 +54,15 @@ export default function CollegesTreeView({
         nodeId="allColleges"
         labelText="All Colleges"
         labelIcon={() => <Label fontSize="small" />}
-        labelInfo={
-          colleges.length === 0 ? "" : `${String(colleges.length)} Univ`
-        }
+        labelInfo={colleges.length === 0 ? "" : `${String(colleges.length)} Univ`}
         color="#1a73e8"
         bgColor="#e8f0fe"
       >
         {/* *************COLLEGE-LIST************* */}
         {colleges.map((college) => {
           const programmes = college.programmes;
-          const degrees = Array.from(new Array(DegreeType2.length)).map(
-            () => []
-          );
-          programmes.forEach((programme) =>
-            degrees[programme.degree].push(programme)
-          );
+          const degrees = Array.from(new Array(DegreeType2.length)).map(() => []);
+          programmes.forEach((programme) => degrees[programme.degree].push(programme));
 
           return (
             <StyledTreeItem
@@ -86,11 +77,7 @@ export default function CollegesTreeView({
                 </Link>
               }
               labelIcon={() => <CollegeIcon width="20" />}
-              labelInfo={
-                programmes.length === 0
-                  ? ""
-                  : `${String(programmes.length)} Prg`
-              }
+              labelInfo={programmes.length === 0 ? "" : `${String(programmes.length)} Prg`}
               color="#e3742f"
               bgColor="#fcefe3"
             >
@@ -101,19 +88,13 @@ export default function CollegesTreeView({
                     key={idx}
                     nodeId={`degree-${idx}`}
                     labelText={`${DegreeType2[idx]}`}
-                    labelInfo={
-                      degree.length === 0 ? "" : `${String(degree.length)} Prg`
-                    }
+                    labelInfo={degree.length === 0 ? "" : `${String(degree.length)} Prg`}
                   >
                     {/* ************PROGRAMME-LIST*********** */}
                     {degree.map((programme) => {
                       const courses = programme.courses;
-                      const terms = Array.from(
-                        new Array(programme.termsCount)
-                      ).map(() => []);
-                      courses.forEach((course) =>
-                        terms[course.term - 1].push(course)
-                      );
+                      const terms = Array.from(new Array(programme.termsCount)).map(() => []);
+                      courses.forEach((course) => terms[course.term - 1].push(course));
 
                       return (
                         <StyledTreeItem
@@ -128,11 +109,7 @@ export default function CollegesTreeView({
                             </Link>
                           }
                           labelIcon={() => <ProgrammeIcon width="19" />}
-                          labelInfo={
-                            courses.length === 0
-                              ? ""
-                              : `${String(courses.length)} Crs`
-                          }
+                          labelInfo={courses.length === 0 ? "" : `${String(courses.length)} Crs`}
                           color="#a250f5"
                           bgColor="#f3e8fd"
                         >
@@ -144,29 +121,17 @@ export default function CollegesTreeView({
                                 nodeId={`term-${idx}`}
                                 labelText={
                                   <Link
-                                    to={`${Routes.COURSES}?collegeId=${
-                                      college.id
-                                    }&collegeName=${college.name}&programmeId=${
-                                      programme.id
-                                    }&programmeName=${
-                                      programme.name
-                                    }&termType=${
+                                    to={`${Routes.COURSES}?collegeId=${college.id}&collegeName=${
+                                      college.name
+                                    }&programmeId=${programme.id}&programmeName=${programme.name}&termType=${
                                       programme.termType
-                                    }&termsCount=${programme.termsCount}#term=${
-                                      idx + 1
-                                    }`}
+                                    }&termsCount=${programme.termsCount}#term=${idx + 1}`}
                                     className={classes.link}
                                   >
-                                    {`${TermType[programme.termType]}-${
-                                      idx + 1
-                                    }`}
+                                    {`${TermType[programme.termType]}-${idx + 1}`}
                                   </Link>
                                 }
-                                labelInfo={
-                                  term.length === 0
-                                    ? ""
-                                    : `${String(term.length)} Crs`
-                                }
+                                labelInfo={term.length === 0 ? "" : `${String(term.length)} Crs`}
                               >
                                 {/* *************COURSE-LIST************* */}
                                 {term.map((course) => {
@@ -182,21 +147,15 @@ export default function CollegesTreeView({
                                           {course.name}
                                         </Link>
                                       }
-                                      labelIcon={() => (
-                                        <CourseIcon width="18" />
-                                      )}
+                                      labelIcon={() => <CourseIcon width="18" />}
                                       labelInfo={
-                                        selectedNodeValue !==
-                                        `${college.id}-${programme.id}-${course.id}` ? (
+                                        selectedNodeValue !== `${college.id}-${programme.id}-${course.id}` ? (
                                           ""
                                         ) : (
                                           <Link
                                             to={`${Routes.CREATE_POST}?collegeId=${collegeId}&programmeId=${programmeId}&courseId=${courseId}&courseName=${course.name}&type=pdf`}
                                           >
-                                            <AddIcon
-                                              fontSize="small"
-                                              color="secondary"
-                                            />
+                                            <AddIcon fontSize="small" color="secondary" />
                                           </Link>
                                         )
                                       }

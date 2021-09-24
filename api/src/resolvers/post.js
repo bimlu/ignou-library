@@ -1,5 +1,5 @@
-import { transformer } from '../utils/image-transform';
-import { uploadToS3Bucket, deleteFromS3Bucket, uploadPDFToS3Bucket, deletePDFFromS3Bucket } from '../utils/s3-bucket';
+import { transformer } from "../utils/image-transform";
+import { uploadToS3Bucket, deleteFromS3Bucket, uploadPDFToS3Bucket, deletePDFFromS3Bucket } from "../utils/s3-bucket";
 
 const Query = {
   /**
@@ -16,21 +16,21 @@ const Query = {
     const postsCount = await Post.find(query).countDocuments();
     const allPosts = await Post.find(query)
       .populate({
-        path: 'author',
+        path: "author",
         populate: [
-          { path: 'following' },
-          { path: 'followers' },
+          { path: "following" },
+          { path: "followers" },
           {
-            path: 'notifications',
-            populate: [{ path: 'author' }, { path: 'follow' }, { path: 'like' }, { path: 'comment' }],
+            path: "notifications",
+            populate: [{ path: "author" }, { path: "follow" }, { path: "like" }, { path: "comment" }],
           },
         ],
       })
-      .populate('likes')
+      .populate("likes")
       .populate({
-        path: 'comments',
-        options: { sort: { createdAt: 'desc' } },
-        populate: { path: 'author' },
+        path: "comments",
+        options: { sort: { createdAt: "desc" } },
+        populate: { path: "author" },
       })
       .skip(skip)
       .limit(limit)
@@ -50,35 +50,35 @@ const Query = {
    * @param {int} limit how many posts to limit
    */
   getCollegeProgrammeCoursePosts: async (root, { collegeId, programmeId, courseId, skip, limit }, { Post }) => {
-    console.log('>>> getCollegeProgrammeCoursePosts()');
+    console.log(">>> getCollegeProgrammeCoursePosts()");
 
     const query = { $and: [{ college: collegeId }, { programme: programmeId }, { course: courseId }] };
 
     const count = await Post.find(query).countDocuments();
     const posts = await Post.find(query)
       .populate({
-        path: 'author',
+        path: "author",
         populate: [
-          { path: 'following' },
-          { path: 'followers' },
+          { path: "following" },
+          { path: "followers" },
           {
-            path: 'notifications',
-            populate: [{ path: 'author' }, { path: 'follow' }, { path: 'like' }, { path: 'comment' }],
+            path: "notifications",
+            populate: [{ path: "author" }, { path: "follow" }, { path: "like" }, { path: "comment" }],
           },
         ],
       })
-      .populate('likes')
+      .populate("likes")
       .populate({
-        path: 'comments',
-        options: { sort: { createdAt: 'desc' } },
-        populate: { path: 'author' },
+        path: "comments",
+        options: { sort: { createdAt: "desc" } },
+        populate: { path: "author" },
       })
-      .populate('college')
-      .populate('programme')
-      .populate('course')
+      .populate("college")
+      .populate("programme")
+      .populate("course")
       .skip(skip)
       .limit(limit)
-      .sort({ likesCount: 'desc' })
+      .sort({ likesCount: "desc" })
       .sort({ createdAt: -1 });
 
     return { posts, count };
@@ -93,7 +93,7 @@ const Query = {
   getFollowedPosts: async (root, { userId, skip, limit }, { Post, Follow }) => {
     // Find user ids, that current user follows
     const userFollowing = [];
-    const follow = await Follow.find({ follower: userId }, { _id: 0 }).select('user');
+    const follow = await Follow.find({ follower: userId }, { _id: 0 }).select("user");
     follow.map((f) => userFollowing.push(f.user));
 
     // Find user posts and followed posts by using userFollowing ids array
@@ -103,25 +103,25 @@ const Query = {
     const followedPostsCount = await Post.find(query).countDocuments();
     const followedPosts = await Post.find(query)
       .populate({
-        path: 'author',
+        path: "author",
         populate: [
-          { path: 'following' },
-          { path: 'followers' },
+          { path: "following" },
+          { path: "followers" },
           {
-            path: 'notifications',
-            populate: [{ path: 'author' }, { path: 'follow' }, { path: 'like' }, { path: 'comment' }],
+            path: "notifications",
+            populate: [{ path: "author" }, { path: "follow" }, { path: "like" }, { path: "comment" }],
           },
         ],
       })
-      .populate('likes')
+      .populate("likes")
       .populate({
-        path: 'comments',
-        options: { sort: { createdAt: 'desc' } },
-        populate: { path: 'author' },
+        path: "comments",
+        options: { sort: { createdAt: "desc" } },
+        populate: { path: "author" },
       })
       .skip(skip)
       .limit(limit)
-      .sort({ createdAt: 'desc' });
+      .sort({ createdAt: "desc" });
 
     return { posts: followedPosts, count: followedPostsCount };
   },
@@ -133,25 +133,25 @@ const Query = {
   getPost: async (root, { id }, { Post }) => {
     const post = await Post.findById(id)
       .populate({
-        path: 'author',
+        path: "author",
         populate: [
-          { path: 'following' },
-          { path: 'followers' },
+          { path: "following" },
+          { path: "followers" },
           {
-            path: 'notifications',
-            populate: [{ path: 'author' }, { path: 'follow' }, { path: 'like' }, { path: 'comment' }],
+            path: "notifications",
+            populate: [{ path: "author" }, { path: "follow" }, { path: "like" }, { path: "comment" }],
           },
         ],
       })
-      .populate('likes')
+      .populate("likes")
       .populate({
-        path: 'comments',
+        path: "comments",
         options: { sort: { createdAt: -1 } },
-        populate: { path: 'author' },
+        populate: { path: "author" },
       })
-      .populate('college')
-      .populate('programme')
-      .populate('course');
+      .populate("college")
+      .populate("programme")
+      .populate("course");
 
     return post;
   },
@@ -171,11 +171,11 @@ const Mutation = {
     { Post, User, Course }
   ) => {
     if (!authorId) {
-      throw new Error('authorId param is required.');
+      throw new Error("authorId param is required.");
     }
 
     if (pdf && images) {
-      throw new Error('only one of pdf and images is allowed in post');
+      throw new Error("only one of pdf and images is allowed in post");
     }
 
     let imageUrls = [];
@@ -187,12 +187,12 @@ const Mutation = {
       const stream = createReadStream();
       let uploadPDF;
 
-      const fileExt = fileName.split('.').pop();
+      const fileExt = fileName.split(".").pop();
 
       try {
         uploadPDF = await uploadPDFToS3Bucket(stream, `post/${fileExt}`, fileName);
       } catch (err) {
-        throw new Error('Something went wrong while uploading pdf to s3 bucket');
+        throw new Error("Something went wrong while uploading pdf to s3 bucket");
       }
 
       pdfUrl = uploadPDF.Location;
@@ -201,7 +201,7 @@ const Mutation = {
       await Promise.all(images)
         .then((images) => images.map((image) => image.createReadStream()))
         .then((streams) =>
-          Promise.all(streams.map((stream) => uploadToS3Bucket(stream, 'post/images', transformer({ width: 600 }))))
+          Promise.all(streams.map((stream) => uploadToS3Bucket(stream, "post/images", transformer({ width: 600 }))))
         )
         .then((responses) => {
           responses.forEach((response) => {
@@ -260,7 +260,7 @@ const Mutation = {
     }
 
     // Find post and remove it
-    const post = await Post.findByIdAndRemove(id).populate('college').populate('programme').populate('course');
+    const post = await Post.findByIdAndRemove(id).populate("college").populate("programme").populate("course");
 
     // Delete post from authors (users) posts collection
     await User.findOneAndUpdate({ _id: post.author }, { $pull: { posts: post.id } });
@@ -304,7 +304,7 @@ const Mutation = {
    */
   incrementViewsCount: async (root, { postId }, { Post }) => {
     if (!postId) {
-      throw new Error('postId param is required');
+      throw new Error("postId param is required");
     }
 
     return await Post.findOneAndUpdate({ _id: postId }, { $inc: { viewsCount: 1 } });
@@ -316,7 +316,7 @@ const Mutation = {
    */
   incrementDownloadsCount: async (root, { postId }, { Post }) => {
     if (!postId) {
-      throw new Error('postId param is required');
+      throw new Error("postId param is required");
     }
 
     return await Post.findOneAndUpdate({ _id: postId }, { $inc: { downloadsCount: 1 } });

@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 /**
  * udilia company logo
@@ -6,7 +6,7 @@ import React from 'react';
  * @param {string} width
  */
 export const UdiliaIcon = ({ width }) => {
-  const DEFAULT_WIDTH = '30';
+  const DEFAULT_WIDTH = "30";
 
   return (
     <svg width={width || DEFAULT_WIDTH} viewBox="0 0 173 254" xmlns="http://www.w3.org/2000/svg">

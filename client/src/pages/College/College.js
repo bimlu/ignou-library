@@ -1,53 +1,53 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 
-import { useQuery, useApolloClient } from '@apollo/client';
-import { useParams } from 'react-router-dom';
+import { useQuery, useApolloClient } from "@apollo/client";
+import { useParams } from "react-router-dom";
 
-import { makeStyles } from '@material-ui/core/styles';
-import Skeleton from '@material-ui/lab/Skeleton';
-import Typography from '@material-ui/core/Typography';
-import Paper from '@material-ui/core/Paper';
-import Box from '@material-ui/core/Box';
-import Divider from '@material-ui/core/Divider';
-import Button from '@material-ui/core/Button';
-import Snackbar from '@material-ui/core/Snackbar';
-import MuiAlert from '@material-ui/lab/Alert';
-import TextField from '@material-ui/core/TextField';
-import IconButton from '@material-ui/core/IconButton';
-import PhotoCamera from '@material-ui/icons/PhotoCamera';
+import { makeStyles } from "@material-ui/core/styles";
+import Skeleton from "@material-ui/lab/Skeleton";
+import Typography from "@material-ui/core/Typography";
+import Paper from "@material-ui/core/Paper";
+import Box from "@material-ui/core/Box";
+import Divider from "@material-ui/core/Divider";
+import Button from "@material-ui/core/Button";
+import Snackbar from "@material-ui/core/Snackbar";
+import MuiAlert from "@material-ui/lab/Alert";
+import TextField from "@material-ui/core/TextField";
+import IconButton from "@material-ui/core/IconButton";
+import PhotoCamera from "@material-ui/icons/PhotoCamera";
 
-import { GET_COLLEGE, DELETE_COLLEGE, UPDATE_COLLEGE, TOGGLE_COLLEGE_VERIFICATION } from 'graphql/college';
-import { GET_COLLEGES } from 'graphql/college';
+import { GET_COLLEGE, DELETE_COLLEGE, UPDATE_COLLEGE, TOGGLE_COLLEGE_VERIFICATION } from "graphql/college";
+import { GET_COLLEGES } from "graphql/college";
 
-import { MAX_POST_IMAGE_SIZE } from 'constants/ImageSize';
+import { MAX_POST_IMAGE_SIZE } from "constants/ImageSize";
 
-import NewCollege from './NewCollege';
-import SimpleHeader from 'components/SimpleHeader';
-import NotFound from 'components/NotFound';
+import NewCollege from "./NewCollege";
+import SimpleHeader from "components/SimpleHeader";
+import NotFound from "components/NotFound";
 
-import { COLLEGE_TREE_ITEM_LIMIT, EXPLORE_PAGE_CARDS_LIMIT } from 'constants/DataLimit';
-import { UserRole } from 'constants/UserRole';
+import { COLLEGE_TREE_ITEM_LIMIT, EXPLORE_PAGE_CARDS_LIMIT } from "constants/DataLimit";
+import { UserRole } from "constants/UserRole";
 
-import { useStore } from 'store';
-import * as Routes from 'routes';
+import { useStore } from "store";
+import * as Routes from "routes";
 
 const useStyles = makeStyles((theme) => ({
   paper: {
     minHeight: 300,
     marginBottom: theme.spacing(4),
     background: theme.palette.background.default,
-    '& .MuiTextField-root': {
+    "& .MuiTextField-root": {
       margin: theme.spacing(1),
-      width: '96%',
+      width: "96%",
     },
   },
   imageWrapper: {
     height: 160,
   },
   image: {
-    width: '100%',
-    height: '100%',
-    objectFit: 'cover',
+    width: "100%",
+    height: "100%",
+    objectFit: "cover",
   },
   button: {
     borderRadius: theme.spacing(1.2),
@@ -63,7 +63,7 @@ const useStyles = makeStyles((theme) => ({
     bottom: theme.spacing(7),
   },
   input: {
-    display: 'none',
+    display: "none",
   },
 }));
 
@@ -71,16 +71,16 @@ const College = () => {
   const [{ auth }] = useStore();
   const classes = useStyles();
   const [open, setOpen] = useState(false);
-  const [message, setMessage] = useState('');
+  const [message, setMessage] = useState("");
   const client = useApolloClient();
   const { id } = useParams();
   const [loading, setLoading] = useState(false);
   const [editing, setEditing] = useState(false);
-  const [name, setName] = useState('');
-  const [fullName, setFullName] = useState('');
-  const [description, setDescription] = useState('');
-  const [photo, setPhoto] = useState('');
-  const [severity, setSeverity] = useState('error');
+  const [name, setName] = useState("");
+  const [fullName, setFullName] = useState("");
+  const [description, setDescription] = useState("");
+  const [photo, setPhoto] = useState("");
+  const [severity, setSeverity] = useState("error");
 
   if (id === Routes.NEW_ID_VALUE) {
     return <NewCollege />;
@@ -149,7 +149,7 @@ const College = () => {
         ],
       });
     } catch (err) {
-      setMessage(err.graphQLErrors[0] ? err.graphQLErrors[0].message : 'Something went wrong, Please try again!');
+      setMessage(err.graphQLErrors[0] ? err.graphQLErrors[0].message : "Something went wrong, Please try again!");
       setOpen(true);
     }
 
@@ -173,7 +173,7 @@ const College = () => {
 
     if (file.size >= MAX_POST_IMAGE_SIZE) {
       setMessage(`File size should be less then ${MAX_POST_IMAGE_SIZE / 1000000}MB`);
-      setSeverity('warning');
+      setSeverity("warning");
       setOpen(true);
       return;
     }
@@ -192,7 +192,7 @@ const College = () => {
         mutation: UPDATE_COLLEGE,
         variables: {
           input:
-            typeof photo !== 'string'
+            typeof photo !== "string"
               ? { id, name, image: photo, fullName, description, updatedBy: auth.user.id }
               : { id, name, fullName, description, updatedBy: auth.user.id },
         },
@@ -204,12 +204,12 @@ const College = () => {
         ],
       });
 
-      setMessage('Successfully updated college!');
-      setSeverity('success');
+      setMessage("Successfully updated college!");
+      setSeverity("success");
       setOpen(true);
     } catch (err) {
-      setMessage(err.graphQLErrors[0] ? err.graphQLErrors[0].message : 'Something went wrong, Please try again!');
-      setSeverity('error');
+      setMessage(err.graphQLErrors[0] ? err.graphQLErrors[0].message : "Something went wrong, Please try again!");
+      setSeverity("error");
       setOpen(true);
     }
 
@@ -221,11 +221,11 @@ const College = () => {
     const key = e.target.id || e.target.name;
     const value = e.target.value;
 
-    if (key === 'name') {
+    if (key === "name") {
       setName(value);
-    } else if (key === 'fullName') {
+    } else if (key === "fullName") {
       setFullName(value);
-    } else if (key === 'description') {
+    } else if (key === "description") {
       setDescription(value);
     }
   };
@@ -320,7 +320,7 @@ const College = () => {
           required
         />
       ) : (
-        <Typography gutterBottom style={{ whiteSpace: 'pre-line' }}>
+        <Typography gutterBottom style={{ whiteSpace: "pre-line" }}>
           {college.description}
         </Typography>
       )}
@@ -349,7 +349,7 @@ const College = () => {
           className={classes.button}
           disabled={loading || UserRole.ADMIN > auth.user.role}
         >
-          {college.verified ? 'Unverify' : 'Verify'}
+          {college.verified ? "Unverify" : "Verify"}
         </Button>
       )}
 
@@ -362,7 +362,7 @@ const College = () => {
           className={classes.button}
           disabled={loading || UserRole.ADMIN > auth.user.role}
         >
-          {editing ? 'Cancel' : 'Edit'}
+          {editing ? "Cancel" : "Edit"}
         </Button>
       )}
 

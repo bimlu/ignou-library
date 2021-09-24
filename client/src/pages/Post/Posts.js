@@ -1,24 +1,24 @@
-import React, { Fragment, useEffect } from 'react';
-import { useQuery } from '@apollo/client';
-import { useLocation } from 'react-router-dom';
+import React, { Fragment, useEffect } from "react";
+import { useQuery } from "@apollo/client";
+import { useLocation } from "react-router-dom";
 
-import { GET_COLLEGE_PROGRAMME_COURSE_POSTS } from 'graphql/post';
+import { GET_COLLEGE_PROGRAMME_COURSE_POSTS } from "graphql/post";
 
-import PostInfo from 'pages/Post/PostInfo';
-import ExploreHeader from 'pages/Explore/ExploreHeader';
+import PostInfo from "pages/Post/PostInfo";
+import ExploreHeader from "pages/Explore/ExploreHeader";
 
-import PostCard from 'components/PostCard';
-import PDFCard from 'components/PostCard/PDFCard';
-import InfiniteScroll from 'components/InfiniteScroll';
-import Empty from 'components/Empty';
-import { Loading } from 'components/Loading';
-import Head from 'components/Head';
-import ScrollManager from 'components/ScrollManager';
+import PostCard from "components/PostCard";
+import PDFCard from "components/PostCard/PDFCard";
+import InfiniteScroll from "components/InfiniteScroll";
+import Empty from "components/Empty";
+import { Loading } from "components/Loading";
+import Head from "components/Head";
+import ScrollManager from "components/ScrollManager";
 
-import { EXPLORE_PAGE_POSTS_LIMIT } from 'constants/DataLimit';
+import { EXPLORE_PAGE_POSTS_LIMIT } from "constants/DataLimit";
 
-import { useStore } from 'store';
-import { SET_EXPLORE_ROUTE } from 'store/route';
+import { useStore } from "store";
+import { SET_EXPLORE_ROUTE } from "store/route";
 
 /**
  * Posts page
@@ -28,12 +28,12 @@ const Posts = () => {
   const { pathname, search, hash } = useLocation();
 
   const query = new URLSearchParams(search);
-  const collegeId = query.get('collegeId');
-  const collegeName = query.get('collegeName');
-  const programmeId = query.get('programmeId');
-  const programmeName = query.get('programmeName');
-  const courseId = query.get('courseId');
-  const courseName = query.get('courseName');
+  const collegeId = query.get("collegeId");
+  const collegeName = query.get("collegeName");
+  const programmeId = query.get("programmeId");
+  const programmeName = query.get("programmeName");
+  const courseId = query.get("courseId");
+  const courseName = query.get("courseName");
 
   const variables = {
     collegeId: collegeId,
@@ -58,7 +58,7 @@ const Posts = () => {
       ));
     }
 
-    if (error) return 'Please check your internet connection';
+    if (error) return "Please check your internet connection";
 
     const { posts, count } = data.getCollegeProgrammeCoursePosts;
     if (!posts.length > 0) return <Empty text="No posts yet." />;

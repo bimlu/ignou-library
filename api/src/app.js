@@ -1,18 +1,18 @@
-import dotenv from 'dotenv';
+import dotenv from "dotenv";
 dotenv.config(); // Configure Environment variable
-import express from 'express';
-import { createServer } from 'http';
-import mongoose from 'mongoose';
-import cors from 'cors';
-import path from 'path';
-import compression from 'compression';
+import express from "express";
+import { createServer } from "http";
+import mongoose from "mongoose";
+import cors from "cors";
+import path from "path";
+import compression from "compression";
 
-import schema from './schema';
-import models from './models';
-import resolvers from './resolvers';
-import { createApolloServer } from './utils/apollo-server';
-import { logger } from './utils/logger';
-import { httpLogger } from './utils/httpLogger';
+import schema from "./schema";
+import models from "./models";
+import resolvers from "./resolvers";
+import { createApolloServer } from "./utils/apollo-server";
+import { logger } from "./utils/logger";
+import { httpLogger } from "./utils/httpLogger";
 
 // Connect to database
 mongoose
@@ -22,7 +22,7 @@ mongoose
     useFindAndModify: false,
     useUnifiedTopology: true,
   })
-  .then(() => console.log('DB connected'))
+  .then(() => console.log("DB connected"))
   .catch((err) => console.error(err));
 
 // Initializes application
@@ -48,17 +48,17 @@ const corsOptions = {
 app.use(cors(corsOptions));
 
 // Server static files
-app.use(express.static(path.resolve(__dirname, '../../client', 'build')));
+app.use(express.static(path.resolve(__dirname, "../../client", "build")));
 
 // Redirect all of server requests to /index.html
 // @see https://ui.dev/react-router-cannot-get-url-refresh/
-app.get('*', (req, res) => {
-  res.sendFile(path.resolve(__dirname, '../../client/build', 'index.html'));
+app.get("*", (req, res) => {
+  res.sendFile(path.resolve(__dirname, "../../client/build", "index.html"));
 });
 
 // Create a Apollo Server
 const server = createApolloServer(schema, resolvers, models);
-server.applyMiddleware({ app, path: '/graphql' });
+server.applyMiddleware({ app, path: "/graphql" });
 
 // Create http server and add subscriptions to it
 const httpServer = createServer(app);

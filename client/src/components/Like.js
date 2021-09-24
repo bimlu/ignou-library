@@ -1,22 +1,22 @@
-import React, { useState } from 'react';
-import PropTypes from 'prop-types';
-import { useMutation } from '@apollo/client';
-import { Link, useLocation } from 'react-router-dom';
+import React, { useState } from "react";
+import PropTypes from "prop-types";
+import { useMutation } from "@apollo/client";
+import { Link, useLocation } from "react-router-dom";
 
-import IconButton from '@material-ui/core/IconButton';
-import FavoriteIcon from '@material-ui/icons/Favorite';
+import IconButton from "@material-ui/core/IconButton";
+import FavoriteIcon from "@material-ui/icons/Favorite";
 
-import { GET_FOLLOWED_POSTS, GET_POSTS } from 'graphql/post';
-import { GET_AUTH_USER } from 'graphql/user';
-import { CREATE_LIKE, DELETE_LIKE } from 'graphql/like';
+import { GET_FOLLOWED_POSTS, GET_POSTS } from "graphql/post";
+import { GET_AUTH_USER } from "graphql/user";
+import { CREATE_LIKE, DELETE_LIKE } from "graphql/like";
 
-import { NotificationType } from 'constants/NotificationType';
+import { NotificationType } from "constants/NotificationType";
 
-import { useNotifications } from 'hooks/useNotifications';
+import { useNotifications } from "hooks/useNotifications";
 
-import { useStore } from 'store';
+import { useStore } from "store";
 
-import * as Routes from 'routes';
+import * as Routes from "routes";
 
 /**
  * Component for rendering Like button
@@ -31,7 +31,7 @@ const Like = ({ postId, user, likes, StyledBadge, buttonClass }) => {
   // Detect which mutation to use
   const hasLiked = auth.user && likes.find((l) => l.user === auth.user.id && l.post === postId);
   const [localLike, setLocalLike] = useState(hasLiked);
-  const operation = hasLiked ? 'delete' : 'create';
+  const operation = hasLiked ? "delete" : "create";
   const options = {
     create: {
       mutation: CREATE_LIKE,
@@ -84,7 +84,7 @@ const Like = ({ postId, user, likes, StyledBadge, buttonClass }) => {
       className={buttonClass}
     >
       <StyledBadge badgeContent={likes.length} max={9999}>
-        <FavoriteIcon style={localLike ? { color: '#e91e63' } : { color: '' }} />
+        <FavoriteIcon style={localLike ? { color: "#e91e63" } : { color: "" }} />
       </StyledBadge>
     </IconButton>
   );

@@ -1,6 +1,6 @@
-import mongoose, { Document } from 'mongoose';
+import mongoose, { Document } from "mongoose";
 
-import { UserRole } from '../constants/types';
+import { UserRole } from "../constants/types";
 
 const Schema = mongoose.Schema;
 
@@ -47,57 +47,57 @@ const userSchema = new Schema(
     posts: [
       {
         type: Schema.Types.ObjectId,
-        ref: 'Post',
+        ref: "Post",
       },
     ],
     likes: [
       {
         type: Schema.Types.ObjectId,
-        ref: 'Like',
+        ref: "Like",
       },
     ],
     comments: [
       {
         type: Schema.Types.ObjectId,
-        ref: 'Comment',
+        ref: "Comment",
       },
     ],
     followers: [
       {
         type: Schema.Types.ObjectId,
-        ref: 'Follow',
+        ref: "Follow",
       },
     ],
     following: [
       {
         type: Schema.Types.ObjectId,
-        ref: 'Follow',
+        ref: "Follow",
       },
     ],
     notifications: [
       {
         type: Schema.Types.ObjectId,
-        ref: 'Notification',
+        ref: "Notification",
       },
     ],
     messages: [
       {
         type: Schema.Types.ObjectId,
-        ref: 'User',
+        ref: "User",
       },
     ],
     college: {
       type: Schema.Types.ObjectId,
-      ref: 'College',
+      ref: "College",
     },
     programme: {
       type: Schema.Types.ObjectId,
-      ref: 'Programme',
+      ref: "Programme",
     },
     courses: [
       {
         type: Schema.Types.ObjectId,
-        ref: 'Course',
+        ref: "Course",
       },
     ],
   },
@@ -106,4 +106,4 @@ const userSchema = new Schema(
   }
 );
 
-export default mongoose.model('User', userSchema);
+export default mongoose.model("User", userSchema);

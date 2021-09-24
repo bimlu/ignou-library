@@ -1,8 +1,8 @@
-import mongoose from 'mongoose';
-import { withFilter } from 'apollo-server';
+import mongoose from "mongoose";
+import { withFilter } from "apollo-server";
 
-import { pubSub } from '../utils/apollo-server';
-import { MESSAGE_CREATED, NEW_CONVERSATION } from '../constants/Subscriptions';
+import { pubSub } from "../utils/apollo-server";
+import { MESSAGE_CREATED, NEW_CONVERSATION } from "../constants/Subscriptions";
 
 const Query = {
   /**
@@ -17,9 +17,9 @@ const Query = {
         { $or: [{ sender: authUserId }, { receiver: authUserId }] },
         { $or: [{ sender: userId }, { receiver: userId }] },
       ])
-      .populate('sender')
-      .populate('receiver')
-      .sort({ updatedAt: 'asc' });
+      .populate("sender")
+      .populate("receiver")
+      .sort({ updatedAt: "asc" });
 
     return specificMessage;
   },
@@ -30,7 +30,7 @@ const Query = {
    */
   getConversations: async (root, { authUserId }, { User, Message }) => {
     // Get users with whom authUser had a chat
-    const users = await User.findById(authUserId).populate('messages', 'id username fullName image isOnline');
+    const users = await User.findById(authUserId).populate("messages", "id username fullName image isOnline");
 
     // Get last messages with wom authUser had a chat
     const lastMessages = await Message.aggregate([
@@ -51,13 +51,13 @@ const Query = {
       },
       {
         $group: {
-          _id: '$sender',
+          _id: "$sender",
           doc: {
-            $first: '$$ROOT',
+            $first: "$$ROOT",
           },
         },
       },
-      { $replaceRoot: { newRoot: '$doc' } },
+      { $replaceRoot: { newRoot: "$doc" } },
     ]);
 
     // Attach message properties to users
@@ -115,7 +115,7 @@ const Mutation = {
       receiver,
     }).save();
 
-    newMessage = await newMessage.populate('sender').populate('receiver').execPopulate();
+    newMessage = await newMessage.populate("sender").populate("receiver").execPopulate();
 
     // Publish message created event
     pubSub.publish(MESSAGE_CREATED, { messageCreated: newMessage });

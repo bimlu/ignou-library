@@ -1,22 +1,22 @@
-import React, { useEffect } from 'react';
-import { useParams, useLocation } from 'react-router-dom';
-import { useQuery } from '@apollo/client';
+import React, { useEffect } from "react";
+import { useParams, useLocation } from "react-router-dom";
+import { useQuery } from "@apollo/client";
 
-import Skeleton from '@material-ui/lab/Skeleton';
+import Skeleton from "@material-ui/lab/Skeleton";
 
-import { Spacing } from 'components/Layout';
+import { Spacing } from "components/Layout";
 
-import ProfileInfo from './ProfileInfo';
-import ProfilePosts from './ProfilePosts';
-import NotFound from 'components/NotFound';
-import Head from 'components/Head';
-import ScrollManager from 'components/ScrollManager';
+import ProfileInfo from "./ProfileInfo";
+import ProfilePosts from "./ProfilePosts";
+import NotFound from "components/NotFound";
+import Head from "components/Head";
+import ScrollManager from "components/ScrollManager";
 
-import { GET_USER } from 'graphql/user';
-import theme from 'muiTheme';
+import { GET_USER } from "graphql/user";
+import theme from "muiTheme";
 
-import { useStore } from 'store';
-import { SET_PEOPLE_ROUTE } from 'store/route';
+import { useStore } from "store";
+import { SET_PEOPLE_ROUTE } from "store/route";
 
 /**
  * User Profile Page

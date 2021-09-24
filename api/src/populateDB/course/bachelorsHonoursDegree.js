@@ -2304,44 +2304,36 @@ export const bachelorsHonoursDegreeCourses = [
   },
   {
     code: "BCHCT-131",
-    title:
-      "Atomic Structure, Bonding, General Organic Chemistry and Aliphatic Hydrocarbons",
+    title: "Atomic Structure, Bonding, General Organic Chemistry and Aliphatic Hydrocarbons",
     name: "BCHCT-131",
-    fullName:
-      "Atomic Structure, Bonding, General Organic Chemistry and Aliphatic Hydrocarbons",
+    fullName: "Atomic Structure, Bonding, General Organic Chemistry and Aliphatic Hydrocarbons",
     collegeCode: "IGNOU",
     programmeCode: "BCOMG",
     term: 1,
   },
   {
     code: "BCHCL-132",
-    title:
-      "Atomic Structure, Bonding, General Organic Chemistry and Aliphatic Hydrocarbons: Laboratory",
+    title: "Atomic Structure, Bonding, General Organic Chemistry and Aliphatic Hydrocarbons: Laboratory",
     name: "BCHCL-132",
-    fullName:
-      "Atomic Structure, Bonding, General Organic Chemistry and Aliphatic Hydrocarbons: Laboratory",
+    fullName: "Atomic Structure, Bonding, General Organic Chemistry and Aliphatic Hydrocarbons: Laboratory",
     collegeCode: "IGNOU",
     programmeCode: "BCOMG",
     term: 1,
   },
   {
     code: "BCHCT-133",
-    title:
-      "Chemical Energetics, Equilibria and Functional Group Organic Chemistry I",
+    title: "Chemical Energetics, Equilibria and Functional Group Organic Chemistry I",
     name: "BCHCT-133",
-    fullName:
-      "Chemical Energetics, Equilibria and Functional Group Organic Chemistry I",
+    fullName: "Chemical Energetics, Equilibria and Functional Group Organic Chemistry I",
     collegeCode: "IGNOU",
     programmeCode: "BCOMG",
     term: 1,
   },
   {
     code: "BCHCL-134",
-    title:
-      "Chemical Energetics, Equilibria and Functional Group Organic Chemistry I: Laboratory",
+    title: "Chemical Energetics, Equilibria and Functional Group Organic Chemistry I: Laboratory",
     name: "BCHCL-134",
-    fullName:
-      "Chemical Energetics, Equilibria and Functional Group Organic Chemistry I: Laboratory",
+    fullName: "Chemical Energetics, Equilibria and Functional Group Organic Chemistry I: Laboratory",
     collegeCode: "IGNOU",
     programmeCode: "BCOMG",
     term: 1,
@@ -2357,11 +2349,9 @@ export const bachelorsHonoursDegreeCourses = [
   },
   {
     code: "BBYCL-132",
-    title:
-      "Biodiversity (Microbes, Algae, Fungi and Archegoniates): Laboratory",
+    title: "Biodiversity (Microbes, Algae, Fungi and Archegoniates): Laboratory",
     name: "BBYCL-132",
-    fullName:
-      "Biodiversity (Microbes, Algae, Fungi and Archegoniates): Laboratory",
+    fullName: "Biodiversity (Microbes, Algae, Fungi and Archegoniates): Laboratory",
     collegeCode: "IGNOU",
     programmeCode: "BCOMG",
     term: 1,
@@ -2746,11 +2736,9 @@ export const bachelorsHonoursDegreeCourses = [
   },
   {
     code: "BHMCT-113",
-    title:
-      "Study of Gharanas, Elementary Western Music, and Interdisciplinary study of Music",
+    title: "Study of Gharanas, Elementary Western Music, and Interdisciplinary study of Music",
     name: "BHMCT-113",
-    fullName:
-      "Study of Gharanas, Elementary Western Music, and Interdisciplinary study of Music",
+    fullName: "Study of Gharanas, Elementary Western Music, and Interdisciplinary study of Music",
     collegeCode: "IGNOU",
     programmeCode: "BCOMG",
     term: 1,

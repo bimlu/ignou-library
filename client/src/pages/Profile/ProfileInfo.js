@@ -1,48 +1,48 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import { Link, generatePath } from 'react-router-dom';
-import { useSubscription } from '@apollo/client';
+import React from "react";
+import PropTypes from "prop-types";
+import { Link, generatePath } from "react-router-dom";
+import { useSubscription } from "@apollo/client";
 
-import { makeStyles } from '@material-ui/core/styles';
-import Typography from '@material-ui/core/Typography';
-import IconButton from '@material-ui/core/IconButton';
-import MailIcon from '@material-ui/icons/Mail';
-import Paper from '@material-ui/core/Paper';
-import Divider from '@material-ui/core/Divider';
+import { makeStyles } from "@material-ui/core/styles";
+import Typography from "@material-ui/core/Typography";
+import IconButton from "@material-ui/core/IconButton";
+import MailIcon from "@material-ui/icons/Mail";
+import Paper from "@material-ui/core/Paper";
+import Divider from "@material-ui/core/Divider";
 
-import { IS_USER_ONLINE_SUBSCRIPTION } from 'graphql/user';
+import { IS_USER_ONLINE_SUBSCRIPTION } from "graphql/user";
 
-import Head from 'components/Head';
-import Follow from 'components/Follow';
-import ProfileImageUpload from './ProfileImageUpload';
-import ProfileCoverUpload from './ProfileCoverUpload';
+import Head from "components/Head";
+import Follow from "components/Follow";
+import ProfileImageUpload from "./ProfileImageUpload";
+import ProfileCoverUpload from "./ProfileCoverUpload";
 
-import StudentInfo from './StudentInfo';
+import StudentInfo from "./StudentInfo";
 
-import { useStore } from 'store';
+import { useStore } from "store";
 
-import * as Routes from 'routes';
+import * as Routes from "routes";
 
 const useStyles = makeStyles((theme) => ({
   info: {
-    width: '100%',
-    display: 'flex',
-    flexDirection: 'row',
-    alignItems: 'center',
-    justifyContent: 'space-around',
+    width: "100%",
+    display: "flex",
+    flexDirection: "row",
+    alignItems: "center",
+    justifyContent: "space-around",
     padding: theme.spacing(1),
   },
   nameInfo: {
-    display: 'flex',
-    flexDirection: 'row',
-    alignItems: 'center',
+    display: "flex",
+    flexDirection: "row",
+    alignItems: "center",
     padding: theme.spacing(1),
-    '& > *': {
+    "& > *": {
       marginLeft: theme.spacing(2),
       marginBottom: theme.spacing(1),
     },
-    flexWrap: 'wrap',
-    justifyContent: 'center',
+    flexWrap: "wrap",
+    justifyContent: "center",
   },
   fullName: {
     fontSize: theme.spacing(4),
@@ -51,18 +51,18 @@ const useStyles = makeStyles((theme) => ({
     width: 8,
     height: 8,
     backgroundColor: theme.palette.success,
-    borderRadius: '50%',
+    borderRadius: "50%",
   },
   profileImage: {
-    display: 'flex',
-    flexDirection: 'column',
-    alignItems: 'center',
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "center",
     marginTop: -140,
   },
   paper: {
-    display: 'flex',
-    flexDirection: 'column',
-    alignItems: 'center',
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "center",
     borderRadius: theme.spacing(2),
     background: theme.palette.background.default,
   },
@@ -123,7 +123,7 @@ const ProfileInfo = ({ user }) => {
         )}
       </div>
 
-      <Divider style={{ width: '90%' }} />
+      <Divider style={{ width: "90%" }} />
 
       <div className={classes.info}>
         <Typography variant="caption">
@@ -137,7 +137,7 @@ const ProfileInfo = ({ user }) => {
         </Typography>
       </div>
 
-      <Divider style={{ width: '90%' }} />
+      <Divider style={{ width: "90%" }} />
 
       <StudentInfo user={user} />
     </Paper>

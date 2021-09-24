@@ -108,12 +108,7 @@ const CourseSchema = gql`
     getCourses(skip: Int, limit: Int): CoursesPayload
 
     # Gets courses of a specific programme and college
-    getCollegeProgrammeCourses(
-      collegeId: ID!
-      programmeId: ID!
-      skip: Int
-      limit: Int
-    ): CoursesPayload
+    getCollegeProgrammeCourses(collegeId: ID!, programmeId: ID!, skip: Int, limit: Int): CoursesPayload
   }
 
   # ---------------------------------------------------------

@@ -1,17 +1,17 @@
-import React, { useState } from 'react';
-import { useLocation } from 'react-router-dom';
+import React, { useState } from "react";
+import { useLocation } from "react-router-dom";
 
-import { makeStyles } from '@material-ui/core/styles';
-import Paper from '@material-ui/core/Paper';
-import Typography from '@material-ui/core/Typography';
-import Divider from '@material-ui/core/Divider';
-import Alert from '@material-ui/lab/Alert';
+import { makeStyles } from "@material-ui/core/styles";
+import Paper from "@material-ui/core/Paper";
+import Typography from "@material-ui/core/Typography";
+import Divider from "@material-ui/core/Divider";
+import Alert from "@material-ui/lab/Alert";
 
-import Head from 'components/Head';
-import CollegesTreeView from 'components/CollegesTreeView';
+import Head from "components/Head";
+import CollegesTreeView from "components/CollegesTreeView";
 // import SpeedDial from 'components/SpeedDial';
-import ScrollManager from 'components/ScrollManager';
-import { Box } from '@material-ui/core';
+import ScrollManager from "components/ScrollManager";
+import { Box } from "@material-ui/core";
 
 const useStyles = makeStyles((theme) => ({
   root: {},
@@ -19,8 +19,8 @@ const useStyles = makeStyles((theme) => ({
     background: theme.palette.background.default,
     marginBottom: theme.spacing(2),
     minHeight: 486,
-    [theme.breakpoints.down('sm')]: {
-      minHeight: '100%',
+    [theme.breakpoints.down("sm")]: {
+      minHeight: "100%",
     },
   },
   divider: {
@@ -37,7 +37,7 @@ const useStyles = makeStyles((theme) => ({
 const Home = () => {
   const classes = useStyles();
   const { pathname, search } = useLocation();
-  const [selectedNodeValue, setSelectedNodeValue] = useState('');
+  const [selectedNodeValue, setSelectedNodeValue] = useState("");
 
   return (
     <div className={classes.root}>

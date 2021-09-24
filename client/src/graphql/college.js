@@ -1,10 +1,10 @@
-import { gql } from '@apollo/client';
+import { gql } from "@apollo/client";
 
 /**
  * Gets specific college by id
  */
 export const GET_COLLEGE = gql`
-  query($id: ID, $name: String) {
+  query ($id: ID, $name: String) {
     getCollege(id: $id, name: $name) {
       id
       name
@@ -33,7 +33,7 @@ export const GET_COLLEGE = gql`
  * Gets all available colleges
  */
 export const GET_COLLEGES = gql`
-  query($skip: Int, $limit: Int) {
+  query ($skip: Int, $limit: Int) {
     getColleges(skip: $skip, limit: $limit) {
       count
       colleges {
@@ -54,7 +54,7 @@ export const GET_COLLEGES = gql`
  * Gets all avilable colleges with programmes populated
  */
 export const GET_COLLEGES_WITH_PROGRAMMES = gql`
-  query($skip: Int, $limit: Int) {
+  query ($skip: Int, $limit: Int) {
     getColleges(skip: $skip, limit: $limit) {
       count
       colleges {
@@ -74,7 +74,7 @@ export const GET_COLLEGES_WITH_PROGRAMMES = gql`
  * Gets all avilable colleges with programmes and courses populated
  */
 export const GET_COLLEGES_WITH_PROGRAMMES_COURSES = gql`
-  query($skip: Int, $limit: Int) {
+  query ($skip: Int, $limit: Int) {
     getColleges(skip: $skip, limit: $limit) {
       count
       colleges {
@@ -105,7 +105,7 @@ export const GET_COLLEGES_WITH_PROGRAMMES_COURSES = gql`
  * Creates a college
  */
 export const CREATE_COLLEGE = gql`
-  mutation($input: CreateCollegeInput!) {
+  mutation ($input: CreateCollegeInput!) {
     createCollege(input: $input) {
       id
     }
@@ -116,7 +116,7 @@ export const CREATE_COLLEGE = gql`
  * Updates a college
  */
 export const UPDATE_COLLEGE = gql`
-  mutation($input: UpdateCollegeInput!) {
+  mutation ($input: UpdateCollegeInput!) {
     updateCollege(input: $input) {
       id
     }
@@ -127,7 +127,7 @@ export const UPDATE_COLLEGE = gql`
  * Deletes a college
  */
 export const DELETE_COLLEGE = gql`
-  mutation($input: DeleteCollegeInput!) {
+  mutation ($input: DeleteCollegeInput!) {
     deleteCollege(input: $input) {
       id
     }
@@ -138,7 +138,7 @@ export const DELETE_COLLEGE = gql`
  * Toggles Verification of a college
  */
 export const TOGGLE_COLLEGE_VERIFICATION = gql`
-  mutation($id: ID!) {
+  mutation ($id: ID!) {
     toggleCollegeVerification(id: $id) {
       id
     }

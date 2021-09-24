@@ -1,14 +1,14 @@
 /**
  * Actions types
  */
-export const SET_COLLEGE_TREE = 'SET_COLLEGE_TREE';
-export const CLEAR_COLLEGE_TREE = 'CLEAR_COLLEGE_TREE';
+export const SET_COLLEGE_TREE = "SET_COLLEGE_TREE";
+export const CLEAR_COLLEGE_TREE = "CLEAR_COLLEGE_TREE";
 
 /**
  * Initial State
  */
 export const collegeTreeInitialState = {
-  defaultExpanded: ['allColleges', '605a4638198e3f5b2e715c8c'], // colleges and IGNOU
+  defaultExpanded: ["allColleges", "605a4638198e3f5b2e715c8c"], // colleges and IGNOU
 };
 
 /**

@@ -1,64 +1,64 @@
-import React, { useState, useEffect } from 'react';
-import { useMutation } from '@apollo/client';
-import { Redirect } from 'react-router-dom';
-import { makeStyles } from '@material-ui/core/styles';
-import TextField from '@material-ui/core/TextField';
-import MenuItem from '@material-ui/core/MenuItem';
-import IconButton from '@material-ui/core/IconButton';
-import PhotoCamera from '@material-ui/icons/PhotoCamera';
-import CreateIcon from '@material-ui/icons/Create';
-import Button from '@material-ui/core/Button';
-import ArrowBackIcon from '@material-ui/icons/ArrowBack';
-import LinearProgress from '@material-ui/core/LinearProgress';
-import Snackbar from '@material-ui/core/Snackbar';
-import MuiAlert from '@material-ui/lab/Alert';
-import Paper from '@material-ui/core/Paper';
-import Typography from '@material-ui/core/Typography';
+import React, { useState, useEffect } from "react";
+import { useMutation } from "@apollo/client";
+import { Redirect } from "react-router-dom";
+import { makeStyles } from "@material-ui/core/styles";
+import TextField from "@material-ui/core/TextField";
+import MenuItem from "@material-ui/core/MenuItem";
+import IconButton from "@material-ui/core/IconButton";
+import PhotoCamera from "@material-ui/icons/PhotoCamera";
+import CreateIcon from "@material-ui/icons/Create";
+import Button from "@material-ui/core/Button";
+import ArrowBackIcon from "@material-ui/icons/ArrowBack";
+import LinearProgress from "@material-ui/core/LinearProgress";
+import Snackbar from "@material-ui/core/Snackbar";
+import MuiAlert from "@material-ui/lab/Alert";
+import Paper from "@material-ui/core/Paper";
+import Typography from "@material-ui/core/Typography";
 
-import { CREATE_PROGRAMME, GET_COLLEGE_PROGRAMMES } from 'graphql/programme';
-import { GET_COLLEGES_WITH_PROGRAMMES_COURSES } from 'graphql/college';
+import { CREATE_PROGRAMME, GET_COLLEGE_PROGRAMMES } from "graphql/programme";
+import { GET_COLLEGES_WITH_PROGRAMMES_COURSES } from "graphql/college";
 
-import { EXPLORE_PAGE_CARDS_LIMIT } from 'constants/DataLimit';
-import { MAX_POST_IMAGE_SIZE } from 'constants/ImageSize';
-import { HEADER_HEIGHT, HEADER_BORDER_HEIGHT } from 'constants/Layout';
+import { EXPLORE_PAGE_CARDS_LIMIT } from "constants/DataLimit";
+import { MAX_POST_IMAGE_SIZE } from "constants/ImageSize";
+import { HEADER_HEIGHT, HEADER_BORDER_HEIGHT } from "constants/Layout";
 
-import Head from 'components/Head';
-import { useStore } from 'store';
-import { SET_UPLOADING, CLEAR_UPLOADING } from 'store/uploading';
+import Head from "components/Head";
+import { useStore } from "store";
+import { SET_UPLOADING, CLEAR_UPLOADING } from "store/uploading";
 
-import * as Routes from 'routes';
+import * as Routes from "routes";
 
 const useStyles = makeStyles((theme) => ({
   paper: {
     padding: theme.spacing(1),
     borderRadius: theme.spacing(1),
     minHeight: 600,
-    [theme.breakpoints.down('sm')]: {
-      minHeight: '100%',
+    [theme.breakpoints.down("sm")]: {
+      minHeight: "100%",
     },
   },
   root: {},
   header: {
-    display: 'flex',
-    alignItems: 'center',
+    display: "flex",
+    alignItems: "center",
     height: `${HEADER_HEIGHT + 3}px`,
-    [theme.breakpoints.down('sm')]: {
-      position: 'fixed',
+    [theme.breakpoints.down("sm")]: {
+      position: "fixed",
       top: `${HEADER_BORDER_HEIGHT}px`,
       left: 0,
-      width: '100%',
+      width: "100%",
       zIndex: theme.zIndex.appBar + 1,
       background: theme.palette.background.paper,
     },
   },
   form: {
-    '& .MuiTextField-root': {
+    "& .MuiTextField-root": {
       margin: theme.spacing(1),
-      width: '96%',
+      width: "96%",
     },
   },
   input: {
-    display: 'none',
+    display: "none",
   },
   button: {
     margin: theme.spacing(1),
@@ -69,8 +69,8 @@ const useStyles = makeStyles((theme) => ({
   },
   title: {
     fontSize: theme.spacing(3.6),
-    fontWeight: 'bold',
-    display: 'inline',
+    fontWeight: "bold",
+    display: "inline",
     marginLeft: theme.spacing(1),
   },
 }));
@@ -83,18 +83,18 @@ export default function MultilineTextFields() {
     return <Redirect to={Routes.AUTH} />;
   }
 
-  const [name, setName] = useState('');
-  const [fullName, setFullName] = useState('');
-  const [degree, setDegree] = useState('');
-  const [termType, setTermType] = useState('');
-  const [termsCount, setTermsCount] = useState('');
-  const [description, setDescription] = useState('');
-  const [collegeId, setCollegeId] = useState('');
+  const [name, setName] = useState("");
+  const [fullName, setFullName] = useState("");
+  const [degree, setDegree] = useState("");
+  const [termType, setTermType] = useState("");
+  const [termsCount, setTermsCount] = useState("");
+  const [description, setDescription] = useState("");
+  const [collegeId, setCollegeId] = useState("");
   const [colleges] = useState(datatree.colleges);
-  const [photo, setPhoto] = useState('');
+  const [photo, setPhoto] = useState("");
   const [open, setOpen] = useState(false);
-  const [message, setMessage] = useState('');
-  const [severity, setSeverity] = useState('');
+  const [message, setMessage] = useState("");
+  const [severity, setSeverity] = useState("");
   const [createProgramme, { loading }] = useMutation(CREATE_PROGRAMME, {
     refetchQueries: [
       {
@@ -123,19 +123,19 @@ export default function MultilineTextFields() {
     const key = e.target.id || e.target.name;
     const value = e.target.value;
 
-    if (key === 'name') {
+    if (key === "name") {
       setName(value);
-    } else if (key === 'fullName') {
+    } else if (key === "fullName") {
       setFullName(value);
-    } else if (key === 'degree') {
+    } else if (key === "degree") {
       setDegree(value);
-    } else if (key === 'termType') {
+    } else if (key === "termType") {
       setTermType(value);
-    } else if (key === 'termsCount') {
+    } else if (key === "termsCount") {
       setTermsCount(value);
-    } else if (key === 'description') {
+    } else if (key === "description") {
       setDescription(value);
-    } else if (key === 'collegeId' && value !== '') {
+    } else if (key === "collegeId" && value !== "") {
       setCollegeId(value);
     }
   };
@@ -149,7 +149,7 @@ export default function MultilineTextFields() {
 
     if (file.size >= MAX_POST_IMAGE_SIZE) {
       setMessage(`File size should be less then ${MAX_POST_IMAGE_SIZE / 1000000}MB`);
-      setSeverity('warning');
+      setSeverity("warning");
       setOpen(true);
       return;
     }
@@ -178,25 +178,25 @@ export default function MultilineTextFields() {
       });
 
       handleReset();
-      setMessage('Successfully created programme!');
-      setSeverity('success');
+      setMessage("Successfully created programme!");
+      setSeverity("success");
       setOpen(true);
     } catch (error) {
-      setMessage('Something went wrong, please try again.');
-      setSeverity('error');
+      setMessage("Something went wrong, please try again.");
+      setSeverity("error");
       setOpen(true);
     }
   };
 
   const handleReset = () => {
-    setName('');
-    setFullName('');
-    setDegree('');
-    setTermType('');
-    setTermsCount('');
-    setDescription('');
-    setPhoto('');
-    setCollegeId('');
+    setName("");
+    setFullName("");
+    setDegree("");
+    setTermType("");
+    setTermsCount("");
+    setDescription("");
+    setPhoto("");
+    setCollegeId("");
   };
 
   const isCreateDisabled = status.uploading || !name || !fullName || !description || !photo || !collegeId;
@@ -288,7 +288,7 @@ export default function MultilineTextFields() {
           <MenuItem value="">
             <em>None</em>
           </MenuItem>
-          {['Bachelors', 'Masters', 'Doctorates', 'Diploma', 'Certificate'].map((degreeName, i) => (
+          {["Bachelors", "Masters", "Doctorates", "Diploma", "Certificate"].map((degreeName, i) => (
             <MenuItem key={degreeName} value={i}>
               {degreeName}
             </MenuItem>
@@ -308,7 +308,7 @@ export default function MultilineTextFields() {
           <MenuItem value="">
             <em>None</em>
           </MenuItem>
-          {['Quarter', 'Semester', 'Year'].map((termName, i) => (
+          {["Quarter", "Semester", "Year"].map((termName, i) => (
             <MenuItem key={termName} value={i}>
               {termName}
             </MenuItem>

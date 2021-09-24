@@ -1,26 +1,26 @@
-import React from 'react';
-import { Link, generatePath } from 'react-router-dom';
-import { makeStyles } from '@material-ui/core/styles';
-import Backdrop from '@material-ui/core/Backdrop';
-import SpeedDial from '@material-ui/lab/SpeedDial';
-import SpeedDialIcon from '@material-ui/lab/SpeedDialIcon';
-import SpeedDialAction from '@material-ui/lab/SpeedDialAction';
-import EditIcon from '@material-ui/icons/Edit';
-import PictureAsPdfIcon from '@material-ui/icons/PictureAsPdf';
-import PhotoLibraryIcon from '@material-ui/icons/PhotoLibrary';
-import { CollegeIcon, ProgrammeIcon, CourseIcon } from 'components/icons';
+import React from "react";
+import { Link, generatePath } from "react-router-dom";
+import { makeStyles } from "@material-ui/core/styles";
+import Backdrop from "@material-ui/core/Backdrop";
+import SpeedDial from "@material-ui/lab/SpeedDial";
+import SpeedDialIcon from "@material-ui/lab/SpeedDialIcon";
+import SpeedDialAction from "@material-ui/lab/SpeedDialAction";
+import EditIcon from "@material-ui/icons/Edit";
+import PictureAsPdfIcon from "@material-ui/icons/PictureAsPdf";
+import PhotoLibraryIcon from "@material-ui/icons/PhotoLibrary";
+import { CollegeIcon, ProgrammeIcon, CourseIcon } from "components/icons";
 
-import HideOnScroll from 'components/SpeedDial/HideSpeedDialOnScroll';
+import HideOnScroll from "components/SpeedDial/HideSpeedDialOnScroll";
 
-import { useStore } from 'store';
-import * as Routes from 'routes';
+import { useStore } from "store";
+import * as Routes from "routes";
 
 const useStyles = makeStyles((theme) => ({
   root: {},
   speedDial: {
-    position: 'fixed',
-    bottom: '10%',
-    right: '5%',
+    position: "fixed",
+    bottom: "10%",
+    right: "5%",
   },
   backdrop: {
     zIndex: theme.zIndex.xl,
@@ -38,28 +38,28 @@ export default function SpeedDialTooltipOpen() {
         <Link
           to={
             auth.user
-              ? generatePath(Routes.POST, { id: Routes.NEW_ID_VALUE, type: 'pdf' })
+              ? generatePath(Routes.POST, { id: Routes.NEW_ID_VALUE, type: "pdf" })
               : generatePath(Routes.LOG_IN)
           }
         >
           <PictureAsPdfIcon fontSize="small" color="action" />
         </Link>
       ),
-      name: 'PDF',
+      name: "PDF",
     },
     {
       icon: (
         <Link
           to={
             auth.user
-              ? generatePath(Routes.POST, { id: Routes.NEW_ID_VALUE, type: 'image' })
+              ? generatePath(Routes.POST, { id: Routes.NEW_ID_VALUE, type: "image" })
               : generatePath(Routes.LOG_IN)
           }
         >
           <PhotoLibraryIcon fontSize="small" color="action" />
         </Link>
       ),
-      name: 'Photos',
+      name: "Photos",
     },
     {
       icon: (
@@ -67,7 +67,7 @@ export default function SpeedDialTooltipOpen() {
           <CourseIcon width="26" />
         </Link>
       ),
-      name: 'Course',
+      name: "Course",
     },
     {
       icon: (
@@ -77,7 +77,7 @@ export default function SpeedDialTooltipOpen() {
           <ProgrammeIcon width="29" />
         </Link>
       ),
-      name: 'Programme',
+      name: "Programme",
     },
     {
       icon: (
@@ -85,7 +85,7 @@ export default function SpeedDialTooltipOpen() {
           <CollegeIcon width="29" />
         </Link>
       ),
-      name: 'College',
+      name: "College",
     },
   ];
 

@@ -1,6 +1,6 @@
-import { useStore } from 'store';
-import { SET_MESSAGE } from 'store/message';
-import { MessageType } from 'constants/MessageType';
+import { useStore } from "store";
+import { SET_MESSAGE } from "store/message";
+import { MessageType } from "constants/MessageType";
 
 /**
  * React hook for dispatching global messages

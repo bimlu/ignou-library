@@ -6,7 +6,7 @@ const Mutation = {
    * @param {string} followerId
    */
   createFollow: async (root, { input: { userId, followerId } }, { Follow, User }) => {
-    console.log('>>> createFollow()');
+    console.log(">>> createFollow()");
 
     const follow = await new Follow({
       user: userId,
@@ -25,7 +25,7 @@ const Mutation = {
    * @param {string} id follow id
    */
   deleteFollow: async (root, { input: { id } }, { Follow, User }) => {
-    console.log('>>> deleteFollow()');
+    console.log(">>> deleteFollow()");
 
     const follow = await Follow.findByIdAndRemove(id);
 

@@ -30,8 +30,7 @@ export const diplomaCourses = [
     code: "DECE-4",
     title: "Project Work: Working with Young Children in a Child Care Setting",
     name: "DECE-4",
-    fullName:
-      "Project Work: Working with Young Children in a Child Care Setting",
+    fullName: "Project Work: Working with Young Children in a Child Care Setting",
     collegeCode: "IGNOU",
     programmeCode: "MCOM",
     term: 1,

@@ -1,28 +1,28 @@
-import React, { useState } from 'react';
-import { Link, generatePath } from 'react-router-dom';
-import { useQuery } from '@apollo/client';
-import clsx from 'clsx';
+import React, { useState } from "react";
+import { Link, generatePath } from "react-router-dom";
+import { useQuery } from "@apollo/client";
+import clsx from "clsx";
 
-import { makeStyles } from '@material-ui/core/styles';
-import Paper from '@material-ui/core/Paper';
-import Typography from '@material-ui/core/Typography';
-import Skeleton from '@material-ui/lab/Skeleton';
-import Box from '@material-ui/core/Box';
-import Divider from '@material-ui/core/Divider';
-import Collapse from '@material-ui/core/Collapse';
-import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
-import Button from '@material-ui/core/Button';
-import CheckCircleIcon from '@material-ui/icons/CheckCircle';
-import EditIcon from '@material-ui/icons/Edit';
-import IconButton from '@material-ui/core/IconButton';
-import AddIcon from '@material-ui/icons/Add';
+import { makeStyles } from "@material-ui/core/styles";
+import Paper from "@material-ui/core/Paper";
+import Typography from "@material-ui/core/Typography";
+import Skeleton from "@material-ui/lab/Skeleton";
+import Box from "@material-ui/core/Box";
+import Divider from "@material-ui/core/Divider";
+import Collapse from "@material-ui/core/Collapse";
+import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
+import Button from "@material-ui/core/Button";
+import CheckCircleIcon from "@material-ui/icons/CheckCircle";
+import EditIcon from "@material-ui/icons/Edit";
+import IconButton from "@material-ui/core/IconButton";
+import AddIcon from "@material-ui/icons/Add";
 
-import { GET_PROGRAMME } from 'graphql/programme';
+import { GET_PROGRAMME } from "graphql/programme";
 
-import { TermType } from 'constants/TermType';
-import { DegreeType } from 'constants/DegreeType';
+import { TermType } from "constants/TermType";
+import { DegreeType } from "constants/DegreeType";
 
-import * as Routes from 'routes';
+import * as Routes from "routes";
 
 const useStyles = makeStyles((theme) => ({
   paper: {
@@ -34,34 +34,34 @@ const useStyles = makeStyles((theme) => ({
     height: 160,
   },
   image: {
-    width: '100%',
-    height: '100%',
-    objectFit: 'cover',
+    width: "100%",
+    height: "100%",
+    objectFit: "cover",
   },
   expand: {
-    transform: 'rotate(0deg)',
-    transition: theme.transitions.create('transform', {
+    transform: "rotate(0deg)",
+    transition: theme.transitions.create("transform", {
       duration: theme.transitions.duration.shortest,
     }),
   },
   expandOpen: {
-    transform: 'rotate(180deg)',
+    transform: "rotate(180deg)",
   },
   button: {
     borderRadius: theme.spacing(1.2),
     padding: `${theme.spacing(1)}px ${theme.spacing(2)}px`,
     fontSize: theme.spacing(1.6),
     marginBottom: theme.spacing(1),
-    textTransform: 'none',
+    textTransform: "none",
   },
   header: {
-    display: 'flex',
-    flexDirection: 'row',
-    alignItems: 'center',
-    justifyContent: 'space-between',
+    display: "flex",
+    flexDirection: "row",
+    alignItems: "center",
+    justifyContent: "space-between",
     fontSize: theme.spacing(2.6),
-    '& > *': {
-      fontSize: 'inherit',
+    "& > *": {
+      fontSize: "inherit",
     },
   },
   checkIcon: {
@@ -161,7 +161,7 @@ const CourseInfo = ({ collegeId, programmeId }) => {
       </Button>
 
       <Collapse in={expanded} timeout="auto" unmountOnExit>
-        <Typography gutterBottom variant="body2" style={{ whiteSpace: 'pre-line' }}>
+        <Typography gutterBottom variant="body2" style={{ whiteSpace: "pre-line" }}>
           {programme.description}
         </Typography>
       </Collapse>

@@ -693,8 +693,7 @@ export const soet = [
   {
     // 139
     code: "BNA-015",
-    title:
-      "Navigation-II: Bridge Equipment, Watch Keeping, Meteorology & Oceanography",
+    title: "Navigation-II: Bridge Equipment, Watch Keeping, Meteorology & Oceanography",
   },
   {
     // 140

@@ -1,56 +1,56 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 
-import { useQuery, useApolloClient } from '@apollo/client';
-import { useParams } from 'react-router-dom';
+import { useQuery, useApolloClient } from "@apollo/client";
+import { useParams } from "react-router-dom";
 
-import { makeStyles } from '@material-ui/core/styles';
-import Skeleton from '@material-ui/lab/Skeleton';
-import Typography from '@material-ui/core/Typography';
-import Paper from '@material-ui/core/Paper';
-import Box from '@material-ui/core/Box';
-import Divider from '@material-ui/core/Divider';
-import Button from '@material-ui/core/Button';
-import Snackbar from '@material-ui/core/Snackbar';
-import MuiAlert from '@material-ui/lab/Alert';
-import TextField from '@material-ui/core/TextField';
-import MenuItem from '@material-ui/core/MenuItem';
-import IconButton from '@material-ui/core/IconButton';
-import PhotoCamera from '@material-ui/icons/PhotoCamera';
+import { makeStyles } from "@material-ui/core/styles";
+import Skeleton from "@material-ui/lab/Skeleton";
+import Typography from "@material-ui/core/Typography";
+import Paper from "@material-ui/core/Paper";
+import Box from "@material-ui/core/Box";
+import Divider from "@material-ui/core/Divider";
+import Button from "@material-ui/core/Button";
+import Snackbar from "@material-ui/core/Snackbar";
+import MuiAlert from "@material-ui/lab/Alert";
+import TextField from "@material-ui/core/TextField";
+import MenuItem from "@material-ui/core/MenuItem";
+import IconButton from "@material-ui/core/IconButton";
+import PhotoCamera from "@material-ui/icons/PhotoCamera";
 
-import { GET_PROGRAMME, DELETE_PROGRAMME, UPDATE_PROGRAMME, TOGGLE_PROGRAMME_VERIFICATION } from 'graphql/programme';
-import { GET_COLLEGE_PROGRAMMES } from 'graphql/programme';
+import { GET_PROGRAMME, DELETE_PROGRAMME, UPDATE_PROGRAMME, TOGGLE_PROGRAMME_VERIFICATION } from "graphql/programme";
+import { GET_COLLEGE_PROGRAMMES } from "graphql/programme";
 
-import { MAX_POST_IMAGE_SIZE } from 'constants/ImageSize';
-import { TermType } from 'constants/TermType';
-import { DegreeType } from 'constants/DegreeType';
+import { MAX_POST_IMAGE_SIZE } from "constants/ImageSize";
+import { TermType } from "constants/TermType";
+import { DegreeType } from "constants/DegreeType";
 
-import NewProgramme from './NewProgramme';
-import SimpleHeader from 'components/SimpleHeader';
-import NotFound from 'components/NotFound';
+import NewProgramme from "./NewProgramme";
+import SimpleHeader from "components/SimpleHeader";
+import NotFound from "components/NotFound";
 
-import { EXPLORE_PAGE_CARDS_LIMIT } from 'constants/DataLimit';
-import { UserRole } from 'constants/UserRole';
+import { EXPLORE_PAGE_CARDS_LIMIT } from "constants/DataLimit";
+import { UserRole } from "constants/UserRole";
 
-import { useStore } from 'store';
-import * as Routes from 'routes';
+import { useStore } from "store";
+import * as Routes from "routes";
 
 const useStyles = makeStyles((theme) => ({
   paper: {
     minHeight: 300,
     marginBottom: theme.spacing(4),
     background: theme.palette.background.default,
-    '& .MuiTextField-root': {
+    "& .MuiTextField-root": {
       margin: theme.spacing(1),
-      width: '96%',
+      width: "96%",
     },
   },
   imageWrapper: {
     height: 160,
   },
   image: {
-    width: '100%',
-    height: '100%',
-    objectFit: 'cover',
+    width: "100%",
+    height: "100%",
+    objectFit: "cover",
   },
   button: {
     borderRadius: theme.spacing(1.2),
@@ -66,7 +66,7 @@ const useStyles = makeStyles((theme) => ({
     bottom: theme.spacing(7),
   },
   input: {
-    display: 'none',
+    display: "none",
   },
 }));
 
@@ -74,19 +74,19 @@ const Programme = () => {
   const [{ auth }] = useStore();
   const classes = useStyles();
   const [open, setOpen] = useState(false);
-  const [message, setMessage] = useState('');
+  const [message, setMessage] = useState("");
   const client = useApolloClient();
   const { id } = useParams();
   const [loading, setLoading] = useState(false);
   const [editing, setEditing] = useState(false);
-  const [name, setName] = useState('');
-  const [fullName, setFullName] = useState('');
-  const [degree, setDegree] = useState('');
-  const [termType, setTermType] = useState('');
-  const [termsCount, setTermsCount] = useState('');
-  const [description, setDescription] = useState('');
-  const [photo, setPhoto] = useState('');
-  const [severity, setSeverity] = useState('error');
+  const [name, setName] = useState("");
+  const [fullName, setFullName] = useState("");
+  const [degree, setDegree] = useState("");
+  const [termType, setTermType] = useState("");
+  const [termsCount, setTermsCount] = useState("");
+  const [description, setDescription] = useState("");
+  const [photo, setPhoto] = useState("");
+  const [severity, setSeverity] = useState("error");
 
   if (id === Routes.NEW_ID_VALUE) {
     return <NewProgramme />;
@@ -151,7 +151,7 @@ const Programme = () => {
         ],
       });
     } catch (err) {
-      setMessage(err.graphQLErrors[0] ? err.graphQLErrors[0].message : 'Something went wrong, Please try again!');
+      setMessage(err.graphQLErrors[0] ? err.graphQLErrors[0].message : "Something went wrong, Please try again!");
       setOpen(true);
     }
 
@@ -178,7 +178,7 @@ const Programme = () => {
 
     if (file.size >= MAX_POST_IMAGE_SIZE) {
       setMessage(`File size should be less then ${MAX_POST_IMAGE_SIZE / 1000000}MB`);
-      setSeverity('warning');
+      setSeverity("warning");
       setOpen(true);
       return;
     }
@@ -197,7 +197,7 @@ const Programme = () => {
         mutation: UPDATE_PROGRAMME,
         variables: {
           input:
-            typeof photo !== 'string'
+            typeof photo !== "string"
               ? {
                   id,
                   name,
@@ -228,12 +228,12 @@ const Programme = () => {
         ],
       });
 
-      setMessage('Successfully updated programme!');
-      setSeverity('success');
+      setMessage("Successfully updated programme!");
+      setSeverity("success");
       setOpen(true);
     } catch (err) {
-      setMessage(err.graphQLErrors[0] ? err.graphQLErrors[0].message : 'Something went wrong, Please try again!');
-      setSeverity('error');
+      setMessage(err.graphQLErrors[0] ? err.graphQLErrors[0].message : "Something went wrong, Please try again!");
+      setSeverity("error");
       setOpen(true);
     }
 
@@ -245,17 +245,17 @@ const Programme = () => {
     const key = e.target.id || e.target.name;
     const value = e.target.value;
 
-    if (key === 'name') {
+    if (key === "name") {
       setName(value);
-    } else if (key === 'fullName') {
+    } else if (key === "fullName") {
       setFullName(value);
-    } else if (key === 'degree') {
+    } else if (key === "degree") {
       setDegree(value);
-    } else if (key === 'termType') {
+    } else if (key === "termType") {
       setTermType(value);
-    } else if (key === 'termsCount') {
+    } else if (key === "termsCount") {
       setTermsCount(value);
-    } else if (key === 'description') {
+    } else if (key === "description") {
       setDescription(value);
     }
   };
@@ -350,7 +350,7 @@ const Programme = () => {
           <MenuItem value="">
             <em>None</em>
           </MenuItem>
-          {['Bachelors', 'Masters', 'Doctorates', 'Diploma', 'Certificate'].map((degreeName, i) => (
+          {["Bachelors", "Masters", "Doctorates", "Diploma", "Certificate"].map((degreeName, i) => (
             <MenuItem key={degreeName} value={i}>
               {degreeName}
             </MenuItem>
@@ -374,7 +374,7 @@ const Programme = () => {
           <MenuItem value="">
             <em>None</em>
           </MenuItem>
-          {['Quarter', 'Semester', 'Year'].map((termName, i) => (
+          {["Quarter", "Semester", "Year"].map((termName, i) => (
             <MenuItem key={termName} value={i}>
               {termName}
             </MenuItem>
@@ -428,7 +428,7 @@ const Programme = () => {
           required
         />
       ) : (
-        <Typography gutterBottom style={{ whiteSpace: 'pre-line' }}>
+        <Typography gutterBottom style={{ whiteSpace: "pre-line" }}>
           {programme.description}
         </Typography>
       )}
@@ -457,7 +457,7 @@ const Programme = () => {
           className={classes.button}
           disabled={loading || UserRole.ADMIN > auth.user.role}
         >
-          {programme.verified ? 'Unverify' : 'Verify'}
+          {programme.verified ? "Unverify" : "Verify"}
         </Button>
       )}
 
@@ -470,7 +470,7 @@ const Programme = () => {
           className={classes.button}
           disabled={loading || UserRole.ADMIN > auth.user.role}
         >
-          {editing ? 'Cancel' : 'Edit'}
+          {editing ? "Cancel" : "Edit"}
         </Button>
       )}
 

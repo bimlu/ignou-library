@@ -18,8 +18,7 @@ export const soss = [
   {
     // 4
     code: "MRR-104",
-    title:
-      "Participatory Implementing & Monitoring of Resettlement & Rehabilitation",
+    title: "Participatory Implementing & Monitoring of Resettlement & Rehabilitation",
   },
   {
     // 5
@@ -845,8 +844,7 @@ export const soss = [
   {
     // 169
     code: "BPCL-007 and 008",
-    title:
-      "Practicals in Psychological Testing (BPCL-001) Practicals in Experimental Psychology (BPCL-008)",
+    title: "Practicals in Psychological Testing (BPCL-001) Practicals in Experimental Psychology (BPCL-008)",
   },
   {
     // 170

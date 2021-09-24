@@ -1,32 +1,32 @@
-import React, { useEffect, useState } from 'react';
-import { Link, generatePath, useLocation } from 'react-router-dom';
+import React, { useEffect, useState } from "react";
+import { Link, generatePath, useLocation } from "react-router-dom";
 
-import { makeStyles } from '@material-ui/core/styles';
-import BottomNavigation from '@material-ui/core/BottomNavigation';
-import BottomNavigationAction from '@material-ui/core/BottomNavigationAction';
+import { makeStyles } from "@material-ui/core/styles";
+import BottomNavigation from "@material-ui/core/BottomNavigation";
+import BottomNavigationAction from "@material-ui/core/BottomNavigationAction";
 
-import HomeIcon from '@material-ui/icons/HomeRounded';
-import ExploreIcon from '@material-ui/icons/ExploreRounded';
-import StudentsIcon from '@material-ui/icons/PeopleRounded';
-import ProfileIcon from '@material-ui/icons/PersonRounded';
+import HomeIcon from "@material-ui/icons/HomeRounded";
+import ExploreIcon from "@material-ui/icons/ExploreRounded";
+import StudentsIcon from "@material-ui/icons/PeopleRounded";
+import ProfileIcon from "@material-ui/icons/PersonRounded";
 
-import { BOTTOM_NAV_HEIGHT } from 'constants/Layout';
+import { BOTTOM_NAV_HEIGHT } from "constants/Layout";
 
-import * as Routes from 'routes';
-import { useStore } from 'store';
+import * as Routes from "routes";
+import { useStore } from "store";
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    width: '100%',
+    width: "100%",
     height: `${BOTTOM_NAV_HEIGHT}px`,
-    position: 'fixed',
+    position: "fixed",
     bottom: 0,
     left: 0,
     right: 0,
     zIndex: theme.zIndex.md,
     borderTop: `1px dotted ${theme.palette.text.secondary}`,
-    [theme.breakpoints.up('md')]: {
-      display: 'none',
+    [theme.breakpoints.up("md")]: {
+      display: "none",
     },
   },
 }));
@@ -35,7 +35,7 @@ export default function SimpleBottomNavigation() {
   const [{ auth, route }] = useStore();
   const classes = useStyles();
   const { pathname } = useLocation();
-  const [value, setValue] = useState('');
+  const [value, setValue] = useState("");
 
   useEffect(() => {
     if (pathname === Routes.HOME) {
@@ -53,7 +53,7 @@ export default function SimpleBottomNavigation() {
       setValue(3);
     } else if (pathname === Routes.PEOPLE) {
       setValue(2);
-    } else if (!pathname.slice(1).includes('/')) {
+    } else if (!pathname.slice(1).includes("/")) {
       setValue(2);
     } else {
       setValue(null);

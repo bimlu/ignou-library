@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 /**
  * Github icon
@@ -7,8 +7,8 @@ import React from 'react';
  * @param {string} color
  */
 export const GithubIcon = ({ width, color }) => {
-  const DEFAULT_WIDTH = '20';
-  const DEFAULT_COLOR = 'black';
+  const DEFAULT_WIDTH = "20";
+  const DEFAULT_COLOR = "black";
 
   return (
     <svg

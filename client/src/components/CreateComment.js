@@ -1,27 +1,27 @@
-import React, { useState, useRef, useEffect } from 'react';
-import PropTypes from 'prop-types';
-import { useMutation } from '@apollo/client';
+import React, { useState, useRef, useEffect } from "react";
+import PropTypes from "prop-types";
+import { useMutation } from "@apollo/client";
 
-import { makeStyles } from '@material-ui/core/styles';
-import Input from '@material-ui/core/Input';
-import SendIcon from '@material-ui/icons/Send';
-import IconButton from '@material-ui/core/IconButton';
-import LinearProgress from '@material-ui/core/LinearProgress';
+import { makeStyles } from "@material-ui/core/styles";
+import Input from "@material-ui/core/Input";
+import SendIcon from "@material-ui/icons/Send";
+import IconButton from "@material-ui/core/IconButton";
+import LinearProgress from "@material-ui/core/LinearProgress";
 
-import { GET_AUTH_USER, GET_USER } from 'graphql/user';
-import { GET_POST, GET_POSTS, GET_FOLLOWED_POSTS } from 'graphql/post';
-import { CREATE_COMMENT } from 'graphql/comment';
+import { GET_AUTH_USER, GET_USER } from "graphql/user";
+import { GET_POST, GET_POSTS, GET_FOLLOWED_POSTS } from "graphql/post";
+import { CREATE_COMMENT } from "graphql/comment";
 
-import { NotificationType } from 'constants/NotificationType';
+import { NotificationType } from "constants/NotificationType";
 
-import { useNotifications } from 'hooks/useNotifications';
+import { useNotifications } from "hooks/useNotifications";
 
-import { useStore } from 'store';
+import { useStore } from "store";
 
 const useStyles = makeStyles(() => ({
   form: {
-    display: 'flex',
-    justifyContent: 'space-between',
+    display: "flex",
+    justifyContent: "space-between",
   },
 }));
 
@@ -32,7 +32,7 @@ const CreateComment = ({ post, focus }) => {
   const classes = useStyles();
   const [{ auth }] = useStore();
   const notification = useNotifications();
-  const [comment, setComment] = useState('');
+  const [comment, setComment] = useState("");
   const buttonEl = useRef(null);
   const TextareaEl = useRef(false);
   const [createComment, { loading }] = useMutation(CREATE_COMMENT, {
@@ -59,7 +59,7 @@ const CreateComment = ({ post, focus }) => {
     const { data } = await createComment({
       variables: { input: { comment, author: auth.user.id, postId: post.id } },
     });
-    setComment('');
+    setComment("");
 
     // Create notification on comment
     if (auth.user.id !== post.author.id) {
@@ -98,7 +98,7 @@ const CreateComment = ({ post, focus }) => {
           disabled={loading}
         />
 
-        <IconButton type="submit" color={comment ? 'primary' : 'default'} ref={buttonEl} disabled={!comment || loading}>
+        <IconButton type="submit" color={comment ? "primary" : "default"} ref={buttonEl} disabled={!comment || loading}>
           <SendIcon />
         </IconButton>
       </form>

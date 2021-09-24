@@ -1,22 +1,22 @@
-import React, { Fragment, useEffect } from 'react';
-import styled from 'styled-components';
-import { useLocation } from 'react-router-dom';
+import React, { Fragment, useEffect } from "react";
+import styled from "styled-components";
+import { useLocation } from "react-router-dom";
 
-import { Loading } from 'components/Loading';
-import Empty from 'components/Empty';
-import InfiniteScroll from 'components/InfiniteScroll';
-import Head from 'components/Head';
-import PeopleCard from 'components/Cards/PeopleCard';
-import ScrollManager from 'components/ScrollManager';
+import { Loading } from "components/Loading";
+import Empty from "components/Empty";
+import InfiniteScroll from "components/InfiniteScroll";
+import Head from "components/Head";
+import PeopleCard from "components/Cards/PeopleCard";
+import ScrollManager from "components/ScrollManager";
 
-import { GET_USERS } from 'graphql/user';
+import { GET_USERS } from "graphql/user";
 
-import { PEOPLE_PAGE_USERS_LIMIT } from 'constants/DataLimit';
+import { PEOPLE_PAGE_USERS_LIMIT } from "constants/DataLimit";
 
-import { useStore } from 'store';
-import { SET_PEOPLE_ROUTE } from 'store/route';
+import { useStore } from "store";
+import { SET_PEOPLE_ROUTE } from "store/route";
 
-import { useQuery } from '@apollo/client';
+import { useQuery } from "@apollo/client";
 
 const PeopleContainer = styled.div`
   display: grid;
@@ -58,7 +58,7 @@ const People = () => {
       );
     }
 
-    if (error) return 'Please check your internet connection';
+    if (error) return "Please check your internet connection";
 
     const { users, count } = data.getUsers;
     if (!users.length > 0) return <Empty text="No people yet." />;

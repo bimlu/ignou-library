@@ -1,31 +1,31 @@
-import React from 'react';
-import { Switch, Route, Redirect } from 'react-router-dom';
+import React from "react";
+import { Switch, Route, Redirect } from "react-router-dom";
 
-import { makeStyles } from '@material-ui/core/styles';
-import Box from '@material-ui/core/Box';
+import { makeStyles } from "@material-ui/core/styles";
+import Box from "@material-ui/core/Box";
 
-import BreadcrumbsNav from 'components/BreadcrumbsNav';
+import BreadcrumbsNav from "components/BreadcrumbsNav";
 
-import Colleges from 'pages/College/Colleges';
-import Programmes from 'pages/Programme/Programmes';
-import Courses from 'pages/Course/Courses';
-import Posts from 'pages/Post/Posts';
-import HideOnScroll from 'components/App/Header/HideOnScroll';
+import Colleges from "pages/College/Colleges";
+import Programmes from "pages/Programme/Programmes";
+import Courses from "pages/Course/Courses";
+import Posts from "pages/Post/Posts";
+import HideOnScroll from "components/App/Header/HideOnScroll";
 
-import { HEADER_HEIGHT } from 'constants/Layout';
+import { HEADER_HEIGHT } from "constants/Layout";
 
-import * as Routes from 'routes';
+import * as Routes from "routes";
 
 const useStyles = makeStyles((theme) => ({
   box: {
-    position: 'sticky',
+    position: "sticky",
     top: HEADER_HEIGHT + 12,
     zIndex: theme.zIndex.appBar + 1,
     marginBottom: theme.spacing(2),
     borderRadius: theme.spacing(0),
     background: theme.palette.background.default,
-    [theme.breakpoints.down('sm')]: {
-      position: 'fixed',
+    [theme.breakpoints.down("sm")]: {
+      position: "fixed",
       top: 0,
       left: 0,
       right: 0,
