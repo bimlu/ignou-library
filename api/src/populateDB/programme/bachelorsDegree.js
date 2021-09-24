@@ -375,7 +375,7 @@ export const bachelorsDegreeProgrammes = [
       { term: 3, courseCode: "BHDLA-137", category: Category.CC, credit: 6 },
       { term: 3, courseCode: "BEGLA-137", category: Category.CC, credit: 6 },
       { term: 3, courseCode: "BCOC-135", category: Category.CC, credit: 6 },
-      { term: 3, courseCode: "BCOC13-6", category: Category.CC, credit: 6 },
+      { term: 3, courseCode: "BCOC-136", category: Category.CC, credit: 6 },
       { term: 3, courseCode: "BCOS-183", category: Category.SEC, credit: 4 },
 
       { term: 4, courseCode: "BCOLA-138", category: Category.CC, credit: 6 },
@@ -601,7 +601,7 @@ export const bachelorsDegreeProgrammes = [
       { term: 6, courseCode: "BGYEL-148", category: Category.DSE, credit: 6 },
       { term: 6, courseCode: "BMTE-144", category: Category.DSE, credit: 6 },
       { term: 6, courseCode: "BPHET-143", category: Category.DSE, credit: 6 },
-      { term: 6, courseCode: "BPHEL14-4", category: Category.DSE, credit: 6 },
+      { term: 6, courseCode: "BPHEL-144", category: Category.DSE, credit: 6 },
       { term: 6, courseCode: "BZYET-143", category: Category.DSE, credit: 6 },
       { term: 6, courseCode: "BZYEL-144", category: Category.DSE, credit: 6 },
       { term: 6, courseCode: "BCHET-147", category: Category.DSE, credit: 6 },

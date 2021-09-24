@@ -13,6 +13,7 @@ import { createApolloServer } from "./apollo-server";
 import { initPassport } from "./authentication";
 import models from "./models";
 import { populateDB } from "./populateDB";
+// import Programme from "./models/Programme";
 import resolvers from "./resolvers";
 import routes from "./routes";
 import schema from "./schema";
@@ -91,3 +92,15 @@ const PORT = process.env.PORT || process.env.API_PORT;
 httpServer.listen({ port: PORT }, () => {
   logger.info(`Server listening on port ${PORT}`);
 });
+
+// Programme.find({ code: "BAG" })
+//   .populate("courses")
+//   .populate({ path: "programmeStructure", populate: { path: "courseCode" } })
+//   .exec((err, res) => {
+//     if (err) throw err;
+//     console.log(res);
+//     console.log("******************************");
+//     console.log(res[0].programmeStructure);
+//     console.log("*****************************");
+//     console.log(res[0].programmeStructure[0].courseCode);
+//   });

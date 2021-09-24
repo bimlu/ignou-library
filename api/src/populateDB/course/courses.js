@@ -6,6 +6,7 @@ import { bachelorsHonoursDegreeCourses } from "./bachelorsHonoursDegree";
 import { certificateCourses } from "./certificate";
 import { diplomaCourses } from "./diploma";
 import { mastersDegreeCourses } from "./mastersDegree";
+import { missingCourses } from "./missingCourses";
 import { pgGraduateCertificateCourses } from "./pgGraduateCertificate";
 import { pgGraduateDiplomaCourses } from "./pgGraduateDiploma";
 
@@ -31,7 +32,8 @@ export const getCourses = () => {
     .concat(diplomaCourses)
     .concat(pgGraduateCertificateCourses)
     .concat(pgGraduateDiplomaCourses)
-    .concat(awarenessAndAppreciationCourses);
+    .concat(awarenessAndAppreciationCourses)
+    .concat(missingCourses);
   const outCourses = [];
 
   // console.log("bachelorsDegreeCourses: ", bachelorsDegreeCourses.length);
