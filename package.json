@@ -1,0 +1,27 @@
+{
+  "name": "ignou-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "format": "prettier --trailing-comma es5 --write '**/*.{ts,js,md,json}'"
+  },
+  "workspaces": [
+    "api",
+    "client"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bimlu/ignou-app.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bimlu/ignou-app/issues"
+  },
+  "homepage": "https://github.com/bimlu/ignou-app#readme",
+  "devDependencies": {
+    "prettier": "^2.4.1"
+  }
+}
