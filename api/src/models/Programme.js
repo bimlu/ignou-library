@@ -27,7 +27,7 @@ const courseListSchema = new Schema({
   LA: [{ type: String, ref: "Course" }],
 });
 
-const dataSchema = new Schema({
+const programmeStructureSchema = new Schema({
   term: Number,
   courseCode: { type: String, ref: "Course" },
   credit: Number,
@@ -106,7 +106,7 @@ const programmeSchema = Schema(
     school: { type: String, ref: "School" },
     collegeCode: String,
     schoolCode: String,
-    data: [dataSchema],
+    programmeStructure: [programmeStructureSchema],
   },
   {
     timestamps: true,

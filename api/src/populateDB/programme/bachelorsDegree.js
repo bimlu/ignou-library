@@ -173,7 +173,7 @@ export const bachelorsDegreeProgrammes = [
         "BPYG-172",
       ],
     },
-    data: [
+    programmeStructure: [
       { term: 1, courseCode: "BHDLA-135", category: "CC", credit: 6 },
       { term: 1, courseCode: "BEGLA-135", category: "CC", credit: 6 },
       { term: 1, courseCode: "BUDLA-135", category: "CC", credit: 6 },
@@ -374,7 +374,7 @@ export const bachelorsDegreeProgrammes = [
         "BHDLA-137",
       ],
     },
-    data: [
+    programmeStructure: [
       { term: 1, courseCode: "BEGLA-135", category: "CC", credit: 6 },
       { term: 1, courseCode: "BCOC-131", category: "CC", credit: 6 },
       { term: 1, courseCode: "BCOC-132", category: "CC", credit: 6 },
@@ -524,7 +524,7 @@ export const bachelorsDegreeProgrammes = [
         "BCOS-186",
       ],
     },
-    data: [
+    programmeStructure: [
       { term: 1, courseCode: "BBYCT-131", category: "CC", credit: 6 },
       { term: 1, courseCode: "BBYCL-132", category: "CC", credit: 6 },
       { term: 1, courseCode: "BCHCT-131", category: "CC", credit: 6 },
@@ -691,7 +691,7 @@ export const bachelorsDegreeProgrammes = [
         { course: "BCSP-64", credit: 8 },
       ],
     },
-    data: [
+    programmeStructure: [
       { term: 1, courseCode: "FEG-2", category: "NONE", credit: 4 },
       { term: 1, courseCode: "ECO-1", category: "NONE", credit: 4 },
       { term: 1, courseCode: "BCS-11", category: "NONE", credit: 3 },
@@ -760,7 +760,7 @@ export const bachelorsDegreeProgrammes = [
         { course: "BLIE-229", credit: 4 },
       ],
     },
-    data: [
+    programmeStructure: [
       { term: 1, courseCode: "BLI-221", category: "NONE", credit: 4 },
       { term: 1, courseCode: "BLI-222", category: "NONE", credit: 4 },
       { term: 1, courseCode: "BLI-223", category: "NONE", credit: 4 },
@@ -811,7 +811,7 @@ export const bachelorsDegreeProgrammes = [
         { course: "BHDA-101", credit: 4 },
       ],
     },
-    data: [
+    programmeStructure: [
       { term: 1, courseCode: "TS-1", category: "NONE", credit: 8 },
       { term: 1, courseCode: "TS-2", category: "NONE", credit: 8 },
       { term: 1, courseCode: "BSHF-101", category: "NONE", credit: 8 },
@@ -880,7 +880,7 @@ export const bachelorsDegreeProgrammes = [
         { course: "BSWL-109", credit: 10 },
       ],
     },
-    data: [
+    programmeStructure: [
       { term: 1, courseCode: "BHDLA-135", category: "NONE", credit: 6 },
       { term: 1, courseCode: "BEGLA-135", category: "NONE", credit: 6 },
       { term: 1, courseCode: "BSW-121", category: "NONE", credit: 6 },
@@ -942,7 +942,7 @@ export const bachelorsDegreeProgrammes = [
         { course: "BRLT-16", credit: 12 },
       ],
     },
-    data: [
+    programmeStructure: [
       { term: 1, courseCode: "BRL-1", category: "NONE", credit: 4 },
       { term: 1, courseCode: "BRL-2", category: "NONE", credit: 4 },
       { term: 1, courseCode: "BRL-3", category: "NONE", credit: 4 },
@@ -1002,7 +1002,7 @@ export const bachelorsDegreeProgrammes = [
         "BSKLA-135",
       ],
     },
-    data: [
+    programmeStructure: [
       { term: 1, courseCode: "BHDLA-135", category: "CC", credit: 6 },
       { term: 1, courseCode: "BEGLA-135", category: "CC", credit: 6 },
       { term: 1, courseCode: "BUDLA-135", category: "CC", credit: 6 },
