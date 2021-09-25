@@ -40,6 +40,7 @@ export const createCourse = async (course) => {
   const newCourse = await new Course({
     ...course,
     college: college.id,
+    image: "https://ignou-app-1.s3.ap-south-1.amazonaws.com/demo-images/street.jpg",
     // programme: programme.id,
   }).save();
   // await Programme.findOneAndUpdate(

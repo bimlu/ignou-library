@@ -3,6 +3,15 @@ import Course from "../../models/Course";
 import Programme from "../../models/Programme";
 import { getProgrammes, saveProgrammes } from "./programme";
 
+const IMAGES = [
+  "https://ignou-app-1.s3.ap-south-1.amazonaws.com/demo-images/girl.jpg",
+  "https://ignou-app-1.s3.ap-south-1.amazonaws.com/demo-images/monstar.jpg",
+  "https://ignou-app-1.s3.ap-south-1.amazonaws.com/demo-images/robot.jpg",
+  "https://ignou-app-1.s3.ap-south-1.amazonaws.com/demo-images/pubg.jpg",
+];
+
+const getRandomImage = () => IMAGES[Math.floor(Math.random() * IMAGES.length)];
+
 export const createProgrammes = () => {
   const programmes = getProgrammes();
   // const programmesFixed = addCoursesField(programmes);
@@ -53,6 +62,7 @@ export const createProgramme = async (programme) => {
   const newProgramme = await new Programme({
     ...programme,
     college: college.id,
+    image: getRandomImage(),
   }).save();
   await College.findOneAndUpdate(
     { code: programme.collegeCode },

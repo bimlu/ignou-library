@@ -6,6 +6,7 @@ export const createCollege = () => {
     fullName: "Indira Gandhi National Open University",
     code: "IGNOU",
     title: "Indira Gandhi National Open University",
+    image: "https://ignou-app-1.s3.ap-south-1.amazonaws.com/demo-images/ignou.jpg",
     programmes: [],
     recognition: `
       IGNOU is a NATIONAL OPEN UNIVERSITY established by an Act of Parliament in 1985 (Act No. 50 of 1985).
