@@ -41,7 +41,7 @@ export const createProgramme = async (programme) => {
       const course = await Course.findOne({ code: crs.courseCode });
       if (!course) {
         console.log("Error: couldn't find course with code:", crs.courseCode, "\tAborting programme:", programme.code);
-        return;
+        continue;
       }
       newProgrammeStructure.push({ ...crs, course: course.id });
     }

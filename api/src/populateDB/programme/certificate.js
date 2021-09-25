@@ -1,4 +1,4 @@
-import { Degree, TermType } from "../../constants/types";
+import { Degree, TermType, Category } from "../../constants/types";
 
 export const certificateProgrammes = [
   {
