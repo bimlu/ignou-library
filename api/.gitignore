@@ -17,5 +17,6 @@ yarn-error.log*
 
 # Later added
 .env.production
+.env.local
 logs/
 build/
