@@ -6,7 +6,7 @@ import Empty from "components/Empty";
 import Head from "components/Head";
 import ScrollManager from "components/ScrollManager";
 import { EXPLORE_PAGE_CARDS_LIMIT } from "constants/DataLimit";
-import { GET_PROGRAMME_STRUCTURE } from 'graphql/programme';
+import { GET_PROGRAMME_STRUCTURE } from "graphql/programme";
 import CourseInfo from "pages/Course/CourseInfo";
 import ExploreHeader from "pages/Explore/ExploreHeader";
 import React, { useEffect, useState } from "react";
@@ -41,7 +41,7 @@ const Courses = () => {
     // programmeId: programmeId,
     // skip: 0,
     // limit: EXPLORE_PAGE_CARDS_LIMIT,
-    id: programmeId
+    id: programmeId,
   };
   const { data, loading, error, networkStatus } = useQuery(GET_PROGRAMME_STRUCTURE, {
     variables,
@@ -66,10 +66,10 @@ const Courses = () => {
 
     if (error) return "Please check your internet connection";
 
-    console.log('data: ', data)
+    // console.log('data: ', data)
 
     const programme = data.getProgrammeStructure;
-    if (!programme) return null
+    if (!programme) return null;
     if (!programme.programmeStructure) return <Empty text="No courses yet." />;
     if (!programme.programmeStructure > 0) return <Empty text="No courses yet." />;
     const courses = programme.programmeStructure;
@@ -92,7 +92,7 @@ const Courses = () => {
               postsCount={course.course.postsCount}
             />
           ))}
-      </CardsContainer>   
+      </CardsContainer>
     );
   };
 

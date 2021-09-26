@@ -60,6 +60,7 @@ const App = () => {
             "@global": {
               "*::-webkit-scrollbar": {
                 width: "0.55em",
+                height: "0.55em",
               },
               "*::-webkit-scrollbar-thumb": {
                 backgroundColor: "rgba(0,0,0,.4)",

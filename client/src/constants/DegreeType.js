@@ -12,12 +12,12 @@ export const DegreeType2 = [
 ];
 
 export const DegreeType3 = [
-  ["bachelors", "Bachelor's Degree Programmes"],
-  ["bachelorsHonours", "Bachelor's (Honours) Degree Programmes"],
-  ["masters", "Master's Degree Programmes"],
-  ["diploma", "Diploma Programmes"],
-  ["pgGraduateDiploma", "PG Graduate Diploma Programmes"],
-  ["certificate", "Certificate Programmes"],
-  ["pgGraduateCertificate", "PG Graduate Certificate Programmes"],
-  ["awarenessAndAppreciation", "Awareness and Appreciation Programmes"],
+  ["bachelors", "Bachelor's Degree Programmes", "Bachelor"],
+  ["bachelorsHonours", "Bachelor's (Honours) Degree Programmes", "Bachelor Hons."],
+  ["masters", "Master's Degree Programmes", "Master"],
+  ["diploma", "Diploma Programmes", "Diploma"],
+  ["pgGraduateDiploma", "PG Graduate Diploma Programmes", "PG Diploma"],
+  ["certificate", "Certificate Programmes", "Certificate"],
+  ["pgGraduateCertificate", "PG Graduate Certificate Programmes", "PG Certificate"],
+  ["awarenessAndAppreciation", "Awareness and Appreciation Programmes", "Awareness"],
 ];

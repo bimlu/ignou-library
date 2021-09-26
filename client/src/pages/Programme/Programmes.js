@@ -1,4 +1,4 @@
-import React, { Fragment, useEffect } from "react";
+import React, { Fragment, useEffect, useState } from "react";
 import { useQuery } from "@apollo/client";
 import { useLocation } from "react-router-dom";
 
@@ -14,12 +14,16 @@ import { Loading } from "components/Loading";
 import Head from "components/Head";
 import SolidCard from "components/Cards/SolidCard";
 import ScrollManager from "components/ScrollManager";
+import Box from "@material-ui/core/Box";
+import Divider from "@material-ui/core/Divider";
+import ProgrammeFilter from "./ProgrammeFilter";
 
 import { EXPLORE_PAGE_CARDS_LIMIT } from "constants/DataLimit";
 
 import { useStore } from "store";
 import { SET_EXPLORE_ROUTE } from "store/route";
 import * as Routes from "routes";
+import { DegreeType2 } from "constants/DegreeType";
 
 /**
  * Programmes page
@@ -39,6 +43,8 @@ const Programmes = () => {
   const collegeId = ignou.id;
   const collegeName = ignou.name;
 
+  const [degree, setDegree] = useState("all");
+
   const variables = {
     collegeId: collegeId,
     skip: 0,
@@ -48,6 +54,11 @@ const Programmes = () => {
     variables,
     notifyOnNetworkStatusChange: true,
   });
+
+  useEffect(() => {
+    hash && setDegree(hash.slice(8)); // slice '#degree=bachelors'
+    dispatch({ type: SET_EXPLORE_ROUTE, payload: pathname + search + hash });
+  }, [hash]);
 
   useEffect(() => {
     dispatch({ type: SET_EXPLORE_ROUTE, payload: pathname + search + hash });
@@ -82,18 +93,20 @@ const Programmes = () => {
           return (
             <Fragment>
               <CardsContainer>
-                {data.map((programme, i) => (
-                  <SolidCard
-                    key={programme.id}
-                    title={programme.name}
-                    subtitle={programme.fullName}
-                    image={programme.image}
-                    color={cardColors[i % cardColors.length]}
-                    url={`${Routes.COURSES}?collegeId=${collegeId}&collegeName=${collegeName}&programmeId=${programme.id}&programmeName=${programme.name}&termType=${programme.termType}&termsCount=${programme.termsCount}#term=all`}
-                    studentData={`Students: ${programme.studentsCount}`}
-                    otherData={`Courses: ${programme.coursesCount}`}
-                  />
-                ))}
+                {data
+                  .filter((programme) => degree === "all" || programme.degree === DegreeType2.indexOf(degree))
+                  .map((programme, i) => (
+                    <SolidCard
+                      key={programme.id}
+                      title={programme.name}
+                      subtitle={programme.fullName}
+                      image={programme.image}
+                      color={cardColors[i % cardColors.length]}
+                      url={`${Routes.COURSES}?collegeId=${collegeId}&collegeName=${collegeName}&programmeId=${programme.id}&programmeName=${programme.name}&termType=${programme.termType}&termsCount=${programme.termsCount}#term=all`}
+                      studentData={`Students: ${programme.studentsCount}`}
+                      otherData={`Courses: ${programme.coursesCount}`}
+                    />
+                  ))}
               </CardsContainer>
 
               {showNextLoading && <Loading top="lg" />}
@@ -113,6 +126,12 @@ const Programmes = () => {
       <ExploreHeader />
 
       {/* <ProgrammeInfo collegeId={collegeId} /> */}
+
+      <ProgrammeFilter degreesCount={8} selectedDegree={degree} />
+
+      <Box m={1} mb={2}>
+        <Divider />
+      </Box>
 
       {renderContent()}
     </>
