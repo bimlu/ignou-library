@@ -5,7 +5,7 @@ import ArrowRightIcon from "@material-ui/icons/ArrowRight";
 // import Label from "@material-ui/icons/Label";
 import TreeView from "@material-ui/lab/TreeView";
 import { CollegeIcon, CourseIcon, ProgrammeIcon } from "components/icons";
-import { DegreeType2 } from "constants/DegreeType";
+import { DegreeType3 } from "constants/DegreeType";
 import { TermType } from "constants/TermType";
 import React, { useLayoutEffect } from "react";
 import { Link } from "react-router-dom";
@@ -65,7 +65,7 @@ export default function CollegesTreeView({ selectedNodeValue, setSelectedNodeVal
       {/* *************COLLEGE-LIST************* */}
       {colleges.map((college) => {
         const programmes = college.programmes;
-        const degrees = Array.from(new Array(DegreeType2.length)).map(() => []);
+        const degrees = Array.from(new Array(DegreeType3.length)).map(() => []);
         programmes.forEach((programme) => degrees[programme.degree].push(programme));
         // console.log(college.id);
 
@@ -82,7 +82,7 @@ export default function CollegesTreeView({ selectedNodeValue, setSelectedNodeVal
               </Link>
             }
             labelIcon={() => <CollegeIcon width="20" />}
-            labelInfo={programmes.length === 0 ? "" : `${String(programmes.length)} Prg`}
+            labelInfo={programmes.length === 0 ? "" : `${String(programmes.length)}`}
             color="#e3742f"
             bgColor="#fcefe3"
           >
@@ -92,8 +92,8 @@ export default function CollegesTreeView({ selectedNodeValue, setSelectedNodeVal
                 <StyledTreeItem
                   key={idx}
                   nodeId={`degree-${idx}`}
-                  labelText={`${DegreeType2[idx]}`}
-                  labelInfo={degree.length === 0 ? "" : `${String(degree.length)} Prg`}
+                  labelText={`${DegreeType3[idx][1]}`}
+                  labelInfo={degree.length === 0 ? "" : `${String(degree.length)}`}
                 >
                   {/* ************PROGRAMME-LIST*********** */}
                   {degree.map((programme) => {
