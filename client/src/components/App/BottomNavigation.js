@@ -72,7 +72,7 @@ export default function SimpleBottomNavigation() {
       <BottomNavigationAction component={Link} to={Routes.HOME} label="Home" icon={<HomeIcon fontSize="small" />} />
       <BottomNavigationAction
         component={Link}
-        to={value === 1 ? Routes.COLLEGES : route.explore}
+        to={value === 1 ? Routes.PROGRAMMES : route.explore}
         label="Explore"
         icon={<ExploreIcon fontSize="small" />}
         fontSize="small"

@@ -4,7 +4,7 @@ import { useLocation } from "react-router-dom";
 
 import { GET_COLLEGE_PROGRAMMES } from "graphql/programme";
 
-import ProgrammeInfo from "pages/Programme/ProgrammeInfo";
+// import ProgrammeInfo from "pages/Programme/ProgrammeInfo";
 import ExploreHeader from "pages/Explore/ExploreHeader";
 
 import CardsContainer from "components/Cards/CardsContainer";
@@ -27,12 +27,17 @@ import * as Routes from "routes";
 const Programmes = () => {
   const cardColors = ["#203f52", "#4d137f", "#002244", "#004953"];
 
-  const [, dispatch] = useStore();
+  const [{ datatree }, dispatch] = useStore();
   const { pathname, search, hash } = useLocation();
 
-  const query = new URLSearchParams(search);
-  const collegeId = query.get("collegeId");
-  const collegeName = query.get("collegeName");
+  if (!datatree.colleges) return "";
+  const colleges = datatree.colleges;
+  // console.log(colleges);
+  const ignou = colleges[0];
+
+  // const query = new URLSearchParams(search);
+  const collegeId = ignou.id;
+  const collegeName = ignou.name;
 
   const variables = {
     collegeId: collegeId,
@@ -107,7 +112,7 @@ const Programmes = () => {
 
       <ExploreHeader />
 
-      <ProgrammeInfo collegeId={collegeId} />
+      {/* <ProgrammeInfo collegeId={collegeId} /> */}
 
       {renderContent()}
     </>
