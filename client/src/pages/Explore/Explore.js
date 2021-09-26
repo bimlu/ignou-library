@@ -62,7 +62,7 @@ const Explore = () => {
           <Colleges />
         </Route>
 
-        <Redirect to={Routes.COLLEGES} />
+        <Redirect to={Routes.PROGRAMMES} />
       </Switch>
     </>
   );
