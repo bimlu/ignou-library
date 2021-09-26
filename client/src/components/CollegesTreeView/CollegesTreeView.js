@@ -2,7 +2,7 @@ import { makeStyles } from "@material-ui/core/styles";
 import AddIcon from "@material-ui/icons/Add";
 import ArrowDropDownIcon from "@material-ui/icons/ArrowDropDown";
 import ArrowRightIcon from "@material-ui/icons/ArrowRight";
-import Label from "@material-ui/icons/Label";
+// import Label from "@material-ui/icons/Label";
 import TreeView from "@material-ui/lab/TreeView";
 import { CollegeIcon, CourseIcon, ProgrammeIcon } from "components/icons";
 import { DegreeType2 } from "constants/DegreeType";
@@ -21,7 +21,11 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 // keep track of expanded nodes and save to store before this component unmounts
-let expanded = ["allColleges", "605a4638198e3f5b2e715c8c"]; // colleges and IGNOU
+let expanded = [
+  "allColleges" /* deprecated */,
+  "614f5a3f2ddf2265db42b297" /* ignou id on bimlee-live-2 local db */,
+  "614f5b8edcb313697c145015" /* ignou id on ignou-app-1 atlas */,
+]; // colleges and IGNOU
 
 export default function CollegesTreeView({ selectedNodeValue, setSelectedNodeValue }) {
   const classes = useStyles();
@@ -50,133 +54,134 @@ export default function CollegesTreeView({ selectedNodeValue, setSelectedNodeVal
         setSelectedNodeValue(value);
       }}
     >
-      <StyledTreeItem
+      {/* <StyledTreeItem
         nodeId="allColleges"
         labelText="All Colleges"
         labelIcon={() => <Label fontSize="small" />}
         labelInfo={colleges.length === 0 ? "" : `${String(colleges.length)} Univ`}
         color="#1a73e8"
         bgColor="#e8f0fe"
-      >
-        {/* *************COLLEGE-LIST************* */}
-        {colleges.map((college) => {
-          const programmes = college.programmes;
-          const degrees = Array.from(new Array(DegreeType2.length)).map(() => []);
-          programmes.forEach((programme) => degrees[programme.degree].push(programme));
+      > */}
+      {/* *************COLLEGE-LIST************* */}
+      {colleges.map((college) => {
+        const programmes = college.programmes;
+        const degrees = Array.from(new Array(DegreeType2.length)).map(() => []);
+        programmes.forEach((programme) => degrees[programme.degree].push(programme));
+        // console.log(college.id);
 
-          return (
-            <StyledTreeItem
-              key={college.id}
-              nodeId={college.id}
-              labelText={
-                <Link
-                  to={`${Routes.PROGRAMMES}?collegeId=${college.id}&collegeName=${college.name}`}
-                  className={classes.link}
+        return (
+          <StyledTreeItem
+            key={college.id}
+            nodeId={college.id}
+            labelText={
+              <Link
+                to={`${Routes.PROGRAMMES}?collegeId=${college.id}&collegeName=${college.name}`}
+                className={classes.link}
+              >
+                {college.name}
+              </Link>
+            }
+            labelIcon={() => <CollegeIcon width="20" />}
+            labelInfo={programmes.length === 0 ? "" : `${String(programmes.length)} Prg`}
+            color="#e3742f"
+            bgColor="#fcefe3"
+          >
+            {/* **************DEGREE-LIST************* */}
+            {degrees.map((degree, idx) => {
+              return (
+                <StyledTreeItem
+                  key={idx}
+                  nodeId={`degree-${idx}`}
+                  labelText={`${DegreeType2[idx]}`}
+                  labelInfo={degree.length === 0 ? "" : `${String(degree.length)} Prg`}
                 >
-                  {college.name}
-                </Link>
-              }
-              labelIcon={() => <CollegeIcon width="20" />}
-              labelInfo={programmes.length === 0 ? "" : `${String(programmes.length)} Prg`}
-              color="#e3742f"
-              bgColor="#fcefe3"
-            >
-              {/* **************DEGREE-LIST************* */}
-              {degrees.map((degree, idx) => {
-                return (
-                  <StyledTreeItem
-                    key={idx}
-                    nodeId={`degree-${idx}`}
-                    labelText={`${DegreeType2[idx]}`}
-                    labelInfo={degree.length === 0 ? "" : `${String(degree.length)} Prg`}
-                  >
-                    {/* ************PROGRAMME-LIST*********** */}
-                    {degree.map((programme) => {
-                      const courses = programme.courses;
-                      const terms = Array.from(new Array(programme.termsCount)).map(() => []);
-                      courses.forEach((course) => terms[course.term - 1].push(course));
+                  {/* ************PROGRAMME-LIST*********** */}
+                  {degree.map((programme) => {
+                    const courses = programme.courses;
+                    const terms = Array.from(new Array(programme.termsCount)).map(() => []);
+                    courses.forEach((course) => terms[course.term - 1].push(course));
 
-                      return (
-                        <StyledTreeItem
-                          key={programme.id}
-                          nodeId={`${college.id}-${programme.id}`}
-                          labelText={
-                            <Link
-                              to={`${Routes.COURSES}?collegeId=${college.id}&collegeName=${college.name}&programmeId=${programme.id}&programmeName=${programme.name}&termType=${programme.termType}&termsCount=${programme.termsCount}#term=all`}
-                              className={classes.link}
+                    return (
+                      <StyledTreeItem
+                        key={programme.id}
+                        nodeId={`${college.id}-${programme.id}`}
+                        labelText={
+                          <Link
+                            to={`${Routes.COURSES}?collegeId=${college.id}&collegeName=${college.name}&programmeId=${programme.id}&programmeName=${programme.name}&termType=${programme.termType}&termsCount=${programme.termsCount}#term=all`}
+                            className={classes.link}
+                          >
+                            {programme.name}
+                          </Link>
+                        }
+                        labelIcon={() => <ProgrammeIcon width="19" />}
+                        labelInfo={courses.length === 0 ? "" : `${String(courses.length)} Crs`}
+                        color="#a250f5"
+                        bgColor="#f3e8fd"
+                      >
+                        {/* ************TERM-LIST************** */}
+                        {terms.map((term, idx) => {
+                          return (
+                            <StyledTreeItem
+                              key={idx}
+                              nodeId={`term-${idx}`}
+                              labelText={
+                                <Link
+                                  to={`${Routes.COURSES}?collegeId=${college.id}&collegeName=${
+                                    college.name
+                                  }&programmeId=${programme.id}&programmeName=${programme.name}&termType=${
+                                    programme.termType
+                                  }&termsCount=${programme.termsCount}#term=${idx + 1}`}
+                                  className={classes.link}
+                                >
+                                  {`${TermType[programme.termType]}-${idx + 1}`}
+                                </Link>
+                              }
+                              labelInfo={term.length === 0 ? "" : `${String(term.length)} Crs`}
                             >
-                              {programme.name}
-                            </Link>
-                          }
-                          labelIcon={() => <ProgrammeIcon width="19" />}
-                          labelInfo={courses.length === 0 ? "" : `${String(courses.length)} Crs`}
-                          color="#a250f5"
-                          bgColor="#f3e8fd"
-                        >
-                          {/* ************TERM-LIST************** */}
-                          {terms.map((term, idx) => {
-                            return (
-                              <StyledTreeItem
-                                key={idx}
-                                nodeId={`term-${idx}`}
-                                labelText={
-                                  <Link
-                                    to={`${Routes.COURSES}?collegeId=${college.id}&collegeName=${
-                                      college.name
-                                    }&programmeId=${programme.id}&programmeName=${programme.name}&termType=${
-                                      programme.termType
-                                    }&termsCount=${programme.termsCount}#term=${idx + 1}`}
-                                    className={classes.link}
-                                  >
-                                    {`${TermType[programme.termType]}-${idx + 1}`}
-                                  </Link>
-                                }
-                                labelInfo={term.length === 0 ? "" : `${String(term.length)} Crs`}
-                              >
-                                {/* *************COURSE-LIST************* */}
-                                {term.map((course) => {
-                                  return (
-                                    <StyledTreeItem
-                                      key={course.id}
-                                      nodeId={`${college.id}-${programme.id}-${course.id}`}
-                                      labelText={
+                              {/* *************COURSE-LIST************* */}
+                              {term.map((course) => {
+                                return (
+                                  <StyledTreeItem
+                                    key={course.id}
+                                    nodeId={`${college.id}-${programme.id}-${course.id}`}
+                                    labelText={
+                                      <Link
+                                        to={`${Routes.POSTS}?collegeId=${college.id}&collegeName=${college.name}&programmeId=${programme.id}&programmeName=${programme.name}&termType=${programme.termType}&termsCount=${programme.termsCount}&term=${course.term}&courseId=${course.id}&courseName=${course.name}`}
+                                        className={classes.link}
+                                      >
+                                        {course.name}
+                                      </Link>
+                                    }
+                                    labelIcon={() => <CourseIcon width="18" />}
+                                    labelInfo={
+                                      selectedNodeValue !== `${college.id}-${programme.id}-${course.id}` ? (
+                                        ""
+                                      ) : (
                                         <Link
-                                          to={`${Routes.POSTS}?collegeId=${college.id}&collegeName=${college.name}&programmeId=${programme.id}&programmeName=${programme.name}&termType=${programme.termType}&termsCount=${programme.termsCount}&term=${course.term}&courseId=${course.id}&courseName=${course.name}`}
-                                          className={classes.link}
+                                          to={`${Routes.CREATE_POST}?collegeId=${collegeId}&programmeId=${programmeId}&courseId=${courseId}&courseName=${course.name}&type=pdf`}
                                         >
-                                          {course.name}
+                                          <AddIcon fontSize="small" color="secondary" />
                                         </Link>
-                                      }
-                                      labelIcon={() => <CourseIcon width="18" />}
-                                      labelInfo={
-                                        selectedNodeValue !== `${college.id}-${programme.id}-${course.id}` ? (
-                                          ""
-                                        ) : (
-                                          <Link
-                                            to={`${Routes.CREATE_POST}?collegeId=${collegeId}&programmeId=${programmeId}&courseId=${courseId}&courseName=${course.name}&type=pdf`}
-                                          >
-                                            <AddIcon fontSize="small" color="secondary" />
-                                          </Link>
-                                        )
-                                      }
-                                      color="#3c8039"
-                                      bgColor="#e6f4ea"
-                                    />
-                                  );
-                                })}
-                              </StyledTreeItem>
-                            );
-                          })}
-                        </StyledTreeItem>
-                      );
-                    })}
-                  </StyledTreeItem>
-                );
-              })}
-            </StyledTreeItem>
-          );
-        })}
-      </StyledTreeItem>
+                                      )
+                                    }
+                                    color="#3c8039"
+                                    bgColor="#e6f4ea"
+                                  />
+                                );
+                              })}
+                            </StyledTreeItem>
+                          );
+                        })}
+                      </StyledTreeItem>
+                    );
+                  })}
+                </StyledTreeItem>
+              );
+            })}
+          </StyledTreeItem>
+        );
+      })}
+      {/* </StyledTreeItem> */}
     </TreeView>
   );
 }
