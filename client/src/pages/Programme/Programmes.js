@@ -5,7 +5,7 @@ import { useLocation } from "react-router-dom";
 import { GET_COLLEGE_PROGRAMMES } from "graphql/programme";
 
 // import ProgrammeInfo from "pages/Programme/ProgrammeInfo";
-import ExploreHeader from "pages/Explore/ExploreHeader";
+// import ExploreHeader from "pages/Explore/ExploreHeader";
 
 import CardsContainer from "components/Cards/CardsContainer";
 import InfiniteScroll from "components/InfiniteScroll";
@@ -123,7 +123,7 @@ const Programmes = () => {
 
       <ScrollManager scrollKey={`${pathname}${search}`} />
 
-      <ExploreHeader />
+      {/* <ExploreHeader /> */}
 
       {/* <ProgrammeInfo collegeId={collegeId} /> */}
 

@@ -25,9 +25,12 @@ const BreadcrumbsNav = () => {
   const courseName = query.get("courseName");
 
   const [term, setTerm] = useState(query.get("term"));
+  const [degree, setDegree] = useState(query.get("degree"));
 
   useEffect(() => {
-    window.location.hash && setTerm(window.location.hash.slice(6)); // slice '#term=1'
+    const hash = window.location.hash;
+    hash.includes("term") && setTerm(hash.slice(6)); // slice '#term=1'
+    hash.includes("degree") && setDegree(hash.slice(8)); // slice '#degree=bachelors'
   }, [window.location.hash]);
 
   let last;
@@ -35,6 +38,8 @@ const BreadcrumbsNav = () => {
     last = "course";
   } else if (!courseId && term) {
     last = "term";
+  } else if (!courseId && degree) {
+    last = "degree";
   } else if (!term && programmeId) {
     last = "programme";
   } else if (!programmeId && collegeId) {
@@ -43,18 +48,9 @@ const BreadcrumbsNav = () => {
 
   return (
     <Breadcrumbs separator={"›"} maxItems={3} itemsBeforeCollapse={1} itemsAfterCollapse={1} aria-label="breadcrumb">
-      <LinkRouter color="inherit" to={Routes.COLLEGES}>
-        Explore
+      <LinkRouter color="inherit" to={`${Routes.PROGRAMMES}#degree=all`}>
+        Programmes
       </LinkRouter>
-
-      {collegeId &&
-        (last === "college" ? (
-          <Typography color="textPrimary">{collegeName}</Typography>
-        ) : (
-          <LinkRouter color="inherit" to={`${Routes.PROGRAMMES}?collegeId=${collegeId}&collegeName=${collegeName}`}>
-            {collegeName}
-          </LinkRouter>
-        ))}
 
       {programmeId &&
         (last === "programme" ? (
