@@ -12,7 +12,7 @@ import { v4 as uuid } from "uuid";
 import { createApolloServer } from "./apollo-server";
 import { initPassport } from "./authentication";
 import models from "./models";
-import { populateDB } from "./populateDB";
+// import { populateDB } from "./populateDB";
 // import Programme from "./models/Programme";
 import resolvers from "./resolvers";
 import routes from "./routes";
@@ -45,7 +45,7 @@ mongoose
     process.exit(1);
   });
 
-populateDB();
+// populateDB();
 
 // Initializes passport
 initPassport();

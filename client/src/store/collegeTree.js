@@ -11,7 +11,7 @@ export const collegeTreeInitialState = {
   defaultExpanded: [
     "allColleges" /* deprecated */,
     "614f5a3f2ddf2265db42b297" /* ignou id on bimlee-live-2 local db */,
-    "614f5b8edcb313697c145015" /* ignou id on ignou-app-1 atlas */,
+    "61511b1db11b312f6d972473" /* ignou id on ignou-app-1 atlas */,
   ], // colleges and IGNOU
 };
 
