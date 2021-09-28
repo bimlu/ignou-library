@@ -39,8 +39,6 @@ const AppLayout = ({ toggleThemeMode }) => {
 
   return (
     <>
-      <Header toggleThemeMode={toggleThemeMode} />
-
       <Spacing top={isDesktop && "sm"} bottom="xl">
         <Container>
           <Grid container spacing={isDesktop ? 4 : 2}>
@@ -106,6 +104,7 @@ const AppLayout = ({ toggleThemeMode }) => {
 
                 {/* Main App pages*/}
                 <Route exact path={Routes.HOME}>
+                  <Header toggleThemeMode={toggleThemeMode} />
                   <Home />
                 </Route>
 

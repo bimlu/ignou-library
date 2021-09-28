@@ -39,6 +39,7 @@ const Programmes = () => {
   const collegeName = ignou.name;
 
   const [degree, setDegree] = useState("all");
+  // console.log(degree);
 
   const variables = {
     collegeId: collegeId,
@@ -104,11 +105,9 @@ const Programmes = () => {
         <Divider />
       </Box>
 
-      <CardsContainer>
-        <List height={500} itemCount={count} itemSize={300} width="100%">
-          {Row}
-        </List>
-      </CardsContainer>
+      <List height={window.visualViewport.height - 52 - 52} itemCount={count} itemSize={300} width="100%">
+        {Row}
+      </List>
     </>
   );
 };
