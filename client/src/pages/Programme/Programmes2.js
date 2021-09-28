@@ -19,6 +19,7 @@ import { useStore } from "store";
 import { SET_EXPLORE_ROUTE } from "store/route";
 import * as Routes from "routes";
 import { FixedSizeList as List } from "react-window";
+import { DegreeType2 } from "constants/DegreeType";
 
 /**
  * Programmes page
@@ -46,7 +47,7 @@ const Programmes = () => {
     skip: 0,
     // limit: EXPLORE_PAGE_CARDS_LIMIT,
   };
-  const { data, loading, error, networkStatus } = useQuery(GET_COLLEGE_PROGRAMMES, {
+  const { data, error } = useQuery(GET_COLLEGE_PROGRAMMES, {
     variables,
     notifyOnNetworkStatusChange: true,
   });
@@ -61,11 +62,8 @@ const Programmes = () => {
   }, []);
 
   if (error) return "Please check your internet connection";
-  if (!data) return "loading...";
 
-  const { programmes, count } = data.getCollegeProgrammes;
-  if (!programmes.length > 0) return <Empty text="No programmes yet." />;
-  if (loading && networkStatus === 1) {
+  if (!data) {
     return (
       <CardsContainer>
         {Array.from(new Array(parseInt(EXPLORE_PAGE_CARDS_LIMIT / 2))).map((_el, i) => (
@@ -74,9 +72,16 @@ const Programmes = () => {
       </CardsContainer>
     );
   }
+  const { programmes, count } = data.getCollegeProgrammes;
+  if (!programmes.length > 0) return <Empty text="No programmes yet." />;
+  const filteredProgrammes = programmes.filter(
+    (programme) => degree === "all" || programme.degree === DegreeType2.indexOf(degree)
+  );
+
   const Row = ({ index, style }) => {
     const i = index;
-    const programme = programmes[i];
+
+    const programme = filteredProgrammes[i];
     return (
       <div style={style}>
         <SolidCard
@@ -105,7 +110,12 @@ const Programmes = () => {
         <Divider />
       </Box>
 
-      <List height={window.visualViewport.height - 52 - 52} itemCount={count} itemSize={300} width="100%">
+      <List
+        height={window.visualViewport.height - 52 - 52}
+        itemCount={filteredProgrammes.length || count}
+        itemSize={300}
+        width="100%"
+      >
         {Row}
       </List>
     </>
