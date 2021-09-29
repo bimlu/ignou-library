@@ -71,6 +71,10 @@ export default class ScrollPositionManager extends React.Component {
     if (this.props.scrollKey !== prevProps.scrollKey) {
       this.restoreScrollPosition();
     }
+    // console.log(this.props);
+    // this.restoreScrollPosition();
+    // this.saveScrollPosition();
+    // console.log(memoryStore._data);
   }
 
   componentWillUnmount() {
@@ -88,15 +92,18 @@ ScrollPositionManager.defaultProps = {
 };
 
 function scroll(target, x, y) {
+  // console.log(x, y);
   if (target instanceof window.Window) {
     target.scrollTo(x, y);
   } else {
-    target.scrollLeft = x;
-    target.scrollTop = y;
+    // target.scrollLeft = x;
+    // target.scrollTop = y;
+    target.scrollTo(0, 0);
   }
 }
 
 function getScrollPosition(target) {
+  // console.log("target", target);
   if (target instanceof window.Window) {
     return { x: target.scrollX, y: target.scrollY };
   }

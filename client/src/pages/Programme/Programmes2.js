@@ -115,15 +115,22 @@ const Programmes = () => {
     };
 
     return (
-      <List
-        height={window.innerHeight - HEADER_HEIGHT - BOTTOM_NAV_HEIGHT - 28}
-        itemCount={filteredProgrammes.length || count}
-        itemSize={280}
-        width="100%"
-        className={classes.list}
-      >
-        {Row}
-      </List>
+      <div>
+        <ScrollManager scrollKey={`${pathname}${search}${hash}`}>
+          {({ connectScrollTarget }) => (
+            <List
+              height={window.innerHeight - HEADER_HEIGHT - BOTTOM_NAV_HEIGHT - 28}
+              itemCount={filteredProgrammes.length || count}
+              itemSize={280}
+              width="100%"
+              className={classes.list}
+              ref={connectScrollTarget}
+            >
+              {Row}
+            </List>
+          )}
+        </ScrollManager>
+      </div>
     );
   };
 
@@ -131,7 +138,7 @@ const Programmes = () => {
     <div>
       <Head title={`${collegeName.toUpperCase()}`} />
 
-      <ScrollManager scrollKey={`${pathname}${search}`} />
+      <ScrollManager scrollKey={`${pathname}${search}${hash}`} />
 
       <ProgrammeFilter degreesCount={8} selectedDegree={degree} />
 
