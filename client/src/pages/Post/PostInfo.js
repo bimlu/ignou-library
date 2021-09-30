@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link, generatePath } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { useQuery } from "@apollo/client";
 import clsx from "clsx";
 
@@ -13,8 +13,8 @@ import Collapse from "@material-ui/core/Collapse";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 import Button from "@material-ui/core/Button";
 import CheckCircleIcon from "@material-ui/icons/CheckCircle";
-import EditIcon from "@material-ui/icons/Edit";
-import IconButton from "@material-ui/core/IconButton";
+// import EditIcon from "@material-ui/icons/Edit";
+// import IconButton from "@material-ui/core/IconButton";
 import AddIcon from "@material-ui/icons/Add";
 import DialogTitle from "@material-ui/core/DialogTitle";
 import Dialog from "@material-ui/core/Dialog";
@@ -69,9 +69,9 @@ const useStyles = makeStyles((theme) => ({
     fontSize: theme.spacing(2),
     marginLeft: theme.spacing(0.6),
   },
-  editIcon: {
-    fontSize: theme.spacing(2.6),
-  },
+  // editIcon: {
+  //   fontSize: theme.spacing(2.6),
+  // },
   number: {
     color: theme.palette.primary.main,
   },
@@ -124,9 +124,9 @@ const PostInfo = ({ collegeId, programmeId, courseId, courseName }) => {
           {course.verified && <CheckCircleIcon color="primary" className={classes.checkIcon} />}
         </span>
 
-        <IconButton component={Link} to={generatePath(Routes.COURSE, { id: course.id })}>
+        {/* <IconButton component={Link} to={generatePath(Routes.COURSE, { id: course.id })}>
           <EditIcon className={classes.editIcon} />
-        </IconButton>
+        </IconButton> */}
       </div>
 
       <Typography variant="h5" gutterBottom>
