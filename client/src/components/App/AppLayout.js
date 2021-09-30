@@ -40,7 +40,7 @@ const AppLayout = ({ toggleThemeMode }) => {
   return (
     <>
       <Spacing top={isDesktop && "sm"} bottom="xl">
-        <Container disableGutters style={{ overflow: "hidden", padding: 4 }}>
+        <Container>
           <Grid container spacing={isDesktop ? 4 : 2}>
             <Grid item xs={3}>
               <SideBar />

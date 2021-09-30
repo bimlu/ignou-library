@@ -14,7 +14,7 @@ import { useLocation } from "react-router-dom";
 import * as Routes from "routes";
 import { useStore } from "store";
 import { SET_EXPLORE_ROUTE } from "store/route";
-import SolidCard from "./Card";
+import Card from "./Card";
 import CourseFilter from "./CourseFilter";
 import { FixedSizeList as List } from "react-window";
 import { makeStyles } from "@material-ui/core/styles";
@@ -74,7 +74,7 @@ const Courses = () => {
       return (
         <CardsContainer>
           {Array.from(new Array(parseInt(EXPLORE_PAGE_CARDS_LIMIT / 2))).map((_el, i) => (
-            <SolidCard key={i} loading={true} />
+            <Card key={i} loading={true} />
           ))}
         </CardsContainer>
       );
@@ -97,7 +97,7 @@ const Courses = () => {
       const course = filteredCourses[i];
       return (
         <div style={style} className={classes.row}>
-          <SolidCard
+          <Card
             key={course.courseCode}
             title={course.course.name}
             subtitle={course.course.fullName}
@@ -119,7 +119,7 @@ const Courses = () => {
             <List
               height={window.innerHeight - HEADER_HEIGHT - BOTTOM_NAV_HEIGHT - 28}
               itemCount={filteredCourses.length}
-              itemSize={150}
+              itemSize={220}
               width="100%"
               className={classes.list}
               ref={connectScrollTarget}

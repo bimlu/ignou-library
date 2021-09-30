@@ -9,12 +9,13 @@ import CardActionArea from "@material-ui/core/CardActionArea";
 
 const useStyles = makeStyles((theme) => ({
   card: {
-    minWidth: 275,
+    // minWidth: 275,
     // minHeight: 138,
     borderRadius: theme.spacing(2),
-    [theme.breakpoints.up("sm")]: {
-      minHeight: 198,
-    },
+    // [theme.breakpoints.up("sm")]: {
+    //   minHeight: 198,
+    // },
+    height: 200,
   },
   button: {
     padding: `${theme.spacing(1.6)}px ${theme.spacing(2.2)}px`,
