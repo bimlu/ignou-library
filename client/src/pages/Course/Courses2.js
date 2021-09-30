@@ -16,11 +16,27 @@ import { useStore } from "store";
 import { SET_EXPLORE_ROUTE } from "store/route";
 import SolidCard from "./Card";
 import CourseFilter from "./CourseFilter";
+import { FixedSizeList as List } from "react-window";
+import { makeStyles } from "@material-ui/core/styles";
+import { BOTTOM_NAV_HEIGHT, HEADER_HEIGHT } from "constants/Layout";
+
+const useStyles = makeStyles((theme) => ({
+  list: {
+    overflowX: "hidden",
+    "&::-webkit-scrollbar": {
+      width: "0.25em",
+    },
+  },
+  row: {
+    paddingRight: theme.spacing(0.6),
+  },
+}));
 
 /**
  * Courses page
  */
 const Courses = () => {
+  const classes = useStyles();
   const cardColors = ["#203f52", "#4d137f", "#002244", "#004953"];
 
   const [, dispatch] = useStore();
@@ -43,7 +59,7 @@ const Courses = () => {
     // limit: EXPLORE_PAGE_CARDS_LIMIT,
     id: programmeId,
   };
-  const { data, loading, error, networkStatus } = useQuery(GET_PROGRAMME_STRUCTURE, {
+  const { data, error } = useQuery(GET_PROGRAMME_STRUCTURE, {
     variables,
     notifyOnNetworkStatusChange: true,
   });
@@ -54,7 +70,7 @@ const Courses = () => {
   }, [hash]);
 
   const renderContent = () => {
-    if (loading && networkStatus === 1) {
+    if (!data) {
       return (
         <CardsContainer>
           {Array.from(new Array(parseInt(EXPLORE_PAGE_CARDS_LIMIT / 2))).map((_el, i) => (
@@ -73,26 +89,46 @@ const Courses = () => {
     if (!programme.programmeStructure) return <Empty text="No courses yet." />;
     if (!programme.programmeStructure > 0) return <Empty text="No courses yet." />;
     const courses = programme.programmeStructure;
+    const filteredCourses = courses.filter((course) => term === "all" || course.term === parseInt(term));
+
+    const Row = ({ index, style }) => {
+      const i = index;
+
+      const course = filteredCourses[i];
+      return (
+        <div style={style} className={classes.row}>
+          <SolidCard
+            key={course.courseCode}
+            title={course.course.name}
+            subtitle={course.course.fullName}
+            image={course.course.image}
+            color={cardColors[i % cardColors.length]}
+            url={`${Routes.POSTS}?collegeId=${collegeId}&collegeName=${collegeName}&programmeId=${programmeId}&programmeName=${programmeName}&termType=${termType}&termsCount=${termsCount}&term=${course.term}&courseId=${course.course.id}&courseName=${course.course.name}`}
+            studentData={`Students: ${course.course.studentsCount}`}
+            otherData={`Posts: ${course.course.postsCount}`}
+            postsCount={course.course.postsCount}
+          />
+        </div>
+      );
+    };
 
     return (
-      <CardsContainer>
-        {courses
-          // show all course if term === 'all', filter otherwise
-          .filter((course) => term === "all" || course.term === parseInt(term))
-          .map((course, i) => (
-            <SolidCard
-              key={course.courseCode}
-              title={course.course.name}
-              subtitle={course.course.fullName}
-              image={course.course.image}
-              color={cardColors[i % cardColors.length]}
-              url={`${Routes.POSTS}?collegeId=${collegeId}&collegeName=${collegeName}&programmeId=${programmeId}&programmeName=${programmeName}&termType=${termType}&termsCount=${termsCount}&term=${course.term}&courseId=${course.course.id}&courseName=${course.course.name}`}
-              studentData={`Students: ${course.course.studentsCount}`}
-              otherData={`Posts: ${course.course.postsCount}`}
-              postsCount={course.course.postsCount}
-            />
-          ))}
-      </CardsContainer>
+      <div>
+        <ScrollManager scrollKey={`${pathname}${search}${hash}`}>
+          {({ connectScrollTarget }) => (
+            <List
+              height={window.innerHeight - HEADER_HEIGHT - BOTTOM_NAV_HEIGHT - 28}
+              itemCount={filteredCourses.length}
+              itemSize={150}
+              width="100%"
+              className={classes.list}
+              ref={connectScrollTarget}
+            >
+              {Row}
+            </List>
+          )}
+        </ScrollManager>
+      </div>
     );
   };
 
