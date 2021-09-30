@@ -8,7 +8,7 @@ import ScrollManager from "components/ScrollManager";
 import { EXPLORE_PAGE_CARDS_LIMIT } from "constants/DataLimit";
 import { GET_PROGRAMME_STRUCTURE } from "graphql/programme";
 import CourseInfo from "pages/Course/CourseInfo";
-import ExploreHeader from "pages/Explore/ExploreHeader";
+// import ExploreHeader from "pages/Explore/ExploreHeader";
 import React, { useEffect, useState } from "react";
 import { useLocation } from "react-router-dom";
 import * as Routes from "routes";
@@ -138,7 +138,7 @@ const Courses = () => {
 
       <ScrollManager scrollKey={`${pathname}${search}`} />
 
-      <ExploreHeader />
+      {/* <ExploreHeader /> */}
 
       <CourseInfo collegeId={collegeId} programmeId={programmeId} />
 
