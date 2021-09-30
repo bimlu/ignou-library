@@ -5,7 +5,7 @@ import { useLocation } from "react-router-dom";
 import { GET_COLLEGE_PROGRAMME_COURSE_POSTS } from "graphql/post";
 
 import PostInfo from "pages/Post/PostInfo";
-import ExploreHeader from "pages/Explore/ExploreHeader";
+// import ExploreHeader from "pages/Explore/ExploreHeader";
 
 import PostCard from "components/PostCard";
 import PDFCard from "components/PostCard/PDFCard";
@@ -128,7 +128,7 @@ const Posts = () => {
 
       <ScrollManager scrollKey={`${pathname}${search}`} />
 
-      <ExploreHeader />
+      {/* <ExploreHeader /> */}
 
       <PostInfo collegeId={collegeId} programmeId={programmeId} courseId={courseId} courseName={courseName} />
 
