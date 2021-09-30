@@ -15,7 +15,7 @@ import Button from "@material-ui/core/Button";
 import CheckCircleIcon from "@material-ui/icons/CheckCircle";
 import EditIcon from "@material-ui/icons/Edit";
 import IconButton from "@material-ui/core/IconButton";
-import AddIcon from "@material-ui/icons/Add";
+// import AddIcon from "@material-ui/icons/Add";
 
 import { GET_PROGRAMME } from "graphql/programme";
 
@@ -27,7 +27,7 @@ import * as Routes from "routes";
 const useStyles = makeStyles((theme) => ({
   paper: {
     minHeight: 300,
-    marginBottom: theme.spacing(4),
+    marginBottom: theme.spacing(1),
     background: theme.palette.background.default,
   },
   imageWrapper: {
@@ -76,7 +76,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-const CourseInfo = ({ collegeId, programmeId }) => {
+const CourseInfo = ({ programmeId }) => {
   const classes = useStyles();
   const [expanded, setExpanded] = useState(false);
 
@@ -166,9 +166,11 @@ const CourseInfo = ({ collegeId, programmeId }) => {
         </Typography>
       </Collapse>
 
-      <Divider />
+      <Box m={1}>
+        <Divider />
+      </Box>
 
-      <Box mt={2} display="flex" justifyContent="space-between">
+      {/* <Box mt={2} display="flex" justifyContent="space-between">
         <Typography variant="h5" color="textSecondary" style={{ marginLeft: 8 }} display="inline">
           Courses
         </Typography>
@@ -184,7 +186,7 @@ const CourseInfo = ({ collegeId, programmeId }) => {
         >
           New
         </Button>
-      </Box>
+      </Box> */}
     </Paper>
   );
 };

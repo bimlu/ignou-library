@@ -7,13 +7,20 @@ import { TermType } from "constants/TermType";
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    marginBottom: theme.spacing(1),
+    paddingBottom: theme.spacing(1),
+    whiteSpace: "nowrap",
+    overflow: "auto",
     "& > *": {
-      margin: theme.spacing(1),
+      marginRight: theme.spacing(1),
       textTransform: "none",
       fontSize: theme.spacing(1.5),
-      padding: theme.spacing(1.2),
-      borderRadius: theme.spacing(1.2),
+      padding: theme.spacing(0.8),
+      borderRadius: theme.spacing(3),
+      paddingLeft: theme.spacing(1.5),
+      paddingRight: theme.spacing(1.5),
+    },
+    "&::-webkit-scrollbar": {
+      height: "0.22em",
     },
   },
 }));
