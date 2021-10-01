@@ -12,6 +12,8 @@ import CollegesTreeView from "components/CollegesTreeView";
 // import SpeedDial from 'components/SpeedDial';
 import ScrollManager from "components/ScrollManager";
 import { Box } from "@material-ui/core";
+import ProgrammeInfo from "pages/Programme/ProgrammeInfo";
+import { useStore } from "store";
 
 const useStyles = makeStyles((theme) => ({
   root: {},
@@ -39,6 +41,13 @@ const Home = () => {
   const { pathname, search } = useLocation();
   const [selectedNodeValue, setSelectedNodeValue] = useState("");
 
+  const [{ datatree }] = useStore();
+  if (!datatree.colleges) return "";
+  const colleges = datatree.colleges;
+  const ignou = colleges[0];
+  console.log(ignou);
+  const collegeId = ignou.id;
+
   return (
     <div className={classes.root}>
       <Alert severity="info" className={classes.alert}>
@@ -48,7 +57,7 @@ const Home = () => {
       <ScrollManager scrollKey={`${pathname}${search}`} />
 
       <Paper className={classes.paper} elevation={0}>
-        <Typography variant="body2">Quick links for College, Programme and Courses</Typography>
+        <Typography variant="body1">Quick links for Programmes and Courses</Typography>
 
         <Divider className={classes.divider} />
 
@@ -56,15 +65,17 @@ const Home = () => {
           <CollegesTreeView selectedNodeValue={selectedNodeValue} setSelectedNodeValue={setSelectedNodeValue} />
         </Box>
 
-        <Typography variant="h5" color="textSecondary">
+        <ProgrammeInfo collegeId={collegeId} />
+
+        {/* <Typography variant="h5" color="textSecondary">
           Recommended Posts
         </Typography>
 
-        <Divider className={classes.divider} />
+        <Divider className={classes.divider} /> */}
 
-        <Typography variant="caption" color="textSecondary">
+        {/* <Typography variant="caption" color="textSecondary">
           Recommended Posts appear here 👇 (this functionality should come in future updates)
-        </Typography>
+        </Typography> */}
       </Paper>
 
       {/* <SpeedDial /> */}

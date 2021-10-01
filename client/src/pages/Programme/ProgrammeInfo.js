@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link, generatePath } from "react-router-dom";
+// import { Link, generatePath } from "react-router-dom";
 import { useQuery } from "@apollo/client";
 import clsx from "clsx";
 
@@ -13,15 +13,15 @@ import Collapse from "@material-ui/core/Collapse";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 import Button from "@material-ui/core/Button";
 import CheckCircleIcon from "@material-ui/icons/CheckCircle";
-import EditIcon from "@material-ui/icons/Edit";
-import IconButton from "@material-ui/core/IconButton";
-import AddIcon from "@material-ui/icons/Add";
+// import EditIcon from "@material-ui/icons/Edit";
+// import IconButton from "@material-ui/core/IconButton";
+// import AddIcon from "@material-ui/icons/Add";
 
 import NotFound from "components/NotFound";
 
 import { GET_COLLEGE } from "graphql/college";
 
-import * as Routes from "routes";
+// import * as Routes from "routes";
 
 const useStyles = makeStyles((theme) => ({
   paper: {
@@ -67,9 +67,9 @@ const useStyles = makeStyles((theme) => ({
     fontSize: theme.spacing(2),
     marginLeft: theme.spacing(0.6),
   },
-  editIcon: {
-    fontSize: theme.spacing(2.6),
-  },
+  // editIcon: {
+  //   fontSize: theme.spacing(2.6),
+  // },
   number: {
     color: theme.palette.primary.main,
   },
@@ -109,9 +109,9 @@ const ProgrammeInfo = ({ collegeId }) => {
           {college.verified && <CheckCircleIcon color="primary" className={classes.checkIcon} />}
         </span>
 
-        <IconButton component={Link} to={generatePath(Routes.COLLEGE, { id: college.id })}>
+        {/* <IconButton component={Link} to={generatePath(Routes.COLLEGE, { id: college.id })}>
           <EditIcon className={classes.editIcon} />
-        </IconButton>
+        </IconButton> */}
       </div>
 
       <Typography variant="h5" gutterBottom>
@@ -159,9 +159,9 @@ const ProgrammeInfo = ({ collegeId }) => {
         </Typography>
       </Collapse>
 
-      <Divider />
+      {/* <Divider /> */}
 
-      <Box mt={2} display="flex" justifyContent="space-between">
+      {/* <Box mt={2} display="flex" justifyContent="space-between">
         <Typography variant="h5" color="textSecondary" style={{ marginLeft: 8 }} display="inline">
           Programmes
         </Typography>
@@ -177,7 +177,7 @@ const ProgrammeInfo = ({ collegeId }) => {
         >
           New
         </Button>
-      </Box>
+      </Box> */}
     </Paper>
   );
 };
