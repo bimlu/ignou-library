@@ -25,6 +25,30 @@ export const GET_COLLEGE = gql`
       programmes {
         id
       }
+      code
+      title
+      recognition
+      importantLinks
+      notes
+      theUniversity {
+        introduction
+        prominentFeatures
+        importantAchievements
+        theSchoolOfStudies
+        academicProgrammes
+        coursePreparation
+        creditSystem
+        supportServices
+        programmeDelivery
+        webEnabledAcademicSupport
+        evaluationSystem
+        TEEAndPaymentOfExamFee
+        internationalStudentsResidingInIndia
+        onlineAdmissionSystem
+        eGyanKosh
+        IGNOUeContentMobileApp
+        vidyaLakshmiPortal
+      }
     }
   }
 `;

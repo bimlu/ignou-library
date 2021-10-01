@@ -45,7 +45,6 @@ const Home = () => {
   if (!datatree.colleges) return "";
   const colleges = datatree.colleges;
   const ignou = colleges[0];
-  console.log(ignou);
   const collegeId = ignou.id;
 
   return (

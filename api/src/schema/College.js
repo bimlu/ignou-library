@@ -24,6 +24,26 @@ const CollegeSchema = gql`
     updatedAt: String
   }
 
+  type TheUniversity {
+    introduction: [String]
+    prominentFeatures: [String]
+    importantAchievements: [String]
+    theSchoolOfStudies: [String]
+    academicProgrammes: [String]
+    coursePreparation: String
+    creditSystem: [[String]]
+    supportServices: [String]
+    programmeDelivery: [[String]]
+    webEnabledAcademicSupport: String
+    evaluationSystem: [String]
+    TEEAndPaymentOfExamFee: [String]
+    internationalStudentsResidingInIndia: String
+    onlineAdmissionSystem: String
+    eGyanKosh: String
+    IGNOUeContentMobileApp: String
+    vidyaLakshmiPortal: String
+  }
+
   # ---------------------------------------------------------
   # Input Objects
   # ---------------------------------------------------------
@@ -69,6 +89,13 @@ const CollegeSchema = gql`
     studentsCount: Int
     createdAt: String
     updatedAt: String
+
+    code: String
+    title: String
+    recognition: String
+    importantLinks: [[String]]
+    notes: [String]
+    theUniversity: TheUniversity
   }
 
   type CollegesPayload {
