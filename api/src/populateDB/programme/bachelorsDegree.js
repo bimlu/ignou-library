@@ -400,7 +400,7 @@ export const bachelorsDegreeProgrammes = [
     degree: Degree.bachelors,
     termType: TermType.Semester,
     termsCount: 6,
-    name: "BCOMG",
+    name: "BSCG",
     fullName: "Bachelor of Science",
     collegeCode: "IGNOU",
     courseList: {
