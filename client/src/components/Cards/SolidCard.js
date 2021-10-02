@@ -8,6 +8,7 @@ import Color from "color";
 import { Link } from "react-router-dom";
 import Skeleton from "@material-ui/lab/Skeleton";
 import CheckCircleIcon from "@material-ui/icons/CheckCircle";
+import { TermType2 } from "constants/TermType";
 
 const useStyles = makeStyles((theme) => ({
   actionArea: {
@@ -49,7 +50,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-const SolidCard = ({ title, subtitle, image, color, url, loading }) => {
+const SolidCard = ({ title, subtitle, image, color, url, loading, termType, termsCount }) => {
   const classes = useStyles({ color: color });
 
   return loading ? (
@@ -74,7 +75,10 @@ const SolidCard = ({ title, subtitle, image, color, url, loading }) => {
           <Typography variant="caption">{otherData}</Typography> */}
 
           <Typography variant="body1" noWrap={true}>
-            <b>132 Credits{" ┆ "}6 Semesters</b>
+            <b>
+              132 Credits{" ┆ "}
+              {termsCount} {TermType2[termType]}
+            </b>
           </Typography>
 
           {/* <Typography>

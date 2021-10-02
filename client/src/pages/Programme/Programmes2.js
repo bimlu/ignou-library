@@ -98,6 +98,7 @@ const Programmes = () => {
       const i = index;
 
       const programme = filteredProgrammes[i];
+      // console.log(programme);
       return (
         <div style={style} className={classes.row}>
           <SolidCard
@@ -109,6 +110,8 @@ const Programmes = () => {
             url={`${Routes.COURSES}?collegeId=${collegeId}&collegeName=${collegeName}&programmeId=${programme.id}&programmeName=${programme.name}&termType=${programme.termType}&termsCount=${programme.termsCount}#term=all`}
             studentData={`Students: ${programme.studentsCount}`}
             otherData={`Courses: ${programme.coursesCount}`}
+            termType={programme.termType}
+            termsCount={programme.termsCount}
           />
         </div>
       );
