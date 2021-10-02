@@ -50,7 +50,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-const SolidCard = ({ title, subtitle, image, color, url, loading, termType, termsCount }) => {
+const SolidCard = ({ title, subtitle, image, color, url, loading, termType, termsCount, totalCredits }) => {
   const classes = useStyles({ color: color });
 
   return loading ? (
@@ -76,7 +76,7 @@ const SolidCard = ({ title, subtitle, image, color, url, loading, termType, term
 
           <Typography variant="body1" noWrap={true}>
             <b>
-              132 Credits{" ┆ "}
+              {totalCredits} Credits{" │ "}
               {termsCount} {TermType2[termType]}
             </b>
           </Typography>

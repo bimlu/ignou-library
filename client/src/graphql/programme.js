@@ -13,6 +13,7 @@ export const GET_PROGRAMME = gql`
       termType
       termsCount
       verified
+      totalCredits
       createdBy {
         id
         username
@@ -46,6 +47,7 @@ export const GET_PROGRAMME_STRUCTURE = gql`
       termType
       termsCount
       verified
+      totalCredits
       createdBy {
         id
         username
@@ -97,6 +99,7 @@ export const GET_COLLEGE_PROGRAMMES = gql`
         description
         verified
         image
+        totalCredits
         studentsCount
         coursesCount
       }

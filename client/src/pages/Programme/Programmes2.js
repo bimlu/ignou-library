@@ -112,6 +112,7 @@ const Programmes = () => {
             otherData={`Courses: ${programme.coursesCount}`}
             termType={programme.termType}
             termsCount={programme.termsCount}
+            totalCredits={programme.totalCredits}
           />
         </div>
       );
