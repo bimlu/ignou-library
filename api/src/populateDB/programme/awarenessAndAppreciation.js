@@ -10,6 +10,8 @@ export const awarenessAndAppreciationProgrammes = [
     termType: TermType.Quarter,
     termsCount: 1,
     collegeCode: "IGNOU",
+    schoolCode: "SOA",
+    totalCredits: 0,
     programmeStructure: [
       { term: 1, courseCode: "Module-1", category: Category.NONE, credit: 0 },
       { term: 1, courseCode: "Module-2", category: Category.NONE, credit: 0 },
@@ -28,6 +30,18 @@ export const awarenessAndAppreciationProgrammes = [
     ],
   },
   {
+    code: "ACE",
+    title: "Appreciation Course on Environment",
+    name: "ACE",
+    fullName: "Appreciation Course on Environment",
+    degree: Degree.awarenessAndAppreciation,
+    termType: TermType.Quarter,
+    termsCount: 1,
+    collegeCode: "IGNOU",
+    schoolCode: "SOS",
+    totalCredits: 0,
+  },
+  {
     code: "ACPSD",
     title: "Appreciation Course on Population and Sustainable Development",
     name: "ACPSD",
@@ -36,5 +50,7 @@ export const awarenessAndAppreciationProgrammes = [
     termType: TermType.Quarter,
     termsCount: 1,
     collegeCode: "IGNOU",
+    schoolCode: "SOITS",
+    totalCredits: 132,
   },
 ];

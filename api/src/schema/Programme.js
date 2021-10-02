@@ -29,9 +29,12 @@ const ProgrammeSchema = gql`
     updatedAt: String
 
     code: String
+    title: String
     programmeDetail: ProgrammeDetail
     courseList: CourseList
     school: School
+    schoolCode: String
+    totalCredits: Int
   }
 
   type CourseList {
@@ -115,6 +118,7 @@ const ProgrammeSchema = gql`
     createdAt: String
     updatedAt: String
     programmeStructure: [ProgrammeStructure]
+    totalCredits: Int
   }
 
   type ProgrammeStructure {

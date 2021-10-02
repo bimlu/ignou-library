@@ -10,6 +10,8 @@ export const mastersDegreeProgrammes = [
     termType: TermType.Year,
     termsCount: 2,
     collegeCode: "IGNOU",
+    schoolCode: "SOMS",
+    totalCredits: 72,
     programmeStructure: [
       { term: 1, courseCode: "IBO-1", category: Category.NONE, credit: 6 },
       { term: 1, courseCode: "IBO-2", category: Category.NONE, credit: 6 },
@@ -35,6 +37,8 @@ export const mastersDegreeProgrammes = [
     termType: TermType.Year,
     termsCount: 2,
     collegeCode: "IGNOU",
+    schoolCode: "SOH",
+    totalCredits: 64,
     programmeStructure: [
       { term: 1, courseCode: "MEG-1", category: Category.NONE, credit: 8 },
       { term: 1, courseCode: "MEG-2", category: Category.NONE, credit: 8 },
@@ -64,6 +68,8 @@ export const mastersDegreeProgrammes = [
     termType: TermType.Year,
     termsCount: 2,
     collegeCode: "IGNOU",
+    schoolCode: "SOH",
+    totalCredits: 64,
     programmeStructure: [
       { term: 1, courseCode: "MAUD-001", category: Category.NONE, credit: 8 },
       { term: 1, courseCode: "MAUD-002", category: Category.NONE, credit: 8 },
@@ -85,6 +91,8 @@ export const mastersDegreeProgrammes = [
     termType: TermType.Year,
     termsCount: 2,
     collegeCode: "IGNOU",
+    schoolCode: "SOSS",
+    totalCredits: 64,
     programmeStructure: [
       { term: 1, courseCode: "MPS-1", category: Category.NONE, credit: 8 },
       { term: 1, courseCode: "MPS-2", category: Category.NONE, credit: 8 },
@@ -122,6 +130,8 @@ export const mastersDegreeProgrammes = [
     termType: TermType.Year,
     termsCount: 2,
     collegeCode: "IGNOU",
+    schoolCode: "SOSS",
+    totalCredits: 64,
     programmeStructure: [
       { term: 1, courseCode: "MHI-1", category: Category.NONE, credit: 8 },
       { term: 1, courseCode: "MHI-2", category: Category.NONE, credit: 8 },
@@ -146,6 +156,8 @@ export const mastersDegreeProgrammes = [
     termType: TermType.Year,
     termsCount: 2,
     collegeCode: "IGNOU",
+    schoolCode: "SOSS",
+    totalCredits: 64,
     programmeStructure: [
       { term: 1, courseCode: "MSO-1", category: Category.NONE, credit: 8 },
       { term: 1, courseCode: "MSO-2", category: Category.NONE, credit: 8 },
@@ -169,6 +181,8 @@ export const mastersDegreeProgrammes = [
     termType: TermType.Year,
     termsCount: 2,
     collegeCode: "IGNOU",
+    schoolCode: "SOSS",
+    totalCredits: 64,
     programmeStructure: [
       { term: 1, courseCode: "MPC-1", category: Category.NONE, credit: 4 },
       { term: 1, courseCode: "MPC-2", category: Category.NONE, credit: 4 },
@@ -207,6 +221,8 @@ export const mastersDegreeProgrammes = [
     termType: TermType.Year,
     termsCount: 2,
     collegeCode: "IGNOU",
+    schoolCode: "SOSS",
+    totalCredits: 66,
     programmeStructure: [
       { term: 1, courseCode: "MEC-101", category: Category.NONE, credit: 6 },
       { term: 1, courseCode: "MEC-2", category: Category.NONE, credit: 6 },
@@ -236,6 +252,8 @@ export const mastersDegreeProgrammes = [
     termType: TermType.Year,
     termsCount: 2,
     collegeCode: "IGNOU",
+    schoolCode: "SOSS",
+    totalCredits: 64,
     programmeStructure: [
       { term: 1, courseCode: "MPA-11", category: Category.NONE, credit: 8 },
       { term: 1, courseCode: "MPA-12", category: Category.NONE, credit: 8 },
@@ -258,8 +276,10 @@ export const mastersDegreeProgrammes = [
     fullName: "Master of Library and Information Sciences",
     degree: Degree.masters,
     termType: TermType.Year,
-    termsCount: 2,
+    termsCount: 1,
     collegeCode: "IGNOU",
+    schoolCode: "SOSS",
+    totalCredits: 36,
     programmeStructure: [
       { term: 1, courseCode: "MLI-101", category: Category.NONE, credit: 4 },
       { term: 1, courseCode: "MLII-101", category: Category.NONE, credit: 4 },
@@ -286,6 +306,8 @@ export const mastersDegreeProgrammes = [
     termType: TermType.Year,
     termsCount: 2,
     collegeCode: "IGNOU",
+    schoolCode: "SOSS",
+    totalCredits: 64,
     programmeStructure: [
       { term: 1, courseCode: "MANI-1", category: Category.NONE, credit: 8 },
       { term: 1, courseCode: "MANI-2", category: Category.NONE, credit: 8 },
@@ -310,6 +332,8 @@ export const mastersDegreeProgrammes = [
     termType: TermType.Year,
     termsCount: 2,
     collegeCode: "IGNOU",
+    schoolCode: "SOSS",
+    totalCredits: 64,
     programmeStructure: [
       { term: 1, courseCode: "MGP-1", category: Category.NONE, credit: 4 },
       { term: 1, courseCode: "MGP-2", category: Category.NONE, credit: 4 },
@@ -340,6 +364,8 @@ export const mastersDegreeProgrammes = [
     termType: TermType.Semester,
     termsCount: 4,
     collegeCode: "IGNOU",
+    schoolCode: "SOCIS",
+    totalCredits: 80,
     programmeStructure: [
       { term: 1, courseCode: "MCS-211", category: Category.NONE, credit: 4 },
       { term: 1, courseCode: "MCS-212", category: Category.NONE, credit: 4 },
@@ -377,6 +403,8 @@ export const mastersDegreeProgrammes = [
     termType: TermType.Year,
     termsCount: 2,
     collegeCode: "IGNOU",
+    schoolCode: "SOCE",
+    totalCredits: 66,
     programmeStructure: [
       { term: 1, courseCode: "MRD-101", category: Category.NONE, credit: 6 },
       { term: 1, courseCode: "MRD-102", category: Category.NONE, credit: 6 },
@@ -401,6 +429,8 @@ export const mastersDegreeProgrammes = [
     termType: TermType.Year,
     termsCount: 2,
     collegeCode: "IGNOU",
+    schoolCode: "SOCE",
+    totalCredits: 72,
     programmeStructure: [
       { term: 1, courseCode: "MFN-1", category: Category.NONE, credit: 4 },
       { term: 1, courseCode: "MFN-2", category: Category.NONE, credit: 2 },
@@ -433,6 +463,8 @@ export const mastersDegreeProgrammes = [
     termType: TermType.Year,
     termsCount: 2,
     collegeCode: "IGNOU",
+    schoolCode: "SOCE",
+    totalCredits: 64,
     programmeStructure: [
       { term: 1, courseCode: "MCFT-1", category: Category.NONE, credit: 4 },
       { term: 1, courseCode: "MCFTL-1", category: Category.NONE, credit: 2 },
@@ -469,6 +501,8 @@ export const mastersDegreeProgrammes = [
     termType: TermType.Year,
     termsCount: 2,
     collegeCode: "IGNOU",
+    schoolCode: "SOSW",
+    totalCredits: 72,
     programmeStructure: [
       { term: 1, courseCode: "MSW-1", category: Category.NONE, credit: 4 },
       { term: 1, courseCode: "MSW-2", category: Category.NONE, credit: 4 },
@@ -503,6 +537,8 @@ export const mastersDegreeProgrammes = [
     termType: TermType.Year,
     termsCount: 2,
     collegeCode: "IGNOU",
+    schoolCode: "SOSW",
+    totalCredits: 72,
     programmeStructure: [
       { term: 1, courseCode: "MSW-1", category: Category.NONE, credit: 4 },
       { term: 1, courseCode: "MSW-2", category: Category.NONE, credit: 4 },
@@ -530,6 +566,8 @@ export const mastersDegreeProgrammes = [
     termType: TermType.Year,
     termsCount: 2,
     collegeCode: "IGNOU",
+    schoolCode: "SOE",
+    totalCredits: 68,
     programmeStructure: [
       { term: 1, courseCode: "MES-11", category: Category.NONE, credit: 4 },
       { term: 1, courseCode: "MES-12", category: Category.NONE, credit: 6 },
@@ -571,6 +609,8 @@ export const mastersDegreeProgrammes = [
     termType: TermType.Year,
     termsCount: 2,
     collegeCode: "IGNOU",
+    schoolCode: "STRIDE",
+    totalCredits: 64,
     programmeStructure: [
       { term: 1, courseCode: "MDE-411", category: Category.NONE, credit: 6 },
       { term: 1, courseCode: "MDE-412", category: Category.NONE, credit: 6 },
@@ -594,6 +634,8 @@ export const mastersDegreeProgrammes = [
     termType: TermType.Year,
     termsCount: 2,
     collegeCode: "IGNOU",
+    schoolCode: "SOE",
+    totalCredits: 68,
     programmeStructure: [
       { term: 1, courseCode: "MAE-1", category: Category.NONE, credit: 6 },
       { term: 1, courseCode: "MAE-2", category: Category.NONE, credit: 6 },
@@ -619,6 +661,8 @@ export const mastersDegreeProgrammes = [
     termType: TermType.Semester,
     termsCount: 4,
     collegeCode: "IGNOU",
+    schoolCode: "SOTHSM",
+    totalCredits: 68,
     programmeStructure: [
       { term: 1, courseCode: "MTTM-1", category: Category.NONE, credit: 4 },
       { term: 1, courseCode: "MTTM-2", category: Category.NONE, credit: 4 },
@@ -650,6 +694,8 @@ export const mastersDegreeProgrammes = [
     termType: TermType.Year,
     termsCount: 2,
     collegeCode: "IGNOU",
+    schoolCode: "SOITS",
+    totalCredits: 64,
     programmeStructure: [
       { term: 1, courseCode: "MPY-1", category: Category.C, credit: 8 },
       { term: 1, courseCode: "MPYE-1", category: Category.E, credit: 4 },
@@ -683,6 +729,8 @@ export const mastersDegreeProgrammes = [
     termType: TermType.Semester,
     termsCount: 4,
     collegeCode: "IGNOU",
+    schoolCode: "SOITS",
+    totalCredits: 72,
     programmeStructure: [
       { term: 1, courseCode: "MEV-11", category: Category.C, credit: 4 },
       { term: 1, courseCode: "MEV-12", category: Category.C, credit: 4 },
@@ -721,6 +769,8 @@ export const mastersDegreeProgrammes = [
     termType: TermType.Year,
     termsCount: 2,
     collegeCode: "IGNOU",
+    schoolCode: "SOITS",
+    totalCredits: 64,
     programmeStructure: [
       { term: 1, courseCode: "MFC-001", category: Category.NONE, credit: 6 },
       { term: 1, courseCode: "MFC-002", category: Category.NONE, credit: 6 },
@@ -743,6 +793,8 @@ export const mastersDegreeProgrammes = [
     termType: TermType.Year,
     termsCount: 2,
     collegeCode: "IGNOU",
+    schoolCode: "SOEDS",
+    totalCredits: 72,
     programmeStructure: [
       { term: 1, courseCode: "MDV-101", category: Category.NONE, credit: 6 },
       { term: 1, courseCode: "MDV-102", category: Category.NONE, credit: 6 },
@@ -770,6 +822,8 @@ export const mastersDegreeProgrammes = [
     termType: TermType.Year,
     termsCount: 2,
     collegeCode: "IGNOU",
+    schoolCode: "SOGDS",
+    totalCredits: 66,
     programmeStructure: [
       { term: 1, courseCode: "MWG-1", category: Category.NONE, credit: 8 },
       { term: 1, courseCode: "MWG-2", category: Category.NONE, credit: 8 },
@@ -800,6 +854,8 @@ export const mastersDegreeProgrammes = [
     termType: TermType.Year,
     termsCount: 2,
     collegeCode: "IGNOU",
+    schoolCode: "SOGDS",
+    totalCredits: 72,
     programmeStructure: [
       { term: 1, courseCode: "MGS-1", category: Category.C, credit: 6 },
       { term: 1, courseCode: "MGS-2", category: Category.C, credit: 6 },
@@ -830,6 +886,8 @@ export const mastersDegreeProgrammes = [
     termType: TermType.Year,
     termsCount: 2,
     collegeCode: "IGNOU",
+    schoolCode: "SOTST",
+    totalCredits: 64,
     programmeStructure: [
       { term: 1, courseCode: "MTT-10", category: Category.NONE, credit: 4 },
       { term: 1, courseCode: "MTT-11", category: Category.NONE, credit: 4 },
@@ -856,6 +914,8 @@ export const mastersDegreeProgrammes = [
     termType: TermType.Semester,
     termsCount: 4,
     collegeCode: "IGNOU",
+    schoolCode: "SOS",
+    totalCredits: 64,
     programmeStructure: [
       { term: 1, courseCode: "MMT-1", category: Category.NONE, credit: 4 },
       { term: 1, courseCode: "MMT-2", category: Category.NONE, credit: 2 },
@@ -888,6 +948,8 @@ export const mastersDegreeProgrammes = [
     termType: TermType.Year,
     termsCount: 2,
     collegeCode: "IGNOU",
+    schoolCode: "SOJNMS",
+    totalCredits: 64,
     programmeStructure: [
       { term: 1, courseCode: "MJM-20", category: Category.NONE, credit: 4 },
       { term: 1, courseCode: "MJM-21", category: Category.NONE, credit: 4 },
@@ -917,6 +979,8 @@ export const mastersDegreeProgrammes = [
     termType: TermType.Year,
     termsCount: 2,
     collegeCode: "IGNOU",
+    schoolCode: "SOPVA",
+    totalCredits: 64,
     programmeStructure: [
       { term: 1, courseCode: "MVA-020", category: Category.NONE, credit: 4 },
       { term: 1, courseCode: "MVAL-021", category: Category.NONE, credit: 4 },
@@ -942,6 +1006,8 @@ export const mastersDegreeProgrammes = [
     termType: TermType.Semester,
     termsCount: 4,
     collegeCode: "IGNOU",
+    schoolCode: "SOSS",
+    totalCredits: 64,
     programmeStructure: [
       { term: 1, courseCode: "MSEI-021", category: Category.NONE, credit: 4 },
       { term: 1, courseCode: "MSEI-022", category: Category.NONE, credit: 4 },
@@ -976,6 +1042,8 @@ export const mastersDegreeProgrammes = [
     termType: TermType.Year,
     termsCount: 2,
     collegeCode: "IGNOU",
+    schoolCode: "SOVET",
+    totalCredits: 64,
     programmeStructure: [
       { term: 1, courseCode: "MER-001", category: Category.NONE, credit: 4 },
       { term: 1, courseCode: "MER-002", category: Category.NONE, credit: 4 },

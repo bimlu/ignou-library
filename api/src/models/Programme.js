@@ -107,6 +107,7 @@ const programmeSchema = Schema(
     school: { type: String, ref: "School" },
     collegeCode: String,
     schoolCode: String,
+    totalCredits: Number,
     programmeStructure: [programmeStructureSchema],
   },
   {

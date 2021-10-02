@@ -10,6 +10,8 @@ export const diplomaProgrammes = [
     termType: TermType.Year,
     termsCount: 1,
     collegeCode: "IGNOU",
+    schoolCode: "SOCE",
+    totalCredits: 32,
     programmeStructure: [
       { term: 1, courseCode: "DECE-1", category: Category.NONE, credit: 8 },
       { term: 1, courseCode: "DECE-2", category: Category.NONE, credit: 8 },
@@ -26,6 +28,8 @@ export const diplomaProgrammes = [
     termType: TermType.Year,
     termsCount: 1,
     collegeCode: "IGNOU",
+    schoolCode: "SOCE",
+    totalCredits: 32,
     programmeStructure: [
       { term: 1, courseCode: "DNHE-1", category: Category.NONE, credit: 8 },
       { term: 1, courseCode: "DNHE-2", category: Category.NONE, credit: 8 },
@@ -42,6 +46,8 @@ export const diplomaProgrammes = [
     termType: TermType.Year,
     termsCount: 1,
     collegeCode: "IGNOU",
+    schoolCode: "SOCE",
+    totalCredits: 30,
     programmeStructure: [
       { term: 1, courseCode: "BPR-1", category: Category.NONE, credit: 6 },
       { term: 1, courseCode: "BPR-2", category: Category.NONE, credit: 6 },
@@ -59,6 +65,8 @@ export const diplomaProgrammes = [
     termType: TermType.Year,
     termsCount: 1,
     collegeCode: "IGNOU",
+    schoolCode: "SOCE",
+    totalCredits: 32,
     programmeStructure: [
       { term: 1, courseCode: "BHC-11", category: Category.NONE, credit: 4 },
       { term: 1, courseCode: "BHC-12", category: Category.NONE, credit: 4 },
@@ -78,6 +86,8 @@ export const diplomaProgrammes = [
     termType: TermType.Year,
     termsCount: 1,
     collegeCode: "IGNOU",
+    schoolCode: "SOTHSM",
+    totalCredits: 36,
     programmeStructure: [
       { term: 1, courseCode: "TS-1", category: Category.C, credit: 8 },
       { term: 1, courseCode: "TS-2", category: Category.C, credit: 8 },
@@ -99,6 +109,8 @@ export const diplomaProgrammes = [
     termType: TermType.Year,
     termsCount: 1,
     collegeCode: "IGNOU",
+    schoolCode: "SOH",
+    totalCredits: 24,
     programmeStructure: [
       { term: 1, courseCode: "DCE-1", category: Category.C, credit: 4 },
       { term: 1, courseCode: "DCE-6", category: Category.C, credit: 4 },
@@ -117,6 +129,8 @@ export const diplomaProgrammes = [
     termType: TermType.Year,
     termsCount: 1,
     collegeCode: "IGNOU",
+    schoolCode: "SOH",
+    totalCredits: 24,
     programmeStructure: [
       { term: 1, courseCode: "OUL-3", category: Category.NONE, credit: 8 },
       { term: 1, courseCode: "OULP-1", category: Category.NONE, credit: 4 },
@@ -134,6 +148,8 @@ export const diplomaProgrammes = [
     termType: TermType.Year,
     termsCount: 1,
     collegeCode: "IGNOU",
+    schoolCode: "SOA",
+    totalCredits: 32,
     programmeStructure: [
       { term: 1, courseCode: "BPVI-1", category: Category.NONE, credit: 4 },
       { term: 1, courseCode: "BPVI-2", category: Category.NONE, credit: 4 },
@@ -154,6 +170,8 @@ export const diplomaProgrammes = [
     termType: TermType.Year,
     termsCount: 1,
     collegeCode: "IGNOU",
+    schoolCode: "SOA",
+    totalCredits: 32,
     programmeStructure: [
       { term: 1, courseCode: "BPVI-11", category: Category.NONE, credit: 4 },
       { term: 1, courseCode: "BPVI-12", category: Category.NONE, credit: 4 },
@@ -174,6 +192,8 @@ export const diplomaProgrammes = [
     termType: TermType.Year,
     termsCount: 1,
     collegeCode: "IGNOU",
+    schoolCode: "SOA",
+    totalCredits: 32,
     programmeStructure: [
       { term: 1, courseCode: "BPVI-21", category: Category.NONE, credit: 4 },
       { term: 1, courseCode: "BPVI-22", category: Category.NONE, credit: 4 },
@@ -194,6 +214,8 @@ export const diplomaProgrammes = [
     termType: TermType.Year,
     termsCount: 1,
     collegeCode: "IGNOU",
+    schoolCode: "SOA",
+    totalCredits: 32,
     programmeStructure: [
       { term: 1, courseCode: "BNRI-101", category: Category.NONE, credit: 4 },
       { term: 1, courseCode: "BNRI-102", category: Category.NONE, credit: 4 },
@@ -214,6 +236,8 @@ export const diplomaProgrammes = [
     termType: TermType.Year,
     termsCount: 1,
     collegeCode: "IGNOU",
+    schoolCode: "SOA",
+    totalCredits: 34,
     programmeStructure: [
       { term: 1, courseCode: "BAP-002", category: Category.NONE, credit: 4 },
       { term: 1, courseCode: "BAPI-004", category: Category.NONE, credit: 8 },
@@ -231,6 +255,8 @@ export const diplomaProgrammes = [
     termType: TermType.Year,
     termsCount: 1,
     collegeCode: "IGNOU",
+    schoolCode: "SOGDS",
+    totalCredits: 32,
     programmeStructure: [
       { term: 1, courseCode: "BWEE-12", category: Category.NONE, credit: 8 },
       { term: 1, courseCode: "BWEE-4", category: Category.NONE, credit: 4 },
@@ -250,6 +276,8 @@ export const diplomaProgrammes = [
     termType: TermType.Year,
     termsCount: 1,
     collegeCode: "IGNOU",
+    schoolCode: "SOSW",
+    totalCredits: 24,
     programmeStructure: [
       { term: 1, courseCode: "BFE-101", category: Category.NONE, credit: 4 },
       { term: 1, courseCode: "BFEE-101", category: Category.NONE, credit: 4 },
@@ -268,6 +296,8 @@ export const diplomaProgrammes = [
     termType: TermType.Year,
     termsCount: 1,
     collegeCode: "IGNOU",
+    schoolCode: "SOVET",
+    totalCredits: 32,
     programmeStructure: [
       { term: 1, courseCode: "BPOI-101", category: Category.NONE, credit: 2 },
       { term: 1, courseCode: "BPOI-102", category: Category.NONE, credit: 4 },
@@ -287,6 +317,8 @@ export const diplomaProgrammes = [
     termType: TermType.Year,
     termsCount: 1,
     collegeCode: "IGNOU",
+    schoolCode: "SOVET",
+    totalCredits: 32,
     programmeStructure: [
       { term: 1, courseCode: "BSSI-11", category: Category.NONE, credit: 8 },
       { term: 1, courseCode: "BSSI-12", category: Category.NONE, credit: 6 },
@@ -304,6 +336,8 @@ export const diplomaProgrammes = [
     termType: TermType.Year,
     termsCount: 1,
     collegeCode: "IGNOU",
+    schoolCode: "SOL",
+    totalCredits: 32,
     programmeStructure: [
       { term: 1, courseCode: "BLE-1", category: Category.NONE, credit: 5 },
       { term: 1, courseCode: "BLE-2", category: Category.NONE, credit: 5 },
@@ -321,6 +355,8 @@ export const diplomaProgrammes = [
     termType: TermType.Year,
     termsCount: 1,
     collegeCode: "IGNOU",
+    schoolCode: "SOS",
+    totalCredits: 28,
     programmeStructure: [
       { term: 1, courseCode: "BAQ-1", category: Category.C, credit: 8 },
       { term: 1, courseCode: "BAQP-1", category: Category.C, credit: 6 },
@@ -339,6 +375,8 @@ export const diplomaProgrammes = [
     termType: TermType.Year,
     termsCount: 1,
     collegeCode: "IGNOU",
+    schoolCode: "SOMS",
+    totalCredits: 32,
     programmeStructure: [
       { term: 1, courseCode: "BRL-1", category: Category.NONE, credit: 4 },
       { term: 1, courseCode: "BRL-2", category: Category.NONE, credit: 4 },
@@ -356,6 +394,8 @@ export const diplomaProgrammes = [
     termType: TermType.Year,
     termsCount: 1,
     collegeCode: "IGNOU",
+    schoolCode: "SOFL",
+    totalCredits: 24,
     programmeStructure: [
       { term: 1, courseCode: "DTG-1", category: Category.NONE, credit: 6 },
       { term: 1, courseCode: "DTG-2", category: Category.NONE, credit: 4 },
@@ -372,6 +412,8 @@ export const diplomaProgrammes = [
     termType: TermType.Year,
     termsCount: 1,
     collegeCode: "IGNOU",
+    schoolCode: "SOHS",
+    totalCredits: 28,
     programmeStructure: [
       { term: 1, courseCode: "BNS-11", category: Category.NONE, credit: 4 },
       { term: 1, courseCode: "BNS-12", category: Category.NONE, credit: 4 },
@@ -390,6 +432,8 @@ export const diplomaProgrammes = [
     termType: TermType.Year,
     termsCount: 1,
     collegeCode: "IGNOU",
+    schoolCode: "SOHS",
+    totalCredits: 32,
     programmeStructure: [
       { term: 1, courseCode: "BNS-31", category: Category.NONE, credit: 6 },
       { term: 1, courseCode: "BNS-32", category: Category.NONE, credit: 6 },
@@ -406,6 +450,8 @@ export const diplomaProgrammes = [
     termType: TermType.Year,
     termsCount: 1,
     collegeCode: "IGNOU",
+    schoolCode: "SOPVA",
+    totalCredits: 32,
     programmeStructure: [
       { term: 1, courseCode: "BTH-1", category: Category.NONE, credit: 6 },
       { term: 1, courseCode: "BTHL-2", category: Category.NONE, credit: 6 },
@@ -423,6 +469,8 @@ export const diplomaProgrammes = [
     termType: TermType.Year,
     termsCount: 1,
     collegeCode: "IGNOU",
+    schoolCode: "SOEDS",
+    totalCredits: 32,
     programmeStructure: [
       { term: 1, courseCode: "BEDS-001", category: Category.NONE, credit: 4 },
       { term: 1, courseCode: "BEDS-002", category: Category.NONE, credit: 4 },
@@ -441,6 +489,8 @@ export const diplomaProgrammes = [
     termType: TermType.Year,
     termsCount: 1,
     collegeCode: "IGNOU",
+    schoolCode: "SOET",
+    totalCredits: 32,
     programmeStructure: [
       { term: 1, courseCode: "MIO-001", category: Category.NONE, credit: 4 },
       { term: 1, courseCode: "MIO-002", category: Category.NONE, credit: 4 },

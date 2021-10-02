@@ -10,6 +10,8 @@ export const bachelorsDegreeProgrammes = [
     name: "BAG",
     fullName: "Bachelor of Arts",
     collegeCode: "IGNOU",
+    schoolCode: "SOH",
+    totalCredits: 132,
     courseList: {
       CC: [
         "BANC-131",
@@ -351,6 +353,8 @@ export const bachelorsDegreeProgrammes = [
     name: "BCOMG",
     fullName: "Bachelor of Commerce",
     collegeCode: "IGNOU",
+    schoolCode: "SOMS",
+    totalCredits: 132,
     courseList: {
       CC: ["BCOC-131", "BCOC-132", "BCOC-133", "BCOC-134", "BCOC-135", "BCOC-136", "BCOC-137"],
       DSE: ["BCOE-141", "BCOE-143", "BCOE-142", "BCOE-144"],
@@ -403,6 +407,8 @@ export const bachelorsDegreeProgrammes = [
     name: "BSCG",
     fullName: "Bachelor of Science",
     collegeCode: "IGNOU",
+    schoolCode: "SOS",
+    totalCredits: 132,
     courseList: {
       CC: [
         "BBYCT-131",
@@ -623,6 +629,8 @@ export const bachelorsDegreeProgrammes = [
     name: "BCA",
     fullName: "Bachelor of Computer Applications",
     collegeCode: "IGNOU",
+    schoolCode: "SOCIS",
+    totalCredits: 99,
     programmeDetail: {
       first: [
         { course: "FEG-2", credit: 4 },
@@ -732,6 +740,8 @@ export const bachelorsDegreeProgrammes = [
     name: "BLIS",
     fullName: "Bachelor of Library and Information Sciences",
     collegeCode: "IGNOU",
+    schoolCode: "SOSS",
+    totalCredits: 36,
     programmeDetail: {
       first: [
         { course: "BLI-221", credit: 4 },
@@ -766,6 +776,8 @@ export const bachelorsDegreeProgrammes = [
     name: "BTS",
     fullName: "Bachelor of Arts (Tourism Studies)",
     collegeCode: "IGNOU",
+    schoolCode: "SOTHSM",
+    totalCredits: 96,
     programmeDetail: {
       first: [
         { course: "TS-1", credit: 8 },
@@ -832,6 +844,8 @@ export const bachelorsDegreeProgrammes = [
     name: "BSWG",
     fullName: "Bachelor of Social Work",
     collegeCode: "IGNOU",
+    schoolCode: "SOSW",
+    totalCredits: 132,
     programmeDetail: {
       first: [
         { course: "BHDLA-135", credit: 6 },
@@ -901,6 +915,8 @@ export const bachelorsDegreeProgrammes = [
     name: "BBARL",
     fullName: "Bachelor of Business Administration (Retailing)",
     collegeCode: "IGNOU",
+    schoolCode: "SOMS",
+    totalCredits: 96,
     programmeDetail: {
       first: [
         { course: "BRL-1", credit: 4 },
@@ -959,6 +975,8 @@ export const bachelorsDegreeProgrammes = [
     name: "BAVTM",
     fullName: "Bachelor of Arts (Vocational Studies) Tourism Management",
     collegeCode: "IGNOU",
+    schoolCode: "SOTHSM",
+    totalCredits: 132,
     courseList: {
       CC: ["BTMC-131", "BTMC-132", "BTMC-133", "BTMC-134", "BTMC-135", "BTMC-136", "BTMC-137", "BTMC-138"],
       DSE: ["BTME-141", "BTMP-142", "BTME-143", "BTME-144"],

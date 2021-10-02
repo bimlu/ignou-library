@@ -10,6 +10,8 @@ export const pgGraduateCertificateProgrammes = [
     termType: TermType.Semester,
     termsCount: 1,
     collegeCode: "IGNOU",
+    schoolCode: "SOL",
+    totalCredits: 16,
     programmeStructure: [
       { term: 1, courseCode: "MIR-11", category: Category.NONE, credit: 4 },
       { term: 1, courseCode: "MIR-12", category: Category.NONE, credit: 4 },
@@ -26,6 +28,8 @@ export const pgGraduateCertificateProgrammes = [
     termType: TermType.Semester,
     termsCount: 1,
     collegeCode: "IGNOU",
+    schoolCode: "SOL",
+    totalCredits: 16,
     programmeStructure: [
       { term: 1, courseCode: "MIR-21", category: Category.NONE, credit: 4 },
       { term: 1, courseCode: "MIR-22", category: Category.NONE, credit: 4 },
@@ -42,6 +46,8 @@ export const pgGraduateCertificateProgrammes = [
     termType: TermType.Semester,
     termsCount: 1,
     collegeCode: "IGNOU",
+    schoolCode: "SOITS",
+    totalCredits: 16,
     programmeStructure: [
       { term: 1, courseCode: "MEV-021", category: Category.C, credit: 4 },
       { term: 1, courseCode: "MEV-022", category: Category.C, credit: 4 },
@@ -59,6 +65,8 @@ export const pgGraduateCertificateProgrammes = [
     termType: TermType.Semester,
     termsCount: 1,
     collegeCode: "IGNOU",
+    schoolCode: "SOS",
+    totalCredits: 16,
     programmeStructure: [
       { term: 1, courseCode: "MGY-1", category: Category.NONE, credit: 4 },
       { term: 1, courseCode: "MGY-2", category: Category.NONE, credit: 4 },
@@ -75,6 +83,8 @@ export const pgGraduateCertificateProgrammes = [
     termType: TermType.Semester,
     termsCount: 1,
     collegeCode: "IGNOU",
+    schoolCode: "SOET",
+    totalCredits: 16,
     programmeStructure: [
       { term: 1, courseCode: "BEE-1", category: Category.NONE, credit: 6 },
       { term: 1, courseCode: "BEE-2", category: Category.NONE, credit: 4 },
@@ -90,6 +100,8 @@ export const pgGraduateCertificateProgrammes = [
     termType: TermType.Semester,
     termsCount: 1,
     collegeCode: "IGNOU",
+    schoolCode: "SOET",
+    totalCredits: 16,
     programmeStructure: [
       { term: 1, courseCode: "MIS-21", category: Category.NONE, credit: 4 },
       { term: 1, courseCode: "MIS-22", category: Category.NONE, credit: 2 },
@@ -107,6 +119,8 @@ export const pgGraduateCertificateProgrammes = [
     termType: TermType.Semester,
     termsCount: 1,
     collegeCode: "IGNOU",
+    schoolCode: "SOET",
+    totalCredits: 16,
     programmeStructure: [
       { term: 1, courseCode: "MWR-001", category: Category.NONE, credit: 4 },
       { term: 1, courseCode: "MWR-002", category: Category.NONE, credit: 4 },
@@ -123,6 +137,8 @@ export const pgGraduateCertificateProgrammes = [
     termType: TermType.Semester,
     termsCount: 1,
     collegeCode: "IGNOU",
+    schoolCode: "SOA",
+    totalCredits: 16,
     programmeStructure: [
       { term: 1, courseCode: "MNR-1", category: Category.NONE, credit: 4 },
       { term: 1, courseCode: "MNR-2", category: Category.NONE, credit: 4 },
@@ -139,6 +155,8 @@ export const pgGraduateCertificateProgrammes = [
     termType: TermType.Semester,
     termsCount: 1,
     collegeCode: "IGNOU",
+    schoolCode: "SOSS",
+    totalCredits: 16,
     programmeStructure: [
       { term: 1, courseCode: "MGP-1", category: Category.NONE, credit: 4 },
       { term: 1, courseCode: "MGP-5", category: Category.NONE, credit: 4 },
@@ -155,6 +173,8 @@ export const pgGraduateCertificateProgrammes = [
     termType: TermType.Semester,
     termsCount: 1,
     collegeCode: "IGNOU",
+    schoolCode: "SOE",
+    totalCredits: 15,
     programmeStructure: [
       { term: 1, courseCode: "MAE-1", category: Category.NONE, credit: 6 },
       { term: 1, courseCode: "MAE-2", category: Category.NONE, credit: 6 },
@@ -172,6 +192,8 @@ export const pgGraduateCertificateProgrammes = [
     termType: TermType.Semester,
     termsCount: 1,
     collegeCode: "IGNOU",
+    schoolCode: "SOE",
+    totalCredits: 16,
     programmeStructure: [
       { term: 1, courseCode: "MVEI-11", category: Category.NONE, credit: 4 },
       { term: 1, courseCode: "MVEI-12", category: Category.NONE, credit: 4 },
@@ -188,6 +210,8 @@ export const pgGraduateCertificateProgrammes = [
     termType: TermType.Semester,
     termsCount: 1,
     collegeCode: "IGNOU",
+    schoolCode: "SOTST",
+    totalCredits: 16,
     programmeStructure: [
       { term: 1, courseCode: "MTT-1", category: Category.NONE, credit: 4 },
       { term: 1, courseCode: "MTT-2", category: Category.NONE, credit: 4 },
@@ -204,6 +228,8 @@ export const pgGraduateCertificateProgrammes = [
     termType: TermType.Semester,
     termsCount: 1,
     collegeCode: "IGNOU",
+    schoolCode: "SOTST",
+    totalCredits: 16,
     programmeStructure: [
       { term: 1, courseCode: "MTT-1", category: Category.NONE, credit: 4 },
       { term: 1, courseCode: "MTT-4", category: Category.NONE, credit: 4 },
@@ -220,6 +246,8 @@ export const pgGraduateCertificateProgrammes = [
     termType: TermType.Semester,
     termsCount: 1,
     collegeCode: "IGNOU",
+    schoolCode: "SOHS",
+    totalCredits: 16,
     programmeStructure: [
       { term: 1, courseCode: "MME-11", category: Category.NONE, credit: 4 },
       { term: 1, courseCode: "MME-12", category: Category.NONE, credit: 6 },

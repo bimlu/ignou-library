@@ -10,6 +10,8 @@ export const bachelorsHonoursDegreeProgrammes = [
     name: "BAECH",
     fullName: "Bachelor of Arts (Honours) Economics",
     collegeCode: "IGNOU",
+    schoolCode: "SOSS",
+    totalCredits: 148,
     programmeStructure: [
       { term: 1, courseCode: "BECC-101", category: Category.CC, credit: 6 },
       { term: 1, courseCode: "BECC-102", category: Category.CC, credit: 6 },
@@ -80,6 +82,8 @@ export const bachelorsHonoursDegreeProgrammes = [
     name: "BAHIH",
     fullName: "Bachelor of Arts (Honours) History",
     collegeCode: "IGNOU",
+    schoolCode: "SOSS",
+    totalCredits: 148,
     programmeStructure: [
       { term: 1, courseCode: "BHIC-101", category: Category.CC, credit: 6 },
       { term: 1, courseCode: "BHIC-102", category: Category.CC, credit: 6 },
@@ -150,6 +154,8 @@ export const bachelorsHonoursDegreeProgrammes = [
     name: "BAPSH",
     fullName: "Bachelor of Arts (Honours) Political Science",
     collegeCode: "IGNOU",
+    schoolCode: "SOSS",
+    totalCredits: 148,
     programmeStructure: [
       { term: 1, courseCode: "BPSC-101", category: Category.CC, credit: 6 },
       { term: 1, courseCode: "BPSC-102", category: Category.CC, credit: 6 },
@@ -223,6 +229,8 @@ export const bachelorsHonoursDegreeProgrammes = [
     name: "BAPCH",
     fullName: "Bachelor of Arts (Honours) Psychology",
     collegeCode: "IGNOU",
+    schoolCode: "SOSS",
+    totalCredits: 148,
     programmeStructure: [
       { term: 1, courseCode: "BPCC-101", category: Category.CC, credit: 6 },
       { term: 1, courseCode: "BPCC-102", category: Category.CC, credit: 6 },
@@ -290,6 +298,8 @@ export const bachelorsHonoursDegreeProgrammes = [
     name: "BAPAH",
     fullName: "Bachelor of Arts (Honours) Public Administration",
     collegeCode: "IGNOU",
+    schoolCode: "SOSS",
+    totalCredits: 148,
     programmeStructure: [
       { term: 1, courseCode: "BPAC-101", category: Category.CC, credit: 6 },
       { term: 1, courseCode: "BPAC-102", category: Category.CC, credit: 6 },
@@ -357,6 +367,8 @@ export const bachelorsHonoursDegreeProgrammes = [
     name: "BASOH",
     fullName: "Bachelor of Arts (Honours) Sociology",
     collegeCode: "IGNOU",
+    schoolCode: "SOSS",
+    totalCredits: 148,
     programmeStructure: [
       { term: 1, courseCode: "BSOC-101", category: Category.CC, credit: 6 },
       { term: 1, courseCode: "BSOC-102", category: Category.CC, credit: 6 },
@@ -428,6 +440,8 @@ export const bachelorsHonoursDegreeProgrammes = [
     name: "BSCANH",
     fullName: "Bachelor of Science (Honours) Anthropology",
     collegeCode: "IGNOU",
+    schoolCode: "SOSS",
+    totalCredits: 148,
     programmeStructure: [
       { term: 1, courseCode: "BANC-101", category: Category.CC, credit: 6 },
       { term: 1, courseCode: "BANC-102", category: Category.CC, credit: 6 },
@@ -501,6 +515,8 @@ export const bachelorsHonoursDegreeProgrammes = [
     name: "BSCBCH",
     fullName: "Bachelor of Science (Honours) in Biochemistry",
     collegeCode: "IGNOU",
+    schoolCode: "SOS",
+    totalCredits: 148,
     programmeStructure: [
       { term: 1, courseCode: "BBCCT-101", category: Category.CC, credit: 6 },
       { term: 1, courseCode: "BBCCL-102", category: Category.CC, credit: 6 },
@@ -567,6 +583,8 @@ export const bachelorsHonoursDegreeProgrammes = [
     name: "BAEGH",
     fullName: "Bachelor of Arts English (Honours)",
     collegeCode: "IGNOU",
+    schoolCode: "SOH",
+    totalCredits: 148,
     programmeStructure: [
       { term: 1, courseCode: "BEGC-101", category: Category.CC, credit: 6 },
       { term: 1, courseCode: "BEGC-102", category: Category.CC, credit: 6 },
@@ -619,6 +637,8 @@ export const bachelorsHonoursDegreeProgrammes = [
     name: "BAPFHMH",
     fullName: "Bachelor of Performing Arts – Hindustani Music (Honours)",
     collegeCode: "IGNOU",
+    schoolCode: "SOPVA",
+    totalCredits: 148,
     programmeStructure: [
       { term: 1, courseCode: "BHMCT-101", category: Category.CC, credit: 6 },
       { term: 1, courseCode: "BHMCL-102", category: Category.CC, credit: 6 },
