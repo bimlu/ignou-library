@@ -73,6 +73,7 @@ const programmeSchema = Schema(
     },
     description: String,
     image: String,
+    thumbnail: String,
     imagePublicId: String,
     verified: Boolean,
     college: {

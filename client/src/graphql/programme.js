@@ -21,6 +21,7 @@ export const GET_PROGRAMME = gql`
       }
       description
       image
+      thumbnail
       imagePublicId
       createdAt
       college {
@@ -55,6 +56,7 @@ export const GET_PROGRAMME_STRUCTURE = gql`
       }
       description
       image
+      thumbnail
       imagePublicId
       createdAt
       college {
@@ -99,6 +101,7 @@ export const GET_COLLEGE_PROGRAMMES = gql`
         description
         verified
         image
+        thumbnail
         totalCredits
         studentsCount
         coursesCount

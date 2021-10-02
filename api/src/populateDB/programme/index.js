@@ -12,8 +12,11 @@ const IMAGES = [
 
 const getRandomImage = () => IMAGES[Math.floor(Math.random() * IMAGES.length)];
 
-const getActualImage = (programme) =>
+const getImage = (programme) =>
   `https://ignou-app-1.s3.ap-south-1.amazonaws.com/images/programme/${programme.code.toLowerCase()}.jpeg`;
+
+const getThumbnail = (programme) =>
+  `https://ignou-app-1.s3.ap-south-1.amazonaws.com/images/programme_thumbnails/${programme.code.toLowerCase()}.jpeg`;
 
 export const createProgrammes = () => {
   const programmes = getProgrammes();
@@ -65,7 +68,8 @@ export const createProgramme = async (programme) => {
   const newProgramme = await new Programme({
     ...programme,
     college: college.id,
-    image: getActualImage(programme),
+    image: getImage(programme),
+    thumbnail: getThumbnail(programme),
   }).save();
   await College.findOneAndUpdate(
     { code: programme.collegeCode },
