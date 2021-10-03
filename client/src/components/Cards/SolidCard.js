@@ -9,6 +9,7 @@ import { Link } from "react-router-dom";
 import Skeleton from "@material-ui/lab/Skeleton";
 import CheckCircleIcon from "@material-ui/icons/CheckCircle";
 import { TermType2 } from "constants/TermType";
+import { useEffect, useRef, useState } from "react";
 
 const useStyles = makeStyles((theme) => ({
   actionArea: {
@@ -50,15 +51,49 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-const SolidCard = ({ title, subtitle, image, color, url, loading, termType, termsCount, totalCredits }) => {
+const SolidCard = ({ title, subtitle, image, thumbnail, color, url, loading, termType, termsCount, totalCredits }) => {
   const classes = useStyles({ color: color });
+  const [imageSrc, setImageSrc] = useState(thumbnail);
+  const [loadingImage, setLoadingImage] = useState(true);
+  const isMounted = useRef(false);
+
+  useEffect(() => {
+    isMounted.current = true;
+    return () => {
+      isMounted.current = false;
+    };
+  }, []);
+
+  useEffect(() => {
+    if (!isMounted) return;
+
+    const imageToLoad = new Image();
+    imageToLoad.src = image;
+    imageToLoad.onload = () => {
+      setImageSrc(image);
+      setLoadingImage(false);
+    };
+
+    return () => {
+      if (!imageToLoad) return;
+      imageToLoad.onload = () => {};
+    };
+  }, [isMounted]);
 
   return loading ? (
     <Skeleton variant="rect" className={classes.card} height={272} />
   ) : (
     <CardActionArea component={Link} to={url} className={classes.actionArea}>
       <Card className={classes.card}>
-        <CardMedia className={classes.image} image={image} alt={title} />
+        <CardMedia
+          className={classes.image}
+          image={imageSrc}
+          alt={title}
+          style={{
+            opacity: loadingImage ? 0.5 : 1,
+            transition: "opacity .15s linear",
+          }}
+        />
         <CardContent className={classes.content}>
           <Typography variant="h5" component="span" gutterBottom={true}>
             <b>{title}</b>

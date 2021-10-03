@@ -101,19 +101,20 @@ const Programmes = () => {
       // console.log(programme);
       return (
         <div style={style} className={classes.row}>
-          <SolidCard
-            key={programme.id}
-            title={programme.name}
-            subtitle={programme.fullName}
-            image={programme.image}
-            color={cardColors[i % cardColors.length]}
-            url={`${Routes.COURSES}?collegeId=${collegeId}&collegeName=${collegeName}&programmeId=${programme.id}&programmeName=${programme.name}&termType=${programme.termType}&termsCount=${programme.termsCount}#term=all`}
-            studentData={`Students: ${programme.studentsCount}`}
-            otherData={`Courses: ${programme.coursesCount}`}
-            termType={programme.termType}
-            termsCount={programme.termsCount}
-            totalCredits={programme.totalCredits}
-          />
+            <SolidCard
+              key={programme.id}
+              title={programme.name}
+              subtitle={programme.fullName}
+              image={programme.image}
+              thumbnail={programme.thumbnail}
+              color={cardColors[i % cardColors.length]}
+              url={`${Routes.COURSES}?collegeId=${collegeId}&collegeName=${collegeName}&programmeId=${programme.id}&programmeName=${programme.name}&termType=${programme.termType}&termsCount=${programme.termsCount}#term=all`}
+              studentData={`Students: ${programme.studentsCount}`}
+              otherData={`Courses: ${programme.coursesCount}`}
+              termType={programme.termType}
+              termsCount={programme.termsCount}
+              totalCredits={programme.totalCredits}
+            />
         </div>
       );
     };
