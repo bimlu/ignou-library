@@ -27,6 +27,10 @@ const useStyles = makeStyles((theme) => ({
       boxShadow: `0 6px 12px 0 ${Color(color).rotate(-12).darken(0.2).fade(0.5)}`,
     },
   }),
+  cardLoading: {
+    minWidth: 256,
+    borderRadius: 16,
+  },
   content: () => {
     return {
       minHeight: 110,
@@ -49,11 +53,14 @@ const SolidCard = ({ title, subtitle, image, color, url, loading, termType, term
   const [imageSrc, setImageSrc] = useState(PLACEHOLDER_IMAGE);
   const [loadingImage, setLoadingImage] = useState(true);
   const isMounted = useRef(false);
+  const [wait, setWait] = useState(true);
 
   useEffect(() => {
     isMounted.current = true;
+    const timerId = setTimeout(() => setWait(false), [1]);
     return () => {
       isMounted.current = false;
+      clearTimeout(timerId);
     };
   }, []);
 
@@ -73,8 +80,8 @@ const SolidCard = ({ title, subtitle, image, color, url, loading, termType, term
     };
   }, [isMounted]);
 
-  return loading ? (
-    <Skeleton variant="rect" className={classes.card} height={272} />
+  return loading || wait ? (
+    <Skeleton variant="rect" className={classes.cardLoading} height={272} />
   ) : (
     <CardActionArea component={Link} to={url} className={classes.actionArea}>
       <Card className={classes.card}>
