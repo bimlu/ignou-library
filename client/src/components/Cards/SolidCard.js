@@ -10,6 +10,7 @@ import Skeleton from "@material-ui/lab/Skeleton";
 import CheckCircleIcon from "@material-ui/icons/CheckCircle";
 import { TermType2 } from "constants/TermType";
 import { useEffect, useRef, useState } from "react";
+import PLACEHOLDER_IMAGE from "assets/images/card_placeholder.png";
 
 const useStyles = makeStyles((theme) => ({
   actionArea: {
@@ -22,7 +23,6 @@ const useStyles = makeStyles((theme) => ({
   card: ({ color }) => ({
     minWidth: 256,
     borderRadius: 16,
-    // boxShadow: 'none',
     "&:hover": {
       boxShadow: `0 6px 12px 0 ${Color(color).rotate(-12).darken(0.2).fade(0.5)}`,
     },
@@ -30,15 +30,8 @@ const useStyles = makeStyles((theme) => ({
   content: () => {
     return {
       minHeight: 110,
-      // backgroundColor: color,
       background: theme.palette.background.paper,
       padding: theme.spacing(1),
-      // "& > *": {
-      //   whiteSpace: "nowrap",
-      //   overflow: "hidden",
-      //   textOverflow: "ellipsis",
-      //   marginLeft: theme.spacing(1),
-      // },
     };
   },
   image: {
@@ -51,9 +44,9 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-const SolidCard = ({ title, subtitle, image, thumbnail, color, url, loading, termType, termsCount, totalCredits }) => {
+const SolidCard = ({ title, subtitle, image, color, url, loading, termType, termsCount, totalCredits }) => {
   const classes = useStyles({ color: color });
-  const [imageSrc, setImageSrc] = useState(thumbnail);
+  const [imageSrc, setImageSrc] = useState(PLACEHOLDER_IMAGE);
   const [loadingImage, setLoadingImage] = useState(true);
   const isMounted = useRef(false);
 
@@ -88,6 +81,7 @@ const SolidCard = ({ title, subtitle, image, thumbnail, color, url, loading, ter
         <CardMedia
           className={classes.image}
           image={imageSrc}
+          component="img"
           alt={title}
           style={{
             opacity: loadingImage ? 0.5 : 1,
@@ -105,20 +99,12 @@ const SolidCard = ({ title, subtitle, image, thumbnail, color, url, loading, ter
             <b>{subtitle}</b>
           </Typography>
 
-          {/* <Typography variant="caption">{studentData}</Typography>
-          {", "}
-          <Typography variant="caption">{otherData}</Typography> */}
-
           <Typography variant="body1" noWrap={true}>
             <b>
               {totalCredits} Credits{" │ "}
               {termsCount} {TermType2[termType]}
             </b>
           </Typography>
-
-          {/* <Typography>
-            <b>SOH</b>(School of Humanities)
-          </Typography> */}
         </CardContent>
       </Card>
     </CardActionArea>
