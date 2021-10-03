@@ -10,7 +10,6 @@ import Head from "components/Head";
 import SolidCard from "components/Cards/SolidCard";
 import ScrollManager from "components/ScrollManager";
 import Box from "@material-ui/core/Box";
-// import Divider from "@material-ui/core/Divider";
 import ProgrammeFilter from "./ProgrammeFilter";
 
 import { EXPLORE_PAGE_CARDS_LIMIT } from "constants/DataLimit";
@@ -20,25 +19,12 @@ import { SET_EXPLORE_ROUTE } from "store/route";
 import * as Routes from "routes";
 import { FixedSizeList as List } from "react-window";
 import { DegreeType2 } from "constants/DegreeType";
-import { BOTTOM_NAV_HEIGHT, HEADER_HEIGHT } from "constants/Layout";
-import { makeStyles } from "@material-ui/core/styles";
+import { ReactWindowScroller } from "react-window-scroller";
 
-const useStyles = makeStyles((theme) => ({
-  list: {
-    overflowX: "hidden",
-    "&::-webkit-scrollbar": {
-      width: "0.25em",
-    },
-  },
-  row: {
-    paddingRight: theme.spacing(0.6),
-  },
-}));
 /**
  * Programmes page
  */
 const Programmes = () => {
-  const classes = useStyles();
   const cardColors = ["#203f52", "#4d137f", "#002244", "#004953"];
 
   const [{ datatree }, dispatch] = useStore();
@@ -100,41 +86,42 @@ const Programmes = () => {
       const programme = filteredProgrammes[i];
       // console.log(programme);
       return (
-        <div style={style} className={classes.row}>
-            <SolidCard
-              key={programme.id}
-              title={programme.name}
-              subtitle={programme.fullName}
-              image={programme.image}
-              thumbnail={programme.thumbnail}
-              color={cardColors[i % cardColors.length]}
-              url={`${Routes.COURSES}?collegeId=${collegeId}&collegeName=${collegeName}&programmeId=${programme.id}&programmeName=${programme.name}&termType=${programme.termType}&termsCount=${programme.termsCount}#term=all`}
-              studentData={`Students: ${programme.studentsCount}`}
-              otherData={`Courses: ${programme.coursesCount}`}
-              termType={programme.termType}
-              termsCount={programme.termsCount}
-              totalCredits={programme.totalCredits}
-            />
+        <div style={style}>
+          <SolidCard
+            key={programme.id}
+            title={programme.name}
+            subtitle={programme.fullName}
+            image={programme.image}
+            thumbnail={programme.thumbnail}
+            color={cardColors[i % cardColors.length]}
+            url={`${Routes.COURSES}?collegeId=${collegeId}&collegeName=${collegeName}&programmeId=${programme.id}&programmeName=${programme.name}&termType=${programme.termType}&termsCount=${programme.termsCount}#term=all`}
+            studentData={`Students: ${programme.studentsCount}`}
+            otherData={`Courses: ${programme.coursesCount}`}
+            termType={programme.termType}
+            termsCount={programme.termsCount}
+            totalCredits={programme.totalCredits}
+          />
         </div>
       );
     };
 
     return (
       <div>
-        <ScrollManager scrollKey={`${pathname}${search}${hash}`}>
-          {({ connectScrollTarget }) => (
+        <ReactWindowScroller>
+          {({ ref, outerRef, style, onScroll }) => (
             <List
-              height={window.innerHeight - HEADER_HEIGHT - BOTTOM_NAV_HEIGHT - 28}
+              ref={ref}
+              outerRef={outerRef}
+              style={style}
+              height={window.innerHeight}
               itemCount={filteredProgrammes.length || count}
               itemSize={280}
-              width="100%"
-              className={classes.list}
-              ref={connectScrollTarget}
+              onScroll={onScroll}
             >
               {Row}
             </List>
           )}
-        </ScrollManager>
+        </ReactWindowScroller>
       </div>
     );
   };

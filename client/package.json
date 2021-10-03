@@ -29,6 +29,7 @@
     "react-spring": "^8.0.27",
     "react-swipeable-views": "^0.13.9",
     "react-window": "^1.8.6",
+    "react-window-scroller": "^1.0.10",
     "styled-components": "^5.2.1",
     "subscriptions-transport-ws": "^0.9.18",
     "web-vitals": "^1.1.0"
