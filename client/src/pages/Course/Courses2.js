@@ -79,10 +79,11 @@ const Courses = () => {
       const i = index;
 
       const course = filteredCourses[i];
+      console.log(course);
       return (
         <div style={style}>
           <Card
-            key={course.courseCode}
+            key={course.course.id}
             title={course.course.name}
             subtitle={course.course.fullName}
             image={course.course.image}
@@ -91,6 +92,7 @@ const Courses = () => {
             studentData={`Students: ${course.course.studentsCount}`}
             otherData={`Posts: ${course.course.postsCount}`}
             postsCount={course.course.postsCount}
+            credit={course.credit}
           />
         </div>
       );
