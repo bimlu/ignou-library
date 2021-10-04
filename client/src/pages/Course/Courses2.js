@@ -79,7 +79,7 @@ const Courses = () => {
       const i = index;
 
       const course = filteredCourses[i];
-      console.log(course);
+      // console.log(course);
       return (
         <div style={style}>
           <Card

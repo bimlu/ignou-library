@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-// import { Link, generatePath } from "react-router-dom";
 import { useQuery } from "@apollo/client";
 import clsx from "clsx";
 
@@ -8,21 +7,11 @@ import Paper from "@material-ui/core/Paper";
 import Typography from "@material-ui/core/Typography";
 import Skeleton from "@material-ui/lab/Skeleton";
 import Box from "@material-ui/core/Box";
-import Divider from "@material-ui/core/Divider";
 import Collapse from "@material-ui/core/Collapse";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 import Button from "@material-ui/core/Button";
 import CheckCircleIcon from "@material-ui/icons/CheckCircle";
-// import EditIcon from "@material-ui/icons/Edit";
-// import IconButton from "@material-ui/core/IconButton";
-// import AddIcon from "@material-ui/icons/Add";
-
 import { GET_PROGRAMME } from "graphql/programme";
-
-import { TermType } from "constants/TermType";
-import { DegreeType } from "constants/DegreeType";
-
-// import * as Routes from "routes";
 
 const useStyles = makeStyles((theme) => ({
   paper: {
@@ -32,11 +21,14 @@ const useStyles = makeStyles((theme) => ({
   },
   imageWrapper: {
     height: 160,
+    marginTop: theme.spacing(1),
+    marginBottom: theme.spacing(2),
   },
   image: {
     width: "100%",
     height: "100%",
     objectFit: "cover",
+    borderRadius: theme.spacing(1),
   },
   expand: {
     transform: "rotate(0deg)",
@@ -54,25 +46,20 @@ const useStyles = makeStyles((theme) => ({
     marginBottom: theme.spacing(1),
     textTransform: "none",
   },
-  header: {
-    display: "flex",
-    flexDirection: "row",
-    alignItems: "center",
-    justifyContent: "space-between",
-    fontSize: theme.spacing(2.6),
-    "& > *": {
-      fontSize: "inherit",
-    },
-  },
   checkIcon: {
     fontSize: theme.spacing(2),
     marginLeft: theme.spacing(0.6),
   },
-  // editIcon: {
-  //   fontSize: theme.spacing(2.6),
-  // },
-  number: {
-    color: theme.palette.primary.main,
+  info: {
+    marginBottom: theme.spacing(1.8),
+  },
+  infoPaper: {
+    padding: theme.spacing(1.8),
+    background: theme.palette.background.paper,
+    borderRadius: theme.spacing(1),
+  },
+  infoHeading: {
+    marginBottom: theme.spacing(0.6),
   },
 }));
 
@@ -101,45 +88,24 @@ const CourseInfo = ({ programmeId }) => {
   }
 
   const programme = data.getProgramme;
+  // console.log(programme);
 
   return (
     <Paper className={classes.paper} elevation={0}>
-      <div className={classes.header}>
-        <span>
-          <Typography display="inline">@{programme.name}</Typography>
-          {programme.verified && <CheckCircleIcon color="primary" className={classes.checkIcon} />}
-        </span>
+      <span>
+        <Typography display="inline" variant="h6">
+          <b>@{programme.name}</b>
+        </Typography>
+        <CheckCircleIcon color="primary" className={classes.checkIcon} />
+      </span>
 
-        {/* <IconButton component={Link} to={generatePath(Routes.PROGRAMME, { id: programme.id })}>
-          <EditIcon className={classes.editIcon} />
-        </IconButton> */}
-      </div>
-
-      <Typography variant="h5" gutterBottom>
-        {programme.fullName}
+      <Typography variant="h5" color="textSecondary">
+        <b>{programme.fullName}</b>
       </Typography>
 
-      <Box mb={2}>
-        <Divider />
-      </Box>
-
-      <Box my={1} className={classes.imageWrapper}>
+      <div className={classes.imageWrapper}>
         <img alt="programme image" src={programme.image} className={classes.image} />
-      </Box>
-
-      <Typography gutterBottom>Degree: {DegreeType[programme.degree]}</Typography>
-
-      <Typography gutterBottom>Term Type: {TermType[programme.termType]}</Typography>
-
-      <Typography gutterBottom>Total number of Terms: {programme.termsCount}</Typography>
-
-      <Typography gutterBottom>
-        Number of students: <span className={classes.number}>{programme.students.length}</span>
-      </Typography>
-
-      <Typography gutterBottom>
-        Number of courses: <span className={classes.number}>{programme.courses.length}</span>
-      </Typography>
+      </div>
 
       <Button
         onClick={handleExpandClick}
@@ -161,30 +127,49 @@ const CourseInfo = ({ programmeId }) => {
       </Button>
 
       <Collapse in={expanded} timeout="auto" unmountOnExit>
-        <Typography gutterBottom variant="body2" style={{ whiteSpace: "pre-line" }}>
-          {programme.description}
-        </Typography>
+        <div className={classes.info}>
+          <Typography color="textSecondary" variant="h5" className={classes.infoHeading}>
+            <b>Eligibility</b>
+          </Typography>
+          <Paper className={classes.infoPaper} elevation={0}>
+            <Typography>10+2 or its equivalent</Typography>
+          </Paper>
+        </div>
+
+        <div className={classes.info}>
+          <Typography color="textSecondary" variant="h5" className={classes.infoHeading}>
+            <b>Medium of Instruction</b>
+          </Typography>
+          <Paper className={classes.infoPaper} elevation={0}>
+            <Typography>English & Hindi</Typography>
+          </Paper>
+        </div>
+
+        <div className={classes.info}>
+          <Typography color="textSecondary" variant="h5" className={classes.infoHeading}>
+            <b>Fee Structure</b>
+          </Typography>
+          <Paper className={classes.infoPaper} elevation={0}>
+            <Typography>
+              For B.A. Rs. 9,900/- for full programme to be paid year wise @ Rs. 3,300/- per year. Fee to be paid in 1st
+              year, including Registration Fee of Rs.200/- Is Rs.3,500/-
+            </Typography>
+          </Paper>
+        </div>
+
+        <div className={classes.info}>
+          <Typography color="textSecondary" variant="h5" className={classes.infoHeading}>
+            <b>Duration</b>
+          </Typography>
+          <Paper className={classes.infoPaper} elevation={0}>
+            <Typography>
+              Minimum 3 years and Maximum 6 years; offered in both January and July cycle of admission
+            </Typography>
+          </Paper>
+        </div>
       </Collapse>
 
-      <Box m={1}>{/* <Divider /> */}</Box>
-
-      {/* <Box mt={2} display="flex" justifyContent="space-between">
-        <Typography variant="h5" color="textSecondary" style={{ marginLeft: 8 }} display="inline">
-          Courses
-        </Typography>
-
-        <Button
-          component={Link}
-          to={`${Routes.CREATE_COURSE}?collegeId=${collegeId}&programmeId=${programmeId}`}
-          startIcon={<AddIcon />}
-          variant="outlined"
-          size="small"
-          color="primary"
-          className={classes.button}
-        >
-          New
-        </Button>
-      </Box> */}
+      <Box m={1} />
     </Paper>
   );
 };

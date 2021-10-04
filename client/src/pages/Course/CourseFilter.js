@@ -25,7 +25,7 @@ const useStyles = makeStyles((theme) => ({
     },
     position: "sticky",
     top: 0,
-    zIndex: theme.zIndex.appBar,
+    zIndex: theme.zIndex.md,
     background: theme.palette.background.default,
   },
 }));
