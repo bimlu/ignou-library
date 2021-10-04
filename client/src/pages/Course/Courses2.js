@@ -1,6 +1,5 @@
 import { useQuery } from "@apollo/client";
 import Box from "@material-ui/core/Box";
-// import Divider from "@material-ui/core/Divider";
 import CardsContainer from "components/Cards/CardsContainer";
 import Empty from "components/Empty";
 import Head from "components/Head";
@@ -8,7 +7,6 @@ import ScrollManager from "components/ScrollManager";
 import { EXPLORE_PAGE_CARDS_LIMIT } from "constants/DataLimit";
 import { GET_PROGRAMME_STRUCTURE } from "graphql/programme";
 import CourseInfo from "pages/Course/CourseInfo";
-// import ExploreHeader from "pages/Explore/ExploreHeader";
 import React, { useEffect, useState } from "react";
 import { useLocation } from "react-router-dom";
 import * as Routes from "routes";
@@ -17,26 +15,12 @@ import { SET_EXPLORE_ROUTE } from "store/route";
 import Card from "./Card";
 import CourseFilter from "./CourseFilter";
 import { FixedSizeList as List } from "react-window";
-import { makeStyles } from "@material-ui/core/styles";
-import { BOTTOM_NAV_HEIGHT, HEADER_HEIGHT } from "constants/Layout";
-
-const useStyles = makeStyles((theme) => ({
-  list: {
-    overflowX: "hidden",
-    "&::-webkit-scrollbar": {
-      width: "0.25em",
-    },
-  },
-  row: {
-    paddingRight: theme.spacing(0.6),
-  },
-}));
+import { ReactWindowScroller } from "react-window-scroller";
 
 /**
  * Courses page
  */
 const Courses = () => {
-  const classes = useStyles();
   const cardColors = ["#203f52", "#4d137f", "#002244", "#004953"];
 
   const [, dispatch] = useStore();
@@ -96,7 +80,7 @@ const Courses = () => {
 
       const course = filteredCourses[i];
       return (
-        <div style={style} className={classes.row}>
+        <div style={style}>
           <Card
             key={course.courseCode}
             title={course.course.name}
@@ -113,22 +97,21 @@ const Courses = () => {
     };
 
     return (
-      <div>
-        <ScrollManager scrollKey={`${pathname}${search}${hash}`}>
-          {({ connectScrollTarget }) => (
-            <List
-              height={window.innerHeight - HEADER_HEIGHT - BOTTOM_NAV_HEIGHT - 28}
-              itemCount={filteredCourses.length}
-              itemSize={220}
-              width="100%"
-              className={classes.list}
-              ref={connectScrollTarget}
-            >
-              {Row}
-            </List>
-          )}
-        </ScrollManager>
-      </div>
+      <ReactWindowScroller>
+        {({ ref, outerRef, style, onScroll }) => (
+          <List
+            ref={ref}
+            outerRef={outerRef}
+            style={style}
+            height={window.innerHeight}
+            itemCount={filteredCourses.length}
+            itemSize={220}
+            onScroll={onScroll}
+          >
+            {Row}
+          </List>
+        )}
+      </ReactWindowScroller>
     );
   };
 
@@ -137,8 +120,6 @@ const Courses = () => {
       <Head title={`${programmeName.toUpperCase()} | ${collegeName.toUpperCase()}`} />
 
       <ScrollManager scrollKey={`${pathname}${search}`} />
-
-      {/* <ExploreHeader /> */}
 
       <CourseInfo collegeId={collegeId} programmeId={programmeId} />
 

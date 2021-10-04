@@ -8,6 +8,7 @@ import { TermType } from "constants/TermType";
 const useStyles = makeStyles((theme) => ({
   root: {
     paddingBottom: theme.spacing(1),
+    paddingTop: theme.spacing(1),
     whiteSpace: "nowrap",
     overflow: "auto",
     "& > *": {
@@ -20,8 +21,12 @@ const useStyles = makeStyles((theme) => ({
       paddingRight: theme.spacing(1.5),
     },
     "&::-webkit-scrollbar": {
-      height: "0.22em",
+      height: "0.32em",
     },
+    position: "sticky",
+    top: 0,
+    zIndex: theme.zIndex.appBar,
+    background: theme.palette.background.default,
   },
 }));
 
