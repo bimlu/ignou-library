@@ -100,7 +100,7 @@ const ProgrammeInfo = ({ collegeId }) => {
   }
 
   const college = data.getCollege;
-  console.log(college);
+  // console.log(college);
 
   return (
     <Paper className={classes.paper} elevation={0}>
