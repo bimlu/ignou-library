@@ -158,7 +158,7 @@ const StudyMaterial = () => {
         <Box m={4} />
 
         {BLOCKS.map((block, index) => (
-          <div className={classes.info}>
+          <div className={classes.info} key={block.blockName}>
             <div className={classes.infoHeading}>
               <Typography variant="h6" color="textSecondary">
                 <b>📖 Block {index + 1}</b>
@@ -171,7 +171,7 @@ const StudyMaterial = () => {
 
             <Paper className={classes.infoPaper} elevation={0}>
               {block.units.map((unit, index) => (
-                <div className={classes.unitGroup}>
+                <div className={classes.unitGroup} key={unit.unitName}>
                   <Typography>
                     <b>📄 Unit {index + 1}</b>
                   </Typography>
