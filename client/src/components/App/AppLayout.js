@@ -24,7 +24,8 @@ import Messages from "pages/Messages";
 import { College, Colleges, CreateCollege } from "pages/College";
 import { Programme, Programmes, CreateProgramme } from "pages/Programme";
 import { Course, Courses, CreateCourse } from "pages/Course";
-import { Post, Posts, CreatePost } from "pages/Post";
+import { Post, CreatePost } from "pages/Post";
+import { StudyMaterial } from "pages/StudyMaterial";
 
 import { useStore } from "store";
 import * as Routes from "routes";
@@ -62,7 +63,8 @@ const AppLayout = ({ toggleThemeMode }) => {
                 </Route>
 
                 <Route exact path={Routes.POSTS}>
-                  <Posts />
+                  {/* <Posts /> */}
+                  <StudyMaterial />
                 </Route>
                 {/* *************** */}
 
