@@ -175,7 +175,7 @@ const StudyMaterial = () => {
                   <Typography>
                     <b>📄 Unit {index + 1}</b>
                   </Typography>
-                  <Link href={unit.unitLink} display="block" variant="body1" style={{ marginLeft: 24 }}>
+                  <Link target="blank" href={unit.unitLink} display="block" variant="body1" style={{ marginLeft: 24 }}>
                     {unit.unitName}
                   </Link>
                 </div>
