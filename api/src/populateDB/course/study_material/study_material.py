@@ -1,10 +1,7 @@
 import urllib.request
 from bs4 import BeautifulSoup
-from out_data import courses
 import os
 import json
-
-print(len(courses))
 
 def get_courses(programme_link):
   courses = []
@@ -63,6 +60,9 @@ def get_units(block_link):
 # print(get_blocks('https://egyankosh.ac.in/handle/123456789/452'))
 # print(get_units('https://egyankosh.ac.in/handle/123456789/1600'))
 
+with open('out_data.saved.json', 'r') as in_file:
+  json_data = in_file.read()
+  obj_data = json.loads(json_data)
 
 save_path = '/home/robin/projects/ignou-app/api/src/populateDB/course/study_material'
 file_name = 'course_with_blocks.json'
@@ -70,11 +70,11 @@ file_path = os.path.join(save_path, file_name)
 with open(file_path, 'w') as file: 
   file.write('[\n')
   count = 1
-  for course in courses:
+  for course in obj_data:
     print('extracting', count, 'course...')
     count += 1
-    blocks = get_blocks(course["courseLink"])
-    course["blocks"] = blocks
+    blocks = get_blocks(course[2])
+    course.append(blocks)
     file.writelines(json.dumps(course) + ',\n')
   file.write(']')
 
