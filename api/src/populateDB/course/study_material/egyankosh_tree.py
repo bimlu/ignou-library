@@ -1,7 +1,9 @@
+import json
 import urllib.request
 from bs4 import BeautifulSoup
 import re
 import os
+import json
 
 def extract_egyankosh_tree(egyankosh_tree_link):
   page = urllib.request.urlopen(egyankosh_tree_link).read().decode('utf-8')
@@ -48,13 +50,11 @@ def separate_course_code_name(course_text):
 
 def save_to_file(data):
   save_path = '/home/robin/projects/ignou-app/api/src/populateDB/course/study_material'
-  file_name = 'out_data.js'
+  file_name = 'out_data.json'
   file_path = os.path.join(save_path, file_name)
   with open(file_path, 'w') as file:
-    file.write('export const courses = [\n')
-    for (code, name, link) in data:
-      file.write(f'\t{{ courseCode: "{code}", courseName: "{name}", courseLink: "{link}" }},\n')
-    file.write('\n]')
+    json_data = json.dumps(data)
+    file.write(json_data)
 
 def orgranize_duplicates(in_data):
   out_data = {}
@@ -67,17 +67,11 @@ def orgranize_duplicates(in_data):
 
 def save_after_organizing(data):
   save_path = '/home/robin/projects/ignou-app/api/src/populateDB/course/study_material'
-  file_name = 'organized_out_data.js'
+  file_name = 'organized_out_data.json'
   file_path = os.path.join(save_path, file_name)
   with open(file_path, 'w') as file:
-    file.write('export const courses = [\n')
-    for code in data:
-      name_link_list = data[code]
-      file.write(f'\t{{ courseCode: "{code}", nameLinkList: [\n')
-      for (name, link) in name_link_list:
-        file.write(f'\t\t{{ courseName: "{name}", courseLink: "{link}" }},\n')
-      file.write(f'\t], }},\n')
-    file.write('\n]')
+    json_data = json.dumps(data)
+    file.write(json_data)
 
 raw_data = extract_egyankosh_tree('file:///home/robin/ignou/ignou-app/eGyanKoshTree.html')
 cleaned_data = clean_data(raw_data)
