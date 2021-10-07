@@ -46,11 +46,18 @@ def get_units(block_link):
   soup = BeautifulSoup(page, features="html.parser")
   
   table = soup.body.find('table', attrs={'class' : 'table'})
+  if not table: return []
   tr_list = table.find_all('td', attrs={'headers' : 't2'})
   tr_list.reverse()
 
   for tr in tr_list: 
-    [unit_code, unit_name] = tr.text.split(' ', 1)
+    unit = tr.text.split(' ', 1)
+    if len(unit) == 2:
+      [unit_code, unit_name] = unit
+    elif len(unit) == 1:
+      unit_code = unit[0]
+      unit_name = ''
+    else: continue
     unit_link = 'https://egyankosh.ac.in' + tr.find('a').get('href')
     units.append((unit_code, unit_name, unit_link))
 
@@ -59,24 +66,52 @@ def get_units(block_link):
 # print(get_courses('https://egyankosh.ac.in/handle/123456789/410'))
 # print(get_blocks('https://egyankosh.ac.in/handle/123456789/452'))
 # print(get_units('https://egyankosh.ac.in/handle/123456789/1600'))
+def extract_blocks_and_save():
+  with open('out_data.saved.json', 'r') as in_file:
+    json_data = in_file.read()
+    obj_data = json.loads(json_data)
 
-with open('out_data.saved.json', 'r') as in_file:
-  json_data = in_file.read()
-  obj_data = json.loads(json_data)
+  save_path = '/home/robin/projects/ignou-app/api/src/populateDB/course/study_material'
+  file_name = 'course_with_blocks.json'
+  file_path = os.path.join(save_path, file_name)
+  with open(file_path, 'w') as file: 
+    file.write('[\n')
+    count = 1
+    for course in obj_data:
+      print('extracting', count, 'course...')
+      count += 1
+      blocks = get_blocks(course[2])
+      course.append(blocks)
+      file.writelines(json.dumps(course) + ',\n')
+    file.write(']')
 
-save_path = '/home/robin/projects/ignou-app/api/src/populateDB/course/study_material'
-file_name = 'course_with_blocks.json'
-file_path = os.path.join(save_path, file_name)
-with open(file_path, 'w') as file: 
-  file.write('[\n')
-  count = 1
-  for course in obj_data:
-    print('extracting', count, 'course...')
-    count += 1
-    blocks = get_blocks(course[2])
-    course.append(blocks)
-    file.writelines(json.dumps(course) + ',\n')
-  file.write(']')
+def extract_units_and_save():
+  with open('course_with_blocks.json', 'r') as in_file:
+    json_data = in_file.read()
+    obj_data = json.loads(json_data)
 
+  save_path = '/home/robin/projects/ignou-app/api/src/populateDB/course/study_material'
+  file_name = 'extracted_units.json'
+  file_path = os.path.join(save_path, file_name)
+  with open(file_path, 'w') as file: 
+    file.write('[\n')
+    course_count = 1
+    for course in obj_data:
+      print('course', course_count)
+      course_count += 1
+      block_count = 1
+      blocks = course[3]
+      new_blocks = []
+      for block in blocks:
+        print('\textracting', block_count, 'block...')
+        block_count += 1
+        block_link = block[2]
+        units = get_units(block_link)
+        block.append(units)
+        new_blocks.append(block)
+      course[3] = new_blocks
+      out_data = json.dumps(course)
+      file.writelines(out_data + ',\n')
+    file.write(']')
   
-
+extract_units_and_save()
