@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "watch": "nodemon --watch 'src/**' --ext 'ts,json,js' --exec 'ts-node src/index.ts'",
     "watch2": "tsc -w",
