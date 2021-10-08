@@ -113,5 +113,26 @@ def extract_units_and_save():
       out_data = json.dumps(course)
       file.writelines(out_data + ',\n')
     file.write(']')
+
+def organize_dups_in_extracted_units():
+  with open('extracted_units.json', 'r') as in_file:
+    json_data = in_file.read()
+    obj_data = json.loads(json_data)
+    out_data = {}
+    for (code, name, link, blocks) in obj_data:
+      if code not in out_data:
+        out_data[code] = [(name, link, blocks)]
+        print(code)
+      else:
+        out_data[code].append((name, link, blocks))
+
+  # save out_data to a file
+  save_path = '/home/robin/projects/ignou-app/api/src/populateDB/course/study_material'
+  file_name = 'organized_units.json'
+  file_path = os.path.join(save_path, file_name)
+  with open(file_path, 'w') as file:
+    json_data = json.dumps(out_data)
+    file.write(json_data)  
   
-extract_units_and_save()
+# extract_units_and_save()
+organize_dups_in_extracted_units()
