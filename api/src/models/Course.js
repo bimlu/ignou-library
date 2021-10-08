@@ -2,9 +2,17 @@ import mongoose from "mongoose";
 
 const Schema = mongoose.Schema;
 
+const unitSchema = new Schema({
+  unitCode: String,
+  unitName: String,
+  unitLink: String,
+});
+
 const blockSchema = new Schema({
+  blockCode: String,
   blockName: String,
   blockLink: String,
+  blockUnits: [unitSchema],
 });
 
 /**
@@ -70,12 +78,13 @@ const courseSchema = Schema(
 
     code: String,
     title: String,
-    studyMaterial: [blockSchema],
     programmes: [{ type: Schema.Types.ObjectId, ref: "Programme" }],
     discipline: String,
     collegeCode: String,
     programmeCode: String,
     programmeCodes: [String],
+    courseLink: String,
+    courseBlocks: [blockSchema],
   },
   {
     timestamps: true,

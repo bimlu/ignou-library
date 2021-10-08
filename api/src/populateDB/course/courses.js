@@ -52,6 +52,13 @@ export const getCourses = () => {
   return outCourses;
 };
 
+export const getCourses2 = () => {
+  const data = fs.readFileSync("./organized_units.json", "utf8");
+  const parsedData = JSON.parse(data);
+  return parsedData;
+  // return coursesData;
+};
+
 export const saveCourses = (cleanedCourses) => {
   const filePath = path.resolve(__dirname, "cleanedCourses.json");
   fs.writeFileSync(filePath, cleanedCourses, (err) => {
