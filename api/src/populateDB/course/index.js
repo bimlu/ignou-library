@@ -1,9 +1,7 @@
-import { exit } from "process";
 import College from "../../models/College";
 import Course from "../../models/Course";
 // import Programme from "../../models/Programme";
-import { getCourses, saveCourses } from "./courses";
-import coursesData from "./organized_units.json";
+import { getCourses, saveCourses, getCourses2 } from "./courses";
 
 export const createCourses = () => {
   const courses = getCourses();
@@ -32,8 +30,8 @@ export const createCourses = () => {
 };
 
 export const createCourses2 = () => {
-  const courses = coursesData;
-  // console.log(courses);
+  const courses = getCourses2();
+
   for (let courseCode in courses) {
     // console.log("creating", courseCode, "...");
     createCourse2(courseCode, courses);
@@ -51,8 +49,7 @@ export const createCourse2 = async (courseCode, courses) => {
   // }
   const [courseName, courseLink, blocks] = firstCourse;
   if (!courseName) {
-    console.log(courseCode, allDupCourses, "No courseName found!");
-    return;
+    console.log("No courseName found for", courseCode, "using '?' as default");
   }
   // if (!courseName || !courseLink || !blocks) {
   //   console.log("not course(name|link|blocks)");
@@ -89,8 +86,8 @@ export const createCourse2 = async (courseCode, courses) => {
     term: 1,
     code: courseCode,
     name: courseCode,
-    title: courseName,
-    fullName: courseName,
+    title: courseName || "?",
+    fullName: courseName || "?",
     courseLink: courseLink,
     courseBlocks: courseBlocks,
   };

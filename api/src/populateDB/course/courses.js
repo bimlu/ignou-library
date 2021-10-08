@@ -9,6 +9,7 @@ import { mastersDegreeCourses } from "./mastersDegree";
 import { missingCourses } from "./missingCourses";
 import { pgGraduateCertificateCourses } from "./pgGraduateCertificate";
 import { pgGraduateDiplomaCourses } from "./pgGraduateDiploma";
+import coursesData from "./organized_units.json";
 
 const isDuplicate = (outCourses, course) => {
   if (outCourses.length === 0) {
@@ -53,10 +54,21 @@ export const getCourses = () => {
 };
 
 export const getCourses2 = () => {
-  const data = fs.readFileSync("./organized_units.json", "utf8");
-  const parsedData = JSON.parse(data);
-  return parsedData;
-  // return coursesData;
+  const courses = {};
+  // clean code
+  for (let courseCode in coursesData) {
+    const newCourseCode = courseCode.replace(/([A-Z]+-)(0+)([1-9]+)/, "$1$3");
+    courses[newCourseCode] = coursesData[courseCode];
+  }
+
+  const oldCourses = getCourses();
+  for (let oldCourse of oldCourses) {
+    if (!(oldCourse.code in courses)) {
+      courses[oldCourse.code] = [[oldCourse.title, "", []]];
+    }
+  }
+
+  return courses;
 };
 
 export const saveCourses = (cleanedCourses) => {
