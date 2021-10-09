@@ -13,7 +13,7 @@ import Typography from "@material-ui/core/Typography";
 import Skeleton from "@material-ui/lab/Skeleton";
 import Box from "@material-ui/core/Box";
 import CheckCircleIcon from "@material-ui/icons/CheckCircle";
-
+import NotFound from "components/NotFound";
 import { GET_COURSE } from "graphql/course";
 import { Link } from "@material-ui/core";
 
@@ -137,6 +137,7 @@ const StudyMaterial = () => {
     }
 
     const course = data.getCourse;
+    console.log(course);
 
     return (
       <Paper className={classes.paper} elevation={0}>

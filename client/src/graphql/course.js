@@ -34,6 +34,17 @@ export const GET_COURSE = gql`
       posts {
         id
       }
+      courseLink
+      courseBlocks {
+        blockCode
+        blockName
+        blockLink
+        blockUnits {
+          unitCode
+          unitName
+          unitLink
+        }
+      }
     }
   }
 `;

@@ -28,14 +28,23 @@ const CourseSchema = gql`
 
     code: String
     title: String
-    studyMaterial: [Block]
     programmes: [Programme]
     discipline: String
+    courseLink: String
+    courseBlocks: [Block]
   }
 
   type Block {
+    blockCode: String
     blockName: String
     blockLink: String
+    blockUnits: [Unit]
+  }
+
+  type Unit {
+    unitCode: String
+    unitName: String
+    unitLink: String
   }
 
   # ---------------------------------------------------------
@@ -90,6 +99,8 @@ const CourseSchema = gql`
     studentsCount: Int
     createdAt: String
     updatedAt: String
+    courseLink: String
+    courseBlocks: [Block]
   }
 
   type CoursesPayload {
