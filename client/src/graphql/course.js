@@ -43,6 +43,7 @@ export const GET_COURSE = gql`
           unitCode
           unitName
           unitLink
+          unitDownloadLink
         }
       }
     }

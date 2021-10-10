@@ -181,7 +181,8 @@ const StudyMaterial = () => {
                   <Link
                     target="blank"
                     // href={blockUnit.unitLink.replace("handle", "bitstream") + `/1/${blockUnit.unitCode}.pdf`}
-                    href={blockUnit.unitLink}
+                    // href={blockUnit.unitLink}
+                    href={blockUnit.unitDownloadLink}
                     display="block"
                     variant="body1"
                     style={{ marginLeft: 24 }}
