@@ -63,8 +63,10 @@ export const getCourses2 = () => {
 
   const oldCourses = getCourses();
   for (let oldCourse of oldCourses) {
-    if (!(oldCourse.code in courses)) {
-      courses[oldCourse.code] = [[oldCourse.title, "", []]];
+    // avoid duplicates by converting MCS-011 ---> MCS-11
+    const newCourseCode = oldCourse.code.replace(/([A-Z]+-)(0+)([1-9]+)/, "$1$3");
+    if (!(newCourseCode in courses)) {
+      courses[newCourseCode] = [[oldCourse.title, "", []]];
     }
   }
 

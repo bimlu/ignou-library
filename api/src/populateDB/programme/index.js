@@ -53,12 +53,15 @@ export const createProgramme = async (programme) => {
     const newProgrammeStructure = [];
 
     for (let crs of programme.programmeStructure) {
-      const course = await Course.findOne({ code: crs.courseCode });
+      // avoid duplicates by converting BCS-001 ---> BCS-1
+      const newCourseCode = crs.courseCode.replace(/([A-Z]+-)(0+)([1-9]+)/, "$1$3");
+
+      const course = await Course.findOne({ code: newCourseCode });
       if (!course) {
-        console.log("Error: couldn't find course with code:", crs.courseCode, "\tAborting programme:", programme.code);
+        console.log("Error: couldn't find course with code:", newCourseCode, "\tAborting programme:", programme.code);
         continue;
       }
-      newProgrammeStructure.push({ ...crs, course: course.id });
+      newProgrammeStructure.push({ ...{ ...crs, courseCode: newCourseCode }, course: course.id });
     }
 
     programme = { ...programme, programmeStructure: newProgrammeStructure };
