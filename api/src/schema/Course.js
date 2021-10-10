@@ -45,6 +45,7 @@ const CourseSchema = gql`
     unitCode: String
     unitName: String
     unitLink: String
+    unitDownloadLink: String
   }
 
   # ---------------------------------------------------------

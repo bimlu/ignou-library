@@ -70,6 +70,7 @@ export const createCourse2 = async (courseCode, courses) => {
         unitCode: unit[0],
         unitName: unit[1],
         unitLink: unit[2],
+        unitDownloadLink: unit[3],
       };
       blockUnits.push(blockUnit);
     }

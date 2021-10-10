@@ -6,6 +6,7 @@ const unitSchema = new Schema({
   unitCode: String,
   unitName: String,
   unitLink: String,
+  unitDownloadLink: String,
 });
 
 const blockSchema = new Schema({

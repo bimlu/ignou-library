@@ -131,7 +131,7 @@ def add_unit_download_link_field_to_all_extracted_units():
     obj_data = json.loads(json_data)
     
   save_path = '/home/robin/projects/ignou-app/api/src/populateDB/course/study_material'
-  file_name = 'extracted_units2.json'
+  file_name = 'extracted_units3.json'
   file_path = os.path.join(save_path, file_name)
   with open(file_path, 'w') as file: 
     file.write('[\n')
@@ -139,7 +139,7 @@ def add_unit_download_link_field_to_all_extracted_units():
     for course in obj_data:
       course_count += 1
       # 338 courses already updated
-      if course_count <= 338: continue
+      if course_count > 391: break
       print('course', course_count)
       block_count = 1
       blocks = course[3]
@@ -179,7 +179,7 @@ def organize_dups_in_extracted_units():
   save_path = '/home/robin/projects/ignou-app/api/src/populateDB/course/study_material'
   file_name = 'organized_units2.json'
   file_path = os.path.join(save_path, file_name)
-  with open(file_path, 'a') as file:
+  with open(file_path, 'w') as file:
     json_data = json.dumps(out_data)
     file.write(json_data)  
   

@@ -9,7 +9,7 @@ import { mastersDegreeCourses } from "./mastersDegree";
 import { missingCourses } from "./missingCourses";
 import { pgGraduateCertificateCourses } from "./pgGraduateCertificate";
 import { pgGraduateDiplomaCourses } from "./pgGraduateDiploma";
-import coursesData from "./organized_units.json";
+import coursesData from "./organized_units2.json";
 
 const isDuplicate = (outCourses, course) => {
   if (outCourses.length === 0) {
