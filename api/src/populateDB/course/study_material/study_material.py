@@ -59,9 +59,20 @@ def get_units(block_link):
       unit_name = ''
     else: continue
     unit_link = 'https://egyankosh.ac.in' + tr.find('a').get('href')
-    units.append((unit_code, unit_name, unit_link))
+    unit_download_link = 'https://egyankosh.ac.in' + get_unit_download_link(unit_link)
+    units.append((unit_code, unit_name, unit_link, unit_download_link))
 
   return units
+
+def get_unit_download_link(unit_link):
+  page = urllib.request.urlopen(unit_link).read().decode('utf-8')
+  soup = BeautifulSoup(page, features="html.parser")
+
+  links = soup.body.find_all('a', attrs={'target': "_blank"})
+  for link in links:
+    href = link.get('href')
+    if '.pdf' in href and 'bitstream' in href: return href
+  return ''
 
 # print(get_courses('https://egyankosh.ac.in/handle/123456789/410'))
 # print(get_blocks('https://egyankosh.ac.in/handle/123456789/452'))
@@ -91,7 +102,7 @@ def extract_units_and_save():
     obj_data = json.loads(json_data)
 
   save_path = '/home/robin/projects/ignou-app/api/src/populateDB/course/study_material'
-  file_name = 'extracted_units.json'
+  file_name = 'extracted_units3.json'
   file_path = os.path.join(save_path, file_name)
   with open(file_path, 'w') as file: 
     file.write('[\n')
@@ -114,8 +125,46 @@ def extract_units_and_save():
       file.writelines(out_data + ',\n')
     file.write(']')
 
-def organize_dups_in_extracted_units():
+def add_unit_download_link_field_to_all_extracted_units():
   with open('extracted_units.json', 'r') as in_file:
+    json_data = in_file.read()
+    obj_data = json.loads(json_data)
+    
+  save_path = '/home/robin/projects/ignou-app/api/src/populateDB/course/study_material'
+  file_name = 'extracted_units2.json'
+  file_path = os.path.join(save_path, file_name)
+  with open(file_path, 'w') as file: 
+    file.write('[\n')
+    course_count = 1
+    for course in obj_data:
+      course_count += 1
+      # 338 courses already updated
+      if course_count <= 338: continue
+      print('course', course_count)
+      block_count = 1
+      blocks = course[3]
+      new_blocks = []
+      for block in blocks:
+        print('\tupdating', block_count, 'block...')
+        block_count += 1
+        units = block[3]
+        # print('units', units)
+        new_units = []
+        for unit in units:
+          unit_link = unit[2]
+          # print('unit_link', unit_link)
+          unit_download_link = 'https://egyankosh.ac.in' + get_unit_download_link(unit_link)
+          unit.append(unit_download_link)
+          new_units.append(unit)
+        block.append(new_units)
+        new_blocks.append(block)
+      course[3] = new_blocks
+      out_data = json.dumps(course)
+      file.writelines(out_data + ',\n')
+    file.write(']') 
+
+def organize_dups_in_extracted_units():
+  with open('extracted_units2.json', 'r') as in_file:
     json_data = in_file.read()
     obj_data = json.loads(json_data)
     out_data = {}
@@ -128,11 +177,13 @@ def organize_dups_in_extracted_units():
 
   # save out_data to a file
   save_path = '/home/robin/projects/ignou-app/api/src/populateDB/course/study_material'
-  file_name = 'organized_units.json'
+  file_name = 'organized_units2.json'
   file_path = os.path.join(save_path, file_name)
-  with open(file_path, 'w') as file:
+  with open(file_path, 'a') as file:
     json_data = json.dumps(out_data)
     file.write(json_data)  
   
 # extract_units_and_save()
+# organize_dups_in_extracted_units()
+# add_unit_download_link_field_to_all_extracted_units()
 organize_dups_in_extracted_units()
