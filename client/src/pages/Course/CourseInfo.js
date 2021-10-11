@@ -12,6 +12,7 @@ import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 import Button from "@material-ui/core/Button";
 import CheckCircleIcon from "@material-ui/icons/CheckCircle";
 import { GET_PROGRAMME } from "graphql/programme";
+import NotFound from "components/NotFound";
 
 const useStyles = makeStyles((theme) => ({
   paper: {
@@ -123,37 +124,16 @@ const CourseInfo = ({ programmeId }) => {
         color="secondary"
         className={classes.button}
       >
-        See more
+        See {expanded ? "less" : "more"}
       </Button>
 
       <Collapse in={expanded} timeout="auto" unmountOnExit>
         <div className={classes.info}>
           <Typography color="textSecondary" variant="h5" className={classes.infoHeading}>
-            <b>Eligibility</b>
-          </Typography>
-          <Paper className={classes.infoPaper} elevation={0}>
-            <Typography>10+2 or its equivalent</Typography>
-          </Paper>
-        </div>
-
-        <div className={classes.info}>
-          <Typography color="textSecondary" variant="h5" className={classes.infoHeading}>
             <b>Medium of Instruction</b>
           </Typography>
           <Paper className={classes.infoPaper} elevation={0}>
-            <Typography>English & Hindi</Typography>
-          </Paper>
-        </div>
-
-        <div className={classes.info}>
-          <Typography color="textSecondary" variant="h5" className={classes.infoHeading}>
-            <b>Fee Structure</b>
-          </Typography>
-          <Paper className={classes.infoPaper} elevation={0}>
-            <Typography>
-              For B.A. Rs. 9,900/- for full programme to be paid year wise @ Rs. 3,300/- per year. Fee to be paid in 1st
-              year, including Registration Fee of Rs.200/- Is Rs.3,500/-
-            </Typography>
+            <Typography>{programme.mediumOfInstruction}</Typography>
           </Paper>
         </div>
 
@@ -162,9 +142,25 @@ const CourseInfo = ({ programmeId }) => {
             <b>Duration</b>
           </Typography>
           <Paper className={classes.infoPaper} elevation={0}>
-            <Typography>
-              Minimum 3 years and Maximum 6 years; offered in both January and July cycle of admission
-            </Typography>
+            <Typography>{programme.duration} </Typography>
+          </Paper>
+        </div>
+
+        <div className={classes.info}>
+          <Typography color="textSecondary" variant="h5" className={classes.infoHeading}>
+            <b>Fee Structure</b>
+          </Typography>
+          <Paper className={classes.infoPaper} elevation={0}>
+            <Typography>{programme.feeStructure}</Typography>
+          </Paper>
+        </div>
+
+        <div className={classes.info}>
+          <Typography color="textSecondary" variant="h5" className={classes.infoHeading}>
+            <b>Eligibility</b>
+          </Typography>
+          <Paper className={classes.infoPaper} elevation={0}>
+            <Typography>{programme.eligibility}</Typography>
           </Paper>
         </div>
       </Collapse>

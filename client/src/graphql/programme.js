@@ -34,6 +34,10 @@ export const GET_PROGRAMME = gql`
       courses {
         id
       }
+      eligibility
+      mediumOfInstruction
+      duration
+      feeStructure
     }
   }
 `;
