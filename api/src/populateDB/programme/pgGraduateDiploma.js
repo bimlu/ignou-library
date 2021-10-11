@@ -10,6 +10,10 @@ export const pgGraduateDiplomaProgrammes = [
     termType: TermType.Year,
     termsCount: 1,
     collegeCode: "IGNOU",
+    eligibility: "Bachelor’s Degree",
+    mediumOfInstruction: "English and Hindi",
+    duration: "Minimum 1 year and Maximum 3 years; offered in both January & July cycle of admissions",
+    feeStructure: "Rs. 2,400/- for full programme",
     schoolCode: "SOCE",
     totalCredits: 30,
     programmeStructure: [
@@ -31,6 +35,10 @@ export const pgGraduateDiplomaProgrammes = [
     termType: TermType.Year,
     termsCount: 1,
     collegeCode: "IGNOU",
+    eligibility: "achelor’s degree in any subject from a recognized University.",
+    mediumOfInstruction: "English",
+    duration: "Minimum 1 year and Maximum 3 years; offered only in July cycle of admissions",
+    feeStructure: "Rs. 16,800/- for full programme",
     schoolCode: "SOCE",
     totalCredits: 32,
     programmeStructure: [
@@ -56,6 +64,10 @@ export const pgGraduateDiplomaProgrammes = [
     termType: TermType.Year,
     termsCount: 1,
     collegeCode: "IGNOU",
+    eligibility: "Bachelor’s Degree",
+    mediumOfInstruction: "Hindi",
+    duration: "Minimum 1 year and Maximum 3 years; offered in both January & July cycle of admissions",
+    feeStructure: "Rs. 4,000/- for full programme",
     schoolCode: "SOTST",
     totalCredits: 30,
     programmeStructure: [
@@ -75,6 +87,10 @@ export const pgGraduateDiplomaProgrammes = [
     termType: TermType.Year,
     termsCount: 1,
     collegeCode: "IGNOU",
+    eligibility: "Bachelor’s Degree in any discipline or equivalent.",
+    mediumOfInstruction: "English and Hindi",
+    duration: "Minimum 1 year and Maximum 3 years; offered in both January & July cycle of admissions",
+    feeStructure: "Rs. 8,200/- for full programme",
     schoolCode: "PGDIBO",
     totalCredits: 36,
     programmeStructure: [
@@ -95,6 +111,10 @@ export const pgGraduateDiplomaProgrammes = [
     termType: TermType.Year,
     termsCount: 1,
     collegeCode: "IGNOU",
+    eligibility: "Graduation in any discipline.",
+    mediumOfInstruction: "English",
+    duration: "Minimum 1 year and Maximum 3 years; offered in both January & July cycle of admissions",
+    feeStructure: "Rs.7,600/- for full programme.",
     schoolCode: "SOS",
     totalCredits: 32,
     programmeStructure: [
@@ -118,6 +138,10 @@ export const pgGraduateDiplomaProgrammes = [
     termType: TermType.Year,
     termsCount: 1,
     collegeCode: "IGNOU",
+    eligibility: "Graduate from a recognized University/Institution",
+    mediumOfInstruction: "English",
+    duration: "Minimum 1 year and Maximum 3 years; offered in both January & July cycle of admissions",
+    feeStructure: "Rs. 7,000/- for full programme",
     schoolCode: "SOS",
     totalCredits: 32,
     programmeStructure: [
@@ -140,6 +164,10 @@ export const pgGraduateDiplomaProgrammes = [
     termType: TermType.Year,
     termsCount: 1,
     collegeCode: "IGNOU",
+    eligibility: "Science Graduate with Chemistry or B. Pharma.or B.Tech. degree holders.",
+    mediumOfInstruction: "English",
+    duration: "Minimum 1 year and Maximum 3 years; offered in both January & July cycle of admissions",
+    feeStructure: "Rs. 9,600/- for full programme",
     schoolCode: "SOS",
     totalCredits: 32,
     programmeStructure: [
@@ -162,6 +190,10 @@ export const pgGraduateDiplomaProgrammes = [
     termType: TermType.Year,
     termsCount: 1,
     collegeCode: "IGNOU",
+    eligibility: "Graduate in any discipline",
+    mediumOfInstruction: "English and Hindi",
+    duration: "Minimum 1 year and Maximum 3 years; offered in both January & July cycle of admissions",
+    feeStructure: "Rs. 6,300/- for full programme",
     schoolCode: "SOSS",
     totalCredits: 32,
     programmeStructure: [
@@ -185,6 +217,11 @@ export const pgGraduateDiplomaProgrammes = [
     termType: TermType.Year,
     termsCount: 1,
     collegeCode: "IGNOU",
+    eligibility:
+      "I. Post graduates in Psychology/Social Work/Nursing OR II. Medical graduates (Allopathy/Homoeopathy/Ayurvedic/Unani/Siddha/ Yoga and Naturopathy/Bachelor’s Degree in Dental Surgery (BDS)",
+    mediumOfInstruction: "English",
+    duration: "Minimum 1 year and Maximum 3 years. Admission cycle will be once a year in July.",
+    feeStructure: "Rs.8,000/-For Full Programme",
     schoolCode: "SOSS",
     totalCredits: 32,
     programmeStructure: [
@@ -204,6 +241,10 @@ export const pgGraduateDiplomaProgrammes = [
     termType: TermType.Year,
     termsCount: 1,
     collegeCode: "IGNOU",
+    eligibility: "Bachelor’s Degree in Library and Information Science",
+    mediumOfInstruction: "English",
+    duration: "Minimum 1 year and Maximum 3 years; offered in both January & July cycle of admissions",
+    feeStructure: "Rs. 17,000/- for full programme",
     schoolCode: "PGDLAN",
     totalCredits: 32,
     programmeStructure: [
@@ -233,6 +274,10 @@ export const pgGraduateDiplomaProgrammes = [
     termType: TermType.Year,
     termsCount: 1,
     collegeCode: "IGNOU",
+    eligibility: "Graduate in any discipline.",
+    mediumOfInstruction: "English and Hindi",
+    duration: "Minimum 1 year and Maximum 3 years; offered in both January & July cycle of admissions",
+    feeStructure: "Rs.3,700/- for full programme",
     schoolCode: "SOSS",
     totalCredits: 32,
     programmeStructure: [
@@ -255,6 +300,11 @@ export const pgGraduateDiplomaProgrammes = [
     termType: TermType.Year,
     termsCount: 1,
     collegeCode: "IGNOU",
+    eligibility:
+      "Teachers in an institution of higher education or Post Graduate Degree holders in any subject including a Professional Degree",
+    mediumOfInstruction: "English",
+    duration: "Minimum 1 year and Maximum 3 years; offered in both January & July cycle of admissions",
+    feeStructure: "Rs. 3,000/- for full programme",
     schoolCode: "SOE",
     totalCredits: 34,
     programmeStructure: [
@@ -275,6 +325,10 @@ export const pgGraduateDiplomaProgrammes = [
     termType: TermType.Year,
     termsCount: 1,
     collegeCode: "IGNOU",
+    eligibility: "Graduation in any discipline.",
+    mediumOfInstruction: "English",
+    duration: "Minimum 1 year and Maximum 3 years; offered in both January & July cycle of admissions",
+    feeStructure: "Rs. 6,600/- for full programme",
     schoolCode: "SOE",
     totalCredits: 32,
     programmeStructure: [
@@ -294,6 +348,11 @@ export const pgGraduateDiplomaProgrammes = [
     termType: TermType.Year,
     termsCount: 1,
     collegeCode: "IGNOU",
+    eligibility:
+      "i) Prospective and In-service Head Teachers/Principal with Graduate Degree from a recognized University OR ii) Graduate /Post Graduate Teachers",
+    mediumOfInstruction: "English and Hindi",
+    duration: "Minimum 1 year and Maximum 3 years; offered in both January & July cycle of admissions",
+    feeStructure: "Rs. 6,000/- for full programme",
     schoolCode: "SOE",
     totalCredits: 30,
     programmeStructure: [
@@ -313,6 +372,10 @@ export const pgGraduateDiplomaProgrammes = [
     termType: TermType.Year,
     termsCount: 1,
     collegeCode: "IGNOU",
+    eligibility: "Graduate in any discipline",
+    mediumOfInstruction: "English",
+    duration: "Minimum 1 year and Maximum 3 years; offered in both January & July cycle of admissions",
+    feeStructure: "Rs. 7,000/- for full programme",
     schoolCode: "SOE",
     totalCredits: 34,
     programmeStructure: [
@@ -336,6 +399,10 @@ export const pgGraduateDiplomaProgrammes = [
     termType: TermType.Year,
     termsCount: 1,
     collegeCode: "IGNOU",
+    eligibility: "Graduate in any discipline.",
+    mediumOfInstruction: "English",
+    duration: "Minimum 1 year and Maximum 3 years; offered in both January & July cycle of admissions",
+    feeStructure: "Rs. 9,600/- for full programme",
     schoolCode: "SOE",
     totalCredits: 32,
     programmeStructure: [
@@ -355,6 +422,10 @@ export const pgGraduateDiplomaProgrammes = [
     termType: TermType.Year,
     termsCount: 1,
     collegeCode: "IGNOU",
+    eligibility: "Bachelor's Degree from any recognised University",
+    mediumOfInstruction: "English",
+    duration: "Minimum 1 year and Maximum 3 years; offered only in July cycle of admission.",
+    feeStructure: "Rs.6,500/- for full programme",
     schoolCode: "SOE",
     totalCredits: 34,
     programmeStructure: [
@@ -374,6 +445,10 @@ export const pgGraduateDiplomaProgrammes = [
     termType: TermType.Year,
     termsCount: 1,
     collegeCode: "IGNOU",
+    eligibility: "Graduation in any discipline",
+    mediumOfInstruction: "English and Hindi",
+    duration: "Minimum 1 year and Maximum 3 years; offered in both January & July cycle of admissions",
+    feeStructure: "Rs.6,000/- for full programme",
     schoolCode: "SOEDS",
     totalCredits: 32,
     programmeStructure: [
@@ -394,6 +469,10 @@ export const pgGraduateDiplomaProgrammes = [
     termType: TermType.Year,
     termsCount: 1,
     collegeCode: "IGNOU",
+    eligibility: "Graduation in any discipline",
+    mediumOfInstruction: "English",
+    duration: "Minimum 1 year and Maximum 3 years; offered in both January & July cycle of admissions",
+    feeStructure: "Rs. 5,000/- for full programme",
     schoolCode: "SOEDS",
     totalCredits: 36,
     programmeStructure: [
@@ -414,6 +493,10 @@ export const pgGraduateDiplomaProgrammes = [
     termType: TermType.Year,
     termsCount: 1,
     collegeCode: "IGNOU",
+    eligibility: "Graduation in any discipline from a recognized university.",
+    mediumOfInstruction: "English",
+    duration: "Minimum 1 year and Maximum 3 years; offered in both January & July cycle of admissions",
+    feeStructure: "Rs.5400/- for full programme",
     schoolCode: "SOEDS",
     totalCredits: 32,
     programmeStructure: [
@@ -432,6 +515,10 @@ export const pgGraduateDiplomaProgrammes = [
     termType: TermType.Year,
     termsCount: 1,
     collegeCode: "IGNOU",
+    eligibility: "Graduation in any discipline",
+    mediumOfInstruction: "English",
+    duration: "Minimum 1 year and Maximum 3 years; offered in both January & July cycle of admissions",
+    feeStructure: "Rs. 7000/- for full programme",
     schoolCode: "SOEDS",
     totalCredits: 32,
     programmeStructure: [
@@ -452,6 +539,11 @@ export const pgGraduateDiplomaProgrammes = [
     termType: TermType.Year,
     termsCount: 1,
     collegeCode: "IGNOU",
+    eligibility:
+      "Bachelor’s Degree in any subject. The learners should possess working knowledge of computers- MS Office and other simple software and should have internet access",
+    mediumOfInstruction: "English",
+    duration: "Minimum 1 year and Maximum 3 years; offered in both January & July cycle of admissions",
+    feeStructure: "Rs. 12,500/- for full programme and is payable in one installment.",
     schoolCode: "SOJNMS",
     totalCredits: 32,
     programmeStructure: [
@@ -474,6 +566,10 @@ export const pgGraduateDiplomaProgrammes = [
     termType: TermType.Year,
     termsCount: 1,
     collegeCode: "IGNOU",
+    eligibility: "Graduate in any discipline",
+    mediumOfInstruction: "English and Hindi",
+    duration: "Minimum 1 year and Maximum 3 years; offered in both January & July cycle of admissions",
+    feeStructure: "Rs. 10,600/- for full programme",
     schoolCode: "SOJNMS",
     totalCredits: 32,
     programmeStructure: [
@@ -492,6 +588,10 @@ export const pgGraduateDiplomaProgrammes = [
     termType: TermType.Year,
     termsCount: 1,
     collegeCode: "IGNOU",
+    eligibility: "Bachelor’s degree in any discipline",
+    mediumOfInstruction: "English",
+    duration: "Minimum 1 year and Maximum 3 years; offered in both January & July cycle of admissions",
+    feeStructure: "Rs. 5000/- for full programme",
     schoolCode: "SOJNMS",
     totalCredits: 32,
     programmeStructure: [
@@ -513,6 +613,10 @@ export const pgGraduateDiplomaProgrammes = [
     termType: TermType.Year,
     termsCount: 1,
     collegeCode: "IGNOU",
+    eligibility: "Bachelor’s Degree in any discipline",
+    mediumOfInstruction: "English",
+    duration: "Minimum 1 year and Maximum 3 years; offered in both January & July cycle of admissions",
+    feeStructure: "Rs. 5000/- for full programme and is payable in one installment.",
     schoolCode: "SOJNMS",
     totalCredits: 36,
     programmeStructure: [
@@ -534,6 +638,11 @@ export const pgGraduateDiplomaProgrammes = [
     termType: TermType.Year,
     termsCount: 1,
     collegeCode: "IGNOU",
+    eligibility:
+      "Graduation in Science with Chemistry/ Bio-Chemistry or Microbiology as one of the subjects. OR Degree in allied Sciences like Agriculture/Food Science/Food Technology/Post Harvest Technology/Engineering/ Home Science/Life Science/Microbiology/Biochemistry/Biotechnology/Horticulture/Dairy Technology/Veterinary/ Fisheries/ Hotel Management and Catering/ Hospitality Management, or equivalent etc. OR Science graduate in disciplines like Geography, Statistics with Physics & Maths, Art Subjects and Medical Lab technology and with minimum three years experience in food processing and / or quality control. These students should have minimum 1 year experience in quality control activities. OR Arts/Commerce graduate with diploma in food science/ hotel management disciplines viz fruits and vegetables, dairy technology, meat technology, cereals, pulses and oilseeds etc. with minimum 5 years experience in Food Processing/ Food Quality Control/ Hotel Management (food preparation/ food catering) and out of which 2 years experience should be in quality controlactivities. OR BA/B.Com graduates with minimum 7 years experience in Food Processing/Food Quality Control/Hotel Management (food preparation/ food catering) or holding senior position in Govt./ Semi Govt. Units involved in Food Quality Control.",
+    mediumOfInstruction: "English",
+    duration: "Minimum 1 year and Maximum 3 years; offered only in July cycle of admission.",
+    feeStructure: "Rs.14,400/- for full programme",
     schoolCode: "SOA",
     totalCredits: 32,
     programmeStructure: [
@@ -556,6 +665,11 @@ export const pgGraduateDiplomaProgrammes = [
     termType: TermType.Semester,
     termsCount: 2,
     collegeCode: "IGNOU",
+    eligibility:
+      "B.Sc. (Computer Science)/ BCA/ B.Tech (Computer Sc.)/ B.Tech (IT) or its equivalent. OR Bachelor Degree in any discipline or its equivalent from a recognized university / Institute with CIT/CIC/ACISE/ CISE from IGNOU or a Certificate in Computer Science/ Computer Application from a Govt. recognized institute with a minimum duration of 6 months or studied Computer Course as a part of the curriculum in Bachelor/PG Degree OR Bachelor Degree in any discipline or its equivalent from the recognized university/ institute with 1 year working experience in Computer Application/IT",
+    mediumOfInstruction: "English",
+    duration: "Minimum 1 year and Maximum 3 years; offered in both January & July cycle of admissions",
+    feeStructure: "Rs.21,600/- for full programme to be paid semester wise @Rs. 10,800/- per semester",
     schoolCode: "SOVET",
     totalCredits: 32,
     programmeStructure: [
@@ -578,6 +692,11 @@ export const pgGraduateDiplomaProgrammes = [
     termType: TermType.Year,
     termsCount: 1,
     collegeCode: "IGNOU",
+    eligibility:
+      "Graduate degree in any discipline with Science in 10+2. OR Graduate degree in any discipline without Science in 10+2 but with 2 years of working experience as a medical representative in a pharma industry.",
+    mediumOfInstruction: "English",
+    duration: "Minimum 1 year and Maximum 3 years; offered in both January & July cycle of admissions",
+    feeStructure: "Rs. 7,400/- for full programme",
     schoolCode: "SOVET",
     totalCredits: 32,
     programmeStructure: [
@@ -598,6 +717,10 @@ export const pgGraduateDiplomaProgrammes = [
     termType: TermType.Year,
     termsCount: 1,
     collegeCode: "IGNOU",
+    eligibility: "Graduate in any discipline",
+    mediumOfInstruction: "English",
+    duration: "Minimum 1 year and Maximum 3 years; offered in both January & July cycle of admissions",
+    feeStructure: "Rs. 10,200/- for full programme.",
     schoolCode: "SOL",
     totalCredits: 32,
     programmeStructure: [
@@ -620,6 +743,11 @@ export const pgGraduateDiplomaProgrammes = [
     termType: TermType.Year,
     termsCount: 1,
     collegeCode: "IGNOU",
+    eligibility:
+      "Any Graduate, Graduate in Criminology, Social Work & Functionaries of Criminal Justice Administration.",
+    mediumOfInstruction: "English",
+    duration: "Minimum 1 year and Maximum 3 years; offered in both January & July cycle of admissions",
+    feeStructure: "Rs. 10,800/- for full programme",
     schoolCode: "SOL",
     totalCredits: 32,
     programmeStructure: [
@@ -641,6 +769,10 @@ export const pgGraduateDiplomaProgrammes = [
     termType: TermType.Year,
     termsCount: 1,
     collegeCode: "IGNOU",
+    eligibility: "Graduation in any discipline with Science at 10+2 level",
+    mediumOfInstruction: "English",
+    duration: "Minimum 1 year and Maximum 3 years; offered in both January & July cycle of admissions",
+    feeStructure: "Rs. 5,900/- for full Programme",
     schoolCode: "SOITS",
     totalCredits: 32,
     programmeStructure: [
@@ -665,6 +797,10 @@ export const pgGraduateDiplomaProgrammes = [
     termType: TermType.Year,
     termsCount: 1,
     collegeCode: "IGNOU",
+    eligibility: "Graduate in any discipline.",
+    mediumOfInstruction: "English",
+    duration: "Minimum 1 year and Maximum 3 years; offered in both January & July cycle of admissions",
+    feeStructure: "Rs. 2,400/- for full programme",
     schoolCode: "SOITS",
     totalCredits: 30,
     programmeStructure: [
@@ -684,6 +820,10 @@ export const pgGraduateDiplomaProgrammes = [
     termType: TermType.Year,
     termsCount: 1,
     collegeCode: "IGNOU",
+    eligibility: "Any Bachelor’s Degree from a recognised University",
+    mediumOfInstruction: "English",
+    duration: "Minimum 1 year and Maximum 3 years; offered in both January & July cycle of admissions",
+    feeStructure: "Rs.6,200/- for full programme",
     schoolCode: "SOITS",
     totalCredits: 32,
     programmeStructure: [
@@ -706,6 +846,11 @@ export const pgGraduateDiplomaProgrammes = [
     termType: TermType.Semester,
     termsCount: 2,
     collegeCode: "IGNOU",
+    eligibility: "Graduation in any discipline",
+    mediumOfInstruction: "English",
+    duration: "Minimum 1 year and Maximum 3 years; offered in both January & July cycle of admissions",
+    feeStructure:
+      "Rs. 6,400/- for full programme fee, to be paid on annual basis (first and second semester registration together)",
     schoolCode: "SOGDS",
     totalCredits: 34,
     programmeStructure: [
@@ -725,6 +870,10 @@ export const pgGraduateDiplomaProgrammes = [
     termType: TermType.Year,
     termsCount: 1,
     collegeCode: "IGNOU",
+    eligibility: "Bachelor Degree + knowledge of English & knowledge of word processing",
+    mediumOfInstruction: "English",
+    duration: "Minimum 1 year and Maximum 3 years; offered in both January & July cycle of admissions",
+    feeStructure: "Rs.9,000/- for full programme",
     schoolCode: "SOH",
     totalCredits: 30,
     programmeStructure: [
@@ -748,6 +897,10 @@ export const pgGraduateDiplomaProgrammes = [
     termType: TermType.Year,
     termsCount: 1,
     collegeCode: "IGNOU",
+    eligibility: "Graduation in any discipline from a recognized university.",
+    mediumOfInstruction: "English and Hindi",
+    duration: "Minimum 1 year and Maximum 3 years; offered in both January & July cycle of admissions",
+    feeStructure: "Rs. 13,200/- for full programme fee.",
     schoolCode: "SOSW",
     totalCredits: 36,
     programmeStructure: [
@@ -769,6 +922,11 @@ export const pgGraduateDiplomaProgrammes = [
     termType: TermType.Year,
     termsCount: 1,
     collegeCode: "IGNOU",
+    eligibility:
+      "Medical/Dental graduates from a Medical/Dental Institutes of India or other countries recognized by Medical Council of India (MCI) or Dental Council. OR Graduates in Indian System of Medicine (ISM) and Homeopathy, Nursing & Pharmacy recognized by there spective Council with three years of hospital experience. OR Candidates holding MBA degree or PG Diploma in Financial, Material or Personnel Management with five years hospital experience.",
+    mediumOfInstruction: "English",
+    duration: "Minimum 1 year and Maximum 3 years; offered only in January cycle of admissions.",
+    feeStructure: "Rs.25,200/- for full programme.",
     schoolCode: "SOHS",
     totalCredits: 32,
     programmeStructure: [
@@ -789,6 +947,10 @@ export const pgGraduateDiplomaProgrammes = [
     termType: TermType.Year,
     termsCount: 1,
     collegeCode: "IGNOU",
+    eligibility: "MBBS",
+    mediumOfInstruction: "English",
+    duration: "Minimum 1 year and Maximum 3 years; offered only in January cycle of admissions.",
+    feeStructure: "Rs.26,000/- for full programme",
     schoolCode: "SOHS",
     totalCredits: 32,
     programmeStructure: [
@@ -807,6 +969,11 @@ export const pgGraduateDiplomaProgrammes = [
     termType: TermType.Year,
     termsCount: 1,
     collegeCode: "IGNOU",
+    eligibility:
+      "MBBS. For PGDMCH, the experience does not necessarily mean work experience in Government service. It will be counted as period between the date of completion of internship and June 30 of the year in which s/he is applying for admission, irrespective of place of work. PGDMCH is being offered through Programme Study Centre (Medical Colleges) and Skill Development Centres (District Hospitals) which would be allocated by the Regional Centre after finalisation of the admission.",
+    mediumOfInstruction: "English",
+    duration: "Minimum 1 year and Maximum 3 years; offered only in January cycle of admissions.",
+    feeStructure: "Rs.30,000/- for full programme",
     schoolCode: "SOHS",
     totalCredits: 36,
     programmeStructure: [
@@ -827,6 +994,10 @@ export const pgGraduateDiplomaProgrammes = [
     termType: TermType.Year,
     termsCount: 1,
     collegeCode: "IGNOU",
+    eligibility: "MBBS Degree recognized by Medical Council of India (MCI)",
+    mediumOfInstruction: "English",
+    duration: "Minimum 1 year and Maximum 3 years; offered only in January cycle of admissions",
+    feeStructure: "Rs. 60,000/- for full programme",
     schoolCode: "SOHS",
     totalCredits: 36,
     programmeStructure: [
@@ -847,6 +1018,12 @@ export const pgGraduateDiplomaProgrammes = [
     termType: TermType.Semester,
     termsCount: 2,
     collegeCode: "IGNOU",
+    eligibility:
+      "Any Bachelor’s degree of minimum 3 (three) year duration from a recognized University AND Mathematics as one of the subject at 10+2 level or Graduation level. OR Any Bachelor’s degree of minimum 3 (three) year duration from a recognized University AND doesn’t have Mathematics as one of the subject at 10+2 level or graduation level. These students are required to successfully complete BCS-012 (Graduate level Mathematics course) as Bridge Course.",
+    mediumOfInstruction: "English",
+    duration: "Minimum 1 year and Maximum 3 years; offered in both January & July cycle of admissions",
+    feeStructure:
+      "Rs. 21,600/- for full Programme to be paid semester wise @Rs.10800/- per semester. Non-Maths students have to pay Rs.1400/- additional in the first semester.",
     schoolCode: "SOCIS",
     totalCredits: 32,
     programmeStructure: [

@@ -10,6 +10,10 @@ export const mastersDegreeProgrammes = [
     termType: TermType.Year,
     termsCount: 2,
     collegeCode: "IGNOU",
+    eligibility: "Bachelor’s Degree or a higher degree from a recognized University.",
+    mediumOfInstruction: "English and Hindi",
+    duration: "Minimum 2 years and Maximum 4 years; offered in both January & July cycle of admissions.",
+    feeStructure: "Rs. 16,200/- for full programme to be paid year wise @Rs. 8,100/- per year.",
     schoolCode: "SOMS",
     totalCredits: 72,
     programmeStructure: [
@@ -37,6 +41,10 @@ export const mastersDegreeProgrammes = [
     termType: TermType.Year,
     termsCount: 2,
     collegeCode: "IGNOU",
+    eligibility: "Bachelor’s Degree or a higher degree from a recognized University.",
+    mediumOfInstruction: "English",
+    duration: "Minimum 2 years and Maximum 4 years; offered in both January & July cycle of admissions.",
+    feeStructure: "Rs. 13,200/- for full programme to be paid year wise @Rs. 6,600/- per year.",
     schoolCode: "SOH",
     totalCredits: 64,
     programmeStructure: [
@@ -68,6 +76,11 @@ export const mastersDegreeProgrammes = [
     termType: TermType.Year,
     termsCount: 2,
     collegeCode: "IGNOU",
+    eligibility:
+      "Bachelor’s degree or a higher degree from a recognized university. There would be no admission test knowledge of reading good writing Urdu is necessary.",
+    mediumOfInstruction: "Urdu",
+    duration: "Minimum 2 years and Maximum 4 years; offered in both January & July cycle of admissions.",
+    feeStructure: "Rs. 12600/- for full programme to be paid @6300/- per year.",
     schoolCode: "SOH",
     totalCredits: 64,
     programmeStructure: [
@@ -91,6 +104,10 @@ export const mastersDegreeProgrammes = [
     termType: TermType.Year,
     termsCount: 2,
     collegeCode: "IGNOU",
+    eligibility: "Bachelor’s Degree or a higher degree from a recognized University.",
+    mediumOfInstruction: "English and Hindi",
+    duration: "Minimum 2 years and Maximum 4 years; offered in both January & July cycle of admissions.",
+    feeStructure: "Rs. 13,200/- for full programme to be paid year wise @Rs. 6,600/- per year",
     schoolCode: "SOSS",
     totalCredits: 64,
     programmeStructure: [
@@ -130,6 +147,10 @@ export const mastersDegreeProgrammes = [
     termType: TermType.Year,
     termsCount: 2,
     collegeCode: "IGNOU",
+    eligibility: "Bachelor’s Degree or a higher degree from a recognized University.",
+    mediumOfInstruction: "English and Hindi",
+    duration: "Minimum 2 years and Maximum 4 years; offered in both January & July cycle of admissions.",
+    feeStructure: "Rs. 13,200/- for full programme to be paid year wise @Rs. 6,600/- per year",
     schoolCode: "SOSS",
     totalCredits: 64,
     programmeStructure: [
@@ -156,6 +177,10 @@ export const mastersDegreeProgrammes = [
     termType: TermType.Year,
     termsCount: 2,
     collegeCode: "IGNOU",
+    eligibility: "Bachelor’s Degree or a higher degree from a recognized University.",
+    mediumOfInstruction: "English and Hindi",
+    duration: "Minimum 2 years and Maximum 4 years; offered in both January & July cycle of admissions.",
+    feeStructure: "Rs. 13,200/- for full programme to be paid year wise @Rs. 6,600/- per year",
     schoolCode: "SOSS",
     totalCredits: 64,
     programmeStructure: [
@@ -181,6 +206,10 @@ export const mastersDegreeProgrammes = [
     termType: TermType.Year,
     termsCount: 2,
     collegeCode: "IGNOU",
+    eligibility: "Bachelor’s Degree in any subject from a recognized University.",
+    mediumOfInstruction: "English",
+    duration: "Minimum 2 years and Maximum 4 years; offered in both January & July cycle of admissions.",
+    feeStructure: "Rs. 18600/- for full programme to be paid year wise @Rs. 9300/- per year",
     schoolCode: "SOSS",
     totalCredits: 64,
     programmeStructure: [
@@ -221,6 +250,10 @@ export const mastersDegreeProgrammes = [
     termType: TermType.Year,
     termsCount: 2,
     collegeCode: "IGNOU",
+    eligibility: "Bachelor’s Degree or a higher degree from a recognized University.",
+    mediumOfInstruction: "English and Hindi",
+    duration: "Minimum 2 years and Maximum 4 years; offered in both January & July cycle of admissions.",
+    feeStructure: "Rs. 16,800/- for full programme to be paid year wise @Rs. 8,400/- per year",
     schoolCode: "SOSS",
     totalCredits: 66,
     programmeStructure: [
@@ -252,6 +285,10 @@ export const mastersDegreeProgrammes = [
     termType: TermType.Year,
     termsCount: 2,
     collegeCode: "IGNOU",
+    eligibility: "Bachelor’s Degree or a higher degree from a recognized University.",
+    mediumOfInstruction: "English and Hindi",
+    duration: "Minimum 2 years and Maximum 4 years; offered in both January & July cycle of admissions.",
+    feeStructure: "Rs. 13,200/- for full programme to be paid year wise @Rs. 6,600/- per year",
     schoolCode: "SOSS",
     totalCredits: 64,
     programmeStructure: [
@@ -278,6 +315,10 @@ export const mastersDegreeProgrammes = [
     termType: TermType.Year,
     termsCount: 1,
     collegeCode: "IGNOU",
+    eligibility: "Bachelor’s Degree in Library and/or Information Science or Associateship from NISCAIR or DRTC",
+    mediumOfInstruction: "English. Students can write assignments and TEE in Hindi language also",
+    duration: "Minimum 1 year and Maximum 2 years; offered in both January and July cycle of admissions.",
+    feeStructure: "Rs. 10,800/- for full programme",
     schoolCode: "SOSS",
     totalCredits: 36,
     programmeStructure: [
@@ -306,6 +347,10 @@ export const mastersDegreeProgrammes = [
     termType: TermType.Year,
     termsCount: 2,
     collegeCode: "IGNOU",
+    eligibility: "Bachelor’s Degree or a higher degree from a recognized University.",
+    mediumOfInstruction: "English",
+    duration: "Minimum 2 years and Maximum 4 years; offered in both January & July cycle of admissions.",
+    feeStructure: "Rs. 17,200/- for full programme to be paid year wise @Rs. 8,600/- per year",
     schoolCode: "SOSS",
     totalCredits: 64,
     programmeStructure: [
@@ -332,6 +377,10 @@ export const mastersDegreeProgrammes = [
     termType: TermType.Year,
     termsCount: 2,
     collegeCode: "IGNOU",
+    eligibility: "Bachelor’s Degree or a higher degree from a recognized University.",
+    mediumOfInstruction: "English and Hindi",
+    duration: "Minimum 2 years and Maximum 4 years; offered in both January & July cycle of admissions.",
+    feeStructure: "Rs. 9,600/- for full programme to be paid year wise @Rs. 4,800/- per year.",
     schoolCode: "SOSS",
     totalCredits: 64,
     programmeStructure: [
@@ -364,6 +413,11 @@ export const mastersDegreeProgrammes = [
     termType: TermType.Semester,
     termsCount: 4,
     collegeCode: "IGNOU",
+    eligibility:
+      "(a) Passed BCA/B.Sc (Computer Science/IT)/ Bachelor Degree in Computer Science Engineering or Equivalent Degree. (b) Obtained atleast 50% marks in the qualifying examination (45% marks in case of candidates belonging to reserved category). OR (a) (i)  Any Bachelor’s degree of minimum 3 (three) year duration from a recognized University AND Mathematics as one of the subjects at 10+2 level or graduation level. (ii) Obtained atleast 50% marks in the qualifying examination (45% marks in case of candidates belonging to reserved category). (b) Successfully completed PGDCA of IGNOU",
+    mediumOfInstruction: "English",
+    duration: "Minimum 2 years and Maximum 4 years; offered in both January & July cycle of admissions.",
+    feeStructure: "Rs. 48,000/- for full programme to be paid semester wise @Rs. 12000/- per semester.",
     schoolCode: "SOCIS",
     totalCredits: 80,
     programmeStructure: [
@@ -403,6 +457,10 @@ export const mastersDegreeProgrammes = [
     termType: TermType.Year,
     termsCount: 2,
     collegeCode: "IGNOU",
+    eligibility: "Bachelor’s Degree or a higher degree from a recognized University.",
+    mediumOfInstruction: "English and Hindi",
+    duration: "Minimum 2 years and Maximum 4 years; offered in both January & July cycle of admissions.",
+    feeStructure: "Rs. 11,000/- for full programme to be paid year wise @Rs. 5,500/- per year",
     schoolCode: "SOCE",
     totalCredits: 66,
     programmeStructure: [
@@ -429,6 +487,11 @@ export const mastersDegreeProgrammes = [
     termType: TermType.Year,
     termsCount: 2,
     collegeCode: "IGNOU",
+    eligibility:
+      "B.Sc. (Home Science) specialization in Food and Nutrition, Dietetics and Clinical Nutrition or PG Diploma in Dietetics and Public Health Nutrition or Graduate (B.Sc.) or equivalent (MBBS, BHHS etc) from the following background – Home Science/ Food Science and Technology, Life Science, Microbiology, Pharmaceutical, Catering along with the DNHE or CNCC or CFN offered by IGNOU (Simultaneous admission for CFN/CNCC is also permitted).",
+    mediumOfInstruction: "English",
+    duration: "Minimum 2 years and Maximum 4 years; offered in both January & July cycle of admissions.",
+    feeStructure: "Rs. 32,400/- for full programme to be paid year wise @Rs. 16,200/- per year.",
     schoolCode: "SOCE",
     totalCredits: 72,
     programmeStructure: [
@@ -463,6 +526,10 @@ export const mastersDegreeProgrammes = [
     termType: TermType.Year,
     termsCount: 2,
     collegeCode: "IGNOU",
+    eligibility: "Bachelor’s degree in any subject from a recognized University.",
+    mediumOfInstruction: "English",
+    duration: "Minimum 2 years and Maximum 4 years; offered in both January & July cycle of admissions.",
+    feeStructure: "Rs. 33,600/- for full programme to be paid year wise @Rs. 16,800/- per year.",
     schoolCode: "SOCE",
     totalCredits: 64,
     programmeStructure: [
@@ -501,6 +568,10 @@ export const mastersDegreeProgrammes = [
     termType: TermType.Year,
     termsCount: 2,
     collegeCode: "IGNOU",
+    eligibility: "Bachelor’s Degree or a higher degree from a recognized University.",
+    mediumOfInstruction: "English and Hindi",
+    duration: "Minimum 2 years and Maximum 4 years; offered in both January & July cycle of admissions.",
+    feeStructure: "Rs. 36000/- for full programme to be paid year wise @Rs. 18000/- per year",
     schoolCode: "SOSW",
     totalCredits: 72,
     programmeStructure: [
@@ -537,6 +608,10 @@ export const mastersDegreeProgrammes = [
     termType: TermType.Year,
     termsCount: 2,
     collegeCode: "IGNOU",
+    eligibility: "Bachelor’s Degree or a higher degree from a recognized University.",
+    mediumOfInstruction: "English and Hindi",
+    duration: "Minimum 2 years and Maximum 4 years; offered in both January & July cycle of admissions.",
+    feeStructure: "Rs. 36,000/- for full programme to be paid year wise @Rs. 18,000/- per year",
     schoolCode: "SOSW",
     totalCredits: 72,
     programmeStructure: [
@@ -566,6 +641,11 @@ export const mastersDegreeProgrammes = [
     termType: TermType.Year,
     termsCount: 2,
     collegeCode: "IGNOU",
+    eligibility:
+      "Bachelor’s Degree in any discipline with or without a Degree in Education from a recognized University.",
+    mediumOfInstruction: "English",
+    duration: "Minimum 2 years and Maximum 4 years; offered in both January & July cycle of admissions.",
+    feeStructure: "Rs. 18200/- for full programme (Rs. 9,200/- for 1st year & Rs. 9000/- for 2nd year respectively).",
     schoolCode: "SOE",
     totalCredits: 68,
     programmeStructure: [
@@ -609,6 +689,10 @@ export const mastersDegreeProgrammes = [
     termType: TermType.Year,
     termsCount: 2,
     collegeCode: "IGNOU",
+    eligibility: "Graduates in any discipline may take admission into this 2 years programme.",
+    mediumOfInstruction: "English",
+    duration: "Minimum 2 years and Maximum 4 years; offered in both January & July cycle of admissions.",
+    feeStructure: "Rs. 11,000/- for full programme to be paid year wise @Rs. 5,500/- per year",
     schoolCode: "STRIDE",
     totalCredits: 64,
     programmeStructure: [
@@ -634,6 +718,10 @@ export const mastersDegreeProgrammes = [
     termType: TermType.Year,
     termsCount: 2,
     collegeCode: "IGNOU",
+    eligibility: "Bachelor’s Degree from any recognized University",
+    mediumOfInstruction: "English",
+    duration: "Minimum 2 years and Maximum 4 years; offered in both January & July cycle of admissions.",
+    feeStructure: "Rs. 12,800/- for full programme to be paid year wise @ Rs. 6,400/- per year.",
     schoolCode: "SOE",
     totalCredits: 68,
     programmeStructure: [
@@ -661,6 +749,12 @@ export const mastersDegreeProgrammes = [
     termType: TermType.Semester,
     termsCount: 4,
     collegeCode: "IGNOU",
+    eligibility:
+      "Category 1: BTS, BA(Tourism); B.Sc. Hospitality and Hotel Administration (BHM); Bachelor’s in Hotel Management (approved by AICTE) and those students who have done their graduation in any field along with a Diploma in Tourism, which is recognized in the University system or by AICTE. Category 2: A Bachelor’s Degree in any field. (However, all students of Category 2 will have to pass four additional Tourism foundation courses during their period of study.)",
+    mediumOfInstruction: "English",
+    duration: "Minimum 2 years and Maximum 4 years; offered in both January & July cycle of admissions.",
+    feeStructure:
+      "Category-I : Rs. 13200/- for full programme fee, to be paid year-wise @Rs. 6600/- per year. Category-II : Rs. 16200/- for full programme, to be paid @Rs. 9600/- for 1st year and Rs. 6600/- for 2nd year.",
     schoolCode: "SOTHSM",
     totalCredits: 68,
     programmeStructure: [
@@ -694,6 +788,10 @@ export const mastersDegreeProgrammes = [
     termType: TermType.Year,
     termsCount: 2,
     collegeCode: "IGNOU",
+    eligibility: "Bachelor’s Degree or equivalent.",
+    mediumOfInstruction: "English",
+    duration: "Minimum 2 years and Maximum 4 years; offered in both January & July cycle of admissions.",
+    feeStructure: "Rs. 13200/- for full programme to be paid year wise @Rs. 6600/- per year",
     schoolCode: "SOITS",
     totalCredits: 64,
     programmeStructure: [
@@ -729,6 +827,11 @@ export const mastersDegreeProgrammes = [
     termType: TermType.Semester,
     termsCount: 4,
     collegeCode: "IGNOU",
+    eligibility:
+      "Bachelor’s degree in any discipline Science/Engineering/Agricultural Science/Forestry/Veterinary Science from a recognized University",
+    mediumOfInstruction: "English",
+    duration: "Minimum 2 years and Maximum 4 years; offered in both January & July cycle of admissions.",
+    feeStructure: "Rs. 15,000/- for full programme. 1 st year: Rs.7,500/-and 2 nd year Rs.7,500/-",
     schoolCode: "SOITS",
     totalCredits: 72,
     programmeStructure: [
@@ -769,6 +872,10 @@ export const mastersDegreeProgrammes = [
     termType: TermType.Year,
     termsCount: 2,
     collegeCode: "IGNOU",
+    eligibility: "Bachelor’s Degree in any discipline from a recognized University",
+    mediumOfInstruction: "English",
+    duration: "Minimum 2 years and Maximum 4 years; offered in both January & July cycle of admissions.",
+    feeStructure: "Full programmefees 10,800/- 1st year: Rs.5,400/-and 2nd year Rs.5,400/-",
     schoolCode: "SOITS",
     totalCredits: 64,
     programmeStructure: [
@@ -793,6 +900,10 @@ export const mastersDegreeProgrammes = [
     termType: TermType.Year,
     termsCount: 2,
     collegeCode: "IGNOU",
+    eligibility: "Bachelor’s Degree in any discipline from a recognized University",
+    mediumOfInstruction: "English",
+    duration: "Minimum 2 years and Maximum 4 years; offered in both January & July cycle of admissions.",
+    feeStructure: "Full programme fees 11400/- 1st year: Rs.5,700/- and 2nd year Rs.5,700/-",
     schoolCode: "SOEDS",
     totalCredits: 72,
     programmeStructure: [
@@ -822,6 +933,11 @@ export const mastersDegreeProgrammes = [
     termType: TermType.Year,
     termsCount: 2,
     collegeCode: "IGNOU",
+    eligibility: "Bachelor’s Degree from any recognized University",
+    mediumOfInstruction: "English",
+    duration: "Minimum 2 years and Maximum 4 years; offered in both January & July cycle of admissions.",
+    feeStructure:
+      "Rs. 12,800/- for full programme. Fee must be paid year wise-Rs. 6,400/- for 1st year (for Semester 1 & 2) at the time of taking admission to the Programme and Rs. 6,400/- for 2nd year (for semesters 3 & 4) at the time of taking admission to 2nd year through Re-registration.",
     schoolCode: "SOGDS",
     totalCredits: 66,
     programmeStructure: [
@@ -854,6 +970,10 @@ export const mastersDegreeProgrammes = [
     termType: TermType.Year,
     termsCount: 2,
     collegeCode: "IGNOU",
+    eligibility: "Bachelor’s Degree or a higher degree from a recognized University.",
+    mediumOfInstruction: "English and Hindi",
+    duration: "Minimum 2 years and Maximum 4 years; offered in both January & July cycle of admissions.",
+    feeStructure: "Rs. 9,600/- for full programme to be paid year wise @Rs. 4,800/- per year.",
     schoolCode: "SOGDS",
     totalCredits: 72,
     programmeStructure: [
@@ -886,6 +1006,10 @@ export const mastersDegreeProgrammes = [
     termType: TermType.Year,
     termsCount: 2,
     collegeCode: "IGNOU",
+    eligibility: "Graduate in any discipline with adequate knowledge of Hindi and English.",
+    mediumOfInstruction: "Hindi",
+    duration: "Minimum 2 years and Maximum 4 years; offered in both January & July cycle of admissions.",
+    feeStructure: "Rs. 9,600/- for full programme to be paid year wise @Rs. 4,800/- per year.",
     schoolCode: "SOTST",
     totalCredits: 64,
     programmeStructure: [
@@ -914,6 +1038,11 @@ export const mastersDegreeProgrammes = [
     termType: TermType.Semester,
     termsCount: 4,
     collegeCode: "IGNOU",
+    eligibility:
+      "Graduate with a Major, or Honours in Mathematics with at least 50% marksin aggregate. If the seats at a centre remain vacant then: Graduate with a BA/B.Sc. degree with Mathematics as one of the three main subjects with equal weightage, having atleast 50% in aggregate and 55% in aggregate in the Mathematics courses will be considered for admission.",
+    mediumOfInstruction: "English",
+    duration: "Minimum 2 years and Maximum 4 years; offered in both January & July cycle of admissions.",
+    feeStructure: "Rs. 26,400/- for full programme to be paid semester wise @Rs. 6,600/- per semester",
     schoolCode: "SOS",
     totalCredits: 64,
     programmeStructure: [
@@ -948,6 +1077,11 @@ export const mastersDegreeProgrammes = [
     termType: TermType.Year,
     termsCount: 2,
     collegeCode: "IGNOU",
+    eligibility:
+      "The learners should have Bachelors Degree in any discipline. They should have access to computers, Internet and basic knowledge of word processing (for creating word documents and communicating through the Internet for sending and receiving mails, browsing sites etc.).",
+    mediumOfInstruction: "English",
+    duration: "Minimum 2 years and Maximum 4 years; offered in both January & July cycle of admissions.",
+    feeStructure: "Rs. 25,000/- for both years; payable in two installments of Rs. 12,500/- per year.",
     schoolCode: "SOJNMS",
     totalCredits: 64,
     programmeStructure: [
@@ -979,6 +1113,11 @@ export const mastersDegreeProgrammes = [
     termType: TermType.Year,
     termsCount: 2,
     collegeCode: "IGNOU",
+    eligibility:
+      "Bachelor in Arts- Drawing and Painting OR Bachelor in Fine/Visual Arts in Painting/ Applied Art/ Sculpture/ Art Education/ History of Art/ Printmaking/ Visual Communication etc. OR Bachelor in Degree in Design/ Fashion/Technology/ Textile/ Animation and other Fine/Visual arts concerned discipline.",
+    mediumOfInstruction: "Hindi and English (*Self-learning Material: English)",
+    duration: "Minimum 2 years and Maximum 4 years; offered in both January & July cycle of admissions.",
+    feeStructure: "Rs. 16,500/- for Full Progrmme. 1 st year: Rs.8,250/- and 2 nd year Rs.8,250/-",
     schoolCode: "SOPVA",
     totalCredits: 64,
     programmeStructure: [
@@ -1006,6 +1145,10 @@ export const mastersDegreeProgrammes = [
     termType: TermType.Semester,
     termsCount: 4,
     collegeCode: "IGNOU",
+    eligibility: "Bachelor Degree in any discipline or its equivalent from the recognized University/ Institute",
+    mediumOfInstruction: "English",
+    duration: "Minimum-2 Year Maximum-4 Years",
+    feeStructure: "Rs. 10800/- Per Semester (Rs. 21600 Per Annum)",
     schoolCode: "SOSS",
     totalCredits: 64,
     programmeStructure: [
@@ -1042,6 +1185,11 @@ export const mastersDegreeProgrammes = [
     termType: TermType.Year,
     termsCount: 2,
     collegeCode: "IGNOU",
+    eligibility: "Bachelor degree in any discipline or its equivalent from a recognized University/Institution.",
+    mediumOfInstruction: "English",
+    duration: "Minimum 2 years and Maximum 4 years",
+    feeStructure:
+      "Rs.15000/- for full Programme, to be paid @Rs.7500/- per year. Registration fee of Rs.200/- is applicable at the time of admission.",
     schoolCode: "SOVET",
     totalCredits: 64,
     programmeStructure: [

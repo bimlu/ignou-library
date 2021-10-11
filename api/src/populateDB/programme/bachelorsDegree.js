@@ -10,6 +10,11 @@ export const bachelorsDegreeProgrammes = [
     name: "BAG",
     fullName: "Bachelor of Arts",
     collegeCode: "IGNOU",
+    eligibility: "10+2 or its equivalent",
+    mediumOfInstruction: "English & Hindi",
+    duration: "Minimum 3 years and Maximum 6 years; offered in both January and July cycle of admission.",
+    feeStructure:
+      "For B.A. Rs. 9,900/- for full programme to be paid year wise @ Rs. 3,300/- per year. Fee to be paid in 1st year, including Registration Fee of Rs.200/- Is Rs.3,500/-",
     schoolCode: "SOH",
     totalCredits: 132,
     courseList: {
@@ -353,6 +358,11 @@ export const bachelorsDegreeProgrammes = [
     name: "BCOMG",
     fullName: "Bachelor of Commerce",
     collegeCode: "IGNOU",
+    eligibility: "10+2 or its equivalent",
+    mediumOfInstruction: "English & Hindi",
+    duration: "Minimum 3 years and Maximum 6 years; offered in both January and July cycle of admission.",
+    feeStructure:
+      "Rs. 9,900/- for full programme to be paid year wise @Rs. 3,300/- per year. Fee to be paid in 1st year, including Registration Fee of Rs.200/-is Rs.3,500/-.",
     schoolCode: "SOMS",
     totalCredits: 132,
     courseList: {
@@ -407,6 +417,11 @@ export const bachelorsDegreeProgrammes = [
     name: "BSCG",
     fullName: "Bachelor of Science",
     collegeCode: "IGNOU",
+    eligibility: "10+2 or its equivalent",
+    mediumOfInstruction: "English & Hindi",
+    duration: "Minimum 3 years and Maximum 6 years; offered in both January and July cycle of admission.",
+    feeStructure:
+      "Rs. 14,700/- for full programme to be paid year wise @ Rs.4,900/- per year. Fee to be paid in first year, including Registration Fee of Rs.200/- is Rs.5,100/-",
     schoolCode: "SOS",
     totalCredits: 132,
     courseList: {
@@ -629,6 +644,10 @@ export const bachelorsDegreeProgrammes = [
     name: "BCA",
     fullName: "Bachelor of Computer Applications",
     collegeCode: "IGNOU",
+    eligibility: "10+2 or its equivalent",
+    mediumOfInstruction: "English",
+    duration: "Minimum 3 years and Maximum 6 years; offered in both January and July cycle of admission.",
+    feeStructure: "Rs. 42,000/- for full programme to be paid Semester wise @Rs. 7,000/- per semester",
     schoolCode: "SOCIS",
     totalCredits: 99,
     programmeDetail: {
@@ -740,6 +759,11 @@ export const bachelorsDegreeProgrammes = [
     name: "BLIS",
     fullName: "Bachelor of Library and Information Sciences",
     collegeCode: "IGNOU",
+    eligibility:
+      "Bachelor’s Degree with 50% marks and 45% for General and for the SC/ST/OBC/PH category respectively. OR Bachelor’s Degree with Diploma (one year) in Library Science OR Bachelor’s Degree with 2 years of working experience in Library and Information Centre",
+    mediumOfInstruction: "English. Students can write assignments and TEE in Hindi language also.",
+    duration: "Minimum 1 year and Maximum 2 years; offered in both January and July cycle of admissions.",
+    feeStructure: "Rs. 7,700/- for full programme",
     schoolCode: "SOSS",
     totalCredits: 36,
     programmeDetail: {
@@ -776,6 +800,10 @@ export const bachelorsDegreeProgrammes = [
     name: "BTS",
     fullName: "Bachelor of Arts (Tourism Studies)",
     collegeCode: "IGNOU",
+    eligibility: "10+2 or its equivalent",
+    mediumOfInstruction: "English & Hindi",
+    duration: "Minimum 3 years and Maximum 6 years; offered in both January and July cycle of admission.",
+    feeStructure: "Rs. 11,400/- for full programme to be paid year wise @Rs. 3,800/- per year",
     schoolCode: "SOTHSM",
     totalCredits: 96,
     programmeDetail: {
@@ -844,6 +872,10 @@ export const bachelorsDegreeProgrammes = [
     name: "BSWG",
     fullName: "Bachelor of Social Work",
     collegeCode: "IGNOU",
+    eligibility: "10+2 or its equivalent",
+    mediumOfInstruction: "English & Hindi",
+    duration: "Minimum 3 years and Maximum 6 years; offered in both January and July cycle of admission.",
+    feeStructure: "Rs. 17,400/- for full programme to be paid @ Rs.5,800/- per year.",
     schoolCode: "SOSW",
     totalCredits: 132,
     programmeDetail: {
@@ -915,6 +947,11 @@ export const bachelorsDegreeProgrammes = [
     name: "BBARL",
     fullName: "Bachelor of Business Administration (Retailing)",
     collegeCode: "IGNOU",
+    eligibility:
+      "Category A–Direct Entry: 10+2 /equivalent. University provides reservation of seats as per Government of India rules. Category B – Sponsored Admission: The sponsor is allowed to nominate employees, who have passed 10+2/equivalent, from their Retail Organization. The sponsor will submit a letter on the company’s letter head issued by the competent authority along with an individual application form of the candidate nominated with the Programme fee through a Demand Draft drawn in favour of IGNOU payable at New Delhi.",
+    mediumOfInstruction: "English",
+    duration: "Minimum 3 years and Maximum 6 years; offered in both January and July cycle of admission.",
+    feeStructure: "Rs. 27,000/- for full programme to be paid year wise @ Rs.9,000/- per year.",
     schoolCode: "SOMS",
     totalCredits: 96,
     programmeDetail: {
@@ -975,6 +1012,10 @@ export const bachelorsDegreeProgrammes = [
     name: "BAVTM",
     fullName: "Bachelor of Arts (Vocational Studies) Tourism Management",
     collegeCode: "IGNOU",
+    eligibility: "10+2 or its equivalent",
+    mediumOfInstruction: "English & Hindi",
+    duration: "Minimum 3 years and Maximum 6 years; offered in both January and July cycle of admission.",
+    feeStructure: "Rs. 12600/- for full programme to be paid Rs.4200/- per year",
     schoolCode: "SOTHSM",
     totalCredits: 132,
     courseList: {

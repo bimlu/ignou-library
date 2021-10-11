@@ -10,6 +10,11 @@ export const pgGraduateCertificateProgrammes = [
     termType: TermType.Semester,
     termsCount: 1,
     collegeCode: "IGNOU",
+    eligibility:
+      "Graduate in any discipline or 4 th and 5 th year students of 5 year integrated LLB course who passed three years.",
+    mediumOfInstruction: "English",
+    duration: "Minimum 6 months and Maximum 2 years; offered in both January & July cycle of admissions.",
+    feeStructure: "Rs. 8,400/- for full programme",
     schoolCode: "SOL",
     totalCredits: 16,
     programmeStructure: [
@@ -28,6 +33,11 @@ export const pgGraduateCertificateProgrammes = [
     termType: TermType.Semester,
     termsCount: 1,
     collegeCode: "IGNOU",
+    eligibility:
+      "Degree in Science/Technology/Medicine, Law and Fourth & Fifth year students of integrated LL.B.Course who passed three years. Learners with experience in dealing with patents and technology transfer will be preferred.",
+    mediumOfInstruction: "English",
+    duration: "Minimum 6 months and Maximum 2 years; offered in both January & July cycle of admissions.",
+    feeStructure: "Rs. 8,500/- for full programme",
     schoolCode: "SOL",
     totalCredits: 16,
     programmeStructure: [
@@ -46,6 +56,10 @@ export const pgGraduateCertificateProgrammes = [
     termType: TermType.Semester,
     termsCount: 1,
     collegeCode: "IGNOU",
+    eligibility: "Graduation in any discipline from a recognized university",
+    mediumOfInstruction: "English",
+    duration: "Minimum 6 months and Maximum 2 years; offered in both January & July cycle of admissions.",
+    feeStructure: "Rs. 3,800/- for full programme",
     schoolCode: "SOITS",
     totalCredits: 16,
     programmeStructure: [
@@ -65,6 +79,10 @@ export const pgGraduateCertificateProgrammes = [
     termType: TermType.Semester,
     termsCount: 1,
     collegeCode: "IGNOU",
+    eligibility: "Graduate in any discipline from a recognised university.",
+    mediumOfInstruction: "English",
+    duration: "Minimum 6 months and Maximum 2 years; offered in both January & July cycle of admissions.",
+    feeStructure: "Rs. 6,000/- for full programme",
     schoolCode: "SOS",
     totalCredits: 16,
     programmeStructure: [
@@ -83,6 +101,11 @@ export const pgGraduateCertificateProgrammes = [
     termType: TermType.Semester,
     termsCount: 1,
     collegeCode: "IGNOU",
+    eligibility:
+      "Engineering graduate/Engineering Diploma Holders OR Science/Commerce/ Arts Graduates or equivalent with 2 years experience in power utilities or the electricity sector",
+    mediumOfInstruction: "English",
+    duration: "Minimum 6 months and Maximum 2 years; offered in both January & July cycle of admissions.",
+    feeStructure: "Rs. 5,400/- for full programme",
     schoolCode: "SOET",
     totalCredits: 16,
     programmeStructure: [
@@ -100,6 +123,10 @@ export const pgGraduateCertificateProgrammes = [
     termType: TermType.Semester,
     termsCount: 1,
     collegeCode: "IGNOU",
+    eligibility: "Graduate in Engineering / Graduate in Science with Physics and Chemistry.",
+    mediumOfInstruction: "English",
+    duration: "Minimum 6 months and Maximum 2 years; offered in both January & July cycle of admissions.",
+    feeStructure: "Rs. 6,000/- for full programme",
     schoolCode: "SOET",
     totalCredits: 16,
     programmeStructure: [
@@ -119,6 +146,10 @@ export const pgGraduateCertificateProgrammes = [
     termType: TermType.Semester,
     termsCount: 1,
     collegeCode: "IGNOU",
+    eligibility: "Graduate in Engineering",
+    mediumOfInstruction: "English",
+    duration: "Minimum 6 months and Maximum 2 years; offered in both January & July cycle of admissions.",
+    feeStructure: "Rs. 6,000/- for full programme",
     schoolCode: "SOET",
     totalCredits: 16,
     programmeStructure: [
@@ -137,6 +168,10 @@ export const pgGraduateCertificateProgrammes = [
     termType: TermType.Semester,
     termsCount: 1,
     collegeCode: "IGNOU",
+    eligibility: "Graduation in any discipline",
+    mediumOfInstruction: "English",
+    duration: "Minimum 6 months and Maximum 2 years; offered in both January & July cycle of admissions.",
+    feeStructure: "Rs. 3,200/- for full programme",
     schoolCode: "SOA",
     totalCredits: 16,
     programmeStructure: [
@@ -155,6 +190,10 @@ export const pgGraduateCertificateProgrammes = [
     termType: TermType.Semester,
     termsCount: 1,
     collegeCode: "IGNOU",
+    eligibility: "Graduate in any discipline",
+    mediumOfInstruction: "English and Hindi",
+    duration: "Minimum 6 months and Maximum 2 years; offered in both January & July cycle of admissions.",
+    feeStructure: "Rs. 2,200/- for full programme",
     schoolCode: "SOSS",
     totalCredits: 16,
     programmeStructure: [
@@ -173,6 +212,10 @@ export const pgGraduateCertificateProgrammes = [
     termType: TermType.Semester,
     termsCount: 1,
     collegeCode: "IGNOU",
+    eligibility: "Bachelor’s Degree from any recognized University/Institute",
+    mediumOfInstruction: "English",
+    duration: "Minimum 6 months and Maximum 2 years; offered in both January & July cycle of admissions.",
+    feeStructure: "Rs. 3,200/- for full programme",
     schoolCode: "SOE",
     totalCredits: 15,
     programmeStructure: [
@@ -192,6 +235,11 @@ export const pgGraduateCertificateProgrammes = [
     termType: TermType.Semester,
     termsCount: 1,
     collegeCode: "IGNOU",
+    eligibility:
+      "Bachelor degree in Computer Science from a recognized university (BCA/BSc-Computer Science) OR Bachelor degree in any discipline from a recognized university with diploma/certificate in Computer Science OR Bachelor degree in any discipline from a recognized university subject to the condition that PGCIATIVI will only be awarded after successfully completing the CIT programme from IGNOU.",
+    mediumOfInstruction: "English",
+    duration: "Minimum 6 months and Maximum 2 years; offered in both January & July cycle of admissions.",
+    feeStructure: "Rs. 5,300/- for full programme",
     schoolCode: "SOE",
     totalCredits: 16,
     programmeStructure: [
@@ -210,6 +258,10 @@ export const pgGraduateCertificateProgrammes = [
     termType: TermType.Semester,
     termsCount: 1,
     collegeCode: "IGNOU",
+    eligibility: "Graduation",
+    mediumOfInstruction: "Hindi",
+    duration: "Minimum 6 months and Maximum 2 years; offered in both January & July cycle of admissions.",
+    feeStructure: "Rs. 1,600/- for full programme",
     schoolCode: "SOTST",
     totalCredits: 16,
     programmeStructure: [
@@ -228,6 +280,10 @@ export const pgGraduateCertificateProgrammes = [
     termType: TermType.Semester,
     termsCount: 1,
     collegeCode: "IGNOU",
+    eligibility: "Graduation",
+    mediumOfInstruction: "Hindi",
+    duration: "Minimum 6 months and Maximum 2 years; offered in both January & July cycle of admissions.",
+    feeStructure: "Rs. 1,600/- for full programme",
     schoolCode: "SOTST",
     totalCredits: 16,
     programmeStructure: [
@@ -246,6 +302,11 @@ export const pgGraduateCertificateProgrammes = [
     termType: TermType.Semester,
     termsCount: 1,
     collegeCode: "IGNOU",
+    eligibility: "MBBS (recognised by MCI). Only Indian Citizens would be considered",
+    mediumOfInstruction: "English",
+    duration: "Minimum 6 months and Maximum 2 years; offered in both January & July cycle of admissions.",
+    feeStructure:
+      "Rs. 5,500/- for full programme. Applicants are required to pay only the Registration Fee of Rs. 400/- along with the application. The Programme Fee is to be paid after receiving offer of admission.",
     schoolCode: "SOHS",
     totalCredits: 16,
     programmeStructure: [
