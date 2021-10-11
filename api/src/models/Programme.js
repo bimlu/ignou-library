@@ -110,6 +110,10 @@ const programmeSchema = Schema(
     schoolCode: String,
     totalCredits: Number,
     programmeStructure: [programmeStructureSchema],
+    eligibility: String,
+    mediumOfInstruction: String,
+    duration: String,
+    feeStructure: String,
   },
   {
     timestamps: true,
