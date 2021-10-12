@@ -1,5 +1,6 @@
 import Box from "@material-ui/core/Box";
 import { makeStyles } from "@material-ui/core/styles";
+import HideOnScroll from "components/App/Header/HideOnScroll";
 import BreadcrumbsNav from "components/BreadcrumbsNav";
 import { HEADER_HEIGHT } from "constants/Layout";
 import React from "react";
@@ -26,9 +27,11 @@ const ExploreHeader = () => {
   const classes = useStyles();
 
   return (
-    <Box className={classes.box} p={2}>
-      <BreadcrumbsNav />
-    </Box>
+    <HideOnScroll>
+      <Box className={classes.box} px={0.4} py={2}>
+        <BreadcrumbsNav />
+      </Box>
+    </HideOnScroll>
   );
 };
 
