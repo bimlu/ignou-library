@@ -2,22 +2,13 @@ import { useQuery } from "@apollo/client";
 import CssBaseline from "@material-ui/core/CssBaseline";
 import { createMuiTheme, ThemeProvider } from "@material-ui/core/styles";
 import { Loading } from "components/Loading";
-import Message from "components/Message";
 import NotFound from "components/NotFound";
 import { COLLEGE_TREE_ITEM_LIMIT } from "constants/DataLimit";
 import { GET_COLLEGES_WITH_PROGRAMMES_COURSES } from "graphql/college";
-import { GET_NEW_CONVERSATIONS_SUBSCRIPTION } from "graphql/messages";
-import { NOTIFICATION_CREATED_OR_DELETED } from "graphql/notification";
 import { GET_AUTH_USER } from "graphql/user";
 import { useThemeToggler } from "hooks/useThemeToggler";
-import AboutUs from "pages/About/AboutUs";
-import ContactUs from "pages/About/ContactUs";
-import PrivacyPolicy from "pages/About/PrivacyPolicy";
-import TermsAndConditions from "pages/About/TermsAndConditions";
-import AuthLayout from "pages/Auth/AuthLayout";
 import React, { useEffect, useMemo } from "react";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import * as Routes from "routes";
+import { BrowserRouter as Router } from "react-router-dom";
 import { useStore } from "store";
 import { SET_AUTH_USER } from "store/auth";
 import { SET_DATA_TREE } from "store/datatree";
@@ -129,86 +120,6 @@ const App = () => {
     collegesData && dispatch({ type: SET_DATA_TREE, payload: collegesData.getColleges.colleges });
   }, [collegesData]);
 
-  useEffect(() => {
-    const unsubscribe = subscribeToMore({
-      document: NOTIFICATION_CREATED_OR_DELETED,
-      updateQuery: async (prev, { subscriptionData }) => {
-        if (!subscriptionData.data) return prev;
-
-        const oldNotifications = prev.getAuthUser.newNotifications;
-        const { operation, notification } = subscriptionData.data.notificationCreatedOrDeleted;
-
-        let newNotifications;
-
-        if (operation === "CREATE") {
-          // Don't show message notification in Header if user already is on notifications page
-          if (window.location.href.split("/")[3] === "notifications") {
-            return prev;
-          }
-
-          // Add new notification
-          newNotifications = [notification, ...oldNotifications];
-        } else {
-          // Remove from notifications
-          const notifications = oldNotifications;
-          const index = notifications.findIndex((n) => n.id === notification.id);
-          if (index > -1) {
-            notifications.splice(index, 1);
-          }
-
-          newNotifications = notifications;
-        }
-
-        // Attach new notifications to authUser
-        const authUser = prev.getAuthUser;
-        authUser.newNotifications = newNotifications;
-
-        return { getAuthUser: authUser };
-      },
-    });
-
-    return () => {
-      unsubscribe();
-    };
-  }, [subscribeToMore]);
-
-  useEffect(() => {
-    const unsubscribe = subscribeToMore({
-      document: GET_NEW_CONVERSATIONS_SUBSCRIPTION,
-      updateQuery: (prev, { subscriptionData }) => {
-        if (!subscriptionData.data) return prev;
-
-        const oldConversations = prev.getAuthUser.newConversations;
-        const { newConversation } = subscriptionData.data;
-
-        // Don't show message notification in Header if user already is on messages page
-        if (window.location.href.split("/")[3] === "messages") {
-          return prev;
-        }
-
-        // If authUser already has unseen message from that user,
-        // remove old message, so we can show the new one
-        const index = oldConversations.findIndex((u) => u.id === newConversation.id);
-        if (index > -1) {
-          oldConversations.splice(index, 1);
-        }
-
-        // Merge conversations
-        const mergeConversations = [newConversation, ...oldConversations];
-
-        // Attach new conversation to authUser
-        const authUser = prev.getAuthUser;
-        authUser.newConversations = mergeConversations;
-
-        return { getAuthUser: authUser };
-      },
-    });
-
-    return () => {
-      unsubscribe();
-    };
-  }, [subscribeToMore]);
-
   if (error) {
     const isDevelopment = !process.env.NODE_ENV || process.env.NODE_ENV === "development";
     if (isDevelopment) {
@@ -230,38 +141,8 @@ const App = () => {
 
       <Router>
         <ScrollToTop>
-          <Switch>
-            <Route path={Routes.AUTH}>
-              <AuthLayout />
-            </Route>
-
-            <Route exact path={Routes.PRIVACY_POLICY}>
-              <PrivacyPolicy />
-            </Route>
-
-            <Route exact path={Routes.TERMS_AND_CONDITIONS}>
-              <TermsAndConditions />
-            </Route>
-
-            <Route exact path={Routes.ABOUT_US}>
-              <AboutUs />
-            </Route>
-
-            <Route exact path={Routes.CONTACT_US}>
-              <ContactUs />
-            </Route>
-
-            <Route exact>
-              <AppLayout toggleThemeMode={toggleThemeMode} />
-            </Route>
-          </Switch>
+          <AppLayout toggleThemeMode={toggleThemeMode} />
         </ScrollToTop>
-
-        {message.content.text && (
-          <Message type={message.content.type} autoClose={message.content.autoClose}>
-            {message.content.text}
-          </Message>
-        )}
       </Router>
     </ThemeProvider>
   );
