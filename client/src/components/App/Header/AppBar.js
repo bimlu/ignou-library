@@ -3,6 +3,7 @@ import IconButton from "@material-ui/core/IconButton";
 import { makeStyles } from "@material-ui/core/styles";
 import Toolbar from "@material-ui/core/Toolbar";
 import Typography from "@material-ui/core/Typography";
+import ArrowBackIcon from "@material-ui/icons/ArrowBack";
 import ToggleThemeIcon from "@material-ui/icons/Brightness4";
 import SiteInfo from "constants/SiteInfo.json";
 import React from "react";
@@ -26,7 +27,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-const Header = ({ toggleThemeMode }) => {
+const Header = ({ toggleThemeMode, showBackButton = false }) => {
   const classes = useStyles();
 
   return (
@@ -34,9 +35,15 @@ const Header = ({ toggleThemeMode }) => {
       <HideOnScroll>
         <AppBar position="fixed" color="inherit">
           <Toolbar className={classes.toolBar}>
-            <Typography className={classes.title} variant="h6" noWrap>
-              {SiteInfo.name}
-            </Typography>
+            {showBackButton ? (
+              <IconButton aria-label="go back" onClick={() => history.back()}>
+                <ArrowBackIcon />
+              </IconButton>
+            ) : (
+              <Typography className={classes.title} variant="h6" noWrap>
+                {SiteInfo.name}
+              </Typography>
+            )}
 
             <div className={classes.grow} />
 

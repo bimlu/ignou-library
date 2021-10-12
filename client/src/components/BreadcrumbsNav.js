@@ -1,6 +1,8 @@
+import { IconButton } from "@material-ui/core";
 import Breadcrumbs from "@material-ui/core/Breadcrumbs";
 import Link from "@material-ui/core/Link";
 import Typography from "@material-ui/core/Typography";
+import ArrowBackIcon from "@material-ui/icons/ArrowBack";
 import { TermType } from "constants/TermType";
 import React, { useEffect, useState } from "react";
 import { Link as RouterLink, useLocation } from "react-router-dom";
@@ -45,6 +47,10 @@ const BreadcrumbsNav = () => {
 
   return (
     <Breadcrumbs separator={"›"} maxItems={3} itemsBeforeCollapse={1} itemsAfterCollapse={1} aria-label="breadcrumb">
+      <IconButton aria-label="go back" onClick={() => history.back()}>
+        <ArrowBackIcon />
+      </IconButton>
+
       <LinkRouter color="inherit" to={`${Routes.PROGRAMMES}#degree=all`}>
         Programmes
       </LinkRouter>
