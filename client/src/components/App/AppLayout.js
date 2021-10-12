@@ -22,15 +22,11 @@ const AppLayout = ({ toggleThemeMode }) => {
 
         <Route exact path={Routes.COURSES}>
           <Header toggleThemeMode={toggleThemeMode} showBackButton={true} />
-          {/* <ExploreHeader /> */}
-          {/* <SimpleHeader loading={false} heading="BCA" /> */}
           <Courses />
         </Route>
 
         <Route exact path={Routes.POSTS}>
           <Header toggleThemeMode={toggleThemeMode} showBackButton={true} />
-          {/* <ExploreHeader /> */}
-          {/* <SimpleHeader loading={false} heading="BCS-11" /> */}
           <StudyMaterial />
         </Route>
 
