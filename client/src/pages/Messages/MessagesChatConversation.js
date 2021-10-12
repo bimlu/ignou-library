@@ -1,19 +1,15 @@
-import React, { useState, useRef, useEffect } from "react";
-import PropTypes from "prop-types";
 import { useMutation } from "@apollo/client";
-
-import { makeStyles } from "@material-ui/core/styles";
-import Input from "@material-ui/core/Input";
 import IconButton from "@material-ui/core/IconButton";
+import Input from "@material-ui/core/Input";
+import { makeStyles } from "@material-ui/core/styles";
 import SendIcon from "@material-ui/icons/Send";
-
-import SingleMessageBox from "./SingleMessageBox";
-
 import { CREATE_MESSAGE } from "graphql/messages";
 import { GET_CONVERSATIONS } from "graphql/user";
-
-import * as Routes from "routes";
 import theme from "muiTheme";
+import PropTypes from "prop-types";
+import React, { useEffect, useRef, useState } from "react";
+import * as Routes from "routes";
+import SingleMessageBox from "./SingleMessageBox";
 
 const useStyles = makeStyles(() => ({
   form: {

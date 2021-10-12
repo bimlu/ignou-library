@@ -1,34 +1,28 @@
-import React from "react";
-import { Switch, Route } from "react-router-dom";
-
 import Container from "@material-ui/core/Container";
 import Grid from "@material-ui/core/Grid";
 import { useTheme } from "@material-ui/core/styles";
 import useMediaQuery from "@material-ui/core/useMediaQuery";
-
+import BottomNavigation from "components/App/BottomNavigation";
 import Header from "components/App/Header";
 import { Spacing } from "components/Layout";
-import BottomNavigation from "components/App/BottomNavigation";
 import NotFound from "components/NotFound";
-
+import { College, Colleges, CreateCollege } from "pages/College";
+import { Course, Courses, CreateCourse } from "pages/Course";
+import Explore from "pages/Explore";
+import Home from "pages/Home";
+import Messages from "pages/Messages";
+import Notifications from "pages/Notifications";
+import People from "pages/People";
+import { CreatePost, Post } from "pages/Post";
+import Profile from "pages/Profile";
+import { CreateProgramme, Programme, Programmes } from "pages/Programme";
+import { StudyMaterial } from "pages/StudyMaterial";
+import React from "react";
+import { Route, Switch } from "react-router-dom";
+import * as Routes from "routes";
+import { useStore } from "store";
 import SideBar from "./SideBar";
 import UserSuggestions from "./UserSuggestions";
-
-import Home from "pages/Home";
-import Explore from "pages/Explore";
-import People from "pages/People";
-import Notifications from "pages/Notifications";
-import Profile from "pages/Profile";
-import Messages from "pages/Messages";
-
-import { College, Colleges, CreateCollege } from "pages/College";
-import { Programme, Programmes, CreateProgramme } from "pages/Programme";
-import { Course, Courses, CreateCourse } from "pages/Course";
-import { Post, CreatePost } from "pages/Post";
-import { StudyMaterial } from "pages/StudyMaterial";
-
-import { useStore } from "store";
-import * as Routes from "routes";
 
 /**
  * Main layout of the app, when user is authenticated

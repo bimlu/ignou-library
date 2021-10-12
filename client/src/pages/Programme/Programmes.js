@@ -1,29 +1,24 @@
-import React, { Fragment, useEffect, useState } from "react";
 import { useQuery } from "@apollo/client";
-import { useLocation } from "react-router-dom";
-
-import { GET_COLLEGE_PROGRAMMES } from "graphql/programme";
-
-// import ProgrammeInfo from "pages/Programme/ProgrammeInfo";
-// import ExploreHeader from "pages/Explore/ExploreHeader";
-
-import CardsContainer from "components/Cards/CardsContainer";
-import InfiniteScroll from "components/InfiniteScroll";
-import Empty from "components/Empty";
-import { Loading } from "components/Loading";
-import Head from "components/Head";
-import SolidCard from "components/Cards/SolidCard";
-import ScrollManager from "components/ScrollManager";
 import Box from "@material-ui/core/Box";
 import Divider from "@material-ui/core/Divider";
-import ProgrammeFilter from "./ProgrammeFilter";
-
+// import ProgrammeInfo from "pages/Programme/ProgrammeInfo";
+// import ExploreHeader from "pages/Explore/ExploreHeader";
+import CardsContainer from "components/Cards/CardsContainer";
+import SolidCard from "components/Cards/SolidCard";
+import Empty from "components/Empty";
+import Head from "components/Head";
+import InfiniteScroll from "components/InfiniteScroll";
+import { Loading } from "components/Loading";
+import ScrollManager from "components/ScrollManager";
 import { EXPLORE_PAGE_CARDS_LIMIT } from "constants/DataLimit";
-
+import { DegreeType2 } from "constants/DegreeType";
+import { GET_COLLEGE_PROGRAMMES } from "graphql/programme";
+import React, { Fragment, useEffect, useState } from "react";
+import { useLocation } from "react-router-dom";
+import * as Routes from "routes";
 import { useStore } from "store";
 import { SET_EXPLORE_ROUTE } from "store/route";
-import * as Routes from "routes";
-import { DegreeType2 } from "constants/DegreeType";
+import ProgrammeFilter from "./ProgrammeFilter";
 
 /**
  * Programmes page

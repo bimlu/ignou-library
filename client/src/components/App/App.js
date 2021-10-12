@@ -1,36 +1,29 @@
-import React, { useEffect, useMemo } from "react";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import { useQuery } from "@apollo/client";
-
 import CssBaseline from "@material-ui/core/CssBaseline";
 import { createMuiTheme, ThemeProvider } from "@material-ui/core/styles";
-
-import { GET_AUTH_USER } from "graphql/user";
-import { GET_NEW_CONVERSATIONS_SUBSCRIPTION } from "graphql/messages";
-import { NOTIFICATION_CREATED_OR_DELETED } from "graphql/notification";
-import { GET_COLLEGES_WITH_PROGRAMMES_COURSES } from "graphql/college";
-
 import { Loading } from "components/Loading";
 import Message from "components/Message";
 import NotFound from "components/NotFound";
-import AppLayout from "./AppLayout";
-import ScrollToTop from "./ScrollToTop";
-import AuthLayout from "pages/Auth/AuthLayout";
-import PrivacyPolicy from "pages/About/PrivacyPolicy";
-import TermsAndConditions from "pages/About/TermsAndConditions";
+import { COLLEGE_TREE_ITEM_LIMIT } from "constants/DataLimit";
+import { GET_COLLEGES_WITH_PROGRAMMES_COURSES } from "graphql/college";
+import { GET_NEW_CONVERSATIONS_SUBSCRIPTION } from "graphql/messages";
+import { NOTIFICATION_CREATED_OR_DELETED } from "graphql/notification";
+import { GET_AUTH_USER } from "graphql/user";
+import { useThemeToggler } from "hooks/useThemeToggler";
 import AboutUs from "pages/About/AboutUs";
 import ContactUs from "pages/About/ContactUs";
-
-import { useThemeToggler } from "hooks/useThemeToggler";
-
-import { useStore } from "store";
-import { SET_DATA_TREE } from "store/datatree";
-import { SET_AUTH_USER } from "store/auth";
-import { CLEAR_EXPLORE_ROUTE, CLEAR_PEOPLE_ROUTE } from "store/route";
-
-import { COLLEGE_TREE_ITEM_LIMIT } from "constants/DataLimit";
-
+import PrivacyPolicy from "pages/About/PrivacyPolicy";
+import TermsAndConditions from "pages/About/TermsAndConditions";
+import AuthLayout from "pages/Auth/AuthLayout";
+import React, { useEffect, useMemo } from "react";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import * as Routes from "routes";
+import { useStore } from "store";
+import { SET_AUTH_USER } from "store/auth";
+import { SET_DATA_TREE } from "store/datatree";
+import { CLEAR_EXPLORE_ROUTE, CLEAR_PEOPLE_ROUTE } from "store/route";
+import AppLayout from "./AppLayout";
+import ScrollToTop from "./ScrollToTop";
 
 /**
  * Root component of the app

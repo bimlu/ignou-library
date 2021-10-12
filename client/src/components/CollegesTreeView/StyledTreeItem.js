@@ -1,9 +1,8 @@
-import React from "react";
-import PropTypes from "prop-types";
-import { makeStyles, fade } from "@material-ui/core/styles";
-
-import TreeItem from "@material-ui/lab/TreeItem";
+import { fade, makeStyles } from "@material-ui/core/styles";
 import Typography from "@material-ui/core/Typography";
+import TreeItem from "@material-ui/lab/TreeItem";
+import PropTypes from "prop-types";
+import React from "react";
 
 const useTreeItemStyles = makeStyles((theme) => ({
   root: {

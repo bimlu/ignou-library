@@ -1,23 +1,17 @@
-import React, { useState } from "react";
-import PropTypes from "prop-types";
 import { useMutation } from "@apollo/client";
-import { Link } from "react-router-dom";
-
-import { makeStyles } from "@material-ui/core/styles";
 import Button from "@material-ui/core/Button";
-
+import { makeStyles } from "@material-ui/core/styles";
+import { HOME_PAGE_POSTS_LIMIT } from "constants/DataLimit";
+import { NotificationType } from "constants/NotificationType";
+import { CREATE_FOLLOW, DELETE_FOLLOW } from "graphql/follow";
 import { GET_FOLLOWED_POSTS, GET_POSTS } from "graphql/post";
 import { GET_AUTH_USER, GET_USER } from "graphql/user";
-import { CREATE_FOLLOW, DELETE_FOLLOW } from "graphql/follow";
-
-import { NotificationType } from "constants/NotificationType";
-import { HOME_PAGE_POSTS_LIMIT } from "constants/DataLimit";
-
-import { useStore } from "store";
-
-import * as Routes from "routes";
-
 import { useNotifications } from "hooks/useNotifications";
+import PropTypes from "prop-types";
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
+import * as Routes from "routes";
+import { useStore } from "store";
 
 const useStyles = makeStyles((theme) => ({
   button: {

@@ -1,22 +1,16 @@
-import React, { useState } from "react";
-import PropTypes from "prop-types";
 import { useMutation } from "@apollo/client";
-import { Link, useLocation } from "react-router-dom";
-
 import IconButton from "@material-ui/core/IconButton";
 import FavoriteIcon from "@material-ui/icons/Favorite";
-
+import { NotificationType } from "constants/NotificationType";
+import { CREATE_LIKE, DELETE_LIKE } from "graphql/like";
 import { GET_FOLLOWED_POSTS, GET_POSTS } from "graphql/post";
 import { GET_AUTH_USER } from "graphql/user";
-import { CREATE_LIKE, DELETE_LIKE } from "graphql/like";
-
-import { NotificationType } from "constants/NotificationType";
-
 import { useNotifications } from "hooks/useNotifications";
-
-import { useStore } from "store";
-
+import PropTypes from "prop-types";
+import React, { useState } from "react";
+import { Link, useLocation } from "react-router-dom";
 import * as Routes from "routes";
+import { useStore } from "store";
 
 /**
  * Component for rendering Like button

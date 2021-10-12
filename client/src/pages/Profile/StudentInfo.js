@@ -1,33 +1,27 @@
-import React, { useEffect, useState } from "react";
-import { Redirect } from "react-router-dom";
-import PropTypes from "prop-types";
 import { useApolloClient } from "@apollo/client";
-
-import { makeStyles } from "@material-ui/core/styles";
 import Chip from "@material-ui/core/Chip";
-import EditIcon from "@material-ui/icons/Edit";
-import CloseIcon from "@material-ui/icons/Cancel";
-import AddIcon from "@material-ui/icons/AddCircle";
-import DialogTitle from "@material-ui/core/DialogTitle";
 import Dialog from "@material-ui/core/Dialog";
+import DialogTitle from "@material-ui/core/DialogTitle";
+import Divider from "@material-ui/core/Divider";
+import LinearProgress from "@material-ui/core/LinearProgress";
 import List from "@material-ui/core/List";
 import ListItem from "@material-ui/core/ListItem";
 import ListItemText from "@material-ui/core/ListItemText";
-import LinearProgress from "@material-ui/core/LinearProgress";
-import Divider from "@material-ui/core/Divider";
-
-import { CollegeIcon } from "components/icons";
-import { ProgrammeIcon } from "components/icons";
-import { CourseIcon } from "components/icons";
-
+import { makeStyles } from "@material-ui/core/styles";
+import AddIcon from "@material-ui/icons/AddCircle";
+import CloseIcon from "@material-ui/icons/Cancel";
+import EditIcon from "@material-ui/icons/Edit";
+import { CollegeIcon, CourseIcon, ProgrammeIcon } from "components/icons";
 import {
+  ADD_USER_COURSE,
+  GET_AUTH_USER,
+  REMOVE_USER_COURSE,
   UPDATE_USER_COLLEGE,
   UPDATE_USER_PROGRAMME,
-  ADD_USER_COURSE,
-  REMOVE_USER_COURSE,
-  GET_AUTH_USER,
 } from "graphql/user";
-
+import PropTypes from "prop-types";
+import React, { useEffect, useState } from "react";
+import { Redirect } from "react-router-dom";
 import { useStore } from "store";
 
 const useStyles = makeStyles((theme) => ({

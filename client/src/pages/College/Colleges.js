@@ -1,25 +1,20 @@
-import React, { Fragment, useEffect } from "react";
 import { useQuery } from "@apollo/client";
-import { useLocation } from "react-router-dom";
-
-import { GET_COLLEGES } from "graphql/college";
-
 import CardsContainer from "components/Cards/CardsContainer";
-import InfiniteScroll from "components/InfiniteScroll";
-import Empty from "components/Empty";
-import { Loading } from "components/Loading";
-import Head from "components/Head";
 import SolidCard from "components/Cards/SolidCard";
+import Empty from "components/Empty";
+import Head from "components/Head";
+import InfiniteScroll from "components/InfiniteScroll";
+import { Loading } from "components/Loading";
 import ScrollManager from "components/ScrollManager";
-
+import { EXPLORE_PAGE_CARDS_LIMIT } from "constants/DataLimit";
+import { GET_COLLEGES } from "graphql/college";
 import CollegeInfo from "pages/College/CollegeInfo";
 import ExploreHeader from "pages/Explore/ExploreHeader";
-
-import { EXPLORE_PAGE_CARDS_LIMIT } from "constants/DataLimit";
-
+import React, { Fragment, useEffect } from "react";
+import { useLocation } from "react-router-dom";
+import * as Routes from "routes";
 import { useStore } from "store";
 import { SET_EXPLORE_ROUTE } from "store/route";
-import * as Routes from "routes";
 
 /**
  * Colleges page

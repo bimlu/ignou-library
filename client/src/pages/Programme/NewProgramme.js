@@ -1,32 +1,28 @@
-import React, { useState, useEffect } from "react";
 import { useMutation } from "@apollo/client";
-import { Redirect } from "react-router-dom";
+import Button from "@material-ui/core/Button";
+import IconButton from "@material-ui/core/IconButton";
+import LinearProgress from "@material-ui/core/LinearProgress";
+import MenuItem from "@material-ui/core/MenuItem";
+import Paper from "@material-ui/core/Paper";
+import Snackbar from "@material-ui/core/Snackbar";
 import { makeStyles } from "@material-ui/core/styles";
 import TextField from "@material-ui/core/TextField";
-import MenuItem from "@material-ui/core/MenuItem";
-import IconButton from "@material-ui/core/IconButton";
-import PhotoCamera from "@material-ui/icons/PhotoCamera";
-import CreateIcon from "@material-ui/icons/Create";
-import Button from "@material-ui/core/Button";
-import ArrowBackIcon from "@material-ui/icons/ArrowBack";
-import LinearProgress from "@material-ui/core/LinearProgress";
-import Snackbar from "@material-ui/core/Snackbar";
-import MuiAlert from "@material-ui/lab/Alert";
-import Paper from "@material-ui/core/Paper";
 import Typography from "@material-ui/core/Typography";
-
-import { CREATE_PROGRAMME, GET_COLLEGE_PROGRAMMES } from "graphql/programme";
-import { GET_COLLEGES_WITH_PROGRAMMES_COURSES } from "graphql/college";
-
+import ArrowBackIcon from "@material-ui/icons/ArrowBack";
+import CreateIcon from "@material-ui/icons/Create";
+import PhotoCamera from "@material-ui/icons/PhotoCamera";
+import MuiAlert from "@material-ui/lab/Alert";
+import Head from "components/Head";
 import { EXPLORE_PAGE_CARDS_LIMIT } from "constants/DataLimit";
 import { MAX_POST_IMAGE_SIZE } from "constants/ImageSize";
-import { HEADER_HEIGHT, HEADER_BORDER_HEIGHT } from "constants/Layout";
-
-import Head from "components/Head";
-import { useStore } from "store";
-import { SET_UPLOADING, CLEAR_UPLOADING } from "store/uploading";
-
+import { HEADER_BORDER_HEIGHT, HEADER_HEIGHT } from "constants/Layout";
+import { GET_COLLEGES_WITH_PROGRAMMES_COURSES } from "graphql/college";
+import { CREATE_PROGRAMME, GET_COLLEGE_PROGRAMMES } from "graphql/programme";
+import React, { useEffect, useState } from "react";
+import { Redirect } from "react-router-dom";
 import * as Routes from "routes";
+import { useStore } from "store";
+import { CLEAR_UPLOADING, SET_UPLOADING } from "store/uploading";
 
 const useStyles = makeStyles((theme) => ({
   paper: {

@@ -1,12 +1,10 @@
-import React from "react";
-import PropTypes from "prop-types";
-import styled from "styled-components";
-
-import { A, H1, H2 } from "components/Text";
-import { Spacing } from "components/Layout";
 import { NotFoundIcon } from "components/icons";
-
+import { Spacing } from "components/Layout";
+import { A, H1, H2 } from "components/Text";
+import PropTypes from "prop-types";
+import React from "react";
 import * as Routes from "routes";
+import styled from "styled-components";
 
 const Root = styled.div`
   display: flex;

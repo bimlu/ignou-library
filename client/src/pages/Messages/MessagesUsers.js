@@ -1,18 +1,15 @@
-import React, { useEffect } from "react";
-import PropTypes from "prop-types";
-import styled from "styled-components";
-import { NavLink, generatePath, withRouter } from "react-router-dom";
 import { useQuery } from "@apollo/client";
-
-import { GET_CONVERSATIONS } from "graphql/user";
-import { GET_NEW_CONVERSATIONS_SUBSCRIPTION } from "graphql/messages";
-
-import Search from "components/Search";
+import Avatar from "components/Avatar";
 import { PencilIcon } from "components/icons";
 import { LoadingDots } from "components/Loading";
-import Avatar from "components/Avatar";
-
+import Search from "components/Search";
+import { GET_NEW_CONVERSATIONS_SUBSCRIPTION } from "graphql/messages";
+import { GET_CONVERSATIONS } from "graphql/user";
+import PropTypes from "prop-types";
+import React, { useEffect } from "react";
+import { generatePath, NavLink, withRouter } from "react-router-dom";
 import * as Routes from "routes";
+import styled from "styled-components";
 
 const Root = styled.div`
   width: 60px;

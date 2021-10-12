@@ -1,25 +1,21 @@
-import React, { useEffect, useState } from "react";
 import { useQuery } from "@apollo/client";
-import { useLocation } from "react-router-dom";
-
-import { GET_COLLEGE_PROGRAMMES } from "graphql/programme";
-
+import Box from "@material-ui/core/Box";
 import CardsContainer from "components/Cards/CardsContainer";
+import SolidCard from "components/Cards/SolidCard";
 import Empty from "components/Empty";
 import Head from "components/Head";
-import SolidCard from "components/Cards/SolidCard";
 import ScrollManager from "components/ScrollManager";
-import Box from "@material-ui/core/Box";
-import ProgrammeFilter from "./ProgrammeFilter";
-
 import { EXPLORE_PAGE_CARDS_LIMIT } from "constants/DataLimit";
-
+import { DegreeType2 } from "constants/DegreeType";
+import { GET_COLLEGE_PROGRAMMES } from "graphql/programme";
+import React, { useEffect, useState } from "react";
+import { useLocation } from "react-router-dom";
+import { FixedSizeList as List } from "react-window";
+import { ReactWindowScroller } from "react-window-scroller";
+import * as Routes from "routes";
 import { useStore } from "store";
 import { SET_EXPLORE_ROUTE } from "store/route";
-import * as Routes from "routes";
-import { FixedSizeList as List } from "react-window";
-import { DegreeType2 } from "constants/DegreeType";
-import { ReactWindowScroller } from "react-window-scroller";
+import ProgrammeFilter from "./ProgrammeFilter";
 
 /**
  * Programmes page

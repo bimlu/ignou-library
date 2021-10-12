@@ -1,18 +1,17 @@
-import React, { useState } from "react";
 import { useQuery } from "@apollo/client";
-import clsx from "clsx";
-
-import { makeStyles } from "@material-ui/core/styles";
-import Paper from "@material-ui/core/Paper";
-import Typography from "@material-ui/core/Typography";
-import Skeleton from "@material-ui/lab/Skeleton";
 import Box from "@material-ui/core/Box";
-import Collapse from "@material-ui/core/Collapse";
-import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 import Button from "@material-ui/core/Button";
+import Collapse from "@material-ui/core/Collapse";
+import Paper from "@material-ui/core/Paper";
+import { makeStyles } from "@material-ui/core/styles";
+import Typography from "@material-ui/core/Typography";
 import CheckCircleIcon from "@material-ui/icons/CheckCircle";
-import { GET_PROGRAMME } from "graphql/programme";
+import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
+import Skeleton from "@material-ui/lab/Skeleton";
+import clsx from "clsx";
 import NotFound from "components/NotFound";
+import { GET_PROGRAMME } from "graphql/programme";
+import React, { useState } from "react";
 
 const useStyles = makeStyles((theme) => ({
   paper: {

@@ -1,30 +1,24 @@
-import React, { useEffect, useState } from "react";
 import { useMutation } from "@apollo/client";
-import { Redirect, useLocation } from "react-router-dom";
+import Button from "@material-ui/core/Button";
+import IconButton from "@material-ui/core/IconButton";
+import Paper from "@material-ui/core/Paper";
+import Snackbar from "@material-ui/core/Snackbar";
 import { makeStyles } from "@material-ui/core/styles";
 import TextField from "@material-ui/core/TextField";
-import IconButton from "@material-ui/core/IconButton";
-import PhotoCamera from "@material-ui/icons/PhotoCamera";
 import CreateIcon from "@material-ui/icons/Create";
-import Button from "@material-ui/core/Button";
-import Snackbar from "@material-ui/core/Snackbar";
+import PhotoCamera from "@material-ui/icons/PhotoCamera";
 import MuiAlert from "@material-ui/lab/Alert";
-import Paper from "@material-ui/core/Paper";
-
-import { GET_FOLLOWED_POSTS, GET_COLLEGE_PROGRAMME_COURSE_POSTS, CREATE_POST } from "graphql/post";
-import { GET_AUTH_USER, GET_USER_POSTS } from "graphql/user";
-
-import { EXPLORE_PAGE_CARDS_LIMIT, PROFILE_PAGE_POSTS_LIMIT } from "constants/DataLimit";
-import { HOME_PAGE_POSTS_LIMIT } from "constants/DataLimit";
-import { MAX_POST_IMAGE_SIZE } from "constants/ImageSize";
-
 import Head from "components/Head";
 import SimpleHeader from "components/SimpleHeader";
-
-import { useStore } from "store";
-import { SET_UPLOADING, CLEAR_UPLOADING } from "store/status";
-
+import { EXPLORE_PAGE_CARDS_LIMIT, HOME_PAGE_POSTS_LIMIT, PROFILE_PAGE_POSTS_LIMIT } from "constants/DataLimit";
+import { MAX_POST_IMAGE_SIZE } from "constants/ImageSize";
+import { CREATE_POST, GET_COLLEGE_PROGRAMME_COURSE_POSTS, GET_FOLLOWED_POSTS } from "graphql/post";
+import { GET_AUTH_USER, GET_USER_POSTS } from "graphql/user";
+import React, { useEffect, useState } from "react";
+import { Redirect, useLocation } from "react-router-dom";
 import * as Routes from "routes";
+import { useStore } from "store";
+import { CLEAR_UPLOADING, SET_UPLOADING } from "store/status";
 
 const useStyles = makeStyles((theme) => ({
   paper: {

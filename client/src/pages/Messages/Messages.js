@@ -1,15 +1,12 @@
+import Paper from "@material-ui/core/Paper";
+import { makeStyles } from "@material-ui/core/styles";
+import Head from "components/Head";
 import React from "react";
 import { Redirect, useRouteMatch } from "react-router-dom";
-
-import { makeStyles } from "@material-ui/core/styles";
-import Paper from "@material-ui/core/Paper";
-
 import * as Routes from "routes";
 import { useStore } from "store";
-import Head from "components/Head";
-
-import MessagesUsers from "./MessagesUsers";
 import MessagesChat from "./MessagesChat";
+import MessagesUsers from "./MessagesUsers";
 
 const useStyles = makeStyles((theme) => ({
   paper: {

@@ -1,12 +1,10 @@
-import React from "react";
-
-import { makeStyles } from "@material-ui/core/styles";
 import IconButton from "@material-ui/core/IconButton";
-import ArrowBackIcon from "@material-ui/icons/ArrowBack";
 import LinearProgress from "@material-ui/core/LinearProgress";
+import { makeStyles } from "@material-ui/core/styles";
 import Typography from "@material-ui/core/Typography";
-
+import ArrowBackIcon from "@material-ui/icons/ArrowBack";
 import { HEADER_HEIGHT } from "constants/Layout";
+import React from "react";
 
 const useStyles = makeStyles((theme) => ({
   header: {

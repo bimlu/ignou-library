@@ -1,18 +1,16 @@
-import React, { useState } from "react";
-import { useLocation } from "react-router-dom";
-
-import { makeStyles } from "@material-ui/core/styles";
-import Paper from "@material-ui/core/Paper";
-import Typography from "@material-ui/core/Typography";
+import { Box } from "@material-ui/core";
 import Divider from "@material-ui/core/Divider";
+import Paper from "@material-ui/core/Paper";
+import { makeStyles } from "@material-ui/core/styles";
+import Typography from "@material-ui/core/Typography";
 import Alert from "@material-ui/lab/Alert";
-
-import Head from "components/Head";
 import CollegesTreeView from "components/CollegesTreeView";
+import Head from "components/Head";
 // import SpeedDial from 'components/SpeedDial';
 import ScrollManager from "components/ScrollManager";
-import { Box } from "@material-ui/core";
 import ProgrammeInfo from "pages/Programme/ProgrammeInfo";
+import React, { useState } from "react";
+import { useLocation } from "react-router-dom";
 import { useStore } from "store";
 
 const useStyles = makeStyles((theme) => ({

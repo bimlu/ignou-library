@@ -1,22 +1,17 @@
-import React, { Fragment, useEffect } from "react";
 import { useQuery } from "@apollo/client";
-import { useLocation } from "react-router-dom";
-
-import { GET_COLLEGE_PROGRAMME_COURSE_POSTS } from "graphql/post";
-
-import PostInfo from "pages/Post/PostInfo";
+import Empty from "components/Empty";
+import Head from "components/Head";
+import InfiniteScroll from "components/InfiniteScroll";
+import { Loading } from "components/Loading";
 // import ExploreHeader from "pages/Explore/ExploreHeader";
-
 import PostCard from "components/PostCard";
 import PDFCard from "components/PostCard/PDFCard";
-import InfiniteScroll from "components/InfiniteScroll";
-import Empty from "components/Empty";
-import { Loading } from "components/Loading";
-import Head from "components/Head";
 import ScrollManager from "components/ScrollManager";
-
 import { EXPLORE_PAGE_POSTS_LIMIT } from "constants/DataLimit";
-
+import { GET_COLLEGE_PROGRAMME_COURSE_POSTS } from "graphql/post";
+import PostInfo from "pages/Post/PostInfo";
+import React, { Fragment, useEffect } from "react";
+import { useLocation } from "react-router-dom";
 import { useStore } from "store";
 import { SET_EXPLORE_ROUTE } from "store/route";
 

@@ -1,6 +1,5 @@
-import styled from "styled-components";
-import { css } from "styled-components";
 import { Link } from "react-router-dom";
+import styled, { css } from "styled-components";
 
 /**
  * Wrapper around React Router's Link component, that uses theme styling

@@ -1,16 +1,13 @@
-import React, { useState, useEffect, useRef } from "react";
 import { useApolloClient } from "@apollo/client";
-import PropTypes from "prop-types";
-import styled from "styled-components";
-
 import { Loading } from "components/Loading";
-import SearchInput from "./SearchInput";
-import SearchResult from "./SearchResult";
-
+import { SEARCH_USERS } from "graphql/user";
 import { useClickOutside } from "hooks/useClickOutside";
 import { useDebounce } from "hooks/useDebounce";
-
-import { SEARCH_USERS } from "graphql/user";
+import PropTypes from "prop-types";
+import React, { useEffect, useRef, useState } from "react";
+import styled from "styled-components";
+import SearchInput from "./SearchInput";
+import SearchResult from "./SearchResult";
 
 const StyledLoading = styled(Loading)`
   position: absolute;

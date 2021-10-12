@@ -1,17 +1,13 @@
-import React, { useEffect, useCallback } from "react";
-import PropTypes from "prop-types";
-import { useQuery, useApolloClient } from "@apollo/client";
-
+import { useApolloClient, useQuery } from "@apollo/client";
 import { makeStyles } from "@material-ui/core/styles";
-
 import { LoadingDots } from "components/Loading";
+import { GET_MESSAGES, GET_MESSAGES_SUBSCRIPTION, UPDATE_MESSAGE_SEEN } from "graphql/messages";
+import { GET_AUTH_USER, GET_CONVERSATIONS, GET_USER } from "graphql/user";
+import PropTypes from "prop-types";
+import React, { useCallback, useEffect } from "react";
+import * as Routes from "routes";
 import MessagesChatConversation from "./MessagesChatConversation";
 import MessagesChatHeading from "./MessagesChatHeading";
-
-import { GET_MESSAGES, GET_MESSAGES_SUBSCRIPTION, UPDATE_MESSAGE_SEEN } from "graphql/messages";
-import { GET_USER, GET_CONVERSATIONS, GET_AUTH_USER } from "graphql/user";
-
-import * as Routes from "routes";
 
 const useStyles = makeStyles(() => ({
   root: {

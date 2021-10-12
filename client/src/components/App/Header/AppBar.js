@@ -1,26 +1,23 @@
-import React from "react";
-import { Link, generatePath } from "react-router-dom";
-
-import { makeStyles } from "@material-ui/core/styles";
 import AppBar from "@material-ui/core/AppBar";
-import Toolbar from "@material-ui/core/Toolbar";
-import IconButton from "@material-ui/core/IconButton";
-import Typography from "@material-ui/core/Typography";
 import Badge from "@material-ui/core/Badge";
-import AccountCircle from "@material-ui/icons/AccountCircle";
-import MenuItem from "@material-ui/core/MenuItem";
+import IconButton from "@material-ui/core/IconButton";
 import Menu from "@material-ui/core/Menu";
-import MailIcon from "@material-ui/icons/Mail";
-import NotificationsIcon from "@material-ui/icons/Notifications";
-import MoreIcon from "@material-ui/icons/MoreVert";
+import MenuItem from "@material-ui/core/MenuItem";
+import { makeStyles } from "@material-ui/core/styles";
+import Toolbar from "@material-ui/core/Toolbar";
+import Typography from "@material-ui/core/Typography";
+import AccountCircle from "@material-ui/icons/AccountCircle";
 import ToggleThemeIcon from "@material-ui/icons/Brightness4";
-
-import HideOnScroll from "./HideOnScroll";
+import MailIcon from "@material-ui/icons/Mail";
+import MoreIcon from "@material-ui/icons/MoreVert";
+import NotificationsIcon from "@material-ui/icons/Notifications";
 import SignOut from "components/App/Header/SignOut";
 import SiteInfo from "constants/SiteInfo.json";
-
-import { useStore } from "store";
+import React from "react";
+import { generatePath, Link } from "react-router-dom";
 import * as Routes from "routes";
+import { useStore } from "store";
+import HideOnScroll from "./HideOnScroll";
 
 const useStyles = makeStyles((theme) => ({
   grow: {

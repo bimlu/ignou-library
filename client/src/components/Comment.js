@@ -1,23 +1,18 @@
-import React from "react";
-import PropTypes from "prop-types";
 import { useMutation } from "@apollo/client";
-import { Link, generatePath } from "react-router-dom";
-
-import { makeStyles } from "@material-ui/core/styles";
 import Avatar from "@material-ui/core/Avatar";
 import Chip from "@material-ui/core/Chip";
+import { makeStyles } from "@material-ui/core/styles";
 import CancelIcon from "@material-ui/icons/Cancel";
 import FaceIcon from "@material-ui/icons/Face";
-
-import { GET_AUTH_USER, GET_USER } from "graphql/user";
 import { DELETE_COMMENT } from "graphql/comment";
-import { GET_POST, GET_POSTS, GET_FOLLOWED_POSTS } from "graphql/post";
-
-import { useNotifications } from "../hooks/useNotifications";
-
-import { useStore } from "store";
-
+import { GET_FOLLOWED_POSTS, GET_POST, GET_POSTS } from "graphql/post";
+import { GET_AUTH_USER, GET_USER } from "graphql/user";
+import PropTypes from "prop-types";
+import React from "react";
+import { generatePath, Link } from "react-router-dom";
 import * as Routes from "routes";
+import { useStore } from "store";
+import { useNotifications } from "../hooks/useNotifications";
 
 const useStyles = makeStyles((theme) => ({
   root: {

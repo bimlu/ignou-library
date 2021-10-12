@@ -1,21 +1,15 @@
-import React, { useState } from "react";
-import PropTypes from "prop-types";
-import styled from "styled-components";
 import { useApolloClient } from "@apollo/client";
-
 import { UploadImageIcon } from "components/icons";
 import { Loading } from "components/Loading";
-
 import { MAX_USER_COVER_IMAGE_SIZE } from "constants/ImageSize";
-
-import { GET_AUTH_USER, GET_USER, UPLOAD_PHOTO } from "graphql/user";
 import { GET_FOLLOWED_POSTS } from "graphql/post";
-
-import defaultBackgroundImage from "./background.jpg";
-
-import { useStore } from "store";
-
+import { GET_AUTH_USER, GET_USER, UPLOAD_PHOTO } from "graphql/user";
 import { useGlobalMessage } from "hooks/useGlobalMessage";
+import PropTypes from "prop-types";
+import React, { useState } from "react";
+import { useStore } from "store";
+import styled from "styled-components";
+import defaultBackgroundImage from "./background.jpg";
 
 const Root = styled.div`
   width: 100%;

@@ -1,50 +1,40 @@
-import React, { useState } from "react";
-import PropTypes from "prop-types";
-import { Link, generatePath, useParams, useLocation } from "react-router-dom";
 import { useMutation } from "@apollo/client";
-
-import { makeStyles, withStyles } from "@material-ui/core/styles";
-import clsx from "clsx";
+import Avatar from "@material-ui/core/Avatar";
+import Badge from "@material-ui/core/Badge";
 import Card from "@material-ui/core/Card";
 import CardActionArea from "@material-ui/core/CardActionArea";
+import CardActions from "@material-ui/core/CardActions";
+import CardContent from "@material-ui/core/CardContent";
 import CardHeader from "@material-ui/core/CardHeader";
 import CardMedia from "@material-ui/core/CardMedia";
-import CardContent from "@material-ui/core/CardContent";
-import CardActions from "@material-ui/core/CardActions";
-import Collapse from "@material-ui/core/Collapse";
-import Avatar from "@material-ui/core/Avatar";
-import IconButton from "@material-ui/core/IconButton";
-import GetAppIcon from "@material-ui/icons/GetApp";
-import VisibilityIcon from "@material-ui/icons/Visibility";
-import MessageIcon from "@material-ui/icons/Message";
-import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
-import MoreVertIcon from "@material-ui/icons/MoreVert";
-import LinearProgress from "@material-ui/core/LinearProgress";
-import Badge from "@material-ui/core/Badge";
-import Typography from "@material-ui/core/Typography";
 import Chip from "@material-ui/core/Chip";
+import Collapse from "@material-ui/core/Collapse";
+import IconButton from "@material-ui/core/IconButton";
+import LinearProgress from "@material-ui/core/LinearProgress";
+import { makeStyles, withStyles } from "@material-ui/core/styles";
+import Typography from "@material-ui/core/Typography";
 import DoneIcon from "@material-ui/icons/Done";
-
-import Like from "components/Like";
+import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
+import GetAppIcon from "@material-ui/icons/GetApp";
+import MessageIcon from "@material-ui/icons/Message";
+import MoreVertIcon from "@material-ui/icons/MoreVert";
+import VisibilityIcon from "@material-ui/icons/Visibility";
+import Skeleton from "@material-ui/lab/Skeleton";
+import clsx from "clsx";
 import Comment from "components/Comment";
 import CreateComment from "components/CreateComment";
-import PostCardOption from "./PostCardOption";
-import Skeleton from "@material-ui/lab/Skeleton";
-
-import { GET_FOLLOWED_POSTS, DELETE_POST } from "graphql/post";
-import { GET_AUTH_USER } from "graphql/user";
-import { GET_USER_POSTS } from "graphql/user";
-import { GET_COLLEGE_PROGRAMME_COURSE_POSTS } from "graphql/post";
+import Like from "components/Like";
 // import { INCREMENT_DOWNLOADS_COUNT, INCREMENT_VIEWS_COUNT } from 'graphql/post';
-
-import { HOME_PAGE_POSTS_LIMIT, PROFILE_PAGE_POSTS_LIMIT } from "constants/DataLimit";
-import { EXPLORE_PAGE_CARDS_LIMIT } from "constants/DataLimit";
-
-import { timeAgo } from "utils/date";
-
-import { useStore } from "store";
-
+import { EXPLORE_PAGE_CARDS_LIMIT, HOME_PAGE_POSTS_LIMIT, PROFILE_PAGE_POSTS_LIMIT } from "constants/DataLimit";
+import { DELETE_POST, GET_COLLEGE_PROGRAMME_COURSE_POSTS, GET_FOLLOWED_POSTS } from "graphql/post";
+import { GET_AUTH_USER, GET_USER_POSTS } from "graphql/user";
+import PropTypes from "prop-types";
+import React, { useState } from "react";
+import { generatePath, Link, useLocation, useParams } from "react-router-dom";
 import * as Routes from "routes";
+import { useStore } from "store";
+import { timeAgo } from "utils/date";
+import PostCardOption from "./PostCardOption";
 
 const DEFAULT_THUMBNAIL = "https://jhimlish-dev-4.s3.ap-south-1.amazonaws.com/default/pdf-thumbnail.jpg";
 

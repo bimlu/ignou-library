@@ -1,24 +1,21 @@
-import React, { useState, useEffect } from "react";
-import { generatePath, Link, useLocation } from "react-router-dom";
-
-import { makeStyles } from "@material-ui/core/styles";
+import Avatar from "@material-ui/core/Avatar";
 import Divider from "@material-ui/core/Divider";
-import Paper from "@material-ui/core/Paper";
 import List from "@material-ui/core/List";
 import ListItem from "@material-ui/core/ListItem";
 import ListItemIcon from "@material-ui/core/ListItemIcon";
 import ListItemText from "@material-ui/core/ListItemText";
-import Avatar from "@material-ui/core/Avatar";
-import HomeIcon from "@material-ui/icons/HomeRounded";
+import Paper from "@material-ui/core/Paper";
+import { makeStyles } from "@material-ui/core/styles";
 import ExploreIcon from "@material-ui/icons/Explore";
-import PeopleIcon from "@material-ui/icons/PeopleRounded";
-import NotificationIcon from "@material-ui/icons/NotificationsRounded";
+import HomeIcon from "@material-ui/icons/HomeRounded";
 import MessageIcon from "@material-ui/icons/MailRounded";
-
+import NotificationIcon from "@material-ui/icons/NotificationsRounded";
+import PeopleIcon from "@material-ui/icons/PeopleRounded";
 import { HEADER_HEIGHT } from "constants/Layout";
-
-import { useStore } from "store";
+import React, { useEffect, useState } from "react";
+import { generatePath, Link, useLocation } from "react-router-dom";
 import * as Routes from "routes";
+import { useStore } from "store";
 
 const useStyles = makeStyles((theme) => ({
   paper: {

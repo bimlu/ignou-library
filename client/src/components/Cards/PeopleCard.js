@@ -1,16 +1,14 @@
-import React from "react";
-import { generatePath } from "react-router-dom";
-import cx from "clsx";
-import { makeStyles } from "@material-ui/core/styles";
+import Avatar from "@material-ui/core/Avatar";
 import Box from "@material-ui/core/Box";
 import Card from "@material-ui/core/Card";
 import CardContent from "@material-ui/core/CardContent";
-import Avatar from "@material-ui/core/Avatar";
 import Divider from "@material-ui/core/Divider";
+import { makeStyles } from "@material-ui/core/styles";
 import Skeleton from "@material-ui/lab/Skeleton";
-
+import cx from "clsx";
 import { A } from "components/Text";
-
+import React from "react";
+import { generatePath } from "react-router-dom";
 import * as Routes from "routes";
 
 const useStyles = makeStyles(({ palette }) => ({

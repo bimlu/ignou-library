@@ -1,21 +1,18 @@
-import React, { useState } from "react";
-
-import Link from "@material-ui/core/Link";
-import Box from "@material-ui/core/Box";
-import Typography from "@material-ui/core/Typography";
-import Container from "@material-ui/core/Container";
-import { makeStyles } from "@material-ui/core/styles";
-import Button from "@material-ui/core/Button";
 import Avatar from "@material-ui/core/Avatar";
-import LockOutlinedIcon from "@material-ui/icons/LockOutlined";
+import Box from "@material-ui/core/Box";
+import Button from "@material-ui/core/Button";
+import Container from "@material-ui/core/Container";
 import LinearProgress from "@material-ui/core/LinearProgress";
+import Link from "@material-ui/core/Link";
+import { makeStyles } from "@material-ui/core/styles";
+import Typography from "@material-ui/core/Typography";
 import ArrowBackIcon from "@material-ui/icons/ArrowBackIos";
-
-import { GoogleIcon } from "components/icons";
+import LockOutlinedIcon from "@material-ui/icons/LockOutlined";
 // import { FacebookIcon } from 'components/icons';
 // import { GithubIcon } from 'components/icons';
 import Head from "components/Head";
-
+import { GoogleIcon } from "components/icons";
+import React, { useState } from "react";
 import * as Routes from "routes";
 
 const useStyles = makeStyles((theme) => ({

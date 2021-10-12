@@ -1,19 +1,14 @@
-import React from "react";
-import { Switch, Route, Redirect } from "react-router-dom";
-
-import { makeStyles } from "@material-ui/core/styles";
 import Box from "@material-ui/core/Box";
-
+import { makeStyles } from "@material-ui/core/styles";
+import HideOnScroll from "components/App/Header/HideOnScroll";
 import BreadcrumbsNav from "components/BreadcrumbsNav";
-
+import { HEADER_HEIGHT } from "constants/Layout";
 import Colleges from "pages/College/Colleges";
-import Programmes from "pages/Programme/Programmes";
 import Courses from "pages/Course/Courses";
 import Posts from "pages/Post/Posts";
-import HideOnScroll from "components/App/Header/HideOnScroll";
-
-import { HEADER_HEIGHT } from "constants/Layout";
-
+import Programmes from "pages/Programme/Programmes";
+import React from "react";
+import { Redirect, Route, Switch } from "react-router-dom";
 import * as Routes from "routes";
 
 const useStyles = makeStyles((theme) => ({

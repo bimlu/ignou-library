@@ -1,20 +1,16 @@
-import React from "react";
-import PropTypes from "prop-types";
-import { generatePath } from "react-router-dom";
-
-import { makeStyles } from "@material-ui/core/styles";
-import List from "@material-ui/core/List";
-import ListItem from "@material-ui/core/ListItem";
-import ListItemText from "@material-ui/core/ListItemText";
-import ListItemIcon from "@material-ui/core/ListItemIcon";
 import Dialog from "@material-ui/core/Dialog";
 import Divider from "@material-ui/core/Divider";
-
+import List from "@material-ui/core/List";
+import ListItem from "@material-ui/core/ListItem";
+import ListItemIcon from "@material-ui/core/ListItemIcon";
+import ListItemText from "@material-ui/core/ListItemText";
+import { makeStyles } from "@material-ui/core/styles";
 import Follow from "components/Follow";
-
-import { useStore } from "store";
-
+import PropTypes from "prop-types";
+import React from "react";
+import { generatePath } from "react-router-dom";
 import * as Routes from "routes";
+import { useStore } from "store";
 
 const useStyles = makeStyles({
   list: {

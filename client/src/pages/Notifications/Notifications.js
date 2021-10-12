@@ -1,19 +1,15 @@
-import React from "react";
 import { useQuery } from "@apollo/client";
-import { Redirect } from "react-router-dom";
-
-import { Loading } from "components/Loading";
 import Notification from "components/App/Notification";
-import InfiniteScroll from "components/InfiniteScroll";
 import Empty from "components/Empty";
 import Head from "components/Head";
-
-import { useStore } from "store";
-import * as Routes from "routes";
-
-import { GET_USER_NOTIFICATION } from "graphql/notification";
-
+import InfiniteScroll from "components/InfiniteScroll";
+import { Loading } from "components/Loading";
 import { NOTIFICATIONS_PAGE_NOTIFICATION_LIMIT } from "constants/DataLimit";
+import { GET_USER_NOTIFICATION } from "graphql/notification";
+import React from "react";
+import { Redirect } from "react-router-dom";
+import * as Routes from "routes";
+import { useStore } from "store";
 
 /**
  * Notifications page

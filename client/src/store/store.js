@@ -1,12 +1,12 @@
 import React, { createContext, useContext, useReducer } from "react";
-import { messageReducer, messageInitialState } from "./message";
-import { authReducer, authInitialState } from "./auth";
-import { uploadingReducer, uploadingInitialState } from "./uploading";
-import { deletingInitialState, deletingReducer } from "./deleting";
-import { datatreeInitialState, datatreeReducer } from "./datatree";
-import { statusInitialState, statusReducer } from "./status";
-import { routeInitialState, routeReducer } from "./route";
+import { authInitialState, authReducer } from "./auth";
 import { collegeTreeInitialState, collegeTreeReducer } from "./collegeTree";
+import { datatreeInitialState, datatreeReducer } from "./datatree";
+import { deletingInitialState, deletingReducer } from "./deleting";
+import { messageInitialState, messageReducer } from "./message";
+import { routeInitialState, routeReducer } from "./route";
+import { statusInitialState, statusReducer } from "./status";
+import { uploadingInitialState, uploadingReducer } from "./uploading";
 
 /**
  * React context for store

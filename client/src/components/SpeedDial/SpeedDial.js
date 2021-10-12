@@ -1,19 +1,17 @@
-import React from "react";
-import { Link, generatePath } from "react-router-dom";
-import { makeStyles } from "@material-ui/core/styles";
 import Backdrop from "@material-ui/core/Backdrop";
-import SpeedDial from "@material-ui/lab/SpeedDial";
-import SpeedDialIcon from "@material-ui/lab/SpeedDialIcon";
-import SpeedDialAction from "@material-ui/lab/SpeedDialAction";
+import { makeStyles } from "@material-ui/core/styles";
 import EditIcon from "@material-ui/icons/Edit";
-import PictureAsPdfIcon from "@material-ui/icons/PictureAsPdf";
 import PhotoLibraryIcon from "@material-ui/icons/PhotoLibrary";
-import { CollegeIcon, ProgrammeIcon, CourseIcon } from "components/icons";
-
+import PictureAsPdfIcon from "@material-ui/icons/PictureAsPdf";
+import SpeedDial from "@material-ui/lab/SpeedDial";
+import SpeedDialAction from "@material-ui/lab/SpeedDialAction";
+import SpeedDialIcon from "@material-ui/lab/SpeedDialIcon";
+import { CollegeIcon, CourseIcon, ProgrammeIcon } from "components/icons";
 import HideOnScroll from "components/SpeedDial/HideSpeedDialOnScroll";
-
-import { useStore } from "store";
+import React from "react";
+import { generatePath, Link } from "react-router-dom";
 import * as Routes from "routes";
+import { useStore } from "store";
 
 const useStyles = makeStyles((theme) => ({
   root: {},

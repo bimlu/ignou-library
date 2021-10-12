@@ -1,21 +1,16 @@
-import React, { useState, useRef, useEffect } from "react";
-import PropTypes from "prop-types";
 import { useMutation } from "@apollo/client";
-
-import { makeStyles } from "@material-ui/core/styles";
-import Input from "@material-ui/core/Input";
-import SendIcon from "@material-ui/icons/Send";
 import IconButton from "@material-ui/core/IconButton";
+import Input from "@material-ui/core/Input";
 import LinearProgress from "@material-ui/core/LinearProgress";
-
-import { GET_AUTH_USER, GET_USER } from "graphql/user";
-import { GET_POST, GET_POSTS, GET_FOLLOWED_POSTS } from "graphql/post";
-import { CREATE_COMMENT } from "graphql/comment";
-
+import { makeStyles } from "@material-ui/core/styles";
+import SendIcon from "@material-ui/icons/Send";
 import { NotificationType } from "constants/NotificationType";
-
+import { CREATE_COMMENT } from "graphql/comment";
+import { GET_FOLLOWED_POSTS, GET_POST, GET_POSTS } from "graphql/post";
+import { GET_AUTH_USER, GET_USER } from "graphql/user";
 import { useNotifications } from "hooks/useNotifications";
-
+import PropTypes from "prop-types";
+import React, { useEffect, useRef, useState } from "react";
 import { useStore } from "store";
 
 const useStyles = makeStyles(() => ({

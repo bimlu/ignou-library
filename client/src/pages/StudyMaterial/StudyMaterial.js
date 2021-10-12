@@ -1,21 +1,19 @@
-import React, { useEffect } from "react";
 import { useQuery } from "@apollo/client";
-import { useLocation } from "react-router-dom";
+import { Link } from "@material-ui/core";
+import Box from "@material-ui/core/Box";
+import Paper from "@material-ui/core/Paper";
+import { makeStyles } from "@material-ui/core/styles";
+import Typography from "@material-ui/core/Typography";
+import CheckCircleIcon from "@material-ui/icons/CheckCircle";
+import Skeleton from "@material-ui/lab/Skeleton";
 import Head from "components/Head";
+import NotFound from "components/NotFound";
 import ScrollManager from "components/ScrollManager";
-
+import { GET_COURSE } from "graphql/course";
+import React, { useEffect } from "react";
+import { useLocation } from "react-router-dom";
 import { useStore } from "store";
 import { SET_EXPLORE_ROUTE } from "store/route";
-
-import { makeStyles } from "@material-ui/core/styles";
-import Paper from "@material-ui/core/Paper";
-import Typography from "@material-ui/core/Typography";
-import Skeleton from "@material-ui/lab/Skeleton";
-import Box from "@material-ui/core/Box";
-import CheckCircleIcon from "@material-ui/icons/CheckCircle";
-import NotFound from "components/NotFound";
-import { GET_COURSE } from "graphql/course";
-import { Link } from "@material-ui/core";
 
 // const BLOCKS = [
 //   {

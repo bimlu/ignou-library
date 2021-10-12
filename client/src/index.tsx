@@ -1,13 +1,11 @@
+import { ApolloProvider } from "@apollo/client";
+import App from "components/App";
 import React from "react";
 import { render } from "react-dom";
-import { ApolloProvider } from "@apollo/client";
-import { ThemeProvider as LocalThemeProvider } from "styled-components";
-
-import App from "components/App";
-import { createApolloClient } from "utils/apollo-client";
-
-import localTheme from "theme";
 import { StoreProvider } from "store";
+import { ThemeProvider as LocalThemeProvider } from "styled-components";
+import localTheme from "theme";
+import { createApolloClient } from "utils/apollo-client";
 
 // GraphQL HTTP URL
 const API_URL = `${process.env.REACT_APP_API_URL}/graphql`;

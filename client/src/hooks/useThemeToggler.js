@@ -1,5 +1,5 @@
-import { useEffect, useState } from "react";
 import useMediaQuery from "@material-ui/core/useMediaQuery";
+import { useEffect, useState } from "react";
 
 export const useThemeToggler = () => {
   const prefersDarkMode = useMediaQuery("(prefers-color-scheme: dark)");

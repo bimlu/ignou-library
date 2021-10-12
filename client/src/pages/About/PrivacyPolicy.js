@@ -1,13 +1,11 @@
-import React from "react";
-
 import Box from "@material-ui/core/Box";
 import Container from "@material-ui/core/Container";
-import { makeStyles } from "@material-ui/core/styles";
 import Divider from "@material-ui/core/Divider";
-import Typography from "@material-ui/core/Typography";
 import Link from "@material-ui/core/Link";
-
+import { makeStyles } from "@material-ui/core/styles";
+import Typography from "@material-ui/core/Typography";
 import Head from "components/Head";
+import React from "react";
 
 const useStyles = makeStyles(() => ({
   root: {

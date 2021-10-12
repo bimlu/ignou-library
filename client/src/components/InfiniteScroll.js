@@ -1,6 +1,6 @@
-import { useEffect, useMemo } from "react";
+import { clone, get, setWith, uniqBy } from "lodash";
 import PropTypes from "prop-types";
-import { get, uniqBy, setWith, clone } from "lodash";
+import { useEffect, useMemo } from "react";
 
 /**
  * Component that adds Infinite scroll functionality to UI

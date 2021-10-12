@@ -1,17 +1,13 @@
-import React, { useEffect, useState } from "react";
-import { Link, generatePath, useLocation } from "react-router-dom";
-
-import { makeStyles } from "@material-ui/core/styles";
 import BottomNavigation from "@material-ui/core/BottomNavigation";
 import BottomNavigationAction from "@material-ui/core/BottomNavigationAction";
-
-import HomeIcon from "@material-ui/icons/HomeRounded";
+import { makeStyles } from "@material-ui/core/styles";
 import ExploreIcon from "@material-ui/icons/ExploreRounded";
+import HomeIcon from "@material-ui/icons/HomeRounded";
 import StudentsIcon from "@material-ui/icons/PeopleRounded";
 import ProfileIcon from "@material-ui/icons/PersonRounded";
-
 import { BOTTOM_NAV_HEIGHT } from "constants/Layout";
-
+import React, { useEffect, useState } from "react";
+import { generatePath, Link, useLocation } from "react-router-dom";
 import * as Routes from "routes";
 import { useStore } from "store";
 

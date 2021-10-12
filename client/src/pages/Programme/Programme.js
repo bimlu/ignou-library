@@ -1,38 +1,36 @@
-import React, { useState } from "react";
-
-import { useQuery, useApolloClient } from "@apollo/client";
-import { useParams } from "react-router-dom";
-
-import { makeStyles } from "@material-ui/core/styles";
-import Skeleton from "@material-ui/lab/Skeleton";
-import Typography from "@material-ui/core/Typography";
-import Paper from "@material-ui/core/Paper";
+import { useApolloClient, useQuery } from "@apollo/client";
 import Box from "@material-ui/core/Box";
-import Divider from "@material-ui/core/Divider";
 import Button from "@material-ui/core/Button";
-import Snackbar from "@material-ui/core/Snackbar";
-import MuiAlert from "@material-ui/lab/Alert";
-import TextField from "@material-ui/core/TextField";
-import MenuItem from "@material-ui/core/MenuItem";
+import Divider from "@material-ui/core/Divider";
 import IconButton from "@material-ui/core/IconButton";
+import MenuItem from "@material-ui/core/MenuItem";
+import Paper from "@material-ui/core/Paper";
+import Snackbar from "@material-ui/core/Snackbar";
+import { makeStyles } from "@material-ui/core/styles";
+import TextField from "@material-ui/core/TextField";
+import Typography from "@material-ui/core/Typography";
 import PhotoCamera from "@material-ui/icons/PhotoCamera";
-
-import { GET_PROGRAMME, DELETE_PROGRAMME, UPDATE_PROGRAMME, TOGGLE_PROGRAMME_VERIFICATION } from "graphql/programme";
-import { GET_COLLEGE_PROGRAMMES } from "graphql/programme";
-
+import MuiAlert from "@material-ui/lab/Alert";
+import Skeleton from "@material-ui/lab/Skeleton";
+import NotFound from "components/NotFound";
+import SimpleHeader from "components/SimpleHeader";
+import { EXPLORE_PAGE_CARDS_LIMIT } from "constants/DataLimit";
+import { DegreeType } from "constants/DegreeType";
 import { MAX_POST_IMAGE_SIZE } from "constants/ImageSize";
 import { TermType } from "constants/TermType";
-import { DegreeType } from "constants/DegreeType";
-
-import NewProgramme from "./NewProgramme";
-import SimpleHeader from "components/SimpleHeader";
-import NotFound from "components/NotFound";
-
-import { EXPLORE_PAGE_CARDS_LIMIT } from "constants/DataLimit";
 import { UserRole } from "constants/UserRole";
-
-import { useStore } from "store";
+import {
+  DELETE_PROGRAMME,
+  GET_COLLEGE_PROGRAMMES,
+  GET_PROGRAMME,
+  TOGGLE_PROGRAMME_VERIFICATION,
+  UPDATE_PROGRAMME,
+} from "graphql/programme";
+import React, { useState } from "react";
+import { useParams } from "react-router-dom";
 import * as Routes from "routes";
+import { useStore } from "store";
+import NewProgramme from "./NewProgramme";
 
 const useStyles = makeStyles((theme) => ({
   paper: {

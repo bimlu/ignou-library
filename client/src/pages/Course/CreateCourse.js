@@ -1,29 +1,23 @@
-import React, { useState, useEffect } from "react";
 import { useMutation } from "@apollo/client";
-import { Redirect, useLocation } from "react-router-dom";
+import Button from "@material-ui/core/Button";
+import IconButton from "@material-ui/core/IconButton";
+import Snackbar from "@material-ui/core/Snackbar";
 import { makeStyles } from "@material-ui/core/styles";
 import TextField from "@material-ui/core/TextField";
-import IconButton from "@material-ui/core/IconButton";
-import PhotoCamera from "@material-ui/icons/PhotoCamera";
 import CreateIcon from "@material-ui/icons/Create";
-import Button from "@material-ui/core/Button";
-import Snackbar from "@material-ui/core/Snackbar";
-import MuiAlert from "@material-ui/lab/Alert";
-import Alert from "@material-ui/lab/Alert";
-
-import { CREATE_COURSE, GET_COLLEGE_PROGRAMME_COURSES } from "graphql/course";
-import { GET_COLLEGES_WITH_PROGRAMMES_COURSES } from "graphql/college";
-
-import { EXPLORE_PAGE_CARDS_LIMIT } from "constants/DataLimit";
-import { MAX_POST_IMAGE_SIZE } from "constants/ImageSize";
-
+import PhotoCamera from "@material-ui/icons/PhotoCamera";
+import { default as Alert, default as MuiAlert } from "@material-ui/lab/Alert";
 import Head from "components/Head";
 import SimpleHeader from "components/SimpleHeader";
-
-import { useStore } from "store";
-import { SET_UPLOADING, CLEAR_UPLOADING } from "store/uploading";
-
+import { EXPLORE_PAGE_CARDS_LIMIT } from "constants/DataLimit";
+import { MAX_POST_IMAGE_SIZE } from "constants/ImageSize";
+import { GET_COLLEGES_WITH_PROGRAMMES_COURSES } from "graphql/college";
+import { CREATE_COURSE, GET_COLLEGE_PROGRAMME_COURSES } from "graphql/course";
+import React, { useEffect, useState } from "react";
+import { Redirect, useLocation } from "react-router-dom";
 import * as Routes from "routes";
+import { useStore } from "store";
+import { CLEAR_UPLOADING, SET_UPLOADING } from "store/uploading";
 
 const useStyles = makeStyles((theme) => ({
   form: {

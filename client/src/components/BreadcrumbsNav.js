@@ -1,13 +1,10 @@
-import React, { useState, useEffect } from "react";
-import { useLocation } from "react-router-dom";
-import { Link as RouterLink } from "react-router-dom";
-
 import Breadcrumbs from "@material-ui/core/Breadcrumbs";
-import Typography from "@material-ui/core/Typography";
 import Link from "@material-ui/core/Link";
-
-import * as Routes from "routes";
+import Typography from "@material-ui/core/Typography";
 import { TermType } from "constants/TermType";
+import React, { useEffect, useState } from "react";
+import { Link as RouterLink, useLocation } from "react-router-dom";
+import * as Routes from "routes";
 
 const LinkRouter = (props) => <Link {...props} component={RouterLink} />;
 

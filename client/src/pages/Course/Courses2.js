@@ -9,13 +9,13 @@ import { GET_PROGRAMME_STRUCTURE } from "graphql/programme";
 import CourseInfo from "pages/Course/CourseInfo";
 import React, { useEffect, useState } from "react";
 import { useLocation } from "react-router-dom";
+import { FixedSizeList as List } from "react-window";
+import { ReactWindowScroller } from "react-window-scroller";
 import * as Routes from "routes";
 import { useStore } from "store";
 import { SET_EXPLORE_ROUTE } from "store/route";
 import Card from "./Card";
 import CourseFilter from "./CourseFilter";
-import { FixedSizeList as List } from "react-window";
-import { ReactWindowScroller } from "react-window-scroller";
 
 /**
  * Courses page

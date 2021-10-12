@@ -1,8 +1,7 @@
-import React from "react";
-import PropTypes from "prop-types";
-import { Helmet } from "react-helmet";
-
 import SiteInfo from "constants/SiteInfo.json";
+import PropTypes from "prop-types";
+import React from "react";
+import { Helmet } from "react-helmet";
 
 /**
  * Component that manages changes to document head

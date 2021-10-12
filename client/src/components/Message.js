@@ -1,17 +1,13 @@
-import React, { useEffect } from "react";
-import PropTypes from "prop-types";
-import styled, { keyframes } from "styled-components";
-
-import { SuccessIcon, InfoIcon, WarningIcon, ErrorIcon, CloseIcon } from "components/icons";
-import { Spacing } from "./Layout";
 import { Button } from "components/Form";
-
-import theme from "theme";
-
+import { CloseIcon, ErrorIcon, InfoIcon, SuccessIcon, WarningIcon } from "components/icons";
 import { allMessageTypes } from "constants/MessageType";
-
+import PropTypes from "prop-types";
+import React, { useEffect } from "react";
 import { useStore } from "store";
 import { CLEAR_MESSAGE } from "store/message";
+import styled, { keyframes } from "styled-components";
+import theme from "theme";
+import { Spacing } from "./Layout";
 
 const fade = keyframes`
   from {

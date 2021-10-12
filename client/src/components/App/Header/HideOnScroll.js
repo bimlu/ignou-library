@@ -1,7 +1,7 @@
-import useScrollTrigger from "@material-ui/core/useScrollTrigger";
 import Slide from "@material-ui/core/Slide";
 import { useTheme } from "@material-ui/core/styles";
 import useMediaQuery from "@material-ui/core/useMediaQuery";
+import useScrollTrigger from "@material-ui/core/useScrollTrigger";
 
 const HideOnScroll = ({ children }) => {
   const trigger = useScrollTrigger();

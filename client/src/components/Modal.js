@@ -1,7 +1,6 @@
+import PropTypes from "prop-types";
 import React from "react";
 import styled from "styled-components";
-import PropTypes from "prop-types";
-
 import Confirm from "./Confirm";
 import { Overlay } from "./Layout";
 
