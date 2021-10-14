@@ -6,7 +6,7 @@ node_modules/
 .vscode/
 
 # Misc
-.env
+# .env
 .DS_Store
 
 
@@ -16,7 +16,7 @@ yarn-debug.log*
 yarn-error.log*
 
 # Later added
-.env.production
-.env.local
+# .env.production
+# .env.local
 logs/
 build/
