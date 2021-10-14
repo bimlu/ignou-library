@@ -10,7 +10,7 @@ node_modules/
 *.log
 
 # Misc
-.env
+# .env
 
 # Package manager
 npm-debug.log*
@@ -27,7 +27,7 @@ ehthumbs.db
 Thumbs.db
 
 # Later added
-.env.development
-.env.production
+# .env.development
+# .env.production
 playground.css
 build/
