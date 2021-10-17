@@ -1,9 +1,9 @@
 import Container from "@material-ui/core/Container";
 import Header from "components/App/Header";
 import NotFound from "components/NotFound";
-import Course from "pages2/Course";
-import Home from "pages2/Home";
-import Programme from "pages2/Programme";
+import Course from "pages/Course";
+import Home from "pages/Home";
+import Programme from "pages/Programme";
 import React from "react";
 import { Redirect, Route, Switch } from "react-router-dom";
 import * as Routes from "routes";
