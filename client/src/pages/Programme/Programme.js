@@ -9,7 +9,7 @@ import { useStore } from "store";
 import { SET_EXPLORE_ROUTE } from "store/route";
 import CourseFilter from "./CourseFilter";
 import CourseList from "./CourseList";
-import ProgrammeInfo from "./ProgrammeInfo";
+import ProgrammeInfo from "./ProgrammeInfo/index";
 
 const Programme = () => {
   const cardColors = ["#203f52", "#4d137f", "#002244", "#004953"];
