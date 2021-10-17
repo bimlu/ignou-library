@@ -27,10 +27,12 @@ const useStyles = makeStyles((theme) => ({
   },
   button: {
     borderRadius: theme.spacing(1.2),
-    padding: `${theme.spacing(1)}px ${theme.spacing(2)}px`,
-    fontSize: theme.spacing(1.6),
+    padding: `${theme.spacing(1.6)}px ${theme.spacing(2)}px`,
+    fontSize: theme.spacing(1.8),
     marginBottom: theme.spacing(1),
     textTransform: "none",
+    width: "100%",
+    justifyContent: "space-between",
   },
 
   info: {
