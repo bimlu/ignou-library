@@ -93,7 +93,7 @@ const Course = () => {
           <img alt="course image" src={course.image} className={classes.image} />
         </div>
 
-        <Box m={4} />
+        <Box m={2} />
 
         <QuestionPaper />
 
