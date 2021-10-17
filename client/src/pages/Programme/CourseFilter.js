@@ -6,12 +6,6 @@ import React from "react";
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    position: "sticky",
-    top: 0,
-    zIndex: theme.zIndex.appBar - 1,
-    background: theme.palette.background.default,
-  },
-  filterList: {
     paddingBottom: theme.spacing(1),
     paddingTop: theme.spacing(1),
     whiteSpace: "nowrap",
@@ -28,6 +22,10 @@ const useStyles = makeStyles((theme) => ({
     "&::-webkit-scrollbar": {
       height: "0.32em",
     },
+    position: "sticky",
+    top: 0,
+    zIndex: theme.zIndex.appBar - 1,
+    background: theme.palette.background.default,
   },
 }));
 
@@ -39,12 +37,12 @@ export default function CourseFilter({ termType, termsCount, selectedTerm }) {
   };
 
   return (
-    <div className={classes.root}>
-      <Typography variant="h3" color="textSecondary">
-        <b>Courses</b>
+    <>
+      <Typography variant="h4" color="textSecondary">
+        <b>📖 Courses</b>
       </Typography>
 
-      <div className={classes.filterList}>
+      <div className={classes.root}>
         <Button
           variant={selectedTerm === "all" ? "contained" : "outlined"}
           size="small"
@@ -68,6 +66,6 @@ export default function CourseFilter({ termType, termsCount, selectedTerm }) {
             </Button>
           ))}
       </div>
-    </div>
+    </>
   );
 }
