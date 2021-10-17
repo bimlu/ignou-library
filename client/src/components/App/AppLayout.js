@@ -3,7 +3,8 @@ import Header from "components/App/Header";
 import NotFound from "components/NotFound";
 import { Courses } from "pages/Course";
 import { Programmes } from "pages/Programme";
-import { StudyMaterial } from "pages/StudyMaterial";
+// import { StudyMaterial } from "pages/StudyMaterial";
+import Course from 'pages2/Course';
 import React from "react";
 import { Redirect, Route, Switch } from "react-router-dom";
 import * as Routes from "routes";
@@ -27,7 +28,7 @@ const AppLayout = ({ toggleThemeMode }) => {
 
         <Route exact path={Routes.COURSE}>
           <Header toggleThemeMode={toggleThemeMode} showBackButton={true} />
-          <StudyMaterial />
+          <Course />
         </Route>
 
         <Redirect to={Routes.HOME} />
