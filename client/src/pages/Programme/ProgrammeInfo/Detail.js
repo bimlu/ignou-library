@@ -27,11 +27,11 @@ const useStyles = makeStyles((theme) => ({
   },
   button: {
     borderRadius: theme.spacing(1.2),
-    padding: `${theme.spacing(1.6)}px ${theme.spacing(2)}px`,
-    fontSize: theme.spacing(1.8),
+    padding: `${theme.spacing(1.4)}px ${theme.spacing(2)}px`,
+    fontSize: theme.spacing(1.6),
     marginBottom: theme.spacing(1),
     textTransform: "none",
-    width: "100%",
+    width: "52%",
     justifyContent: "space-between",
   },
 
@@ -82,7 +82,7 @@ const Detail = ({ programme, loading }) => {
         color="secondary"
         className={classes.button}
       >
-        Programme Details
+        Programme Detail
       </Button>
 
       <Collapse in={expanded} timeout="auto" unmountOnExit>

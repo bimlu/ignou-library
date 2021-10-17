@@ -1,9 +1,9 @@
+import { Link } from "@material-ui/core";
 import Box from "@material-ui/core/Box";
 import Button from "@material-ui/core/Button";
 import Collapse from "@material-ui/core/Collapse";
 import Paper from "@material-ui/core/Paper";
 import { makeStyles } from "@material-ui/core/styles";
-import Typography from "@material-ui/core/Typography";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 import Skeleton from "@material-ui/lab/Skeleton";
 import clsx from "clsx";
@@ -27,24 +27,20 @@ const useStyles = makeStyles((theme) => ({
   },
   button: {
     borderRadius: theme.spacing(1.2),
-    padding: `${theme.spacing(1.6)}px ${theme.spacing(2)}px`,
-    fontSize: theme.spacing(1.8),
+    padding: `${theme.spacing(1.4)}px ${theme.spacing(2)}px`,
+    fontSize: theme.spacing(1.6),
     marginBottom: theme.spacing(1),
     textTransform: "none",
-    width: "100%",
+    width: "52%",
     justifyContent: "space-between",
   },
 
-  info: {
-    marginBottom: theme.spacing(1.8),
-  },
-  infoPaper: {
+  downloadLinks: {
     padding: theme.spacing(1.8),
     background: theme.palette.background.paper,
     borderRadius: theme.spacing(1),
-  },
-  infoHeading: {
-    marginBottom: theme.spacing(0.6),
+    display: "flex",
+    flexDirection: "column",
   },
 }));
 
@@ -86,41 +82,20 @@ const Assignment = ({ programme, loading }) => {
       </Button>
 
       <Collapse in={expanded} timeout="auto" unmountOnExit>
-        <div className={classes.info}>
-          <Typography color="textSecondary" variant="h5" className={classes.infoHeading}>
-            <b>Medium of Instruction</b>
-          </Typography>
-          <Paper className={classes.infoPaper} elevation={0}>
-            <Typography>{programme.mediumOfInstruction}</Typography>
-          </Paper>
-        </div>
-
-        <div className={classes.info}>
-          <Typography color="textSecondary" variant="h5" className={classes.infoHeading}>
-            <b>Duration</b>
-          </Typography>
-          <Paper className={classes.infoPaper} elevation={0}>
-            <Typography>{programme.duration} </Typography>
-          </Paper>
-        </div>
-
-        <div className={classes.info}>
-          <Typography color="textSecondary" variant="h5" className={classes.infoHeading}>
-            <b>Fee Structure</b>
-          </Typography>
-          <Paper className={classes.infoPaper} elevation={0}>
-            <Typography>{programme.feeStructure}</Typography>
-          </Paper>
-        </div>
-
-        <div className={classes.info}>
-          <Typography color="textSecondary" variant="h5" className={classes.infoHeading}>
-            <b>Eligibility</b>
-          </Typography>
-          <Paper className={classes.infoPaper} elevation={0}>
-            <Typography>{programme.eligibility}</Typography>
-          </Paper>
-        </div>
+        <Paper className={classes.downloadLinks} elevation={0}>
+          <Link target="blank" href={"#"} variant="body1">
+            ✳️ December-2020
+          </Link>
+          <Link target="blank" href={"#"} variant="body1">
+            ✳️ June-2020
+          </Link>
+          <Link target="blank" href={"#"} variant="body1">
+            ✳️ December-2019
+          </Link>
+          <Link target="blank" href={"#"} variant="body1">
+            ✳️ June-2019
+          </Link>
+        </Paper>
       </Collapse>
 
       <Box m={1} />
