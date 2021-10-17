@@ -3,13 +3,13 @@ import Box from "@material-ui/core/Box";
 import Head from "components/Head";
 import ScrollManager from "components/ScrollManager";
 import { GET_PROGRAMME_STRUCTURE } from "graphql/programme";
-import CourseInfo from "pages/Course/CourseInfo";
 import React, { useEffect, useState } from "react";
 import { useLocation } from "react-router-dom";
 import { useStore } from "store";
 import { SET_EXPLORE_ROUTE } from "store/route";
 import CourseFilter from "./CourseFilter";
 import CourseList from "./CourseList";
+import ProgrammeInfo from "./ProgrammeInfo";
 
 const Programme = () => {
   const cardColors = ["#203f52", "#4d137f", "#002244", "#004953"];
@@ -46,7 +46,7 @@ const Programme = () => {
 
       <ScrollManager scrollKey={`${pathname}${search}`} />
 
-      <CourseInfo collegeId={collegeId} programmeId={programmeId} />
+      <ProgrammeInfo collegeId={collegeId} programmeId={programmeId} />
 
       <CourseFilter termType={termType} termsCount={termsCount} selectedTerm={term} />
 
