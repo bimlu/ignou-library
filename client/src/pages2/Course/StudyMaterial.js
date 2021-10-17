@@ -24,7 +24,7 @@ const useStyles = makeStyles((theme) => ({
 
 const StudyMaterial = ({ course }) => {
   const classes = useStyles();
-  const courseBlocks = course.courseBlocks
+  const courseBlocks = course.courseBlocks;
 
   return (
     <>
@@ -62,7 +62,7 @@ const StudyMaterial = ({ course }) => {
         </div>
       ))}
     </>
-  )
+  );
 };
 
 export default StudyMaterial;

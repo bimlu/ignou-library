@@ -53,8 +53,17 @@ const Programme = () => {
       <Box m={2} />
 
       <CourseList
-        data={data} error={error} 
-        term={term} cardColors={cardColors} collegeId={collegeId} collegeName={collegeName} programmeId={programmeId} programmeName={programmeName} termType={termType} termsCount={termsCount} />
+        data={data}
+        error={error}
+        term={term}
+        cardColors={cardColors}
+        collegeId={collegeId}
+        collegeName={collegeName}
+        programmeId={programmeId}
+        programmeName={programmeName}
+        termType={termType}
+        termsCount={termsCount}
+      />
     </>
   );
 };

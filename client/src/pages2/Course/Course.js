@@ -14,7 +14,7 @@ import { useLocation } from "react-router-dom";
 import { useStore } from "store";
 import { SET_EXPLORE_ROUTE } from "store/route";
 import QuestionPaper from "./QuestionPaper";
-import StudyMaterial from './StudyMaterial';
+import StudyMaterial from "./StudyMaterial";
 
 const useStyles = makeStyles((theme) => ({
   paper: {
@@ -98,7 +98,6 @@ const Course = () => {
         <QuestionPaper />
 
         <StudyMaterial course={course} />
-
       </Paper>
     );
   };

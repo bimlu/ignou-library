@@ -7,7 +7,18 @@ import { ReactWindowScroller } from "react-window-scroller";
 import * as Routes from "routes";
 import Card from "./Card";
 
-const CourseList = ({ data, error, term, cardColors, collegeId, collegeName, programmeId, programmeName, termType, termsCount }) => {
+const CourseList = ({
+  data,
+  error,
+  term,
+  cardColors,
+  collegeId,
+  collegeName,
+  programmeId,
+  programmeName,
+  termType,
+  termsCount,
+}) => {
   if (!data) {
     return (
       <CardsContainer>
