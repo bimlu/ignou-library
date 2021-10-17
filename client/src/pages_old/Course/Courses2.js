@@ -6,7 +6,6 @@ import Head from "components/Head";
 import ScrollManager from "components/ScrollManager";
 import { EXPLORE_PAGE_CARDS_LIMIT } from "constants/DataLimit";
 import { GET_PROGRAMME_STRUCTURE } from "graphql/programme";
-import CourseInfo from "pages/Course/CourseInfo";
 import React, { useEffect, useState } from "react";
 import { useLocation } from "react-router-dom";
 import { FixedSizeList as List } from "react-window";
@@ -16,6 +15,7 @@ import { useStore } from "store";
 import { SET_EXPLORE_ROUTE } from "store/route";
 import Card from "./Card";
 import CourseFilter from "./CourseFilter";
+import CourseInfo from "./CourseInfo";
 
 /**
  * Courses page
