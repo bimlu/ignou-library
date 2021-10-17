@@ -42,6 +42,10 @@ const useStyles = makeStyles((theme) => ({
     display: "flex",
     flexDirection: "column",
   },
+  link: {
+    marginTop: theme.spacing(1),
+    marginBottom: theme.spacing(1),
+  },
 }));
 
 const Assignment = ({ programme, loading }) => {
@@ -83,16 +87,16 @@ const Assignment = ({ programme, loading }) => {
 
       <Collapse in={expanded} timeout="auto" unmountOnExit>
         <Paper className={classes.downloadLinks} elevation={0}>
-          <Link target="blank" href={"#"} variant="body1">
+          <Link target="blank" href={"#"} variant="body1" className={classes.link}>
             ✳️ December-2020
           </Link>
-          <Link target="blank" href={"#"} variant="body1">
+          <Link target="blank" href={"#"} variant="body1" className={classes.link}>
             ✳️ June-2020
           </Link>
-          <Link target="blank" href={"#"} variant="body1">
+          <Link target="blank" href={"#"} variant="body1" className={classes.link}>
             ✳️ December-2019
           </Link>
-          <Link target="blank" href={"#"} variant="body1">
+          <Link target="blank" href={"#"} variant="body1" className={classes.link}>
             ✳️ June-2019
           </Link>
         </Paper>

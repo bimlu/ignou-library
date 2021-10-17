@@ -5,7 +5,6 @@ import Collapse from "@material-ui/core/Collapse";
 import Paper from "@material-ui/core/Paper";
 import { makeStyles } from "@material-ui/core/styles";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
-import Skeleton from "@material-ui/lab/Skeleton";
 import clsx from "clsx";
 import React, { useState } from "react";
 
@@ -48,21 +47,13 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-const QuestionPaper = ({ programme, loading }) => {
+const QuestionPaper = () => {
   const classes = useStyles();
   const [expanded, setExpanded] = useState(false);
 
   const handleExpandClick = () => {
     setExpanded(!expanded);
   };
-
-  if (loading) {
-    return (
-      <Paper className={classes.paper}>
-        <Skeleton variant="rect" height={50} />
-      </Paper>
-    );
-  }
 
   return (
     <Paper className={classes.paper} elevation={0}>
