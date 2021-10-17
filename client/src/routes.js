@@ -30,9 +30,9 @@ export const POSTS = "/posts";
 
 export const COLLEGE = "/college/:id";
 
-export const PROGRAMME = "/programme/:id";
+export const PROGRAMME = "/programme";
 
-export const COURSE = "/course/:id";
+export const COURSE = "/course";
 
 export const POST = "/post/:id/:type"; // type='image' or 'pdf'
 

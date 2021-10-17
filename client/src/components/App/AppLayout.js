@@ -15,22 +15,22 @@ const AppLayout = ({ toggleThemeMode }) => {
   return (
     <Container maxWidth="sm">
       <Switch>
-        <Route exact path={Routes.PROGRAMMES}>
+        <Route exact path={Routes.HOME}>
           <Header toggleThemeMode={toggleThemeMode} />
           <Programmes />
         </Route>
 
-        <Route exact path={Routes.COURSES}>
+        <Route exact path={Routes.PROGRAMME}>
           <Header toggleThemeMode={toggleThemeMode} showBackButton={true} />
           <Courses />
         </Route>
 
-        <Route exact path={Routes.POSTS}>
+        <Route exact path={Routes.COURSE}>
           <Header toggleThemeMode={toggleThemeMode} showBackButton={true} />
           <StudyMaterial />
         </Route>
 
-        <Redirect to={Routes.PROGRAMMES} />
+        <Redirect to={Routes.HOME} />
 
         <Route>
           <NotFound />

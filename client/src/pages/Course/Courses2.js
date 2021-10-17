@@ -88,7 +88,7 @@ const Courses = () => {
             subtitle={course.course.fullName}
             image={course.course.image}
             color={cardColors[i % cardColors.length]}
-            url={`${Routes.POSTS}?collegeId=${collegeId}&collegeName=${collegeName}&programmeId=${programmeId}&programmeName=${programmeName}&termType=${termType}&termsCount=${termsCount}&term=${course.term}&courseId=${course.course.id}&courseName=${course.course.name}`}
+            url={`${Routes.COURSE}?collegeId=${collegeId}&collegeName=${collegeName}&programmeId=${programmeId}&programmeName=${programmeName}&termType=${termType}&termsCount=${termsCount}&term=${course.term}&courseId=${course.course.id}&courseName=${course.course.name}`}
             studentData={`Students: ${course.course.studentsCount}`}
             otherData={`Posts: ${course.course.postsCount}`}
             postsCount={course.course.postsCount}

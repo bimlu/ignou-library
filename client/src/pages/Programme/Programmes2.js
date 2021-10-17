@@ -90,7 +90,7 @@ const Programmes = () => {
             image={programme.image}
             thumbnail={programme.thumbnail}
             color={cardColors[i % cardColors.length]}
-            url={`${Routes.COURSES}?collegeId=${collegeId}&collegeName=${collegeName}&programmeId=${programme.id}&programmeName=${programme.name}&termType=${programme.termType}&termsCount=${programme.termsCount}#term=all`}
+            url={`${Routes.PROGRAMME}?collegeId=${collegeId}&collegeName=${collegeName}&programmeId=${programme.id}&programmeName=${programme.name}&termType=${programme.termType}&termsCount=${programme.termsCount}#term=all`}
             studentData={`Students: ${programme.studentsCount}`}
             otherData={`Courses: ${programme.coursesCount}`}
             termType={programme.termType}
