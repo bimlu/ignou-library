@@ -1,10 +1,8 @@
 import Container from "@material-ui/core/Container";
 import Header from "components/App/Header";
 import NotFound from "components/NotFound";
-import { Programmes } from "pages/Programme";
-// import { StudyMaterial } from "pages/StudyMaterial";
 import Course from "pages2/Course";
-// import { Courses } from "pages/Course";
+import Home from "pages2/Home";
 import Programme from "pages2/Programme";
 import React from "react";
 import { Redirect, Route, Switch } from "react-router-dom";
@@ -19,7 +17,7 @@ const AppLayout = ({ toggleThemeMode }) => {
       <Switch>
         <Route exact path={Routes.HOME}>
           <Header toggleThemeMode={toggleThemeMode} />
-          <Programmes />
+          <Home />
         </Route>
 
         <Route exact path={Routes.PROGRAMME}>

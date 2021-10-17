@@ -1,3 +1,1 @@
-import Programmes from "./Programmes2";
-
-export { Programmes };
+export { default } from "./Home";
