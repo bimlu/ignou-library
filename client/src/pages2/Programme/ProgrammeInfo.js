@@ -63,7 +63,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-const CourseInfo = ({ programmeId }) => {
+const ProgrammeInfo = ({ programmeId }) => {
   const classes = useStyles();
   const [expanded, setExpanded] = useState(false);
 
@@ -169,4 +169,4 @@ const CourseInfo = ({ programmeId }) => {
   );
 };
 
-export default CourseInfo;
+export default ProgrammeInfo;
