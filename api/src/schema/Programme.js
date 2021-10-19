@@ -72,6 +72,8 @@ const ProgrammeSchema = gql`
     id: ID!
     name: String
     fullName: String
+    code: String
+    title: String
     description: String
     image: String
     thumbnail: String

@@ -36,14 +36,14 @@ const ProgrammeList = ({ data, error, cardColors, collegeId, collegeName, degree
       <div style={style}>
         <SolidCard
           key={programme.id}
-          title={programme.name}
-          subtitle={programme.fullName}
+          title={programme.code}
+          subtitle={programme.title}
           image={programme.image}
           thumbnail={programme.thumbnail}
           color={cardColors[i % cardColors.length]}
           url={`${Routes.PROGRAMME}?collegeId=${collegeId}&collegeName=${collegeName}&programmeId=${programme.id}&programmeName=${programme.name}&termType=${programme.termType}&termsCount=${programme.termsCount}#term=all`}
-          studentData={`Students: ${programme.studentsCount}`}
-          otherData={`Courses: ${programme.coursesCount}`}
+          // studentData={`Students: ${programme.studentsCount}`}
+          // otherData={`Courses: ${programme.coursesCount}`}
           termType={programme.termType}
           termsCount={programme.termsCount}
           totalCredits={programme.totalCredits}

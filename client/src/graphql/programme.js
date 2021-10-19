@@ -85,18 +85,13 @@ export const GET_COLLEGE_PROGRAMMES = gql`
       count
       programmes {
         id
-        name
-        fullName
+        code
+        title
         degree
         termType
         termsCount
-        description
-        verified
         image
-        thumbnail
         totalCredits
-        studentsCount
-        coursesCount
       }
     }
   }
