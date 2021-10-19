@@ -10,7 +10,7 @@ node_modules/
 *.log
 
 # Misc
-.env
+# .env
 
 # Package manager
 npm-debug.log*
