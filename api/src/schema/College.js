@@ -47,18 +47,7 @@ const CollegeSchema = gql`
   # ---------------------------------------------------------
   type CollegePayload {
     id: ID!
-    name: String
-    fullName: String
-    description: String
     image: String
-    imagePublicId: String
-    verified: Boolean
-    programmes: [Programme]
-    programmesCount: Int
-    studentsCount: Int
-    createdAt: String
-    updatedAt: String
-
     code: String
     title: String
     recognition: String
@@ -78,9 +67,6 @@ const CollegeSchema = gql`
   extend type Query {
     # Gets college by id or name
     getCollege(id: ID, name: String): CollegePayload
-
-    # Gets all colleges
-    getColleges(skip: Int, limit: Int): CollegesPayload
   }
 `;
 
