@@ -7,27 +7,9 @@ export const GET_PROGRAMME = gql`
   query ($id: ID, $name: String) {
     getProgramme(id: $id, name: $name) {
       id
-      name
-      fullName
-      degree
-      termType
-      termsCount
-      verified
-      totalCredits
-
-      description
+      code
+      title
       image
-      thumbnail
-      imagePublicId
-      createdAt
-      college {
-        id
-        name
-      }
-
-      courses {
-        id
-      }
       eligibility
       mediumOfInstruction
       duration

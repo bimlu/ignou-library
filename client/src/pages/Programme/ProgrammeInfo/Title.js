@@ -43,13 +43,13 @@ const Title = ({ programme, loading }) => {
     <Paper className={classes.paper} elevation={0}>
       <span>
         <Typography display="inline" variant="h6">
-          <b>@{programme.name}</b>
+          <b>@{programme.code}</b>
         </Typography>
         <CheckCircleIcon color="primary" className={classes.checkIcon} />
       </span>
 
       <Typography variant="h5" color="textSecondary">
-        <b>{programme.fullName}</b>
+        <b>{programme.title}</b>
       </Typography>
 
       <div className={classes.imageWrapper}>
