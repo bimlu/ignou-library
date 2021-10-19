@@ -59,25 +59,6 @@ const Query = {
     return programme;
   },
   /**
-   * Gets all programmes
-   *
-   * @param {int} skip how many programmes to skip
-   * @param {int} limit how many programmes to limit
-   */
-  getProgrammes: async (root, { skip, limit }, { Programme }) => {
-    const query = {};
-
-    const programmesCount = await Programme.find(query).countDocuments();
-    const allProgrammes = await Programme.find(query)
-      .populate("courses")
-      .skip(skip)
-      .limit(limit)
-      .sort({ coursesCount: "desc" })
-      .sort({ createdAt: -1 });
-
-    return { programmes: allProgrammes, count: programmesCount };
-  },
-  /**
    * Gets programmes of a specific college
    * college > programmes
    *

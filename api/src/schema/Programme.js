@@ -66,31 +66,19 @@ const ProgrammeSchema = gql`
   # Return Payloads
   # ---------------------------------------------------------
   type ProgrammePayload {
-    degree: Int
-    termType: Int
-    termsCount: Int
     id: ID!
-    name: String
-    fullName: String
     code: String
     title: String
-    description: String
     image: String
-    thumbnail: String
-    imagePublicId: String
-    verified: Boolean
-    college: College
-    courses: [Course]
-    coursesCount: Int
-    studentsCount: Int
-    createdAt: String
-    updatedAt: String
-    programmeStructure: [ProgrammeStructure]
-    totalCredits: Int
     eligibility: String
     mediumOfInstruction: String
     duration: String
     feeStructure: String
+    programmeStructure: [ProgrammeStructure]
+    degree: Int
+    termType: Int
+    termsCount: Int
+    totalCredits: Int
   }
 
   type ProgrammeStructure {
@@ -114,9 +102,6 @@ const ProgrammeSchema = gql`
     getProgramme(id: ID, name: String): ProgrammePayload
 
     getProgrammeStructure(id: ID, name: String): ProgrammePayload
-
-    # Gets all programmes
-    getProgrammes(skip: Int, limit: Int): ProgrammesPayload
 
     # Gets programmes of a College
     getCollegeProgrammes(collegeId: ID!, skip: Int, limit: Int): ProgrammesPayload
