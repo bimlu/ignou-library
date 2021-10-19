@@ -15,15 +15,13 @@ const ProgrammeSchema = gql`
     id: ID!
     name: String!
     fullName: String!
-    createdBy: User!
     description: String
-    image: File
+    image: String
     imagePublicId: String
     verified: Boolean
     college: College!
     courses: [Course]
     coursesCount: Int
-    students: [User]
     studentsCount: Int
     createdAt: String
     updatedAt: String
@@ -32,7 +30,6 @@ const ProgrammeSchema = gql`
     title: String
     programmeDetail: ProgrammeDetail
     courseList: CourseList
-    school: School
     schoolCode: String
     totalCredits: Int
     eligibility: String
@@ -66,40 +63,6 @@ const ProgrammeSchema = gql`
   }
 
   # ---------------------------------------------------------
-  # Input Objects
-  # ---------------------------------------------------------
-  input CreateProgrammeInput {
-    degree: Int
-    termType: Int
-    termsCount: Int
-    name: String!
-    fullName: String!
-    createdBy: ID!
-    description: String
-    image: Upload
-    imagePublicId: String
-    collegeId: ID!
-  }
-
-  input DeleteProgrammeInput {
-    id: ID!
-    imagePublicId: String
-  }
-
-  input UpdateProgrammeInput {
-    degree: Int
-    termType: Int
-    termsCount: Int
-    id: ID!
-    updatedBy: ID!
-    name: String
-    fullName: String
-    description: String
-    image: Upload
-    imagePublicId: String
-  }
-
-  # ---------------------------------------------------------
   # Return Payloads
   # ---------------------------------------------------------
   type ProgrammePayload {
@@ -109,7 +72,6 @@ const ProgrammeSchema = gql`
     id: ID!
     name: String
     fullName: String
-    createdBy: User
     description: String
     image: String
     thumbnail: String
@@ -118,7 +80,6 @@ const ProgrammeSchema = gql`
     college: College
     courses: [Course]
     coursesCount: Int
-    students: [User]
     studentsCount: Int
     createdAt: String
     updatedAt: String
@@ -157,23 +118,6 @@ const ProgrammeSchema = gql`
 
     # Gets programmes of a College
     getCollegeProgrammes(collegeId: ID!, skip: Int, limit: Int): ProgrammesPayload
-  }
-
-  # ---------------------------------------------------------
-  # Mutations
-  # ---------------------------------------------------------
-  extend type Mutation {
-    # Creates a Programme
-    createProgramme(input: CreateProgrammeInput!): ProgrammePayload
-
-    # Deletes a Programme
-    deleteProgramme(input: DeleteProgrammeInput!): ProgrammePayload
-
-    # Updates a College
-    updateProgramme(input: UpdateProgrammeInput!): ProgrammePayload
-
-    # Toggles verification of a Programme
-    toggleProgrammeVerification(id: ID!): ProgrammePayload
   }
 `;
 
