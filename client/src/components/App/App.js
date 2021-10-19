@@ -1,16 +1,12 @@
 import { useQuery } from "@apollo/client";
 import CssBaseline from "@material-ui/core/CssBaseline";
 import { createMuiTheme, ThemeProvider } from "@material-ui/core/styles";
-import { Loading } from "components/Loading";
-import NotFound from "components/NotFound";
 import { COLLEGE_TREE_ITEM_LIMIT } from "constants/DataLimit";
 import { GET_COLLEGES_WITH_PROGRAMMES_COURSES } from "graphql/college";
-import { GET_AUTH_USER } from "graphql/user";
 import { useThemeToggler } from "hooks/useThemeToggler";
 import React, { useEffect, useMemo } from "react";
 import { BrowserRouter as Router } from "react-router-dom";
 import { useStore } from "store";
-import { SET_AUTH_USER } from "store/auth";
 import { SET_DATA_TREE } from "store/datatree";
 import { CLEAR_EXPLORE_ROUTE, CLEAR_PEOPLE_ROUTE } from "store/route";
 import AppLayout from "./AppLayout";
@@ -98,8 +94,8 @@ const App = () => {
     [themeMode]
   );
 
-  const [{ message, datatree }, dispatch] = useStore();
-  const { loading, subscribeToMore, data: authUserData, error } = useQuery(GET_AUTH_USER);
+  const [, dispatch] = useStore();
+
   const { data: collegesData } = useQuery(GET_COLLEGES_WITH_PROGRAMMES_COURSES, {
     variables: {
       skip: 0,
@@ -113,27 +109,8 @@ const App = () => {
   }, []);
 
   useEffect(() => {
-    authUserData && dispatch({ type: SET_AUTH_USER, payload: authUserData.getAuthUser });
-  }, [authUserData]);
-
-  useEffect(() => {
     collegesData && dispatch({ type: SET_DATA_TREE, payload: collegesData.getColleges.colleges });
   }, [collegesData]);
-
-  if (error) {
-    const isDevelopment = !process.env.NODE_ENV || process.env.NODE_ENV === "development";
-    if (isDevelopment) {
-      console.error(error);
-    }
-    const devErrorMessage =
-      "Sorry, something went wrong. Please open the browser console to view the detailed error message.";
-    const prodErrorMessage = "Sorry, something went wrong. We're working on getting this fixed as soon as we can.";
-    return <NotFound message={isDevelopment ? devErrorMessage : prodErrorMessage} showHomePageLink={false} />;
-  }
-
-  if (loading || !datatree.colleges) {
-    return <Loading top="xl" />;
-  }
 
   return (
     <ThemeProvider theme={themeMode === "light" ? lightTheme : darkTheme}>
