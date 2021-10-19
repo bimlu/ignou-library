@@ -7,16 +7,7 @@ export const GET_COLLEGE = gql`
   query ($id: ID, $name: String) {
     getCollege(id: $id, name: $name) {
       id
-      name
-      fullName
-      verified
-      description
       image
-      imagePublicId
-      createdAt
-      programmes {
-        id
-      }
       code
       title
       recognition
