@@ -49,22 +49,10 @@ const CourseSchema = gql`
   # Return Payloads
   # ---------------------------------------------------------
   type CoursePayload {
-    term: Int
     id: ID!
-    name: String
-    fullName: String
     code: String
     title: String
-    description: String
     image: String
-    imagePublicId: String
-    verified: Boolean
-    college: College
-    programme: Programme
-    postsCount: Int
-    studentsCount: Int
-    createdAt: String
-    updatedAt: String
     courseLink: String
     courseBlocks: [Block]
     questionPapers: [String]
@@ -81,12 +69,6 @@ const CourseSchema = gql`
   extend type Query {
     # Gets course by id or name
     getCourse(id: ID, name: String): CoursePayload
-
-    # Gets all courses
-    getCourses(skip: Int, limit: Int): CoursesPayload
-
-    # Gets courses of a specific programme and college
-    getCollegeProgrammeCourses(collegeId: ID!, programmeId: ID!, skip: Int, limit: Int): CoursesPayload
   }
 `;
 
