@@ -39,35 +39,13 @@ export const GET_PROGRAMME = gql`
 export const GET_PROGRAMME_STRUCTURE = gql`
   query ($id: ID, $name: String) {
     getProgrammeStructure(id: $id, name: $name) {
-      id
-      name
-      fullName
-      degree
-      termType
-      termsCount
-      verified
-      totalCredits
-
-      description
-      image
-      thumbnail
-      imagePublicId
-      createdAt
-      college {
-        id
-        name
-      }
-
-      courses {
-        id
-      }
       programmeStructure {
         term
         courseCode
         course {
           id
-          name
-          fullName
+          code
+          title
         }
         credit
         category

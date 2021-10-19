@@ -49,14 +49,11 @@ const CourseList = ({
       <div style={style}>
         <Card
           key={course.course.id}
-          title={course.course.name}
-          subtitle={course.course.fullName}
+          title={course.course.code}
+          subtitle={course.course.title}
           image={course.course.image}
           color={cardColors[i % cardColors.length]}
-          url={`${Routes.COURSE}?collegeId=${collegeId}&collegeName=${collegeName}&programmeId=${programmeId}&programmeName=${programmeName}&termType=${termType}&termsCount=${termsCount}&term=${course.term}&courseId=${course.course.id}&courseName=${course.course.name}`}
-          studentData={`Students: ${course.course.studentsCount}`}
-          otherData={`Posts: ${course.course.postsCount}`}
-          postsCount={course.course.postsCount}
+          url={`${Routes.COURSE}?collegeId=${collegeId}&collegeName=${collegeName}&programmeId=${programmeId}&programmeName=${programmeName}&termType=${termType}&termsCount=${termsCount}&term=${course.term}&courseId=${course.course.id}&courseName=${course.course.code}`}
           credit={course.credit}
         />
       </div>
