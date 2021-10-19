@@ -13,28 +13,22 @@ import styled from "styled-components";
 export const Container = styled.div`
   position: relative;
   margin: 0 auto;
-  margin-top: ${p => p.marginTop ? p.theme.spacing[p.marginTop] : 0};
-  width: 100%;
-  max-width: ${p => (p.maxWidth && p.theme.screen[p.maxWidth])};
-  padding: ${p => p.padding ? `0 ${p.theme.spacing[p.padding]}` : `0 ${p.theme.spacing.sm}`};
-  z-index: ${p => p.zIndex && p.theme.zIndex[p.zIndex]};
-  background-color: ${p => p.color && p.theme.colors[p.color]};
-  border-radius: ${p => p.radius && p.theme.radius[p.radius]};
+  
 `;
 
 export const Content = styled.div`
   position: relative;
   margin: 0 auto;
   width: 100%;
-  z-index: ${(p) => p.zIndex && p.theme.zIndex[p.zIndex]};
+  z-index: 1;
   min-height: 500px;
 
-  @media (min-width: ${(p) => p.theme.screen.md}) {
-    width: ${(p) => p.theme.screen.xs};
+  @media (min-width: 50) {
+    width: 10;
   }
 
-  @media (min-width: ${(p) => p.theme.screen.lg}) {
-    width: ${(p) => p.theme.screen.sm};
+  @media (min-width: 100) {
+    width: 100;
   }
 `;
 
@@ -48,13 +42,13 @@ export const Content = styled.div`
  * @param {boolean} inline, converts block element to inline block
  */
 export const Spacing = styled.div`
-  ${(p) => p.top && `margin-top: ${p.theme.spacing[p.top]}`};
-  ${(p) => p.right && `margin-right: ${p.theme.spacing[p.right]}`};
-  ${(p) => p.bottom && `margin-bottom: ${p.theme.spacing[p.bottom]}`};
-  ${(p) => p.left && `margin-left: ${p.theme.spacing[p.left]}`};
+  ${(p) => p.top && `margin-top: 8`};
+  ${(p) => p.right && `margin-right: 8`};
+  ${(p) => p.bottom && `margin-bottom: 8`};
+  ${(p) => p.left && `margin-left: 8`};
   ${(p) => p.inline && `display: inline-block;`}
 
-  @media (max-width: ${(p) => p.theme.screen.sm}) {
+  @media (max-width: 50) {
     ${(p) =>
       p.hideOnSm &&
       `
@@ -72,6 +66,6 @@ export const Overlay = styled.div`
   top: 0;
   bottom: 0;
   left: 0;
-  z-index: ${(p) => p.theme.zIndex.md};
+  z-index: 1;
   background-color: rgba(0, 0, 0, ${(p) => (p.transparency ? p.transparency : "0.8")});
 `;

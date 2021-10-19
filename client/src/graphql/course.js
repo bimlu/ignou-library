@@ -11,11 +11,6 @@ export const GET_COURSE = gql`
       fullName
       term
       verified
-      createdBy {
-        id
-        username
-        fullName
-      }
       description
       image
       imagePublicId
@@ -27,12 +22,6 @@ export const GET_COURSE = gql`
       programme {
         id
         name
-      }
-      students {
-        id
-      }
-      posts {
-        id
       }
       courseLink
       courseBlocks {

@@ -10,18 +10,10 @@ export const GET_COLLEGE = gql`
       name
       fullName
       verified
-      createdBy {
-        id
-        username
-        fullName
-      }
       description
       image
       imagePublicId
       createdAt
-      students {
-        id
-      }
       programmes {
         id
       }

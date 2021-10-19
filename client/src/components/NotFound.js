@@ -1,37 +1,27 @@
+import { Link } from "@material-ui/core";
 import { NotFoundIcon } from "components/icons";
 import { Spacing } from "components/Layout";
-import { A, H1, H2 } from "components/Text";
 import PropTypes from "prop-types";
 import React from "react";
 import * as Routes from "routes";
-import styled from "styled-components";
-
-const Root = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: ${(p) => p.theme.spacing.lg};
-  padding: 0 ${(p) => p.theme.spacing.sm};
-  text-align: center;
-`;
 
 /**
  * Component for displaying when we couldn't find the page
  */
 const NotFound = ({ message, showHomePageLink }) => (
-  <Root>
-    <H1>Oops!</H1>
+  <div>
+    <h3>Oops!</h3>
 
     <Spacing top="sm" bottom="md">
-      <H2>{message}</H2>
+      <h5>{message}</h5>
     </Spacing>
 
     <NotFoundIcon width="100" />
 
     <Spacing bottom="md" />
 
-    {showHomePageLink && <A to={Routes.HOME}>Go back to Home Page</A>}
-  </Root>
+    {showHomePageLink && <Link href={Routes.HOME}>Go back to Home Page</Link>}
+  </div>
 );
 
 NotFound.propTypes = {

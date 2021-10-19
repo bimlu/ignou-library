@@ -14,11 +14,7 @@ export const GET_PROGRAMME = gql`
       termsCount
       verified
       totalCredits
-      createdBy {
-        id
-        username
-        fullName
-      }
+
       description
       image
       thumbnail
@@ -28,9 +24,7 @@ export const GET_PROGRAMME = gql`
         id
         name
       }
-      students {
-        id
-      }
+
       courses {
         id
       }
@@ -53,11 +47,7 @@ export const GET_PROGRAMME_STRUCTURE = gql`
       termsCount
       verified
       totalCredits
-      createdBy {
-        id
-        username
-        fullName
-      }
+
       description
       image
       thumbnail
@@ -67,9 +57,7 @@ export const GET_PROGRAMME_STRUCTURE = gql`
         id
         name
       }
-      students {
-        id
-      }
+
       courses {
         id
       }

@@ -30,14 +30,7 @@ const courseSchema = Schema(
       type: String,
       required: true,
     },
-    createdBy: {
-      type: Schema.Types.ObjectId,
-      ref: "User",
-    },
-    updatedBy: {
-      type: Schema.Types.ObjectId,
-      ref: "User",
-    },
+
     description: String,
     image: String,
     imagePublicId: String,
@@ -56,22 +49,12 @@ const courseSchema = Schema(
       required: true,
       default: 1,
     },
-    posts: [
-      {
-        type: Schema.Types.ObjectId,
-        ref: "Post",
-      },
-    ],
+
     postsCount: {
       type: Number,
       default: 0,
     },
-    students: [
-      {
-        type: Schema.Types.ObjectId,
-        ref: "User",
-      },
-    ],
+
     studentsCount: {
       type: Number,
       default: 0,
