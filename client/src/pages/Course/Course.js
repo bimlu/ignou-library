@@ -70,13 +70,13 @@ const Course = () => {
       <Paper className={classes.paper} elevation={0}>
         <span>
           <Typography display="inline" variant="h6">
-            <b>@{course.name}</b>
+            <b>@{course.code}</b>
           </Typography>
           <CheckCircleIcon color="primary" className={classes.checkIcon} />
         </span>
 
         <Typography variant="h5" gutterBottom color="textSecondary">
-          <b>{course.fullName}</b>
+          <b>{course.title}</b>
         </Typography>
 
         <div className={classes.imageWrapper}>

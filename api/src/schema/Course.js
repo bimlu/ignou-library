@@ -53,6 +53,8 @@ const CourseSchema = gql`
     id: ID!
     name: String
     fullName: String
+    code: String
+    title: String
     description: String
     image: String
     imagePublicId: String
