@@ -3,8 +3,6 @@ import App from "components/App";
 import React from "react";
 import { render } from "react-dom";
 import { StoreProvider } from "store";
-import { ThemeProvider as LocalThemeProvider } from "styled-components";
-import localTheme from "theme";
 import { createApolloClient } from "utils/apollo-client";
 
 // GraphQL HTTP URL
@@ -22,11 +20,9 @@ const apolloClient = createApolloClient(API_URL, `${websocketApiUrl}/graphql`);
 
 render(
   <ApolloProvider client={apolloClient}>
-    <LocalThemeProvider theme={localTheme}>
-      <StoreProvider>
-        <App />
-      </StoreProvider>
-    </LocalThemeProvider>
+    <StoreProvider>
+      <App />
+    </StoreProvider>
   </ApolloProvider>,
   document.getElementById("root")
 );
