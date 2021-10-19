@@ -86,6 +86,7 @@ const courseSchema = Schema(
     programmeCodes: [String],
     courseLink: String,
     courseBlocks: [blockSchema],
+    questionPapers: [String],
   },
   {
     timestamps: true,

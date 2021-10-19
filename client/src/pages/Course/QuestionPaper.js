@@ -47,7 +47,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-const QuestionPaper = () => {
+const QuestionPaper = ({ questionPapers }) => {
   const classes = useStyles();
   const [expanded, setExpanded] = useState(false);
 
@@ -78,18 +78,14 @@ const QuestionPaper = () => {
 
       <Collapse in={expanded} timeout="auto" unmountOnExit>
         <Paper className={classes.downloadLinks} elevation={0}>
-          <Link target="blank" href={"#"} variant="body1" className={classes.link}>
-            ✳️ December-2020
-          </Link>
-          <Link target="blank" href={"#"} variant="body1" className={classes.link}>
-            ✳️ June-2020
-          </Link>
-          <Link target="blank" href={"#"} variant="body1" className={classes.link}>
-            ✳️ December-2019
-          </Link>
-          <Link target="blank" href={"#"} variant="body1" className={classes.link}>
-            ✳️ June-2019
-          </Link>
+          {questionPapers.map((questionPaper) => {
+            const items = questionPaper.split("/");
+            return (
+              <Link key={questionPaper} target="blank" href={questionPaper} variant="body1" className={classes.link}>
+                ✳️ {items[items.length - 2]}
+              </Link>
+            );
+          })}
         </Paper>
       </Collapse>
 

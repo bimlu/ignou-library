@@ -1,7 +1,7 @@
 import College from "../../models/College";
 import Course from "../../models/Course";
 // import Programme from "../../models/Programme";
-import { getCourses, saveCourses, getCourses2 } from "./courses";
+import { getCourses, getCourses2, saveCourses } from "./courses";
 
 export const createCourses = () => {
   const courses = getCourses();
@@ -79,6 +79,13 @@ export const createCourse2 = async (courseCode, courses) => {
   }
   // console.log(courseBlocks);
 
+  const oldQuestionPapers = [
+    `https://ignou-app-1.s3.ap-south-1.amazonaws.com/question-paper/dec-2020/${courseCode}.pdf`,
+    `https://ignou-app-1.s3.ap-south-1.amazonaws.com/question-paper/jun-2020/${courseCode}.pdf`,
+    `https://ignou-app-1.s3.ap-south-1.amazonaws.com/question-paper/dec-2019/${courseCode}.pdf`,
+    `https://ignou-app-1.s3.ap-south-1.amazonaws.com/question-paper/jun-2019/${courseCode}.pdf`,
+  ];
+
   const newCourse = {
     college: college.id,
     image: "https://ignou-app-1.s3.ap-south-1.amazonaws.com/demo-images/street.jpg",
@@ -91,6 +98,7 @@ export const createCourse2 = async (courseCode, courses) => {
     fullName: courseName || "?",
     courseLink: courseLink,
     courseBlocks: courseBlocks,
+    questionPapers: oldQuestionPapers,
   };
 
   // console.log(newCourse);

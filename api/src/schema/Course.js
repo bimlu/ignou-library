@@ -32,6 +32,7 @@ const CourseSchema = gql`
     discipline: String
     courseLink: String
     courseBlocks: [Block]
+    questionPapers: [String]
   }
 
   type Block {
@@ -102,6 +103,7 @@ const CourseSchema = gql`
     updatedAt: String
     courseLink: String
     courseBlocks: [Block]
+    questionPapers: [String]
   }
 
   type CoursesPayload {

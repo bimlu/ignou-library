@@ -46,6 +46,7 @@ export const GET_COURSE = gql`
           unitDownloadLink
         }
       }
+      questionPapers
     }
   }
 `;

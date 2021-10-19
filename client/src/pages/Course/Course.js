@@ -95,7 +95,7 @@ const Course = () => {
 
         <Box m={2} />
 
-        <QuestionPaper />
+        <QuestionPaper questionPapers={course.questionPapers} />
 
         <StudyMaterial course={course} />
       </Paper>
