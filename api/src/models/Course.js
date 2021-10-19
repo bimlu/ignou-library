@@ -30,7 +30,6 @@ const courseSchema = Schema(
       type: String,
       required: true,
     },
-
     description: String,
     image: String,
     imagePublicId: String,
@@ -49,17 +48,14 @@ const courseSchema = Schema(
       required: true,
       default: 1,
     },
-
     postsCount: {
       type: Number,
       default: 0,
     },
-
     studentsCount: {
       type: Number,
       default: 0,
     },
-
     code: String,
     title: String,
     programmes: [{ type: Schema.Types.ObjectId, ref: "Programme" }],

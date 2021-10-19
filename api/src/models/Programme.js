@@ -63,14 +63,6 @@ const programmeSchema = Schema(
       type: String,
       required: true,
     },
-    createdBy: {
-      type: Schema.Types.ObjectId,
-      ref: "User",
-    },
-    updatedBy: {
-      type: Schema.Types.ObjectId,
-      ref: "User",
-    },
     description: String,
     image: String,
     thumbnail: String,
@@ -90,22 +82,14 @@ const programmeSchema = Schema(
       type: Number,
       default: 0,
     },
-    students: [
-      {
-        type: Schema.Types.ObjectId,
-        ref: "User",
-      },
-    ],
     studentsCount: {
       type: Number,
       default: 0,
     },
-
     code: String,
     title: String,
     programmeDetail: programmmeDetailSchema,
     courseList: courseListSchema,
-    school: { type: String, ref: "School" },
     collegeCode: String,
     schoolCode: String,
     totalCredits: Number,
