@@ -7,7 +7,6 @@ import { useThemeToggler } from "hooks/useThemeToggler";
 import React, { useEffect, useMemo } from "react";
 import { BrowserRouter as Router } from "react-router-dom";
 import { useStore } from "store";
-import { SET_DATA_TREE } from "store/datatree";
 import { CLEAR_EXPLORE_ROUTE, CLEAR_PEOPLE_ROUTE } from "store/route";
 import AppLayout from "./AppLayout";
 import ScrollToTop from "./ScrollToTop";
@@ -108,9 +107,9 @@ const App = () => {
     dispatch({ type: CLEAR_PEOPLE_ROUTE });
   }, []);
 
-  useEffect(() => {
-    collegesData && dispatch({ type: SET_DATA_TREE, payload: collegesData.getColleges.colleges });
-  }, [collegesData]);
+  // useEffect(() => {
+  //   collegesData && dispatch({ type: SET_DATA_TREE, payload: collegesData.getColleges.colleges });
+  // }, [collegesData]);
 
   return (
     <ThemeProvider theme={themeMode === "light" ? lightTheme : darkTheme}>

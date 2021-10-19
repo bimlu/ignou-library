@@ -10,26 +10,20 @@ import { SET_EXPLORE_ROUTE } from "store/route";
 import ProgrammeFilter from "./ProgrammeFilter";
 import ProgrammeList from "./ProgrammeList";
 
+const COLLEGE_ID = "61696370083d17bac94e8ba5";
+const COLLEGE_NAME = "IGNOU";
+
 const Home = () => {
   const cardColors = ["#203f52", "#4d137f", "#002244", "#004953"];
 
-  const [{ datatree }, dispatch] = useStore();
+  const [, dispatch] = useStore();
   const { pathname, search, hash } = useLocation();
-
-  if (!datatree.colleges) return "";
-  const colleges = datatree.colleges;
-  // console.log(colleges);
-  const ignou = colleges[0];
-
-  // const query = new URLSearchParams(search);
-  const collegeId = ignou.id;
-  const collegeName = ignou.name;
 
   const [degree, setDegree] = useState("all");
   // console.log(degree);
 
   const variables = {
-    collegeId: collegeId,
+    collegeId: COLLEGE_ID,
     skip: 0,
     // limit: EXPLORE_PAGE_CARDS_LIMIT,
   };
@@ -49,7 +43,7 @@ const Home = () => {
 
   return (
     <div>
-      <Head title={`${collegeName.toUpperCase()}`} />
+      <Head title={`${COLLEGE_NAME.toUpperCase()}`} />
 
       <ScrollManager scrollKey={`${pathname}${search}${hash}`} />
 
@@ -61,8 +55,8 @@ const Home = () => {
         data={data}
         error={error}
         cardColors={cardColors}
-        collegeId={collegeId}
-        collegeName={collegeName}
+        collegeId={COLLEGE_ID}
+        collegeName={COLLEGE_NAME}
         degree={degree}
       />
     </div>
