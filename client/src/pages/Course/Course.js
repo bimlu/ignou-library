@@ -9,10 +9,8 @@ import Head from "components/Head";
 import NotFound from "components/NotFound";
 import ScrollManager from "components/ScrollManager";
 import { GET_COURSE } from "graphql/course";
-import React, { useEffect } from "react";
+import React from "react";
 import { useLocation } from "react-router-dom";
-import { useStore } from "store";
-import { SET_EXPLORE_ROUTE } from "store/route";
 import QuestionPaper from "./QuestionPaper";
 import StudyMaterial from "./StudyMaterial";
 
@@ -39,12 +37,8 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-/**
- * Posts page
- */
 const Course = () => {
-  const [, dispatch] = useStore();
-  const { pathname, search, hash } = useLocation();
+  const { pathname, search } = useLocation();
   const classes = useStyles();
 
   const query = new URLSearchParams(search);
@@ -56,10 +50,6 @@ const Course = () => {
   const { loading, data } = useQuery(GET_COURSE, {
     variables: { id: courseId },
   });
-
-  useEffect(() => {
-    dispatch({ type: SET_EXPLORE_ROUTE, payload: pathname + search + hash });
-  }, []);
 
   const renderContent = () => {
     if (loading) {

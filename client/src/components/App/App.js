@@ -1,13 +1,8 @@
-import { useQuery } from "@apollo/client";
 import CssBaseline from "@material-ui/core/CssBaseline";
 import { createMuiTheme, ThemeProvider } from "@material-ui/core/styles";
-import { COLLEGE_TREE_ITEM_LIMIT } from "constants/DataLimit";
-import { GET_COLLEGES_WITH_PROGRAMMES_COURSES } from "graphql/college";
 import { useThemeToggler } from "hooks/useThemeToggler";
-import React, { useEffect, useMemo } from "react";
+import React, { useMemo } from "react";
 import { BrowserRouter as Router } from "react-router-dom";
-import { useStore } from "store";
-import { CLEAR_EXPLORE_ROUTE, CLEAR_PEOPLE_ROUTE } from "store/route";
 import AppLayout from "./AppLayout";
 import ScrollToTop from "./ScrollToTop";
 
@@ -92,24 +87,6 @@ const App = () => {
       }),
     [themeMode]
   );
-
-  const [, dispatch] = useStore();
-
-  const { data: collegesData } = useQuery(GET_COLLEGES_WITH_PROGRAMMES_COURSES, {
-    variables: {
-      skip: 0,
-      limit: COLLEGE_TREE_ITEM_LIMIT,
-    },
-  });
-
-  useEffect(() => {
-    dispatch({ type: CLEAR_EXPLORE_ROUTE });
-    dispatch({ type: CLEAR_PEOPLE_ROUTE });
-  }, []);
-
-  // useEffect(() => {
-  //   collegesData && dispatch({ type: SET_DATA_TREE, payload: collegesData.getColleges.colleges });
-  // }, [collegesData]);
 
   return (
     <ThemeProvider theme={themeMode === "light" ? lightTheme : darkTheme}>
