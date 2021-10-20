@@ -8,12 +8,11 @@ import { useLocation } from "react-router-dom";
 import ProgrammeFilter from "./ProgrammeFilter";
 import ProgrammeList from "./ProgrammeList";
 
-const COLLEGE_ID = "616f78e4b0d653edbab111ef";
 const COLLEGE_NAME = "IGNOU";
 const CARD_COLORS = ["#203f52", "#4d137f", "#002244", "#004953"];
 
 const Home = () => {
-  const { pathname, search, hash } = useLocation();
+  const { pathname, search } = useLocation();
 
   const [degree, setDegree] = useState("");
 
@@ -29,20 +28,13 @@ const Home = () => {
     <div>
       <Head title={`${COLLEGE_NAME.toUpperCase()}`} />
 
-      <ScrollManager scrollKey={`${pathname}${search}${hash}`} />
+      <ScrollManager scrollKey={`${pathname}${search}`} />
 
       <ProgrammeFilter degreesCount={8} selectedDegree={degree} setDegree={setDegree} />
 
       <Box m={1} />
 
-      <ProgrammeList
-        data={data}
-        error={error}
-        cardColors={CARD_COLORS}
-        collegeId={COLLEGE_ID}
-        collegeName={COLLEGE_NAME}
-        degree={degree}
-      />
+      <ProgrammeList data={data} error={error} cardColors={CARD_COLORS} degree={degree} />
     </div>
   );
 };

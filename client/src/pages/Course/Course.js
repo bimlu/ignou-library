@@ -42,7 +42,6 @@ const Course = () => {
   const classes = useStyles();
 
   const query = new URLSearchParams(search);
-  const collegeName = query.get("collegeName");
   const programmeName = query.get("programmeName");
   const courseId = query.get("courseId");
   const courseName = query.get("courseName");
@@ -94,7 +93,7 @@ const Course = () => {
 
   return (
     <>
-      <Head title={`${courseName.toUpperCase()} | ${programmeName.toUpperCase()} | ${collegeName.toUpperCase()}`} />
+      <Head title={`${courseName.toUpperCase()} | ${programmeName.toUpperCase()}`} />
 
       <ScrollManager scrollKey={`${pathname}${search}`} />
 

@@ -7,18 +7,7 @@ import { ReactWindowScroller } from "react-window-scroller";
 import * as Routes from "routes";
 import Card from "./Card";
 
-const CourseList = ({
-  data,
-  error,
-  term,
-  cardColors,
-  collegeId,
-  collegeName,
-  programmeId,
-  programmeName,
-  termType,
-  termsCount,
-}) => {
+const CourseList = ({ data, error, term, cardColors, programmeName }) => {
   if (!data) {
     return (
       <CardsContainer>
@@ -31,8 +20,6 @@ const CourseList = ({
 
   if (error) return "Please check your internet connection";
 
-  // console.log('data: ', data)
-
   const programme = data.getProgrammeStructure;
   if (!programme) return null;
   if (!programme.programmeStructure) return <Empty text="No courses yet." />;
@@ -44,7 +31,6 @@ const CourseList = ({
     const i = index;
 
     const course = filteredCourses[i];
-    // console.log(course);
     return (
       <div style={style}>
         <Card
@@ -53,7 +39,7 @@ const CourseList = ({
           subtitle={course.course.title}
           image={course.course.image}
           color={cardColors[i % cardColors.length]}
-          url={`${Routes.COURSE}?collegeName=${collegeName}&programmeName=${programmeName}&courseId=${course.course.id}&courseName=${course.course.code}`}
+          url={`${Routes.COURSE}?programmeName=${programmeName}&courseId=${course.course.id}&courseName=${course.course.code}`}
           credit={course.credit}
         />
       </div>

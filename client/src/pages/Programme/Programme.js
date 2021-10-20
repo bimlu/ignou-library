@@ -12,11 +12,10 @@ import ProgrammeInfo from "./ProgrammeInfo/index";
 const CARD_COLORS = ["#203f52", "#4d137f", "#002244", "#004953"];
 
 const Programme = () => {
-  const { pathname, search, hash } = useLocation();
+  const { pathname, search } = useLocation();
 
   const query = new URLSearchParams(search);
-  const collegeId = query.get("collegeId");
-  const collegeName = query.get("collegeName");
+
   const programmeId = query.get("programmeId");
   const programmeName = query.get("programmeName");
   const termType = parseInt(query.get("termType"));
@@ -33,28 +32,17 @@ const Programme = () => {
 
   return (
     <>
-      <Head title={`${programmeName.toUpperCase()} | ${collegeName.toUpperCase()}`} />
+      <Head title={programmeName.toUpperCase()} />
 
       <ScrollManager scrollKey={`${pathname}${search}`} />
 
-      <ProgrammeInfo collegeId={collegeId} programmeId={programmeId} />
+      <ProgrammeInfo programmeId={programmeId} />
 
       <CourseFilter termType={termType} termsCount={termsCount} selectedTerm={term} setTerm={setTerm} />
 
       <Box m={2} />
 
-      <CourseList
-        data={data}
-        error={error}
-        term={term}
-        cardColors={CARD_COLORS}
-        collegeId={collegeId}
-        collegeName={collegeName}
-        programmeId={programmeId}
-        programmeName={programmeName}
-        termType={termType}
-        termsCount={termsCount}
-      />
+      <CourseList data={data} error={error} term={term} cardColors={CARD_COLORS} programmeName={programmeName} />
     </>
   );
 };

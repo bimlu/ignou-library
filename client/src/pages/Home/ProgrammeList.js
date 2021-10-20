@@ -8,7 +8,7 @@ import { FixedSizeList as List } from "react-window";
 import { ReactWindowScroller } from "react-window-scroller";
 import * as Routes from "routes";
 
-const ProgrammeList = ({ data, error, cardColors, collegeId, collegeName, degree }) => {
+const ProgrammeList = ({ data, error, cardColors, degree }) => {
   if (!data) {
     return (
       <CardsContainer>
@@ -41,7 +41,7 @@ const ProgrammeList = ({ data, error, cardColors, collegeId, collegeName, degree
           image={programme.image}
           thumbnail={programme.thumbnail}
           color={cardColors[i % cardColors.length]}
-          url={`${Routes.PROGRAMME}?collegeId=${collegeId}&collegeName=${collegeName}&programmeId=${programme.id}&programmeName=${programme.code}&termType=${programme.termType}&termsCount=${programme.termsCount}`}
+          url={`${Routes.PROGRAMME}?programmeId=${programme.id}&programmeName=${programme.code}&termType=${programme.termType}&termsCount=${programme.termsCount}`}
           termType={programme.termType}
           termsCount={programme.termsCount}
           totalCredits={programme.totalCredits}
