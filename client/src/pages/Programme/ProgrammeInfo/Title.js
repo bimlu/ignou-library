@@ -3,6 +3,7 @@ import { makeStyles } from "@material-ui/core/styles";
 import Typography from "@material-ui/core/Typography";
 import CheckCircleIcon from "@material-ui/icons/CheckCircle";
 import Skeleton from "@material-ui/lab/Skeleton";
+import PLACEHOLDER_IMAGE from "assets/images/card_placeholder.png";
 import React from "react";
 
 const useStyles = makeStyles((theme) => ({
@@ -31,29 +32,39 @@ const useStyles = makeStyles((theme) => ({
 const Title = ({ programme, loading }) => {
   const classes = useStyles();
 
-  if (loading) {
-    return (
-      <Paper className={classes.paper}>
-        <Skeleton variant="rect" height={300} />
-      </Paper>
-    );
-  }
-
   return (
     <Paper className={classes.paper} elevation={0}>
       <span>
         <Typography display="inline" variant="h6">
-          <b>@{programme.code}</b>
+          {loading ? <Skeleton width="20%" style={{ display: "inline-block" }} /> : <b>@{programme.code}</b>}
         </Typography>
-        <CheckCircleIcon color="primary" className={classes.checkIcon} />
+
+        {loading ? (
+          <Skeleton variant="circle" style={{ display: "inline-block", marginLeft: 8 }}>
+            <CheckCircleIcon color="primary" className={classes.checkIcon} />
+          </Skeleton>
+        ) : (
+          <CheckCircleIcon color="primary" className={classes.checkIcon} />
+        )}
       </span>
 
       <Typography variant="h5" color="textSecondary">
-        <b>{programme.title}</b>
+        {loading ? (
+          <>
+            <Skeleton width="100%" />
+            <Skeleton width="50%" />
+          </>
+        ) : (
+          <b>{programme.title}</b>
+        )}
       </Typography>
 
       <div className={classes.imageWrapper}>
-        <img alt="programme image" src={programme.image} className={classes.image} />
+        {loading ? (
+          <img alt="programme image" src={PLACEHOLDER_IMAGE} className={classes.image} />
+        ) : (
+          <img alt="programme image" src={programme.image} className={classes.image} />
+        )}
       </div>
     </Paper>
   );

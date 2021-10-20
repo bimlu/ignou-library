@@ -5,7 +5,6 @@ import Collapse from "@material-ui/core/Collapse";
 import Paper from "@material-ui/core/Paper";
 import { makeStyles } from "@material-ui/core/styles";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
-import Skeleton from "@material-ui/lab/Skeleton";
 import clsx from "clsx";
 import React, { useState } from "react";
 
@@ -26,13 +25,11 @@ const useStyles = makeStyles((theme) => ({
     transform: "rotate(180deg)",
   },
   button: {
-    borderRadius: theme.spacing(1.2),
-    padding: `${theme.spacing(1.4)}px ${theme.spacing(2)}px`,
-    fontSize: theme.spacing(1.6),
+    borderRadius: theme.spacing(1),
+    padding: `${theme.spacing(1)}px ${theme.spacing(2)}px`,
+    fontSize: theme.spacing(1.4),
     marginBottom: theme.spacing(1),
     textTransform: "none",
-    width: "52%",
-    justifyContent: "space-between",
   },
 
   downloadLinks: {
@@ -53,16 +50,9 @@ const Assignment = ({ programme, loading }) => {
   const [expanded, setExpanded] = useState(false);
 
   const handleExpandClick = () => {
+    if (loading) return;
     setExpanded(!expanded);
   };
-
-  if (loading) {
-    return (
-      <Paper className={classes.paper}>
-        <Skeleton variant="rect" height={50} />
-      </Paper>
-    );
-  }
 
   return (
     <Paper className={classes.paper} elevation={0}>
@@ -85,22 +75,24 @@ const Assignment = ({ programme, loading }) => {
         Assignments
       </Button>
 
-      <Collapse in={expanded} timeout="auto" unmountOnExit>
-        <Paper className={classes.downloadLinks} elevation={0}>
-          <Link target="blank" href={"#"} variant="body1" className={classes.link}>
-            ✳️ December-2020
-          </Link>
-          <Link target="blank" href={"#"} variant="body1" className={classes.link}>
-            ✳️ June-2020
-          </Link>
-          <Link target="blank" href={"#"} variant="body1" className={classes.link}>
-            ✳️ December-2019
-          </Link>
-          <Link target="blank" href={"#"} variant="body1" className={classes.link}>
-            ✳️ June-2019
-          </Link>
-        </Paper>
-      </Collapse>
+      {!loading && (
+        <Collapse in={expanded} timeout="auto" unmountOnExit>
+          <Paper className={classes.downloadLinks} elevation={0}>
+            <Link target="blank" href={"#"} variant="body1" className={classes.link}>
+              ✳️ December-2020
+            </Link>
+            <Link target="blank" href={"#"} variant="body1" className={classes.link}>
+              ✳️ June-2020
+            </Link>
+            <Link target="blank" href={"#"} variant="body1" className={classes.link}>
+              ✳️ December-2019
+            </Link>
+            <Link target="blank" href={"#"} variant="body1" className={classes.link}>
+              ✳️ June-2019
+            </Link>
+          </Paper>
+        </Collapse>
+      )}
 
       <Box m={1} />
     </Paper>

@@ -1,20 +1,30 @@
-import CardsContainer from "components/Cards/CardsContainer";
+import { useQuery } from "@apollo/client";
+import { Box } from "@material-ui/core";
 import Empty from "components/Empty";
-import { EXPLORE_PAGE_CARDS_LIMIT } from "constants/DataLimit";
+import { GET_PROGRAMME_STRUCTURE } from "graphql/programme";
 import React from "react";
 import { FixedSizeList as List } from "react-window";
 import { ReactWindowScroller } from "react-window-scroller";
 import * as Routes from "routes";
-import Card from "./Card";
+import CourseCard from "./CourseCard";
 
-const CourseList = ({ data, error, term, cardColors, programmeName }) => {
-  if (!data) {
+const CourseList = ({ term, programmeId, programmeName }) => {
+  const { data, loading, error } = useQuery(GET_PROGRAMME_STRUCTURE, {
+    variables: {
+      id: programmeId,
+    },
+  });
+
+  if (loading) {
     return (
-      <CardsContainer>
-        {Array.from(new Array(parseInt(EXPLORE_PAGE_CARDS_LIMIT / 2))).map((_el, i) => (
-          <Card key={i} loading={true} />
+      <div>
+        {Array.from(new Array(parseInt(1))).map((_el, i) => (
+          <div key={i}>
+            <CourseCard loading={true} url="#" />
+            <Box mb={1.5} />
+          </div>
         ))}
-      </CardsContainer>
+      </div>
     );
   }
 
@@ -33,12 +43,11 @@ const CourseList = ({ data, error, term, cardColors, programmeName }) => {
     const course = filteredCourses[i];
     return (
       <div style={style}>
-        <Card
+        <CourseCard
           key={course.course.id}
           title={course.course.code}
           subtitle={course.course.title}
           image={course.course.image}
-          color={cardColors[i % cardColors.length]}
           url={`${Routes.COURSE}?programmeName=${programmeName}&courseId=${course.course.id}&courseName=${course.course.code}`}
           credit={course.credit}
         />

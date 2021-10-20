@@ -2,7 +2,7 @@ import Card from "@material-ui/core/Card";
 import CardActionArea from "@material-ui/core/CardActionArea";
 import { makeStyles } from "@material-ui/core/styles";
 import Typography from "@material-ui/core/Typography";
-import Skeleton from "@material-ui/lab/Skeleton";
+import { Skeleton } from "@material-ui/lab";
 import { Link } from "react-router-dom";
 
 const useStyles = makeStyles((theme) => ({
@@ -29,21 +29,19 @@ const useStyles = makeStyles((theme) => ({
 export default function SimpleCard({ title, subtitle, loading, url, credit }) {
   const classes = useStyles();
 
-  return loading ? (
-    <Skeleton variant="rect" className={classes.card} height={275} />
-  ) : (
+  return (
     <CardActionArea component={Link} to={url} className={classes.actionArea}>
       <Card className={classes.card}>
         <Typography variant="h4" color="textSecondary">
-          <b>{title}</b>
+          {loading ? <Skeleton width="20%" /> : <b>{title}</b>}
         </Typography>
 
         <Typography variant="body1" gutterBottom>
-          <b>{subtitle}</b>
+          {loading ? <Skeleton width="100%" /> : <b>{subtitle}</b>}
         </Typography>
 
         <Typography variant="body1" color="textSecondary">
-          <b>{credit} credits</b>
+          {loading ? <Skeleton width="15%" /> : <b>{credit} credits</b>}
         </Typography>
       </Card>
     </CardActionArea>

@@ -1,4 +1,3 @@
-import { Typography } from "@material-ui/core";
 import Button from "@material-ui/core/Button";
 import { makeStyles } from "@material-ui/core/styles";
 import { TermType } from "constants/TermType";
@@ -37,35 +36,29 @@ export default function CourseFilter({ termType, termsCount, selectedTerm, setTe
   };
 
   return (
-    <>
-      <Typography variant="h4" color="textSecondary">
-        <b>📖 Courses</b>
-      </Typography>
+    <div className={classes.root}>
+      <Button
+        variant={selectedTerm === 0 ? "contained" : "outlined"}
+        size="small"
+        color="primary"
+        onClick={() => handleClick(0)}
+      >
+        All
+      </Button>
 
-      <div className={classes.root}>
-        <Button
-          variant={selectedTerm === 0 ? "contained" : "outlined"}
-          size="small"
-          color="primary"
-          onClick={() => handleClick(0)}
-        >
-          All
-        </Button>
-
-        {Array.from(new Array(termsCount))
-          .map((_el, idx) => idx + 1)
-          .map((term) => (
-            <Button
-              variant={selectedTerm === term ? "contained" : "outlined"}
-              size="small"
-              color="primary"
-              key={term}
-              onClick={() => handleClick(term)}
-            >
-              {`${TermType[termType]}-${term}`}
-            </Button>
-          ))}
-      </div>
-    </>
+      {Array.from(new Array(termsCount))
+        .map((_el, idx) => idx + 1)
+        .map((term) => (
+          <Button
+            variant={selectedTerm === term ? "contained" : "outlined"}
+            size="small"
+            color="primary"
+            key={term}
+            onClick={() => handleClick(term)}
+          >
+            {`${TermType[termType]}-${term}`}
+          </Button>
+        ))}
+    </div>
   );
 }

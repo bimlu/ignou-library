@@ -5,7 +5,6 @@ import Paper from "@material-ui/core/Paper";
 import { makeStyles } from "@material-ui/core/styles";
 import Typography from "@material-ui/core/Typography";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
-import Skeleton from "@material-ui/lab/Skeleton";
 import clsx from "clsx";
 import React, { useState } from "react";
 
@@ -26,13 +25,11 @@ const useStyles = makeStyles((theme) => ({
     transform: "rotate(180deg)",
   },
   button: {
-    borderRadius: theme.spacing(1.2),
-    padding: `${theme.spacing(1.4)}px ${theme.spacing(2)}px`,
-    fontSize: theme.spacing(1.6),
+    borderRadius: theme.spacing(1),
+    padding: `${theme.spacing(1)}px ${theme.spacing(2)}px`,
+    fontSize: theme.spacing(1.4),
     marginBottom: theme.spacing(1),
     textTransform: "none",
-    width: "52%",
-    justifyContent: "space-between",
   },
 
   info: {
@@ -53,16 +50,9 @@ const Detail = ({ programme, loading }) => {
   const [expanded, setExpanded] = useState(false);
 
   const handleExpandClick = () => {
+    if (loading) return;
     setExpanded(!expanded);
   };
-
-  if (loading) {
-    return (
-      <Paper className={classes.paper}>
-        <Skeleton variant="rect" height={50} />
-      </Paper>
-    );
-  }
 
   return (
     <Paper className={classes.paper} elevation={0}>
@@ -85,43 +75,45 @@ const Detail = ({ programme, loading }) => {
         Programme Detail
       </Button>
 
-      <Collapse in={expanded} timeout="auto" unmountOnExit>
-        <div className={classes.info}>
-          <Typography color="textSecondary" variant="h5" className={classes.infoHeading}>
-            <b>Medium of Instruction</b>
-          </Typography>
-          <Paper className={classes.infoPaper} elevation={0}>
-            <Typography>{programme.mediumOfInstruction}</Typography>
-          </Paper>
-        </div>
+      {!loading && (
+        <Collapse in={expanded} timeout="auto" unmountOnExit>
+          <div className={classes.info}>
+            <Typography color="textSecondary" variant="h5" className={classes.infoHeading}>
+              <b>Medium of Instruction</b>
+            </Typography>
+            <Paper className={classes.infoPaper} elevation={0}>
+              <Typography>{programme.mediumOfInstruction}</Typography>
+            </Paper>
+          </div>
 
-        <div className={classes.info}>
-          <Typography color="textSecondary" variant="h5" className={classes.infoHeading}>
-            <b>Duration</b>
-          </Typography>
-          <Paper className={classes.infoPaper} elevation={0}>
-            <Typography>{programme.duration} </Typography>
-          </Paper>
-        </div>
+          <div className={classes.info}>
+            <Typography color="textSecondary" variant="h5" className={classes.infoHeading}>
+              <b>Duration</b>
+            </Typography>
+            <Paper className={classes.infoPaper} elevation={0}>
+              <Typography>{programme.duration} </Typography>
+            </Paper>
+          </div>
 
-        <div className={classes.info}>
-          <Typography color="textSecondary" variant="h5" className={classes.infoHeading}>
-            <b>Fee Structure</b>
-          </Typography>
-          <Paper className={classes.infoPaper} elevation={0}>
-            <Typography>{programme.feeStructure}</Typography>
-          </Paper>
-        </div>
+          <div className={classes.info}>
+            <Typography color="textSecondary" variant="h5" className={classes.infoHeading}>
+              <b>Fee Structure</b>
+            </Typography>
+            <Paper className={classes.infoPaper} elevation={0}>
+              <Typography>{programme.feeStructure}</Typography>
+            </Paper>
+          </div>
 
-        <div className={classes.info}>
-          <Typography color="textSecondary" variant="h5" className={classes.infoHeading}>
-            <b>Eligibility</b>
-          </Typography>
-          <Paper className={classes.infoPaper} elevation={0}>
-            <Typography>{programme.eligibility}</Typography>
-          </Paper>
-        </div>
-      </Collapse>
+          <div className={classes.info}>
+            <Typography color="textSecondary" variant="h5" className={classes.infoHeading}>
+              <b>Eligibility</b>
+            </Typography>
+            <Paper className={classes.infoPaper} elevation={0}>
+              <Typography>{programme.eligibility}</Typography>
+            </Paper>
+          </div>
+        </Collapse>
+      )}
 
       <Box m={1} />
     </Paper>
