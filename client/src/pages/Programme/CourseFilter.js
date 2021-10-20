@@ -47,7 +47,7 @@ export default function CourseFilter({ termType, termsCount, selectedTerm, setTe
           variant={selectedTerm === 0 ? "contained" : "outlined"}
           size="small"
           color="primary"
-          onClick={() => handleClick("")}
+          onClick={() => handleClick(0)}
         >
           All
         </Button>
