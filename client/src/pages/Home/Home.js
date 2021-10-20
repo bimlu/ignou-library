@@ -19,6 +19,8 @@ const Home = () => {
 
       <ScrollManager scrollKey={`${pathname}${search}`} />
 
+      <Box m={1} />
+
       <ProgrammeFilter degreesCount={8} selectedDegree={degree} setDegree={setDegree} />
 
       <Box m={1} />
