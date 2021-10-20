@@ -27,8 +27,8 @@ ehthumbs.db
 Thumbs.db
 
 # Later added
-.env.development
-.env.production
-.env.local
+# .env.development
+# .env.production
+# .env.local
 playground.css
 build/
