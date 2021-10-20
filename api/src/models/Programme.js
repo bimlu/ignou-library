@@ -42,10 +42,6 @@ const programmeSchema = Schema(
   {
     code: String,
     title: String,
-    programmeDetail: programmmeDetailSchema,
-    courseList: courseListSchema,
-    collegeCode: String,
-    schoolCode: String,
     totalCredits: Number,
     programmeStructure: [programmeStructureSchema],
     eligibility: String,

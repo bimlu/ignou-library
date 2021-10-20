@@ -69,10 +69,19 @@ export const createProgramme = async (programme) => {
   }
 
   const newProgramme = await new Programme({
-    ...programme,
-    college: college.id,
+    code: programme.code,
+    title: programme.title,
+    totalCredits: programme.totalCredits,
+    programmeStructure: programme.programmeStructure,
+    eligibility: programme.eligibility,
+    mediumOfInstruction: programme.mediumOfInstruction,
+    duration: programme.duration,
+    feeStructure: programme.feeStructure,
+    degree: programme.degree,
+    termType: programme.termType,
+    termsCount: programme.termsCount,
     image: getImage(programme),
-    thumbnail: getThumbnail(programme),
+    college: college.id,
   }).save();
   await College.findOneAndUpdate(
     { code: programme.collegeCode },

@@ -23,18 +23,13 @@ const courseSchema = Schema(
   {
     code: String,
     title: String,
-    programmes: [{ type: Schema.Types.ObjectId, ref: "Programme" }],
     discipline: String,
-    collegeCode: String,
-    programmeCode: String,
-    programmeCodes: [String],
     courseLink: String,
     courseBlocks: [blockSchema],
     questionPapers: [String],
     image: String,
     college: { type: Schema.Types.ObjectId, ref: "College" },
-    programme: { type: Schema.Types.ObjectId, ref: "Programme" },
-    // term e.g. 1, 2, 3... (semester/year)
+    programmes: [{ type: Schema.Types.ObjectId, ref: "Programme" }],
     term: { type: Number, default: 1 },
   },
   {

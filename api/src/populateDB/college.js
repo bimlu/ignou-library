@@ -2,12 +2,8 @@ import College from "../models/College";
 
 export const createCollege = () => {
   const college = {
-    name: "IGNOU",
-    fullName: "Indira Gandhi National Open University",
     code: "IGNOU",
     title: "Indira Gandhi National Open University",
-    image: "https://ignou-app-1.s3.ap-south-1.amazonaws.com/demo-images/ignou.jpg",
-    programmes: [],
     recognition: `
       IGNOU is a NATIONAL OPEN UNIVERSITY established by an Act of Parliament in 1985 (Act No. 50 of 1985).
       The Degrees/ Diplomas/ Certificates issued by IGNOU are recognised by all the member institutions of the
@@ -319,6 +315,7 @@ export const createCollege = () => {
         Nearly 40 Banks have registered for over 70 Educational Loan Schemes on the Vidya Lakshmi Portal and
         integrated their system with the Portal for providing loan processing status to students.`,
     },
+    image: "https://ignou-app-1.s3.ap-south-1.amazonaws.com/demo-images/ignou.jpg",
   };
 
   College.create(college, (err, docs) => {
