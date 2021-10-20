@@ -1,27 +1,6 @@
 import { gql } from "apollo-server-express";
 
-/**
- * College schema
- */
 const CollegeSchema = gql`
-  # ---------------------------------------------------------
-  # Model Objects
-  # ---------------------------------------------------------
-  type College {
-    id: ID!
-    name: String!
-    fullName: String!
-    description: String
-    image: String
-    imagePublicId: String
-    verified: Boolean
-    programmes: [Programme]
-    programmesCount: Int
-    studentsCount: Int
-    createdAt: String
-    updatedAt: String
-  }
-
   type TheUniversity {
     introduction: [String]
     prominentFeatures: [String]
@@ -42,11 +21,8 @@ const CollegeSchema = gql`
     vidyaLakshmiPortal: String
   }
 
-  # ---------------------------------------------------------
-  # Return Payloads
-  # ---------------------------------------------------------
-  type CollegePayload {
-    id: ID!
+  type College {
+    id: ID
     image: String
     code: String
     title: String
@@ -54,19 +30,12 @@ const CollegeSchema = gql`
     importantLinks: [[String]]
     notes: [String]
     theUniversity: TheUniversity
+    programmes: [Programme]
   }
 
-  type CollegesPayload {
-    colleges: [CollegePayload]!
-    count: String!
-  }
-
-  # ---------------------------------------------------------
-  # Queries
-  # ---------------------------------------------------------
   extend type Query {
-    # Gets college by id or name
-    getCollege(id: ID, name: String): CollegePayload
+    # Get IGNOU College
+    getCollege: College
   }
 `;
 

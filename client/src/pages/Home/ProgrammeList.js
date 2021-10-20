@@ -21,7 +21,7 @@ const ProgrammeList = ({ data, error, cardColors, collegeId, collegeName, degree
 
   if (error) return "Please check your internet connection";
 
-  const { programmes, count } = data.getCollegeProgrammes;
+  const { programmes, count } = data.getProgrammes;
   if (!programmes.length > 0) return <Empty text="No programmes yet." />;
   const filteredProgrammes = programmes.filter(
     (programme) => degree === "" || programme.degree === DegreeType2.indexOf(degree)

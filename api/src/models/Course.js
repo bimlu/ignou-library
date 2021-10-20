@@ -16,25 +16,15 @@ const blockSchema = new Schema({
   blockUnits: [unitSchema],
 });
 
-/**
- * Course schema that has references to College and Programme schema
- */
-const courseSchema = Schema(
-  {
-    code: String,
-    title: String,
-    discipline: String,
-    courseLink: String,
-    courseBlocks: [blockSchema],
-    questionPapers: [String],
-    image: String,
-    college: { type: Schema.Types.ObjectId, ref: "College" },
-    programmes: [{ type: Schema.Types.ObjectId, ref: "Programme" }],
-    term: { type: Number, default: 1 },
-  },
-  {
-    timestamps: true,
-  }
-);
+const courseSchema = Schema({
+  code: String,
+  title: String,
+  discipline: String,
+  courseLink: String,
+  courseBlocks: [blockSchema],
+  questionPapers: [String],
+  image: String,
+  programmes: [{ type: Schema.Types.ObjectId, ref: "Programme" }],
+});
 
 export default mongoose.model("Course", courseSchema);

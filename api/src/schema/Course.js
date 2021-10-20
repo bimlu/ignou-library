@@ -1,36 +1,6 @@
 import { gql } from "apollo-server-express";
 
-/**
- * Course schema
- */
 const CourseSchema = gql`
-  # ---------------------------------------------------------
-  # Model Objects
-  # ---------------------------------------------------------
-  type Course {
-    term: Int
-    id: ID!
-    name: String!
-    fullName: String!
-    description: String
-    imagePublicId: String
-    verified: Boolean
-    college: College!
-    programme: Programme!
-    postsCount: Int
-    studentsCount: Int
-    createdAt: String
-    updatedAt: String
-
-    code: String
-    title: String
-    programmes: [Programme]
-    discipline: String
-    courseLink: String
-    courseBlocks: [Block]
-    questionPapers: [String]
-  }
-
   type Block {
     blockCode: String
     blockName: String
@@ -45,30 +15,26 @@ const CourseSchema = gql`
     unitDownloadLink: String
   }
 
-  # ---------------------------------------------------------
-  # Return Payloads
-  # ---------------------------------------------------------
-  type CoursePayload {
+  type Course {
     id: ID!
     code: String
     title: String
+    discipline: String
     image: String
     courseLink: String
     courseBlocks: [Block]
     questionPapers: [String]
+    programmes: [Programme]
   }
 
-  type CoursesPayload {
-    courses: [CoursePayload]!
-    count: String!
+  type Courses {
+    courses: [Course]
+    count: String
   }
 
-  # ---------------------------------------------------------
-  # Queries
-  # ---------------------------------------------------------
   extend type Query {
-    # Gets course by id or name
-    getCourse(id: ID, name: String): CoursePayload
+    # Gets course by id or code
+    getCourse(id: ID, code: String): Course
   }
 `;
 

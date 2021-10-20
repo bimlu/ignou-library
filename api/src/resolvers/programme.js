@@ -1,26 +1,16 @@
 const Query = {
-  /**
-   * Gets programme by id or name
-   *
-   * @param {string} id
-   * @param {string} name
-   */
-  getProgramme: async (root, { id, name }, { Programme }) => {
-    if (!name && !id) {
-      throw new Error("name or id is required params.");
+  getProgramme: async (root, { id, code }, { Programme }) => {
+    if (!code && !id) {
+      throw new Error("code or id is required params.");
     }
 
-    if (name && id) {
-      throw new Error("please pass only name or only id as a param");
+    if (code && id) {
+      throw new Error("please pass only code or only id as a param");
     }
 
-    const query = name ? { name: name } : { _id: id };
+    const query = code ? { code: code } : { _id: id };
 
-    const programme = await Programme.findOne(query)
-      .populate("college")
-      .populate("createdBy")
-      .populate("courses")
-      .populate("students");
+    const programme = await Programme.findOne(query).populate("courses");
 
     if (!programme) {
       throw new Error("Programme with given params doesn't exits.");
@@ -28,29 +18,21 @@ const Query = {
 
     return programme;
   },
-  /**
-   * Gets Programme Structure by id or name
-   *
-   * @param {string} id
-   * @param {string} name
-   */
-  getProgrammeStructure: async (root, { id, name }, { Programme }) => {
-    if (!name && !id) {
-      throw new Error("name or id is required params.");
+
+  getProgrammeStructure: async (root, { id, code }, { Programme }) => {
+    if (!code && !id) {
+      throw new Error("code or id is required params.");
     }
 
-    if (name && id) {
-      throw new Error("please pass only name or only id as a param");
+    if (code && id) {
+      throw new Error("please pass only code or only id as a param");
     }
 
-    const query = name ? { name: name } : { _id: id };
+    const query = code ? { code: code } : { _id: id };
 
     const programme = await Programme.findOne(query)
       .populate({ path: "programmeStructure", populate: { path: "course" } })
-      .populate("college")
-      .populate("createdBy")
-      .populate("courses")
-      .populate("students");
+      .populate("courses");
 
     if (!programme) {
       throw new Error("Programme with given params doesn't exits.");
@@ -58,29 +40,12 @@ const Query = {
 
     return programme;
   },
-  /**
-   * Gets programmes of a specific college
-   * college > programmes
-   *
-   * @param {string} collegeId
-   * @param {int} skip how many programmes to skip
-   * @param {int} limit how many programmes to limit
-   */
-  getCollegeProgrammes: async (root, { collegeId, skip, limit }, { Programme }) => {
-    if (!collegeId) {
-      throw new Error("collegeId param is required");
-    }
 
-    const query = { college: collegeId };
+  getProgrammes: async (root, { skip, limit }, { Programme }) => {
+    const query = {};
 
     const count = await Programme.find(query).countDocuments();
-    const programmes = await Programme.find(query)
-      .populate("courses")
-      .populate("students")
-      .skip(skip)
-      .limit(limit)
-      .sort({ coursesCount: "desc" })
-      .sort({ createdAt: -1 });
+    const programmes = await Programme.find(query).populate("courses").skip(skip).limit(limit).sort({ createdAt: -1 });
 
     return { programmes, count };
   },

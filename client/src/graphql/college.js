@@ -1,11 +1,9 @@
 import { gql } from "@apollo/client";
 
-/**
- * Gets specific college by id
- */
+// Gets college 'IGNOU'
 export const GET_COLLEGE = gql`
-  query ($id: ID, $name: String) {
-    getCollege(id: $id, name: $name) {
+  query {
+    getCollege {
       id
       image
       code

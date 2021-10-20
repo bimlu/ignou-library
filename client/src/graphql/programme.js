@@ -1,11 +1,9 @@
 import { gql } from "@apollo/client";
 
-/**
- * Gets specific programme by id
- */
+// Gets specific programme by id
 export const GET_PROGRAMME = gql`
-  query ($id: ID, $name: String) {
-    getProgramme(id: $id, name: $name) {
+  query ($id: ID, $code: String) {
+    getProgramme(id: $id, code: $code) {
       id
       code
       title
@@ -19,8 +17,8 @@ export const GET_PROGRAMME = gql`
 `;
 
 export const GET_PROGRAMME_STRUCTURE = gql`
-  query ($id: ID, $name: String) {
-    getProgrammeStructure(id: $id, name: $name) {
+  query ($id: ID, $code: String) {
+    getProgrammeStructure(id: $id, code: $code) {
       programmeStructure {
         term
         courseCode
@@ -36,12 +34,10 @@ export const GET_PROGRAMME_STRUCTURE = gql`
   }
 `;
 
-/**
- * Gets programmes for a specific college
- */
-export const GET_COLLEGE_PROGRAMMES = gql`
-  query ($collegeId: ID!, $skip: Int, $limit: Int) {
-    getCollegeProgrammes(collegeId: $collegeId, skip: $skip, limit: $limit) {
+// Get all programmes
+export const GET_PROGRAMMES = gql`
+  query ($skip: Int, $limit: Int) {
+    getProgrammes(skip: $skip, limit: $limit) {
       count
       programmes {
         id

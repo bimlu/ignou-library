@@ -2,7 +2,7 @@ import { useQuery } from "@apollo/client";
 import Box from "@material-ui/core/Box";
 import Head from "components/Head";
 import ScrollManager from "components/ScrollManager";
-import { GET_COLLEGE_PROGRAMMES } from "graphql/programme";
+import { GET_PROGRAMMES } from "graphql/programme";
 import React, { useState } from "react";
 import { useLocation } from "react-router-dom";
 import ProgrammeFilter from "./ProgrammeFilter";
@@ -17,10 +17,10 @@ const Home = () => {
 
   const [degree, setDegree] = useState("");
 
-  const { data, error } = useQuery(GET_COLLEGE_PROGRAMMES, {
+  const { data, error } = useQuery(GET_PROGRAMMES, {
     variables: {
-      collegeId: COLLEGE_ID,
       skip: 0,
+      limit: 0,
     },
     notifyOnNetworkStatusChange: true,
   });

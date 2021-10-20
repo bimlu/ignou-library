@@ -2,9 +2,6 @@ import mongoose from "mongoose";
 
 const Schema = mongoose.Schema;
 
-/**
- * College schema
- */
 const collegeSchema = Schema({
   code: String,
   title: String,
