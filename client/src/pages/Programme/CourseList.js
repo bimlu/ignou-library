@@ -53,7 +53,7 @@ const CourseList = ({
           subtitle={course.course.title}
           image={course.course.image}
           color={cardColors[i % cardColors.length]}
-          url={`${Routes.COURSE}?collegeId=${collegeId}&collegeName=${collegeName}&programmeId=${programmeId}&programmeName=${programmeName}&termType=${termType}&termsCount=${termsCount}&term=${course.term}&courseId=${course.course.id}&courseName=${course.course.code}`}
+          url={`${Routes.COURSE}?collegeName=${collegeName}&programmeName=${programmeName}&courseId=${course.course.id}&courseName=${course.course.code}`}
           credit={course.credit}
         />
       </div>

@@ -41,9 +41,7 @@ const ProgrammeList = ({ data, error, cardColors, collegeId, collegeName, degree
           image={programme.image}
           thumbnail={programme.thumbnail}
           color={cardColors[i % cardColors.length]}
-          url={`${Routes.PROGRAMME}?collegeId=${collegeId}&collegeName=${collegeName}&programmeId=${programme.id}&programmeName=${programme.name}&termType=${programme.termType}&termsCount=${programme.termsCount}#term=all`}
-          // studentData={`Students: ${programme.studentsCount}`}
-          // otherData={`Courses: ${programme.coursesCount}`}
+          url={`${Routes.PROGRAMME}?collegeId=${collegeId}&collegeName=${collegeName}&programmeId=${programme.id}&programmeName=${programme.code}&termType=${programme.termType}&termsCount=${programme.termsCount}#term=all`}
           termType={programme.termType}
           termsCount={programme.termsCount}
           totalCredits={programme.totalCredits}
