@@ -33,15 +33,15 @@ export default function SimpleCard({ title, subtitle, loading, url, credit }) {
     <CardActionArea component={Link} to={url} className={classes.actionArea}>
       <Card className={classes.card}>
         <Typography variant="h4" color="textSecondary">
-          {loading ? <Skeleton width="20%" /> : <b>{title}</b>}
+          {loading ? <Skeleton width="30%" /> : <b>{title}</b>}
         </Typography>
 
         <Typography variant="body1" gutterBottom>
-          {loading ? <Skeleton width="100%" /> : <b>{subtitle}</b>}
+          {loading ? <Skeleton width="80%" /> : <b>{subtitle}</b>}
         </Typography>
 
         <Typography variant="body1" color="textSecondary">
-          {loading ? <Skeleton width="15%" /> : <b>{credit} credits</b>}
+          {loading ? <Skeleton width="20%" /> : <b>{credit} credits</b>}
         </Typography>
       </Card>
     </CardActionArea>
