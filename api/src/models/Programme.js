@@ -40,52 +40,6 @@ const programmeStructureSchema = new Schema({
  */
 const programmeSchema = Schema(
   {
-    degree: {
-      type: Degree,
-      required: true,
-      default: Degree.bachelors,
-    },
-    termType: {
-      type: TermType,
-      required: true,
-      default: TermType.Semester,
-    },
-    termsCount: {
-      type: Number,
-      required: true,
-      default: 6,
-    },
-    name: {
-      type: String,
-      required: true,
-    },
-    fullName: {
-      type: String,
-      required: true,
-    },
-    description: String,
-    image: String,
-    thumbnail: String,
-    imagePublicId: String,
-    verified: Boolean,
-    college: {
-      type: Schema.Types.ObjectId,
-      ref: "College",
-    },
-    courses: [
-      {
-        type: Schema.Types.ObjectId,
-        ref: "Course",
-      },
-    ],
-    coursesCount: {
-      type: Number,
-      default: 0,
-    },
-    studentsCount: {
-      type: Number,
-      default: 0,
-    },
     code: String,
     title: String,
     programmeDetail: programmmeDetailSchema,
@@ -98,6 +52,12 @@ const programmeSchema = Schema(
     mediumOfInstruction: String,
     duration: String,
     feeStructure: String,
+    degree: { type: Degree, default: Degree.bachelors },
+    termType: { type: TermType, default: TermType.Semester },
+    termsCount: { type: Number, default: 6 },
+    image: String,
+    college: { type: Schema.Types.ObjectId, ref: "College" },
+    courses: [{ type: Schema.Types.ObjectId, ref: "Course" }],
   },
   {
     timestamps: true,

@@ -8,7 +8,7 @@ import { useLocation } from "react-router-dom";
 import ProgrammeFilter from "./ProgrammeFilter";
 import ProgrammeList from "./ProgrammeList";
 
-const COLLEGE_ID = "61696370083d17bac94e8ba5";
+const COLLEGE_ID = "616f72210726ead3be4f7578";
 const COLLEGE_NAME = "IGNOU";
 const CARD_COLORS = ["#203f52", "#4d137f", "#002244", "#004953"];
 

@@ -21,41 +21,6 @@ const blockSchema = new Schema({
  */
 const courseSchema = Schema(
   {
-    // name can only contain lowercase words separated by '-'
-    name: {
-      type: String,
-      required: true,
-    },
-    fullName: {
-      type: String,
-      required: true,
-    },
-    description: String,
-    image: String,
-    imagePublicId: String,
-    verified: Boolean,
-    college: {
-      type: Schema.Types.ObjectId,
-      ref: "College",
-    },
-    programme: {
-      type: Schema.Types.ObjectId,
-      ref: "Programme",
-    },
-    // term e.g. 1, 2, 3... (semester/year)
-    term: {
-      type: Number,
-      required: true,
-      default: 1,
-    },
-    postsCount: {
-      type: Number,
-      default: 0,
-    },
-    studentsCount: {
-      type: Number,
-      default: 0,
-    },
     code: String,
     title: String,
     programmes: [{ type: Schema.Types.ObjectId, ref: "Programme" }],
@@ -66,6 +31,11 @@ const courseSchema = Schema(
     courseLink: String,
     courseBlocks: [blockSchema],
     questionPapers: [String],
+    image: String,
+    college: { type: Schema.Types.ObjectId, ref: "College" },
+    programme: { type: Schema.Types.ObjectId, ref: "Programme" },
+    // term e.g. 1, 2, 3... (semester/year)
+    term: { type: Number, default: 1 },
   },
   {
     timestamps: true,
