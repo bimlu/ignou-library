@@ -7,7 +7,6 @@ import Typography from "@material-ui/core/Typography";
 import CheckCircleIcon from "@material-ui/icons/CheckCircle";
 import Skeleton from "@material-ui/lab/Skeleton";
 import PLACEHOLDER_IMAGE from "assets/images/card_placeholder.png";
-import Color from "color";
 import { TermType2 } from "constants/TermType";
 import { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
@@ -15,28 +14,19 @@ import { Link } from "react-router-dom";
 const useStyles = makeStyles((theme) => ({
   actionArea: {
     borderRadius: 16,
-    transition: "0.2s",
-    "&:hover": {
-      transform: "scale(1.03)",
-    },
   },
-  card: ({ color }) => ({
+  card: {
     minWidth: 256,
     borderRadius: 16,
-    "&:hover": {
-      boxShadow: `0 6px 12px 0 ${Color(color).rotate(-12).darken(0.2).fade(0.5)}`,
-    },
-  }),
+  },
   cardLoading: {
     minWidth: 256,
     borderRadius: 16,
   },
-  content: () => {
-    return {
-      minHeight: 110,
-      background: theme.palette.background.paper,
-      padding: theme.spacing(1),
-    };
+  content: {
+    minHeight: 110,
+    background: theme.palette.background.paper,
+    padding: theme.spacing(1),
   },
   image: {
     component: "img",
@@ -48,19 +38,16 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-const SolidCard = ({ title, subtitle, image, color, url, loading, termType, termsCount, totalCredits }) => {
-  const classes = useStyles({ color: color });
+const ProgrammeCard = ({ title, subtitle, image, url, loading, termType, termsCount, totalCredits }) => {
+  const classes = useStyles();
   const [imageSrc, setImageSrc] = useState(PLACEHOLDER_IMAGE);
   const [loadingImage, setLoadingImage] = useState(true);
   const isMounted = useRef(false);
-  const [wait, setWait] = useState(true);
 
   useEffect(() => {
     isMounted.current = true;
-    const timerId = setTimeout(() => setWait(false), [1]);
     return () => {
       isMounted.current = false;
-      clearTimeout(timerId);
     };
   }, []);
 
@@ -80,9 +67,7 @@ const SolidCard = ({ title, subtitle, image, color, url, loading, termType, term
     };
   }, [isMounted]);
 
-  return loading || wait ? (
-    <Skeleton variant="rect" className={classes.cardLoading} height={272} />
-  ) : (
+  return (
     <CardActionArea component={Link} to={url} className={classes.actionArea}>
       <Card className={classes.card}>
         <CardMedia
@@ -97,20 +82,30 @@ const SolidCard = ({ title, subtitle, image, color, url, loading, termType, term
         />
         <CardContent className={classes.content}>
           <Typography variant="h5" component="span" gutterBottom={true}>
-            <b>{title}</b>
+            {loading ? <Skeleton style={{ display: "inline-block" }} width="15%" /> : <b>{title}</b>}
           </Typography>
 
-          <CheckCircleIcon color="primary" className={classes.checkIcon} />
+          {loading ? (
+            <Skeleton style={{ display: "inline-block", marginLeft: 8 }} variant="circle">
+              <CheckCircleIcon color="primary" className={classes.checkIcon} />
+            </Skeleton>
+          ) : (
+            <CheckCircleIcon color="primary" className={classes.checkIcon} />
+          )}
 
           <Typography variant="body1" gutterBottom={true} noWrap={true}>
-            <b>{subtitle}</b>
+            {loading ? <Skeleton width="80%" /> : <b>{subtitle}</b>}
           </Typography>
 
           <Typography variant="body1" noWrap={true}>
-            <b>
-              {totalCredits} Credits{" │ "}
-              {termsCount} {TermType2[termType]}
-            </b>
+            {loading ? (
+              <Skeleton width="50%" />
+            ) : (
+              <b>
+                {totalCredits} Credits{" │ "}
+                {termsCount} {TermType2[termType]}
+              </b>
+            )}
           </Typography>
         </CardContent>
       </Card>
@@ -118,4 +113,4 @@ const SolidCard = ({ title, subtitle, image, color, url, loading, termType, term
   );
 };
 
-export default SolidCard;
+export default ProgrammeCard;

@@ -1,21 +1,32 @@
-import CardsContainer from "components/Cards/CardsContainer";
-import SolidCard from "components/Cards/SolidCard";
+import { useQuery } from "@apollo/client";
+import { Box } from "@material-ui/core";
 import Empty from "components/Empty";
-import { EXPLORE_PAGE_CARDS_LIMIT } from "constants/DataLimit";
 import { DegreeType2 } from "constants/DegreeType";
+import { GET_PROGRAMMES } from "graphql/programme";
 import React from "react";
 import { FixedSizeList as List } from "react-window";
 import { ReactWindowScroller } from "react-window-scroller";
 import * as Routes from "routes";
+import ProgrammeCard from "./ProgrammeCard";
 
-const ProgrammeList = ({ data, error, cardColors, degree }) => {
-  if (!data) {
+const ProgrammeList = ({ degree }) => {
+  const { data, loading, error } = useQuery(GET_PROGRAMMES, {
+    variables: {
+      skip: 0,
+      limit: 0,
+    },
+  });
+
+  if (loading) {
     return (
-      <CardsContainer>
-        {Array.from(new Array(parseInt(EXPLORE_PAGE_CARDS_LIMIT / 2))).map((_el, i) => (
-          <SolidCard key={i} loading={true} />
+      <div>
+        {Array.from(new Array(parseInt(2))).map((_el, i) => (
+          <>
+            <ProgrammeCard key={i} loading={true} url="#" />
+            <Box mb={1.5} />
+          </>
         ))}
-      </CardsContainer>
+      </div>
     );
   }
 
@@ -31,16 +42,13 @@ const ProgrammeList = ({ data, error, cardColors, degree }) => {
     const i = index;
 
     const programme = filteredProgrammes[i];
-    // console.log(programme);
     return (
       <div style={style}>
-        <SolidCard
+        <ProgrammeCard
           key={programme.id}
           title={programme.code}
           subtitle={programme.title}
           image={programme.image}
-          thumbnail={programme.thumbnail}
-          color={cardColors[i % cardColors.length]}
           url={`${Routes.PROGRAMME}?programmeId=${programme.id}&programmeName=${programme.code}&termType=${programme.termType}&termsCount=${programme.termsCount}`}
           termType={programme.termType}
           termsCount={programme.termsCount}
