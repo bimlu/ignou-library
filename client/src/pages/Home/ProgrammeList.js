@@ -21,10 +21,10 @@ const ProgrammeList = ({ degree }) => {
     return (
       <div>
         {Array.from(new Array(parseInt(2))).map((_el, i) => (
-          <>
-            <ProgrammeCard key={i} loading={true} url="#" />
+          <div key={i}>
+            <ProgrammeCard loading={true} url="#" />
             <Box mb={1.5} />
-          </>
+          </div>
         ))}
       </div>
     );
