@@ -60,11 +60,7 @@ const Title = ({ programme, loading }) => {
       </Typography>
 
       <div className={classes.imageWrapper}>
-        {loading ? (
-          <img alt="programme image" src={PLACEHOLDER_IMAGE} className={classes.image} />
-        ) : (
-          <img alt="programme image" src={programme.image} className={classes.image} />
-        )}
+        <img alt="programme image" src={loading ? PLACEHOLDER_IMAGE : programme.image} className={classes.image} />
       </div>
     </Paper>
   );
