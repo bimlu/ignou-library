@@ -28,20 +28,20 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function ProgrammeFilter({ degreesCount, selectedDegree }) {
+export default function ProgrammeFilter({ degreesCount, selectedDegree, setDegree }) {
   const classes = useStyles();
 
-  const handleClick = (hashValue) => {
-    window.location.hash = `degree=${hashValue}`;
+  const handleClick = (degreeValue) => {
+    setDegree(degreeValue);
   };
 
   return (
     <div className={classes.root}>
       <Button
-        variant={selectedDegree === "all" ? "contained" : "outlined"}
+        variant={selectedDegree === "" ? "contained" : "outlined"}
         size="small"
         color="primary"
-        onClick={() => handleClick("all")}
+        onClick={() => handleClick("")}
       >
         All
       </Button>

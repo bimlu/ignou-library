@@ -24,7 +24,7 @@ const ProgrammeList = ({ data, error, cardColors, collegeId, collegeName, degree
   const { programmes, count } = data.getCollegeProgrammes;
   if (!programmes.length > 0) return <Empty text="No programmes yet." />;
   const filteredProgrammes = programmes.filter(
-    (programme) => degree === "all" || programme.degree === DegreeType2.indexOf(degree)
+    (programme) => degree === "" || programme.degree === DegreeType2.indexOf(degree)
   );
 
   const Row = ({ index, style }) => {

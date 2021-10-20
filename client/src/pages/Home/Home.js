@@ -3,7 +3,7 @@ import Box from "@material-ui/core/Box";
 import Head from "components/Head";
 import ScrollManager from "components/ScrollManager";
 import { GET_COLLEGE_PROGRAMMES } from "graphql/programme";
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { useLocation } from "react-router-dom";
 import ProgrammeFilter from "./ProgrammeFilter";
 import ProgrammeList from "./ProgrammeList";
@@ -15,7 +15,7 @@ const CARD_COLORS = ["#203f52", "#4d137f", "#002244", "#004953"];
 const Home = () => {
   const { pathname, search, hash } = useLocation();
 
-  const [degree, setDegree] = useState("all");
+  const [degree, setDegree] = useState("");
 
   const { data, error } = useQuery(GET_COLLEGE_PROGRAMMES, {
     variables: {
@@ -25,17 +25,13 @@ const Home = () => {
     notifyOnNetworkStatusChange: true,
   });
 
-  useEffect(() => {
-    hash && setDegree(hash.slice(8)); // slice '#degree=bachelors'
-  }, [hash]);
-
   return (
     <div>
       <Head title={`${COLLEGE_NAME.toUpperCase()}`} />
 
       <ScrollManager scrollKey={`${pathname}${search}${hash}`} />
 
-      <ProgrammeFilter degreesCount={8} selectedDegree={degree} />
+      <ProgrammeFilter degreesCount={8} selectedDegree={degree} setDegree={setDegree} />
 
       <Box m={1} />
 
