@@ -5,8 +5,8 @@ import { makeStyles } from "@material-ui/core/styles";
 import Typography from "@material-ui/core/Typography";
 import CheckCircleIcon from "@material-ui/icons/CheckCircle";
 import Skeleton from "@material-ui/lab/Skeleton";
+import PLACEHOLDER_IMAGE from "assets/images/card_placeholder.png";
 import Head from "components/Head";
-import NotFound from "components/NotFound";
 import ScrollManager from "components/ScrollManager";
 import { GET_COURSE } from "graphql/course";
 import React from "react";
@@ -51,42 +51,48 @@ const Course = () => {
   });
 
   const renderContent = () => {
-    if (loading) {
-      return (
-        <Paper className={classes.paper}>
-          <Skeleton variant="rect" height={300} />
-        </Paper>
-      );
-    }
-
-    if (!data) {
-      return <NotFound />;
-    }
-
-    const course = data.getCourse;
+    const course = data && data.getCourse;
 
     return (
       <Paper className={classes.paper} elevation={0}>
         <span>
           <Typography display="inline" variant="h6">
-            <b>@{course.code}</b>
+            {loading ? <Skeleton width="20%" style={{ display: "inline-block" }} /> : <b>@{course.code}</b>}
           </Typography>
-          <CheckCircleIcon color="primary" className={classes.checkIcon} />
+
+          {loading ? (
+            <Skeleton variant="circle" style={{ display: "inline-block", marginLeft: 8 }}>
+              <CheckCircleIcon color="primary" className={classes.checkIcon} />
+            </Skeleton>
+          ) : (
+            <CheckCircleIcon color="primary" className={classes.checkIcon} />
+          )}
         </span>
 
-        <Typography variant="h5" gutterBottom color="textSecondary">
-          <b>{course.title}</b>
+        <Typography variant="h5" color="textSecondary">
+          {loading ? (
+            <>
+              <Skeleton width="100%" />
+              <Skeleton width="50%" />
+            </>
+          ) : (
+            <b>{course.title}</b>
+          )}
         </Typography>
 
         <div className={classes.imageWrapper}>
-          <img alt="course image" src={course.image} className={classes.image} />
+          {loading ? (
+            <img alt="programme image" src={PLACEHOLDER_IMAGE} className={classes.image} />
+          ) : (
+            <img alt="programme image" src={course.image} className={classes.image} />
+          )}
         </div>
 
         <Box m={2} />
 
-        <QuestionPaper questionPapers={course.questionPapers} />
+        <QuestionPaper loading={loading} questionPapers={course && course.questionPapers} />
 
-        <StudyMaterial course={course} />
+        <StudyMaterial loading={loading} courseBlocks={course && course.courseBlocks} />
       </Paper>
     );
   };
@@ -96,6 +102,8 @@ const Course = () => {
       <Head title={`${courseName.toUpperCase()} | ${programmeName.toUpperCase()}`} />
 
       <ScrollManager scrollKey={`${pathname}${search}`} />
+
+      <Box m={1} />
 
       {renderContent()}
     </>

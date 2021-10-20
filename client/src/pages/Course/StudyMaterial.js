@@ -51,15 +51,13 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-const StudyMaterial = ({ course }) => {
+const StudyMaterial = ({ courseBlocks, loading }) => {
   const classes = useStyles();
   const [expanded, setExpanded] = useState(true);
 
   const handleExpandClick = () => {
     setExpanded(!expanded);
   };
-
-  const courseBlocks = course.courseBlocks;
 
   return (
     <Paper className={classes.paper} elevation={0}>
@@ -78,45 +76,48 @@ const StudyMaterial = ({ course }) => {
         size="small"
         color="secondary"
         className={classes.button}
+        disabled={loading}
       >
         Study Material
       </Button>
 
-      <Collapse in={expanded} timeout="auto" unmountOnExit>
-        {courseBlocks.map((courseBlock) => (
-          <div className={classes.courseBlock} key={courseBlock.blockLink}>
-            <div className={classes.blockCodeName}>
-              <Typography variant="h6" color="textSecondary">
-                <b>📖 {courseBlock.blockCode}</b>
-              </Typography>
+      {!loading && (
+        <Collapse in={expanded} timeout="auto" unmountOnExit>
+          {courseBlocks.map((courseBlock) => (
+            <div className={classes.courseBlock} key={courseBlock.blockLink}>
+              <div className={classes.blockCodeName}>
+                <Typography variant="h6" color="textSecondary">
+                  <b>📖 {courseBlock.blockCode}</b>
+                </Typography>
 
-              <Typography color="textSecondary" variant="h6" style={{ marginLeft: 19 }}>
-                ( {courseBlock.blockName} )
-              </Typography>
+                <Typography color="textSecondary" variant="h6" style={{ marginLeft: 19 }}>
+                  ( {courseBlock.blockName} )
+                </Typography>
+              </div>
+
+              <Paper className={classes.blockUnits} elevation={0}>
+                {courseBlock.blockUnits.map((blockUnit) => (
+                  <div className={classes.unitCodeName} key={blockUnit.unitLink}>
+                    <Typography>
+                      <b>📄 {blockUnit.unitCode}</b>
+                    </Typography>
+
+                    <Link
+                      target="blank"
+                      href={blockUnit.unitDownloadLink}
+                      display="block"
+                      variant="body1"
+                      style={{ marginLeft: 24 }}
+                    >
+                      {blockUnit.unitName}
+                    </Link>
+                  </div>
+                ))}
+              </Paper>
             </div>
-
-            <Paper className={classes.blockUnits} elevation={0}>
-              {courseBlock.blockUnits.map((blockUnit) => (
-                <div className={classes.unitCodeName} key={blockUnit.unitLink}>
-                  <Typography>
-                    <b>📄 {blockUnit.unitCode}</b>
-                  </Typography>
-
-                  <Link
-                    target="blank"
-                    href={blockUnit.unitDownloadLink}
-                    display="block"
-                    variant="body1"
-                    style={{ marginLeft: 24 }}
-                  >
-                    {blockUnit.unitName}
-                  </Link>
-                </div>
-              ))}
-            </Paper>
-          </div>
-        ))}
-      </Collapse>
+          ))}
+        </Collapse>
+      )}
 
       <Box m={1} />
     </Paper>

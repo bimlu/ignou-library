@@ -47,7 +47,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-const QuestionPaper = ({ questionPapers }) => {
+const QuestionPaper = ({ questionPapers, loading }) => {
   const classes = useStyles();
   const [expanded, setExpanded] = useState(false);
 
@@ -72,22 +72,25 @@ const QuestionPaper = ({ questionPapers }) => {
         size="small"
         color="secondary"
         className={classes.button}
+        disabled={loading}
       >
         Question Papers
       </Button>
 
-      <Collapse in={expanded} timeout="auto" unmountOnExit>
-        <Paper className={classes.downloadLinks} elevation={0}>
-          {questionPapers.map((questionPaper) => {
-            const items = questionPaper.split("/");
-            return (
-              <Link key={questionPaper} target="blank" href={questionPaper} variant="body1" className={classes.link}>
-                ✳️ {items[items.length - 2]}
-              </Link>
-            );
-          })}
-        </Paper>
-      </Collapse>
+      {!loading && (
+        <Collapse in={expanded} timeout="auto" unmountOnExit>
+          <Paper className={classes.downloadLinks} elevation={0}>
+            {questionPapers.map((questionPaper) => {
+              const items = questionPaper.split("/");
+              return (
+                <Link key={questionPaper} target="blank" href={questionPaper} variant="body1" className={classes.link}>
+                  ✳️ {items[items.length - 2]}
+                </Link>
+              );
+            })}
+          </Paper>
+        </Collapse>
+      )}
 
       <Box m={1} />
     </Paper>
