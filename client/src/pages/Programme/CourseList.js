@@ -38,7 +38,7 @@ const CourseList = ({
   if (!programme.programmeStructure) return <Empty text="No courses yet." />;
   if (!programme.programmeStructure > 0) return <Empty text="No courses yet." />;
   const courses = programme.programmeStructure;
-  const filteredCourses = courses.filter((course) => term === "all" || course.term === parseInt(term));
+  const filteredCourses = courses.filter((course) => term === 0 || course.term === parseInt(term));
 
   const Row = ({ index, style }) => {
     const i = index;

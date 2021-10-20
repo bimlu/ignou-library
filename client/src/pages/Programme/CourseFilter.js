@@ -29,11 +29,11 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function CourseFilter({ termType, termsCount, selectedTerm }) {
+export default function CourseFilter({ termType, termsCount, selectedTerm, setTerm }) {
   const classes = useStyles();
 
-  const handleClick = (hashValue) => {
-    window.location.hash = `term=${hashValue}`;
+  const handleClick = (term) => {
+    setTerm(term);
   };
 
   return (
@@ -44,25 +44,25 @@ export default function CourseFilter({ termType, termsCount, selectedTerm }) {
 
       <div className={classes.root}>
         <Button
-          variant={selectedTerm === "all" ? "contained" : "outlined"}
+          variant={selectedTerm === 0 ? "contained" : "outlined"}
           size="small"
           color="primary"
-          onClick={() => handleClick("all")}
+          onClick={() => handleClick("")}
         >
           All
         </Button>
 
         {Array.from(new Array(termsCount))
           .map((_el, idx) => idx + 1)
-          .map((num) => (
+          .map((term) => (
             <Button
-              variant={selectedTerm === String(num) ? "contained" : "outlined"}
+              variant={selectedTerm === term ? "contained" : "outlined"}
               size="small"
               color="primary"
-              key={num}
-              onClick={() => handleClick(num)}
+              key={term}
+              onClick={() => handleClick(term)}
             >
-              {`${TermType[termType]}-${num}`}
+              {`${TermType[termType]}-${term}`}
             </Button>
           ))}
       </div>

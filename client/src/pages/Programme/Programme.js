@@ -3,7 +3,7 @@ import Box from "@material-ui/core/Box";
 import Head from "components/Head";
 import ScrollManager from "components/ScrollManager";
 import { GET_PROGRAMME_STRUCTURE } from "graphql/programme";
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { useLocation } from "react-router-dom";
 import CourseFilter from "./CourseFilter";
 import CourseList from "./CourseList";
@@ -22,7 +22,7 @@ const Programme = () => {
   const termType = parseInt(query.get("termType"));
   const termsCount = parseInt(query.get("termsCount"));
 
-  const [term, setTerm] = useState("all");
+  const [term, setTerm] = useState(0);
 
   const { data, error } = useQuery(GET_PROGRAMME_STRUCTURE, {
     variables: {
@@ -30,10 +30,6 @@ const Programme = () => {
     },
     notifyOnNetworkStatusChange: true,
   });
-
-  useEffect(() => {
-    hash && setTerm(hash.slice(6)); // slice '#term=1'
-  }, [hash]);
 
   return (
     <>
@@ -43,7 +39,7 @@ const Programme = () => {
 
       <ProgrammeInfo collegeId={collegeId} programmeId={programmeId} />
 
-      <CourseFilter termType={termType} termsCount={termsCount} selectedTerm={term} />
+      <CourseFilter termType={termType} termsCount={termsCount} selectedTerm={term} setTerm={setTerm} />
 
       <Box m={2} />
 
