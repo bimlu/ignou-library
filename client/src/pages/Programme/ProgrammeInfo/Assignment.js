@@ -50,7 +50,6 @@ const Assignment = ({ programme, loading }) => {
   const [expanded, setExpanded] = useState(false);
 
   const handleExpandClick = () => {
-    if (loading) return;
     setExpanded(!expanded);
   };
 
@@ -71,6 +70,7 @@ const Assignment = ({ programme, loading }) => {
         size="small"
         color="secondary"
         className={classes.button}
+        disabled={loading}
       >
         Assignments
       </Button>

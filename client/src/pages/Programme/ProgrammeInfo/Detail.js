@@ -50,7 +50,6 @@ const Detail = ({ programme, loading }) => {
   const [expanded, setExpanded] = useState(false);
 
   const handleExpandClick = () => {
-    if (loading) return;
     setExpanded(!expanded);
   };
 
@@ -71,6 +70,7 @@ const Detail = ({ programme, loading }) => {
         size="small"
         color="secondary"
         className={classes.button}
+        disabled={loading}
       >
         Programme Detail
       </Button>
