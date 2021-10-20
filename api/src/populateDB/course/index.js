@@ -94,7 +94,6 @@ export const createCourse2 = async (courseCode, courses) => {
     questionPapers: oldQuestionPapers,
     image: "https://ignou-app-1.s3.ap-south-1.amazonaws.com/demo-images/street.jpg",
     college: college.id,
-    term: 1,
   };
 
   // console.log(newCourse);
