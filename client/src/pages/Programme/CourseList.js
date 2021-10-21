@@ -2,8 +2,8 @@ import { useQuery } from "@apollo/client";
 import { Box } from "@material-ui/core";
 import { useTheme } from "@material-ui/core/styles";
 import useMediaQuery from "@material-ui/core/useMediaQuery";
-import Empty from "components/Empty";
 import NoInternet from "components/NoInternet";
+import NoItem from "components/NoItem";
 import { GET_PROGRAMME_STRUCTURE } from "graphql/programme";
 import React from "react";
 import { FixedSizeList as List } from "react-window";
@@ -38,8 +38,8 @@ const CourseList = ({ term, programmeId, programmeName }) => {
 
   const programme = data.getProgrammeStructure;
   if (!programme) return null;
-  if (!programme.programmeStructure) return <Empty text="No courses yet." />;
-  if (!programme.programmeStructure > 0) return <Empty text="No courses yet." />;
+  if (!programme.programmeStructure) return <NoItem itemName="Courses" />;
+  if (!programme.programmeStructure > 0) return <NoItem itemName="Courses" />;
   const courses = programme.programmeStructure;
   const filteredCourses = courses.filter((course) => term === 0 || course.term === parseInt(term));
 

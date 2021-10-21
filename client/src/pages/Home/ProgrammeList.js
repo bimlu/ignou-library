@@ -2,8 +2,8 @@ import { useQuery } from "@apollo/client";
 import { Box } from "@material-ui/core";
 import { useTheme } from "@material-ui/core/styles";
 import useMediaQuery from "@material-ui/core/useMediaQuery";
-import Empty from "components/Empty";
 import NoInternet from "components/NoInternet";
+import NoItem from "components/NoItem";
 import { DegreeType2 } from "constants/DegreeType";
 import { GET_PROGRAMMES } from "graphql/programme";
 import React from "react";
@@ -39,7 +39,8 @@ const ProgrammeList = ({ degree }) => {
   }
 
   const { programmes, count } = data.getProgrammes;
-  if (!programmes.length > 0) return <Empty text="No programmes yet." />;
+  if (!programmes.length > 0) return <NoItem itemName="Programmes" />;
+
   const filteredProgrammes = programmes.filter(
     (programme) => degree === "" || programme.degree === DegreeType2.indexOf(degree)
   );
