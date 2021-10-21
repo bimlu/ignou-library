@@ -8,6 +8,7 @@ import CheckCircleIcon from "@material-ui/icons/CheckCircle";
 import Skeleton from "@material-ui/lab/Skeleton";
 import PLACEHOLDER_IMAGE from "assets/images/card_placeholder.png";
 import { TermType2 } from "constants/TermType";
+import { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
 
 const useStyles = makeStyles((theme) => ({
@@ -40,10 +41,44 @@ const useStyles = makeStyles((theme) => ({
 const ProgrammeCard = ({ title, subtitle, image, url, loading, termType, termsCount, totalCredits }) => {
   const classes = useStyles();
 
+  const [loadingImage, setLoadingImage] = useState(true);
+  const isMounted = useRef(false);
+
+  useEffect(() => {
+    isMounted.current = true;
+    return () => {
+      isMounted.current = false;
+    };
+  }, []);
+
+  useEffect(() => {
+    if (!isMounted) return;
+
+    const imageToLoad = new Image();
+    imageToLoad.src = image;
+    imageToLoad.onload = () => {
+      setLoadingImage(false);
+    };
+
+    return () => {
+      if (!imageToLoad) return;
+      imageToLoad.onload = () => {};
+    };
+  }, [isMounted]);
+
   return (
     <CardActionArea component={Link} to={url} className={classes.actionArea}>
       <Card className={classes.card}>
-        <CardMedia className={classes.image} image={loading ? PLACEHOLDER_IMAGE : image} component="img" alt={title} />
+        <CardMedia
+          className={classes.image}
+          image={loading || loadingImage ? PLACEHOLDER_IMAGE : image}
+          component="img"
+          alt={title}
+          style={{
+            opacity: loading || loadingImage ? 0.5 : 1,
+            transition: "opacity 0.15s linear",
+          }}
+        />
         <CardContent className={classes.content}>
           <Typography variant="h5" component="span" gutterBottom={true}>
             {loading ? <Skeleton style={{ display: "inline-block" }} width="15%" /> : <b>{title}</b>}
