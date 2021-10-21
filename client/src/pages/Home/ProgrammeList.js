@@ -1,5 +1,7 @@
 import { useQuery } from "@apollo/client";
 import { Box } from "@material-ui/core";
+import { useTheme } from "@material-ui/core/styles";
+import useMediaQuery from "@material-ui/core/useMediaQuery";
 import Empty from "components/Empty";
 import NoInternet from "components/NoInternet";
 import { DegreeType2 } from "constants/DegreeType";
@@ -11,6 +13,9 @@ import * as Routes from "routes";
 import ProgrammeCard from "./ProgrammeCard";
 
 const ProgrammeList = ({ degree }) => {
+  const theme = useTheme();
+  const isDesktop = useMediaQuery(theme.breakpoints.up("sm"));
+
   const { data, loading, error } = useQuery(GET_PROGRAMMES, {
     variables: {
       skip: 0,
@@ -23,7 +28,7 @@ const ProgrammeList = ({ degree }) => {
   if (loading) {
     return (
       <div>
-        {Array.from(new Array(parseInt(2))).map((_el, i) => (
+        {Array.from(new Array(parseInt(isDesktop ? 3 : 2))).map((_el, i) => (
           <div key={i}>
             <ProgrammeCard loading={true} url="#" />
             <Box mb={1.5} />
