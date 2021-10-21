@@ -7,6 +7,7 @@ import CheckCircleIcon from "@material-ui/icons/CheckCircle";
 import Skeleton from "@material-ui/lab/Skeleton";
 import PLACEHOLDER_IMAGE from "assets/images/card_placeholder.png";
 import Head from "components/Head";
+import NoInternet from "components/NoInternet";
 import ScrollManager from "components/ScrollManager";
 import { GET_COURSE } from "graphql/course";
 import React from "react";
@@ -46,9 +47,11 @@ const Course = () => {
   const courseId = query.get("courseId");
   const courseName = query.get("courseName");
 
-  const { loading, data } = useQuery(GET_COURSE, {
+  const { loading, data, error } = useQuery(GET_COURSE, {
     variables: { id: courseId },
   });
+
+  if (error) return <NoInternet />;
 
   const renderContent = () => {
     const course = data && data.getCourse;

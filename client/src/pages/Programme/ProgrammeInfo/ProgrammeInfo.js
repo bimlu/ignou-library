@@ -6,9 +6,11 @@ import Detail from "./Detail";
 import Title from "./Title";
 
 const ProgrammeInfo = ({ programmeId }) => {
-  const { loading, data } = useQuery(GET_PROGRAMME, {
+  const { loading, data, error } = useQuery(GET_PROGRAMME, {
     variables: { id: programmeId },
   });
+
+  if (error) return "";
 
   const programme = data && data.getProgramme;
 

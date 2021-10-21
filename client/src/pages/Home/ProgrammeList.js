@@ -1,6 +1,7 @@
 import { useQuery } from "@apollo/client";
 import { Box } from "@material-ui/core";
 import Empty from "components/Empty";
+import NoInternet from "components/NoInternet";
 import { DegreeType2 } from "constants/DegreeType";
 import { GET_PROGRAMMES } from "graphql/programme";
 import React from "react";
@@ -17,6 +18,8 @@ const ProgrammeList = ({ degree }) => {
     },
   });
 
+  if (error) return <NoInternet />;
+
   if (loading) {
     return (
       <div>
@@ -29,8 +32,6 @@ const ProgrammeList = ({ degree }) => {
       </div>
     );
   }
-
-  if (error) return "Please check your internet connection";
 
   const { programmes, count } = data.getProgrammes;
   if (!programmes.length > 0) return <Empty text="No programmes yet." />;

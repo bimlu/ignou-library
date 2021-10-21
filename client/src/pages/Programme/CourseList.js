@@ -1,6 +1,7 @@
 import { useQuery } from "@apollo/client";
 import { Box } from "@material-ui/core";
 import Empty from "components/Empty";
+import NoInternet from "components/NoInternet";
 import { GET_PROGRAMME_STRUCTURE } from "graphql/programme";
 import React from "react";
 import { FixedSizeList as List } from "react-window";
@@ -15,6 +16,8 @@ const CourseList = ({ term, programmeId, programmeName }) => {
     },
   });
 
+  if (error) return <NoInternet />;
+
   if (loading) {
     return (
       <div>
@@ -27,8 +30,6 @@ const CourseList = ({ term, programmeId, programmeName }) => {
       </div>
     );
   }
-
-  if (error) return "Please check your internet connection";
 
   const programme = data.getProgrammeStructure;
   if (!programme) return null;
