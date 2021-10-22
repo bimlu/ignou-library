@@ -26,3 +26,28 @@ export enum Category {
   C,
   E,
 }
+
+export enum Discipline {
+  Anthropology,
+  Economics,
+  History,
+  PoliticalScience,
+  Psychology,
+  PublicAdministration,
+  Sociology,
+  Mathematics,
+  Hindi,
+  Urdu,
+  English,
+  Sanskrit,
+  Education,
+  Philosophy,
+
+  Botany,
+  Chemistry,
+  Geography,
+  Geology,
+  Physics,
+  Zoology,
+  Other,
+}
