@@ -2,7 +2,7 @@ import { useQuery } from "@apollo/client";
 import { Box } from "@material-ui/core";
 import { useTheme } from "@material-ui/core/styles";
 import useMediaQuery from "@material-ui/core/useMediaQuery";
-import NoInternet from "components/NoInternet";
+import Error from "components/Error";
 import NoItem from "components/NoItem";
 import { GET_PROGRAMME_STRUCTURE } from "graphql/programme";
 import React from "react";
@@ -21,7 +21,7 @@ const CourseList = ({ term, programmeId, programmeName }) => {
     },
   });
 
-  if (error) return <NoInternet />;
+  if (error) return <Error message={error.message} />;
 
   if (loading) {
     return (

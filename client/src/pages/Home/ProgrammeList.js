@@ -2,7 +2,7 @@ import { useQuery } from "@apollo/client";
 import { Box } from "@material-ui/core";
 import { useTheme } from "@material-ui/core/styles";
 import useMediaQuery from "@material-ui/core/useMediaQuery";
-import NoInternet from "components/NoInternet";
+import Error from "components/Error";
 import NoItem from "components/NoItem";
 import { DegreeType2 } from "constants/DegreeType";
 import { GET_PROGRAMMES } from "graphql/programme";
@@ -23,7 +23,7 @@ const ProgrammeList = ({ degree }) => {
     },
   });
 
-  if (error) return <NoInternet />;
+  if (error) return <Error message={error.message} />;
 
   if (loading) {
     return (

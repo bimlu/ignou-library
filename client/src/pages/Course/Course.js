@@ -6,8 +6,8 @@ import Typography from "@material-ui/core/Typography";
 import CheckCircleIcon from "@material-ui/icons/CheckCircle";
 import Skeleton from "@material-ui/lab/Skeleton";
 import PLACEHOLDER_IMAGE from "assets/images/card_placeholder.png";
+import Error from "components/Error";
 import Head from "components/Head";
-import NoInternet from "components/NoInternet";
 import ScrollManager from "components/ScrollManager";
 import { GET_COURSE } from "graphql/course";
 import React from "react";
@@ -51,7 +51,7 @@ const Course = () => {
     variables: { id: courseId },
   });
 
-  if (error) return <NoInternet />;
+  if (error) return <Error message={error.message} />;
 
   const renderContent = () => {
     const course = data && data.getCourse;
