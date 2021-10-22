@@ -4,7 +4,6 @@ export const certificateProgrammes = [
   {
     code: "CLIS",
     title: "Certificate in Library and Information Science",
-    fullName: "Certificate in Library and Information Science",
     degree: Degree.certificate,
     termType: TermType.Semester,
     termsCount: 1,
@@ -25,7 +24,6 @@ export const certificateProgrammes = [
   {
     code: "CDM",
     title: "Certificate in Disaster Management",
-    fullName: "Certificate in Disaster Management",
     degree: Degree.certificate,
     termType: TermType.Semester,
     termsCount: 1,
@@ -44,7 +42,6 @@ export const certificateProgrammes = [
   {
     code: "CES",
     title: "Certificate in Environmental Studies",
-    fullName: "Certificate in Environmental Studies",
     degree: Degree.certificate,
     termType: TermType.Semester,
     termsCount: 1,
@@ -64,7 +61,6 @@ export const certificateProgrammes = [
   {
     code: "CLTA",
     title: "Certificate Programme on Life and Thought of Dr. B.R. Ambedkar",
-    fullName: "Certificate Programme on Life and Thought of Dr. B.R. Ambedkar",
     degree: Degree.certificate,
     termType: TermType.Semester,
     termsCount: 1,
@@ -85,7 +81,6 @@ export const certificateProgrammes = [
   {
     code: "CPSCM",
     title: "Certificate in Peace Studies and Conflict Management",
-    fullName: "Certificate in Peace Studies and Conflict Management",
     degree: Degree.certificate,
     termType: TermType.Semester,
     termsCount: 1,
@@ -107,7 +102,6 @@ export const certificateProgrammes = [
   {
     code: "CFN",
     title: "Certificate in Food and Nutrition",
-    fullName: "Certificate in Food and Nutrition",
     degree: Degree.certificate,
     termType: TermType.Semester,
     termsCount: 1,
@@ -128,7 +122,6 @@ export const certificateProgrammes = [
   {
     code: "CNCC",
     title: "Certificate in Nutrition and Child Care",
-    fullName: "Certificate in Nutrition and Child Care",
     degree: Degree.certificate,
     termType: TermType.Semester,
     termsCount: 1,
@@ -147,7 +140,6 @@ export const certificateProgrammes = [
   {
     code: "CRD",
     title: "Certificate in Rural Development",
-    fullName: "Certificate in Rural Development",
     degree: Degree.certificate,
     termType: TermType.Semester,
     termsCount: 1,
@@ -167,7 +159,6 @@ export const certificateProgrammes = [
   {
     code: "CIG",
     title: "Certificate in Guidance",
-    fullName: "Certificate in Guidance",
     degree: Degree.certificate,
     termType: TermType.Semester,
     termsCount: 1,
@@ -188,7 +179,6 @@ export const certificateProgrammes = [
   {
     code: "CIT",
     title: "Certificate in Information Technology",
-    fullName: "Certificate in Information Technology",
     degree: Degree.certificate,
     termType: TermType.Semester,
     termsCount: 1,
@@ -209,7 +199,6 @@ export const certificateProgrammes = [
   {
     code: "CMAD",
     title: "Certificate in Mobile Application Development",
-    fullName: "Certificate in Mobile Application Development",
     degree: Degree.certificate,
     termType: TermType.Semester,
     termsCount: 1,
@@ -231,7 +220,6 @@ export const certificateProgrammes = [
   {
     code: "CTE",
     title: "Certificate in Teaching of English as a Second Language",
-    fullName: "Certificate in Teaching of English as a Second Language",
     degree: Degree.certificate,
     termType: TermType.Semester,
     termsCount: 1,
@@ -253,7 +241,6 @@ export const certificateProgrammes = [
   {
     code: "CFE",
     title: "Certificate in Functional English (Basic Level)",
-    fullName: "Certificate in Functional English (Basic Level)",
     degree: Degree.certificate,
     termType: TermType.Semester,
     termsCount: 1,
@@ -273,7 +260,6 @@ export const certificateProgrammes = [
   {
     code: "CUL",
     title: "Certificate in Urdu Language",
-    fullName: "Certificate in Urdu Language",
     degree: Degree.certificate,
     termType: TermType.Semester,
     termsCount: 1,
@@ -292,7 +278,6 @@ export const certificateProgrammes = [
   {
     code: "CHR",
     title: "Certificate in Human Rights",
-    fullName: "Certificate in Human Rights",
     degree: Degree.certificate,
     termType: TermType.Semester,
     termsCount: 1,
@@ -311,7 +296,6 @@ export const certificateProgrammes = [
   {
     code: "CCP",
     title: "Certificate in Consumer Protection",
-    fullName: "Certificate in Consumer Protection",
     degree: Degree.certificate,
     termType: TermType.Semester,
     termsCount: 1,
@@ -332,7 +316,6 @@ export const certificateProgrammes = [
   {
     code: "CCLBL",
     title: "Certificate in Co-operation, Co-operative Law & Business Laws",
-    fullName: "Certificate in Co-operation, Co-operative Law & Business Laws",
     degree: Degree.certificate,
     termType: TermType.Semester,
     termsCount: 1,
@@ -353,7 +336,6 @@ export const certificateProgrammes = [
   {
     code: "CAHT",
     title: "Certificate in Anti Human Trafficking",
-    fullName: "Certificate in Anti Human Trafficking",
     degree: Degree.certificate,
     termType: TermType.Semester,
     termsCount: 1,
@@ -375,7 +357,6 @@ export const certificateProgrammes = [
   {
     code: "CIHL",
     title: "Certificate in International Humanitarian Law",
-    fullName: "Certificate in International Humanitarian Law",
     degree: Degree.certificate,
     termType: TermType.Semester,
     termsCount: 1,
@@ -396,7 +377,6 @@ export const certificateProgrammes = [
   {
     code: "CNM",
     title: "Certificate Programme in NGO Management",
-    fullName: "Certificate Programme in NGO Management",
     degree: Degree.certificate,
     termType: TermType.Semester,
     termsCount: 1,
@@ -416,7 +396,6 @@ export const certificateProgrammes = [
   {
     code: "CBS",
     title: "Certificate in Business Skills",
-    fullName: "Certificate in Business Skills",
     degree: Degree.certificate,
     termType: TermType.Semester,
     termsCount: 1,
@@ -437,7 +416,6 @@ export const certificateProgrammes = [
   {
     code: "CCITSK",
     title: "Certificate in Communication & IT Skills",
-    fullName: "Certificate in Communication & IT Skills",
     degree: Degree.certificate,
     termType: TermType.Semester,
     termsCount: 1,
@@ -456,7 +434,6 @@ export const certificateProgrammes = [
   {
     code: "ACISE",
     title: "Advanced Certificate in Information Security",
-    fullName: "Advanced Certificate in Information Security",
     degree: Degree.certificate,
     termType: TermType.Semester,
     termsCount: 1,
@@ -477,7 +454,6 @@ export const certificateProgrammes = [
   {
     code: "CFDE",
     title: "Certificate in Fashion Design",
-    fullName: "Certificate in Fashion Design",
     degree: Degree.certificate,
     termType: TermType.Semester,
     termsCount: 1,
@@ -498,7 +474,6 @@ export const certificateProgrammes = [
   {
     code: "CTS",
     title: "Certificate in Tourism Studies",
-    fullName: "Certificate in Tourism Studies",
     degree: Degree.certificate,
     termType: TermType.Semester,
     termsCount: 1,
@@ -517,7 +492,6 @@ export const certificateProgrammes = [
   {
     code: "CPLT",
     title: "Certificate Programme in Laboratory Techniques",
-    fullName: "Certificate Programme in Laboratory Techniques",
     degree: Degree.certificate,
     termType: TermType.Semester,
     termsCount: 1,
@@ -543,7 +517,6 @@ export const certificateProgrammes = [
   {
     code: "CTPM",
     title: "Certificate Programme in Teaching of Primary School Mathematics",
-    fullName: "Certificate Programme in Teaching of Primary School Mathematics",
     degree: Degree.certificate,
     termType: TermType.Semester,
     termsCount: 1,
@@ -562,7 +535,6 @@ export const certificateProgrammes = [
   {
     code: "CAFE",
     title: "Certificate in HIV and Family Education",
-    fullName: "Certificate in HIV and Family Education",
     degree: Degree.certificate,
     termType: TermType.Semester,
     termsCount: 1,
@@ -585,7 +557,6 @@ export const certificateProgrammes = [
   {
     code: "CSWCJS",
     title: "Certificate in Social Work and Criminal Justice System",
-    fullName: "Certificate in Social Work and Criminal Justice System",
     degree: Degree.certificate,
     termType: TermType.Semester,
     termsCount: 1,
@@ -605,7 +576,6 @@ export const certificateProgrammes = [
   {
     code: "CTRBS",
     title: "Certificatein Tribal Studies",
-    fullName: "Certificatein Tribal Studies",
     degree: Degree.certificate,
     termType: TermType.Semester,
     termsCount: 1,
@@ -626,7 +596,6 @@ export const certificateProgrammes = [
   {
     code: "CIS",
     title: "Certificate in Sericulture",
-    fullName: "Certificate in Sericulture",
     degree: Degree.certificate,
     termType: TermType.Semester,
     termsCount: 1,
@@ -648,7 +617,6 @@ export const certificateProgrammes = [
   {
     code: "COF",
     title: "Certificate in Organic Farming",
-    fullName: "Certificate in Organic Farming",
     degree: Degree.certificate,
     termType: TermType.Semester,
     termsCount: 1,
@@ -669,7 +637,6 @@ export const certificateProgrammes = [
   {
     code: "CWHM",
     title: "Certificate in Water Harvesting & Management",
-    fullName: "Certificate in Water Harvesting & Management",
     degree: Degree.certificate,
     termType: TermType.Semester,
     termsCount: 1,
@@ -690,7 +657,6 @@ export const certificateProgrammes = [
   {
     code: "CPF",
     title: "Certificate in Poultry Farming",
-    fullName: "Certificate in Poultry Farming",
     degree: Degree.certificate,
     termType: TermType.Semester,
     termsCount: 1,
@@ -712,7 +678,6 @@ export const certificateProgrammes = [
   {
     code: "CIB",
     title: "Certificate in Beekeeping",
-    fullName: "Certificate in Beekeeping",
     degree: Degree.certificate,
     termType: TermType.Semester,
     termsCount: 1,
@@ -732,7 +697,6 @@ export const certificateProgrammes = [
   {
     code: "CAL",
     title: "Certificate in Arabic Language",
-    fullName: "Certificate in Arabic Language",
     degree: Degree.certificate,
     termType: TermType.Semester,
     termsCount: 1,
@@ -751,7 +715,6 @@ export const certificateProgrammes = [
   {
     code: "CFL",
     title: "Certificate in French Language",
-    fullName: "Certificate in French Language",
     degree: Degree.certificate,
     termType: TermType.Semester,
     termsCount: 1,
@@ -772,7 +735,6 @@ export const certificateProgrammes = [
   {
     code: "CRUL",
     title: "Certificate in Russian Language",
-    fullName: "Certificate in Russian Language",
     degree: Degree.certificate,
     termType: TermType.Semester,
     termsCount: 1,
@@ -792,7 +754,6 @@ export const certificateProgrammes = [
   {
     code: "CJL",
     title: "Certificate in Japanese Language",
-    fullName: "Certificate in Japanese Language",
     degree: Degree.certificate,
     termType: TermType.Semester,
     termsCount: 1,
@@ -813,7 +774,6 @@ export const certificateProgrammes = [
   {
     code: "CKLC",
     title: "Certificate in Korean Language & Culture",
-    fullName: "Certificate in Korean Language & Culture",
     degree: Degree.certificate,
     termType: TermType.Semester,
     termsCount: 1,
@@ -832,7 +792,6 @@ export const certificateProgrammes = [
   {
     code: "CSLC",
     title: "Certificate in Spanish Language & Culture",
-    fullName: "Certificate in Spanish Language & Culture",
     degree: Degree.certificate,
     termType: TermType.Semester,
     termsCount: 1,
@@ -851,7 +810,6 @@ export const certificateProgrammes = [
   {
     code: "CGL",
     title: "Certificate in German Language",
-    fullName: "Certificate in German Language",
     degree: Degree.certificate,
     termType: TermType.Semester,
     termsCount: 1,
@@ -871,7 +829,6 @@ export const certificateProgrammes = [
   {
     code: "CPEL",
     title: "Certificate in Persian Language",
-    fullName: "Certificate in Persian Language",
     degree: Degree.certificate,
     termType: TermType.Semester,
     termsCount: 1,
@@ -890,7 +847,6 @@ export const certificateProgrammes = [
   {
     code: "CFAID",
     title: "Certificate in First Aid",
-    fullName: "Certificate in First Aid",
     degree: Degree.certificate,
     termType: TermType.Semester,
     termsCount: 1,
@@ -909,7 +865,6 @@ export const certificateProgrammes = [
   {
     code: "CPY",
     title: "Certificate Programme in Yoga",
-    fullName: "Certificate Programme in Yoga",
     degree: Degree.certificate,
     termType: TermType.Semester,
     termsCount: 1,
@@ -929,7 +884,6 @@ export const certificateProgrammes = [
   {
     code: "CHCWM",
     title: "Certificate in Health Care Waste Management",
-    fullName: "Certificate in Health Care Waste Management",
     degree: Degree.certificate,
     termType: TermType.Semester,
     termsCount: 1,
@@ -956,7 +910,6 @@ export const certificateProgrammes = [
   {
     code: "CNIN",
     title: "Certificate in Newborn and Infant Nursing",
-    fullName: "Certificate in Newborn and Infant Nursing",
     degree: Degree.certificate,
     termType: TermType.Semester,
     termsCount: 1,
@@ -976,7 +929,6 @@ export const certificateProgrammes = [
   {
     code: "CMCHN",
     title: "Certificate in Maternal and Child Health Nursing",
-    fullName: "Certificate in Maternal and Child Health Nursing",
     degree: Degree.certificate,
     termType: TermType.Semester,
     termsCount: 1,
@@ -996,7 +948,6 @@ export const certificateProgrammes = [
   {
     code: "CHBHC",
     title: "Certificate in Home Based Health Care",
-    fullName: "Certificate in Home Based Health Care",
     degree: Degree.certificate,
     termType: TermType.Semester,
     termsCount: 1,
@@ -1015,7 +966,6 @@ export const certificateProgrammes = [
   {
     code: "CGDA",
     title: "Certificate in General Duty Assistance",
-    fullName: "Certificate in General Duty Assistance",
     degree: Degree.certificate,
     termType: TermType.Semester,
     termsCount: 1,
@@ -1035,7 +985,6 @@ export const certificateProgrammes = [
   {
     code: "CGCA",
     title: "Certificate in Geriatric Care Assistance",
-    fullName: "Certificate in Geriatric Care Assistance",
     degree: Degree.certificate,
     termType: TermType.Semester,
     termsCount: 1,
@@ -1055,7 +1004,6 @@ export const certificateProgrammes = [
   {
     code: "CPHA",
     title: "Certificate in Phlebotomy Assistance",
-    fullName: "Certificate in Phlebotomy Assistance",
     degree: Degree.certificate,
     termType: TermType.Semester,
     termsCount: 1,
@@ -1075,7 +1023,6 @@ export const certificateProgrammes = [
   {
     code: "CHHA",
     title: "Certificate in Home Health Assistance",
-    fullName: "Certificate in Home Health Assistance",
     degree: Degree.certificate,
     termType: TermType.Semester,
     termsCount: 1,
@@ -1095,7 +1042,6 @@ export const certificateProgrammes = [
   {
     code: "CCH",
     title: "Certificate in Community Health",
-    fullName: "Certificate in Community Health",
     degree: Degree.certificate,
     termType: TermType.Semester,
     termsCount: 1,
@@ -1115,7 +1061,6 @@ export const certificateProgrammes = [
   {
     code: "CAHC",
     title: "Certificate in Adolescent Health and Counseling",
-    fullName: "Certificate in Adolescent Health and Counseling",
     degree: Degree.certificate,
     termType: TermType.Semester,
     termsCount: 1,
@@ -1135,7 +1080,6 @@ export const certificateProgrammes = [
   {
     code: "CVAP",
     title: "Certificate in Visual Arts – Painting",
-    fullName: "Certificate in Visual Arts – Painting",
     degree: Degree.certificate,
     termType: TermType.Semester,
     termsCount: 1,
@@ -1158,7 +1102,6 @@ export const certificateProgrammes = [
   {
     code: "CVAA",
     title: "Certificate in Visual Arts – Applied Art",
-    fullName: "Certificate in Visual Arts – Applied Art",
     degree: Degree.certificate,
     termType: TermType.Semester,
     termsCount: 1,
@@ -1180,7 +1123,6 @@ export const certificateProgrammes = [
   {
     code: "CPATHA",
     title: "Certificate in Performing Arts – Theatre Arts",
-    fullName: "Certificate in Performing Arts – Theatre Arts",
     degree: Degree.certificate,
     termType: TermType.Semester,
     termsCount: 1,
@@ -1203,7 +1145,6 @@ export const certificateProgrammes = [
   {
     code: "CPAHM",
     title: "Certificate in Performing Arts Hindustani Music",
-    fullName: "Certificate in Performing Arts Hindustani Music",
     degree: Degree.certificate,
     termType: TermType.Semester,
     termsCount: 1,
@@ -1226,7 +1167,6 @@ export const certificateProgrammes = [
   {
     code: "CPAKM",
     title: "Certificate in Performing Arts Karnatak Music",
-    fullName: "Certificate in Performing Arts Karnatak Music",
     degree: Degree.certificate,
     termType: TermType.Semester,
     termsCount: 1,
@@ -1249,7 +1189,6 @@ export const certificateProgrammes = [
   {
     code: "CPABN",
     title: "Certificate in Performing Arts Bharatanatyam",
-    fullName: "Certificate in Performing Arts Bharatanatyam",
     degree: Degree.certificate,
     termType: TermType.Semester,
     termsCount: 1,
@@ -1272,7 +1211,6 @@ export const certificateProgrammes = [
   {
     code: "CETM",
     title: "Certificate in Energy Technology and Management",
-    fullName: "Certificate in Energy Technology and Management",
     degree: Degree.certificate,
     termType: TermType.Semester,
     termsCount: 1,
@@ -1293,7 +1231,6 @@ export const certificateProgrammes = [
   {
     code: "CCPD",
     title: "Certificate of Competency in Power Distribution (Electrical Technicians)",
-    fullName: "Certificate of Competency in Power Distribution (Electrical Technicians)",
     degree: Degree.certificate,
     termType: TermType.Semester,
     termsCount: 1,
@@ -1314,7 +1251,6 @@ export const certificateProgrammes = [
   {
     code: "CSWATT",
     title: "Certificate in Solid Wastes Treatment Techniques",
-    fullName: "Certificate in Solid Wastes Treatment Techniques",
     degree: Degree.certificate,
     termType: TermType.Semester,
     termsCount: 1,
@@ -1336,7 +1272,6 @@ export const certificateProgrammes = [
   {
     code: "CPVE",
     title: "Certificate Programme in Value Education",
-    fullName: "Certificate Programme in Value Education",
     degree: Degree.certificate,
     termType: TermType.Semester,
     termsCount: 1,
@@ -1357,7 +1292,6 @@ export const certificateProgrammes = [
   {
     code: "CSWM",
     title: "Certificate in Solid Waste Management",
-    fullName: "Certificate in Solid Waste Management",
     degree: Degree.certificate,
     termType: TermType.Semester,
     termsCount: 1,
@@ -1377,7 +1311,6 @@ export const certificateProgrammes = [
   {
     code: "CCR",
     title: "Certificate in Community Radio",
-    fullName: "Certificate in Community Radio",
     degree: Degree.certificate,
     termType: TermType.Semester,
     termsCount: 1,
@@ -1397,7 +1330,6 @@ export const certificateProgrammes = [
   {
     code: "CGAS",
     title: "Certificate in Gender, Agriculture and Sustainable Development",
-    fullName: "Certificate in Gender, Agriculture and Sustainable Development",
     degree: Degree.certificate,
     termType: TermType.Semester,
     termsCount: 1,

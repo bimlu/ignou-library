@@ -4,7 +4,6 @@ export const pgGraduateCertificateProgrammes = [
   {
     code: "PGCCL",
     title: "Post Graduate Certificate in Cyber Law",
-    fullName: "Post Graduate Certificate in Cyber Law",
     degree: Degree.pgGraduateCertificate,
     termType: TermType.Semester,
     termsCount: 1,
@@ -26,7 +25,6 @@ export const pgGraduateCertificateProgrammes = [
   {
     code: "PGCPP",
     title: "Post Graduate Certificate in Patent Practice",
-    fullName: "Post Graduate Certificate in Patent Practice",
     degree: Degree.pgGraduateCertificate,
     termType: TermType.Semester,
     termsCount: 1,
@@ -48,7 +46,6 @@ export const pgGraduateCertificateProgrammes = [
   {
     code: "PGCCC",
     title: "Post Graduate Certificate in Climate Change",
-    fullName: "Post Graduate Certificate in Climate Change",
     degree: Degree.pgGraduateCertificate,
     termType: TermType.Semester,
     termsCount: 1,
@@ -70,7 +67,6 @@ export const pgGraduateCertificateProgrammes = [
   {
     code: "PGCGI",
     title: "Post Graduate Certificate in Geoinformatics",
-    fullName: "Post Graduate Certificate in Geoinformatics",
     degree: Degree.pgGraduateCertificate,
     termType: TermType.Semester,
     termsCount: 1,
@@ -91,7 +87,6 @@ export const pgGraduateCertificateProgrammes = [
   {
     code: "ACPDM",
     title: "Advanced Certificate in Power Distribution Management",
-    fullName: "Advanced Certificate in Power Distribution Management",
     degree: Degree.pgGraduateCertificate,
     termType: TermType.Semester,
     termsCount: 1,
@@ -112,7 +107,6 @@ export const pgGraduateCertificateProgrammes = [
   {
     code: "PGCINDS",
     title: "Post Graduate Certificate in Industrial Safety",
-    fullName: "Post Graduate Certificate in Industrial Safety",
     degree: Degree.pgGraduateCertificate,
     termType: TermType.Semester,
     termsCount: 1,
@@ -134,7 +128,6 @@ export const pgGraduateCertificateProgrammes = [
   {
     code: "PGCIPWS",
     title: "Post Graduate Certificate in Inventory Planning and Warehousing for Engineers",
-    fullName: "Post Graduate Certificate in Inventory Planning and Warehousing for Engineers",
     degree: Degree.pgGraduateCertificate,
     termType: TermType.Semester,
     termsCount: 1,
@@ -155,7 +148,6 @@ export const pgGraduateCertificateProgrammes = [
   {
     code: "PGCAP",
     title: "Post Graduate Certificate in Agriculture Policy",
-    fullName: "Post Graduate Certificate in Agriculture Policy",
     degree: Degree.pgGraduateCertificate,
     termType: TermType.Semester,
     termsCount: 1,
@@ -176,7 +168,6 @@ export const pgGraduateCertificateProgrammes = [
   {
     code: "PGCGPS",
     title: "Post Graduate Certificate in Gandhi and Peace Studies",
-    fullName: "Post Graduate Certificate in Gandhi and Peace Studies",
     degree: Degree.pgGraduateCertificate,
     termType: TermType.Semester,
     termsCount: 1,
@@ -197,7 +188,6 @@ export const pgGraduateCertificateProgrammes = [
   {
     code: "PGCAE",
     title: "Post Graduate Certificate in Adult Education",
-    fullName: "Post Graduate Certificate in Adult Education",
     degree: Degree.pgGraduateCertificate,
     termType: TermType.Semester,
     termsCount: 1,
@@ -217,8 +207,6 @@ export const pgGraduateCertificateProgrammes = [
   {
     code: "PGCIATIVI",
     title:
-      "Post Graduate Certificate in Information and Assistive Technologies for the Instructors of Visually Impaired",
-    fullName:
       "Post Graduate Certificate in Information and Assistive Technologies for the Instructors of Visually Impaired",
     degree: Degree.pgGraduateCertificate,
     termType: TermType.Semester,
@@ -241,7 +229,6 @@ export const pgGraduateCertificateProgrammes = [
   {
     code: "PGCBHT",
     title: "Post Graduate Certificate in Bangla-Hindi Translation",
-    fullName: "Post Graduate Certificate in Bangla-Hindi Translation",
     degree: Degree.pgGraduateCertificate,
     termType: TermType.Semester,
     termsCount: 1,
@@ -262,7 +249,6 @@ export const pgGraduateCertificateProgrammes = [
   {
     code: "PGCMHT",
     title: "Post Graduate Certificate in Malayalam-Hindi Translation",
-    fullName: "Post Graduate Certificate in Malayalam-Hindi Translation",
     degree: Degree.pgGraduateCertificate,
     termType: TermType.Semester,
     termsCount: 1,
@@ -283,7 +269,6 @@ export const pgGraduateCertificateProgrammes = [
   {
     code: "PGCMDM",
     title: "Post Graduate Certificate in Medical Management of CBRNE Disasters",
-    fullName: "Post Graduate Certificate in Medical Management of CBRNE Disasters",
     degree: Degree.pgGraduateCertificate,
     termType: TermType.Semester,
     termsCount: 1,
