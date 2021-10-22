@@ -28,7 +28,6 @@ const collegeSchema = Schema({
     vidyaLakshmiPortal: String,
   },
   image: String,
-  programmes: [{ type: Schema.Types.ObjectId, ref: "Programme" }],
 });
 
 export default mongoose.model("College", collegeSchema);

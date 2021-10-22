@@ -24,7 +24,6 @@ const programmeSchema = Schema({
   termType: { type: TermType, default: TermType.Semester },
   termsCount: { type: Number, default: 6 },
   image: String,
-  courses: [{ type: Schema.Types.ObjectId, ref: "Course" }],
 });
 
 export default mongoose.model("Programme", programmeSchema);
