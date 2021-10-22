@@ -1,5 +1,5 @@
 import CssBaseline from "@material-ui/core/CssBaseline";
-import { createMuiTheme, ThemeProvider } from "@material-ui/core/styles";
+import { createTheme, ThemeProvider } from "@material-ui/core/styles";
 import { useThemeToggler } from "hooks/useThemeToggler";
 import React, { useMemo } from "react";
 import { BrowserRouter as Router } from "react-router-dom";
@@ -13,7 +13,7 @@ const App = () => {
   const [themeMode, toggleThemeMode] = useThemeToggler();
   const lightTheme = useMemo(
     () =>
-      createMuiTheme({
+      createTheme({
         palette: {
           type: "light",
           border: {
@@ -49,7 +49,7 @@ const App = () => {
 
   const darkTheme = useMemo(
     () =>
-      createMuiTheme({
+      createTheme({
         palette: {
           type: "dark",
           border: {
