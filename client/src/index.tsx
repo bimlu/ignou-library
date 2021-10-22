@@ -8,15 +8,8 @@ import { createApolloClient } from "utils/apollo-client";
 // GraphQL HTTP URL
 const API_URL = `${process.env.REACT_APP_API_URL}/graphql`;
 
-// GraphQL WebSocket (subscriptions) URL.
-// If its url is not set in .env then it has same url, host and pathname
-const WEBSOCKET_API_URL = process.env.REACT_APP_WEBSOCKET_API_URL;
-const websocketApiUrl = WEBSOCKET_API_URL
-  ? WEBSOCKET_API_URL
-  : API_URL.replace("http://", "ws://").replace("http://", "ws://");
-
 // Create a Apollo client
-const apolloClient = createApolloClient(API_URL, `${websocketApiUrl}/graphql`);
+const apolloClient = createApolloClient(API_URL);
 
 render(
   <ApolloProvider client={apolloClient}>
