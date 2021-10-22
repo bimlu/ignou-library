@@ -1,10 +1,9 @@
-import { Degree, TermType, Category } from "../../constants/types";
+import { Category, Degree, TermType } from "../../constants/types";
 
 export const pgGraduateDiplomaProgrammes = [
   {
     code: "PGDRD",
     title: "Post Graduate Diploma in Rural Development",
-    name: "PGDRD",
     fullName: "Post Graduate Diploma in Rural Development",
     degree: Degree.pgGraduateDiploma,
     termType: TermType.Year,
@@ -29,7 +28,6 @@ export const pgGraduateDiplomaProgrammes = [
   {
     code: "PGDCFT",
     title: "Post Graduate Diploma in Counselling and Family Therapy",
-    name: "PGDCFT",
     fullName: "Post Graduate Diploma in Counselling and Family Therapy",
     degree: Degree.pgGraduateDiploma,
     termType: TermType.Year,
@@ -58,7 +56,6 @@ export const pgGraduateDiplomaProgrammes = [
   {
     code: "PGDT",
     title: "Post Graduate Diploma in Translation",
-    name: "PGDT",
     fullName: "Post Graduate Diploma in Translation",
     degree: Degree.pgGraduateDiploma,
     termType: TermType.Year,
@@ -81,7 +78,6 @@ export const pgGraduateDiplomaProgrammes = [
   {
     code: "PGDIBO",
     title: "Post Graduate Diploma in International Business Operations",
-    name: "PGDIBO",
     fullName: "Post Graduate Diploma in International Business Operations",
     degree: Degree.pgGraduateDiploma,
     termType: TermType.Year,
@@ -105,7 +101,6 @@ export const pgGraduateDiplomaProgrammes = [
   {
     code: "PGDAST",
     title: "Post Graduate Diploma in AppliedStatistics",
-    name: "PGDAST",
     fullName: "Post Graduate Diploma in AppliedStatistics",
     degree: Degree.pgGraduateDiploma,
     termType: TermType.Year,
@@ -132,7 +127,6 @@ export const pgGraduateDiplomaProgrammes = [
   {
     code: "PGDESD",
     title: "Post Graduate Diploma in Environment and Sustainable Development",
-    name: "PGDESD",
     fullName: "Post Graduate Diploma in Environment and Sustainable Development",
     degree: Degree.pgGraduateDiploma,
     termType: TermType.Year,
@@ -158,7 +152,6 @@ export const pgGraduateDiplomaProgrammes = [
   {
     code: "PGDAC",
     title: "Post Graduate Diploma in Analytical Chemistry",
-    name: "PGDAC",
     fullName: "Post Graduate Diploma in Analytical Chemistry",
     degree: Degree.pgGraduateDiploma,
     termType: TermType.Year,
@@ -184,7 +177,6 @@ export const pgGraduateDiplomaProgrammes = [
   {
     code: "PGDDM",
     title: "Post Graduate Diploma in Disaster Management",
-    name: "PGDDM",
     fullName: "Post Graduate Diploma in Disaster Management",
     degree: Degree.pgGraduateDiploma,
     termType: TermType.Year,
@@ -211,7 +203,6 @@ export const pgGraduateDiplomaProgrammes = [
   {
     code: "PGDMH",
     title: "Post Graduate Diploma in Mental Health",
-    name: "PGDMH",
     fullName: "Post Graduate Diploma in Mental Health",
     degree: Degree.pgGraduateDiploma,
     termType: TermType.Year,
@@ -235,7 +226,6 @@ export const pgGraduateDiplomaProgrammes = [
   {
     code: "PGDLAN",
     title: "Post Graduate Diploma in Library Automation and Networking",
-    name: "PGDLAN",
     fullName: "Post Graduate Diploma in Library Automation and Networking",
     degree: Degree.pgGraduateDiploma,
     termType: TermType.Year,
@@ -268,7 +258,6 @@ export const pgGraduateDiplomaProgrammes = [
   {
     code: "PGDGPS",
     title: "Post Graduate Diploma in Gandhi and Peace Studies",
-    name: "PGDGPS",
     fullName: "Post Graduate Diploma in Gandhi and Peace Studies",
     degree: Degree.pgGraduateDiploma,
     termType: TermType.Year,
@@ -294,7 +283,6 @@ export const pgGraduateDiplomaProgrammes = [
   {
     code: "PGDHE",
     title: "Post Graduate Diploma in Higher Education",
-    name: "PGDHE",
     fullName: "Post Graduate Diploma in Higher Education",
     degree: Degree.pgGraduateDiploma,
     termType: TermType.Year,
@@ -319,7 +307,6 @@ export const pgGraduateDiplomaProgrammes = [
   {
     code: "PGDET",
     title: "Post Graduate Diploma in Educational Technology",
-    name: "PGDET",
     fullName: "Post Graduate Diploma in Educational Technology",
     degree: Degree.pgGraduateDiploma,
     termType: TermType.Year,
@@ -342,7 +329,6 @@ export const pgGraduateDiplomaProgrammes = [
   {
     code: "PGDSLM",
     title: "Post Graduate Diploma in School Leadership and Management",
-    name: "PGDSLM",
     fullName: "Post Graduate Diploma in School Leadership and Management",
     degree: Degree.pgGraduateDiploma,
     termType: TermType.Year,
@@ -366,7 +352,6 @@ export const pgGraduateDiplomaProgrammes = [
   {
     code: "PGDEMA",
     title: "Post Graduate Diploma in Educational Management and Administration",
-    name: "PGDEMA",
     fullName: "Post Graduate Diploma in Educational Management and Administration",
     degree: Degree.pgGraduateDiploma,
     termType: TermType.Year,
@@ -393,7 +378,6 @@ export const pgGraduateDiplomaProgrammes = [
   {
     code: "PGDPPED",
     title: "Post Graduate Diploma in Pre Primary Education",
-    name: "PGDPPED",
     fullName: "Post Graduate Diploma in Pre Primary Education",
     degree: Degree.pgGraduateDiploma,
     termType: TermType.Year,
@@ -416,7 +400,6 @@ export const pgGraduateDiplomaProgrammes = [
   {
     code: "PGDAE",
     title: "Post Graduate Diploma in Adult Education",
-    name: "PGDAE",
     fullName: "Post Graduate Diploma in Adult Education",
     degree: Degree.pgGraduateDiploma,
     termType: TermType.Year,
@@ -439,7 +422,6 @@ export const pgGraduateDiplomaProgrammes = [
   {
     code: "PGDUPDL",
     title: "Post Graduate Diploma in Urban Planning and Development",
-    name: "PGDUPDL",
     fullName: "Post Graduate Diploma in Urban Planning and Development",
     degree: Degree.pgGraduateDiploma,
     termType: TermType.Year,
@@ -463,7 +445,6 @@ export const pgGraduateDiplomaProgrammes = [
   {
     code: "PGDDVS",
     title: "Post Graduate Diploma in Development Studies",
-    name: "PGDDVS",
     fullName: "Post Graduate Diploma in Development Studies",
     degree: Degree.pgGraduateDiploma,
     termType: TermType.Year,
@@ -487,7 +468,6 @@ export const pgGraduateDiplomaProgrammes = [
   {
     code: "PGDAW",
     title: "Post Graduate Diploma in Animal Welfare",
-    name: "PGDAW",
     fullName: "Post Graduate Diploma in Animal Welfare",
     degree: Degree.pgGraduateDiploma,
     termType: TermType.Year,
@@ -509,7 +489,6 @@ export const pgGraduateDiplomaProgrammes = [
   {
     code: "PGDCSR",
     title: "Post Graduate Diploma in Corporate Social Responsibility",
-    name: "PGDCSR",
     fullName: "Post Graduate Diploma in Corporate Social Responsibility",
     degree: Degree.pgGraduateDiploma,
     termType: TermType.Year,
@@ -533,7 +512,6 @@ export const pgGraduateDiplomaProgrammes = [
   {
     code: "PGJMC",
     title: "Post Graduate Diploma in Journalism and Mass Communication",
-    name: "PGJMC",
     fullName: "Post Graduate Diploma in Journalism and Mass Communication",
     degree: Degree.pgGraduateDiploma,
     termType: TermType.Year,
@@ -560,7 +538,6 @@ export const pgGraduateDiplomaProgrammes = [
   {
     code: "PGDAPP",
     title: "Post Graduate Diploma in Audio Programme Production",
-    name: "PGDAPP",
     fullName: "Post Graduate Diploma in Audio Programme Production",
     degree: Degree.pgGraduateDiploma,
     termType: TermType.Year,
@@ -582,7 +559,6 @@ export const pgGraduateDiplomaProgrammes = [
   {
     code: "PGDIDM",
     title: "Post Graduate Diploma in Digital Media",
-    name: "PGDIDM",
     fullName: "Post Graduate Diploma in Digital Media",
     degree: Degree.pgGraduateDiploma,
     termType: TermType.Year,
@@ -607,7 +583,6 @@ export const pgGraduateDiplomaProgrammes = [
   {
     code: "PGDDC",
     title: "Post Graduate Diploma in Development Communication",
-    name: "PGDDC",
     fullName: "Post Graduate Diploma in Development Communication",
     degree: Degree.pgGraduateDiploma,
     termType: TermType.Year,
@@ -632,7 +607,6 @@ export const pgGraduateDiplomaProgrammes = [
   {
     code: "PGDFSQM",
     title: "Post Graduate Diploma in Food Safety and Quality Management",
-    name: "PGDFSQM",
     fullName: "Post Graduate Diploma in Food Safety and Quality Management",
     degree: Degree.pgGraduateDiploma,
     termType: TermType.Year,
@@ -659,7 +633,6 @@ export const pgGraduateDiplomaProgrammes = [
   {
     code: "PGDIS",
     title: "Post Graduate Diploma in Information Security",
-    name: "PGDIS",
     fullName: "Post Graduate Diploma in Information Security",
     degree: Degree.pgGraduateDiploma,
     termType: TermType.Semester,
@@ -686,7 +659,6 @@ export const pgGraduateDiplomaProgrammes = [
   {
     code: "PGDPSM",
     title: "Post Graduate Diploma in Pharmaceutical Sales Management",
-    name: "PGDPSM",
     fullName: "Post Graduate Diploma in Pharmaceutical Sales Management",
     degree: Degree.pgGraduateDiploma,
     termType: TermType.Year,
@@ -711,7 +683,6 @@ export const pgGraduateDiplomaProgrammes = [
   {
     code: "PGDIPR",
     title: "Post Graduate Diploma in Intellectual Property Rights",
-    name: "PGDIPR",
     fullName: "Post Graduate Diploma in Intellectual Property Rights",
     degree: Degree.pgGraduateDiploma,
     termType: TermType.Year,
@@ -737,7 +708,6 @@ export const pgGraduateDiplomaProgrammes = [
   {
     code: "PGDCJ",
     title: "Post Graduate Diploma in Criminal Justice",
-    name: "PGDCJ",
     fullName: "Post Graduate Diploma in Criminal Justice",
     degree: Degree.pgGraduateDiploma,
     termType: TermType.Year,
@@ -763,7 +733,6 @@ export const pgGraduateDiplomaProgrammes = [
   {
     code: "PGDEOH",
     title: "Post Graduate Diploma in Environmental and Occupational Health",
-    name: "PGDEOH",
     fullName: "Post Graduate Diploma in Environmental and Occupational Health",
     degree: Degree.pgGraduateDiploma,
     termType: TermType.Year,
@@ -791,7 +760,6 @@ export const pgGraduateDiplomaProgrammes = [
   {
     code: "PGDFCS",
     title: "Post Graduate Diploma in Folklore and Culture Studies",
-    name: "PGDFCS",
     fullName: "Post Graduate Diploma in Folklore and Culture Studies",
     degree: Degree.pgGraduateDiploma,
     termType: TermType.Year,
@@ -814,7 +782,6 @@ export const pgGraduateDiplomaProgrammes = [
   {
     code: "PGDSS",
     title: "Post Graduate Diploma in Sustainability Science",
-    name: "PGDSS",
     fullName: "Post Graduate Diploma in Sustainability Science",
     degree: Degree.pgGraduateDiploma,
     termType: TermType.Year,
@@ -840,7 +807,6 @@ export const pgGraduateDiplomaProgrammes = [
   {
     code: "PGDWGS",
     title: "Post Graduate Diploma in Women’s & Gender Studies",
-    name: "PGDWGS",
     fullName: "Post Graduate Diploma in Women’s & Gender Studies",
     degree: Degree.pgGraduateDiploma,
     termType: TermType.Semester,
@@ -864,7 +830,6 @@ export const pgGraduateDiplomaProgrammes = [
   {
     code: "PGDBP",
     title: "Post Graduate Diploma in Book Publishing",
-    name: "PGDBP",
     fullName: "Post Graduate Diploma in Book Publishing",
     degree: Degree.pgGraduateDiploma,
     termType: TermType.Year,
@@ -891,7 +856,6 @@ export const pgGraduateDiplomaProgrammes = [
   {
     code: "PGDCOUN",
     title: "Post Graduate Diploma in Social Work Counselling",
-    name: "PGDCOUN",
     fullName: "Post Graduate Diploma in Social Work Counselling",
     degree: Degree.pgGraduateDiploma,
     termType: TermType.Year,
@@ -916,7 +880,6 @@ export const pgGraduateDiplomaProgrammes = [
   {
     code: "PGDHHM",
     title: "Post Graduate Diploma in Hospital and Health Management",
-    name: "PGDHHM",
     fullName: "Post Graduate Diploma in Hospital and Health Management",
     degree: Degree.pgGraduateDiploma,
     termType: TermType.Year,
@@ -941,7 +904,6 @@ export const pgGraduateDiplomaProgrammes = [
   {
     code: "PGDGM",
     title: "Post Graduate Diploma in Geriatric Medicine",
-    name: "PGDGM",
     fullName: "Post Graduate Diploma in Geriatric Medicine",
     degree: Degree.pgGraduateDiploma,
     termType: TermType.Year,
@@ -963,7 +925,6 @@ export const pgGraduateDiplomaProgrammes = [
   {
     code: "PGDMCH",
     title: "Post Graduate Diploma in Maternal and Child Health",
-    name: "PGDMCH",
     fullName: "Post Graduate Diploma in Maternal and Child Health",
     degree: Degree.pgGraduateDiploma,
     termType: TermType.Year,
@@ -988,7 +949,6 @@ export const pgGraduateDiplomaProgrammes = [
   {
     code: "PGDHIVM",
     title: "Post Graduate Diploma in HIV Medicine",
-    name: "PGDHIVM",
     fullName: "Post Graduate Diploma in HIV Medicine",
     degree: Degree.pgGraduateDiploma,
     termType: TermType.Year,
@@ -1012,7 +972,6 @@ export const pgGraduateDiplomaProgrammes = [
   {
     code: "PGDCA_NEW",
     title: "Post Graduate Diploma inComputerApplications",
-    name: "PGDCA_NEW",
     fullName: "Post Graduate Diploma inComputerApplications",
     degree: Degree.pgGraduateDiploma,
     termType: TermType.Semester,

@@ -4,7 +4,6 @@ export const mastersDegreeProgrammes = [
   {
     code: "MCOM",
     title: "Master of Commerce",
-    name: "MCOM",
     fullName: "Master of Commerce",
     degree: Degree.masters,
     termType: TermType.Year,
@@ -35,7 +34,6 @@ export const mastersDegreeProgrammes = [
   {
     code: "MEG",
     title: "Master of Arts (English)",
-    name: "MEG",
     fullName: "Master of Arts (English)",
     degree: Degree.masters,
     termType: TermType.Year,
@@ -70,7 +68,6 @@ export const mastersDegreeProgrammes = [
   {
     code: "MAUD",
     title: "Master of Arts (Urdu)",
-    name: "MAUD",
     fullName: "Master of Arts (Urdu)",
     degree: Degree.masters,
     termType: TermType.Year,
@@ -98,7 +95,6 @@ export const mastersDegreeProgrammes = [
   {
     code: "MPS",
     title: "Master of Arts (Political Science)",
-    name: "MPS",
     fullName: "Master of Arts (Political Science)",
     degree: Degree.masters,
     termType: TermType.Year,
@@ -141,7 +137,6 @@ export const mastersDegreeProgrammes = [
   {
     code: "MAH",
     title: "Master of Arts (History)",
-    name: "MAH",
     fullName: "Master of Arts (History)",
     degree: Degree.masters,
     termType: TermType.Year,
@@ -171,7 +166,6 @@ export const mastersDegreeProgrammes = [
   {
     code: "MSO",
     title: "Master of Arts (Sociology)",
-    name: "MSO",
     fullName: "Master of Arts (Sociology)",
     degree: Degree.masters,
     termType: TermType.Year,
@@ -200,7 +194,6 @@ export const mastersDegreeProgrammes = [
   {
     code: "MAPC",
     title: "Master of Arts (Psychology)",
-    name: "MAPC",
     fullName: "Master of Arts (Psychology)",
     degree: Degree.masters,
     termType: TermType.Year,
@@ -244,7 +237,6 @@ export const mastersDegreeProgrammes = [
   {
     code: "MEC",
     title: "Master of Arts (Economics)",
-    name: "MEC",
     fullName: "Master of Arts (Economics)",
     degree: Degree.masters,
     termType: TermType.Year,
@@ -279,7 +271,6 @@ export const mastersDegreeProgrammes = [
   {
     code: "MPA",
     title: "Master of Arts (Public Administration)",
-    name: "MPA",
     fullName: "Master of Arts (Public Administration)",
     degree: Degree.masters,
     termType: TermType.Year,
@@ -309,7 +300,6 @@ export const mastersDegreeProgrammes = [
   {
     code: "MLIS",
     title: "Master of Library and Information Sciences",
-    name: "MLIS",
     fullName: "Master of Library and Information Sciences",
     degree: Degree.masters,
     termType: TermType.Year,
@@ -341,7 +331,6 @@ export const mastersDegreeProgrammes = [
   {
     code: "MAAN",
     title: "Master of Arts (Anthropology)",
-    name: "MAAN",
     fullName: "Master of Arts (Anthropology)",
     degree: Degree.masters,
     termType: TermType.Year,
@@ -371,7 +360,6 @@ export const mastersDegreeProgrammes = [
   {
     code: "MGPS",
     title: "Master of Arts (Gandhi and Peace Studies)",
-    name: "MGPS",
     fullName: "Master of Arts (Gandhi and Peace Studies)",
     degree: Degree.masters,
     termType: TermType.Year,
@@ -407,7 +395,6 @@ export const mastersDegreeProgrammes = [
   {
     code: "MCA_NEW",
     title: "Master of Computer Applications",
-    name: "MCA_NEW",
     fullName: "Master of Computer Applications",
     degree: Degree.masters,
     termType: TermType.Semester,
@@ -451,7 +438,6 @@ export const mastersDegreeProgrammes = [
   {
     code: "MARD",
     title: "Master of Arts (Rural Development)",
-    name: "MARD",
     fullName: "Master of Arts (Rural Development)",
     degree: Degree.masters,
     termType: TermType.Year,
@@ -481,7 +467,6 @@ export const mastersDegreeProgrammes = [
   {
     code: "MSCDFSM",
     title: "Master of Science (Food Nutrition)",
-    name: "MSCCFT",
     fullName: "Master of Science (Counselling and Family Therapy)",
     degree: Degree.masters,
     termType: TermType.Year,
@@ -520,7 +505,6 @@ export const mastersDegreeProgrammes = [
   {
     code: "MSCCFT",
     title: "Master of Science (Counselling and Family Therapy)",
-    name: "MSCCFT",
     fullName: "Master of Science (Counselling and Family Therapy)",
     degree: Degree.masters,
     termType: TermType.Year,
@@ -562,7 +546,6 @@ export const mastersDegreeProgrammes = [
   {
     code: "MSW",
     title: "Master of Social Work",
-    name: "MSW",
     fullName: "Master of Social Work",
     degree: Degree.masters,
     termType: TermType.Year,
@@ -602,7 +585,6 @@ export const mastersDegreeProgrammes = [
   {
     code: "MSWC",
     title: "Master of Social Work (Counselling)",
-    name: "MSWC",
     fullName: "Master of Social Work (Counselling)",
     degree: Degree.masters,
     termType: TermType.Year,
@@ -635,7 +617,6 @@ export const mastersDegreeProgrammes = [
   {
     code: "MAEDU",
     title: "Master of Arts (Education)",
-    name: "MAEDU",
     fullName: "Master of Arts (Education)",
     degree: Degree.masters,
     termType: TermType.Year,
@@ -683,7 +664,6 @@ export const mastersDegreeProgrammes = [
   {
     code: "MADE",
     title: "Master of Arts (Distance Education)",
-    name: "MADE",
     fullName: "Master of Arts (Distance Education)",
     degree: Degree.masters,
     termType: TermType.Year,
@@ -712,7 +692,6 @@ export const mastersDegreeProgrammes = [
   {
     code: "MAAE",
     title: "Master of Arts (Adult Education)",
-    name: "MAAE",
     fullName: "Master of Arts (Adult Education)",
     degree: Degree.masters,
     termType: TermType.Year,
@@ -743,7 +722,6 @@ export const mastersDegreeProgrammes = [
   {
     code: "MTTM",
     title: "Master of Tourism and Travel Management",
-    name: "MTTM",
     fullName: "Master of Tourism and Travel Management",
     degree: Degree.masters,
     termType: TermType.Semester,
@@ -782,7 +760,6 @@ export const mastersDegreeProgrammes = [
   {
     code: "MAPY",
     title: "Master of Arts (Philosophy)",
-    name: "MAPY",
     fullName: "Master of Arts (Philosophy)",
     degree: Degree.masters,
     termType: TermType.Year,
@@ -821,7 +798,6 @@ export const mastersDegreeProgrammes = [
   {
     code: "MSCENV",
     title: "Master of Science (Environmental Science)",
-    name: "MSCENV",
     fullName: "Master of Science (Environmental Science)",
     degree: Degree.masters,
     termType: TermType.Semester,
@@ -866,7 +842,6 @@ export const mastersDegreeProgrammes = [
   {
     code: "MAFCS",
     title: "Master of Arts (Folklore and Culture Studies)",
-    name: "MAFCS",
     fullName: "Master of Arts (Folklore and Culture Studies)",
     degree: Degree.masters,
     termType: TermType.Year,
@@ -894,7 +869,6 @@ export const mastersDegreeProgrammes = [
   {
     code: "MADVS",
     title: "Master of Arts (Development Studies)",
-    name: "MADVS",
     fullName: "Master of Arts (Development Studies)",
     degree: Degree.masters,
     termType: TermType.Year,
@@ -927,7 +901,6 @@ export const mastersDegreeProgrammes = [
   {
     code: "MAWGS",
     title: "Master of Arts (Women and Gender Studies)",
-    name: "MAWGS",
     fullName: "Master of Arts (Women and Gender Studies)",
     degree: Degree.masters,
     termType: TermType.Year,
@@ -964,7 +937,6 @@ export const mastersDegreeProgrammes = [
   {
     code: "MAGD",
     title: "Master of Arts (Gender and Development Studies)",
-    name: "MAGD",
     fullName: "Master of Arts (Gender and Development Studies)",
     degree: Degree.masters,
     termType: TermType.Year,
@@ -1000,7 +972,6 @@ export const mastersDegreeProgrammes = [
   {
     code: "MATS",
     title: "Master of Arts (Translation Studies)",
-    name: "MATS",
     fullName: "Master of Arts (Translation Studies)",
     degree: Degree.masters,
     termType: TermType.Year,
@@ -1032,7 +1003,6 @@ export const mastersDegreeProgrammes = [
   {
     code: "MSCMACS",
     title: "Master of Science (Mathematics with Application in Computer Science)",
-    name: "MSCMACS",
     fullName: "Master of Science (Mathematics with Application in Computer Science)",
     degree: Degree.masters,
     termType: TermType.Semester,
@@ -1071,7 +1041,6 @@ export const mastersDegreeProgrammes = [
   {
     code: "MAJMC",
     title: "Master of Arts (Journalism and Mass Communication)",
-    name: "MAJMC",
     fullName: "Master of Arts (Journalism and Mass Communication)",
     degree: Degree.masters,
     termType: TermType.Year,
@@ -1107,7 +1076,6 @@ export const mastersDegreeProgrammes = [
   {
     code: "MADP",
     title: "Master of Arts (Drawing and Painting)",
-    name: "MADP",
     fullName: "Master of Arts (Drawing and Painting)",
     degree: Degree.masters,
     termType: TermType.Year,
@@ -1139,7 +1107,6 @@ export const mastersDegreeProgrammes = [
   {
     code: "MSCIS",
     title: "Master of Science (Information Security)",
-    name: "MSCIS",
     fullName: "Master of Science (Information Security)",
     degree: Degree.masters,
     termType: TermType.Semester,
@@ -1179,7 +1146,6 @@ export const mastersDegreeProgrammes = [
   {
     code: "MAER",
     title: "MASTER OF ARTS (ENTREPRENEURSHIP)",
-    name: "MAER",
     fullName: "MASTER OF ARTS (ENTREPRENEURSHIP)",
     degree: Degree.masters,
     termType: TermType.Year,

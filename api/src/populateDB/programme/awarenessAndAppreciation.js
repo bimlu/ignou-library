@@ -1,10 +1,9 @@
-import { Degree, TermType, Category } from "../../constants/types";
+import { Category, Degree, TermType } from "../../constants/types";
 
 export const awarenessAndAppreciationProgrammes = [
   {
     code: "APDF",
     title: "Awareness Programme on Dairy Farming",
-    name: "APDF",
     fullName: "Awareness Programme on Dairy Farming",
     degree: Degree.awarenessAndAppreciation,
     termType: TermType.Quarter,
@@ -36,7 +35,6 @@ export const awarenessAndAppreciationProgrammes = [
   {
     code: "ACE",
     title: "Appreciation Course on Environment",
-    name: "ACE",
     fullName: "Appreciation Course on Environment",
     degree: Degree.awarenessAndAppreciation,
     termType: TermType.Quarter,
@@ -52,7 +50,6 @@ export const awarenessAndAppreciationProgrammes = [
   {
     code: "ACPSD",
     title: "Appreciation Course on Population and Sustainable Development",
-    name: "ACPSD",
     fullName: "Appreciation Course on Population and Sustainable Development",
     degree: Degree.awarenessAndAppreciation,
     termType: TermType.Quarter,

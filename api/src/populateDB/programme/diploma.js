@@ -1,10 +1,9 @@
-import { Degree, TermType, Category } from "../../constants/types";
+import { Category, Degree, TermType } from "../../constants/types";
 
 export const diplomaProgrammes = [
   {
     code: "DECE",
     title: "Diploma in Early Childhood Care and Education",
-    name: "DECE",
     fullName: "Diploma in Early Childhood Care and Education",
     degree: Degree.diploma,
     termType: TermType.Year,
@@ -26,7 +25,6 @@ export const diplomaProgrammes = [
   {
     code: "DNHE",
     title: "Diploma in Nutrition & Health Education",
-    name: "DNHE",
     fullName: "Diploma in Nutrition & Health Education",
     degree: Degree.diploma,
     termType: TermType.Year,
@@ -48,7 +46,6 @@ export const diplomaProgrammes = [
   {
     code: "DPLAD",
     title: "Diploma in Panchayat Level Administration and Development",
-    name: "DPLAD",
     fullName: "Diploma in Panchayat Level Administration and Development",
     degree: Degree.diploma,
     termType: TermType.Year,
@@ -71,7 +68,6 @@ export const diplomaProgrammes = [
   {
     code: "DEVMT",
     title: "Diploma in Event Management",
-    name: "DEVMT",
     fullName: "Diploma in Event Management",
     degree: Degree.diploma,
     termType: TermType.Year,
@@ -96,7 +92,6 @@ export const diplomaProgrammes = [
   {
     code: "DTS",
     title: "Diploma in Tourism Studies",
-    name: "DTS",
     fullName: "Diploma in Tourism Studies",
     degree: Degree.diploma,
     termType: TermType.Year,
@@ -123,7 +118,6 @@ export const diplomaProgrammes = [
   {
     code: "DCE",
     title: "Diploma in Creative Writing in English",
-    name: "DCE",
     fullName: "Diploma in Creative Writing in English",
     degree: Degree.diploma,
     termType: TermType.Year,
@@ -147,7 +141,6 @@ export const diplomaProgrammes = [
   {
     code: "DUL",
     title: "Diploma Programme in Urdu",
-    name: "DUL",
     fullName: "Diploma Programme in Urdu",
     degree: Degree.diploma,
     termType: TermType.Year,
@@ -171,7 +164,6 @@ export const diplomaProgrammes = [
   {
     code: "DVAPFV",
     title: "Diploma in Value Added Products from Fruits & Vegetables",
-    name: "DVAPFV",
     fullName: "Diploma in Value Added Products from Fruits & Vegetables",
     degree: Degree.diploma,
     termType: TermType.Year,
@@ -197,7 +189,6 @@ export const diplomaProgrammes = [
   {
     code: "DDT",
     title: "Diploma in Dairy Technology",
-    name: "DDT",
     fullName: "Diploma in Dairy Technology",
     degree: Degree.diploma,
     termType: TermType.Year,
@@ -223,7 +214,6 @@ export const diplomaProgrammes = [
   {
     code: "DMT",
     title: "Diploma in Meat Technology",
-    name: "DMT",
     fullName: "Diploma in Meat Technology",
     degree: Degree.diploma,
     termType: TermType.Year,
@@ -249,7 +239,6 @@ export const diplomaProgrammes = [
   {
     code: "DWM",
     title: "Diploma in Watershed Management",
-    name: "DWM",
     fullName: "Diploma in Watershed Management",
     degree: Degree.diploma,
     termType: TermType.Year,
@@ -275,7 +264,6 @@ export const diplomaProgrammes = [
   {
     code: "DHORT",
     title: "Diploma in Horticulture",
-    name: "DHORT",
     fullName: "Diploma in Horticulture",
     degree: Degree.diploma,
     termType: TermType.Year,
@@ -298,7 +286,6 @@ export const diplomaProgrammes = [
   {
     code: "DWED",
     title: "Diploma in Women’s Empowerment and Development",
-    name: "DWED",
     fullName: "Diploma in Women’s Empowerment and Development",
     degree: Degree.diploma,
     termType: TermType.Year,
@@ -323,7 +310,6 @@ export const diplomaProgrammes = [
   {
     code: "DAFE",
     title: "Diploma in HIV and Family Education",
-    name: "DAFE",
     fullName: "Diploma in HIV and Family Education",
     degree: Degree.diploma,
     termType: TermType.Year,
@@ -347,7 +333,6 @@ export const diplomaProgrammes = [
   {
     code: "DBPOFA",
     title: "Diploma in Business Process Outsourcing Finance and Accounting",
-    name: "DBPOFA",
     fullName: "Diploma in Business Process Outsourcing Finance and Accounting",
     degree: Degree.diploma,
     termType: TermType.Year,
@@ -374,7 +359,6 @@ export const diplomaProgrammes = [
   {
     code: "DMOP",
     title: "Diploma in Modern Office Practice",
-    name: "DMOP",
     fullName: "Diploma in Modern Office Practice",
     degree: Degree.diploma,
     termType: TermType.Year,
@@ -397,7 +381,6 @@ export const diplomaProgrammes = [
   {
     code: "DIPP",
     title: "Diploma in Paralegal Practice",
-    name: "DIPP",
     fullName: "Diploma in Paralegal Practice",
     degree: Degree.diploma,
     termType: TermType.Year,
@@ -420,7 +403,6 @@ export const diplomaProgrammes = [
   {
     code: "DAQ",
     title: "Diploma in Aquaculture",
-    name: "DAQ",
     fullName: "Diploma in Aquaculture",
     degree: Degree.diploma,
     termType: TermType.Year,
@@ -444,7 +426,6 @@ export const diplomaProgrammes = [
   {
     code: "DIR",
     title: "Diploma in Retailing",
-    name: "DIR",
     fullName: "Diploma in Retailing",
     degree: Degree.diploma,
     termType: TermType.Year,
@@ -467,7 +448,6 @@ export const diplomaProgrammes = [
   {
     code: "DTG",
     title: "Diploma in Teaching German as a Foreign Language",
-    name: "DTG",
     fullName: "Diploma in Teaching German as a Foreign Language",
     degree: Degree.diploma,
     termType: TermType.Year,
@@ -490,7 +470,6 @@ export const diplomaProgrammes = [
   {
     code: "DNA",
     title: "Diploma in Nursing Administration",
-    name: "DNA",
     fullName: "Diploma in Nursing Administration",
     degree: Degree.diploma,
     termType: TermType.Year,
@@ -515,7 +494,6 @@ export const diplomaProgrammes = [
   {
     code: "DCCN",
     title: "Diploma in Critical Care Nursing",
-    name: "DCCN",
     fullName: "Diploma in Critical Care Nursing",
     degree: Degree.diploma,
     termType: TermType.Year,
@@ -537,7 +515,6 @@ export const diplomaProgrammes = [
   {
     code: "DTH",
     title: "Diploma in Theatre Arts",
-    name: "DTH",
     fullName: "Diploma in Theatre Arts",
     degree: Degree.diploma,
     termType: TermType.Year,
@@ -560,7 +537,6 @@ export const diplomaProgrammes = [
   {
     code: "DPVE",
     title: "Diploma in Value Education",
-    name: "DPVE",
     fullName: "Diploma in Value Education",
     degree: Degree.diploma,
     termType: TermType.Year,
@@ -584,7 +560,6 @@ export const diplomaProgrammes = [
   {
     code: "DSCDM",
     title: "DIPLOMA IN SMART CITY DEVELOPMENT AND MANAGEMENT",
-    name: "DSCDM",
     fullName: "DIPLOMA IN SMART CITY DEVELOPMENT AND MANAGEMENT",
     degree: Degree.diploma,
     termType: TermType.Year,
