@@ -1,4 +1,3 @@
-import { Discipline } from "../../constants/types";
 import Course from "../../models/Course";
 import Programme from "../../models/Programme";
 import { getProgrammes, saveProgrammes } from "./programme";
@@ -33,12 +32,9 @@ export const createProgramme = async (programme) => {
           break;
         }
       }
-      if (!course1.discipline) {
-        course1.discipline = Discipline.None;
-      }
     }
 
-    // console.log(programme.programmeStructure);
+    console.log(programme.programmeStructure);
   }
 
   // console.log(programme);
