@@ -16,7 +16,7 @@ export const createCourses = () => {
   // });
 
   for (let course of courses) {
-    if (!course.name || !course.fullName) {
+    if (!course.code || !course.title) {
       console.log("Bad course: ", course);
       continue;
     }
