@@ -4,7 +4,7 @@ import { useThemeToggler } from "hooks/useThemeToggler";
 import React, { useMemo } from "react";
 import { BrowserRouter as Router } from "react-router-dom";
 import AppLayout from "./AppLayout";
-import ScrollToTop from "./ScrollToTop";
+import BackToTop from "./Header/BackToTop";
 
 /**
  * Root component of the app
@@ -93,9 +93,8 @@ const App = () => {
       <CssBaseline />
 
       <Router>
-        <ScrollToTop>
-          <AppLayout toggleThemeMode={toggleThemeMode} />
-        </ScrollToTop>
+        <AppLayout toggleThemeMode={toggleThemeMode} />
+        <BackToTop />
       </Router>
     </ThemeProvider>
   );
