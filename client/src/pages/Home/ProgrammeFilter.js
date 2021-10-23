@@ -2,6 +2,8 @@ import Button from "@material-ui/core/Button";
 import { makeStyles } from "@material-ui/core/styles";
 import { DegreeType3 } from "constants/DegreeType";
 import React from "react";
+import { useStore } from "store";
+import { SET_DEGREE } from "store/degree";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -28,11 +30,12 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function ProgrammeFilter({ degreesCount, selectedDegree, setDegree }) {
+export default function ProgrammeFilter({ degreesCount, selectedDegree }) {
   const classes = useStyles();
+  const [, dispatch] = useStore();
 
-  const handleClick = (degreeValue) => {
-    setDegree(degreeValue);
+  const handleClick = (degree) => {
+    dispatch({ type: SET_DEGREE, payload: degree });
   };
 
   return (

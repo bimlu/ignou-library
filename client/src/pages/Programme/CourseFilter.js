@@ -2,6 +2,8 @@ import Button from "@material-ui/core/Button";
 import { makeStyles } from "@material-ui/core/styles";
 import { TermType } from "constants/TermType";
 import React from "react";
+import { useStore } from "store";
+import { SET_TERM } from "store/term";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -28,11 +30,12 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function CourseFilter({ termType, termsCount, selectedTerm, setTerm }) {
+export default function CourseFilter({ termType, termsCount, selectedTerm }) {
   const classes = useStyles();
+  const [, dispatch] = useStore();
 
   const handleClick = (term) => {
-    setTerm(term);
+    dispatch({ type: SET_TERM, payload: term });
   };
 
   return (
