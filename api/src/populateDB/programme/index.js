@@ -1,6 +1,6 @@
 import { Discipline } from "../../constants/types";
-// import Course from "../../models/Course";
-// import Programme from "../../models/Programme";
+import Course from "../../models/Course";
+import Programme from "../../models/Programme";
 import { getProgrammes, saveProgrammes } from "./programme";
 
 const getImage = (programme) =>
