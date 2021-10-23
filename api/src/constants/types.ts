@@ -50,4 +50,6 @@ export enum Discipline {
   Physics,
   Zoology,
   Other,
+
+  None,
 }

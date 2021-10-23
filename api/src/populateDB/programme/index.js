@@ -1,5 +1,6 @@
-import Course from "../../models/Course";
-import Programme from "../../models/Programme";
+import { Discipline } from "../../constants/types";
+// import Course from "../../models/Course";
+// import Programme from "../../models/Programme";
 import { getProgrammes, saveProgrammes } from "./programme";
 
 const getImage = (programme) =>
@@ -8,7 +9,7 @@ const getImage = (programme) =>
 export const createProgrammes = () => {
   const programmes = getProgrammes();
   for (let programme of programmes) {
-    if (!programme.name || !programme.fullName) {
+    if (!programme.code || !programme.title) {
       console.log("Bad Programme: ", programme);
       continue;
     }
@@ -22,6 +23,24 @@ export const createProgrammes = () => {
 };
 
 export const createProgramme = async (programme) => {
+  if (programme.programmeStructure && programme.cbcs) {
+    const courses1 = programme.programmeStructure;
+    const courses2 = programme.courses2;
+    for (let course1 of courses1) {
+      for (let course2 of courses2) {
+        if (course1.courseCode === course2.courseCode) {
+          course1.discipline = course2.discipline;
+          break;
+        }
+      }
+      if (!course1.discipline) {
+        course1.discipline = Discipline.None;
+      }
+    }
+
+    // console.log(programme.programmeStructure);
+  }
+
   // console.log(programme);
   if (programme.programmeStructure) {
     const newProgrammeStructure = [];
