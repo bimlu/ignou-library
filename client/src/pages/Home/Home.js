@@ -20,7 +20,7 @@ const Home = () => {
     <div>
       <Head title={`${COLLEGE_NAME.toUpperCase()}`} />
 
-      <ScrollManager scrollKey={`${pathname}${search}`} />
+      <ScrollManager scrollKey={`${pathname}${search}${degree}`} />
 
       <Box m={1} />
 

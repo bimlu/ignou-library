@@ -104,7 +104,7 @@ const Course = () => {
     <>
       <Head title={`${courseName.toUpperCase()} | ${programmeName.toUpperCase()}`} />
 
-      <ScrollManager scrollKey={`${pathname}${search}`} />
+      <ScrollManager scrollKey={`${pathname}${search}${courseName}`} />
 
       <Box m={1} />
 
