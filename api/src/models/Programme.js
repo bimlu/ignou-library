@@ -1,5 +1,5 @@
 import mongoose from "mongoose";
-import { Category, Degree, TermType } from "../constants/types";
+import { Category, Degree, Discipline, TermType } from "../constants/types";
 
 const Schema = mongoose.Schema;
 
@@ -9,6 +9,7 @@ const programmeStructureSchema = new Schema({
   course: { type: Schema.Types.ObjectId, ref: "Course" },
   credit: Number,
   category: { type: Category, default: Category.NONE },
+  discipline: { type: Discipline, default: Discipline.None },
 });
 
 const programmeSchema = Schema({

@@ -24,6 +24,7 @@ const ProgrammeSchema = gql`
     course: Course
     credit: Int
     category: Int
+    discipline: Int
   }
 
   type Programmes {
