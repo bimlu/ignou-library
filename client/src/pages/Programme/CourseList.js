@@ -68,7 +68,7 @@ const CourseList = ({ term, programmeId, programmeName }) => {
           ref={ref}
           outerRef={outerRef}
           style={style}
-          height={window.innerHeight}
+          height={window.innerHeight * 2}
           itemCount={filteredCourses.length}
           itemSize={220}
           onScroll={onScroll}

@@ -72,7 +72,7 @@ const ProgrammeList = ({ degree }) => {
           ref={ref}
           outerRef={outerRef}
           style={style}
-          height={window.innerHeight}
+          height={window.innerHeight * 2}
           itemCount={filteredProgrammes.length || count}
           itemSize={280}
           onScroll={onScroll}
