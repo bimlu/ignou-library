@@ -45,7 +45,11 @@ const Query = {
     const query = {};
 
     const count = await Programme.find(query).countDocuments();
-    const programmes = await Programme.find(query).populate("courses").skip(skip).limit(limit).sort({ createdAt: -1 });
+    const programmes = await Programme.find(query)
+      .populate("courses")
+      .skip(skip)
+      .limit(limit)
+      .sort({ coursesCount: "descending" });
 
     return { programmes, count };
   },

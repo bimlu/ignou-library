@@ -55,6 +55,8 @@ export const createProgramme = async (programme) => {
 
     programme = { ...programme, programmeStructure: newProgrammeStructure };
     // console.log("finalProgramme: ", programme);
+  } else {
+    programme = { ...programme, programmeStructure: [] };
   }
 
   const newProgramme = await new Programme({
@@ -70,5 +72,6 @@ export const createProgramme = async (programme) => {
     termType: programme.termType,
     termsCount: programme.termsCount,
     image: getImage(programme),
+    coursesCount: programme.programmeStructure.length,
   }).save();
 };

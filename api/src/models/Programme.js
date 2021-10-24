@@ -25,6 +25,7 @@ const programmeSchema = Schema({
   termType: { type: TermType, default: TermType.Semester },
   termsCount: { type: Number, default: 6 },
   image: String,
+  coursesCount: Number,
 });
 
 export default mongoose.model("Programme", programmeSchema);

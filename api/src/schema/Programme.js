@@ -16,6 +16,7 @@ const ProgrammeSchema = gql`
     termsCount: Int
     totalCredits: Int
     courses: [Course]
+    coursesCount: Int
   }
 
   type ProgrammeStructure {
