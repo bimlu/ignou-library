@@ -11,7 +11,7 @@ import ProgrammeList from "./ProgrammeList";
 const COLLEGE_NAME = "IGNOU";
 
 const Home = () => {
-  const { pathname, search } = useLocation();
+  const { pathname } = useLocation();
   const [{ degree }, dispatch] = useStore();
 
   useEffect(() => dispatch({ type: CLEAR_TERM }), []);
@@ -20,7 +20,7 @@ const Home = () => {
     <div>
       <Head title={`${COLLEGE_NAME.toUpperCase()}`} />
 
-      <ScrollManager scrollKey={`${pathname}${search}${degree}`} />
+      <ScrollManager scrollKey={`${pathname}${degree}`} />
 
       <Box m={1} />
 

@@ -22,7 +22,7 @@ const Programme = () => {
     <>
       <Head title={programmeName.toUpperCase()} />
 
-      <ScrollManager scrollKey={`${pathname}${search}${term}`} />
+      <ScrollManager scrollKey={`${pathname}/${programmeName}/${term}`} />
 
       <Box m={1} />
 

@@ -39,7 +39,7 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 const Course = () => {
-  const { pathname, search } = useLocation();
+  const { search } = useLocation();
   const classes = useStyles();
 
   const query = new URLSearchParams(search);
@@ -104,7 +104,7 @@ const Course = () => {
     <>
       <Head title={`${courseName.toUpperCase()} | ${programmeName.toUpperCase()}`} />
 
-      <ScrollManager scrollKey={`${pathname}${search}${courseName}`} />
+      <ScrollManager scrollKey={`${courseName}`} />
 
       <Box m={1} />
 
