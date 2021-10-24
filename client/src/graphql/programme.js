@@ -48,7 +48,6 @@ export const GET_PROGRAMMES = gql`
         termsCount
         image
         totalCredits
-        coursesCount
       }
     }
   }
