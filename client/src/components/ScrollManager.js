@@ -71,9 +71,9 @@ export default class ScrollPositionManager extends React.Component {
     // turn off browser default restore
     window.scrollTo(0, 0);
 
-    if (this.props.scrollKey !== prevProps.scrollKey) {
-      this.restoreScrollPosition();
-    }
+    // if (this.props.scrollKey !== prevProps.scrollKey) {
+    //   this.restoreScrollPosition();
+    // }
     // console.log(this.props);
     // this.restoreScrollPosition();
     // this.saveScrollPosition();
