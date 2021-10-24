@@ -25,6 +25,7 @@ const courseSchema = Schema({
   questionPapers: [String],
   image: String,
   programmes: [{ type: Schema.Types.ObjectId, ref: "Programme" }],
+  blocksCount: Number,
 });
 
 export default mongoose.model("Course", courseSchema);

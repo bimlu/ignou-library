@@ -30,15 +30,21 @@ const Query = {
 
     const query = code ? { code: code } : { _id: id };
 
-    const programme = await Programme.findOne(query)
-      .populate({ path: "programmeStructure", populate: { path: "course" } })
-      .populate("courses");
+    const programme = await Programme.findOne(query).populate({
+      path: "programmeStructure",
+      populate: { path: "course" },
+    });
 
     if (!programme) {
       throw new Error("Programme with given params doesn't exits.");
     }
 
-    return programme;
+    const sortedProgramme = {
+      ...programme,
+      programmeStructure: programme.programmeStructure.sort((a, b) => b.course.blocksCount - a.course.blocksCount),
+    };
+
+    return sortedProgramme;
   },
 
   getProgrammes: async (root, { skip, limit }, { Programme }) => {

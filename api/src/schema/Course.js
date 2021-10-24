@@ -25,6 +25,7 @@ const CourseSchema = gql`
     courseBlocks: [Block]
     questionPapers: [String]
     programmes: [Programme]
+    blocksCount: Int
   }
 
   type Courses {
