@@ -9,7 +9,7 @@ import CourseList from "./CourseList";
 import ProgrammeInfo from "./ProgrammeInfo/index";
 
 const Programme = () => {
-  const [{ term }] = useStore();
+  const [{ term, discipline }] = useStore();
   const { pathname, search } = useLocation();
 
   const query = new URLSearchParams(search);
@@ -17,6 +17,11 @@ const Programme = () => {
   const programmeName = query.get("programmeName");
   const termType = parseInt(query.get("termType"));
   const termsCount = parseInt(query.get("termsCount"));
+  const cbcs = query.get("cbcs") === "true" ? true : false;
+  const disciplines = query
+    .get("disciplinesCSV")
+    .split(",")
+    .map((el) => parseInt(el));
 
   return (
     <>
@@ -28,11 +33,24 @@ const Programme = () => {
 
       <ProgrammeInfo programmeId={programmeId} />
 
-      <CourseFilter termType={termType} termsCount={termsCount} selectedTerm={term} />
+      <CourseFilter
+        termType={termType}
+        termsCount={termsCount}
+        selectedTerm={term}
+        selectedDiscipline={discipline}
+        cbcs={cbcs}
+        disciplines={disciplines}
+      />
 
       <Box m={2} />
 
-      <CourseList term={term} programmeId={programmeId} programmeName={programmeName} />
+      <CourseList
+        term={term}
+        discipline={discipline}
+        cbcs={cbcs}
+        programmeId={programmeId}
+        programmeName={programmeName}
+      />
     </>
   );
 };

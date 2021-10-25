@@ -40,7 +40,6 @@ const ProgrammeList = ({ degree }) => {
 
   const { programmes, count } = data.getProgrammes;
   if (!programmes.length > 0) return <NoItem itemName="Programmes" />;
-
   const filteredProgrammes = programmes.filter(
     (programme) => degree === "" || programme.degree === DegreeType2.indexOf(degree)
   );
@@ -49,6 +48,7 @@ const ProgrammeList = ({ degree }) => {
     const i = index;
 
     const programme = filteredProgrammes[i];
+    const disciplinesCSV = programme.disciplines.join(",");
     return (
       <div style={style}>
         <ProgrammeCard
@@ -56,7 +56,7 @@ const ProgrammeList = ({ degree }) => {
           title={programme.code}
           subtitle={programme.title}
           image={programme.image}
-          url={`${Routes.PROGRAMME}?programmeId=${programme.id}&programmeName=${programme.code}&termType=${programme.termType}&termsCount=${programme.termsCount}`}
+          url={`${Routes.PROGRAMME}?programmeId=${programme.id}&programmeName=${programme.code}&termType=${programme.termType}&termsCount=${programme.termsCount}&cbcs=${programme.cbcs}&disciplinesCSV=${disciplinesCSV}`}
           termType={programme.termType}
           termsCount={programme.termsCount}
           totalCredits={programme.totalCredits}

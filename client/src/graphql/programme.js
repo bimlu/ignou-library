@@ -29,6 +29,7 @@ export const GET_PROGRAMME_STRUCTURE = gql`
         }
         credit
         category
+        discipline
       }
     }
   }
@@ -48,6 +49,8 @@ export const GET_PROGRAMMES = gql`
         termsCount
         image
         totalCredits
+        cbcs
+        disciplines
       }
     }
   }

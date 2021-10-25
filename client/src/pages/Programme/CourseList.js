@@ -11,7 +11,7 @@ import { ReactWindowScroller } from "react-window-scroller";
 import * as Routes from "routes";
 import CourseCard from "./CourseCard";
 
-const CourseList = ({ term, programmeId, programmeName }) => {
+const CourseList = ({ term, programmeId, programmeName, discipline, cbcs }) => {
   const theme = useTheme();
   const isDesktop = useMediaQuery(theme.breakpoints.up("sm"));
 
@@ -41,8 +41,10 @@ const CourseList = ({ term, programmeId, programmeName }) => {
   if (!programme.programmeStructure) return <NoItem itemName="Courses" />;
   if (!programme.programmeStructure > 0) return <NoItem itemName="Courses" />;
   const courses = programme.programmeStructure;
-  const filteredCourses = courses.filter((course) => term === 0 || course.term === parseInt(term));
-
+  let filteredCourses = courses.filter((course) => term === 0 || course.term === parseInt(term));
+  if (cbcs) {
+    filteredCourses = filteredCourses.filter((course) => discipline === "" || course.discipline === discipline);
+  }
   const Row = ({ index, style }) => {
     const i = index;
 

@@ -1,5 +1,6 @@
 import React, { createContext, useContext, useReducer } from "react";
 import { degreeInitialState, degreeReducer } from "./degree";
+import { disciplineInitialState, disciplineReducer } from "./discipline";
 import { termInitialState, termReducer } from "./term";
 
 /**
@@ -21,6 +22,7 @@ const store = {
   // collegeTree: collegeTreeInitialState,
   degree: degreeInitialState,
   term: termInitialState,
+  discipline: disciplineInitialState,
 };
 
 /**
@@ -37,6 +39,7 @@ const reducers = (store, action) => ({
   // collegeTree: collegeTreeReducer(store.collegeTree, action),
   degree: degreeReducer(store.degree, action),
   term: termReducer(store.term, action),
+  discipline: disciplineReducer(store.discipline, action),
 });
 
 /**

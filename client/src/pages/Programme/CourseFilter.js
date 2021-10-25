@@ -4,6 +4,7 @@ import { TermType } from "constants/TermType";
 import React from "react";
 import { useStore } from "store";
 import { SET_TERM } from "store/term";
+import DisciplineFilter from "./DisciplineFilter";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -30,7 +31,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function CourseFilter({ termType, termsCount, selectedTerm }) {
+export default function CourseFilter({ termType, termsCount, selectedTerm, cbcs, disciplines, selectedDiscipline }) {
   const classes = useStyles();
   const [, dispatch] = useStore();
 
@@ -39,29 +40,33 @@ export default function CourseFilter({ termType, termsCount, selectedTerm }) {
   };
 
   return (
-    <div className={classes.root}>
-      <Button
-        variant={selectedTerm === 0 ? "contained" : "outlined"}
-        size="small"
-        color="primary"
-        onClick={() => handleClick(0)}
-      >
-        All
-      </Button>
+    <>
+      <div className={classes.root}>
+        <Button
+          variant={selectedTerm === 0 ? "contained" : "outlined"}
+          size="small"
+          color="primary"
+          onClick={() => handleClick(0)}
+        >
+          All
+        </Button>
 
-      {Array.from(new Array(termsCount))
-        .map((_el, idx) => idx + 1)
-        .map((term) => (
-          <Button
-            variant={selectedTerm === term ? "contained" : "outlined"}
-            size="small"
-            color="primary"
-            key={term}
-            onClick={() => handleClick(term)}
-          >
-            {`${TermType[termType]}-${term}`}
-          </Button>
-        ))}
-    </div>
+        {Array.from(new Array(termsCount))
+          .map((_el, idx) => idx + 1)
+          .map((term) => (
+            <Button
+              variant={selectedTerm === term ? "contained" : "outlined"}
+              size="small"
+              color="primary"
+              key={term}
+              onClick={() => handleClick(term)}
+            >
+              {`${TermType[termType]}-${term}`}
+            </Button>
+          ))}
+      </div>
+
+      {cbcs && <DisciplineFilter disciplines={disciplines} selectedDiscipline={selectedDiscipline} />}
+    </>
   );
 }
