@@ -26,6 +26,7 @@ const programmeSchema = Schema({
   termsCount: { type: Number, default: 6 },
   image: String,
   coursesCount: Number,
+  cbcs: Boolean,
 });
 
 export default mongoose.model("Programme", programmeSchema);

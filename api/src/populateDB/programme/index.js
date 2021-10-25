@@ -73,5 +73,6 @@ export const createProgramme = async (programme) => {
     termsCount: programme.termsCount,
     image: getImage(programme),
     coursesCount: programme.programmeStructure.length,
+    cbcs: programme.cbcs || false,
   }).save();
 };
