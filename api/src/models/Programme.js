@@ -27,6 +27,7 @@ const programmeSchema = Schema({
   image: String,
   coursesCount: Number,
   cbcs: Boolean,
+  disciplines: [Number],
 });
 
 export default mongoose.model("Programme", programmeSchema);

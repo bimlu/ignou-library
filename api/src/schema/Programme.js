@@ -18,6 +18,7 @@ const ProgrammeSchema = gql`
     courses: [Course]
     coursesCount: Int
     cbcs: Boolean
+    disciplines: [Int]
   }
 
   type ProgrammeStructure {
