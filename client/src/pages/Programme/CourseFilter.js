@@ -1,10 +1,11 @@
 import Button from "@material-ui/core/Button";
 import { makeStyles } from "@material-ui/core/styles";
+import { DisciplineType } from "constants/DisciplineType";
 import { TermType } from "constants/TermType";
 import React from "react";
 import { useStore } from "store";
-import { SET_TERM } from "store/term";
-import DisciplineFilter from "./DisciplineFilter";
+import { CLEAR_DISCIPLINE, SET_DISCIPLINE } from "store/discipline";
+import { CLEAR_TERM, SET_TERM } from "store/term";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -20,6 +21,7 @@ const useStyles = makeStyles((theme) => ({
       borderRadius: theme.spacing(3),
       paddingLeft: theme.spacing(1.5),
       paddingRight: theme.spacing(1.5),
+      minWidth: "max-content",
     },
     "&::-webkit-scrollbar": {
       height: "0.32em",
@@ -35,38 +37,54 @@ export default function CourseFilter({ termType, termsCount, selectedTerm, cbcs,
   const classes = useStyles();
   const [, dispatch] = useStore();
 
-  const handleClick = (term) => {
-    dispatch({ type: SET_TERM, payload: term });
+  const handleClick = (value, type) => {
+    if (type === "term") {
+      dispatch({ type: SET_TERM, payload: value });
+      dispatch({ type: CLEAR_DISCIPLINE });
+    }
+    if (type === "discipline") {
+      dispatch({ type: SET_DISCIPLINE, payload: value });
+      dispatch({ type: CLEAR_TERM });
+    }
   };
 
   return (
-    <>
-      <div className={classes.root}>
-        <Button
-          variant={selectedTerm === 0 ? "contained" : "outlined"}
-          size="small"
-          color="primary"
-          onClick={() => handleClick(0)}
-        >
-          All
-        </Button>
+    <div className={classes.root}>
+      <Button
+        variant={selectedTerm === 0 && selectedDiscipline === "" ? "contained" : "outlined"}
+        size="small"
+        color="primary"
+        onClick={() => handleClick(0, "term")}
+      >
+        All
+      </Button>
 
-        {Array.from(new Array(termsCount))
-          .map((_el, idx) => idx + 1)
-          .map((term) => (
-            <Button
-              variant={selectedTerm === term ? "contained" : "outlined"}
-              size="small"
-              color="primary"
-              key={term}
-              onClick={() => handleClick(term)}
-            >
-              {`${TermType[termType]}-${term}`}
-            </Button>
-          ))}
-      </div>
+      {cbcs &&
+        disciplines.map((discipline) => (
+          <Button
+            variant={selectedDiscipline === discipline ? "contained" : "outlined"}
+            size="small"
+            color="primary"
+            key={discipline}
+            onClick={() => handleClick(discipline, "discipline")}
+          >
+            {DisciplineType[discipline][1]}
+          </Button>
+        ))}
 
-      {cbcs && <DisciplineFilter disciplines={disciplines} selectedDiscipline={selectedDiscipline} />}
-    </>
+      {Array.from(new Array(termsCount))
+        .map((_el, idx) => idx + 1)
+        .map((term) => (
+          <Button
+            variant={selectedTerm === term ? "contained" : "outlined"}
+            size="small"
+            color={cbcs ? "secondary" : "primary"}
+            key={term}
+            onClick={() => handleClick(term, "term")}
+          >
+            {`${TermType[termType]}-${term}`}
+          </Button>
+        ))}
+    </div>
   );
 }
