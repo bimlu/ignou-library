@@ -1,6 +1,5 @@
 import Box from "@material-ui/core/Box";
 import Head from "components/Head";
-import ScrollManager from "components/ScrollManager";
 import React, { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import { useStore } from "store";
@@ -19,8 +18,6 @@ const Home = () => {
   return (
     <div>
       <Head title={`${COLLEGE_NAME.toUpperCase()}`} />
-
-      <ScrollManager scrollKey={`${pathname}${degree}`} />
 
       <Box m={1} />
 

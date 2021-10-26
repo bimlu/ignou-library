@@ -1,6 +1,5 @@
 import Box from "@material-ui/core/Box";
 import Head from "components/Head";
-import ScrollManager from "components/ScrollManager";
 import React from "react";
 import { useLocation } from "react-router-dom";
 import { useStore } from "store";
@@ -26,8 +25,6 @@ const Programme = () => {
   return (
     <>
       <Head title={programmeName.toUpperCase()} />
-
-      <ScrollManager scrollKey={`${pathname}/${programmeName}/${term}`} />
 
       <Box m={1} />
 

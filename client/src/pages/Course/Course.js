@@ -8,7 +8,6 @@ import Skeleton from "@material-ui/lab/Skeleton";
 import PLACEHOLDER_IMAGE from "assets/images/card_placeholder.png";
 import Error from "components/Error";
 import Head from "components/Head";
-import ScrollManager from "components/ScrollManager";
 import { GET_COURSE } from "graphql/course";
 import React from "react";
 import { useLocation } from "react-router-dom";
@@ -103,8 +102,6 @@ const Course = () => {
   return (
     <>
       <Head title={`${courseName.toUpperCase()} | ${programmeName.toUpperCase()}`} />
-
-      <ScrollManager scrollKey={`${courseName}`} />
 
       <Box m={1} />
 

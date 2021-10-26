@@ -2,7 +2,7 @@ import Button from "@material-ui/core/Button";
 import { makeStyles } from "@material-ui/core/styles";
 import { DisciplineType } from "constants/DisciplineType";
 import { TermType } from "constants/TermType";
-import React from "react";
+import React, { useRef } from "react";
 import { useStore } from "store";
 import { CLEAR_DISCIPLINE, SET_DISCIPLINE } from "store/discipline";
 import { CLEAR_TERM, SET_TERM } from "store/term";
@@ -36,6 +36,7 @@ const useStyles = makeStyles((theme) => ({
 export default function CourseFilter({ termType, termsCount, selectedTerm, cbcs, disciplines, selectedDiscipline }) {
   const classes = useStyles();
   const [, dispatch] = useStore();
+  const scrollRef = useRef(null);
 
   const handleClick = (value, type) => {
     if (type === "term") {
@@ -46,10 +47,11 @@ export default function CourseFilter({ termType, termsCount, selectedTerm, cbcs,
       dispatch({ type: SET_DISCIPLINE, payload: value });
       dispatch({ type: CLEAR_TERM });
     }
+    scrollRef.current.scrollIntoView({ behavior: "smooth" });
   };
 
   return (
-    <div className={classes.root}>
+    <div className={classes.root} ref={scrollRef}>
       <Button
         variant={selectedTerm === 0 && selectedDiscipline === "" ? "contained" : "outlined"}
         size="small"
