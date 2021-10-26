@@ -19,6 +19,7 @@ const useStyles = makeStyles((theme) => ({
       borderRadius: theme.spacing(3),
       paddingLeft: theme.spacing(1.5),
       paddingRight: theme.spacing(1.5),
+      minWidth: "max-content",
     },
     "&::-webkit-scrollbar": {
       height: "0.32em",
