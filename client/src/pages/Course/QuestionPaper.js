@@ -44,6 +44,7 @@ const useStyles = makeStyles((theme) => ({
   link: {
     marginTop: theme.spacing(1),
     marginBottom: theme.spacing(1),
+    width: "fit-content",
   },
 }));
 

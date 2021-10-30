@@ -49,6 +49,9 @@ const useStyles = makeStyles((theme) => ({
     width: "52%",
     justifyContent: "space-between",
   },
+  link: {
+    width: "fit-content",
+  },
 }));
 
 const StudyMaterial = ({ courseBlocks, loading }) => {
@@ -90,8 +93,8 @@ const StudyMaterial = ({ courseBlocks, loading }) => {
                   <b>📖 {courseBlock.blockCode}</b>
                 </Typography>
 
-                <Typography color="textSecondary" variant="h6" style={{ marginLeft: 19 }}>
-                  ( {courseBlock.blockName} )
+                <Typography color="textSecondary" variant="h6">
+                  ({courseBlock.blockName})
                 </Typography>
               </div>
 
@@ -108,6 +111,7 @@ const StudyMaterial = ({ courseBlocks, loading }) => {
                       display="block"
                       variant="body1"
                       style={{ marginLeft: 24 }}
+                      className={classes.link}
                     >
                       {blockUnit.unitName}
                     </Link>
