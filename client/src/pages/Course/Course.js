@@ -11,6 +11,7 @@ import Head from "components/Head";
 import { GET_COURSE } from "graphql/course";
 import React from "react";
 import { useLocation } from "react-router-dom";
+import Assignment from "./Assignment";
 import QuestionPaper from "./QuestionPaper";
 import StudyMaterial from "./StudyMaterial";
 
@@ -93,6 +94,8 @@ const Course = () => {
         <Box m={2} />
 
         <QuestionPaper loading={loading} questionPapers={course && course.questionPapers} />
+
+        <Assignment loading={loading} assignment={course && course.assignment} />
 
         <StudyMaterial loading={loading} courseBlocks={course && course.courseBlocks} />
       </Paper>

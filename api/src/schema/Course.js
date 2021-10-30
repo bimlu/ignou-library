@@ -1,6 +1,11 @@
 import { gql } from "apollo-server-express";
 
 const CourseSchema = gql`
+  type Assignment {
+    main: String
+    hindi: String
+  }
+
   type Block {
     blockCode: String
     blockName: String
@@ -26,6 +31,7 @@ const CourseSchema = gql`
     questionPapers: [String]
     programmes: [Programme]
     blocksCount: Int
+    assignment: Assignment
   }
 
   type Courses {

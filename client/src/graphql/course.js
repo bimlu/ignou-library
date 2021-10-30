@@ -21,6 +21,10 @@ export const GET_COURSE = gql`
         }
       }
       questionPapers
+      assignment {
+        main
+        hindi
+      }
     }
   }
 `;
