@@ -1,5 +1,6 @@
 import College from "../../models/College";
 import Course from "../../models/Course";
+import courseAssignments from "../assignment/course2.json";
 // import Programme from "../../models/Programme";
 import { getCourses, getCourses2, saveCourses } from "./courses";
 
@@ -40,7 +41,6 @@ export const createCourses2 = () => {
 };
 
 export const createCourse2 = async (courseCode, courses) => {
-  const college = await College.findOne({ code: "IGNOU" });
   const allDupCourses = courses[courseCode];
   const firstCourse = allDupCourses[0];
   // if (!firstCourse) {
@@ -86,6 +86,19 @@ export const createCourse2 = async (courseCode, courses) => {
     `https://ignou-app-1.s3.ap-south-1.amazonaws.com/question-paper/jun-2019/${courseCode}.pdf`,
   ];
 
+  let assignment = {};
+  for (let courseAssignment in courseAssignments) {
+    if (courseAssignment === courseCode) {
+      const assignmentInfo = courseAssignments[courseAssignment];
+      if (assignmentInfo.includes("main")) {
+        assignment.main = `https://ignou-app-1.s3.ap-south-1.amazonaws.com/assignment/jul-2021/course/${courseCode}.pdf`;
+      }
+      if (assignmentInfo.includes("hindi")) {
+        assignment.hindi = `https://ignou-app-1.s3.ap-south-1.amazonaws.com/assignment/jul-2021/course/${courseCode}_H.pdf`;
+      }
+    }
+  }
+
   const newCourse = {
     code: courseCode,
     title: courseName || "?",
@@ -93,8 +106,8 @@ export const createCourse2 = async (courseCode, courses) => {
     courseBlocks: courseBlocks,
     questionPapers: oldQuestionPapers,
     image: "https://ignou-app-1.s3.ap-south-1.amazonaws.com/demo-images/street.jpg",
-    college: college.id,
     blocksCount: courseBlocks.length,
+    assignment: assignment,
   };
 
   // console.log(newCourse);

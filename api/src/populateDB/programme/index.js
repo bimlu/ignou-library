@@ -1,5 +1,6 @@
 import Course from "../../models/Course";
 import Programme from "../../models/Programme";
+import programmeAssignments from "../assignment/programme2.json";
 import { getProgrammes, saveProgrammes } from "./programme";
 
 const getImage = (programme) =>
@@ -59,6 +60,43 @@ export const createProgramme = async (programme) => {
     programme = { ...programme, programmeStructure: [] };
   }
 
+  let assignment = {};
+  let assignmentTermwise = {};
+  for (let programmeAssignment in programmeAssignments) {
+    if (programme.code === programmeAssignment) {
+      let assignmentInfo = programmeAssignments[programmeAssignment];
+      if (Array.isArray(assignmentInfo)) {
+        // assignment
+        if (assignmentInfo.includes("main")) {
+          assignment.main = `https://ignou-app-1.s3.ap-south-1.amazonaws.com/assignment/jul-2021/programme/${programme.code}.pdf`;
+        }
+        if (assignmentInfo.includes("hindi")) {
+          assignment.hindi = `https://ignou-app-1.s3.ap-south-1.amazonaws.com/assignment/jul-2021/programme/${programme.code}_H.pdf`;
+        }
+      } else {
+        // termwise assignment
+        if ("main" in assignmentInfo) {
+          assignmentTermwise.main = [];
+          for (let term of assignmentInfo.main) {
+            assignmentTermwise.main.push({
+              term: term,
+              url: `https://ignou-app-1.s3.ap-south-1.amazonaws.com/assignment/jul-2021/programme/${programme.code}__${term}.pdf`,
+            });
+          }
+        }
+        if ("hindi" in assignmentInfo) {
+          assignmentTermwise.hindi = [];
+          for (let term of assignmentInfo.hindi) {
+            assignmentTermwise.hindi.push({
+              term: term,
+              url: `https://ignou-app-1.s3.ap-south-1.amazonaws.com/assignment/jul-2021/programme/${programme.code}__${term}_H.pdf`,
+            });
+          }
+        }
+      }
+    }
+  }
+
   const newProgramme = await new Programme({
     code: programme.code,
     title: programme.title,
@@ -75,5 +113,7 @@ export const createProgramme = async (programme) => {
     coursesCount: programme.programmeStructure.length,
     cbcs: programme.cbcs || false,
     disciplines: programme.disciplines || [],
+    assignment: assignment,
+    assignmentTermwise: assignmentTermwise,
   }).save();
 };

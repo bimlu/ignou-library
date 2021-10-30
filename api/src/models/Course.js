@@ -16,6 +16,11 @@ const blockSchema = new Schema({
   blockUnits: [unitSchema],
 });
 
+const assignmentSchema = new Schema({
+  main: String,
+  hindi: String,
+});
+
 const courseSchema = Schema({
   code: String,
   title: String,
@@ -26,6 +31,7 @@ const courseSchema = Schema({
   image: String,
   programmes: [{ type: Schema.Types.ObjectId, ref: "Programme" }],
   blocksCount: Number,
+  assignment: assignmentSchema,
 });
 
 export default mongoose.model("Course", courseSchema);

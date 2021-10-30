@@ -12,6 +12,16 @@ const programmeStructureSchema = new Schema({
   discipline: { type: Discipline, default: Discipline.None },
 });
 
+const assignmentSchema = new Schema({
+  main: String,
+  hindi: String,
+});
+
+const assignmentTermwiseSchema = new Schema({
+  main: [{ term: Number, url: String }],
+  hindi: [{ term: Number, url: String }],
+});
+
 const programmeSchema = Schema({
   code: String,
   title: String,
@@ -28,6 +38,8 @@ const programmeSchema = Schema({
   coursesCount: Number,
   cbcs: Boolean,
   disciplines: [Number],
+  assignment: assignmentSchema,
+  assignmentTermwise: [assignmentTermwiseSchema],
 });
 
 export default mongoose.model("Programme", programmeSchema);
