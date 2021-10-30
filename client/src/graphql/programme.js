@@ -12,6 +12,21 @@ export const GET_PROGRAMME = gql`
       mediumOfInstruction
       duration
       feeStructure
+      assignment {
+        main
+        hindi
+      }
+      assignmentTermwise {
+        main {
+          term
+          url
+        }
+        hindi {
+          term
+          url
+        }
+      }
+      termType
     }
   }
 `;

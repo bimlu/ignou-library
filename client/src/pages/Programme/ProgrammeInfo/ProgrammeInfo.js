@@ -20,7 +20,12 @@ const ProgrammeInfo = ({ programmeId }) => {
 
       <Detail programme={programme} loading={loading} />
 
-      <Assignment programme={programme} loading={loading} />
+      <Assignment
+        assignment={programme && programme.assignment}
+        assignmentTermwise={programme && programme.assignmentTermwise}
+        termType={programme && programme.termType}
+        loading={loading}
+      />
     </>
   );
 };

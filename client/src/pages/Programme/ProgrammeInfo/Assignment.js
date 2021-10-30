@@ -4,8 +4,10 @@ import Button from "@material-ui/core/Button";
 import Collapse from "@material-ui/core/Collapse";
 import Paper from "@material-ui/core/Paper";
 import { makeStyles } from "@material-ui/core/styles";
+import Typography from "@material-ui/core/Typography";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 import clsx from "clsx";
+import { TermType2 } from "constants/TermType";
 import React, { useState } from "react";
 
 const useStyles = makeStyles((theme) => ({
@@ -42,10 +44,12 @@ const useStyles = makeStyles((theme) => ({
   link: {
     marginTop: theme.spacing(1),
     marginBottom: theme.spacing(1),
+    width: "fit-content",
+    marginLeft: 24,
   },
 }));
 
-const Assignment = ({ programme, loading }) => {
+const Assignment = ({ assignment, assignmentTermwise, termType, loading }) => {
   const classes = useStyles();
   const [expanded, setExpanded] = useState(false);
 
@@ -72,24 +76,79 @@ const Assignment = ({ programme, loading }) => {
         className={classes.button}
         disabled={loading}
       >
-        Assignments
+        Assignment
       </Button>
 
       {!loading && (
         <Collapse in={expanded} timeout="auto" unmountOnExit>
           <Paper className={classes.downloadLinks} elevation={0}>
-            <Link target="blank" href={"#"} variant="body1" className={classes.link}>
-              ✳️ December-2020
-            </Link>
-            <Link target="blank" href={"#"} variant="body1" className={classes.link}>
-              ✳️ June-2020
-            </Link>
-            <Link target="blank" href={"#"} variant="body1" className={classes.link}>
-              ✳️ December-2019
-            </Link>
-            <Link target="blank" href={"#"} variant="body1" className={classes.link}>
-              ✳️ June-2019
-            </Link>
+            {(assignment.main || assignment.hindi) && (
+              <>
+                <Typography variant="body1" color="textSecondary" gutterBottom={true}>
+                  <b>⦿ June 2021 (current)</b>
+                </Typography>
+
+                {assignment.main && (
+                  <Box className={classes.link}>
+                    {"⦾ "}
+                    <Link target="blank" href={assignment.main} variant="body1">
+                      English
+                    </Link>
+                  </Box>
+                )}
+
+                {assignment.hindi && (
+                  <Box className={classes.link}>
+                    {"⦾ "}
+                    <Link target="blank" href={assignment.hindi} variant="body1">
+                      Hindi
+                    </Link>
+                  </Box>
+                )}
+              </>
+            )}
+
+            {(assignmentTermwise.main.length > 0 || assignmentTermwise.hindi.length > 0) && (
+              <>
+                <Typography variant="body1" color="textSecondary" gutterBottom={true}>
+                  <b>⦿ June 2021 (current)</b>
+                </Typography>
+
+                {assignmentTermwise.main.length > 0 && (
+                  <Box className={classes.link}>
+                    <Typography variant="body1" color="textSecondary" gutterBottom={true}>
+                      ⦾ English
+                    </Typography>
+
+                    {assignmentTermwise.main.map((termURL) => (
+                      <Box className={classes.link}>
+                        {"• "}
+                        <Link key={termURL.url} target="blank" href={termURL.url} variant="body1">
+                          {TermType2[termType]}-{termURL.term}
+                        </Link>
+                      </Box>
+                    ))}
+                  </Box>
+                )}
+
+                {assignmentTermwise.hindi.length > 0 && (
+                  <Box className={classes.link}>
+                    <Typography variant="body1" color="textSecondary" gutterBottom={true}>
+                      ⦾ Hindi
+                    </Typography>
+
+                    {assignmentTermwise.hindi.map((termURL) => (
+                      <Box className={classes.link}>
+                        {"• "}
+                        <Link key={termURL.url} target="blank" href={termURL.url} variant="body1">
+                          {TermType2[termType]}-{termURL.term}
+                        </Link>
+                      </Box>
+                    ))}
+                  </Box>
+                )}
+              </>
+            )}
           </Paper>
         </Collapse>
       )}

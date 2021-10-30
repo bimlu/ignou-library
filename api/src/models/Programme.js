@@ -39,7 +39,7 @@ const programmeSchema = Schema({
   cbcs: Boolean,
   disciplines: [Number],
   assignment: assignmentSchema,
-  assignmentTermwise: [assignmentTermwiseSchema],
+  assignmentTermwise: assignmentTermwiseSchema,
 });
 
 export default mongoose.model("Programme", programmeSchema);

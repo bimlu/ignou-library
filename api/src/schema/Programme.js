@@ -19,6 +19,8 @@ const ProgrammeSchema = gql`
     coursesCount: Int
     cbcs: Boolean
     disciplines: [Int]
+    assignment: Assignment
+    assignmentTermwise: AssignmentTermwise
   }
 
   type ProgrammeStructure {
@@ -28,6 +30,16 @@ const ProgrammeSchema = gql`
     credit: Int
     category: Int
     discipline: Int
+  }
+
+  type AssignmentTermURL {
+    term: Int
+    url: String
+  }
+
+  type AssignmentTermwise {
+    main: [AssignmentTermURL]
+    hindi: [AssignmentTermURL]
   }
 
   type Programmes {
