@@ -25,13 +25,11 @@ const useStyles = makeStyles((theme) => ({
     transform: "rotate(180deg)",
   },
   button: {
-    borderRadius: theme.spacing(1.2),
-    padding: `${theme.spacing(1.4)}px ${theme.spacing(2)}px`,
-    fontSize: theme.spacing(1.6),
+    borderRadius: theme.spacing(1),
+    padding: `${theme.spacing(1)}px ${theme.spacing(2)}px`,
+    fontSize: theme.spacing(1.4),
     marginBottom: theme.spacing(1),
     textTransform: "none",
-    width: "52%",
-    justifyContent: "space-between",
   },
 
   downloadLinks: {
@@ -75,7 +73,7 @@ const QuestionPaper = ({ questionPapers, loading }) => {
         className={classes.button}
         disabled={loading}
       >
-        Question Papers
+        Previous years Question paper
       </Button>
 
       {!loading && (
