@@ -20,6 +20,12 @@ const CourseSchema = gql`
     unitDownloadLink: String
   }
 
+  type Present {
+    assignment: Boolean
+    questionPaper: Boolean
+    studyMaterial: Boolean
+  }
+
   type Course {
     id: ID!
     code: String
@@ -32,6 +38,7 @@ const CourseSchema = gql`
     programmes: [Programme]
     blocksCount: Int
     assignment: Assignment
+    present: Present
   }
 
   type Courses {

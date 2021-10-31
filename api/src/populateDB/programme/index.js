@@ -115,5 +115,14 @@ export const createProgramme = async (programme) => {
     disciplines: programme.disciplines || [],
     assignment: assignment,
     assignmentTermwise: assignmentTermwise,
+    present: {
+      assignment:
+        assignment.main ||
+        assignment.hindi ||
+        (assignmentTermwise.main && assignmentTermwise.main.length > 0) ||
+        (assignmentTermwise.hindi && assignmentTermwise.hindi.length > 0)
+          ? true
+          : false,
+    },
   }).save();
 };

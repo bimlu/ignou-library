@@ -40,6 +40,9 @@ const programmeSchema = Schema({
   disciplines: [Number],
   assignment: assignmentSchema,
   assignmentTermwise: assignmentTermwiseSchema,
+  present: {
+    assignment: Boolean,
+  },
 });
 
 export default mongoose.model("Programme", programmeSchema);

@@ -108,6 +108,11 @@ export const createCourse2 = async (courseCode, courses) => {
     image: "https://ignou-app-1.s3.ap-south-1.amazonaws.com/demo-images/street.jpg",
     blocksCount: courseBlocks.length,
     assignment: assignment,
+    present: {
+      assignment: assignment.main || assignment.hindi ? true : false,
+      questionPaper: oldQuestionPapers.length > 0,
+      studyMaterial: courseBlocks.length > 0,
+    },
   };
 
   // console.log(newCourse);

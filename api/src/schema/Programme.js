@@ -21,6 +21,11 @@ const ProgrammeSchema = gql`
     disciplines: [Int]
     assignment: Assignment
     assignmentTermwise: AssignmentTermwise
+    present: Present2
+  }
+
+  type Present2 {
+    assignment: Boolean
   }
 
   type ProgrammeStructure {

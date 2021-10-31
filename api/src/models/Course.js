@@ -32,6 +32,11 @@ const courseSchema = Schema({
   programmes: [{ type: Schema.Types.ObjectId, ref: "Programme" }],
   blocksCount: Number,
   assignment: assignmentSchema,
+  present: {
+    assignment: Boolean,
+    questionPaper: Boolean,
+    studyMaterial: Boolean,
+  },
 });
 
 export default mongoose.model("Course", courseSchema);
