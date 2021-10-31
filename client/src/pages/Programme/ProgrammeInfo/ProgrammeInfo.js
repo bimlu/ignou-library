@@ -20,12 +20,18 @@ const ProgrammeInfo = ({ programmeId }) => {
 
       <Detail programme={programme} loading={loading} />
 
-      <Assignment
-        assignment={programme && programme.assignment}
-        assignmentTermwise={programme && programme.assignmentTermwise}
-        termType={programme && programme.termType}
-        loading={loading}
-      />
+      {programme &&
+        (programme.assignment.main ||
+          programme.assignment.hindi ||
+          programme.assignmentTermwise.main.length > 0 ||
+          programme.assignmentTermwise.hindi.length > 0) && (
+          <Assignment
+            assignment={programme && programme.assignment}
+            assignmentTermwise={programme && programme.assignmentTermwise}
+            termType={programme && programme.termType}
+            loading={loading}
+          />
+        )}
     </>
   );
 };

@@ -95,7 +95,9 @@ const Course = () => {
 
         <QuestionPaper loading={loading} questionPapers={course && course.questionPapers} />
 
-        <Assignment loading={loading} assignment={course && course.assignment} />
+        {course && (course.assignment.main || course.assignment.hindi) && (
+          <Assignment loading={loading} assignment={course && course.assignment} />
+        )}
 
         <StudyMaterial loading={loading} courseBlocks={course && course.courseBlocks} />
       </Paper>
