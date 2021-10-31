@@ -121,9 +121,9 @@ const Assignment = ({ assignment, assignmentTermwise, termType, loading }) => {
                     </Typography>
 
                     {assignmentTermwise.main.map((termURL) => (
-                      <Box className={classes.link}>
+                      <Box key={termURL.url} className={classes.link}>
                         {"• "}
-                        <Link key={termURL.url} target="blank" href={termURL.url} variant="body1">
+                        <Link target="blank" href={termURL.url} variant="body1">
                           {TermType2[termType]}-{termURL.term}
                         </Link>
                       </Box>
@@ -138,9 +138,9 @@ const Assignment = ({ assignment, assignmentTermwise, termType, loading }) => {
                     </Typography>
 
                     {assignmentTermwise.hindi.map((termURL) => (
-                      <Box className={classes.link}>
+                      <Box key={termURL.url} className={classes.link}>
                         {"• "}
-                        <Link key={termURL.url} target="blank" href={termURL.url} variant="body1">
+                        <Link target="blank" href={termURL.url} variant="body1">
                           {TermType2[termType]}-{termURL.term}
                         </Link>
                       </Box>
