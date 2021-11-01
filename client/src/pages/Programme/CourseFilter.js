@@ -30,6 +30,9 @@ const useStyles = makeStyles((theme) => ({
     top: 0,
     zIndex: theme.zIndex.appBar - 1,
     background: theme.palette.background.default,
+    [theme.breakpoints.up("sm")]: {
+      top: theme.mixins.toolbar.minHeight + theme.spacing(1),
+    },
   },
 }));
 
