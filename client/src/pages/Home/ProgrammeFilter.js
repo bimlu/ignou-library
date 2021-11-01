@@ -1,7 +1,8 @@
 import Button from "@material-ui/core/Button";
-import { makeStyles } from "@material-ui/core/styles";
+import { makeStyles, useTheme } from "@material-ui/core/styles";
+import useMediaQuery from "@material-ui/core/useMediaQuery";
 import { DegreeType3 } from "constants/DegreeType";
-import React, { useRef } from "react";
+import React from "react";
 import { useStore } from "store";
 import { SET_DEGREE } from "store/degree";
 
@@ -37,15 +38,16 @@ const useStyles = makeStyles((theme) => ({
 export default function ProgrammeFilter({ degreesCount, selectedDegree }) {
   const classes = useStyles();
   const [, dispatch] = useStore();
-  const scrollRef = useRef(null);
+  const theme = useTheme();
+  const isDesktop = useMediaQuery(theme.breakpoints.up("sm"));
 
   const handleClick = (degree) => {
     dispatch({ type: SET_DEGREE, payload: degree });
-    scrollRef.current.scrollIntoView({ behavior: "smooth" });
+    window.scrollTo({ top: isDesktop ? 0 : theme.mixins.toolbar.minHeight, behavior: "auto" });
   };
 
   return (
-    <div className={classes.root} ref={scrollRef}>
+    <div className={classes.root}>
       <Button
         variant={selectedDegree === "" ? "contained" : "outlined"}
         size="small"
