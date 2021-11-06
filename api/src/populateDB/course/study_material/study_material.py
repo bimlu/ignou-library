@@ -1,7 +1,9 @@
-import urllib.request
-from bs4 import BeautifulSoup
-import os
 import json
+import os
+import urllib.request
+
+from bs4 import BeautifulSoup
+
 
 def get_courses(programme_link):
   courses = []
@@ -82,7 +84,7 @@ def extract_blocks_and_save():
     json_data = in_file.read()
     obj_data = json.loads(json_data)
 
-  save_path = '/home/robin/projects/ignou-app/api/src/populateDB/course/study_material'
+  save_path = '/home/robin/projects/ignou-library/api/src/populateDB/course/study_material'
   file_name = 'course_with_blocks.json'
   file_path = os.path.join(save_path, file_name)
   with open(file_path, 'w') as file: 
@@ -101,7 +103,7 @@ def extract_units_and_save():
     json_data = in_file.read()
     obj_data = json.loads(json_data)
 
-  save_path = '/home/robin/projects/ignou-app/api/src/populateDB/course/study_material'
+  save_path = '/home/robin/projects/ignou-library/api/src/populateDB/course/study_material'
   file_name = 'extracted_units3.json'
   file_path = os.path.join(save_path, file_name)
   with open(file_path, 'w') as file: 
@@ -130,7 +132,7 @@ def add_unit_download_link_field_to_all_extracted_units():
     json_data = in_file.read()
     obj_data = json.loads(json_data)
     
-  save_path = '/home/robin/projects/ignou-app/api/src/populateDB/course/study_material'
+  save_path = '/home/robin/projects/ignou-library/api/src/populateDB/course/study_material'
   file_name = 'extracted_units3.json'
   file_path = os.path.join(save_path, file_name)
   with open(file_path, 'w') as file: 
@@ -176,7 +178,7 @@ def organize_dups_in_extracted_units():
         out_data[code].append((name, link, blocks))
 
   # save out_data to a file
-  save_path = '/home/robin/projects/ignou-app/api/src/populateDB/course/study_material'
+  save_path = '/home/robin/projects/ignou-library/api/src/populateDB/course/study_material'
   file_name = 'organized_units2.json'
   file_path = os.path.join(save_path, file_name)
   with open(file_path, 'w') as file:

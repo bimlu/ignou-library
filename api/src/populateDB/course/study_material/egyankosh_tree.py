@@ -1,9 +1,10 @@
 import json
-import urllib.request
-from bs4 import BeautifulSoup
-import re
 import os
-import json
+import re
+import urllib.request
+
+from bs4 import BeautifulSoup
+
 
 def extract_egyankosh_tree(egyankosh_tree_link):
   page = urllib.request.urlopen(egyankosh_tree_link).read().decode('utf-8')
@@ -49,7 +50,7 @@ def separate_course_code_name(course_text):
   return (code, name)
 
 def save_to_file(data):
-  save_path = '/home/robin/projects/ignou-app/api/src/populateDB/course/study_material'
+  save_path = '/home/robin/projects/ignou-library/api/src/populateDB/course/study_material'
   file_name = 'out_data.json'
   file_path = os.path.join(save_path, file_name)
   with open(file_path, 'w') as file:
@@ -66,14 +67,14 @@ def orgranize_duplicates(in_data):
   return out_data
 
 def save_after_organizing(data):
-  save_path = '/home/robin/projects/ignou-app/api/src/populateDB/course/study_material'
+  save_path = '/home/robin/projects/ignou-library/api/src/populateDB/course/study_material'
   file_name = 'organized_out_data.json'
   file_path = os.path.join(save_path, file_name)
   with open(file_path, 'w') as file:
     json_data = json.dumps(data)
     file.write(json_data)
 
-raw_data = extract_egyankosh_tree('file:///home/robin/ignou/ignou-app/eGyanKoshTree.html')
+raw_data = extract_egyankosh_tree('file:///home/robin/ignou/ignou-library/eGyanKoshTree.html')
 cleaned_data = clean_data(raw_data)
 save_to_file(cleaned_data)
 org_data = orgranize_duplicates(cleaned_data)

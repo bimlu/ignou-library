@@ -25,7 +25,7 @@ def organize_programmes():
           programmes[programme] = ['hindi']
     
    # save courses to a file
-  save_path = '/home/robin/projects/ignou-app/api/src/populateDB/assignment'
+  save_path = '/home/robin/projects/ignou-library/api/src/populateDB/assignment'
   file_name = 'programme2.json'
   file_path = os.path.join(save_path, file_name)
   with open(file_path, 'w') as file:
@@ -54,7 +54,7 @@ def orgranize_courses():
     # print(courses)
 
   # save courses to a file
-  save_path = '/home/robin/projects/ignou-app/api/src/populateDB/assignment'
+  save_path = '/home/robin/projects/ignou-library/api/src/populateDB/assignment'
   file_name = 'course2.json'
   file_path = os.path.join(save_path, file_name)
   with open(file_path, 'w') as file:

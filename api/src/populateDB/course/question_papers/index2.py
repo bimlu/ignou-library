@@ -56,14 +56,14 @@ def get_school_links(year_link):
   return school_links
 
 def write_to_file(data):
-  save_path = '/home/robin/projects/ignou-app/api/src/populateDB/course/question_papers'
+  save_path = '/home/robin/projects/ignou-library/api/src/populateDB/course/question_papers'
   file_name = 'course_qnpaper_list.json'
   file_path = os.path.join(save_path, file_name)
   with open(file_path, 'a') as file:
     file.write(data)
 
 def truncate_end_comma():
-  save_path = '/home/robin/projects/ignou-app/api/src/populateDB/course/question_papers'
+  save_path = '/home/robin/projects/ignou-library/api/src/populateDB/course/question_papers'
   file_name = 'course_qnpaper_list.json'
   file_path = os.path.join(save_path, file_name)
   with open(file_path, 'ab') as file:

@@ -53,7 +53,7 @@ def get_school_links(year_link):
   return school_links
 
 def save_couses(data):
-  save_path = '/home/robin/projects/ignou-app/api/src/populateDB/course/question_papers'
+  save_path = '/home/robin/projects/ignou-library/api/src/populateDB/course/question_papers'
   file_name = 'courses.json'
   file_path = os.path.join(save_path, file_name)
   with open(file_path, 'w') as file:
