@@ -1,5 +1,5 @@
 // import { createCourses2 } from "./course";
-// import { createProgrammes } from "./programme/index";
+// import { createProgrammes } from "./programme";
 // import { createSchools } from "./school";
 // import { createCollege } from "./college";
 
