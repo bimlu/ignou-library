@@ -1,5 +1,5 @@
 {
-  "name": "ignou-app",
+  "name": "ignou-library",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -13,14 +13,14 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/bimlu/ignou-app.git"
+    "url": "git+https://github.com/bimlu/ignou-library.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/bimlu/ignou-app/issues"
+    "url": "https://github.com/bimlu/ignou-library/issues"
   },
-  "homepage": "https://github.com/bimlu/ignou-app#readme",
+  "homepage": "https://github.com/bimlu/ignou-library#readme",
   "devDependencies": {
     "prettier": "^2.4.1"
   }
