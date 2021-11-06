@@ -1,8 +1,8 @@
-import College from "../../models/College";
-import Course from "../../models/Course";
 import courseAssignments from "../data/assignment/course2.json";
 // import Programme from "../../models/Programme";
 import { getCourses, getCourses2, saveCourses } from "../data/course";
+import College from "../models/College";
+import Course from "../models/Course";
 
 export const createCourses = () => {
   const courses = getCourses();

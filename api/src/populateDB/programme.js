@@ -1,7 +1,7 @@
-import Course from "../../models/Course";
-import Programme from "../../models/Programme";
 import programmeAssignments from "../data/assignment/programme2.json";
 import { getProgrammes, saveProgrammes } from "../data/programme";
+import Course from "../models/Course";
+import Programme from "../models/Programme";
 
 const getImage = (programme) =>
   `https://ignou-app-1.s3.ap-south-1.amazonaws.com/images/programme/${programme.code.toLowerCase()}.jpeg`;
