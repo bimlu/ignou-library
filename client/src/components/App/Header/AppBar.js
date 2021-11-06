@@ -23,7 +23,6 @@ const useStyles = makeStyles((theme) => ({
     color: theme.palette.action,
     fontWeight: "bold",
     fontFamily: "monospace",
-    fontSize: "1.8rem",
   },
 }));
 
@@ -41,7 +40,7 @@ const Header = ({ toggleThemeMode, showBackButton = false }) => {
               <ArrowBackIcon />
             </IconButton>
           ) : (
-            <Typography className={classes.title} variant="h6" noWrap>
+            <Typography className={classes.title} variant="body1" noWrap>
               {SiteInfo.name}
             </Typography>
           )}
