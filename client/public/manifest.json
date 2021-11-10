@@ -1,16 +1,32 @@
 {
-  "short_name": "bimlee",
-  "name": "bimlee.com",
-  "description": "A simple college app.",
-  "icons": [
-    {
-      "src": "favicon.ico",
-      "sizes": "64x64 32x32 24x24 16x16",
-      "type": "image/x-icon"
-    }
-  ],
+  "name": "library.ignouwala.com",
+  "short_name": "library.ignouwala",
   "start_url": ".",
   "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff"
+  "description": "IGNOU study material, question paper, assignment, courses and Genral information",
+  "background_color": "#fff",
+  "orientation": "portrait",
+  "theme_color": "#fff",
+  "icons": [
+    {
+      "src": "/icon-24x24.png",
+      "sizes": "24x24",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon-48x48.png",
+      "sizes": "48x48",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon-96x96.png",
+      "sizes": "96x96",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    }
+  ]
 }
