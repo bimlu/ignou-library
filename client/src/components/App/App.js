@@ -1,8 +1,14 @@
+import { useQuery } from "@apollo/client";
 import CssBaseline from "@material-ui/core/CssBaseline";
 import { createTheme, ThemeProvider } from "@material-ui/core/styles";
+import { Loading } from "components/Loading";
+import { ASSIGNMENT_TREE_ITEM_LIMIT } from "constants/DataLimit";
+import { GET_ASSIGNMENT_TREE } from "graphql/programme";
 import { useThemeToggler } from "hooks/useThemeToggler";
-import React, { useMemo } from "react";
+import React, { useEffect, useMemo } from "react";
 import { BrowserRouter as Router } from "react-router-dom";
+import { useStore } from "store";
+import { SET_DATA_TREE } from "store/datatree";
 import AppLayout from "./AppLayout";
 import BackToTop from "./Header/BackToTop";
 import ScrollToTop from "./ScrollToTop";
@@ -88,6 +94,35 @@ const App = () => {
       }),
     [themeMode]
   );
+
+  const [{ datatree }, dispatch] = useStore();
+  const { data, loading, error } = useQuery(GET_ASSIGNMENT_TREE, {
+    variables: {
+      skip: 0,
+      limit: ASSIGNMENT_TREE_ITEM_LIMIT,
+    },
+  });
+
+  useEffect(() => {
+    data && dispatch({ type: SET_DATA_TREE, payload: data.getAssignmentTree.programmes });
+  }, [data]);
+
+  if (error) {
+    const isDevelopment = !process.env.NODE_ENV || process.env.NODE_ENV === "development";
+    if (isDevelopment) {
+      console.error(error);
+    }
+    const devErrorMessage =
+      "Sorry, something went wrong. Please open the browser console to view the detailed error message.";
+    const prodErrorMessage = "Sorry, something went wrong. We're working on getting this fixed as soon as we can.";
+    return <NotFound message={isDevelopment ? devErrorMessage : prodErrorMessage} showHomePageLink={false} />;
+  }
+
+  // console.log(data)
+
+  if (loading || !datatree.programmes) {
+    return <Loading top="xl" />;
+  }
 
   return (
     <ThemeProvider theme={themeMode === "light" ? lightTheme : darkTheme}>

@@ -1,4 +1,5 @@
 import React, { createContext, useContext, useReducer } from "react";
+import { datatreeInitialState, datatreeReducer } from "./datatree";
 import { degreeInitialState, degreeReducer } from "./degree";
 import { disciplineInitialState, disciplineReducer } from "./discipline";
 import { termInitialState, termReducer } from "./term";
@@ -16,7 +17,7 @@ const store = {
   // auth: authInitialState,
   // uploading: uploadingInitialState,
   // deleting: deletingInitialState,
-  // datatree: datatreeInitialState,
+  datatree: datatreeInitialState,
   // status: statusInitialState,
   // route: routeInitialState,
   // collegeTree: collegeTreeInitialState,
@@ -33,7 +34,7 @@ const reducers = (store, action) => ({
   // auth: authReducer(store.auth, action),
   // uploading: uploadingReducer(store.uploading, action),
   // deleting: deletingReducer(store.deleting, action),
-  // datatree: datatreeReducer(store.datatree, action),
+  datatree: datatreeReducer(store.datatree, action),
   // status: statusReducer(store.status, action),
   // route: routeReducer(store.route, action),
   // collegeTree: collegeTreeReducer(store.collegeTree, action),

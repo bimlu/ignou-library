@@ -47,6 +47,22 @@ const Query = {
     return sortedProgramme;
   },
 
+  getAssignmentTree: async (root, { skip, limit }, { Programme }) => {
+    const query = {};
+
+    const count = await Programme.find(query).countDocuments();
+    const programmes = await Programme.find(query)
+      .populate({
+        path: "programmeStructure",
+        populate: { path: "course" },
+      })
+      .skip(skip)
+      .limit(limit)
+      .sort({ code: "ascending" });
+
+    return { programmes, count };
+  },
+
   getProgrammes: async (root, { skip, limit }, { Programme }) => {
     const query = {};
 

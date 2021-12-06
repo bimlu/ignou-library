@@ -4,6 +4,8 @@
 
 export const COLLEGE_TREE_ITEM_LIMIT = 300;
 
+export const ASSIGNMENT_TREE_ITEM_LIMIT = 500;
+
 export const EXPLORE_PAGE_CARDS_LIMIT = 12; // 6 for skeleton
 
 export const EXPLORE_PAGE_POSTS_LIMIT = 10; // 5 for skeleton

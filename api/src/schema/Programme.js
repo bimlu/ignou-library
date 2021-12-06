@@ -60,6 +60,9 @@ const ProgrammeSchema = gql`
 
     # Gets all programmes
     getProgrammes(skip: Int, limit: Int): Programmes
+
+    # Get Assignment Tree
+    getAssignmentTree(skip: Int, limit: Int): Programmes
   }
 `;
 

@@ -50,6 +50,39 @@ export const GET_PROGRAMME_STRUCTURE = gql`
   }
 `;
 
+// Get assignment tree
+export const GET_ASSIGNMENT_TREE = gql`
+  query ($skip: Int, $limit: Int) {
+    getAssignmentTree(skip: $skip, limit: $limit) {
+      count
+      programmes {
+        id
+        code
+        title
+        degree
+        termType
+        termsCount
+        image
+        totalCredits
+        cbcs
+        disciplines
+        programmeStructure {
+          term
+          courseCode
+          course {
+            id
+            code
+            title
+          }
+          credit
+          category
+          discipline
+        }
+      }
+    }
+  }
+`;
+
 // Get all programmes
 export const GET_PROGRAMMES = gql`
   query ($skip: Int, $limit: Int) {

@@ -33,3 +33,38 @@ export const GET_COLLEGE = gql`
     }
   }
 `;
+
+/**
+ * Gets all avilable colleges with programmes and courses populated
+ */
+export const GET_COLLEGES_WITH_PROGRAMMES_COURSES = gql`
+  query ($skip: Int, $limit: Int) {
+    getColleges(skip: $skip, limit: $limit) {
+      count
+      colleges {
+        id
+        code
+        title
+        programmes {
+          id
+          code
+          title
+          termType
+          termsCount
+          programmeStructure {
+            term
+            courseCode
+            course {
+              id
+              code
+              title
+            }
+            credit
+            category
+            discipline
+          }
+        }
+      }
+    }
+  }
+`;
