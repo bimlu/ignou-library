@@ -11,7 +11,6 @@ import models from "./models";
 import resolvers from "./resolvers";
 import schema from "./schema";
 import { createApolloServer } from "./utils/apollo-server";
-import { httpLogger } from "./utils/httpLogger";
 import { logger } from "./utils/logger";
 dotenv.config();
 
@@ -36,8 +35,7 @@ const app = express();
 
 // Enable gzip compression
 app.use(compression());
-// http logging
-app.use(httpLogger);
+
 // Enable cors
 app.use(
   cors({
